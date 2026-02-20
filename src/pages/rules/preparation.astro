@@ -86,16 +86,248 @@
 						<h2 class="section-title">Pre-Combat Preparation</h2>
 
 						<div id="trap-setting" class="subsection">
-							<h3>Trap Setting</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+							<h3>🪤 Trap Setting</h3>
+
+							<div class="rule-section highlight">
+								<h4>Unified Trap Framework</h4>
+								<p>All traps follow 5 rules:</p>
+								<ol class="framework-list">
+									<li>Setup Method</li>
+									<li>Setup Check</li>
+									<li>Concealment DC</li>
+									<li>Trigger Condition</li>
+									<li>Effect Resolution</li>
+								</ol>
+							</div>
+
+							<!-- Setup Methods -->
+							<div class="rule-section">
+								<h4>1️⃣ Setup Methods</h4>
+
+								<div class="method-card">
+									<h5>A) Pre-Combat Ambush</h5>
+									<p>Used before engagement begins.</p>
+
+									<div class="detail-box">
+										<strong>Requirements:</strong>
+										<ul>
+											<li>5–10 minutes of preparation</li>
+											<li>Trap Kit required</li>
+											<li>Valid terrain</li>
+										</ul>
+									</div>
+
+									<div class="detail-box">
+										<strong>Check:</strong>
+										<ul>
+											<li>Tool Handling (DEX)</li>
+											<li>or Heavy Trap Setup (STR)</li>
+										</ul>
+									</div>
+
+									<div class="detail-box">
+										<strong>Suggested DC:</strong>
+										<ul>
+											<li>Simple trap: 12</li>
+											<li>Complex trap: 14</li>
+											<li>Elemental trap: 15–16</li>
+										</ul>
+									</div>
+
+									<div class="outcomes">
+										<div class="outcome success">
+											<strong>On Success:</strong>
+											<ul>
+												<li>Trap is armed.</li>
+												<li>Monster must make an Instinct check to detect it.</li>
+												<li>If undetected → trap triggers on engagement.</li>
+											</ul>
+										</div>
+
+										<div class="outcome failure">
+											<strong>On Failure:</strong>
+											<ul>
+												<li>Trap is visible (monster avoids it).</li>
+												<li>Or trap functions at reduced DC.</li>
+											</ul>
+										</div>
+
+										<div class="outcome crit-failure">
+											<strong>On Critical Failure:</strong>
+											<ul>
+												<li>Trap misfires when combat begins (GM choice).</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="method-card">
+									<h5>B) Lure Setup (Known Sector)</h5>
+									<p>To lure a monster:</p>
+									<ul>
+										<li>Place valid bait.</li>
+										<li>Make Trap Engineering (INT) vs Monster Instinct Check.</li>
+									</ul>
+
+									<div class="outcomes">
+										<div class="outcome success">
+											<strong>On success:</strong> Monster approaches trap location.
+										</div>
+										<div class="outcome failure">
+											<strong>On failure:</strong> Monster changes sector or grows wary (+1 Sense next attempt).
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Trap Setup Checks -->
+							<div class="rule-section">
+								<h4>2️⃣ Trap Setup Checks</h4>
+								<ul>
+									<li><strong>Light / Precision traps</strong> → Tool Handling (DEX)</li>
+									<li><strong>Heavy / Mechanical traps</strong> → STR-based Heavy Setup</li>
+								</ul>
+							</div>
+
+							<!-- Trap DC Scaling -->
+							<div class="rule-section">
+								<h4>3️⃣ Trap DC Scaling</h4>
+								<div class="formula">
+									Trap Save DC = 8 + Proficiency + relevant stat
+								</div>
+							</div>
+
+							<!-- Trap Effects -->
+							<div class="rule-section">
+								<h4>4️⃣ Trap Effects</h4>
+								<p>Most traps are triggered when stepped on or upon entering a space.</p>
+
+								<h5>Focus on:</h5>
+								<div class="effects-grid">
+									<span class="effect-tag">Immobilize</span>
+									<span class="effect-tag">Restrain</span>
+									<span class="effect-tag">Knock Prone</span>
+									<span class="effect-tag">Apply status (Burn, Shock, Bleed)</span>
+									<span class="effect-tag">Reduce Stamina</span>
+									<span class="effect-tag">Force movement</span>
+									<span class="effect-tag">Create terrain</span>
+								</div>
+
+								<h5>Examples:</h5>
+								<div class="example-traps">
+									<div class="trap-example">
+										<h6>Shock Pitfall:</h6>
+										<ul>
+											<li>Target restrained</li>
+											<li>1d4 Electric damage per turn</li>
+											<li>Can break free STR check DC 14</li>
+										</ul>
+									</div>
+
+									<div class="trap-example">
+										<h6>Burn Trap:</h6>
+										<ul>
+											<li>1d6 fire</li>
+											<li>Apply Burned</li>
+											<li>Area becomes difficult terrain</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Trap Limits -->
+							<div class="rule-section">
+								<h4>5️⃣ Trap Limits</h4>
+								<div class="callout warning">
+									<strong>Monsters become aware of your traps.</strong> For every subsequent trap, the DC becomes lower.
+								</div>
 							</div>
 						</div>
 
+						<!-- WEAPON BUFFS -->
 						<div id="weapon-buffs" class="subsection">
-							<h3>Weapon Buffs</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+							<h3>⚔️ Weapon Buffs</h3>
+							<p class="subtitle-text">Oils & Sharpening</p>
+
+							<!-- Sharpening -->
+							<div class="rule-section">
+								<h4>🔪 Sharpening</h4>
+
+								<div class="buff-card sharpening">
+									<div class="buff-detail">
+										<strong>Action:</strong>
+										<p>Pre-combat or Preparation Action</p>
+									</div>
+
+									<div class="buff-detail">
+										<strong>Effect:</strong>
+										<ul>
+											<li><strong>+1 to Attack rolls</strong></li>
+											<li>Lasts 3 turns</li>
+										</ul>
+									</div>
+
+									<div class="buff-detail limits">
+										<strong>Limit:</strong>
+										<ul>
+											<li>Cannot stack</li>
+											<li>Cannot apply twice</li>
+											<li>Ends if weapon is dropped</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Oils -->
+							<div class="rule-section">
+								<h4>🧪 Oils</h4>
+
+								<div class="buff-card oils">
+									<div class="buff-detail">
+										<strong>Applied as:</strong>
+										<ul>
+											<li>Fast Action</li>
+											<li>or 1-minute pre-combat action</li>
+										</ul>
+									</div>
+
+									<div class="buff-detail">
+										<strong>Duration:</strong>
+										<p>3 turns</p>
+									</div>
+
+									<div class="buff-detail">
+										<strong>Effect:</strong>
+										<p>Adds elemental rider or status trigger</p>
+									</div>
+								</div>
+
+								<h5>Examples:</h5>
+								<div class="oils-grid">
+									<div class="oil-card fire">
+										<h6>🔥 Fire Oil:</h6>
+										<p>On hit → +1d4 fire once per turn</p>
+									</div>
+
+									<div class="oil-card poison">
+										<h6>💀 Poison Oil:</h6>
+										<p>On hit → target makes CON save or gains Poisoned (1 round)</p>
+									</div>
+
+									<div class="oil-card shock">
+										<h6>⚡ Shock Oil:</h6>
+										<p>On hit → target loses 1 Stamina</p>
+									</div>
+								</div>
+
+								<div class="callout warning">
+									<strong>Limits:</strong>
+									<ul>
+										<li>Only 1 oil active at a time</li>
+										<li>Cannot combine oil + sharpening</li>
+										<li>Oils consumed on use</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</section>
@@ -105,9 +337,212 @@
 						<h2 class="section-title">Crafting & Tools</h2>
 
 						<div id="trap-crafting" class="subsection">
-							<h3>Trap Crafting</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+							<h3>🛠️ Trap Crafting</h3>
+
+							<div class="intro-box">
+								<p><strong>Trap Crafting is how hunters build devices between hunts or at camp.</strong></p>
+								<ul>
+									<li><strong>Trap Setting</strong> is tactical deployment.</li>
+									<li><strong>Trap Crafting</strong> is construction.</li>
+								</ul>
+								<p>They are separate systems.</p>
+							</div>
+
+							<!-- Requirements -->
+							<div class="rule-section">
+								<h4>🧰 Requirements to Craft a Trap</h4>
+								<p>To craft a trap, you must have:</p>
+								<ul>
+									<li><strong>Trap Toolkit</strong> (required, reusable)</li>
+									<li>At least <strong>1 Structural Component</strong></li>
+									<li>At least <strong>1 Functional Component</strong></li>
+									<li>Access to a <strong>camp or workshop</strong></li>
+								</ul>
+
+								<div class="component-explanation">
+									<p><strong>Structural</strong> = frame (vines, wire, bone, metal)</p>
+									<p><strong>Functional</strong> = effect source (fire, toxin, gland, bait, resin, shock core)</p>
+								</div>
+							</div>
+
+							<!-- Crafting Check -->
+							<div class="rule-section highlight">
+								<h4>🎲 Crafting Check</h4>
+								<p>Make a:</p>
+								<p class="check-type"><strong>Trap Engineering (INT) check</strong></p>
+
+								<p>Base DC depends on trap complexity:</p>
+								<table class="craft-table">
+									<thead>
+										<tr>
+											<th>Trap Type</th>
+											<th>DC</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Simple</td>
+											<td>10</td>
+										</tr>
+										<tr>
+											<td>Standard</td>
+											<td>12</td>
+										</tr>
+										<tr>
+											<td>Advanced</td>
+											<td>14</td>
+										</tr>
+										<tr>
+											<td>Rare / Elemental</td>
+											<td>15–16</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<p class="note">This keeps math predictable.</p>
+
+								<div class="craft-outcomes">
+									<div class="outcome success">
+										<strong>On Success:</strong>
+										<ul>
+											<li>Trap is successfully crafted.</li>
+											<li>Save DC = 8 + Proficiency + INT modifier.</li>
+											<li>Trap lasts until used or disarmed.</li>
+										</ul>
+									</div>
+
+									<div class="outcome failure">
+										<strong>On Failure:</strong>
+										<ul>
+											<li>Trap is functional but unstable.</li>
+											<li>Save DC reduced by –1.</li>
+											<li>Trap has reduced effect (GM chooses minor flaw).</li>
+										</ul>
+									</div>
+
+									<div class="outcome crit-failure">
+										<strong>On Critical Failure (Natural 1):</strong>
+										<ul>
+											<li>Materials damaged or consumed.</li>
+											<li>Trap misfires when triggered.</li>
+											<li>Or trap has unintended side effect.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Component Framework -->
+							<div class="rule-section">
+								<h4>🧱 Component Framework</h4>
+								<p>Instead of recipes, define roles.</p>
+								<p><strong>Every trap has:</strong></p>
+
+								<div class="component-grid">
+									<div class="component-card">
+										<h5>1️⃣ Structure</h5>
+										<p class="component-question">What holds it together?</p>
+										<ul class="component-list">
+											<li>Vines</li>
+											<li>Bone</li>
+											<li>Wire</li>
+											<li>Steel</li>
+											<li>Resin frame</li>
+										</ul>
+									</div>
+
+									<div class="component-card">
+										<h5>2️⃣ Trigger</h5>
+										<p class="component-question">What activates it?</p>
+										<ul class="component-list">
+											<li>Pressure plate</li>
+											<li>Snare tension</li>
+											<li>Bait bite</li>
+											<li>Tripline</li>
+											<li>Impact</li>
+										</ul>
+									</div>
+
+									<div class="component-card">
+										<h5>3️⃣ Effect</h5>
+										<p class="component-question">What does it do?</p>
+										<ul class="component-list">
+											<li>Burn</li>
+											<li>Shock</li>
+											<li>Restrain</li>
+											<li>Poison</li>
+											<li>Collapse ground</li>
+											<li>Pull target</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="callout">
+									<strong>That allows creativity without chaos.</strong>
+								</div>
+							</div>
+
+							<!-- Example Conversions -->
+							<div class="rule-section">
+								<h4>Example Conversions</h4>
+
+								<div class="trap-recipe">
+									<div class="recipe-header">
+										<span class="recipe-input">Meat + Fire Source</span>
+										<span class="recipe-arrow">→</span>
+										<span class="recipe-output">Burn Trap</span>
+									</div>
+									<div class="recipe-details">
+										<p><strong>Type:</strong> Standard (DC 12)</p>
+										<p><strong>Effect:</strong></p>
+										<ul>
+											<li>1d6 fire</li>
+											<li>Apply Burned</li>
+											<li>Area becomes difficult terrain</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="trap-recipe">
+									<div class="recipe-header">
+										<span class="recipe-input">Vines + Meat</span>
+										<span class="recipe-arrow">→</span>
+										<span class="recipe-output">Pitfall Trap</span>
+									</div>
+									<div class="recipe-details">
+										<p><strong>Type:</strong> Simple (DC 10)</p>
+										<p><strong>Effect:</strong></p>
+										<ul>
+											<li>Target knocked Prone</li>
+											<li>Movement reduced to 0 until STR check (DC = trap save DC)</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="trap-recipe">
+									<div class="recipe-header">
+										<span class="recipe-input">Vines + Electric Source</span>
+										<span class="recipe-arrow">→</span>
+										<span class="recipe-output">Shock Pitfall</span>
+									</div>
+									<div class="recipe-details">
+										<p><strong>Type:</strong> Advanced (DC 14–15)</p>
+										<p><strong>Effect:</strong></p>
+										<ul>
+											<li>Restrained</li>
+											<li>1d4 Electric damage per turn</li>
+											<li>Break free STR check</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Scaling Control -->
+							<div class="rule-section highlight">
+								<h4>🔒 Important — Scaling Control</h4>
+								<div class="callout warning">
+									<p><strong>Crafted traps cannot exceed the highest Monster Tier you have cleared.</strong></p>
+									<p>Prevents Tier 1 hunters from crafting Tier 5 traps.</p>
+								</div>
 							</div>
 						</div>
 
@@ -465,6 +900,448 @@
 				.toc-grid {
 					grid-template-columns: 1fr;
 					gap: 1.5rem;
+				}
+			}
+
+			/* Rule Sections */
+			.rule-section {
+				background: var(--forest-green);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1.5rem 0;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.rule-section.highlight {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%);
+			}
+
+			.rule-section h4 {
+				color: var(--amber);
+				font-size: 1.3rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section h5 {
+				color: var(--leaf-green);
+				font-size: 1.1rem;
+				margin: 1.5rem 0 0.75rem;
+			}
+
+			.rule-section h6 {
+				color: var(--amber);
+				font-size: 1rem;
+				margin: 0.5rem 0;
+			}
+
+			.rule-section ul {
+				margin-left: 1.5rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.rule-section ol {
+				margin-left: 1.5rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.rule-section li {
+				margin-bottom: 0.25rem;
+			}
+
+			.subtitle-text {
+				font-style: italic;
+				color: var(--leaf-green);
+				font-size: 1.1rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.framework-list {
+				font-size: 1.1rem;
+				font-weight: 500;
+			}
+
+			/* Method Cards */
+			.method-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1.5rem 0;
+				border: 2px solid var(--moss-green);
+			}
+
+			.method-card h5 {
+				color: var(--amber);
+				font-size: 1.2rem;
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+
+			.detail-box {
+				background: var(--forest-green);
+				padding: 1rem;
+				border-radius: 6px;
+				margin: 1rem 0;
+				border-left: 3px solid var(--leaf-green);
+			}
+
+			/* Outcomes */
+			.outcomes {
+				margin-top: 1.5rem;
+				display: grid;
+				gap: 1rem;
+			}
+
+			.outcome {
+				padding: 1rem;
+				border-radius: 6px;
+				border-left: 4px solid;
+			}
+
+			.outcome.success {
+				background: rgba(107, 157, 58, 0.2);
+				border-left-color: var(--leaf-green);
+			}
+
+			.outcome.failure {
+				background: rgba(212, 162, 87, 0.2);
+				border-left-color: var(--amber);
+			}
+
+			.outcome.crit-failure {
+				background: rgba(216, 74, 74, 0.2);
+				border-left-color: #d84a4a;
+			}
+
+			/* Formula */
+			.formula {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				text-align: center;
+				font-family: 'Courier New', monospace;
+				font-size: 1.2rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border: 2px solid var(--amber);
+				color: var(--amber);
+			}
+
+			/* Effects Grid */
+			.effects-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 0.75rem;
+				margin: 1rem 0;
+			}
+
+			.effect-tag {
+				background: var(--forest-dark);
+				padding: 0.75rem;
+				border-radius: 6px;
+				text-align: center;
+				border: 2px solid var(--moss-green);
+				font-weight: 500;
+				font-size: 0.95rem;
+			}
+
+			/* Example Traps */
+			.example-traps {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1rem;
+				margin: 1rem 0;
+			}
+
+			.trap-example {
+				background: var(--forest-dark);
+				padding: 1.25rem;
+				border-radius: 8px;
+				border: 2px solid var(--leaf-green);
+			}
+
+			.trap-example h6 {
+				margin-top: 0;
+			}
+
+			/* Callout */
+			.callout {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				margin: 1rem 0;
+			}
+
+			.callout.warning {
+				border-left-color: #d87332;
+			}
+
+			.callout ul {
+				margin-left: 1.5rem;
+				margin-top: 0.5rem;
+			}
+
+			/* Buff Cards */
+			.buff-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border: 2px solid var(--moss-green);
+			}
+
+			.buff-card.sharpening {
+				border-color: var(--amber);
+			}
+
+			.buff-card.oils {
+				border-color: var(--leaf-green);
+			}
+
+			.buff-detail {
+				margin: 1rem 0;
+			}
+
+			.buff-detail.limits {
+				background: var(--forest-green);
+				padding: 1rem;
+				border-radius: 6px;
+				margin-top: 1.5rem;
+			}
+
+			/* Oils Grid */
+			.oils-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1rem;
+				margin: 1rem 0;
+			}
+
+			.oil-card {
+				background: var(--forest-dark);
+				padding: 1.25rem;
+				border-radius: 8px;
+				border: 2px solid;
+				transition: all 0.3s ease;
+			}
+
+			.oil-card:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+			}
+
+			.oil-card h6 {
+				margin-top: 0;
+				margin-bottom: 0.75rem;
+			}
+
+			.oil-card.fire {
+				border-color: #d87332;
+			}
+
+			.oil-card.poison {
+				border-color: #8b5a8b;
+			}
+
+			.oil-card.shock {
+				border-color: #5a8bb5;
+			}
+
+			/* Intro Box */
+			.intro-box {
+				background: var(--moss-green);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border: 2px solid var(--amber);
+				margin-bottom: 2rem;
+			}
+
+			.intro-box ul {
+				margin-left: 1.5rem;
+				margin-top: 0.5rem;
+			}
+
+			/* Component Explanation */
+			.component-explanation {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				margin-top: 1rem;
+				border-left: 3px solid var(--leaf-green);
+			}
+
+			.component-explanation p {
+				margin: 0.5rem 0;
+			}
+
+			/* Check Type */
+			.check-type {
+				font-size: 1.2rem;
+				color: var(--amber);
+				margin: 1rem 0;
+			}
+
+			/* Craft Table */
+			.craft-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1.5rem 0;
+				background: var(--forest-dark);
+				border-radius: 8px;
+				overflow: hidden;
+			}
+
+			.craft-table th,
+			.craft-table td {
+				padding: 1rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.craft-table th {
+				background: var(--moss-green);
+				color: var(--amber);
+				font-weight: 600;
+			}
+
+			.craft-table tr:last-child td {
+				border-bottom: none;
+			}
+
+			.craft-table td:last-child {
+				text-align: center;
+				font-weight: 600;
+				color: var(--amber);
+			}
+
+			/* Craft Outcomes */
+			.craft-outcomes {
+				margin-top: 1.5rem;
+				display: grid;
+				gap: 1rem;
+			}
+
+			/* Note */
+			.note {
+				font-style: italic;
+				color: var(--leaf-green);
+				font-size: 0.95rem;
+				margin: 0.5rem 0;
+			}
+
+			/* Component Grid */
+			.component-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 1.5rem;
+				margin: 1.5rem 0;
+			}
+
+			.component-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border: 2px solid var(--moss-green);
+				transition: all 0.3s ease;
+			}
+
+			.component-card:hover {
+				border-color: var(--amber);
+				transform: translateY(-2px);
+			}
+
+			.component-card h5 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				margin: 0 0 0.75rem 0;
+			}
+
+			.component-question {
+				font-style: italic;
+				color: var(--leaf-green);
+				margin-bottom: 0.75rem;
+			}
+
+			.component-list {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.component-list li {
+				padding-left: 1.25rem;
+				position: relative;
+				margin-bottom: 0.25rem;
+			}
+
+			.component-list li::before {
+				content: "•";
+				position: absolute;
+				left: 0;
+				color: var(--amber);
+			}
+
+			/* Trap Recipe */
+			.trap-recipe {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1.5rem 0;
+				border: 2px solid var(--leaf-green);
+				transition: all 0.3s ease;
+			}
+
+			.trap-recipe:hover {
+				border-color: var(--amber);
+				transform: translateY(-2px);
+			}
+
+			.recipe-header {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.recipe-input {
+				font-weight: 600;
+				color: var(--cream);
+			}
+
+			.recipe-arrow {
+				color: var(--amber);
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+
+			.recipe-output {
+				font-weight: 600;
+				color: var(--amber);
+				font-size: 1.1rem;
+			}
+
+			.recipe-details p {
+				margin: 0.5rem 0;
+			}
+
+			.recipe-details ul {
+				margin-left: 1.5rem;
+				margin-top: 0.5rem;
+			}
+
+			/* Responsive Additions */
+			@media (max-width: 768px) {
+				.recipe-header {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 0.5rem;
+				}
+
+				.craft-table th,
+				.craft-table td {
+					padding: 0.75rem;
+					font-size: 0.9rem;
 				}
 			}
 
