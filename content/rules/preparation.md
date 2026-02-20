@@ -271,7 +271,197 @@ Prevents Tier 1 hunters from crafting Tier 5 traps.
 
 ### Monster Gear
 
-*Coming soon*
+**Kill Something Strange → Make Something Stranger**
+
+#### 1️⃣ Core Crafting Structure
+
+**Requirements**
+
+To craft monster gear you need:
+- 1–2 Monster Components
+- 1 Supporting Material (Ore, Bone, Leather, Resin, etc.)
+- Access to a Workshop or Crafting Station
+
+Rare gear requires at least one Rare Monster Component.
+
+**Crafting Check**
+
+Make a:
+- Tool Handling (DEX)
+- or Relevant Craft Tool Proficiency (INT)
+
+DC by Gear Type:
+
+| Gear Type | DC |
+|-----------|-----|
+| Standard Armor / Weapon | 12 |
+| Rare Upgrade | 14 |
+| Special Set / Apex | 15–16 |
+
+**On Success:**
+- Gear is crafted
+- Trait bonus applies
+- Rare bonuses activate
+
+**On Failure:**
+- Gear crafted but minor flaw (–1 durability narrative flaw or cosmetic imperfection)
+- OR Requires 1 additional supporting material
+
+**On Critical Failure:**
+- Rare component wasted
+- Standard components recoverable
+
+This keeps rare parts meaningful.
+
+#### 2️⃣ Monster Crafting Philosophy
+
+Every monster provides:
+- Light Armor Set
+- Medium Armor Set
+- Heavy Armor Set
+- 1 Special Set (rare component required)
+
+Apex monsters:
+- Special Set per weight class
+
+**No branching trees. No crafting bloat.**
+
+Each monster = 4–6 meaningful pieces max.
+
+#### 3️⃣ Armor Template
+
+**Base Armor Values:**
+- Light → +2 AR
+- Medium → +3 AR
+- Heavy → +4 AR
+
+Each armor must include:
+- Base AR
+- 1 Weight-Class Bonus
+- 1 Monster Trait Bonus
+
+Rare Set adds:
+- 1 Rare Perk
+
+Never more than that.
+
+#### 4️⃣ Weight Class Bonus Framework
+
+**Light Armor Pattern**
+
+Mobility perk:
+- +5 ft movement
+- Advantage on Stealth
+- +1 to DEX saves
+- Ignore difficult terrain once per turn
+
+**Medium Armor Pattern**
+
+Stability perk:
+- Minor resistance (once per turn reduce damage by 2)
+- Climb or swim boost
+- +1 to forced movement saves
+
+**Heavy Armor Pattern**
+
+Control perk:
+- Reduce incoming damage by 1
+- Advantage vs knockdown
+- +1 AR while stationary
+- Cannot be shoved easily
+
+#### 5️⃣ Monster Trait Conversion Rule
+
+**This is your most important rule.**
+
+Ask: **"What does this creature do repeatedly in combat?"**
+
+That becomes the trait.
+
+**Examples:**
+- Climber → Climb bonus
+- Burrower → Ignore rough terrain
+- Flyer → Glide or fall resistance
+- Ambusher → First turn bonus
+- Poison creature → Debuff resistance
+- Rage creature → HP-threshold ability
+- Mud creature → Wet terrain synergy
+
+**Never invent traits unrelated to behavior.**
+
+#### 6️⃣ Rare Parts — Hard Limits
+
+Rare parts can grant ONE of the following:
+- +1 to one Stat (cap 1 per character from gear)
+- +1 AR (cap 1 from gear total)
+- +1 Stamina regen (cap 1 total)
+- +1 Power Die for one weapon type
+- Gain 1 Passive Resistance
+- Gain 1 Special Action (1/rest)
+
+**Rare perks must:**
+- Not stack infinitely
+- Not increase Action economy
+- Not increase Stamina pool
+- Not exceed +1 numerical bonus
+
+This prevents runaway scaling.
+
+#### 7️⃣ Weapon Crafting
+
+**Core Rule:** Any monster can craft any weapon.
+
+The weapon inherits:
+- Monster Theme
+- Tier Scaling (based on Hunter Rank band)
+- One Monster Trait Ability
+
+**Standard Monster Weapon**
+
+Includes:
+- Base weapon stats
+- 1 Monster Trait perk
+
+**Rare Weapon**
+
+Requires rare part.
+
+Includes:
+- Base weapon stats
+- 1 Trait perk
+- 1 Rare perk OR 1 Special Action (1/rest)
+
+Never both.
+
+#### 8️⃣ Special Weapon Categories
+
+**Wands**
+- Theme-based detonation or elemental rider.
+
+**Hunting Flutes**
+- 2 Songs per monster
+- Apex → 3 Songs
+- Songs must echo behavior (regen, haste, roar, stealth).
+
+**Bows**
+- Monster defines arrow types.
+- Standard → 2 arrow types
+- Rare → 3 arrow types
+- No expanding beyond 3.
+
+#### 9️⃣ Upgrade Path
+
+Gear can be upgraded only when:
+- You hunt stronger variants
+- You obtain rare cores
+- You clear next HR band
+
+Upgrade adds:
+- 1 numerical improvement OR Enhances existing perk
+
+**Never add new perks after crafting.**
+
+Upgrades refine — not expand.
 
 ### Potions & Salves
 

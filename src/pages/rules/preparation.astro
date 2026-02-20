@@ -547,9 +547,303 @@
 						</div>
 
 						<div id="monster-gear" class="subsection">
-							<h3>Monster Gear</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+							<h3>🐲 Monster Gear Crafting</h3>
+
+							<div class="intro-box">
+								<p class="tagline"><strong>Kill Something Strange → Make Something Stranger</strong></p>
+							</div>
+
+							<!-- Core Crafting Structure -->
+							<div class="rule-section highlight">
+								<h4>1️⃣ Core Crafting Structure</h4>
+
+								<h5>Requirements</h5>
+								<p>To craft monster gear you need:</p>
+								<ul>
+									<li>1–2 Monster Components</li>
+									<li>1 Supporting Material (Ore, Bone, Leather, Resin, etc.)</li>
+									<li>Access to a Workshop or Crafting Station</li>
+								</ul>
+								<p class="note">Rare gear requires at least one Rare Monster Component.</p>
+
+								<h5>Crafting Check</h5>
+								<p>Make a:</p>
+								<ul>
+									<li>Tool Handling (DEX)</li>
+									<li>or Relevant Craft Tool Proficiency (INT)</li>
+								</ul>
+
+								<table class="craft-table">
+									<thead>
+										<tr>
+											<th>Gear Type</th>
+											<th>DC</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Standard Armor / Weapon</td>
+											<td>12</td>
+										</tr>
+										<tr>
+											<td>Rare Upgrade</td>
+											<td>14</td>
+										</tr>
+										<tr>
+											<td>Special Set / Apex</td>
+											<td>15–16</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<div class="craft-outcomes">
+									<div class="outcome success">
+										<strong>On Success:</strong>
+										<ul>
+											<li>Gear is crafted</li>
+											<li>Trait bonus applies</li>
+											<li>Rare bonuses activate</li>
+										</ul>
+									</div>
+
+									<div class="outcome failure">
+										<strong>On Failure:</strong>
+										<ul>
+											<li>Gear crafted but minor flaw (–1 durability narrative flaw or cosmetic imperfection)</li>
+											<li>OR Requires 1 additional supporting material</li>
+										</ul>
+									</div>
+
+									<div class="outcome crit-failure">
+										<strong>On Critical Failure:</strong>
+										<ul>
+											<li>Rare component wasted</li>
+											<li>Standard components recoverable</li>
+										</ul>
+									</div>
+								</div>
+
+								<p class="note">This keeps rare parts meaningful.</p>
+							</div>
+
+							<!-- Monster Crafting Philosophy -->
+							<div class="rule-section">
+								<h4>2️⃣ Monster Crafting Philosophy</h4>
+								<p>Every monster provides:</p>
+								<ul>
+									<li>Light Armor Set</li>
+									<li>Medium Armor Set</li>
+									<li>Heavy Armor Set</li>
+									<li>1 Special Set (rare component required)</li>
+								</ul>
+
+								<p><strong>Apex monsters:</strong> Special Set per weight class</p>
+
+								<div class="callout">
+									<p><strong>No branching trees. No crafting bloat.</strong></p>
+									<p>Each monster = 4–6 meaningful pieces max.</p>
+								</div>
+							</div>
+
+							<!-- Armor Template -->
+							<div class="rule-section">
+								<h4>3️⃣ Armor Template</h4>
+
+								<h5>Base Armor Values:</h5>
+								<div class="armor-values">
+									<div class="armor-value light">Light → +2 AR</div>
+									<div class="armor-value medium">Medium → +3 AR</div>
+									<div class="armor-value heavy">Heavy → +4 AR</div>
+								</div>
+
+								<h5>Each armor must include:</h5>
+								<ul>
+									<li>Base AR</li>
+									<li>1 Weight-Class Bonus</li>
+									<li>1 Monster Trait Bonus</li>
+								</ul>
+
+								<p><strong>Rare Set adds:</strong> 1 Rare Perk</p>
+								<p class="note">Never more than that.</p>
+							</div>
+
+							<!-- Weight Class Framework -->
+							<div class="rule-section">
+								<h4>4️⃣ Weight Class Bonus Framework</h4>
+
+								<div class="weight-class-grid">
+									<div class="weight-card light">
+										<h5>Light Armor Pattern</h5>
+										<p class="pattern-type">Mobility perk:</p>
+										<ul>
+											<li>+5 ft movement</li>
+											<li>Advantage on Stealth</li>
+											<li>+1 to DEX saves</li>
+											<li>Ignore difficult terrain once per turn</li>
+										</ul>
+									</div>
+
+									<div class="weight-card medium">
+										<h5>Medium Armor Pattern</h5>
+										<p class="pattern-type">Stability perk:</p>
+										<ul>
+											<li>Minor resistance (once per turn reduce damage by 2)</li>
+											<li>Climb or swim boost</li>
+											<li>+1 to forced movement saves</li>
+										</ul>
+									</div>
+
+									<div class="weight-card heavy">
+										<h5>Heavy Armor Pattern</h5>
+										<p class="pattern-type">Control perk:</p>
+										<ul>
+											<li>Reduce incoming damage by 1</li>
+											<li>Advantage vs knockdown</li>
+											<li>+1 AR while stationary</li>
+											<li>Cannot be shoved easily</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Monster Trait Conversion -->
+							<div class="rule-section highlight">
+								<h4>5️⃣ Monster Trait Conversion Rule</h4>
+								<div class="callout">
+									<p><strong>This is your most important rule.</strong></p>
+									<p class="big-question">Ask: "What does this creature do repeatedly in combat?"</p>
+									<p>That becomes the trait.</p>
+								</div>
+
+								<h5>Examples:</h5>
+								<div class="trait-examples">
+									<div class="trait-pair"><span>Climber</span> → Climb bonus</div>
+									<div class="trait-pair"><span>Burrower</span> → Ignore rough terrain</div>
+									<div class="trait-pair"><span>Flyer</span> → Glide or fall resistance</div>
+									<div class="trait-pair"><span>Ambusher</span> → First turn bonus</div>
+									<div class="trait-pair"><span>Poison creature</span> → Debuff resistance</div>
+									<div class="trait-pair"><span>Rage creature</span> → HP-threshold ability</div>
+									<div class="trait-pair"><span>Mud creature</span> → Wet terrain synergy</div>
+								</div>
+
+								<div class="callout warning">
+									<strong>Never invent traits unrelated to behavior.</strong>
+								</div>
+							</div>
+
+							<!-- Rare Parts -->
+							<div class="rule-section">
+								<h4>6️⃣ Rare Parts — Hard Limits</h4>
+								<p>Rare parts can grant ONE of the following:</p>
+								<div class="rare-perks">
+									<div class="perk">+1 to one Stat (cap 1 per character from gear)</div>
+									<div class="perk">+1 AR (cap 1 from gear total)</div>
+									<div class="perk">+1 Stamina regen (cap 1 total)</div>
+									<div class="perk">+1 Power Die for one weapon type</div>
+									<div class="perk">Gain 1 Passive Resistance</div>
+									<div class="perk">Gain 1 Special Action (1/rest)</div>
+								</div>
+
+								<h5>Rare perks must:</h5>
+								<ul>
+									<li>Not stack infinitely</li>
+									<li>Not increase Action economy</li>
+									<li>Not increase Stamina pool</li>
+									<li>Not exceed +1 numerical bonus</li>
+								</ul>
+
+								<p class="note">This prevents runaway scaling.</p>
+							</div>
+
+							<!-- Weapon Crafting -->
+							<div class="rule-section">
+								<h4>7️⃣ Weapon Crafting</h4>
+								<div class="callout">
+									<strong>Core Rule:</strong> Any monster can craft any weapon.
+								</div>
+
+								<p>The weapon inherits:</p>
+								<ul>
+									<li>Monster Theme</li>
+									<li>Tier Scaling (based on Hunter Rank band)</li>
+									<li>One Monster Trait Ability</li>
+								</ul>
+
+								<div class="weapon-types">
+									<div class="weapon-type-card">
+										<h5>Standard Monster Weapon</h5>
+										<p>Includes:</p>
+										<ul>
+											<li>Base weapon stats</li>
+											<li>1 Monster Trait perk</li>
+										</ul>
+									</div>
+
+									<div class="weapon-type-card rare">
+										<h5>Rare Weapon</h5>
+										<p>Requires rare part.</p>
+										<p>Includes:</p>
+										<ul>
+											<li>Base weapon stats</li>
+											<li>1 Trait perk</li>
+											<li>1 Rare perk OR 1 Special Action (1/rest)</li>
+										</ul>
+										<p class="note">Never both.</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Special Weapon Categories -->
+							<div class="rule-section">
+								<h4>8️⃣ Special Weapon Categories</h4>
+
+								<div class="special-weapons">
+									<div class="special-weapon">
+										<h5>🔮 Wands</h5>
+										<p>Theme-based detonation or elemental rider.</p>
+									</div>
+
+									<div class="special-weapon">
+										<h5>🎵 Hunting Flutes</h5>
+										<ul>
+											<li>2 Songs per monster</li>
+											<li>Apex → 3 Songs</li>
+											<li>Songs must echo behavior (regen, haste, roar, stealth).</li>
+										</ul>
+									</div>
+
+									<div class="special-weapon">
+										<h5>🏹 Bows</h5>
+										<ul>
+											<li>Monster defines arrow types.</li>
+											<li>Standard → 2 arrow types</li>
+											<li>Rare → 3 arrow types</li>
+											<li>No expanding beyond 3.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Upgrade Path -->
+							<div class="rule-section highlight">
+								<h4>9️⃣ Upgrade Path</h4>
+								<p>Gear can be upgraded only when:</p>
+								<ul>
+									<li>You hunt stronger variants</li>
+									<li>You obtain rare cores</li>
+									<li>You clear next HR band</li>
+								</ul>
+
+								<p>Upgrade adds:</p>
+								<ul>
+									<li>1 numerical improvement</li>
+									<li>OR Enhances existing perk</li>
+								</ul>
+
+								<div class="callout warning">
+									<p><strong>Never add new perks after crafting.</strong></p>
+									<p>Upgrades refine — not expand.</p>
+								</div>
 							</div>
 						</div>
 
@@ -1328,6 +1622,169 @@
 			.recipe-details ul {
 				margin-left: 1.5rem;
 				margin-top: 0.5rem;
+			}
+
+			/* Monster Gear Styles */
+			.tagline {
+				font-size: 1.2rem;
+				text-align: center;
+				color: var(--amber);
+			}
+
+			.armor-values {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+				gap: 1rem;
+				margin: 1rem 0;
+			}
+
+			.armor-value {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				text-align: center;
+				font-weight: 600;
+				border: 2px solid;
+			}
+
+			.armor-value.light {
+				border-color: var(--leaf-green);
+			}
+
+			.armor-value.medium {
+				border-color: var(--amber);
+			}
+
+			.armor-value.heavy {
+				border-color: var(--earth-brown);
+			}
+
+			.weight-class-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1.5rem;
+				margin: 1.5rem 0;
+			}
+
+			.weight-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border: 3px solid;
+				transition: all 0.3s ease;
+			}
+
+			.weight-card:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+			}
+
+			.weight-card h5 {
+				color: var(--amber);
+				margin: 0 0 0.75rem 0;
+				font-size: 1.2rem;
+			}
+
+			.weight-card.light {
+				border-color: var(--leaf-green);
+			}
+
+			.weight-card.medium {
+				border-color: var(--amber);
+			}
+
+			.weight-card.heavy {
+				border-color: var(--earth-brown);
+			}
+
+			.pattern-type {
+				font-weight: 600;
+				color: var(--leaf-green);
+				margin-bottom: 0.75rem;
+			}
+
+			.big-question {
+				font-size: 1.3rem;
+				color: var(--amber);
+				font-weight: 600;
+				text-align: center;
+				margin: 1rem 0;
+			}
+
+			.trait-examples {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 0.75rem;
+				margin: 1rem 0;
+			}
+
+			.trait-pair {
+				background: var(--forest-dark);
+				padding: 0.75rem;
+				border-radius: 6px;
+				border-left: 3px solid var(--leaf-green);
+			}
+
+			.trait-pair span {
+				color: var(--amber);
+				font-weight: 600;
+			}
+
+			.rare-perks {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1rem;
+				margin: 1rem 0;
+			}
+
+			.perk {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				border: 2px solid var(--amber);
+				text-align: center;
+				font-weight: 500;
+			}
+
+			.weapon-types {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 1.5rem;
+				margin: 1rem 0;
+			}
+
+			.weapon-type-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border: 2px solid var(--moss-green);
+			}
+
+			.weapon-type-card.rare {
+				border-color: var(--amber);
+			}
+
+			.weapon-type-card h5 {
+				color: var(--amber);
+				margin: 0 0 1rem 0;
+			}
+
+			.special-weapons {
+				display: grid;
+				gap: 1.5rem;
+				margin: 1rem 0;
+			}
+
+			.special-weapon {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--leaf-green);
+			}
+
+			.special-weapon h5 {
+				color: var(--amber);
+				margin: 0 0 0.75rem 0;
 			}
 
 			/* Responsive Additions */
