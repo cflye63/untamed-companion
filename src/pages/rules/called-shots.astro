@@ -1,0 +1,438 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Called Shots & Part Breaks - Untamed</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/rules">← Back to Rules</a>
+				</div>
+
+				<header class="page-header">
+					<h1>Called Shots & Part Breaks</h1>
+					<p class="subtitle">Aiming for Weak Points</p>
+				</header>
+
+				<article class="content">
+					<!-- What Is a Called Shot -->
+					<section class="rule-section highlight">
+						<h2>What Is a Called Shot?</h2>
+						<p>A Called Shot targets a specific body part instead of the creature's torso.</p>
+						<p>You declare it before rolling.</p>
+						<ul class="key-points">
+							<li>You are <strong>not trying to deal more damage</strong>.</li>
+							<li>You are <strong>trying to change how the monster fights</strong>.</li>
+						</ul>
+					</section>
+
+					<!-- Core Rules -->
+					<section class="rule-section">
+						<h2>Core Rules</h2>
+						<p>When making a Called Shot:</p>
+						<ul>
+							<li><strong>Declare the part before rolling</strong></li>
+							<li>Compare your attack roll against that <strong>part's AR</strong></li>
+							<li>On a hit:
+								<ul>
+									<li>Deal normal damage</li>
+									<li>Mark progress toward breaking that part</li>
+								</ul>
+							</li>
+						</ul>
+
+						<div class="callout">
+							<strong>Breaking a part causes a major behavioral shift.</strong>
+						</div>
+					</section>
+
+					<!-- Called Shot Penalty -->
+					<section class="rule-section">
+						<h2>Called Shot Penalty</h2>
+						<p>Called Shots are harder to land.</p>
+
+						<div class="penalty-box">
+							<strong>Unless otherwise stated:</strong>
+							<p class="penalty">Called Shots suffer <strong>–2 to hit</strong></p>
+						</div>
+
+						<p>This penalty may be reduced by:</p>
+						<ul>
+							<li>Steady Aim</li>
+							<li>Study Target</li>
+							<li>Weapon perks</li>
+							<li>Talents</li>
+							<li>Environmental advantage</li>
+						</ul>
+					</section>
+
+					<!-- What Happens When a Part Breaks -->
+					<section class="rule-section highlight">
+						<h2>What Happens When a Part Breaks?</h2>
+						<p>When a part reaches its <strong>Break Threshold</strong>:</p>
+						<ul>
+							<li>The GM narrates the fracture</li>
+							<li>The monster loses access to abilities tied to that part</li>
+							<li>Movement or tactics may change</li>
+							<li>Some parts drop unique materials</li>
+						</ul>
+
+						<div class="callout">
+							<strong>You are reshaping the fight.</strong>
+						</div>
+					</section>
+
+					<!-- Why Use Called Shots -->
+					<section class="rule-section">
+						<h2>Why Use Called Shots?</h2>
+
+						<div class="examples-grid">
+							<div class="example-card">
+								<h3>🦅 Break wings</h3>
+								<p>Ground a flyer</p>
+							</div>
+
+							<div class="example-card">
+								<h3>🦵 Break legs</h3>
+								<p>Prevent Sprint</p>
+							</div>
+
+							<div class="example-card">
+								<h3>🦎 Break tail</h3>
+								<p>Remove sweep attacks</p>
+							</div>
+
+							<div class="example-card">
+								<h3>📢 Break crest</h3>
+								<p>Silence roars</p>
+							</div>
+
+							<div class="example-card">
+								<h3>🛡️ Break carapace</h3>
+								<p>Lower AR</p>
+							</div>
+						</div>
+
+						<div class="callout">
+							<strong>You are dismantling survival tools.</strong>
+						</div>
+					</section>
+
+					<!-- Making Called Shots Easier -->
+					<section class="rule-section highlight">
+						<h2>Making Called Shots Easier</h2>
+						<p>Use:</p>
+						<div class="tactics-grid">
+							<div class="tactic-box">Steady Aim</div>
+							<div class="tactic-box">Study Target</div>
+							<div class="tactic-box">Sharpening Broth (ignores +1 AR)</div>
+							<div class="tactic-box">Elevation</div>
+							<div class="tactic-box">Traps</div>
+							<div class="tactic-box">Forced positioning</div>
+						</div>
+
+						<div class="callout">
+							<strong>Preparation wins hunts.</strong>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+				--danger-red: #d84a4a;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Navigation */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover {
+				color: var(--amber);
+			}
+
+			/* Breadcrumb */
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			/* Page Header */
+			.page-header {
+				padding: 2rem 0 3rem;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			/* Content */
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			.rule-section {
+				background: var(--forest-green);
+				padding: 2rem;
+				border-radius: 12px;
+				margin-bottom: 2rem;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.rule-section.highlight {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%);
+			}
+
+			.rule-section h2 {
+				color: var(--amber);
+				font-size: 1.75rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section h3 {
+				color: var(--leaf-green);
+				font-size: 1.25rem;
+				margin: 1.5rem 0 0.75rem;
+			}
+
+			.rule-section ul {
+				margin-left: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section li {
+				margin-bottom: 0.5rem;
+			}
+
+			.key-points {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.key-points li {
+				padding-left: 1.5rem;
+				position: relative;
+			}
+
+			.key-points li::before {
+				content: "🎯";
+				position: absolute;
+				left: 0;
+			}
+
+			/* Callout */
+			.callout {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				margin: 1rem 0;
+				font-size: 1.1rem;
+			}
+
+			/* Penalty Box */
+			.penalty-box {
+				background: var(--forest-dark);
+				padding: 2rem;
+				text-align: center;
+				border-radius: 12px;
+				margin: 1.5rem 0;
+				border: 3px solid var(--danger-red);
+			}
+
+			.penalty {
+				font-size: 1.5rem;
+				color: #ff9999;
+				margin-top: 0.5rem;
+			}
+
+			/* Examples Grid */
+			.examples-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 1.5rem;
+				margin: 2rem 0;
+			}
+
+			.example-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 12px;
+				text-align: center;
+				border: 2px solid var(--leaf-green);
+				transition: all 0.3s ease;
+			}
+
+			.example-card:hover {
+				border-color: var(--amber);
+				transform: translateY(-4px);
+				box-shadow: 0 6px 20px rgba(212, 162, 87, 0.3);
+			}
+
+			.example-card h3 {
+				color: var(--amber);
+				font-size: 1.2rem;
+				margin: 0 0 0.75rem 0;
+			}
+
+			.example-card p {
+				color: var(--text-light);
+				font-size: 1rem;
+			}
+
+			/* Tactics Grid */
+			.tactics-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+				gap: 1rem;
+				margin: 1.5rem 0;
+			}
+
+			.tactic-box {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 8px;
+				text-align: center;
+				border: 2px solid var(--moss-green);
+				font-weight: 500;
+				transition: all 0.3s ease;
+			}
+
+			.tactic-box:hover {
+				border-color: var(--amber);
+				background: var(--moss-green);
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.rule-section {
+					padding: 1.5rem;
+				}
+
+				.examples-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			/* Smooth Scrolling */
+			html {
+				scroll-behavior: smooth;
+			}
+		</style>
+	</body>
+</html>

@@ -1,0 +1,390 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Conditions - Untamed</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/rules">← Back to Rules</a>
+				</div>
+
+				<header class="page-header">
+					<h1>Conditions</h1>
+					<p class="subtitle">Status Effects in Combat</p>
+				</header>
+
+				<article class="content">
+					<div class="intro">
+						<p>Conditions represent ongoing effects that alter how creatures function in combat. They persist until their specified end condition is met.</p>
+					</div>
+
+					<!-- Environmental Conditions -->
+					<section class="condition-section">
+						<h2 class="section-header">⚗️ Environmental Conditions</h2>
+
+						<div class="condition-card poison">
+							<h3>💀 Poisoned</h3>
+							<p>Disadvantage on attack rolls and CON saves; take <strong>1 damage</strong> at the start of your turn until treated.</p>
+						</div>
+
+						<div class="condition-card bleed">
+							<h3>🩸 Bleeding</h3>
+							<p>Take <strong>1d4 HP</strong> at the end of your turn per stack until treated. Gain a stack if you Dash or move >15 ft this turn.</p>
+							<p class="remedy"><strong>Remedy:</strong> First Aid (INT DC 12) or any healing ends Bleeding.</p>
+						</div>
+
+						<div class="condition-card burn">
+							<h3>🔥 Burned</h3>
+							<p>Take <strong>1d4 fire damage</strong> at end of your turn; disadvantage on Concentration checks.</p>
+							<p class="remedy"><strong>Remedy:</strong> Water removes Burned (then you become Soaked).</p>
+						</div>
+
+						<div class="condition-card chill">
+							<h3>❄️ Chilled</h3>
+							<p><strong>+1 Stamina cost</strong> to all abilities; <strong>–10 ft movement</strong>.</p>
+						</div>
+
+						<div class="condition-card soak">
+							<h3>💧 Soaked</h3>
+							<p><strong>Lightning damage ×2</strong> against you. At end of your turn, CON save DC 12 or gain Chilled.</p>
+							<p class="remedy"><strong>Remedy:</strong> Fire/Heat removes Soaked.</p>
+						</div>
+					</section>
+
+					<!-- Control Conditions -->
+					<section class="condition-section">
+						<h2 class="section-header">🎯 Control & Lockdown</h2>
+
+						<div class="condition-card control">
+							<h3>💫 Staggered</h3>
+							<p><strong>Cannot Move or take an Action</strong> until your next turn; can still use Fast actions and Reactions.</p>
+						</div>
+
+						<div class="condition-card control">
+							<h3>⚡ Stunned</h3>
+							<p><strong>Lose your next turn</strong> (no Move/Action/Fast/Reaction). Attacks against you have <strong>advantage</strong>; you automatically fail STR/DEX saves until end of your next turn.</p>
+						</div>
+
+						<div class="condition-card control">
+							<h3>⛓️ Paralyzed</h3>
+							<p><strong>Cannot Move, Action, Fast, or Reaction</strong> until your next turn. Attacks against you have <strong>advantage</strong>.</p>
+						</div>
+
+						<div class="condition-card exhaust">
+							<h3>😰 Exhausted</h3>
+							<p><strong>Stamina set to 0</strong>; cannot take Actions or Fast actions; attacks against you have advantage; auto-fail STR/DEX saves; movement halved.</p>
+							<p class="remedy"><strong>Recovery:</strong> On your next turn, you may recover +4 Stamina at end of turn if you take no Action.</p>
+						</div>
+					</section>
+
+					<!-- Positional Conditions -->
+					<section class="condition-section">
+						<h2 class="section-header">📍 Positional</h2>
+
+						<div class="condition-card position">
+							<h3>🤕 Prone</h3>
+							<p>Melee attacks against you have <strong>advantage</strong>; ranged attacks against you have <strong>disadvantage</strong>; your own ranged attacks are at <strong>disadvantage</strong>.</p>
+							<p class="remedy"><strong>Stand up:</strong> 2 Stamina cost.</p>
+						</div>
+
+						<div class="condition-card position">
+							<h3>🤼 Grappled</h3>
+							<p><strong>Speed 0</strong>; disadvantage on checks to resist forced movement.</p>
+							<p class="remedy"><strong>Break free:</strong> Pass a STR or DEX check versus the grappler at the start of your turn.</p>
+						</div>
+
+						<div class="condition-card position">
+							<h3>🕸️ Restrained</h3>
+							<p><strong>Speed 0</strong>; disadvantage on DEX saves; <strong>cannot Dodge</strong>; attacks against you have <strong>advantage</strong>.</p>
+						</div>
+					</section>
+
+					<!-- Mental/Other Conditions -->
+					<section class="condition-section">
+						<h2 class="section-header">🧠 Mental & Other</h2>
+
+						<div class="condition-card mental">
+							<h3>😡 Taunted</h3>
+							<p>Your next attack <strong>must target the taunter</strong>; ends after that attack or if you cannot target them.</p>
+						</div>
+
+						<div class="condition-card mental">
+							<h3>😵 Dazed</h3>
+							<p>Disadvantage on attack rolls and Instinct checks; <strong>cannot take Reactions</strong>. Ends at the end of your next turn.</p>
+						</div>
+
+						<div class="condition-card mental">
+							<h3>😴 Sleep</h3>
+							<p><strong>Lose your turn</strong>; regain 4 Stamina. Wake up if you succeed an Instinct roll at the end of your turn or if you take damage. All attacks against a Sleeping target are made with <strong>advantage</strong>.</p>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+				--danger-red: #d84a4a;
+				--poison-purple: #8b5a8b;
+				--bleed-red: #c73232;
+				--fire-orange: #d87332;
+				--ice-blue: #5a8bb5;
+				--water-blue: #4a7c9f;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Navigation */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover {
+				color: var(--amber);
+			}
+
+			/* Breadcrumb */
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			/* Page Header */
+			.page-header {
+				padding: 2rem 0 3rem;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			/* Content */
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			.intro {
+				background: var(--moss-green);
+				padding: 2rem;
+				border-radius: 12px;
+				border: 2px solid var(--amber);
+				margin-bottom: 3rem;
+				font-size: 1.1rem;
+			}
+
+			/* Condition Section */
+			.condition-section {
+				margin-bottom: 4rem;
+			}
+
+			.section-header {
+				font-size: 2rem;
+				color: var(--amber);
+				margin-bottom: 2rem;
+				padding-bottom: 0.75rem;
+				border-bottom: 2px solid var(--amber);
+			}
+
+			/* Condition Cards */
+			.condition-card {
+				background: var(--forest-green);
+				padding: 1.5rem;
+				border-radius: 12px;
+				margin-bottom: 1.5rem;
+				border: 2px solid var(--earth-brown);
+				transition: all 0.3s ease;
+			}
+
+			.condition-card:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+			}
+
+			.condition-card h3 {
+				color: var(--amber);
+				font-size: 1.3rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.condition-card p {
+				margin-bottom: 0.5rem;
+			}
+
+			.condition-card p:last-child {
+				margin-bottom: 0;
+			}
+
+			.remedy {
+				margin-top: 0.75rem;
+				padding-top: 0.75rem;
+				border-top: 1px solid var(--earth-brown);
+				font-style: italic;
+				color: var(--leaf-green);
+			}
+
+			/* Condition Type Variants */
+			.condition-card.poison {
+				border-left: 5px solid var(--poison-purple);
+			}
+
+			.condition-card.bleed {
+				border-left: 5px solid var(--bleed-red);
+			}
+
+			.condition-card.burn {
+				border-left: 5px solid var(--fire-orange);
+			}
+
+			.condition-card.chill {
+				border-left: 5px solid var(--ice-blue);
+			}
+
+			.condition-card.soak {
+				border-left: 5px solid var(--water-blue);
+			}
+
+			.condition-card.control {
+				border-left: 5px solid var(--danger-red);
+			}
+
+			.condition-card.exhaust {
+				border-left: 5px solid #d4a257;
+			}
+
+			.condition-card.position {
+				border-left: 5px solid var(--moss-green);
+			}
+
+			.condition-card.mental {
+				border-left: 5px solid var(--leaf-green);
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.section-header {
+					font-size: 1.5rem;
+				}
+
+				.condition-card {
+					padding: 1.25rem;
+				}
+			}
+
+			/* Smooth Scrolling */
+			html {
+				scroll-behavior: smooth;
+			}
+		</style>
+	</body>
+</html>

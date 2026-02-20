@@ -1,0 +1,1441 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Combat & Actions - Untamed</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/rules">← Back to Rules</a>
+				</div>
+
+				<header class="page-header">
+					<h1>Combat & Actions</h1>
+					<p class="subtitle">How combat works at the table</p>
+				</header>
+
+				<!-- Table of Contents -->
+				<nav class="toc">
+					<h2>On This Page</h2>
+					<ul>
+						<li><a href="#action-resolution">Action Resolution</a></li>
+						<li><a href="#reactions">Reactions</a></li>
+						<li><a href="#preparation-actions">Preparation Actions</a></li>
+						<li><a href="#equipment-gating">Equipment Gating</a></li>
+					</ul>
+				</nav>
+
+				<article class="content">
+					<!-- ACTION RESOLUTION -->
+					<section id="action-resolution" class="major-section">
+						<h2 class="section-title">Action Resolution</h2>
+						<p class="section-subtitle">How Actions Resolve at the Table</p>
+
+						<div class="intro">
+							<p>This section defines the exact order in which Actions are declared, interrupted, resolved, and completed.</p>
+							<p>When multiple effects interact, follow this structure.</p>
+							<p><strong>Combat clarity prevents arguments. Timing matters.</strong></p>
+						</div>
+
+						<!-- Declare the Action -->
+						<div class="rule-section">
+							<h3>1️⃣ Declare the Action</h3>
+							<p>The acting creature must clearly state:</p>
+							<ul>
+								<li>The Action being used (Basic Attack, Technique, Grapple, etc.)</li>
+								<li>The target(s)</li>
+								<li>The weapon or ability used</li>
+								<li>Any special declaration (Called Shot, nonlethal intent, shove instead of damage, etc.)</li>
+							</ul>
+							<div class="callout">
+								<p><strong>All declarations must be made before dice are rolled.</strong></p>
+								<p><strong>If the Action has a cost, it is paid when declared.</strong></p>
+							</div>
+						</div>
+
+						<!-- Validate Targeting -->
+						<div class="rule-section">
+							<h3>2️⃣ Validate Targeting</h3>
+							<p>Before rolling, confirm the Action is legally valid.</p>
+							<p>Check the following:</p>
+
+							<h4>Distance</h4>
+
+							<div class="subsection">
+								<h5>Melee Attacks</h5>
+								<ul>
+									<li>Target must be within weapon reach.</li>
+									<li>Standard reach: <strong>5 ft</strong>.</li>
+									<li>Weapons with the <strong>Reach</strong> tag extend this distance.</li>
+									<li>If outside reach, the attack fails.</li>
+								</ul>
+							</div>
+
+							<div class="subsection">
+								<h5>Ranged Attacks</h5>
+								<ul>
+									<li>Target must be within the weapon's listed range.</li>
+									<li>Most ranged weapons have two bands:
+										<ul>
+											<li><strong>Normal Range</strong></li>
+											<li><strong>Long Range</strong></li>
+										</ul>
+									</li>
+									<li>Attacks made beyond Normal but within Long Range are made at <strong>disadvantage</strong>.</li>
+									<li>Attacks beyond Long Range automatically fail.</li>
+								</ul>
+							</div>
+
+							<h4>Line of Sight</h4>
+							<ul>
+								<li>You must be able to see the target unless the ability states otherwise.</li>
+							</ul>
+
+							<h4>Cover</h4>
+							<ul>
+								<li><strong>Half Cover</strong>: +2 AR</li>
+								<li><strong>Full Cover</strong>: Cannot be targeted</li>
+								<li>Weapon tags may modify this (example: Flexible weapons ignoring half cover).</li>
+							</ul>
+
+							<div class="callout">
+								<strong>If targeting is invalid, the Action cannot proceed.</strong>
+							</div>
+						</div>
+
+						<!-- Reaction Window Opens -->
+						<div class="rule-section highlight">
+							<h3>3️⃣ Reaction Window Opens</h3>
+							<p>Once a creature is targeted, but before the roll is resolved:</p>
+							<div class="callout">
+								<strong>The target may declare a Reaction.</strong>
+							</div>
+
+							<h4>Rules:</h4>
+							<ul>
+								<li>Only <strong>1 Reaction per round</strong>.</li>
+								<li>Reaction must meet its trigger.</li>
+								<li>Reaction must be declared <strong>before hit/miss is determined</strong>.</li>
+							</ul>
+
+							<h4>Reactions may modify:</h4>
+							<ul>
+								<li>AR</li>
+								<li>Attack roll</li>
+								<li>Position</li>
+								<li>Damage</li>
+								<li>Or negate the attack entirely (if successful)</li>
+							</ul>
+
+							<p>If multiple creatures are targeted (area effect), each eligible creature may declare a Reaction.</p>
+							<p><strong>Once all Reactions are declared, proceed to resolution.</strong></p>
+						</div>
+
+						<!-- Roll Resolution -->
+						<div class="rule-section">
+							<h3>4️⃣ Roll Resolution</h3>
+							<p>Now resolve the Action.</p>
+							<p>There are two primary resolution types:</p>
+
+							<div class="resolution-box">
+								<h4>A) Attack vs Armor Rating (AR)</h4>
+								<div class="formula">
+									d20 + relevant stat modifier + proficiency (if applicable)
+								</div>
+								<ul>
+									<li>If total ≥ target's AR → <strong>Hit</strong></li>
+									<li>If total < AR → <strong>Miss</strong></li>
+								</ul>
+								<p class="note"><strong>A natural 1 always fails. A natural 20 always hits.</strong></p>
+							</div>
+
+							<div class="resolution-box">
+								<h4>B) Saving Throws</h4>
+								<p>If the Action forces a save:</p>
+								<div class="formula">
+									The defender rolls: d20 + relevant stat modifier + proficiency (if applicable)
+								</div>
+								<p>Against the attacker's Save DC.</p>
+								<ul>
+									<li>If the defender meets or exceeds the DC → <strong>Success</strong></li>
+									<li>If lower → <strong>Failure</strong></li>
+								</ul>
+								<p class="note">The ability description determines what happens on success or failure.</p>
+							</div>
+						</div>
+
+						<!-- Apply Results -->
+						<div class="rule-section">
+							<h3>5️⃣ Apply Results</h3>
+							<p>Once hit/miss or save is determined:</p>
+							<div class="callout">
+								<strong>Apply effects in this order:</strong>
+								<ol>
+									<li>Base Damage</li>
+									<li>Damage Modifiers</li>
+									<li>Riders (Bleed, Push, Prone, Mark, etc.)</li>
+									<li>Forced Movement</li>
+									<li>Secondary Effects</li>
+								</ol>
+							</div>
+							<p><strong>Effects resolve fully before moving to the next creature.</strong></p>
+						</div>
+
+						<!-- Forced Movement Rules -->
+						<div class="rule-section">
+							<h3>6️⃣ Forced Movement Rules</h3>
+							<p>If an Action causes forced movement:</p>
+							<ul>
+								<li>The movement occurs <strong>immediately after damage</strong>.</li>
+								<li>Forced movement <strong>does not cost stamina</strong>.</li>
+								<li>Forced movement <strong>does not trigger Sprint costs</strong>.</li>
+								<li>Forced movement may cause:
+									<ul>
+										<li>Collision damage</li>
+										<li>Falling damage</li>
+										<li>Environmental hazard triggers</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="callout">
+								<strong>If movement pushes a creature into invalid terrain, resolve the environmental consequence immediately.</strong>
+							</div>
+						</div>
+
+						<!-- Called Shots -->
+						<div class="rule-section">
+							<h3>7️⃣ Called Shots (Timing Note)</h3>
+							<p>If a Called Shot was declared:</p>
+							<ul>
+								<li>Use the targeted part's AR.</li>
+								<li>On hit, apply normal damage.</li>
+								<li>Record progress toward part break.</li>
+								<li>If threshold is reached, apply break effect immediately.</li>
+							</ul>
+							<div class="callout">
+								<strong>Part Break effects resolve before continuing combat flow.</strong>
+							</div>
+						</div>
+
+						<!-- Simultaneous Effects -->
+						<div class="rule-section">
+							<h3>8️⃣ Simultaneous Effects</h3>
+							<p>If multiple effects trigger at the same time:</p>
+							<ul>
+								<li>Active creature's effects resolve first.</li>
+								<li>Then reactive creature's effects resolve.</li>
+								<li>GM breaks ties if needed.</li>
+							</ul>
+						</div>
+
+						<!-- Weapon Tags -->
+						<div class="rule-section highlight">
+							<h3>9️⃣ Weapon Tags & Rule Overrides</h3>
+							<p><strong>Weapon Tags are mechanical keywords.</strong></p>
+							<div class="callout">
+								<p>If a weapon tag contradicts a general rule:</p>
+								<p><strong>The weapon tag overrides the general rule.</strong></p>
+							</div>
+
+							<h4>Examples:</h4>
+							<ul>
+								<li><strong>Reach</strong> modifies melee distance.</li>
+								<li><strong>Thrown</strong> defines range bands.</li>
+								<li><strong>Guard</strong> enables Block reaction.</li>
+								<li><strong>Parry</strong> enables Parry reaction.</li>
+								<li><strong>Flexible</strong> may ignore half cover.</li>
+							</ul>
+							<p class="note"><strong>Tags never override core action limits unless explicitly stated.</strong></p>
+						</div>
+
+						<!-- Action Completion -->
+						<div class="rule-section">
+							<h3>🔟 Action Completion</h3>
+							<p>Once all effects resolve:</p>
+							<ul>
+								<li>The Action is complete.</li>
+								<li>Any triggered passives resolve.</li>
+								<li>The turn continues.</li>
+								<li>Play moves to the next creature in initiative order.</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- REACTIONS -->
+					<section id="reactions" class="major-section">
+						<h2 class="section-title">Reactions</h2>
+						<p class="section-subtitle">Defensive Timing & Equipment-Based Responses</p>
+
+						<div class="intro">
+							<p>Reactions represent split-second defensive maneuvers executed in response to immediate danger.</p>
+							<ul>
+								<li>They are <strong>not actions</strong>.</li>
+								<li>They are <strong>not free interrupts</strong>.</li>
+								<li>They are <strong>controlled, equipment-dependent responses</strong>.</li>
+							</ul>
+						</div>
+
+						<!-- Reaction Basics -->
+						<div class="rule-section">
+							<h3>1️⃣ Reaction Basics</h3>
+							<p>You may take:</p>
+							<ul>
+								<li><strong>1 Reaction per round</strong></li>
+								<li>Only when a valid trigger occurs</li>
+								<li>After being targeted</li>
+								<li>Before hit/miss is finalized</li>
+							</ul>
+
+							<div class="callout danger">
+								<p><strong>If you are:</strong></p>
+								<ul>
+									<li>Stunned</li>
+									<li>Paralyzed</li>
+									<li>Restrained (unless feature allows)</li>
+									<li>Exhausted</li>
+								</ul>
+								<p><strong>You cannot use Reactions.</strong></p>
+							</div>
+						</div>
+
+						<!-- Reaction Timing Window -->
+						<div class="rule-section highlight">
+							<h3>2️⃣ Reaction Timing Window</h3>
+							<p>The correct sequence:</p>
+							<ol>
+								<li>Attacker declares Action and target.</li>
+								<li>Target is now considered "targeted."</li>
+								<li><strong>Reaction window opens.</strong></li>
+								<li>Defender declares Reaction (if any).</li>
+								<li>Reaction modifies attack conditions.</li>
+								<li>Attack roll resolves.</li>
+								<li>Results are applied.</li>
+							</ol>
+
+							<div class="callout">
+								<p><strong>If no Reaction is declared before the roll resolves, the opportunity is lost.</strong></p>
+								<p><strong>You cannot react after seeing the result.</strong></p>
+							</div>
+						</div>
+
+						<!-- Equipment-Gated Reactions -->
+						<div class="rule-section">
+							<h3>3️⃣ Equipment-Gated Reactions</h3>
+							<p>Reactions are unlocked by weapon and armor properties.</p>
+							<div class="callout">
+								<strong>If you do not meet the requirement, you cannot perform that Reaction.</strong>
+							</div>
+
+							<!-- BLOCK -->
+							<div class="reaction-card block">
+								<h4>🛡 BLOCK (Guard Reaction)</h4>
+
+								<div class="reaction-requirement">
+									<strong>Requirement:</strong> Must wield a weapon or shield with the <strong>Guard</strong> tag.
+								</div>
+
+								<div class="reaction-trigger">
+									<strong>Trigger:</strong> You are targeted by a melee or ranged attack.
+								</div>
+
+								<div class="reaction-effect">
+									<strong>Effect:</strong>
+									<ul>
+										<li>Gain <strong>+3 AR</strong> against the triggering attack.</li>
+										<li>If the attack still hits:
+											<ul>
+												<li>Reduce damage by your <strong>CON modifier</strong> (minimum 1).</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<p>Block represents bracing and absorbing impact.</p>
+								<p>Block does not reposition you.</p>
+
+								<div class="restriction">
+									<strong>Block cannot be used against:</strong>
+									<ul>
+										<li>Effects that do not target AR.</li>
+										<li>Saving throw abilities (unless specified).</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- PARRY -->
+							<div class="reaction-card parry">
+								<h4>⚔ PARRY (Weapon Reaction)</h4>
+
+								<div class="reaction-requirement">
+									<strong>Requirement:</strong> Must wield a weapon with the <strong>Parry</strong> tag.
+								</div>
+
+								<div class="reaction-trigger">
+									<strong>Trigger:</strong> You are targeted by a melee attack.
+								</div>
+
+								<div class="reaction-effect">
+									<strong>Effect:</strong>
+									<ul>
+										<li>Gain <strong>+1 AR</strong> against the attack.</li>
+										<li>Make a <strong>Parry check</strong>:
+											<ul>
+												<li><strong>Roll:</strong> d20 + STR or DEX modifier + weapon proficiency</li>
+												<li>If your result ≥ attacker's final attack roll:
+													<ul>
+														<li>The attack is <strong>negated</strong>.</li>
+														<li>You may immediately <strong>Riposte</strong> for half weapon damage.</li>
+														<li>Riposte costs <strong>0 Stamina</strong>.</li>
+													</ul>
+												</li>
+												<li>If you fail:
+													<ul>
+														<li>Attack resolves normally (with the +1 AR applied).</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<div class="restriction">
+									<strong>Parry cannot be used against:</strong>
+									<ul>
+										<li>Ranged attacks</li>
+										<li>Area effects</li>
+										<li>Creatures two size categories larger (optional rule if desired)</li>
+									</ul>
+								</div>
+
+								<p class="note"><strong>Parry is high risk, high reward.</strong></p>
+							</div>
+
+							<!-- DODGE -->
+							<div class="reaction-card dodge">
+								<h4>🏃 DODGE (Mobility Reaction)</h4>
+
+								<div class="reaction-requirement">
+									<strong>Requirement:</strong> Must wear <strong>Light or Medium armor</strong>.
+									<br>Heavy armor prevents Dodge unless a feature overrides it.
+								</div>
+
+								<div class="reaction-trigger">
+									<strong>Trigger:</strong> You are targeted by an attack.
+								</div>
+
+								<div class="reaction-effect">
+									<strong>Effect:</strong>
+									<ul>
+										<li>The triggering attack is made at <strong>disadvantage</strong>.</li>
+										<li>If the attack misses:
+											<ul>
+												<li>You may reposition up to <strong>5 ft</strong>.</li>
+												<li>This movement does not provoke.</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<p>Dodge represents evasion, not mitigation.</p>
+
+								<div class="restriction">
+									<strong>Dodge cannot be used if:</strong>
+									<ul>
+										<li>You are Prone.</li>
+										<li>Your speed is 0.</li>
+										<li>You are Grappled (unless you break free first).</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Reaction Limits -->
+						<div class="rule-section">
+							<h3>4️⃣ Reaction Limits & Clarifications</h3>
+							<ul>
+								<li>You may only use <strong>1 Reaction per round</strong>.</li>
+								<li>Reactions cannot trigger other Reactions unless explicitly allowed.</li>
+								<li>Reactions cannot be stacked.</li>
+								<li>Reactions must match the trigger exactly.</li>
+								<li>Reactions do not cost your Move.</li>
+								<li>Forced movement does not trigger additional Reactions unless specified.</li>
+							</ul>
+						</div>
+
+						<!-- Monster Reactions -->
+						<div class="rule-section">
+							<h3>5️⃣ Monster Reactions</h3>
+							<p>Monsters may also have Reactions.</p>
+
+							<h4>Monster Reactions:</h4>
+							<ul>
+								<li>Follow the same timing rules.</li>
+								<li>Are limited to <strong>1 per round</strong> unless Apex-tier states otherwise.</li>
+								<li>Must have clear triggers.</li>
+							</ul>
+
+							<h4>Example monster triggers:</h4>
+							<ul>
+								<li>"When hit by a ranged attack…"</li>
+								<li>"When a hunter moves within 5 ft…"</li>
+								<li>"When a part breaks…"</li>
+							</ul>
+
+							<div class="callout">
+								<strong>Monsters obey the same physics.</strong>
+							</div>
+						</div>
+
+						<!-- Reaction Priority -->
+						<div class="rule-section">
+							<h3>6️⃣ Reaction Priority (Multiple Triggers)</h3>
+							<p>If multiple creatures can react to the same trigger:</p>
+
+							<div class="callout">
+								<strong>Resolve in this order:</strong>
+								<ol>
+									<li>Defender's Reaction</li>
+									<li>Attacker's Reaction (if applicable)</li>
+									<li>Other triggered abilities</li>
+								</ol>
+								<p>GM adjudicates conflicts.</p>
+							</div>
+						</div>
+
+						<!-- Interaction with Preparation -->
+						<div class="rule-section">
+							<h3>7️⃣ Interaction with Preparation</h3>
+							<p>If you prepared <strong>Guarded Stance</strong>:</p>
+							<ul>
+								<li>Your next Block or Dodge may cost <strong>0 Stamina</strong>.</li>
+							</ul>
+
+							<p>Notes:</p>
+							<ul>
+								<li>Preparation does not grant additional Reactions.</li>
+								<li>Preparation modifies the next valid Reaction only.</li>
+								<li>Preparation effects resolve before attack resolution.</li>
+							</ul>
+						</div>
+
+						<!-- Special Cases -->
+						<div class="rule-section">
+							<h3>8️⃣ Special Cases</h3>
+
+							<h4>Area Effects</h4>
+							<p>Reactions may apply if the effect explicitly targets you.</p>
+							<p>Dodge may apply if:</p>
+							<ul>
+								<li>The effect requires an attack roll.</li>
+							</ul>
+							<p>Dodge does not apply to:</p>
+							<ul>
+								<li>Pure saving throw effects unless ability says so.</li>
+							</ul>
+
+							<h4>Called Shots</h4>
+							<p>Reactions apply before determining if the part was hit.</p>
+							<p>If Parry negates the attack:</p>
+							<ul>
+								<li>The part is not struck.</li>
+								<li>No break progress occurs.</li>
+							</ul>
+
+							<h4>Forced Movement</h4>
+							<p>Reactions may reposition you.</p>
+							<p>If reposition removes you from valid range:</p>
+							<ul>
+								<li>The attack still resolves if originally valid.</li>
+							</ul>
+							<p>Reaction movement occurs after resolution unless stated otherwise.</p>
+						</div>
+
+						<!-- Design Philosophy -->
+						<div class="rule-section highlight">
+							<h3>9️⃣ Design Philosophy of Reactions</h3>
+							<div class="philosophy-grid">
+								<div class="philosophy-card">
+									<strong>Block = Stability</strong>
+								</div>
+								<div class="philosophy-card">
+									<strong>Parry = Skill</strong>
+								</div>
+								<div class="philosophy-card">
+									<strong>Dodge = Mobility</strong>
+								</div>
+							</div>
+
+							<p>Each reflects a combat archetype.</p>
+							<div class="callout">
+								<p><strong>Your gear determines your defense.</strong></p>
+								<p>This reinforces: Weapons define playstyle.</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- PREPARATION ACTIONS -->
+					<section id="preparation-actions" class="major-section">
+						<h2 class="section-title">Preparation Actions</h2>
+						<p class="section-subtitle">Focus Before Force</p>
+
+						<div class="intro">
+							<h3>What Is a Preparation?</h3>
+							<p>A Preparation is a deliberate tactical setup.</p>
+							<p>You replace your Action with a Preparation to gain a defined benefit on your next turn or Reaction.</p>
+							<p>Preparation represents focus, footing, breath control, or battlefield setup.</p>
+							<ul>
+								<li>It is <strong>not passive</strong>.</li>
+								<li>It is <strong>intentional tempo control</strong>.</li>
+							</ul>
+						</div>
+
+						<!-- Core Rules -->
+						<div class="rule-section highlight">
+							<h3>Core Rules</h3>
+							<p><strong>Replace your Action with one Preparation.</strong></p>
+							<ul>
+								<li><strong>Costs 0 Stamina</strong></li>
+								<li>You may move up to your base speed (no Sprint)</li>
+								<li>You may take one supporting Fast Action</li>
+								<li>Taking damage forces <strong>CON Save DC 10</strong> or Preparation ends</li>
+								<li>If you successfully maintain it, regain <strong>+2 Stamina</strong> at end of turn</li>
+								<li>Effects expire at the start of your next turn unless triggered</li>
+							</ul>
+							<div class="callout">
+								<strong>You may only have one Preparation active at a time.</strong>
+							</div>
+						</div>
+
+						<!-- Available Preparations -->
+						<div class="rule-section">
+							<h3>Available Preparations</h3>
+
+							<!-- Steady Aim -->
+							<div class="prep-card">
+								<h4>🎯 Steady Aim</h4>
+								<p class="prep-effect">Your next ranged attack:</p>
+								<ul>
+									<li>Gains <strong>+2 to hit</strong></li>
+									<li>Ignores Called Shot penalty</li>
+									<li>Ignores <strong>1 AR</strong></li>
+								</ul>
+								<p class="prep-note">Expires at start of your next turn.</p>
+								<p class="prep-usage"><strong>Best used for precision part breaks.</strong></p>
+							</div>
+
+							<!-- Guarded Stance -->
+							<div class="prep-card">
+								<h4>🛡 Guarded Stance</h4>
+								<p class="prep-effect">Until your next turn:</p>
+								<ul>
+									<li>Gain <strong>+1 AR</strong></li>
+									<li>Advantage on DEX saves vs forced movement</li>
+									<li>Your next Block or Dodge costs <strong>0 Stamina</strong></li>
+								</ul>
+								<p class="prep-usage"><strong>Ideal when bracing against pressure.</strong></p>
+							</div>
+
+							<!-- Centered Breath -->
+							<div class="prep-card">
+								<h4>🌬 Centered Breath</h4>
+								<p class="prep-effect">Immediately regain <strong>1d4 Stamina</strong>.</p>
+								<p class="prep-note">Does not persist to next turn.</p>
+								<p class="prep-usage"><strong>Best used during exhaustion risk.</strong></p>
+							</div>
+
+							<!-- Study Target -->
+							<div class="prep-card">
+								<h4>👁 Study Target</h4>
+								<p class="prep-effect">Mark a creature within 60 ft.</p>
+								<p>Your next Called Shot against it has <strong>advantage</strong>.</p>
+								<p class="prep-optional"><strong>Optional:</strong> Make DC 10 INT or INS check to learn one behavior cue.</p>
+								<p class="prep-note">Expires at start of your next turn.</p>
+							</div>
+
+							<!-- Prime Trap -->
+							<div class="prep-card">
+								<h4>🧰 Prime Trap</h4>
+								<p class="prep-effect">Your next trap or gadget placed within 10 ft:</p>
+								<ul>
+									<li>Is set as a <strong>Fast Action</strong></li>
+									<li>Save DC increases by <strong>+1</strong></li>
+								</ul>
+								<p class="prep-note">Must be used on your next turn.</p>
+							</div>
+
+							<!-- Maintain Channel -->
+							<div class="prep-card">
+								<h4>🔥 Maintain Channel</h4>
+								<p class="prep-effect">Preserve your weapon's stacking mechanic.</p>
+								<ul>
+									<li>Prevents decay this round</li>
+									<li>Gain <strong>+1 stack</strong> at end of turn (to cap)</li>
+								</ul>
+								<p class="prep-note">Applies to: Momentum, Focus, Tension, Resolve, Clusters, etc.</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- EQUIPMENT GATING -->
+					<section id="equipment-gating" class="major-section">
+						<h2 class="section-title">Equipment Gating</h2>
+						<p class="section-subtitle">Your Gear Defines Your Options</p>
+
+						<div class="intro">
+							<p>In Untamed, equipment does not just modify numbers.</p>
+							<p>It determines what actions you are physically capable of performing.</p>
+							<div class="callout">
+								<strong>You cannot perform combat options your equipment does not enable.</strong>
+							</div>
+						</div>
+
+						<!-- Reaction Access Is Gated -->
+						<div class="rule-section highlight">
+							<h3>1️⃣ Reaction Access Is Gated</h3>
+							<p>You may only use a Reaction if you meet its equipment requirement.</p>
+
+							<div class="gating-box">
+								<h4>Block</h4>
+								<p><strong>Requires:</strong></p>
+								<ul>
+									<li>A weapon or shield with the <strong>Guard</strong> tag.</li>
+								</ul>
+								<p class="restriction-note">If you do not have Guard, you cannot Block.</p>
+							</div>
+
+							<div class="gating-box">
+								<h4>Parry</h4>
+								<p><strong>Requires:</strong></p>
+								<ul>
+									<li>A weapon with the <strong>Parry</strong> tag.</li>
+									<li>The attack must be melee or explicitly parryable.</li>
+								</ul>
+								<p class="restriction-note">Ranged, area, and colossal slam attacks may not be parried unless stated.</p>
+							</div>
+
+							<div class="gating-box">
+								<h4>Dodge</h4>
+								<p><strong>Requires:</strong></p>
+								<ul>
+									<li>Light or Medium Armor.</li>
+									<li>Speed greater than 0.</li>
+								</ul>
+								<p class="restriction-note">Heavy Armor disables Dodge unless an ability overrides it.</p>
+								<p class="restriction-note">If you are Restrained, you cannot Dodge.</p>
+							</div>
+						</div>
+
+						<!-- Movement Is Gated -->
+						<div class="rule-section">
+							<h3>2️⃣ Movement Is Gated</h3>
+							<p>Certain equipment modifies your mobility.</p>
+
+							<div class="gating-box">
+								<h4>Heavy Armor</h4>
+								<ul>
+									<li><strong>–5 ft movement</strong></li>
+									<li>Cannot Dodge</li>
+									<li>Disadvantage on Stealth</li>
+								</ul>
+							</div>
+
+							<div class="gating-box">
+								<h4>Rooting Tag</h4>
+								<p>If an ability has <strong>Rooting</strong>, you cannot move while resolving it.</p>
+								<p>If moved involuntarily, the effect may cancel.</p>
+							</div>
+						</div>
+
+						<!-- Weapon Tags Define Permissions -->
+						<div class="rule-section highlight">
+							<h3>3️⃣ Weapon Tags Define Permissions</h3>
+							<p>Weapon tags are mechanical keys.</p>
+							<p>If a tag grants a capability, it is usable.</p>
+							<div class="callout">
+								<strong>If you do not have the tag, you do not have the capability.</strong>
+							</div>
+
+							<h4>Examples:</h4>
+							<div class="tag-grid">
+								<div class="tag-box"><strong>Guard</strong> → enables Block</div>
+								<div class="tag-box"><strong>Parry</strong> → enables Parry</div>
+								<div class="tag-box"><strong>Reach</strong> → extends melee distance</div>
+								<div class="tag-box"><strong>Thrown</strong> → allows ranged use</div>
+								<div class="tag-box"><strong>Reload</strong> → requires Load action</div>
+								<div class="tag-box"><strong>Commitment</strong> → cannot cancel once declared</div>
+								<div class="tag-box"><strong>Wind-up</strong> → resolves next turn</div>
+								<div class="tag-box"><strong>Heavy</strong> → cannot be off-hand</div>
+								<div class="tag-box"><strong>Two-Handed</strong> → requires both hands</div>
+							</div>
+
+							<div class="callout">
+								<strong>If a tag conflicts with a general rule, the tag overrides.</strong>
+							</div>
+						</div>
+
+						<!-- Stance & Channel Gating -->
+						<div class="rule-section">
+							<h3>4️⃣ Stance & Channel Gating</h3>
+							<p>Some weapons define internal modes.</p>
+							<p>You must be in the correct state to use certain techniques.</p>
+
+							<h4>Examples:</h4>
+
+							<div class="stance-box">
+								<h5>Spear & Shield:</h5>
+								<ul>
+									<li>Sentinel Stance unlocks defensive counters.</li>
+									<li>Assault Stance unlocks offensive jab.</li>
+								</ul>
+							</div>
+
+							<div class="stance-box">
+								<h5>Arbalest:</h5>
+								<ul>
+									<li>Must be Braced to gain Tension bonuses.</li>
+								</ul>
+							</div>
+
+							<div class="stance-box">
+								<h5>Greatshield:</h5>
+								<ul>
+									<li>Must maintain position to preserve Resolve.</li>
+								</ul>
+							</div>
+
+							<div class="callout">
+								<strong>If you lose the required state, the ability fails or loses benefits.</strong>
+							</div>
+						</div>
+
+						<!-- Conditions Override Equipment -->
+						<div class="rule-section">
+							<h3>5️⃣ Conditions Override Equipment</h3>
+							<p>Conditions supersede equipment permissions.</p>
+							<p>If a condition says you cannot Move, Act, or React:</p>
+							<div class="callout danger">
+								<strong>Equipment does not override this unless explicitly stated.</strong>
+							</div>
+
+							<h4>Examples:</h4>
+							<ul>
+								<li><strong>Restrained</strong> → cannot Dodge</li>
+								<li><strong>Dazed</strong> → cannot React</li>
+								<li><strong>Stunned</strong> → cannot Move/Act/React</li>
+							</ul>
+						</div>
+
+						<!-- Multi-Weapon & Hand Requirements -->
+						<div class="rule-section">
+							<h3>6️⃣ Multi-Weapon & Hand Requirements</h3>
+							<p>If wielding:</p>
+
+							<div class="gating-box">
+								<h4>Two-Handed Weapon:</h4>
+								<ul>
+									<li>Cannot simultaneously benefit from a shield unless specified.</li>
+								</ul>
+							</div>
+
+							<div class="gating-box">
+								<h4>Reload weapons:</h4>
+								<ul>
+									<li>Must have a free hand or the required mechanism to Load.</li>
+								</ul>
+							</div>
+
+							<div class="callout">
+								<strong>If you lose a hand (Grappled weapon arm, disarmed, etc.), you lose access to that weapon's gated options.</strong>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Navigation */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover {
+				color: var(--amber);
+			}
+
+			/* Breadcrumb */
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			/* Page Header */
+			.page-header {
+				padding: 2rem 0 2rem;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 2rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			/* Table of Contents */
+			.toc {
+				background: var(--moss-green);
+				padding: 2rem;
+				border-radius: 12px;
+				border: 2px solid var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.toc h2 {
+				color: var(--amber);
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.toc ul {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.toc li {
+				margin-bottom: 0.75rem;
+			}
+
+			.toc a {
+				color: var(--cream);
+				text-decoration: none;
+				font-size: 1.1rem;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.toc a:hover {
+				color: var(--amber);
+			}
+
+			.coming-soon-badge {
+				display: inline-block;
+				padding: 0.2rem 0.5rem;
+				background: var(--earth-brown);
+				color: var(--cream);
+				border-radius: 4px;
+				font-size: 0.75rem;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-left: 0.5rem;
+			}
+
+			/* Content */
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			/* Major Sections */
+			.major-section {
+				margin-bottom: 4rem;
+				scroll-margin-top: 100px;
+			}
+
+			.major-section:last-child {
+				margin-bottom: 2rem;
+			}
+
+			.section-title {
+				font-size: 2.5rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+				padding-bottom: 1rem;
+				border-bottom: 3px solid var(--amber);
+			}
+
+			.section-subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+				margin-bottom: 2rem;
+			}
+
+			.intro {
+				background: var(--moss-green);
+				padding: 2rem;
+				border-radius: 12px;
+				border: 2px solid var(--amber);
+				margin-bottom: 2rem;
+			}
+
+			.intro p {
+				margin-bottom: 0.5rem;
+			}
+
+			.intro p:last-child {
+				margin-bottom: 0;
+			}
+
+			.rule-section {
+				background: var(--forest-green);
+				padding: 2rem;
+				border-radius: 12px;
+				margin-bottom: 2rem;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.rule-section.highlight {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%);
+			}
+
+			.rule-section h3 {
+				color: var(--amber);
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section h4 {
+				color: var(--leaf-green);
+				font-size: 1.2rem;
+				margin: 1.5rem 0 0.75rem;
+			}
+
+			.rule-section h5 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				margin: 1rem 0 0.5rem;
+			}
+
+			.rule-section ul {
+				margin-left: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section ol {
+				margin-left: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section li {
+				margin-bottom: 0.5rem;
+			}
+
+			.subsection {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border-left: 3px solid var(--leaf-green);
+			}
+
+			/* Callout */
+			.callout {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				margin: 1rem 0;
+			}
+
+			.callout p {
+				margin-bottom: 0.5rem;
+			}
+
+			.callout p:last-child {
+				margin-bottom: 0;
+			}
+
+			.callout ol, .callout ul {
+				margin-top: 0.5rem;
+			}
+
+			/* Formula */
+			.formula {
+				background: var(--forest-dark);
+				padding: 1rem;
+				text-align: center;
+				font-family: 'Courier New', monospace;
+				font-size: 1.1rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border: 2px solid var(--leaf-green);
+				color: var(--amber);
+			}
+
+			/* Resolution Box */
+			.resolution-box {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1.5rem 0;
+				border: 2px solid var(--moss-green);
+			}
+
+			.resolution-box h4 {
+				margin-top: 0;
+				color: var(--amber);
+			}
+
+			/* Coming Soon Box */
+			.coming-soon-box {
+				background: var(--forest-green);
+				padding: 3rem;
+				border-radius: 12px;
+				border: 2px dashed var(--earth-brown);
+				text-align: center;
+				margin-top: 2rem;
+			}
+
+			.coming-soon-box p {
+				font-size: 1.1rem;
+				color: var(--leaf-green);
+				margin-bottom: 0.5rem;
+			}
+
+			.coming-soon-box p:first-child {
+				font-size: 1.5rem;
+			}
+
+			/* Note */
+			.note {
+				font-style: italic;
+				color: var(--leaf-green);
+				font-size: 0.95rem;
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.section-title {
+					font-size: 2rem;
+				}
+
+				.rule-section {
+					padding: 1.5rem;
+				}
+
+				.toc {
+					padding: 1.5rem;
+				}
+			}
+
+			/* Reaction Cards */
+			.reaction-card {
+				background: var(--forest-dark);
+				padding: 2rem;
+				border-radius: 12px;
+				margin: 2rem 0;
+				border: 3px solid var(--amber);
+			}
+
+			.reaction-card h4 {
+				color: var(--amber);
+				font-size: 1.5rem;
+				margin-top: 0;
+				margin-bottom: 1.5rem;
+			}
+
+			.reaction-requirement,
+			.reaction-trigger,
+			.reaction-effect {
+				background: var(--forest-green);
+				padding: 1rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+			}
+
+			.reaction-requirement {
+				border-left: 4px solid var(--moss-green);
+			}
+
+			.reaction-trigger {
+				border-left: 4px solid var(--leaf-green);
+			}
+
+			.reaction-effect {
+				border-left: 4px solid var(--amber);
+			}
+
+			.restriction {
+				background: var(--earth-brown);
+				padding: 1rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border-left: 4px solid #d84a4a;
+			}
+
+			/* Philosophy Grid */
+			.philosophy-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+				gap: 1rem;
+				margin: 1.5rem 0;
+			}
+
+			.philosophy-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				text-align: center;
+				border: 2px solid var(--amber);
+				font-size: 1.1rem;
+				color: var(--amber);
+			}
+
+			/* Callout Danger Variant */
+			.callout.danger {
+				border-left-color: #d84a4a;
+			}
+
+			.intro ul {
+				margin-left: 1.5rem;
+				margin-top: 1rem;
+			}
+
+			.intro li {
+				margin-bottom: 0.5rem;
+			}
+
+			.intro h3 {
+				color: var(--amber);
+				font-size: 1.3rem;
+				margin-bottom: 1rem;
+			}
+
+			/* Preparation Cards */
+			.prep-card {
+				background: var(--forest-dark);
+				padding: 2rem;
+				border-radius: 12px;
+				margin: 2rem 0;
+				border: 3px solid var(--leaf-green);
+				transition: all 0.3s ease;
+			}
+
+			.prep-card:hover {
+				border-color: var(--amber);
+				transform: translateY(-2px);
+			}
+
+			.prep-card h4 {
+				color: var(--amber);
+				font-size: 1.4rem;
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+
+			.prep-effect {
+				font-weight: 600;
+				color: var(--leaf-green);
+				margin-bottom: 0.75rem;
+			}
+
+			.prep-note {
+				font-style: italic;
+				color: var(--moss-green);
+				font-size: 0.95rem;
+				margin-top: 0.75rem;
+			}
+
+			.prep-usage {
+				background: var(--moss-green);
+				padding: 0.75rem;
+				border-radius: 6px;
+				margin-top: 1rem;
+				border-left: 3px solid var(--amber);
+			}
+
+			.prep-optional {
+				background: var(--forest-green);
+				padding: 0.75rem;
+				border-radius: 6px;
+				margin: 0.75rem 0;
+				border-left: 3px solid var(--leaf-green);
+			}
+
+			/* Equipment Gating Styles */
+			.gating-box {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1.5rem 0;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.gating-box h4 {
+				color: var(--amber);
+				font-size: 1.2rem;
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+
+			.gating-box h5 {
+				color: var(--leaf-green);
+				font-size: 1.1rem;
+				margin-top: 0;
+				margin-bottom: 0.75rem;
+			}
+
+			.restriction-note {
+				font-style: italic;
+				color: var(--moss-green);
+				font-size: 0.95rem;
+				margin-top: 0.75rem;
+			}
+
+			/* Tag Grid */
+			.tag-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 1rem;
+				margin: 1.5rem 0;
+			}
+
+			.tag-box {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				border: 2px solid var(--leaf-green);
+				font-size: 0.95rem;
+				transition: all 0.3s ease;
+			}
+
+			.tag-box:hover {
+				border-color: var(--amber);
+				background: var(--moss-green);
+			}
+
+			/* Stance Box */
+			.stance-box {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border-left: 4px solid var(--leaf-green);
+			}
+
+			.stance-box h5 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				margin-top: 0;
+				margin-bottom: 0.75rem;
+			}
+
+			/* Smooth Scrolling */
+			html {
+				scroll-behavior: smooth;
+			}
+		</style>
+	</body>
+</html>
