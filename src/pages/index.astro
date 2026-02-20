@@ -1,5 +1,4 @@
 ---
-
 ---
 
 <html lang="en">
@@ -9,9 +8,328 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Untamed - A Survival Monster Hunting TTRPG</title>
+		<meta name="description" content="A tactical monster-hunting RPG where stamina management, terrain, and preparation decide survival." />
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<!-- Hero Section -->
+		<header class="hero">
+			<div class="container">
+				<h1 class="title">UNTAMED</h1>
+				<p class="tagline">A Survival Monster Hunting TTRPG</p>
+				<p class="pitch">
+					A tactical monster-hunting RPG where stamina management, terrain, and preparation decide survival.
+					Every monster is a living puzzle. Every biome evolves. The wild remembers what you do.
+				</p>
+				<div class="cta-buttons">
+					<a href="/first-hunt" class="btn btn-primary">Start Playing</a>
+					<a href="/quick-reference" class="btn btn-secondary">Quick Reference</a>
+					<a href="/rules" class="btn btn-tertiary">Read the Rules</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- Features Section -->
+		<section class="features">
+			<div class="container">
+				<h2>Why Untamed?</h2>
+				<div class="feature-grid">
+					<div class="feature-card">
+						<span class="icon">🌲</span>
+						<h3>The Wild is Alive</h3>
+						<p>Living, shifting ecosystems that remember your actions. No static dungeons. Just consequences.</p>
+					</div>
+					<div class="feature-card">
+						<span class="icon">⚔️</span>
+						<h3>Tactical Combat</h3>
+						<p>Stamina-based action economy. Every move matters. Positioning, preparation, and timing win fights.</p>
+					</div>
+					<div class="feature-card">
+						<span class="icon">🦴</span>
+						<h3>Hunt & Craft</h3>
+						<p>No XP. No levels. Growth comes from mastering weapons and crafting from the monsters you defeat.</p>
+					</div>
+					<div class="feature-card">
+						<span class="icon">🧠</span>
+						<h3>Monsters Are Puzzles</h3>
+						<p>Every creature is an ecological force with behaviors, weaknesses, and breakable parts. Learn or die.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Quick Links -->
+		<section class="quick-links">
+			<div class="container">
+				<h2>Explore the Companion</h2>
+				<div class="links-grid">
+					<a href="/character" class="link-card">
+						<h3>Character Creation</h3>
+						<p>Build your hunter →</p>
+					</a>
+					<a href="/bestiary" class="link-card">
+						<h3>Bestiary</h3>
+						<p>Study your prey →</p>
+					</a>
+					<a href="/field-guides/meridia" class="link-card">
+						<h3>Field Guide: Meridia</h3>
+						<p>Explore the forest →</p>
+					</a>
+					<a href="/gm-guide" class="link-card">
+						<h3>GM Guide</h3>
+						<p>Run the hunt →</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<p>No chosen ones. No kingdoms to save. Just hunters, monsters, weather, and consequences.</p>
+			</div>
+		</footer>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.6;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Hero Section */
+			.hero {
+				background: linear-gradient(135deg, var(--forest-dark) 0%, var(--forest-green) 100%);
+				padding: 6rem 0;
+				text-align: center;
+				border-bottom: 3px solid var(--amber);
+			}
+
+			.title {
+				font-size: 5rem;
+				font-weight: 900;
+				letter-spacing: 0.5rem;
+				color: var(--amber);
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+				margin-bottom: 0.5rem;
+			}
+
+			.tagline {
+				font-size: 1.5rem;
+				color: var(--leaf-green);
+				text-transform: uppercase;
+				letter-spacing: 0.3rem;
+				margin-bottom: 2rem;
+			}
+
+			.pitch {
+				font-size: 1.25rem;
+				max-width: 800px;
+				margin: 0 auto 3rem;
+				color: var(--cream);
+				line-height: 1.8;
+			}
+
+			.cta-buttons {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.btn {
+				padding: 1rem 2.5rem;
+				text-decoration: none;
+				font-weight: 600;
+				border-radius: 8px;
+				transition: all 0.3s ease;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				letter-spacing: 0.05rem;
+			}
+
+			.btn-primary {
+				background: var(--amber);
+				color: var(--forest-dark);
+			}
+
+			.btn-primary:hover {
+				background: #e0b568;
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(212, 162, 87, 0.4);
+			}
+
+			.btn-secondary {
+				background: var(--moss-green);
+				color: var(--cream);
+			}
+
+			.btn-secondary:hover {
+				background: var(--leaf-green);
+				transform: translateY(-2px);
+			}
+
+			.btn-tertiary {
+				background: transparent;
+				color: var(--cream);
+				border: 2px solid var(--earth-brown);
+			}
+
+			.btn-tertiary:hover {
+				background: var(--earth-brown);
+				border-color: var(--amber);
+			}
+
+			/* Features Section */
+			.features {
+				padding: 5rem 0;
+				background: var(--forest-green);
+			}
+
+			.features h2 {
+				text-align: center;
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.feature-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 2rem;
+			}
+
+			.feature-card {
+				background: var(--forest-dark);
+				padding: 2rem;
+				border-radius: 12px;
+				text-align: center;
+				border: 2px solid var(--earth-brown);
+				transition: all 0.3s ease;
+			}
+
+			.feature-card:hover {
+				border-color: var(--amber);
+				transform: translateY(-4px);
+			}
+
+			.icon {
+				font-size: 3rem;
+				display: block;
+				margin-bottom: 1rem;
+			}
+
+			.feature-card h3 {
+				color: var(--leaf-green);
+				margin-bottom: 0.5rem;
+			}
+
+			/* Quick Links */
+			.quick-links {
+				padding: 5rem 0;
+				background: var(--forest-dark);
+			}
+
+			.quick-links h2 {
+				text-align: center;
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.links-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 1.5rem;
+			}
+
+			.link-card {
+				background: var(--forest-green);
+				padding: 2rem;
+				border-radius: 8px;
+				text-decoration: none;
+				color: var(--cream);
+				border: 2px solid transparent;
+				transition: all 0.3s ease;
+			}
+
+			.link-card:hover {
+				border-color: var(--amber);
+				background: var(--moss-green);
+				transform: translateY(-2px);
+			}
+
+			.link-card h3 {
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.link-card p {
+				color: var(--leaf-green);
+			}
+
+			/* Footer */
+			footer {
+				padding: 3rem 0;
+				background: var(--forest-dark);
+				text-align: center;
+				border-top: 3px solid var(--earth-brown);
+				color: var(--moss-green);
+				font-style: italic;
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.title {
+					font-size: 3rem;
+				}
+
+				.tagline {
+					font-size: 1rem;
+				}
+
+				.pitch {
+					font-size: 1rem;
+				}
+
+				.features h2,
+				.quick-links h2 {
+					font-size: 2rem;
+				}
+
+				.cta-buttons {
+					flex-direction: column;
+					align-items: stretch;
+				}
+
+				.btn {
+					width: 100%;
+				}
+			}
+		</style>
 	</body>
 </html>

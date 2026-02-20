@@ -1,0 +1,620 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Stamina & Turn Economy - Untamed</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/rules">← Back to Rules</a>
+				</div>
+
+				<header class="page-header">
+					<h1>Stamina & Turn Economy</h1>
+					<p class="subtitle">The lifeblood of combat</p>
+				</header>
+
+				<article class="content">
+					<!-- Core Philosophy -->
+					<section class="rule-section highlight">
+						<h2>1️⃣ Core Philosophy: Stamina Is Tempo</h2>
+						<p>In Untamed:</p>
+						<ul class="key-points">
+							<li><strong>Stamina represents breath, footing, balance, and combat rhythm.</strong></li>
+							<li>It is <strong>not mana</strong>.</li>
+							<li>It is <strong>not optional</strong>.</li>
+							<li>Running out is <strong>dangerous</strong>.</li>
+							<li>Forcing stamina loss is a <strong>valid strategy</strong>.</li>
+						</ul>
+						<div class="callout">
+							<strong>Combat is not about trading HP.</strong> It is about controlling exhaustion. When stamina collapses, fights end.
+						</div>
+					</section>
+
+					<!-- Combat Structure -->
+					<section class="rule-section">
+						<h2>2️⃣ Combat Structure</h2>
+						<h3>Rounds</h3>
+						<ul>
+							<li>Each round represents <strong>~6 seconds</strong>.</li>
+							<li>Combat proceeds in <strong>Initiative order</strong>.</li>
+							<li><strong>Initiative = d20 + DEX modifier.</strong></li>
+							<li>Ties → higher INS acts first.</li>
+						</ul>
+					</section>
+
+					<!-- On Your Turn -->
+					<section class="rule-section">
+						<h2>3️⃣ On Your Turn</h2>
+						<p>On your turn, you may:</p>
+
+						<div class="action-block move">
+							<h3>🟢 Move</h3>
+							<ul>
+								<li>Move up to your base Move Speed (30 ft default).</li>
+								<li>Moving within base speed costs <strong>0 Stamina</strong>.</li>
+							</ul>
+						</div>
+
+						<div class="action-block action">
+							<h3>🔵 Action</h3>
+							<ul>
+								<li>Attack</li>
+								<li>Use a Technique</li>
+								<li>Set a trap</li>
+								<li>Interact meaningfully with environment</li>
+								<li>Most Actions cost <strong>1 Stamina</strong> unless specified otherwise.</li>
+							</ul>
+						</div>
+
+						<div class="action-block fast">
+							<h3>🟡 Fast Action</h3>
+							<ul>
+								<li>Minor quick task (drink tonic, swap weapon, trigger ability)</li>
+								<li><strong>Maximum 1 per turn</strong></li>
+								<li>Costs Stamina only if specified</li>
+							</ul>
+						</div>
+
+						<div class="action-block prep">
+							<h3>🟣 Preparation (Replaces Action)</h3>
+							<ul>
+								<li>Costs <strong>0 Stamina</strong></li>
+								<li>Sets up a benefit for next turn or reaction</li>
+								<li>If damaged: CON save DC 10 or lose Preparation</li>
+								<li>You may move up to base speed while preparing</li>
+								<li>Sprinting cancels Preparation</li>
+							</ul>
+						</div>
+
+						<div class="action-block reaction">
+							<h3>⚪ Reaction (1 per round)</h3>
+							<ul>
+								<li>Triggered outside your turn</li>
+								<li>Costs <strong>1 Stamina</strong> unless specified</li>
+								<li><strong>You cannot React if:</strong>
+									<ul>
+										<li>Stunned</li>
+										<li>Paralyzed</li>
+										<li>Restrained (unless feature says otherwise)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Stamina Rules -->
+					<section class="rule-section">
+						<h2>4️⃣ Stamina Rules</h2>
+
+						<h3>Starting Stamina</h3>
+						<div class="formula">
+							<strong>6 + CON modifier</strong> (minimum 1)
+						</div>
+						<p class="note">This is the canonical formula. Lock this. Do not change elsewhere.</p>
+
+						<h3>Stamina Costs</h3>
+						<table class="cost-table">
+							<thead>
+								<tr>
+									<th>Action</th>
+									<th>Cost</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Basic Attack</td>
+									<td>1 STA</td>
+								</tr>
+								<tr>
+									<td>Most Techniques</td>
+									<td>1+ STA (as listed)</td>
+								</tr>
+								<tr>
+									<td>Dodge</td>
+									<td>1 STA</td>
+								</tr>
+								<tr>
+									<td>Block</td>
+									<td>1 STA</td>
+								</tr>
+								<tr>
+									<td>Parry</td>
+									<td>1 STA</td>
+								</tr>
+								<tr>
+									<td>Sprint (per 10 ft beyond base)</td>
+									<td>1 STA</td>
+								</tr>
+								<tr>
+									<td>Stand from Prone</td>
+									<td>2 STA</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h3>Sprinting</h3>
+						<ul>
+							<li>You may exceed base movement.</li>
+							<li>For every 10 ft beyond base speed: Pay <strong>1 Stamina</strong>.</li>
+							<li>Difficult terrain counts as double movement before sprint calculation.</li>
+							<li>Climbing or swimming may require Sprint cost at GM discretion.</li>
+						</ul>
+					</section>
+
+					<!-- End of Turn Recovery -->
+					<section class="rule-section highlight">
+						<h2>5️⃣ End of Turn Recovery</h2>
+						<p>You regain stamina based on your choices.</p>
+
+						<div class="recovery-box">
+							<h3>Standard Turn (You spent stamina)</h3>
+							<p>→ No automatic recovery.</p>
+						</div>
+
+						<div class="recovery-box breathing">
+							<h3>Controlled Turn (No Action AND No Fast Action taken)</h3>
+							<ul>
+								<li>You may move up to base speed.</li>
+								<li>You may <strong>NOT</strong> Sprint.</li>
+								<li>At end of turn: <strong>Regain 4 Stamina</strong>.</li>
+							</ul>
+							<p class="note">This is called a <strong>Breathing Turn</strong>. Breathing Turns are intentional tactical resets.</p>
+						</div>
+					</section>
+
+					<!-- Short Rest -->
+					<section class="rule-section">
+						<h2>6️⃣ Short Rest</h2>
+						<p><strong>~10 minutes of downtime.</strong></p>
+						<ul>
+							<li>Restore Stamina to full.</li>
+							<li>Remove Exhausted condition (if not reduced to 0 HP).</li>
+						</ul>
+					</section>
+
+					<!-- Exhaustion State -->
+					<section class="rule-section danger">
+						<h2>7️⃣ Exhaustion State (0 Stamina)</h2>
+						<p>If you reach 0 Stamina:</p>
+						<div class="callout danger">
+							<strong>You gain the Exhausted condition.</strong>
+						</div>
+
+						<h3>Exhausted:</h3>
+						<ul class="danger-list">
+							<li>Stamina is set to 0.</li>
+							<li>You <strong>cannot take Actions</strong>.</li>
+							<li>You <strong>cannot take Fast Actions</strong>.</li>
+							<li>Movement is <strong>halved</strong>.</li>
+							<li>Attacks against you have <strong>advantage</strong>.</li>
+							<li>You <strong>automatically fail STR and DEX saves</strong>.</li>
+						</ul>
+
+						<h3>On your next turn:</h3>
+						<p>If you take no Action:</p>
+						<ul>
+							<li>Regain 4 Stamina at end of turn.</li>
+							<li>Exhausted ends.</li>
+						</ul>
+
+						<div class="callout">
+							<strong>Exhaustion is not death.</strong> It is collapse.
+						</div>
+					</section>
+
+					<!-- Monster Stamina -->
+					<section class="rule-section">
+						<h2>8️⃣ Monster Stamina (Unified Rule)</h2>
+						<p>Monsters follow the same stamina structure:</p>
+						<ul>
+							<li><strong>Stamina = 10 + CON score.</strong></li>
+							<li>They spend stamina on attacks and abilities.</li>
+							<li><strong>When monsters reach 0 Stamina:</strong>
+								<ul>
+									<li>They lose access to Signature Moves.</li>
+									<li>Movement is reduced by half.</li>
+									<li>They may trigger collapse behavior (if listed).</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="callout">
+							<strong>Monsters do not ignore stamina.</strong> They obey the same physics.
+						</div>
+					</section>
+
+					<!-- Action Economy Constraints -->
+					<section class="rule-section">
+						<h2>9️⃣ Action Economy Constraints</h2>
+						<h3>Hard Limits:</h3>
+						<ul>
+							<li><strong>1 Action</strong> per turn.</li>
+							<li><strong>1 Fast Action</strong> per turn.</li>
+							<li><strong>1 Reaction</strong> per round.</li>
+							<li>Cannot stack multiple Preparations.</li>
+							<li>Cannot chain Fast Actions.</li>
+							<li><strong>Monsters are allowed more actions</strong> depending on their tier.</li>
+						</ul>
+						<p class="note">This keeps stamina meaningful.</p>
+					</section>
+
+					<!-- The Combat Rhythm -->
+					<section class="rule-section highlight">
+						<h2>🔟 The Combat Rhythm (Table Reminder)</h2>
+						<p>Combat alternates between:</p>
+						<ul class="rhythm-list">
+							<li><strong>Pressure Turns</strong> (spending stamina)</li>
+							<li><strong>Breathing Turns</strong> (recovering stamina)</li>
+							<li><strong>Collapse States</strong> (Exhaustion)</li>
+						</ul>
+
+						<div class="callout">
+							<p><strong>If players never feel pressure</strong>, stamina costs are too low.</p>
+							<p><strong>If players never need Breathing Turns</strong>, monsters are too weak.</p>
+							<p><strong>If players collapse every fight</strong>, stamina costs are too high.</p>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+				--danger-red: #d84a4a;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Navigation */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover {
+				color: var(--amber);
+			}
+
+			/* Breadcrumb */
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			/* Page Header */
+			.page-header {
+				padding: 2rem 0 3rem;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			/* Content */
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			.rule-section {
+				background: var(--forest-green);
+				padding: 2rem;
+				border-radius: 12px;
+				margin-bottom: 2rem;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.rule-section.highlight {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%);
+			}
+
+			.rule-section.danger {
+				border-color: var(--danger-red);
+			}
+
+			.rule-section h2 {
+				color: var(--amber);
+				font-size: 1.75rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section h3 {
+				color: var(--leaf-green);
+				font-size: 1.25rem;
+				margin: 1.5rem 0 0.75rem;
+			}
+
+			.rule-section ul {
+				margin-left: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section li {
+				margin-bottom: 0.5rem;
+			}
+
+			.key-points {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.key-points li {
+				padding-left: 1.5rem;
+				position: relative;
+			}
+
+			.key-points li::before {
+				content: "⚡";
+				position: absolute;
+				left: 0;
+			}
+
+			/* Action Blocks */
+			.action-block {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border-left: 4px solid var(--amber);
+			}
+
+			.action-block h3 {
+				margin-top: 0;
+			}
+
+			/* Callout */
+			.callout {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				margin: 1rem 0;
+			}
+
+			.callout.danger {
+				border-left-color: var(--danger-red);
+			}
+
+			.callout p {
+				margin-bottom: 0.5rem;
+			}
+
+			.callout p:last-child {
+				margin-bottom: 0;
+			}
+
+			/* Formula */
+			.formula {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				text-align: center;
+				font-size: 1.5rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border: 2px solid var(--amber);
+			}
+
+			/* Recovery Box */
+			.recovery-box {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.recovery-box.breathing {
+				border-color: var(--leaf-green);
+			}
+
+			.recovery-box h3 {
+				margin-top: 0;
+				color: var(--amber);
+			}
+
+			/* Table */
+			.cost-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1rem 0;
+				background: var(--forest-dark);
+				border-radius: 8px;
+				overflow: hidden;
+			}
+
+			.cost-table th,
+			.cost-table td {
+				padding: 1rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.cost-table th {
+				background: var(--moss-green);
+				color: var(--amber);
+				font-weight: 600;
+			}
+
+			.cost-table tr:last-child td {
+				border-bottom: none;
+			}
+
+			.cost-table td:last-child {
+				text-align: right;
+				font-weight: 600;
+				color: var(--amber);
+			}
+
+			/* Lists */
+			.danger-list li {
+				color: #ff9999;
+			}
+
+			.rhythm-list {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.rhythm-list li {
+				padding-left: 1.5rem;
+				position: relative;
+			}
+
+			.rhythm-list li::before {
+				content: "→";
+				position: absolute;
+				left: 0;
+				color: var(--amber);
+			}
+
+			/* Note */
+			.note {
+				font-style: italic;
+				color: var(--leaf-green);
+				font-size: 0.95rem;
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.rule-section {
+					padding: 1.5rem;
+				}
+
+				.cost-table th,
+				.cost-table td {
+					padding: 0.75rem;
+					font-size: 0.9rem;
+				}
+			}
+		</style>
+	</body>
+</html>
