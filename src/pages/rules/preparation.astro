@@ -848,9 +848,174 @@
 						</div>
 
 						<div id="potions-salves" class="subsection">
-							<h3>Potions & Salves</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+							<h3>🧴 Potion & Salve Crafting</h3>
+
+							<div class="intro-box">
+								<p class="tagline"><strong>Field Alchemy of the Wild</strong></p>
+								<ul>
+									<li><strong>Potions</strong> are fast, drinkable effects.</li>
+									<li><strong>Salves</strong> are applied preparations that last over time.</li>
+								</ul>
+								<p>Crafting happens at camp or during downtime unless otherwise stated.</p>
+							</div>
+
+							<!-- Crafting Requirements -->
+							<div class="rule-section">
+								<h4>🧪 Crafting Requirements</h4>
+
+								<div class="req-box potion-req">
+									<h5>To craft a Potion, you need:</h5>
+									<ul>
+										<li>1 Herb or Root (primary effect)</li>
+										<li>1 Liquid Source (water, essence, honey, monster fluid)</li>
+										<li>Mortar & Pestle (required tool)</li>
+									</ul>
+								</div>
+
+								<div class="req-box salve-req">
+									<h5>To craft a Salve, you need:</h5>
+									<ul>
+										<li>1 Fat or Resin Base</li>
+										<li>1 Medicinal Herb or Gland</li>
+										<li>Application takes 1 turn</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Crafting Check -->
+							<div class="rule-section highlight">
+								<h4>🎲 Crafting Check</h4>
+								<p>Make a:</p>
+								<p class="check-type"><strong>Herbalism or Resource ID (INT) check</strong></p>
+
+								<div class="dc-list">
+									<div class="dc-item">DC 10 (Basic)</div>
+									<div class="dc-item">DC 12 (Enhanced)</div>
+									<div class="dc-item">DC 14+ (Rare or monster-enhanced)</div>
+								</div>
+
+								<div class="craft-outcomes">
+									<div class="outcome success">
+										<strong>On Success:</strong> Potion or salve crafted.
+									</div>
+
+									<div class="outcome failure">
+										<strong>On Failure:</strong> Potion functions at minimum value (no bonus die, no extra effect).
+									</div>
+
+									<div class="outcome crit-failure">
+										<strong>On Critical Failure:</strong> Materials wasted.
+									</div>
+								</div>
+
+								<p class="note">Keep it simple.</p>
+							</div>
+
+							<!-- Potions -->
+							<div class="rule-section">
+								<h4>🧴 Potions (Drinks)</h4>
+								<p>Drinking a potion = <strong>Fast Action</strong>.</p>
+								<p>Only one potion effect may be active at a time unless stated otherwise.</p>
+
+								<div class="potion-grid">
+									<div class="potion-card healing">
+										<h5>💚 Healing Potion</h5>
+										<p class="recipe">Basic Herb + Clean Water</p>
+										<div class="effect">
+											<strong>Restore:</strong> 1d6 + CON modifier HP
+										</div>
+									</div>
+
+									<div class="potion-card super">
+										<h5>✨ Super Potion</h5>
+										<p class="recipe">Herb + Honey or Essence</p>
+										<div class="effect">
+											<strong>Restore:</strong> 2d6 + CON modifier HP
+										</div>
+										<div class="bonus">
+											<strong>Additionally:</strong> Remove 1 minor status (Poisoned, Burned, Dazed).
+										</div>
+									</div>
+
+									<div class="potion-card stamina">
+										<h5>⚡ Stamina Tonic</h5>
+										<p class="recipe">Fireroot + Monster Gland</p>
+										<div class="effect">
+											<strong>Restore:</strong> 1d4 + CON modifier Stamina
+										</div>
+									</div>
+
+									<div class="potion-card super-stamina">
+										<h5>🌟 Super Tonic</h5>
+										<p class="recipe">Tonic + Resin</p>
+										<div class="effect">
+											<strong>Restore:</strong> 1d6 Stamina
+										</div>
+										<div class="bonus">
+											<strong>Additionally:</strong> Clear 1 level of Exhaustion.
+										</div>
+										<div class="limit">
+											<strong>Limit:</strong> Once per hunter per day.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Salves -->
+							<div class="rule-section">
+								<h4>🧴 Salves (Applied Effects)</h4>
+								<p>Applying a salve takes <strong>1 Action</strong>.</p>
+								<p>Only one salve may be active at a time.</p>
+								<p><strong>Duration:</strong> 3 rounds unless stated otherwise.</p>
+
+								<div class="salve-grid">
+									<div class="salve-card healing">
+										<h5>💚 Healing Salve</h5>
+										<div class="effect">
+											<strong>Recover:</strong> 1d4 HP at the start of each turn for 3 rounds
+										</div>
+									</div>
+
+									<div class="salve-card fire">
+										<h5>🔥 Burn Salve</h5>
+										<p>For 3 rounds:</p>
+										<ul>
+											<li>Reduce incoming Fire damage by 2</li>
+											<li>Prevent Burned status once</li>
+										</ul>
+									</div>
+
+									<div class="salve-card stamina">
+										<h5>⚡ Stamina Balm</h5>
+										<p>For 3 rounds:</p>
+										<ul>
+											<li>+1 Stamina regeneration at end of turn</li>
+										</ul>
+									</div>
+
+									<div class="salve-card venom">
+										<h5>💀 Venom Salve</h5>
+										<p>Choose one on application:</p>
+										<ul>
+											<li>Gain Resistance to Poison for 3 rounds</li>
+											<li><strong>OR</strong> Coat weapon: On next hit, target makes CON save or becomes Poisoned (1 round)</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Consistency Rules -->
+							<div class="rule-section highlight">
+								<h4>🔒 Consistency Rules</h4>
+								<p><strong>To keep balance tight, include these global rules:</strong></p>
+								<div class="consistency-list">
+									<div class="consistency-rule">Only 1 Potion effect active at a time</div>
+									<div class="consistency-rule">Only 1 Salve effect active at a time</div>
+									<div class="consistency-rule">Potion + Salve may stack</div>
+									<div class="consistency-rule">Effects do not stack with identical effects</div>
+									<div class="consistency-rule">Healing from potions cannot exceed max HP</div>
+									<div class="consistency-rule">Stamina restored cannot exceed max Stamina</div>
+								</div>
 							</div>
 						</div>
 
@@ -1785,6 +1950,152 @@
 			.special-weapon h5 {
 				color: var(--amber);
 				margin: 0 0 0.75rem 0;
+			}
+
+			/* Potion & Salve Styles */
+			.req-box {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border-left: 4px solid;
+			}
+
+			.req-box.potion-req {
+				border-left-color: #5a8bb5;
+			}
+
+			.req-box.salve-req {
+				border-left-color: var(--leaf-green);
+			}
+
+			.req-box h5 {
+				color: var(--amber);
+				margin: 0 0 0.75rem 0;
+			}
+
+			.dc-list {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+				gap: 0.75rem;
+				margin: 1rem 0;
+			}
+
+			.dc-item {
+				background: var(--forest-dark);
+				padding: 0.75rem;
+				border-radius: 6px;
+				text-align: center;
+				border: 2px solid var(--moss-green);
+				font-weight: 500;
+			}
+
+			.potion-grid,
+			.salve-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 1.5rem;
+				margin: 1.5rem 0;
+			}
+
+			.potion-card,
+			.salve-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 12px;
+				border: 3px solid;
+				transition: all 0.3s ease;
+			}
+
+			.potion-card:hover,
+			.salve-card:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+			}
+
+			.potion-card h5,
+			.salve-card h5 {
+				color: var(--amber);
+				margin: 0 0 1rem 0;
+				font-size: 1.2rem;
+			}
+
+			.recipe {
+				font-style: italic;
+				color: var(--leaf-green);
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.effect {
+				background: var(--forest-green);
+				padding: 0.75rem;
+				border-radius: 6px;
+				margin: 0.75rem 0;
+			}
+
+			.bonus {
+				background: var(--moss-green);
+				padding: 0.75rem;
+				border-radius: 6px;
+				margin: 0.75rem 0;
+				border-left: 3px solid var(--amber);
+			}
+
+			.limit {
+				background: var(--earth-brown);
+				padding: 0.75rem;
+				border-radius: 6px;
+				margin: 0.75rem 0;
+				border-left: 3px solid #d87332;
+				font-size: 0.95rem;
+			}
+
+			.potion-card.healing {
+				border-color: #5ac95a;
+			}
+
+			.potion-card.super {
+				border-color: var(--amber);
+			}
+
+			.potion-card.stamina {
+				border-color: #5a8bb5;
+			}
+
+			.potion-card.super-stamina {
+				border-color: var(--amber);
+			}
+
+			.salve-card.healing {
+				border-color: #5ac95a;
+			}
+
+			.salve-card.fire {
+				border-color: #d87332;
+			}
+
+			.salve-card.stamina {
+				border-color: #5a8bb5;
+			}
+
+			.salve-card.venom {
+				border-color: #8b5a8b;
+			}
+
+			.consistency-list {
+				display: grid;
+				gap: 0.75rem;
+				margin: 1rem 0;
+			}
+
+			.consistency-rule {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				border-left: 4px solid var(--amber);
+				font-weight: 500;
 			}
 
 			/* Responsive Additions */

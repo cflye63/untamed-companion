@@ -465,7 +465,105 @@ Upgrades refine — not expand.
 
 ### Potions & Salves
 
-*Coming soon*
+**Field Alchemy of the Wild**
+
+- **Potions** are fast, drinkable effects.
+- **Salves** are applied preparations that last over time.
+
+Crafting happens at camp or during downtime unless otherwise stated.
+
+#### 🧪 Crafting Requirements
+
+**To craft a Potion, you need:**
+- 1 Herb or Root (primary effect)
+- 1 Liquid Source (water, essence, honey, monster fluid)
+- Mortar & Pestle (required tool)
+
+**To craft a Salve, you need:**
+- 1 Fat or Resin Base
+- 1 Medicinal Herb or Gland
+- Application takes 1 turn
+
+#### 🎲 Crafting Check
+
+Make a:
+
+**Herbalism or Resource ID (INT) check**
+- DC 10 (Basic)
+- DC 12 (Enhanced)
+- DC 14+ (Rare or monster-enhanced)
+
+**On Success:**
+- Potion or salve crafted.
+
+**On Failure:**
+- Potion functions at minimum value (no bonus die, no extra effect).
+
+**On Critical Failure:**
+- Materials wasted.
+
+Keep it simple.
+
+#### 🧴 Potions (Drinks)
+
+Drinking a potion = **Fast Action**.
+
+Only one potion effect may be active at a time unless stated otherwise.
+
+**Healing Potion**
+- Basic Herb + Clean Water
+- Restore: **1d6 + CON modifier HP**
+
+**Super Potion**
+- Herb + Honey or Essence
+- Restore: **2d6 + CON modifier HP**
+- Additionally: Remove 1 minor status (Poisoned, Burned, Dazed).
+
+**Stamina Tonic**
+- Fireroot + Monster Gland
+- Restore: **1d4 + CON modifier Stamina**
+
+**Super Tonic**
+- Tonic + Resin
+- Restore: **1d6 Stamina**
+- Additionally: Clear 1 level of Exhaustion.
+- Limit: Once per hunter per day.
+
+#### 🧴 Salves (Applied Effects)
+
+Applying a salve takes **1 Action**.
+
+Only one salve may be active at a time.
+
+Duration: **3 rounds** unless stated otherwise.
+
+**Healing Salve**
+- Recover: **1d4 HP** at the start of each turn for 3 rounds
+
+**Burn Salve**
+- For 3 rounds:
+  - Reduce incoming Fire damage by 2
+  - Prevent Burned status once
+
+**Stamina Balm**
+- For 3 rounds:
+  - +1 Stamina regeneration at end of turn
+
+**Venom Salve**
+- Choose one on application:
+  - Gain Resistance to Poison for 3 rounds
+  - OR Coat weapon: On next hit, target makes CON save or becomes Poisoned (1 round)
+
+#### 🔒 Consistency Rules
+
+To keep balance tight, include these global rules:
+
+- Only 1 Potion effect active at a time
+- Only 1 Salve effect active at a time
+- Potion + Salve may stack
+- Effects do not stack with identical effects
+- Healing from potions cannot exceed max HP
+- Stamina restored cannot exceed max Stamina
 
 ### Toolkits
 
