@@ -1,0 +1,597 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Forest Cluster - Untamed Bestiary</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/bestiary">← Back to Bestiary</a>
+				</div>
+
+				<header class="page-header">
+					<div class="biome-icon">🌲</div>
+					<h1>Forest Cluster</h1>
+					<p class="subtitle">Dense woodlands, canopy heights, and sunken caverns</p>
+				</header>
+
+				<article class="content">
+					<section class="biome-intro">
+						<h2>Biome Overview</h2>
+						<p>The Forest Cluster is a sprawling wilderness of ancient trees, winding rivers, and hidden cave systems. From the sun-drenched Canopy Heights to the murky depths of Sunken Caverns, this biome hosts a diverse ecosystem of creatures adapted to vertical terrain and low-light environments.</p>
+
+						<div class="zones-section">
+							<h3>Zones</h3>
+							<div class="zone-tags">
+								<span class="zone-tag">🌊 River Basin</span>
+								<span class="zone-tag">🌿 Verdant Hollow</span>
+								<span class="zone-tag">🌳 Canopy Heights</span>
+								<span class="zone-tag">🕳️ Sunken Caverns</span>
+								<span class="zone-tag">🌲 Forest Valley</span>
+							</div>
+						</div>
+					</section>
+
+					<!-- TIER 0 SECTION -->
+					<section class="tier-section" id="tier-0">
+						<div class="tier-header">
+							<h2>Tier 0 — Low-Tier Creatures</h2>
+							<p>Common threats and nuisances. These creatures do not require full hunt procedures but can complicate foraging, tracking, and navigation.</p>
+						</div>
+
+						<!-- THORNBACK BOAR -->
+						<div class="creature-card">
+							<div class="creature-header">
+								<div class="creature-title">
+									<h3>Thornback Boar</h3>
+									<span class="creature-tagline">Bristled Menace</span>
+								</div>
+								<div class="creature-meta">
+									<span class="tier-badge tier-0">Tier 0</span>
+								</div>
+							</div>
+
+							<div class="creature-info-bar">
+								<div class="info-item">
+									<strong>Classification:</strong> Minor Beast
+								</div>
+								<div class="info-item">
+									<strong>Element:</strong> None
+								</div>
+								<div class="info-item">
+									<strong>Zones:</strong> River Basin, Verdant Hollow
+								</div>
+								<div class="info-item">
+									<strong>Behavior:</strong> Skittish charger, lashes out when cornered
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>📖 Lore</h4>
+								<p>Thornback Boars are lean, aggressive wild boars covered in hardened, needle-like bristles. Usually scavengers, they turn hostile when startled or when hunters get too close to their feeding grounds. Despite being small, their reckless charges can disrupt formation and push hunters into riverbeds, mud pits, or larger threats lurking nearby.</p>
+								<p>They are considered a nuisance, not a hunt — but an angry Thornback can easily create chaos in the wrong terrain.</p>
+							</div>
+
+							<div class="creature-section">
+								<h4>📊 Stats & Attributes</h4>
+								<div class="stats-grid">
+									<div class="stat-block">
+										<div class="stat-row"><span>STR</span><strong>4 (+2)</strong></div>
+										<div class="stat-row"><span>DEX</span><strong>3 (+1)</strong></div>
+										<div class="stat-row"><span>CON</span><strong>3 (+1)</strong></div>
+									</div>
+									<div class="stat-block">
+										<div class="stat-row"><span>INT</span><strong>2 (+1)</strong></div>
+										<div class="stat-row"><span>INS</span><strong>4 (+2)</strong></div>
+										<div class="stat-row"><span>CHA</span><strong>2 (+1)</strong></div>
+									</div>
+									<div class="stat-block combat-stats">
+										<div class="stat-row"><span>AR</span><strong>8</strong></div>
+										<div class="stat-row"><span>HP</span><strong>22</strong></div>
+										<div class="stat-row"><span>Stamina</span><strong>13</strong></div>
+										<div class="stat-row"><span>Movement</span><strong>40 ft burst / 25 ft normal</strong></div>
+										<div class="stat-row"><span>Attacks/Turn</span><strong>1</strong></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>🗡️ Attacks & Abilities</h4>
+								<div class="ability-list">
+									<div class="ability">
+										<div class="ability-header">
+											<strong>Gore Jab</strong>
+											<span class="ability-cost">1 Stamina • Melee (STR)</span>
+										</div>
+										<p><strong>Attack:</strong> d20 + 4 | <strong>Damage:</strong> 1d6 + 2</p>
+										<p>On a natural 18-20, the target must succeed a DEX Save (DC 10) or be knocked back 5 ft.</p>
+									</div>
+
+									<div class="ability">
+										<div class="ability-header">
+											<strong>Spine-Bristle Buck</strong>
+											<span class="ability-cost">1 Stamina</span>
+										</div>
+										<p>When a hunter is adjacent at the start of the boar's turn, the Thornback thrashes its bristles.</p>
+										<p><strong>Damage:</strong> 1d4 piercing</p>
+										<p>Targets must pass a CON Save (DC 10) or suffer Bleed.</p>
+									</div>
+								</div>
+
+								<div class="special-trait">
+									<strong>🐗 Special Trait — Instinctive Charge</strong>
+									<p>If the Thornback moves 20 ft in a straight line before attacking, its next Gore Jab deals +1d4 damage. If it hits, it immediately attempts to disengage 10 ft after the attack.</p>
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>💀 Behavior</h4>
+								<ul>
+									<li>Flees if reduced below 25% HP</li>
+									<li>Charges the closest visible threat</li>
+									<li>Startles easily — loud noises or sudden movement may trigger an accidental charge</li>
+									<li>Often travels in pairs, especially near food sources</li>
+								</ul>
+							</div>
+
+							<div class="creature-section">
+								<h4>🎒 Loot Table</h4>
+								<table class="loot-table">
+									<thead>
+										<tr>
+											<th>Drop</th>
+											<th>Chance</th>
+											<th>Use</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Meat</td>
+											<td>70%</td>
+											<td>Cooking, low-level provisions</td>
+										</tr>
+										<tr>
+											<td>Tough Hide</td>
+											<td>50%</td>
+											<td>Crafting light armor or low-tier shields</td>
+										</tr>
+										<tr>
+											<td>Bristle Shards</td>
+											<td>20%</td>
+											<td>Used in small traps or arrow fletching</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="creature-section">
+								<h4>🛠️ Crafting</h4>
+								<div class="crafting-recipe">
+									<strong>Light Armor Material: Tough Hide</strong>
+									<p>Grants: +1 AR, +1 to resisting push/knockback effects</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- SKYVINE DRAKE -->
+						<div class="creature-card">
+							<div class="creature-header">
+								<div class="creature-title">
+									<h3>Skyvine Drake</h3>
+									<span class="creature-tagline">Canopy Glider Pest</span>
+								</div>
+								<div class="creature-meta">
+									<span class="tier-badge tier-0">Tier 0</span>
+								</div>
+							</div>
+
+							<div class="creature-info-bar">
+								<div class="info-item">
+									<strong>Classification:</strong> Minor Draconic Beast
+								</div>
+								<div class="info-item">
+									<strong>Element:</strong> None
+								</div>
+								<div class="info-item">
+									<strong>Zones:</strong> Canopy Heights, Forest Valley
+								</div>
+								<div class="info-item">
+									<strong>Behavior:</strong> Skittish glider, opportunistic snatcher, aerial nuisance
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>📖 Lore</h4>
+								<p>Skyvine Drakes are small, vine-colored gliding reptiles that dart between branches in the upper canopy. They are agile, curious, and occasionally bold enough to swoop down and snatch food, trinkets, or even crafting components from unwary hunters.</p>
+								<p>Though individually weak, their mobility makes them disruptive. They rarely fight to kill—Skyvine Drakes attack only to create distance or distract larger predators. When startled, several may scatter at once, raining leaves and debris down as they flee.</p>
+								<p>They are easy prey when grounded… but catching one is the real challenge.</p>
+							</div>
+
+							<div class="creature-section">
+								<h4>📊 Stats & Attributes</h4>
+								<div class="stats-grid">
+									<div class="stat-block">
+										<div class="stat-row"><span>STR</span><strong>2 (+1)</strong></div>
+										<div class="stat-row"><span>DEX</span><strong>6 (+3)</strong></div>
+										<div class="stat-row"><span>CON</span><strong>2 (+1)</strong></div>
+									</div>
+									<div class="stat-block">
+										<div class="stat-row"><span>INT</span><strong>3 (+1)</strong></div>
+										<div class="stat-row"><span>INS</span><strong>5 (+2)</strong></div>
+										<div class="stat-row"><span>CHA</span><strong>3 (+1)</strong></div>
+									</div>
+									<div class="stat-block combat-stats">
+										<div class="stat-row"><span>AR</span><strong>7</strong></div>
+										<div class="stat-row"><span>HP</span><strong>18</strong></div>
+										<div class="stat-row"><span>Stamina</span><strong>12</strong></div>
+										<div class="stat-row"><span>Movement</span><strong>20 ft ground / 40 ft climb / 60 ft glide</strong></div>
+										<div class="stat-row"><span>Attacks/Turn</span><strong>1</strong></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>🗡️ Attacks & Abilities</h4>
+								<div class="ability-list">
+									<div class="ability">
+										<div class="ability-header">
+											<strong>Vinebite Snap</strong>
+											<span class="ability-cost">1 Stamina • Melee (DEX)</span>
+										</div>
+										<p><strong>Attack:</strong> d20 + 4 | <strong>Damage:</strong> 1d6 + 3</p>
+									</div>
+
+									<div class="ability">
+										<div class="ability-header">
+											<strong>Glide Kick</strong>
+											<span class="ability-cost">1 Stamina</span>
+										</div>
+										<p>Must descend from at least 10 ft elevation.</p>
+										<p><strong>Damage:</strong> 1d4 + 3</p>
+										<p>Target must succeed a DEX Save (DC 10) or be knocked off balance: –5 ft movement next turn.</p>
+									</div>
+								</div>
+
+								<div class="special-trait">
+									<strong>🌿 Special Trait — Skyvine Glide</strong>
+									<p>The drake can glide up to 60 ft in a straight line as a free movement once per turn if it begins its turn at a higher elevation. It cannot glide if restrained, grounded, or wings damaged.</p>
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>🧗 Behavior</h4>
+								<ul>
+									<li>Avoids direct combat; flees if reduced below 50% HP</li>
+									<li>Constantly moves between branches</li>
+									<li>Will attempt to steal before it attacks</li>
+									<li>Often appears in groups of 2–4, especially near fruit-heavy trees</li>
+									<li>May bait hunters into dangerous positions (cliff edges, unstable branches)</li>
+								</ul>
+							</div>
+
+							<div class="creature-section">
+								<h4>💰 Loot Table</h4>
+								<table class="loot-table">
+									<thead>
+										<tr>
+											<th>Drop</th>
+											<th>Chance</th>
+											<th>Use</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Feathers</td>
+											<td>60%</td>
+											<td>Light gliding gear, fletching</td>
+										</tr>
+										<tr>
+											<td>Lightweight Scales</td>
+											<td>40%</td>
+											<td>Armor requiring high mobility</td>
+										</tr>
+										<tr>
+											<td>Skyvine Tendril</td>
+											<td>20%</td>
+											<td>Used as flexible binding for bows and traps</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="creature-section">
+								<h4>🛠️ Crafting</h4>
+								<div class="crafting-recipe">
+									<strong>Light Armor: Drakeplume Vest</strong>
+									<p>Using Feathers or Scales. Grants: +2 AR, +5 ft movement when falling or descending slopes</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- DUSKHORN VIPER -->
+						<div class="creature-card">
+							<div class="creature-header">
+								<div class="creature-title">
+									<h3>Duskhorn Viper</h3>
+									<span class="creature-tagline">Cavern Ambusher</span>
+								</div>
+								<div class="creature-meta">
+									<span class="tier-badge tier-0">Tier 0</span>
+								</div>
+							</div>
+
+							<div class="creature-info-bar">
+								<div class="info-item">
+									<strong>Classification:</strong> Serpent Beast
+								</div>
+								<div class="info-item">
+									<strong>Element:</strong> None
+								</div>
+								<div class="info-item">
+									<strong>Zones:</strong> Sunken Caverns, Forest Valley
+								</div>
+								<div class="info-item">
+									<strong>Behavior:</strong> Camouflaged ambusher, skittish but venomous
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>📖 Lore</h4>
+								<p>Duskhorn Vipers are slender, grey-green snakes that hide among cavern moss, roots, and damp forest debris. Their scales reflect just enough ambient light to blend into walls and undergrowth.</p>
+								<p>They rarely attack deliberately — most bites come from accidental steps, misjudged reaches, or startled proximity. Their venom is weak but disruptive, designed to deter rather than kill.</p>
+								<p>Hunters consider them a nuisance hazard in dark environments, especially when multiple vipers slither into the same choke-point.</p>
+							</div>
+
+							<div class="creature-section">
+								<h4>📊 Stats & Attributes</h4>
+								<div class="stats-grid">
+									<div class="stat-block">
+										<div class="stat-row"><span>STR</span><strong>1 (+0)</strong></div>
+										<div class="stat-row"><span>DEX</span><strong>5 (+2)</strong></div>
+										<div class="stat-row"><span>CON</span><strong>2 (+1)</strong></div>
+									</div>
+									<div class="stat-block">
+										<div class="stat-row"><span>INT</span><strong>1 (+0)</strong></div>
+										<div class="stat-row"><span>INS</span><strong>6 (+3)</strong></div>
+										<div class="stat-row"><span>CHA</span><strong>1 (+0)</strong></div>
+									</div>
+									<div class="stat-block combat-stats">
+										<div class="stat-row"><span>AR</span><strong>6</strong></div>
+										<div class="stat-row"><span>HP</span><strong>12</strong></div>
+										<div class="stat-row"><span>Stamina</span><strong>8</strong></div>
+										<div class="stat-row"><span>Movement</span><strong>20 ft slither</strong></div>
+										<div class="stat-row"><span>Attacks/Turn</span><strong>1</strong></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>🗡️ Attacks & Abilities</h4>
+								<div class="ability-list">
+									<div class="ability">
+										<div class="ability-header">
+											<strong>Fang Jab</strong>
+											<span class="ability-cost">1 Stamina • Melee (DEX)</span>
+										</div>
+										<p><strong>Attack:</strong> d20 + 4 | <strong>Damage:</strong> 1d4 + 2</p>
+										<p><strong>On hit:</strong> Light Venom — Target makes a CON Save (DC 10) or gains Poisoned</p>
+									</div>
+
+									<div class="ability">
+										<div class="ability-header">
+											<strong>Camouflage Coil</strong>
+											<span class="ability-cost">Passive</span>
+										</div>
+										<p>While not moving on its previous turn, the viper becomes Camouflaged:</p>
+										<ul>
+											<li>Hunters must pass an INS check (DC 10) to notice it</li>
+											<li>First attack it makes from camouflage has advantage</li>
+										</ul>
+									</div>
+
+									<div class="ability">
+										<div class="ability-header">
+											<strong>Startle Strike</strong>
+											<span class="ability-cost">Reaction (1 Stamina)</span>
+										</div>
+										<p><strong>Trigger:</strong> A creature enters its space or steps adjacent without spotting it.</p>
+										<p>The viper makes a free Fang Jab. This does not break camouflage until after the attack.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="creature-section">
+								<h4>💀 Behavior</h4>
+								<ul>
+									<li>Tries to bite once, slither away, then hide again</li>
+									<li>Only swarms when 3–6 vipers share a nest cluster</li>
+								</ul>
+							</div>
+
+							<div class="creature-section">
+								<h4>💰 Loot Table</h4>
+								<table class="loot-table">
+									<thead>
+										<tr>
+											<th>Drop</th>
+											<th>Chance</th>
+											<th>Use</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Venom Gland</td>
+											<td>40%</td>
+											<td>Minor poison ingredient; used in traps or arrows</td>
+										</tr>
+										<tr>
+											<td>Duskhorn Skin</td>
+											<td>30%</td>
+											<td>Lightweight leather scraps</td>
+										</tr>
+										<tr>
+											<td>Shed Scale</td>
+											<td>50%</td>
+											<td>Basic crafting component; used in early armor kits</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="creature-section">
+								<h4>🛠️ Crafting Uses</h4>
+								<div class="crafting-list">
+									<div class="crafting-recipe">
+										<strong>Viperbite Coating</strong>
+										<p>Next hit inflicts 1-turn poison</p>
+									</div>
+									<div class="crafting-recipe">
+										<strong>Shedscale Strips</strong>
+										<p>Cheap +1 AR upgrade to early armors</p>
+									</div>
+									<div class="crafting-recipe">
+										<strong>Gland Trap</strong>
+										<p>Small floor trap applying minor poison</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</section>
+
+					<!-- PLACEHOLDER FOR MORE TIERS -->
+					<section class="tier-section coming-soon">
+						<div class="tier-header">
+							<h2>Tier 1+ — Higher Threats</h2>
+							<p>More powerful creatures and boss encounters coming soon...</p>
+						</div>
+					</section>
+
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.biome-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; }
+
+			.content { padding-bottom: 4rem; }
+
+			.biome-intro { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; border: 2px solid var(--earth-brown); }
+			.biome-intro h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1rem; }
+			.biome-intro h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.biome-intro p { margin-bottom: 1rem; }
+
+			.zones-section { margin-top: 2rem; }
+			.zone-tags { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
+			.zone-tag { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--cream); font-weight: 500; }
+
+			.tier-section { margin-bottom: 4rem; }
+			.tier-section.coming-soon { opacity: 0.6; }
+			.tier-header { background: var(--moss-green); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; border-left: 4px solid var(--amber); }
+			.tier-header h2 { color: var(--amber); font-size: 2rem; margin-bottom: 0.5rem; }
+			.tier-header p { margin: 0; }
+
+			.creature-card { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+
+			.creature-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--earth-brown); }
+			.creature-title h3 { color: var(--amber); font-size: 2rem; margin-bottom: 0.25rem; }
+			.creature-tagline { color: var(--leaf-green); font-style: italic; font-size: 1.1rem; }
+
+			.tier-badge { padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.9rem; }
+			.tier-badge.tier-0 { background: var(--earth-brown); color: var(--cream); }
+
+			.creature-info-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; padding: 1rem; background: var(--forest-dark); border-radius: 8px; }
+			.info-item { font-size: 0.95rem; }
+			.info-item strong { color: var(--amber); }
+
+			.creature-section { margin-bottom: 2rem; }
+			.creature-section h4 { color: var(--leaf-green); font-size: 1.3rem; margin-bottom: 1rem; }
+			.creature-section p { margin-bottom: 1rem; }
+			.creature-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.creature-section li { margin-bottom: 0.5rem; }
+
+			.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+			.stat-block { background: var(--forest-dark); padding: 1rem; border-radius: 8px; }
+			.stat-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--earth-brown); }
+			.stat-row:last-child { border-bottom: none; }
+			.stat-row span { color: var(--leaf-green); }
+			.stat-row strong { color: var(--amber); }
+
+			.ability-list { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1rem; }
+			.ability { background: var(--forest-dark); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--amber); }
+			.ability-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+			.ability-header strong { color: var(--amber); font-size: 1.1rem; }
+			.ability-cost { background: var(--moss-green); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem; color: var(--cream); }
+			.ability p { margin-bottom: 0.5rem; }
+			.ability p:last-child { margin-bottom: 0; }
+			.ability ul { margin-left: 1.5rem; margin-top: 0.5rem; }
+
+			.special-trait { background: var(--moss-green); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
+			.special-trait strong { color: var(--amber); display: block; margin-bottom: 0.5rem; }
+			.special-trait p { margin: 0; }
+
+			.loot-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.loot-table th, .loot-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.loot-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.loot-table tr:last-child td { border-bottom: none; }
+
+			.crafting-recipe { background: var(--forest-dark); padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; border-left: 3px solid var(--leaf-green); }
+			.crafting-recipe:last-child { margin-bottom: 0; }
+			.crafting-recipe strong { color: var(--leaf-green); display: block; margin-bottom: 0.5rem; }
+			.crafting-recipe p { margin: 0; }
+
+			.crafting-list { display: flex; flex-direction: column; gap: 0.75rem; }
+
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.creature-header { flex-direction: column; gap: 1rem; }
+				.creature-info-bar { grid-template-columns: 1fr; }
+				.stats-grid { grid-template-columns: 1fr; }
+			}
+
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>
