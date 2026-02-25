@@ -1,0 +1,575 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Bow - Untamed Weapons</title>
+		<link rel="stylesheet" href="/weapons/weapon-styles.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🏹</div>
+					<h1>Bow</h1>
+					<p class="subtitle">Ranged DPS / Precision</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+1 DEX</span>
+						<span class="stat-badge">+1 INS</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<!-- Overview -->
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Bow is a versatile weapon designed for hunters who value precision, agility, and adaptability. With the ability to unleash devastating power shots or control the battlefield through AoE attacks, the Bow excels at maintaining distance and exploiting enemy vulnerabilities. Its techniques reward players who can manage stamina and position themselves strategically.</p>
+					</section>
+
+					<!-- Weapon Attributes -->
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Range</h3>
+								<p class="formula">30ft-120ft (Disadvantage beyond 120ft)</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + DEX mod + proficiency (if trained)</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Core Mechanic -->
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Predator's Focus</h2>
+						<p>If you don't move on your turn: gain +1 Focus (max 3).</p>
+						<div class="mechanic-details">
+							<ul>
+								<li>You retain Focus if you move ≤5 ft or only rotate/Swap Arrows.</li>
+								<li>Moving >5 ft, being Knocked Prone/Stunned, or Dash resets Focus to 0.</li>
+								<li>Each Focus adds +1 flat damage to your next Bow attack (consumed on hit).</li>
+								<li>Power Shots can bank Focus; Concentration lets you aim without losing reactions.</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Arrow Types -->
+					<section class="weapon-section">
+						<h2>Arrow Types & Swapping</h2>
+						<p><strong>Swap Arrows:</strong> Fast Action (no stamina).</p>
+						<p><strong>Special Arrowheads:</strong> Limited uses per hunt (2 per arrow type).</p>
+
+						<h3>Starter Weapons</h3>
+						<div class="arrow-grid">
+							<div class="arrow-card">
+								<h4>Bone Bow — Offense</h4>
+								<p><strong>Piercing Arrows:</strong> On hit, ignore 1 AR (ignore 2 AR if you have 3 Focus when released).</p>
+								<p><strong>Barbed Arrows:</strong> On hit, apply Bleeding; a CON save vs Bow DC negates Bleed.</p>
+							</div>
+
+							<div class="arrow-card">
+								<h4>Steel Bow — Support</h4>
+								<p><strong>Signal Arrows:</strong> On hit, Mark the target until your next turn; allies gain +1 to attack rolls against it.</p>
+								<p><strong>Binding Arrows:</strong> On hit, the target makes a STR save vs Bow DC or becomes Staggered and cannot Fly until end of its next turn.</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Damage Dice -->
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Damage Dice</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d8 + DEX Modifier</td></tr>
+								<tr><td>Tier 2</td><td>1d10 + DEX Modifier</td></tr>
+								<tr><td>Tier 3</td><td>2d8 + DEX Modifier</td></tr>
+								<tr><td>Tier 4</td><td>2d10 + DEX Modifier</td></tr>
+								<tr><td>Tier 5</td><td>3d8 + DEX Modifier</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<!-- Techniques -->
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Power Shot</h3>
+								<div class="technique-cost">2 Stamina • Wind-Up, Rooting, Commitment</div>
+							</div>
+							<p>The hunter channels their focus into a single, devastating shot.</p>
+							<p><strong>Aim:</strong> Spend your Action to aim. You cannot move >5 ft; you may take Reactions only if you have Concentration (T3).</p>
+							<p><strong>Release (next turn, Action):</strong> Attack with advantage and add +1 damage die of your current Bow tier.</p>
+							<p><strong>Focus Interaction:</strong> If you began your turn at 3 Focus, you may release Power Shot this turn (no full-turn aim), but you lose all Focus on release.</p>
+							<p><strong>Breaks:</strong> If you move >5 ft, are Stunned/Prone, or lose LoS, Power Shot is canceled (no Stamina refund).</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Multishot</h3>
+								<div class="technique-cost">3 Stamina • AoE, Commitment</div>
+							</div>
+							<p>The hunter quickly fires multiple arrows in a cone, dealing moderate damage to all enemies in close range.</p>
+							<p><strong>Area:</strong> 30-ft cone</p>
+							<p><strong>Effect:</strong> Make one attack roll and compare vs each target's AR. On hit:</p>
+							<ul>
+								<li><strong>Damage:</strong> 3d6 + DEX Modifier (T4+: 4d6 + DEX Modifier)</li>
+								<li>Targets may make a DEX save vs Bow DC to halve this damage.</li>
+							</ul>
+							<p><strong>Focus Interaction:</strong> At 3 Focus, Multishot ignores half cover and enemies disadvantage their DEX save vs this attack.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Concentration</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>The hunter sharpens their focus, allowing them to maintain concentration during Power Shot while still reacting to incoming attacks.</p>
+							<ul>
+								<li>While Aiming a Power Shot, you retain Reactions and may Dodge.</li>
+								<li>If you successfully Dodge an attack while Aiming, you may immediately release your Power Shot after that attack resolves.</li>
+								<li>You do not lose Focus merely for holding the aim.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Rain of Arrows</h3>
+								<div class="technique-cost">3 Stamina • Zone, AoE, Commitment</div>
+							</div>
+							<p>The hunter fires a barrage of arrows into the air, creating a rain of projectiles over a wide area.</p>
+							<p><strong>Place:</strong> a 20-ft-radius zone within normal range (30 ft).</p>
+							<p><strong>On placement:</strong> creatures in the zone take base Bow damage + DEX (attack vs AR).</p>
+							<p><strong>The zone persists 2 rounds.</strong></p>
+							<p>At the start of each creature's turn in the zone, it makes a DEX save vs Bow DC:</p>
+							<ul>
+								<li><strong>Fail:</strong> slowed (half movement) until end of its turn and takes half base Bow damage</li>
+								<li><strong>Success:</strong> no damage, no slow</li>
+							</ul>
+							<p><strong>Aerial Units:</strong> while inside the zone, cannot gain flight altitude; if already flying, they treat movement as difficult terrain and must make the save as normal.</p>
+							<p><strong>Focus Interaction:</strong> At 3 Focus, you may expand the radius to 25 ft.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Flying Drake Shot</h3>
+								<div class="technique-cost">4 Stamina • Wind-Up, Line, Commitment</div>
+							</div>
+							<p>The ultimate bow technique, channeling full stamina and focus into a single, piercing shot that tears through everything in its path.</p>
+							<p><strong>Charge:</strong> Follows Power Shot aiming rules (Concentration applies).</p>
+							<p><strong>Release:</strong> Fire a 30-ft line; make one attack roll and compare vs each target's AR along the line.</p>
+							<ul>
+								<li><strong>Damage:</strong> +3 Power dice of your current tier (e.g., T5: +3d8, so total 6d8 + DEX).</li>
+								<li>Targets struck make a STR save vs Bow DC or fall Prone.</li>
+								<li>Attack is made with advantage.</li>
+							</ul>
+							<p><strong>Focus Interaction:</strong> If you release at 3 Focus, the line extends to 40 ft and the shot ignores half cover. Focus is consumed on hit.</p>
+						</div>
+					</section>
+
+					<!-- Playstyle -->
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>High ceiling from Focused burst (Power/Drake)</li>
+									<li>Flexible control (Multishot close, Rain zone)</li>
+									<li>Anti-air options</li>
+									<li>Ally setup (Signal)</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Positioning discipline (Focus loss)</li>
+									<li>Melee pressure</li>
+									<li>Stamina gating on big turns</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover {
+				color: var(--amber);
+			}
+
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			.page-header {
+				padding: 2rem 0 3rem;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.weapon-icon {
+				font-size: 5rem;
+				margin-bottom: 1rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+				margin-bottom: 1rem;
+			}
+
+			.stat-badges {
+				display: flex;
+				justify-content: center;
+				gap: 1rem;
+			}
+
+			.stat-badge {
+				padding: 0.5rem 1rem;
+				background: var(--moss-green);
+				color: var(--amber);
+				border-radius: 8px;
+				font-weight: 600;
+				font-size: 1.1rem;
+			}
+
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			.weapon-section {
+				background: var(--forest-green);
+				padding: 2rem;
+				border-radius: 12px;
+				margin-bottom: 2rem;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.weapon-section.highlight {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%);
+			}
+
+			.weapon-section h2 {
+				color: var(--amber);
+				font-size: 2rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.weapon-section h3 {
+				color: var(--leaf-green);
+				font-size: 1.5rem;
+				margin: 1.5rem 0 1rem;
+			}
+
+			.weapon-section p {
+				margin-bottom: 1rem;
+			}
+
+			.weapon-section ul {
+				margin-left: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.weapon-section li {
+				margin-bottom: 0.5rem;
+			}
+
+			.attributes-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1.5rem;
+			}
+
+			.attribute-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 12px;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.attribute-card h3 {
+				color: var(--amber);
+				font-size: 1.25rem;
+				margin-bottom: 1rem;
+			}
+
+			.formula {
+				background: var(--moss-green);
+				padding: 1rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				font-family: 'Courier New', monospace;
+				font-weight: 600;
+				color: var(--amber);
+				text-align: center;
+			}
+
+			.arrow-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 1.5rem;
+				margin-top: 1.5rem;
+			}
+
+			.arrow-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 12px;
+				border: 2px solid var(--leaf-green);
+			}
+
+			.arrow-card h4 {
+				color: var(--amber);
+				font-size: 1.25rem;
+				margin-bottom: 1rem;
+			}
+
+			.damage-table {
+				width: 100%;
+				border-collapse: collapse;
+				background: var(--forest-dark);
+				border-radius: 8px;
+				overflow: hidden;
+			}
+
+			.damage-table th,
+			.damage-table td {
+				padding: 1rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.damage-table th {
+				background: var(--moss-green);
+				color: var(--amber);
+				font-weight: 600;
+			}
+
+			.damage-table tr:last-child td {
+				border-bottom: none;
+			}
+
+			.technique-card {
+				background: var(--forest-dark);
+				padding: 2rem;
+				border-radius: 12px;
+				border: 2px solid var(--amber);
+				margin-bottom: 1.5rem;
+			}
+
+			.technique-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+				border-bottom: 2px solid var(--earth-brown);
+			}
+
+			.technique-header h3 {
+				color: var(--amber);
+				font-size: 1.75rem;
+				margin: 0;
+			}
+
+			.technique-cost {
+				background: var(--moss-green);
+				padding: 0.5rem 1rem;
+				border-radius: 6px;
+				color: var(--amber);
+				font-weight: 600;
+				font-size: 0.9rem;
+			}
+
+			.playstyle-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 1.5rem;
+			}
+
+			.playstyle-card {
+				background: var(--forest-dark);
+				padding: 2rem;
+				border-radius: 12px;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.playstyle-card.strengths {
+				border-color: var(--leaf-green);
+			}
+
+			.playstyle-card.weaknesses {
+				border-color: #c74440;
+			}
+
+			.playstyle-card h3 {
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.playstyle-card ul {
+				list-style: none;
+				margin: 0;
+			}
+
+			.playstyle-card li {
+				padding-left: 1.5rem;
+				position: relative;
+				margin-bottom: 0.75rem;
+			}
+
+			.playstyle-card li:before {
+				content: "▸";
+				position: absolute;
+				left: 0;
+				color: var(--amber);
+			}
+
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.weapon-section {
+					padding: 1.5rem;
+				}
+
+				.technique-header {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 1rem;
+				}
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+		</style>
+	</body>
+</html>
