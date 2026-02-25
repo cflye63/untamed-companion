@@ -1,0 +1,668 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Quick Reference - Untamed</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/">← Back to Home</a>
+				</div>
+
+				<header class="page-header">
+					<h1>Quick Reference</h1>
+					<p class="subtitle">Essential rules at a glance</p>
+				</header>
+
+				<div class="quick-ref-grid">
+					<!-- LEFT COLUMN -->
+					<div class="column">
+						<!-- Core Engine -->
+						<section class="ref-card">
+							<h2>🎲 Core Engine</h2>
+
+							<div class="ref-section">
+								<h3>Core Roll</h3>
+								<div class="formula">d20 + Stat Mod + Proficiency</div>
+								<ul>
+									<li><strong>Nat 1</strong> = Automatic Failure</li>
+									<li><strong>Nat 20</strong> = Automatic Success</li>
+									<li><strong>Stat Modifier</strong> = ⌊Stat ÷ 2⌋</li>
+								</ul>
+
+								<p><strong>Proficiency:</strong></p>
+								<ul>
+									<li>Novice +0</li>
+									<li>Trained +2</li>
+									<li>Master +4 (gain twice → Master)</li>
+								</ul>
+							</div>
+
+							<div class="ref-section">
+								<h3>Save DC</h3>
+								<div class="formula">10 + Stat Mod + Proficiency (if trained)</div>
+							</div>
+
+							<div class="ref-section">
+								<h3>Opposed Checks</h3>
+								<p>Both roll. Higher total wins.<br>Tie = no change.</p>
+							</div>
+
+							<div class="ref-section">
+								<h3>Difficulty Ladder</h3>
+								<table class="dc-table">
+									<thead>
+										<tr>
+											<th>DC</th>
+											<th>Difficulty</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>8</td>
+											<td>Trivial</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>Easy</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>Moderate</td>
+										</tr>
+										<tr>
+											<td>14</td>
+											<td>Challenging</td>
+										</tr>
+										<tr>
+											<td>16</td>
+											<td>Hard</td>
+										</tr>
+										<tr>
+											<td>18</td>
+											<td>Severe</td>
+										</tr>
+										<tr class="extreme">
+											<td>20+</td>
+											<td>Extreme</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<div class="note-box">
+									<p><strong>Bad conditions:</strong> +2 DC or disadvantage (not both)</p>
+									<p><strong>Good prep:</strong> –2 DC or advantage (not both)</p>
+								</div>
+							</div>
+
+							<div class="ref-section">
+								<h3>Advantage / Disadvantage</h3>
+								<ul>
+									<li><strong>Advantage</strong> → Roll 2d20, take highest</li>
+									<li><strong>Disadvantage</strong> → Roll 2d20, take lowest</li>
+								</ul>
+							</div>
+
+							<div class="ref-section">
+								<h3>Passive Score</h3>
+								<div class="formula">10 + Stat Mod + Proficiency</div>
+							</div>
+						</section>
+
+						<!-- Combat Engine -->
+						<section class="ref-card">
+							<h2>⚔ Combat Engine</h2>
+
+							<div class="ref-section">
+								<h3>Initiative</h3>
+								<div class="formula">d20 + DEX</div>
+								<p>Tie → Higher INS acts first</p>
+							</div>
+
+							<div class="ref-section">
+								<h3>Turn Structure</h3>
+								<p>On your turn:</p>
+								<ul>
+									<li><strong>Move</strong></li>
+									<li><strong>1 Action</strong> or Preparation</li>
+									<li><strong>1 Fast Action</strong></li>
+									<li><strong>1 Reaction</strong> (per round)</li>
+								</ul>
+							</div>
+
+							<div class="ref-section">
+								<h3>Stamina</h3>
+								<div class="formula-large">Starting Stamina: 6 + CON mod (minimum 1)</div>
+
+								<p><strong>Common Costs</strong></p>
+								<table class="cost-table">
+									<thead>
+										<tr>
+											<th>Action</th>
+											<th>Cost</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Basic Attack</td>
+											<td>1 STA</td>
+										</tr>
+										<tr>
+											<td>Most Techniques</td>
+											<td>1+ STA</td>
+										</tr>
+										<tr>
+											<td>Reaction</td>
+											<td>1 STA</td>
+										</tr>
+										<tr>
+											<td>Sprint (per 10 ft extra)</td>
+											<td>1 STA</td>
+										</tr>
+										<tr>
+											<td>Stand from Prone</td>
+											<td>2 STA</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="ref-section">
+								<h3>Stamina Recovery</h3>
+								<ul>
+									<li><strong>If you took no Action and no Fast Action</strong> → Regain +4 Stamina</li>
+									<li><strong>If you used a Preparation</strong> → Regain +2 Stamina</li>
+								</ul>
+							</div>
+
+							<div class="ref-section danger">
+								<h3>0 Stamina — Exhausted</h3>
+								<ul>
+									<li>No Actions or Fast Actions</li>
+									<li>Movement halved</li>
+									<li>STR/DEX saves auto-fail</li>
+									<li>Attacks vs you have advantage</li>
+									<li>On next turn, take no Action → regain 4 STA</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+
+					<!-- RIGHT COLUMN -->
+					<div class="column">
+						<!-- Defensive Reactions -->
+						<section class="ref-card">
+							<h2>🛡 Defensive Reactions</h2>
+							<p class="subtitle-small">(1/Round)</p>
+
+							<div class="warning-box">
+								<p><strong>Cannot use if:</strong><br>Stunned, Paralyzed, Restrained, or 0 Stamina</p>
+							</div>
+
+							<div class="ref-section">
+								<h3>Block (Guard)</h3>
+								<ul>
+									<li>Requires Guard weapon/shield</li>
+									<li>+3 AR vs triggering attack</li>
+									<li>If still hit → reduce damage by CON mod (min 1)</li>
+									<li><strong>Cost: 1 STA</strong></li>
+								</ul>
+							</div>
+
+							<div class="ref-section">
+								<h3>Dodge</h3>
+								<ul>
+									<li>Requires Light or Medium Armor</li>
+									<li>Attack vs you at disadvantage</li>
+									<li>If miss → shift 5 ft</li>
+									<li><strong>Cost: 1 STA</strong></li>
+								</ul>
+							</div>
+
+							<div class="ref-section">
+								<h3>Parry</h3>
+								<ul>
+									<li>Requires Parry weapon</li>
+									<li>+1 AR</li>
+									<li>Roll contest vs attacker's attack roll</li>
+									<li>Success → negate attack + riposte (half weapon damage)</li>
+									<li><strong>Cost: 1 STA</strong></li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- Armor & Health -->
+						<section class="ref-card">
+							<h2>❤️ Armor & Health</h2>
+
+							<div class="ref-section">
+								<div class="formula">Base AR (Unarmored): 10</div>
+								<div class="formula">Final AR = 10 + armor + bonuses</div>
+								<div class="formula-large">HP = (CON × 6) + Hunter Rank</div>
+							</div>
+						</section>
+
+						<!-- Called Shots -->
+						<section class="ref-card">
+							<h2>🎯 Called Shots</h2>
+
+							<div class="ref-section">
+								<p><strong>Declare target part</strong> → roll vs that part's AR</p>
+
+								<p><strong>On hit:</strong></p>
+								<ul>
+									<li>Deal normal damage</li>
+									<li>Advance break progress</li>
+								</ul>
+
+								<p><strong>Breaking parts:</strong></p>
+								<ul>
+									<li>Disable abilities</li>
+									<li>Weaken monster</li>
+									<li>Improve loot</li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- Preparation -->
+						<section class="ref-card">
+							<h2>🧘 Preparation</h2>
+							<p class="subtitle-small">(Replaces Action)</p>
+
+							<div class="ref-section">
+								<ul>
+									<li><strong>Cost:</strong> 0 Stamina</li>
+									<li><strong>End of turn:</strong> +2 Stamina</li>
+									<li>If damaged → CON Save DC 10 or lose it</li>
+									<li>Expires at start of your next turn if unused</li>
+								</ul>
+
+								<p><strong>Common Preparations:</strong></p>
+								<ul>
+									<li><strong>Steady Aim</strong> → +2 hit, ignore called shot penalty, ignore 1 AR</li>
+									<li><strong>Guarded Stance</strong> → +1 AR, next Block/Dodge costs 0</li>
+									<li><strong>Study Target</strong> → Next called shot has advantage</li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- Common Conditions -->
+						<section class="ref-card">
+							<h2>⚠ Common Conditions</h2>
+
+							<div class="ref-section">
+								<ul class="condition-list">
+									<li><strong>Exhausted</strong> – 0 Stamina rules</li>
+									<li><strong>Stunned</strong> – Lose next turn, attacks vs you advantage</li>
+									<li><strong>Restrained</strong> – Speed 0, DEX saves disadvantage</li>
+									<li><strong>Prone</strong> – Melee vs you advantage, stand costs 2 STA</li>
+									<li><strong>Poisoned</strong> – Disadvantage on attacks & CON saves</li>
+									<li><strong>Bleeding</strong> – Take damage each turn (stacks)</li>
+									<li><strong>Burned / Soaked / Chilled</strong> – Elemental status effects</li>
+								</ul>
+
+								<p class="note-text">(See <a href="/rules/conditions">Full Conditions page</a> for complete list.)</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+				--danger-red: #c74440;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.6;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 1400px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Navigation */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover {
+				color: var(--amber);
+			}
+
+			/* Breadcrumb */
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			/* Page Header */
+			.page-header {
+				padding: 2rem 0 3rem;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			.subtitle-small {
+				font-size: 1rem;
+				color: var(--leaf-green);
+				font-style: italic;
+				margin-top: -0.5rem;
+				margin-bottom: 1rem;
+			}
+
+			/* Quick Reference Grid */
+			.quick-ref-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 2rem;
+				padding-bottom: 4rem;
+			}
+
+			.column {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
+
+			/* Reference Cards */
+			.ref-card {
+				background: var(--forest-green);
+				padding: 2rem;
+				border-radius: 12px;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.ref-card h2 {
+				color: var(--amber);
+				font-size: 1.75rem;
+				margin-bottom: 1.5rem;
+				padding-bottom: 0.75rem;
+				border-bottom: 2px solid var(--earth-brown);
+			}
+
+			.ref-section {
+				margin-bottom: 1.5rem;
+			}
+
+			.ref-section:last-child {
+				margin-bottom: 0;
+			}
+
+			.ref-section h3 {
+				color: var(--leaf-green);
+				font-size: 1.25rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.ref-section ul {
+				margin-left: 1.5rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.ref-section li {
+				margin-bottom: 0.35rem;
+			}
+
+			.ref-section p {
+				margin-bottom: 0.75rem;
+			}
+
+			/* Formula Boxes */
+			.formula,
+			.formula-large {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				font-family: 'Courier New', monospace;
+				font-weight: 600;
+				color: var(--amber);
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+
+			.formula-large {
+				font-size: 1.1rem;
+				padding: 1.25rem;
+			}
+
+			/* Tables */
+			.dc-table,
+			.cost-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1rem 0;
+				background: var(--forest-dark);
+				border-radius: 8px;
+				overflow: hidden;
+			}
+
+			.dc-table th,
+			.dc-table td,
+			.cost-table th,
+			.cost-table td {
+				padding: 0.75rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.dc-table th,
+			.cost-table th {
+				background: var(--moss-green);
+				color: var(--amber);
+				font-weight: 600;
+			}
+
+			.dc-table tr:last-child td,
+			.cost-table tr:last-child td {
+				border-bottom: none;
+			}
+
+			.dc-table tr.extreme,
+			.cost-table tr.extreme {
+				background: linear-gradient(90deg, var(--forest-dark) 0%, rgba(199, 68, 64, 0.2) 100%);
+				font-weight: 600;
+				color: var(--amber);
+			}
+
+			/* Note Boxes */
+			.note-box {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 8px;
+				margin-top: 1rem;
+				font-size: 0.95rem;
+			}
+
+			.note-box p {
+				margin-bottom: 0.5rem;
+			}
+
+			.note-box p:last-child {
+				margin-bottom: 0;
+			}
+
+			.warning-box {
+				background: rgba(199, 68, 64, 0.2);
+				border: 2px solid var(--danger-red);
+				padding: 1rem;
+				border-radius: 8px;
+				margin-bottom: 1.5rem;
+			}
+
+			.warning-box p {
+				margin: 0;
+			}
+
+			.ref-section.danger {
+				background: rgba(199, 68, 64, 0.15);
+				padding: 1rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--danger-red);
+			}
+
+			/* Condition List */
+			.condition-list {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.condition-list li {
+				padding-left: 1rem;
+				position: relative;
+				margin-bottom: 0.5rem;
+			}
+
+			.condition-list li:before {
+				content: "▸";
+				position: absolute;
+				left: 0;
+				color: var(--amber);
+			}
+
+			.note-text {
+				font-style: italic;
+				color: var(--leaf-green);
+				margin-top: 1rem;
+			}
+
+			.note-text a {
+				color: var(--amber);
+				text-decoration: none;
+			}
+
+			.note-text a:hover {
+				text-decoration: underline;
+			}
+
+			/* Responsive */
+			@media (max-width: 1024px) {
+				.quick-ref-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.ref-card {
+					padding: 1.5rem;
+				}
+
+				.ref-card h2 {
+					font-size: 1.5rem;
+				}
+			}
+
+			/* Smooth Scrolling */
+			html {
+				scroll-behavior: smooth;
+			}
+		</style>
+	</body>
+</html>

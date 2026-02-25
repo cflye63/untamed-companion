@@ -868,7 +868,7 @@
 									<ul>
 										<li>1 Herb or Root (primary effect)</li>
 										<li>1 Liquid Source (water, essence, honey, monster fluid)</li>
-										<li>Mortar & Pestle (required tool)</li>
+										<li>Herbalism Pouch (required tool)</li>
 									</ul>
 								</div>
 
@@ -1020,16 +1020,309 @@
 						</div>
 
 						<div id="toolkits" class="subsection">
-							<h3>Toolkits</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+							<h3>🧰 Toolkits</h3>
+
+							<div class="intro-box">
+								<p class="tagline"><strong>Specialized Equipment for Survival & Craft</strong></p>
+								<p>Toolkits are reusable gear items that:</p>
+								<ul>
+									<li>Enable specific crafting actions</li>
+									<li>Grant advantage or bonuses to related checks</li>
+									<li>Unlock certain field capabilities</li>
+									<li>Reduce risk during preparation</li>
+								</ul>
+								<div class="callout">
+									<strong>Toolkits do not grant passive combat bonuses.</strong> They reinforce the preparation loop.
+								</div>
+							</div>
+
+							<!-- Tool Proficiencies -->
+							<div class="rule-section highlight">
+								<h4>Tool Proficiencies</h4>
+								<p>Tool Proficiencies represent training with specialized kits used for crafting, survival prep, and field problem-solving.</p>
+
+								<h5>How Tool Proficiency Works</h5>
+								<p>When you use a tool for a task it covers, you may add your Proficiency bonus:</p>
+								<div class="formula">
+									d20 + relevant Stat Modifier + Proficiency (if trained with that tool)
+								</div>
+
+								<p>Tool tasks usually use:</p>
+								<ul>
+									<li><strong>DEX</strong> for hands-on handling (setup, delicate work)</li>
+									<li><strong>INT</strong> for design/crafting (engineering, alchemy)</li>
+									<li><strong>INS</strong> for wilderness/camp skills (forage, navigate, track)</li>
+									<li><strong>CON/STR</strong> only when a tool's job is brute effort (heavy trap rigging, hauling)</li>
+								</ul>
+
+								<h5>Tool Proficiency Tiers:</h5>
+								<div class="prof-tiers">
+									<div class="tier novice">Novice: +0</div>
+									<div class="tier trained">Trained: +2</div>
+									<div class="tier master">Master: +4 (if gained twice from different sources)</div>
+								</div>
+
+								<h5>Gaining Tool Proficiencies</h5>
+								<p><strong>At Character Creation:</strong></p>
+								<ul>
+									<li><strong>Race</strong>: Some races grant a tool proficiency</li>
+									<li><strong>Background</strong>: A background may grant tool proficiency when it fits</li>
+									<li><strong>Free Pick</strong>: Every hunter chooses 1 tool proficiency from the Common Tools list</li>
+								</ul>
+
+								<p><strong>Mastery Upgrade:</strong> If you gain the same tool proficiency twice, it becomes <strong>Master (+4)</strong>.</p>
+
+								<h5>Using Tools in Play</h5>
+								<div class="tool-usage">
+									<div class="usage-rule">If you don't have the kit: Roll at <strong>disadvantage</strong> OR DC increases by <strong>+2</strong></div>
+									<div class="usage-rule">If you have the kit: <strong>Normal roll</strong></div>
+									<div class="usage-rule">If you're proficient and have the kit: Normal roll + <strong>proficiency</strong></div>
+								</div>
+							</div>
+
+							<!-- Toolkit Categories -->
+							<div class="rule-section">
+								<h4>📦 Toolkit Categories</h4>
+
+								<!-- Hunting & Trapping -->
+								<div class="toolkit-category">
+									<h5>🪤 Hunting & Trapping</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Trap Kit</h6>
+											<p><strong>Required to:</strong> Craft traps, Set advanced traps, Modify trap triggers</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Bait & Lure Kit</h6>
+											<p><strong>Required to:</strong> Lure monsters reliably</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Herbalism & Alchemy -->
+								<div class="toolkit-category">
+									<h5>🌿 Herbalism & Alchemy</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Herbalism Pouch</h6>
+											<p><strong>Required to:</strong> Craft potions & salves</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Alchemist's Satchel</h6>
+											<p><strong>Required for:</strong> Bombs, Explosives</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Field Medicine -->
+								<div class="toolkit-category">
+									<h5>🩺 Field Medicine</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Field Medic Kit</h6>
+											<p><strong>Required to:</strong> Stabilize dying creature/hunter, Treat certain conditions</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Craft & Repair -->
+								<div class="toolkit-category">
+									<h5>🔧 Craft & Repair</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Smith's Apprentice Tools</h6>
+											<p><strong>Required to:</strong> Repair, Reinforce gear</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Tanning & Leather Kit</h6>
+											<p><strong>Required to:</strong> Preserve hides, Craft light/medium armor</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Boneworking Kit</h6>
+											<p><strong>Required to:</strong> Shape bone into components</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Exploration & Mobility -->
+								<div class="toolkit-category">
+									<h5>🧗 Exploration & Mobility</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Climbing Kit</h6>
+											<p><strong>Grants:</strong> Ignore first failed climbing check per day, Secure rope anchors for party</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Rope & Rigging Kit</h6>
+											<p><strong>Grants:</strong> Advantage on improvised bridges or hauling</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Navigator's Set</h6>
+											<p><strong>Grants:</strong> Reduce risk of sector misnavigation</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Camp & Survival -->
+								<div class="toolkit-category">
+									<h5>🔥 Camp & Survival</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Camp-Craft Kit</h6>
+											<p><strong>Required to:</strong> Establish stable camp</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Cook's Pack</h6>
+											<p><strong>Required to:</strong> Prepare meal buffs</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Sustenance & Wilds -->
+								<div class="toolkit-category">
+									<h5>🐟 Sustenance & Wilds</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Fishing Tackle</h6>
+											<p><strong>Grants:</strong> Secure food in river/lake sectors without check once per day</p>
+										</div>
+										<div class="toolkit-item">
+											<h6>Waterproofing & Resin Kit</h6>
+											<p><strong>Grants:</strong> Protect 1 Gear item from weather penalties per hunt</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Utility & Communication -->
+								<div class="toolkit-category">
+									<h5>🎭 Utility & Communication</h5>
+									<div class="toolkit-list">
+										<div class="toolkit-item">
+											<h6>Signal & Dye Kit</h6>
+											<p><strong>Grants:</strong> Mark sectors, Advantage when following your own marked trail</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Design Rules -->
+							<div class="rule-section highlight">
+								<h4>📏 Design Rules for Toolkits</h4>
+								<p>To keep this clean and balanced:</p>
+								<div class="design-rules">
+									<div class="design-rule">1. Toolkits never increase attack or damage rolls directly</div>
+									<div class="design-rule">2. Toolkits reduce risk, not inflate numbers</div>
+									<div class="design-rule">3. Toolkits grant advantage OR small bonuses, never both</div>
+									<div class="design-rule">4. Toolkits are reusable</div>
+									<div class="design-rule">5. Carrying too many consumes Gear Slots</div>
+								</div>
+							</div>
+
+							<!-- Slot Clarification -->
+							<div class="rule-section">
+								<h4>🎒 Slot Clarification</h4>
+								<p>Toolkits count as:</p>
+								<div class="slot-types">
+									<div class="slot-type major">
+										<strong>1 Gear Slot</strong> (major kit)
+										<p class="examples">Trap Kit, Smith Tools, Herbalism Kit</p>
+									</div>
+									<div class="slot-type minor">
+										<strong>1 Pack Slot</strong> (minor kit)
+										<p class="examples">Signal Kit, Fishing Tackle, Stitcher Roll</p>
+									</div>
+								</div>
+								<div class="callout">
+									<strong>This forces loadout decisions.</strong>
+								</div>
 							</div>
 						</div>
 
 						<div id="upgrades" class="subsection">
 							<h3>Upgrades</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<div class="intro-box">
+								<p><strong>Monster Gear Upgrades</strong></p>
+								<p>There are no upgrade trees. There are only two states:</p>
+								<ul>
+									<li><strong>Standard</strong></li>
+									<li><strong>Rare</strong></li>
+								</ul>
+							</div>
+
+							<h4>🛠 Upgrade Rule</h4>
+							<p>If you already own a Standard version of a monster's gear:</p>
+							<p>And you obtain the required <strong>Rare Monster Component</strong>,</p>
+							<p>You may upgrade that item to its <strong>Rare version</strong>.</p>
+
+							<h4>🧱 What Changes on Upgrade?</h4>
+							<p>Upgrading does ONE of the following:</p>
+							<ul>
+								<li>Add 1 Rare Perk</li>
+								<li>OR Enhance the existing Monster Trait</li>
+							</ul>
+							<p><strong>Never both.</strong></p>
+
+							<div class="example-box">
+								<h5>Example:</h5>
+								<p><strong>Standard Tanuza Blade:</strong></p>
+								<ul>
+									<li>+1 Speed when repositioning</li>
+								</ul>
+								<p><strong>Rare Upgrade:</strong></p>
+								<ul>
+									<li>+1 Speed becomes <strong>+2 Speed</strong></li>
+									<li>OR Gain 1/rest Glide Slash (special action)</li>
+								</ul>
+								<p>Choose one.</p>
+							</div>
+
+							<h4>🛡 Armor Upgrade Rule</h4>
+							<p><strong>Standard Armor:</strong></p>
+							<ul>
+								<li>Base AR</li>
+								<li>Weight Bonus</li>
+								<li>Monster Trait</li>
+							</ul>
+
+							<p><strong>Rare Upgrade:</strong></p>
+							<p>Add:</p>
+							<ul>
+								<li>1 Rare Perk</li>
+							</ul>
+
+							<p><strong>Examples of Rare Perks:</strong></p>
+							<ul>
+								<li>+1 AR (cap 1 from gear total)</li>
+								<li>+1 Stamina Regen (cap 1 total)</li>
+								<li>+1 to a Stat (cap +2 total from gear)</li>
+								<li>Gain 1 Minor Resistance</li>
+								<li>Gain 1 Special Action (1/rest)</li>
+							</ul>
+
+							<div class="callout">
+								<strong>Rare never increases AR beyond +1 total across all gear.</strong><br>
+								That cap protects scaling.
+							</div>
+
+							<h4>⚔ Weapon Upgrade Rule</h4>
+							<p><strong>Standard Weapon:</strong></p>
+							<ul>
+								<li>Base weapon stats</li>
+								<li>1 Monster Trait perk</li>
+							</ul>
+
+							<p><strong>Rare Upgrade:</strong></p>
+							<p>Choose ONE:</p>
+							<ul>
+								<li>Add elemental rider</li>
+								<li>Add special action (1/rest)</li>
+								<li>Improve Power Die by +1 step (if system supports it)</li>
+								<li>Add conditional effect (bleed on crit, stamina drain on hit, etc.)</li>
+							</ul>
+
+							<div class="callout">
+								<strong>Never stack two rare effects on one weapon.</strong>
 							</div>
 						</div>
 					</section>
@@ -1040,36 +1333,202 @@
 
 						<div id="gear-slots" class="subsection">
 							<h3>Gear Slots</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<div class="intro-box">
+								<p><strong>Base Carry Limit</strong></p>
+								<p>Each hunter has:</p>
+								<ul>
+									<li><strong>6 Gear Slots</strong> (Weapons, Armor, Major Tools)</li>
+									<li><strong>10 Pack Slots</strong> (Potions, traps, materials, bait, small tools, food, etc.)</li>
+								</ul>
+								<p>You begin with a Standard Hunter's Pack.</p>
+							</div>
+
+							<h4>What Is a Gear Slot?</h4>
+							<p>Gear Slots represent:</p>
+							<ul>
+								<li>Items worn</li>
+								<li>Items wielded</li>
+								<li>Large rigid equipment</li>
+								<li>Major toolkits</li>
+							</ul>
+
+							<p>Each of the following occupies <strong>1 Gear Slot:</strong></p>
+							<ul>
+								<li>1 Weapon (two-handed still = 1 slot)</li>
+								<li>1 Armor Set</li>
+								<li>1 Major Toolkit (Trap Kit, Smith Tools, Herbalism Kit, etc.)</li>
+								<li>Heavy specialized gear</li>
+							</ul>
+
+							<div class="callout">
+								<strong>You cannot "stack" items in a Gear Slot.</strong>
+							</div>
+
+							<h4>Worn vs Packed Rule</h4>
+							<p>Items in Gear Slots are considered:</p>
+							<ul>
+								<li><strong>Accessible immediately</strong></li>
+							</ul>
+
+							<p>Items in Pack Slots require:</p>
+							<ul>
+								<li><strong>Fast Action to retrieve</strong></li>
+							</ul>
+
+							<p>This makes loadout meaningful.</p>
+
+							<h4>Stashing Gear</h4>
+							<p><strong>At Camp or Safe Zones:</strong></p>
+							<ul>
+								<li>You may store unlimited items.</li>
+							</ul>
+
+							<p><strong>Retrieving stored items mid-hunt:</strong></p>
+							<ul>
+								<li>Requires returning to camp or secure sector.</li>
+							</ul>
+
+							<div class="callout">
+								No magical storage.
 							</div>
 						</div>
 
 						<div id="pack-slots" class="subsection">
 							<h3>Pack Slots</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<p>Pack Slots represent:</p>
+							<ul>
+								<li>Carried items</li>
+								<li>Consumables</li>
+								<li>Crafting materials</li>
+								<li>Small tools</li>
+								<li>Bait</li>
+								<li>Trap components</li>
+							</ul>
+
+							<p>Each of the following uses <strong>1 Pack Slot:</strong></p>
+							<ul>
+								<li>1 Potion or Tonic</li>
+								<li>1 Trap (crafted and ready)</li>
+								<li>1 Bundle of materials (GM defined)</li>
+								<li>1 Monster Component</li>
+								<li>1 Bait item</li>
+								<li>1 Small toolkit (Signal Kit, Fishing Tackle, etc.)</li>
+							</ul>
+
+							<h4>🧱 Bundling Rule</h4>
+							<p>To prevent micro-tracking:</p>
+							<p><strong>Identical small items may bundle.</strong></p>
+
+							<div class="example-box">
+								<p>Example:</p>
+								<ul>
+									<li>Up to 5 Arrows = 1 Pack Slot</li>
+									<li>Up to 3 Herbs = 1 Pack Slot</li>
+									<li>Up to 3 Minor Components = 1 Pack Slot</li>
+								</ul>
+							</div>
+
+							<p><strong>But:</strong></p>
+							<p>Rare monster parts always occupy their own slot.</p>
+
+							<div class="callout">
+								This keeps inventory meaningful.
+							</div>
+
+							<h4>🐲 Monster Materials</h4>
+							<p>Large monster parts:</p>
+							<ul>
+								<li>Count as <strong>1 Pack Slot each</strong>.</li>
+							</ul>
+
+							<p>If oversized:</p>
+							<ul>
+								<li>May require <strong>2 Pack Slots</strong></li>
+								<li>OR Slow movement by 5 ft</li>
+							</ul>
+
+							<p>GM adjudicates based on size.</p>
+
+							<div class="callout">
+								This prevents absurd hauling.
 							</div>
 						</div>
 
 						<div id="overload-penalties" class="subsection">
 							<h3>Overload Penalties</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<p>For every 2 slots over capacity:</p>
+							<ul>
+								<li><strong>–1 Movement</strong></li>
+								<li><strong>–1 Stamina Recovery on Breathing Turns</strong></li>
+							</ul>
+
+							<p>Overload penalties apply immediately in combat.</p>
+
+							<div class="callout">
+								<strong>You cannot Sprint while overloaded.</strong><br>
+								This makes overpacking dangerous.
 							</div>
 						</div>
 
 						<div id="bag-upgrades" class="subsection">
 							<h3>Bag Upgrades</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<p>Improved Packs increase Pack Slots only.</p>
+
+							<div class="example-box">
+								<p><strong>Examples:</strong></p>
+								<ul>
+									<li><strong>Forager's Pouch</strong> → +3 Pack Slots</li>
+									<li><strong>Battle Harness</strong> → +2 Gear Slots</li>
+									<li><strong>Waterproof Satchel</strong> → Protect 2 Pack Slots from weather penalties</li>
+								</ul>
+							</div>
+
+							<div class="callout">
+								<strong>These do not stack infinitely — only 1 pack upgrade may be worn.</strong>
 							</div>
 						</div>
 
 						<div id="dropping-gear" class="subsection">
 							<h3>Dropping Gear Rules</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<h4>⚔ Dropping a held or carried item:</h4>
+							<ul>
+								<li><strong>Fast Action</strong></li>
+							</ul>
+
+							<h4>Retrieving a dropped item:</h4>
+							<ul>
+								<li>Move into space</li>
+								<li><strong>Fast Action to pick up</strong></li>
+							</ul>
+
+							<h4>Re-equipping stored Gear:</h4>
+							<ul>
+								<li><strong>Action</strong></li>
+							</ul>
+
+							<div class="callout">
+								This prevents infinite swapping mid-fight.
+							</div>
+
+							<h4>🔥 Edge Case Clarifications</h4>
+
+							<div class="example-box">
+								<p><strong>1️⃣ Can you carry 6 weapons?</strong></p>
+								<p>Yes — but no room for armor or tools.</p>
+
+								<p><strong>2️⃣ Can you carry multiple armor sets?</strong></p>
+								<p>Yes — but each consumes a Gear Slot.</p>
+
+								<p><strong>3️⃣ Can traps be pre-set without carrying them?</strong></p>
+								<p>Yes — if crafted earlier and placed.</p>
+
+								<p><strong>4️⃣ Can you exceed slots temporarily?</strong></p>
+								<p>Yes — but penalties apply immediately.</p>
 							</div>
 						</div>
 					</section>
@@ -1078,52 +1537,344 @@
 					<section id="survival-biomes" class="major-section">
 						<h2 class="section-title">Survival & Biomes</h2>
 
+						<div class="intro-box">
+							<p>Survival systems exist to:</p>
+							<ul>
+								<li>Add pressure between combats</li>
+								<li>Reward preparation</li>
+								<li>Make the world feel alive</li>
+								<li>Change how hunts unfold</li>
+							</ul>
+							<p><strong>They are not meant to slow play with bookkeeping.</strong></p>
+						</div>
+
 						<div id="sector-movement" class="subsection">
 							<h3>Sector Movement</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<p>Biomes are divided into <strong>Sectors</strong>.</p>
+
+							<p>A sector represents:</p>
+							<ul>
+								<li>A distinct terrain space</li>
+								<li>A combat arena</li>
+								<li>A resource zone</li>
+								<li>A narrative shift</li>
+							</ul>
+
+							<p>Movement between sectors is <strong>narrative, not grid-based</strong>.</p>
+
+							<h4>Sectors change when:</h4>
+							<ul>
+								<li>A monster flees</li>
+								<li>Hunters pursue</li>
+								<li>Hunters retreat</li>
+								<li>Environmental events trigger</li>
+							</ul>
+
+							<h4>Entering a new sector may reveal:</h4>
+							<ul>
+								<li>Hazards</li>
+								<li>Resource nodes</li>
+								<li>Environmental modifiers</li>
+								<li>Weather changes</li>
+								<li>New tactical terrain</li>
+							</ul>
+
+							<div class="callout">
+								<strong>That's all you need. Do not over-mechanize this.</strong>
 							</div>
 						</div>
 
 						<div id="hazards" class="subsection">
 							<h3>Hazards</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<p>Hazards are where mechanics matter.</p>
+
+							<h4>1️⃣ Terrain Hazards</h4>
+
+							<p><strong>Examples:</strong></p>
+							<ul>
+								<li><strong>Swamp</strong> → Difficult Terrain</li>
+								<li><strong>Cliff Edge</strong> → Fall risk</li>
+								<li><strong>Ice</strong> → Balance checks</li>
+								<li><strong>Dense Canopy</strong> → Reduced visibility</li>
+							</ul>
+
+							<p><strong>Resolution:</strong></p>
+							<ul>
+								<li>DEX / Athletics / Acrobatics vs DC 10–14 depending on severity.</li>
+							</ul>
+
+							<p><strong>Failure results in:</strong></p>
+							<ul>
+								<li>Prone</li>
+								<li>Movement loss</li>
+								<li>Minor damage</li>
+								<li>Stamina loss</li>
+							</ul>
+
+							<div class="callout">
+								<strong>Keep consequences tactical — not lethal.</strong>
+							</div>
+
+							<h4>2️⃣ Environmental Hazards</h4>
+
+							<p><strong>Examples:</strong></p>
+							<ul>
+								<li>Extreme Heat</li>
+								<li>Freezing Winds</li>
+								<li>Acid Rain</li>
+								<li>Spore Clouds</li>
+								<li>Volcanic Vents</li>
+							</ul>
+
+							<p><strong>Resolution:</strong></p>
+							<ul>
+								<li>Usually CON save DC 12–16</li>
+							</ul>
+
+							<p><strong>Failure causes:</strong></p>
+							<ul>
+								<li>Stamina loss</li>
+								<li>Exhaustion gain</li>
+								<li>Status condition</li>
+							</ul>
+
+							<div class="callout">
+								<strong>These create pressure dials.</strong>
+							</div>
+
+							<h4>3️⃣ Monster-Triggered Hazards</h4>
+
+							<p><strong>Examples:</strong></p>
+							<ul>
+								<li>Cave collapse</li>
+								<li>Flooded chamber</li>
+								<li>Burning forest</li>
+								<li>Predators drawn to scent</li>
+							</ul>
+
+							<p><strong>These happen when:</strong></p>
+							<ul>
+								<li>Monster hits threshold</li>
+								<li>Players crit fail</li>
+								<li>Fight drags too long</li>
+							</ul>
+
+							<div class="callout">
+								<strong>They shift tempo.</strong>
 							</div>
 						</div>
 
 						<div id="foraging" class="subsection">
 							<h3>Foraging</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
-							</div>
+
+							<p>Foraging happens:</p>
+							<ul>
+								<li>During downtime</li>
+								<li>Between sectors</li>
+								<li>During extended hunts</li>
+							</ul>
+
+							<h4>Check:</h4>
+							<ul>
+								<li><strong>Survival (INS)</strong> → track, gather, and hunt.</li>
+								<li><strong>Resource ID (INT)</strong> → identify herbs, fruits, or reagents.</li>
+							</ul>
+
+							<h4>DC:</h4>
+							<ul>
+								<li><strong>10</strong> – Common food</li>
+								<li><strong>14</strong> – Rare herb</li>
+								<li><strong>16+</strong> – Monster-linked reagent</li>
+							</ul>
+
+							<h4>Success:</h4>
+							<ul>
+								<li>Gain 1–2 usable ingredients.</li>
+								<li>Identify a resource</li>
+							</ul>
+
+							<h4>Failure:</h4>
+							<ul>
+								<li>Spoiled or useless.</li>
+							</ul>
+
+							<h4>Critical Failure:</h4>
+							<ul>
+								<li>Poisoned OR attract nearby creature.</li>
+							</ul>
 						</div>
 
 						<div id="cooking-buffs" class="subsection">
 							<h3>Cooking & Buffs</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<p>Your cooking system is strong — but we tighten stacking rules.</p>
+
+							<h4>🔥 Cooking Rules</h4>
+							<ul>
+								<li>Takes <strong>1 hour</strong></li>
+								<li>Requires heat source</li>
+								<li>Requires Cook's Pack</li>
+								<li>One Cook leads</li>
+								<li>Tool Handling (DEX) or Resource ID (INT)</li>
+							</ul>
+
+							<p><strong>DC:</strong></p>
+							<ul>
+								<li><strong>12</strong> – Routine</li>
+								<li><strong>14–16</strong> – Complex</li>
+							</ul>
+
+							<p><strong>Success:</strong></p>
+							<ul>
+								<li>Choose 1 Meal Buff.</li>
+							</ul>
+
+							<p><strong>Critical Success:</strong></p>
+							<ul>
+								<li>Choose 2 OR extend duration.</li>
+							</ul>
+
+							<p><strong>Failure:</strong></p>
+							<ul>
+								<li>No buff.</li>
+							</ul>
+
+							<p><strong>Critical Failure:</strong></p>
+							<ul>
+								<li>Food poisoning (CON save DC 12 or gain 1 Exhaustion).</li>
+							</ul>
+
+							<h4>🍴 Meal Buff Table</h4>
+
+							<table class="meal-table">
+								<thead>
+									<tr>
+										<th>Dish Type</th>
+										<th>Description</th>
+										<th>Effect</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>Warm Meal</strong></td>
+										<td>Balanced comfort food — roasted game, root stew.</td>
+										<td>+1 Stamina regeneration per turn for 1 combat.</td>
+									</tr>
+									<tr>
+										<td><strong>Hearty Stew</strong></td>
+										<td>Dense broth, heavy grains.</td>
+										<td>+2 HP per hour (non-combat recovery) until next rest.</td>
+									</tr>
+									<tr>
+										<td><strong>Spiced Ration</strong></td>
+										<td>Portable dried food.</td>
+										<td>+1 to next 3 CON saves.</td>
+									</tr>
+									<tr>
+										<td><strong>Hunter's Feast</strong></td>
+										<td>Luxurious or rare ingredients.</td>
+										<td>+1 to Attack & Damage rolls for first combat of next hunt.</td>
+									</tr>
+									<tr>
+										<td><strong>Calming Tea</strong></td>
+										<td>Herbal infusion, aromatic.</td>
+										<td>Remove 1 mental condition (Dazed, Taunted, Frightened).</td>
+									</tr>
+									<tr>
+										<td><strong>Sharpening Broth</strong></td>
+										<td>Salty, mineral-rich brew.</td>
+										<td>Next 3 Called Shots ignore +1 AR.</td>
+									</tr>
+									<tr>
+										<td><strong>Storm Ration</strong></td>
+										<td>High-energy nuts, sugars, or salts.</td>
+										<td>+2 temporary Stamina at start of next hunt.</td>
+									</tr>
+									<tr>
+										<td><strong>Nightwatch Brew</strong></td>
+										<td>Bitter drink brewed under moonlight.</td>
+										<td>Advantage on INS checks vs ambush for one night cycle.</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h4>🍴 Meal Buff Limits</h4>
+							<ul>
+								<li><strong>Only 1 Meal Buff active per hunter.</strong></li>
+								<li><strong>Meal Buff lasts until end of next hunt.</strong></li>
+								<li><strong>Meal Buff does not stack with identical effects.</strong></li>
+							</ul>
+
+							<div class="callout">
+								This prevents stacking Warm Meal + Storm Ration + Feast nonsense.
 							</div>
 						</div>
 
 						<div id="water-exhaustion" class="subsection">
 							<h3>Water & Exhaustion</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
-							</div>
+
+							<p>Hydration is tracked only in:</p>
+							<ul>
+								<li>Arid biomes</li>
+								<li>Long multi-sector hunts</li>
+								<li>Extreme heat conditions</li>
+							</ul>
+
+							<h4>💧 Water Rules</h4>
+
+							<p><strong>1 Day without water:</strong></p>
+							<ul>
+								<li>CON save DC 10</li>
+								<li>Failure → 1 Exhaustion</li>
+							</ul>
+
+							<p><strong>2+ Days:</strong></p>
+							<ul>
+								<li>CON save DC 12</li>
+								<li>Failure → +1 Exhaustion & disadvantage on STR/DEX checks</li>
+							</ul>
+
+							<p><strong>Contaminated water:</strong></p>
+							<ul>
+								<li>CON DC 12</li>
+								<li>Failure → Poisoned 1 hour</li>
+							</ul>
+
+							<p><strong>Purification:</strong></p>
+							<ul>
+								<li>Requires heat or Herbalism proficiency.</li>
+							</ul>
 						</div>
 
 						<div id="hunt-failure" class="subsection">
 							<h3>Hunt Failure</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
-							</div>
+
+							<p><strong>Hunt Failure Consequences</strong></p>
+
+							<p>On failure, choose 1:</p>
+							<ul>
+								<li>Monster relocates to harder sector</li>
+								<li>Weather worsens</li>
+								<li>Rival predator enters biome</li>
+								<li>Resource nodes depleted</li>
+							</ul>
 						</div>
 
 						<div id="retreat" class="subsection">
 							<h3>Retreat</h3>
-							<div class="coming-soon-box">
-								<p>📋 Content coming soon</p>
+
+							<h4>🐾 Retreating:</h4>
+							<ul>
+								<li>Ends combat</li>
+								<li>Monster relocates</li>
+								<li>Hunters keep gathered materials</li>
+								<li>Rare part chance reduced by 1 step</li>
+							</ul>
+
+							<div class="callout">
+								<strong>Retreat does not grant HR.</strong>
 							</div>
 						</div>
 					</section>
@@ -1673,6 +2424,37 @@
 				color: var(--amber);
 			}
 
+			/* Meal Table */
+			.meal-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1.5rem 0;
+				background: var(--forest-dark);
+				border-radius: 8px;
+				overflow: hidden;
+			}
+
+			.meal-table th,
+			.meal-table td {
+				padding: 1rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.meal-table th {
+				background: var(--moss-green);
+				color: var(--amber);
+				font-weight: 600;
+			}
+
+			.meal-table tr:last-child td {
+				border-bottom: none;
+			}
+
+			.meal-table tr:hover {
+				background: var(--forest-green);
+			}
+
 			/* Craft Outcomes */
 			.craft-outcomes {
 				margin-top: 1.5rem;
@@ -2096,6 +2878,144 @@
 				border-radius: 6px;
 				border-left: 4px solid var(--amber);
 				font-weight: 500;
+			}
+
+			/* Toolkit Styles */
+			.prof-tiers {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+				gap: 1rem;
+				margin: 1rem 0;
+			}
+
+			.tier {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				text-align: center;
+				font-weight: 600;
+				border: 2px solid;
+			}
+
+			.tier.novice {
+				border-color: var(--earth-brown);
+			}
+
+			.tier.trained {
+				border-color: var(--leaf-green);
+			}
+
+			.tier.master {
+				border-color: var(--amber);
+			}
+
+			.tool-usage {
+				display: grid;
+				gap: 0.75rem;
+				margin: 1rem 0;
+			}
+
+			.usage-rule {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				border-left: 4px solid var(--leaf-green);
+			}
+
+			.toolkit-category {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1.5rem 0;
+				border: 2px solid var(--moss-green);
+			}
+
+			.toolkit-category h5 {
+				color: var(--amber);
+				font-size: 1.3rem;
+				margin: 0 0 1rem 0;
+				padding-bottom: 0.75rem;
+				border-bottom: 2px solid var(--earth-brown);
+			}
+
+			.toolkit-list {
+				display: grid;
+				gap: 1rem;
+				margin-top: 1rem;
+			}
+
+			.toolkit-item {
+				background: var(--forest-green);
+				padding: 1.25rem;
+				border-radius: 6px;
+				border-left: 4px solid var(--leaf-green);
+				transition: all 0.3s ease;
+			}
+
+			.toolkit-item:hover {
+				border-left-color: var(--amber);
+				transform: translateX(4px);
+			}
+
+			.toolkit-item h6 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				margin: 0 0 0.5rem 0;
+			}
+
+			.toolkit-item p {
+				margin: 0;
+			}
+
+			.design-rules {
+				display: grid;
+				gap: 0.75rem;
+				margin: 1rem 0;
+			}
+
+			.design-rule {
+				background: var(--forest-dark);
+				padding: 1rem;
+				border-radius: 6px;
+				border-left: 4px solid var(--amber);
+				font-weight: 500;
+			}
+
+			.slot-types {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1.5rem;
+				margin: 1.5rem 0;
+			}
+
+			.slot-type {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border: 3px solid;
+				text-align: center;
+			}
+
+			.slot-type.major {
+				border-color: var(--amber);
+			}
+
+			.slot-type.minor {
+				border-color: var(--leaf-green);
+			}
+
+			.slot-type strong {
+				display: block;
+				font-size: 1.2rem;
+				color: var(--amber);
+				margin-bottom: 1rem;
+			}
+
+			.slot-type .examples {
+				font-style: italic;
+				color: var(--leaf-green);
+				margin-top: 0.75rem;
+				font-size: 0.95rem;
 			}
 
 			/* Responsive Additions */
