@@ -1,0 +1,286 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Arbalest - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🏹</div>
+					<h1>Arbalest</h1>
+					<p class="subtitle">Heavy Artillery / Single Target</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+1 STR</span>
+						<span class="stat-badge">+1 INS</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Arbalest is a massive crossbow designed for devastating single-shot damage. Arbalest users are patient snipers who line up perfect shots, then unleash overwhelming force. This weapon trades attack frequency for raw power, making every shot count. Ideal for players who enjoy calculated, high-impact gameplay.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Heavy</li>
+									<li>Two-Handed</li>
+									<li>Ranged (60-300 ft)</li>
+									<li>Loading</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + STR mod + proficiency</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Loading</h3>
+								<p>After firing, you must use a Fast Action to reload before firing again.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Piercing Shot</h2>
+						<p>Every Arbalest shot carries immense kinetic force, capable of punching through armor and bodies alike.</p>
+						<div class="mechanic-details">
+							<h3>Piercing Rules</h3>
+							<ul>
+								<li><strong>Armor Penetration:</strong> All Arbalest attacks ignore 2 AR (ignore 3 AR at T3+).</li>
+								<li><strong>Overpenetration:</strong> When you hit a creature with an Arbalest attack, the bolt continues in a line. Choose one creature directly behind the target (within 10 ft). Make a new attack roll against that creature at -2 to hit. On hit, deal half damage.</li>
+								<li><strong>Critical Power:</strong> When you crit with the Arbalest, double all damage (including modifiers and bonus dice), not just the weapon dice.</li>
+							</ul>
+
+							<h3>Aim Mechanic</h3>
+							<ul>
+								<li><strong>Aim:</strong> Fast Action. Gain +2 to your next Arbalest attack roll and ignore all cover (including full cover). Aiming bonus lasts until you attack or move.</li>
+								<li><strong>Patient Hunter:</strong> If you Aim for 2 consecutive turns without attacking or moving, your next attack is an automatic crit (still must hit AR).</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Damage Dice</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>2d8 + STR</td></tr>
+								<tr><td>Tier 2</td><td>2d10 + STR</td></tr>
+								<tr><td>Tier 3</td><td>3d8 + STR</td></tr>
+								<tr><td>Tier 4</td><td>3d10 + STR</td></tr>
+								<tr><td>Tier 5</td><td>4d10 + STR</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Explosive Bolt</h3>
+								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+							</div>
+							<p>A bolt that detonates on impact, dealing splash damage.</p>
+							<p><strong>Range:</strong> 60-300 ft</p>
+							<p><strong>Effect:</strong> Make an Arbalest attack. On hit:</p>
+							<ul>
+								<li>Primary target takes base Arbalest damage + STR</li>
+								<li>All creatures within 10 ft of the impact point take 2d6 fire damage (DEX save vs your DC for half)</li>
+								<li>The explosion ignores Overpenetration (bolt does not continue through)</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Pinning Shot</h3>
+								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+							</div>
+							<p>A bolt that impales the target, pinning them in place.</p>
+							<p><strong>Range:</strong> 60-300 ft</p>
+							<p><strong>Attack:</strong> Make an Arbalest attack with +1 Power Die. On hit:</p>
+							<ul>
+								<li>Deal base Arbalest damage + STR + 1d10</li>
+								<li>Target makes a STR save vs your DC. On fail: target becomes Restrained (cannot move, disadvantage on attacks/DEX saves, attackers have advantage) until end of their next turn</li>
+								<li>If the target is Large or smaller and fails the save by 5+, they are pinned until they use an Action to make a STR check (DC = your Arbalest DC) to free themselves</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Rapid Reload</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your mastery of the Arbalest allows for faster reloading and more accurate shots.</p>
+							<ul>
+								<li>You may reload as a Free Action (instead of Fast Action) once per turn.</li>
+								<li>Your armor penetration increases to 3 AR.</li>
+								<li>When you Aim, you may move up to 10 ft without losing the Aim bonus.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Siege Bolt</h3>
+								<div class="technique-cost">3 Stamina • Action, Commitment, Wind-Up</div>
+							</div>
+							<p>A massive bolt designed to break fortifications and monsters alike.</p>
+							<p><strong>Charge:</strong> You must Aim for at least 1 turn before firing (uses standard Aim rules).</p>
+							<p><strong>Release:</strong> Make an Arbalest attack in a 60-ft line. Make one attack roll and compare vs AR of all creatures in the line.</p>
+							<p><strong>On Hit:</strong></p>
+							<ul>
+								<li>Each creature takes base Arbalest damage + STR + 2d10</li>
+								<li>Each creature makes a CON save vs your DC or is Stunned until end of their next turn</li>
+								<li>Creatures that fail the save are also pushed 10 ft away from you</li>
+							</ul>
+							<p><strong>Destruction:</strong> Siege Bolt destroys non-magical barriers, walls, and cover in its path.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Godslayer Shot</h3>
+								<div class="technique-cost">5 Stamina • Action, Ultimate, Wind-Up</div>
+							</div>
+							<p>The ultimate Arbalest technique, a single shot of overwhelming destructive force.</p>
+							<p><strong>Preparation:</strong> You must Aim for at least 2 consecutive turns (Patient Hunter applies). During this time, you can move up to 15 ft total across both turns.</p>
+							<p><strong>Release:</strong> Make a single Arbalest attack against one target within range.</p>
+							<p><strong>Attack Bonuses:</strong></p>
+							<ul>
+								<li>Made with advantage</li>
+								<li>+4 to the attack roll</li>
+								<li>Ignores all cover and Armor Penetration applies</li>
+								<li>Critical threat range: 18-20</li>
+							</ul>
+							<p><strong>On Hit:</strong></p>
+							<ul>
+								<li>Deal 8d10 + STR damage</li>
+								<li>Target makes a CON save vs your DC. On fail: target is Staggered (loses next turn) and takes an additional 4d10 damage</li>
+								<li>Overpenetration applies: bolt continues for up to 30 ft, hitting all creatures in a line. Make attack rolls for each at -2, dealing half damage on hit</li>
+							</ul>
+							<p><strong>On Crit:</strong> Total damage is quadrupled (×4) to the primary target. Secondary targets from Overpenetration take normal crit damage (×2).</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Highest single-target damage in the game</li>
+									<li>Ignores armor better than any other weapon</li>
+									<li>Extreme range with no disadvantage</li>
+									<li>Critical hits are devastating</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Lowest attack frequency due to Loading</li>
+									<li>Requires setup time for maximum damage</li>
+									<li>Vulnerable while Aiming</li>
+									<li>Heavy weapon limits mobility</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

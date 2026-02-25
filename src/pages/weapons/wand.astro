@@ -1,0 +1,255 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Wand - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">✨</div>
+					<h1>Wand</h1>
+					<p class="subtitle">Control / Elemental</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+1 INT</span>
+						<span class="stat-badge">+1 CHA</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Wand is a highly tactical weapon that focuses on controlling the battlefield by creating magical clusters—nodes of concentrated energy that can be detonated for devastating effects. This weapon rewards strategic placement, timing, and elemental mastery, making it ideal for players who prefer a calculated approach to combat.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Range</h3>
+								<p class="formula">Up to 60 ft</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + INT mod + proficiency</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Magical Clusters</h2>
+						<p>Clusters are elemental nodes that attach to enemies or the battlefield, creating zones of volatile energy. The more that cling to a creature, the greater the eventual explosion.</p>
+						<div class="mechanic-details">
+							<h3>Place (Action, 1 Stamina)</h3>
+							<ul>
+								<li>Place 1 cluster within range. Choose to attach to a visible creature (DEX save vs your Wand DC) or land as terrain (5-ft square).</li>
+								<li>Max active clusters: 3 (T3: 4). Per-target cap: 3 attached.</li>
+								<li>Duration: Until detonated/dispelled.</li>
+								<li><strong>Remove:</strong> A creature may use a Fast Action to attempt removal (STR check vs 10 + your INT mod). On a fail, it takes 1d6 elemental damage.</li>
+								<li><strong>Chain:</strong> Clusters within 15 ft of a detonation also detonate.</li>
+							</ul>
+
+							<h3>Detonate (Fast Action, 1 Stamina)</h3>
+							<ul>
+								<li>Detonate any number of your clusters.</li>
+								<li><strong>Damage:</strong> Each detonated cluster deals Cluster Bomb damage to its host and creatures in 10 ft (no friendly fire).</li>
+								<li><strong>Stacking on same host:</strong> +1 damage die per additional cluster (max +2 dice) before other multipliers.</li>
+								<li>Terrain clusters use the same damage in a 10-ft burst; they can chain.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Standard Attack</th>
+									<th>Cluster Bomb (Per Cluster)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d6 + INT</td><td>1d4 + INT</td></tr>
+								<tr><td>Tier 2</td><td>2d4 + INT</td><td>1d6 + INT</td></tr>
+								<tr><td>Tier 3</td><td>2d6 + INT</td><td>2d4 + INT</td></tr>
+								<tr><td>Tier 4</td><td>3d4 + INT</td><td>2d6 + INT</td></tr>
+								<tr><td>Tier 5</td><td>3d6 + INT</td><td>3d4 + INT</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Hex Charge</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>You begin to shape raw energy into your signature hunting style. Each cluster you successfully attach applies a lingering hex to its host.</p>
+							<p><strong>Effect depends on your wand's Damage Type:</strong></p>
+							<ul>
+								<li><strong>Fire — Scorch:</strong> End of target's turn: 1d4 fire per attached cluster. On detonate: CON save → fail: Burned.</li>
+								<li><strong>Ice — Frostbite:</strong> While Hexed: Target has -5ft for each cluster. On detonate: CON save → fail: Chilled.</li>
+								<li><strong>Lightning — Arc:</strong> On Detonate: lightning jumps to 1 creature within 10 ft for ½ detonation damage (full if jumped target is Soaked).</li>
+								<li><strong>Earth — Sunder:</strong> While Hexed: target's effective AR –1 per cluster (min 0). On Detonate: Con Save → fail: Staggered.</li>
+								<li><strong>Water — Drench:</strong> On attach: Target loses 1 stamina. On detonate: DEX save → fail: Soaked.</li>
+								<li><strong>Poison — Venom:</strong> End of turn: 1 poison per cluster. On detonate: CON save → fail: Poisoned.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Cluster Fieldcraft</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your clusters don't just sit there—they shape the fight.</p>
+							<ul>
+								<li><strong>Terrain Wards:</strong> Unattached clusters project a 10-ft radius zone that is difficult terrain for enemies. Allies ignore this.</li>
+								<li><strong>Host Drag:</strong> While a creature has at least 1 attached cluster, squares it occupies count as difficult terrain for enemies.</li>
+								<li><strong>Tripwire (Reaction, 1 Stamina, 1/round):</strong> When an enemy enters a Terrain Ward for the first time in a turn, you may detonate that single cluster immediately.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Cluster Mastery</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your growing mastery lets you maintain more clusters and manipulate their flow of energy.</p>
+							<ul>
+								<li>Max active clusters: 4. Place range: +10 ft (to 40 ft; 50 ft at T5).</li>
+								<li><strong>Magnetize:</strong> When any of your clusters detonates, you may slide one other cluster within 15 ft up to 5 ft toward the nearest enemy before detonation checks.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Encore</h3>
+								<div class="technique-cost">1 Stamina • Reaction</div>
+							</div>
+							<p>Even mid-battle, your reflexive control over your magic lets you extend your influence.</p>
+							<p>When one of your clusters detonates or is removed, immediately attempt to place a new cluster within range. This doesn't consume your Action. (Normal attach DEX save.)</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Final Flourish</h3>
+								<div class="technique-cost">3 Stamina • Fast Action</div>
+							</div>
+							<p>The ultimate Wand ability, Final Flourish channels all remaining stamina into a climactic explosion of magic. Requires 4 active clusters.</p>
+							<p><strong>Converge:</strong> All of your clusters detonate and their damage is assigned to a chosen target within range (you're herding the shockwaves).</p>
+							<p><strong>Damage:</strong> Each cluster deals 3d6 + INT. Sum the total and then double it.</p>
+							<p><strong>Battle rhythm:</strong> Allies gain advantage on attack rolls until the end of your next turn.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Devastating damage when multiple clusters stack</li>
+									<li>Excellent synergy with coordinated allies who keep enemies pinned</li>
+									<li>Area control and chip damage without friendly fire</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Requires setup turns and accurate placement</li>
+									<li>Relatively low immediate damage</li>
+									<li>Vulnerable if forced to reposition or if clusters are removed</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

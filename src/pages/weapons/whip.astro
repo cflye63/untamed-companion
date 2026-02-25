@@ -1,0 +1,270 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Whip - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🔗</div>
+					<h1>Whip</h1>
+					<p class="subtitle">Control / Mobility</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+1 DEX</span>
+						<span class="stat-badge">+1 CHA</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Whip is a finesse weapon that specializes in control, repositioning, and opportunistic strikes. Whip users excel at manipulating the battlefield, pulling enemies out of position, tripping them up, and creating openings for allies. This weapon rewards clever positioning and timing over raw damage output.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Reach (15 ft)</li>
+									<li>Finesse</li>
+									<li>One-Handed</li>
+									<li>Control</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + DEX mod + proficiency</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Entangle</h2>
+						<p>The Whip wraps around enemies, limiting their movement and creating tactical opportunities.</p>
+						<div class="mechanic-details">
+							<h3>Entangle Rules</h3>
+							<ul>
+								<li><strong>Apply Entangle:</strong> When you hit with a Whip attack, you may Entangle the target (no extra Stamina cost).</li>
+								<li><strong>Effect:</strong> Target is Entangled until they break free or you release them.</li>
+								<li><strong>Entangled Condition:</strong> Movement speed reduced by 10 ft (min 0). Target cannot move more than 15 ft away from you.</li>
+								<li><strong>Break Free:</strong> Target can use their Action to make a STR check vs your Whip DC. Success: they break free.</li>
+								<li><strong>Release:</strong> You can release an Entangled target as a Free Action. You must release if you Entangle a new target.</li>
+								<li><strong>Max Entangled:</strong> 1 creature at a time (T3: 2 creatures).</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Damage Dice</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d6 + DEX</td></tr>
+								<tr><td>Tier 2</td><td>1d8 + DEX</td></tr>
+								<tr><td>Tier 3</td><td>2d6 + DEX</td></tr>
+								<tr><td>Tier 4</td><td>2d8 + DEX</td></tr>
+								<tr><td>Tier 5</td><td>3d6 + DEX</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Lash</h3>
+								<div class="technique-cost">1 Stamina • Action</div>
+							</div>
+							<p>A quick strike that can trip or disarm.</p>
+							<p><strong>Range:</strong> 15 ft</p>
+							<p><strong>Attack:</strong> DEX-based attack vs AR. On hit: base Whip damage + DEX.</p>
+							<p><strong>Control Option:</strong> On hit, choose one:</p>
+							<ul>
+								<li><strong>Trip:</strong> Target makes a DEX save vs your Whip DC or falls Prone.</li>
+								<li><strong>Disarm:</strong> Target makes a STR save vs your Whip DC or drops one held item of your choice.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Pull</h3>
+								<div class="technique-cost">2 Stamina • Action</div>
+							</div>
+							<p>Yank an enemy toward you, setting up devastating follow-ups.</p>
+							<p><strong>Range:</strong> 15 ft</p>
+							<p><strong>Effect:</strong> Make a DEX-based attack vs AR. On hit:</p>
+							<ul>
+								<li>Deal base Whip damage + DEX</li>
+								<li>Pull target up to 15 ft toward you in a straight line</li>
+								<li>If target enters reach of an ally, that ally may immediately make one free melee attack (0 Stamina, Reaction)</li>
+							</ul>
+							<p><strong>Resist:</strong> Target can make a STR save vs your Whip DC to avoid being pulled (still takes damage).</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Master's Grasp</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your control over the battlefield deepens.</p>
+							<ul>
+								<li>You can Entangle up to 2 creatures simultaneously.</li>
+								<li>Entangled creatures have disadvantage on attack rolls against targets other than you.</li>
+								<li>Your Whip reach increases to 20 ft.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Constrict</h3>
+								<div class="technique-cost">2 Stamina • Fast Action</div>
+							</div>
+							<p>Tighten your grip, squeezing the life from your prey.</p>
+							<p><strong>Target:</strong> One creature you have Entangled</p>
+							<p><strong>Effect:</strong> Target takes 2d8 + DEX crushing damage and makes a CON save vs your Whip DC:</p>
+							<ul>
+								<li><strong>Fail:</strong> Target becomes Restrained until the end of your next turn (cannot move, disadvantage on attacks/DEX saves, attackers have advantage).</li>
+								<li><strong>Success:</strong> No Restrained condition.</li>
+							</ul>
+							<p><strong>Maintain:</strong> You may spend 1 Stamina on subsequent turns (Fast Action) to maintain Restrained for another round. Target gets a new save each time.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Serpent's Dance</h3>
+								<div class="technique-cost">3 Stamina • Action, Zone</div>
+							</div>
+							<p>The ultimate Whip technique, turning your weapon into a living serpent that strikes all nearby foes.</p>
+							<p><strong>Effect:</strong> Your Whip lashes out in a 20-ft radius around you. Make one DEX-based attack roll vs AR and compare it to all enemies in range.</p>
+							<p><strong>On Hit:</strong> Each hit creature:</p>
+							<ul>
+								<li>Takes 3d8 + DEX slashing damage</li>
+								<li>Becomes Entangled (up to your max capacity)</li>
+								<li>Makes a STR save vs your Whip DC or is pulled 10 ft toward you</li>
+							</ul>
+							<p><strong>Control Burst:</strong> Until the end of your next turn, you have advantage on all attacks against Entangled creatures, and they cannot willingly move away from you.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Exceptional battlefield control and repositioning</li>
+									<li>Creates opportunities for allies (Pull synergy)</li>
+									<li>Safe from range with Reach advantage</li>
+									<li>Hard to escape once Entangled</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Lower damage than other weapons</li>
+									<li>Vulnerable to high-STR enemies breaking free</li>
+									<li>Requires team coordination to maximize effectiveness</li>
+									<li>Less effective against aerial or swarm enemies</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

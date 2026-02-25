@@ -1,0 +1,286 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Claws - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🐾</div>
+					<h1>Claws</h1>
+					<p class="subtitle">Speed / Aggression</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+2 DEX</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Claws transform the hunter into a feral predator, emphasizing speed, mobility, and relentless aggression. Claws users excel at hit-and-run tactics, stacking bleeding effects, and overwhelming enemies with rapid strikes. This weapon rewards aggressive, high-risk gameplay and punishes hesitation.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Dual-wield (counts as two weapons)</li>
+									<li>Light</li>
+									<li>Finesse</li>
+									<li>Feral</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + DEX mod + proficiency</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Special</h3>
+								<p>When you take the Attack Action, you may make a bonus Claw attack (0 Stamina, no modifier to damage).</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Feral Rush</h2>
+						<p>The Claws hunter builds ferocity through consecutive strikes, entering a state of primal fury.</p>
+						<div class="mechanic-details">
+							<h3>Rush Rules</h3>
+							<ul>
+								<li><strong>Gain Rush:</strong> Each time you hit with a Claw attack, gain +1 Rush (max 5).</li>
+								<li><strong>Rush Benefits:</strong> While at 3+ Rush, gain +10 ft movement speed and your Claw attacks apply Bleeding on hit (no save).</li>
+								<li><strong>Lose Rush:</strong> Reset to 0 if you end your turn without attacking, miss all attacks in a turn, or are Stunned/Restrained.</li>
+								<li><strong>Spend Rush:</strong> Certain techniques consume Rush for powerful effects.</li>
+							</ul>
+
+							<h3>Bleeding Mechanic</h3>
+							<ul>
+								<li>Bleeding creatures take 1d4 damage at the start of their turn.</li>
+								<li>Bleeding stacks: multiple applications add +1d4 per stack (max 3 stacks).</li>
+								<li>A creature can use an Action to staunch Bleeding (removes all stacks).</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Per Claw (main)</th>
+									<th>Bonus Claw (no mod)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d6 + DEX</td><td>1d6</td></tr>
+								<tr><td>Tier 2</td><td>1d8 + DEX</td><td>1d8</td></tr>
+								<tr><td>Tier 3</td><td>2d6 + DEX</td><td>2d6</td></tr>
+								<tr><td>Tier 4</td><td>2d8 + DEX</td><td>2d8</td></tr>
+								<tr><td>Tier 5</td><td>3d6 + DEX</td><td>3d6</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Rend</h3>
+								<div class="technique-cost">2 Stamina • Action</div>
+							</div>
+							<p>A savage series of slashes that tears through flesh.</p>
+							<p><strong>Effect:</strong> Make three Claw attacks against one target. Each hit:</p>
+							<ul>
+								<li>Deals base Claw damage + DEX</li>
+								<li>Applies 1 stack of Bleeding (no save)</li>
+							</ul>
+							<p><strong>Rush Gain:</strong> Gain +1 Rush per hit (as normal).</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Pounce</h3>
+								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+							</div>
+							<p>Leap onto your prey with feral speed.</p>
+							<p><strong>Leap:</strong> Move up to 20 ft toward a target (must be in a straight line). This movement ignores difficult terrain and does not provoke opportunity attacks.</p>
+							<p><strong>Strike:</strong> Make a Claw attack with advantage. On hit:</p>
+							<ul>
+								<li>Deal base Claw damage + DEX + 1d6</li>
+								<li>Target makes a STR save vs your Claws DC or is knocked Prone</li>
+							</ul>
+							<p><strong>Rush Bonus:</strong> If you have 3+ Rush, the leap distance increases to 30 ft and the attack deals an additional +1d6 damage.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Predator's Instinct</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your feral nature sharpens your senses and reflexes.</p>
+							<ul>
+								<li>You have advantage on Instinct checks and initiative rolls.</li>
+								<li>While at 3+ Rush, you can Dodge as a Fast Action (instead of Action).</li>
+								<li>Bleeding damage you inflict increases to 1d6 per stack (instead of 1d4).</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Blood Frenzy</h3>
+								<div class="technique-cost">3 Stamina • Fast Action</div>
+							</div>
+							<p>Enter a state of uncontrolled fury, trading defense for overwhelming offense.</p>
+							<p><strong>Duration:</strong> 3 rounds</p>
+							<p><strong>Effect (while active):</strong></p>
+							<ul>
+								<li>You do not lose Rush at the end of your turn</li>
+								<li>Your Rush cap increases to 7</li>
+								<li>All Claw attacks deal +1d8 damage</li>
+								<li>You have disadvantage on all saving throws</li>
+								<li>Enemies have advantage on attacks against you</li>
+							</ul>
+							<p><strong>End:</strong> When Blood Frenzy ends, reset Rush to 0 and you cannot enter Blood Frenzy again this combat.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Apex Predator</h3>
+								<div class="technique-cost">5 Rush • Action, Ultimate</div>
+							</div>
+							<p>The ultimate Claws technique, unleashing your full predatory power in a devastating flurry.</p>
+							<p><strong>Cost:</strong> Consume all 5 Rush to activate.</p>
+							<p><strong>Effect:</strong> Make five Claw attacks against any targets within reach. For each attack:</p>
+							<ul>
+								<li>Attacks are made with advantage</li>
+								<li>On hit: deal base Claw damage + DEX + 2d6</li>
+								<li>On hit: apply 2 stacks of Bleeding (no save)</li>
+								<li>You may move up to 10 ft between each attack (this movement does not provoke opportunity attacks)</li>
+							</ul>
+							<p><strong>Finisher:</strong> If you hit the same target with at least 3 of these attacks, that target makes a CON save vs your DC:</p>
+							<ul>
+								<li><strong>Fail:</strong> Target takes an additional 4d10 slashing damage and becomes Stunned until end of your next turn.</li>
+								<li><strong>Success:</strong> Half damage, no Stun.</li>
+							</ul>
+							<p><strong>Recovery:</strong> After using Apex Predator, you immediately regain 2 Rush.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Highest attack frequency in the game</li>
+									<li>Excellent mobility and chase potential</li>
+									<li>Stacking Bleeding creates strong sustained damage</li>
+									<li>Snowballs hard once Rush builds up</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Very fragile - no defensive options</li>
+									<li>Rush resets on misses or inactivity</li>
+									<li>Completely melee - no ranged options</li>
+									<li>Blood Frenzy is high-risk, high-reward</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

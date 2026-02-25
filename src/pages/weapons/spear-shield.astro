@@ -1,0 +1,280 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Spear & Shield - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🛡️⚔️</div>
+					<h1>Spear & Shield</h1>
+					<p class="subtitle">Balanced / Versatile</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+1 STR</span>
+						<span class="stat-badge">+1 DEX</span>
+						<span class="stat-badge">+1 AR</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Spear & Shield is the epitome of versatility, offering a balanced approach between offense and defense. Spear users can switch between aggressive strikes and defensive stances, adapting to any combat scenario. This weapon rewards tactical thinking and flexibility, making it ideal for hunters who want options.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Reach (10 ft with Spear)</li>
+									<li>Guard (Shield can Block)</li>
+									<li>Versatile</li>
+									<li>Two pieces</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + STR or DEX mod + proficiency</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Special</h3>
+								<p>Choose STR or DEX for attacks. Gain +1 AR from shield.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Guard Stance</h2>
+						<p>The Spear & Shield hunter can switch between Aggressive and Defensive stances, each offering unique benefits.</p>
+						<div class="mechanic-details">
+							<h3>Stance Rules</h3>
+							<ul>
+								<li><strong>Switch Stance:</strong> Fast Action (no Stamina cost). Start combat in Aggressive Stance.</li>
+								<li><strong>Aggressive Stance:</strong> Your Spear attacks deal +1 damage die. Reach 10 ft. Cannot Block.</li>
+								<li><strong>Defensive Stance:</strong> You can use your Shield to Block (as Reaction). Spear attacks at normal damage. Reach 5 ft.</li>
+								<li><strong>Momentum:</strong> Each time you successfully attack or Block, gain +1 Momentum (max 3). Momentum persists when you switch stances.</li>
+								<li><strong>Lose Momentum:</strong> If you go a full round without attacking or Blocking, reset to 0.</li>
+							</ul>
+
+							<h3>Spending Momentum</h3>
+							<p>Spend Momentum (instant, no action) to gain one of the following:</p>
+							<ul>
+								<li><strong>1 Momentum:</strong> +5 ft movement this turn</li>
+								<li><strong>2 Momentum:</strong> Advantage on your next attack or Block</li>
+								<li><strong>3 Momentum:</strong> Immediately switch stance (does not consume Fast Action)</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Defensive Stance</th>
+									<th>Aggressive Stance</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d8 + STR/DEX</td><td>2d8 + STR/DEX</td></tr>
+								<tr><td>Tier 2</td><td>1d10 + STR/DEX</td><td>2d10 + STR/DEX</td></tr>
+								<tr><td>Tier 3</td><td>2d6 + STR/DEX</td><td>3d6 + STR/DEX</td></tr>
+								<tr><td>Tier 4</td><td>2d8 + STR/DEX</td><td>3d8 + STR/DEX</td></tr>
+								<tr><td>Tier 5</td><td>2d10 + STR/DEX</td><td>3d10 + STR/DEX</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Thrust & Bash</h3>
+								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+							</div>
+							<p>A combination strike using both Spear and Shield.</p>
+							<p><strong>Effect:</strong> Make two attacks:</p>
+							<ul>
+								<li><strong>Spear Thrust:</strong> Base Spear damage (current stance) + STR/DEX</li>
+								<li><strong>Shield Bash:</strong> 1d6 + STR. On hit, target makes a STR save vs your DC or is knocked back 5 ft and falls Prone.</li>
+							</ul>
+							<p><strong>Momentum:</strong> If both attacks hit, gain +1 Momentum.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Impale</h3>
+								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+							</div>
+							<p>A devastating thrust that pins enemies in place.</p>
+							<p><strong>Range:</strong> 10 ft (Aggressive) or 5 ft (Defensive)</p>
+							<p><strong>Attack:</strong> Make a Spear attack with +1 Power Die. On hit:</p>
+							<ul>
+								<li>Deal base Spear damage + STR/DEX + 1d8</li>
+								<li>Target makes a CON save vs your DC or becomes Bleeding</li>
+								<li>Target's movement speed reduced by 10 ft until end of its next turn</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Counter-Thrust</h3>
+								<div class="technique-cost">1 Stamina • Reaction</div>
+							</div>
+							<p>Strike back after a successful Block.</p>
+							<p><strong>Trigger:</strong> You successfully Block an attack in Defensive Stance</p>
+							<p><strong>Effect:</strong> Immediately make a Spear attack against the attacker (if in range). This attack is made with advantage and deals +1d6 damage on hit.</p>
+							<p><strong>Momentum:</strong> This attack gains +1 Momentum on hit as normal.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Phalanx Formation</h3>
+								<div class="technique-cost">2 Stamina • Fast Action, Aura</div>
+							</div>
+							<p>You inspire your allies to form a defensive line.</p>
+							<p><strong>Duration:</strong> Until the end of your next turn</p>
+							<p><strong>Effect:</strong> You and all allies within 10 ft:</p>
+							<ul>
+								<li>Gain +1 AR</li>
+								<li>Cannot be moved against their will</li>
+								<li>Gain advantage on saves vs Fear/Charm</li>
+							</ul>
+							<p><strong>Shield Wall:</strong> If you and at least one ally with a shield are adjacent to each other, increase AR bonus to +2.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Hoplite's Wrath</h3>
+								<div class="technique-cost">4 Stamina • Action, Line, Commitment</div>
+							</div>
+							<p>The ultimate Spear & Shield technique, a charging thrust that impales everything in your path.</p>
+							<p><strong>Charge:</strong> Move up to 30 ft in a straight line. This movement does not provoke opportunity attacks.</p>
+							<p><strong>Pierce:</strong> Make one attack roll and compare vs AR of all creatures in your path:</p>
+							<ul>
+								<li><strong>Damage:</strong> 4d10 + STR/DEX to each hit creature</li>
+								<li><strong>Impale:</strong> Each hit creature makes a STR save vs your DC or is pushed to the end of your charge path</li>
+								<li><strong>Stagger:</strong> If any creature fails the save by 5 or more, it becomes Staggered (loses next turn)</li>
+							</ul>
+							<p><strong>End Position:</strong> After the charge, you may immediately switch to Defensive Stance (no action required) and gain +2 AR until the start of your next turn.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Extreme versatility with stance switching</li>
+									<li>Solid defense when needed, strong offense when safe</li>
+									<li>Momentum system rewards active playstyle</li>
+									<li>Reach advantage in Aggressive Stance</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Neither the best tank nor the best damage dealer</li>
+									<li>Requires constant stance management</li>
+									<li>Momentum resets if you don't stay active</li>
+									<li>Can feel indecisive without clear combat role</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

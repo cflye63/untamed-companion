@@ -1,0 +1,260 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Greatshield - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🛡️</div>
+					<h1>Greatshield</h1>
+					<p class="subtitle">Tank / Protector</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+2 CON</span>
+						<span class="stat-badge">+2 AR</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Greatshield transforms the hunter into a living bastion, capable of withstanding devastating blows while controlling the battlefield. With techniques focused on defense, taunting, and protecting allies, the Greatshield is ideal for players who thrive on strategic positioning and teamwork.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Guard (can Block)</li>
+									<li>Two-Handed</li>
+									<li>Heavy</li>
+									<li>Rooting (some moves)</li>
+									<li>Commitment (some moves)</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Special</h3>
+								<p>Gain +1 extra Reaction/round, usable only for Block.</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + CON mod + proficiency</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Resolve</h2>
+						<p>The Greatshield hunter channels every impact into focus and endurance, building Resolve with each act of defiance.</p>
+						<div class="mechanic-details">
+							<ul>
+								<li>Start at 0 Resolve (max 3).</li>
+								<li><strong>Gain +1 Resolve</strong> when you successfully Block an attack, or succeed a save/check that would move/knock you Prone/Stunned.</li>
+								<li><strong>Lose all Resolve</strong> if you're Knocked Prone, Staggered, moved against your will, or you move >10 ft on your turn.</li>
+								<li>Exception: abilities that say they don't break Resolve (e.g., Shield Rush).</li>
+							</ul>
+
+							<h3>Spending Resolve (instant)</h3>
+							<p>Once per turn, when you spend Resolve choose one:</p>
+							<ul>
+								<li><strong>Recover:</strong> Regain 1d10 HP per Resolve spent, or regain 1 Stamina per Resolve spent.</li>
+								<li><strong>Reroll:</strong> Reroll one failed saving throw (no stacking).</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Damage Dice (Shield Slam)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d10 + CON Modifier</td></tr>
+								<tr><td>Tier 2</td><td>1d12 + CON Modifier</td></tr>
+								<tr><td>Tier 3</td><td>2d8 + CON Modifier</td></tr>
+								<tr><td>Tier 4</td><td>2d10 + CON Modifier</td></tr>
+								<tr><td>Tier 5</td><td>2d12 + CON Modifier</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Bulwark</h3>
+								<div class="technique-cost">2 Stamina • Action, Rooting, Guard</div>
+							</div>
+							<p><strong>Taunt:</strong> Target creature makes an Instinct save vs your Greatshield DC. Fail: It becomes Taunted.</p>
+							<p><strong>Wall:</strong> You take −50% (round up) damage from all sources until your next turn.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Bastion</h3>
+								<div class="technique-cost">1 Stamina • Reaction, Guard</div>
+							</div>
+							<p>You interpose yourself between your allies and death.</p>
+							<p>When an ally within 5 ft is targeted by an attack, you interpose: the attack retargets to you before damage is rolled, and you take −50% damage (round up) from it.</p>
+							<p>Counts as a Block for features that care about successful Blocks.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Splendid Guard</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Every block becomes a weapon. Every hit strengthens your defense.</p>
+							<p><strong>Retaliation:</strong> The first time you successfully Block an attack from a creature each round, that creature takes 1d8 + CON damage (Tier 5: 2d8 + CON). (Bastion retargets count as Blocks.)</p>
+							<p><strong>Steadfast:</strong> You have advantage on CON saves.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Shield Rush / Shield Bash</h3>
+								<div class="technique-cost">2 Stamina • Action, Commitment, Line</div>
+							</div>
+							<p>You drive your shield forward like a mountain in motion.</p>
+							<p><strong>Rush:</strong> Move up to 20 ft in a straight line (must travel ≥10 ft). You do not lose Resolve for this movement.</p>
+							<p><strong>Hit:</strong> Each creature in your path: attack vs AR; on hit deal 2× weapon dice + CON.</p>
+							<p><strong>Control:</strong> On hit, each creature makes a CON save vs your DC or becomes Staggered (1 turn).</p>
+							<p><strong>Full-Resolve Crash:</strong> You may consume any Resolve to add +1 Power Die per Resolve spent to the first creature hit.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Fortress of the Hunt</h3>
+								<div class="technique-cost">Upkeep 2 Stamina/turn • Fast Action, Guard, Aura, Rooting</div>
+							</div>
+							<p>You become the anchor that monsters cannot move or ignore. 1/hunt.</p>
+							<p>While active (ends if you can't pay upkeep):</p>
+							<ul>
+								<li><strong>You:</strong> +2 AR, cannot be moved or knocked Prone. Moving >10 ft on your turn immediately ends Fortress.</li>
+								<li><strong>Allies within 10 ft:</strong> +1 AR and advantage on CON saves.</li>
+								<li><strong>Bastion Extension:</strong> You may use Bastion on allies within 10 ft (instead of 5 ft).</li>
+								<li><strong>Taunting Wall:</strong> Whenever you successfully Block an attack, the attacker must make an Instinct save or become Taunted until the start of your next turn (once per attacker per round).</li>
+							</ul>
+							<p><strong>End Conditions:</strong> End as a Free Action on your turn; also ends if you move >10 ft, are Stunned, or cannot pay upkeep.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>S-tier protection: reliable −50% mitigation on call</li>
+									<li>Ally intercepts and soft crowd control (taunt/stun)</li>
+									<li>Resolve engine rewards staying planted and taking hits</li>
+									<li>Retaliations keep damage relevant without leaving your post</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Stamina-hungry if you spam Blocks and techs back-to-back</li>
+									<li>Limited burst outside Shield Rush's Full-Resolve crash</li>
+									<li>Position-locked: get dragged or knocked down and your engine resets</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

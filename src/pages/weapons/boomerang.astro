@@ -1,0 +1,278 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Boomerang - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🪃</div>
+					<h1>Boomerang</h1>
+					<p class="subtitle">Trick Weapon / Multi-target</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+1 DEX</span>
+						<span class="stat-badge">+1 INS</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Boomerang is a trick weapon that excels at hitting multiple targets and creating unique attack angles. Boomerang users are masters of geometry and timing, bouncing their weapon between enemies and catching it mid-flight for devastating combos. This weapon rewards creativity and precision over brute force.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Ranged (30-90 ft)</li>
+									<li>Returning</li>
+									<li>Finesse</li>
+									<li>Trick</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + DEX mod + proficiency</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Special</h3>
+								<p>Your Boomerang returns to you after each throw. If you move before it returns, it falls where you were standing.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Ricochet</h2>
+						<p>The Boomerang bounces between targets, building combo chains with each successful hit.</p>
+						<div class="mechanic-details">
+							<h3>Ricochet Rules</h3>
+							<ul>
+								<li><strong>Basic Attack:</strong> When you hit with a Boomerang attack, you may declare a Ricochet.</li>
+								<li><strong>Ricochet Target:</strong> Choose another creature within 30 ft of the initial target. Make a new attack roll against that creature.</li>
+								<li><strong>Chain Limit:</strong> You may ricochet up to 3 times per throw (T3: 4 times, T5: 5 times).</li>
+								<li><strong>Damage Scaling:</strong> Each ricochet in a chain deals -1 damage die (min 1d6).</li>
+								<li><strong>Combo Counter:</strong> Each successful hit in a chain grants +1 Combo (max 5). Combo resets if you miss or don't attack on your turn.</li>
+							</ul>
+
+							<h3>Spending Combo</h3>
+							<p>Spend Combo points (instant, no action required) to enhance your next throw:</p>
+							<ul>
+								<li><strong>2 Combo:</strong> Next throw ignores half cover</li>
+								<li><strong>3 Combo:</strong> Next throw has advantage on attack rolls</li>
+								<li><strong>5 Combo:</strong> Next throw deals +2d6 damage to all targets hit</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Damage Dice</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d8 + DEX</td></tr>
+								<tr><td>Tier 2</td><td>1d10 + DEX</td></tr>
+								<tr><td>Tier 3</td><td>2d6 + DEX</td></tr>
+								<tr><td>Tier 4</td><td>2d8 + DEX</td></tr>
+								<tr><td>Tier 5</td><td>2d10 + DEX</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Curve Shot</h3>
+								<div class="technique-cost">1 Stamina • Action</div>
+							</div>
+							<p>Bend your throw around obstacles and cover.</p>
+							<p><strong>Range:</strong> 30-90 ft</p>
+							<p><strong>Effect:</strong> Make a Boomerang attack that ignores all cover (including full cover). You can target creatures you cannot see directly, as long as you know their approximate location.</p>
+							<p><strong>On Hit:</strong> Deal base Boomerang damage + DEX. You may ricochet as normal.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Windcutter</h3>
+								<div class="technique-cost">2 Stamina • Action, AoE</div>
+							</div>
+							<p>A wide spinning throw that hits everything in a line.</p>
+							<p><strong>Range:</strong> 40-ft line</p>
+							<p><strong>Effect:</strong> Make one DEX-based attack roll and compare vs AR of all creatures in the line. On hit:</p>
+							<ul>
+								<li>Deal base Boomerang damage + DEX</li>
+								<li>Target makes a DEX save vs your DC or is pushed 5 ft perpendicular to the line</li>
+							</ul>
+							<p><strong>Combo Bonus:</strong> If you have 3+ Combo before using this, increase the line to 50 ft and add +1d6 damage.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Trick Catch</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your mastery of the Boomerang allows you to perform impossible catches and throws.</p>
+							<ul>
+								<li>Your ricochet chain limit increases to 4.</li>
+								<li>When your Boomerang returns to you, you may immediately throw it again as a Fast Action (costs normal Stamina).</li>
+								<li>You can catch your Boomerang even while moving, and you can redirect it mid-flight (choose a different return point within 10 ft of you as a Free Action).</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Precision Strike</h3>
+								<div class="technique-cost">2 Stamina • Action</div>
+							</div>
+							<p>A perfectly aimed throw that targets weak points.</p>
+							<p><strong>Range:</strong> 30-90 ft</p>
+							<p><strong>Effect:</strong> Make a Boomerang attack with advantage. On hit:</p>
+							<ul>
+								<li>Deal base Boomerang damage + DEX + 2d8</li>
+								<li>If this attack crits, the target is Staggered (loses next turn)</li>
+								<li>You may ricochet as normal, but only this first attack benefits from the bonus damage</li>
+							</ul>
+							<p><strong>Combo Synergy:</strong> This attack generates Combo as normal, but does not consume your current Combo.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Storm of Blades</h3>
+								<div class="technique-cost">4 Stamina • Action, Ultimate, Zone</div>
+							</div>
+							<p>The ultimate Boomerang technique, creating a whirlwind of ricocheting strikes.</p>
+							<p><strong>Setup:</strong> Throw your Boomerang into the air above a point within 60 ft. It hovers there for 2 rounds, creating a 30-ft-radius storm.</p>
+							<p><strong>Effect (for 2 rounds):</strong></p>
+							<ul>
+								<li>At the start of each creature's turn in the zone (enemies only), make a DEX-based attack vs their AR. On hit: 2d10 + DEX slashing damage.</li>
+								<li>The storm ignores cover and targets flying creatures normally.</li>
+								<li>You may use a Fast Action on your turn to redirect the storm's center up to 20 ft.</li>
+							</ul>
+							<p><strong>Finisher:</strong> When the storm ends (or you end it early as a Free Action), the Boomerang makes one final Ricochet attack against all creatures that were in the zone, then returns to you.</p>
+							<p><strong>Limitation:</strong> While Storm of Blades is active, you cannot make other Boomerang attacks.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Best multi-target damage in the game</li>
+									<li>Ignores cover with Curve Shot</li>
+									<li>Combo system rewards aggressive play</li>
+									<li>Safe ranged option with returning weapon</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Ricochet damage falls off quickly</li>
+									<li>Requires multiple targets to shine</li>
+									<li>Combo resets if you miss</li>
+									<li>Complex geometry calculations can slow play</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

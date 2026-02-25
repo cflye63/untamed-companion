@@ -1,0 +1,282 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Hammer - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🔨</div>
+					<h1>Hammer</h1>
+					<p class="subtitle">Stun / Disruption</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+2 STR</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Hammer is a brutal weapon focused on stunning enemies and disrupting their abilities. Hammer users excel at crowd control, breaking monster parts, and creating openings for allies. This weapon trades finesse for raw impact, making it ideal for players who want to dominate through sheer force and strategic stuns.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Heavy</li>
+									<li>Two-Handed</li>
+									<li>Bludgeoning</li>
+									<li>Crusher</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + STR mod + proficiency</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Special</h3>
+								<p>All Hammer attacks deal double damage to objects, structures, and monster parts.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Impact</h2>
+						<p>Every Hammer strike carries concussive force that builds toward devastating stuns.</p>
+						<div class="mechanic-details">
+							<h3>Impact Rules</h3>
+							<ul>
+								<li><strong>Build Impact:</strong> Each time you hit with a Hammer attack, apply 1 Impact to the target (max 3 Impact per creature).</li>
+								<li><strong>Impact Decay:</strong> A creature loses 1 Impact at the end of its turn if it wasn't hit by a Hammer this round.</li>
+								<li><strong>Stunning Blow:</strong> When a creature reaches 3 Impact, it becomes Stunned until the end of its next turn and all Impact is removed. (Subject to Escalating Resistance: each subsequent Stun in the same combat requires +1 additional Impact.)</li>
+								<li><strong>Impact Markers:</strong> Visible to all allies. They know when enemies are at 2 Impact (one hit from being Stunned).</li>
+							</ul>
+
+							<h3>Part Breaking</h3>
+							<ul>
+								<li>When you deal damage to a specific monster part (horn, tail, wing, etc.), you accumulate Break Progress.</li>
+								<li>Each Hammer hit deals 1 Break Progress to the targeted part (2 Progress if you have 3 Impact on that creature when you hit).</li>
+								<li>When Break Progress reaches the part's threshold (GM determines, usually 3-5), the part breaks: the monster loses associated abilities and takes 2d10 additional damage.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Damage Dice</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d10 + STR</td></tr>
+								<tr><td>Tier 2</td><td>2d6 + STR</td></tr>
+								<tr><td>Tier 3</td><td>2d8 + STR</td></tr>
+								<tr><td>Tier 4</td><td>2d10 + STR</td></tr>
+								<tr><td>Tier 5</td><td>3d8 + STR</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Charged Smash</h3>
+								<div class="technique-cost">2 Stamina • Action, Wind-Up, Commitment</div>
+							</div>
+							<p>Wind up for a devastating overhead strike.</p>
+							<p><strong>Charge:</strong> Spend your Action to begin charging. You cannot move >5 ft while charging.</p>
+							<p><strong>Release (next turn, Action):</strong> Make a Hammer attack with +2 Power Dice. On hit:</p>
+							<ul>
+								<li>Deal base Hammer damage + STR + 2d6</li>
+								<li>Apply 2 Impact instead of 1</li>
+								<li>If this Stuns the target, they remain Stunned for an additional turn (2 turns total)</li>
+							</ul>
+							<p><strong>Cancel:</strong> If you move >5 ft, take damage, or are Stunned while charging, the charge is lost (no refund).</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Shockwave</h3>
+								<div class="technique-cost">2 Stamina • Action, AoE, Rooting</div>
+							</div>
+							<p>Slam the ground, sending out a concussive wave.</p>
+							<p><strong>Area:</strong> 15-ft cone from you</p>
+							<p><strong>Effect:</strong> All creatures in the cone make a DEX save vs your Hammer DC:</p>
+							<ul>
+								<li><strong>Fail:</strong> Take 2d8 + STR bludgeoning damage, knocked Prone, and gain 1 Impact</li>
+								<li><strong>Success:</strong> Half damage, no Prone, no Impact</li>
+							</ul>
+							<p><strong>T4+ Bonus:</strong> At Tier 4+, increase cone to 20 ft and add +1d8 damage.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Overwhelming Force</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your strikes cannot be ignored or defended against easily.</p>
+							<ul>
+								<li>When a creature Blocks or Dodges your Hammer attack, you may spend 1 Stamina (instant) to force them to take half damage anyway and gain 1 Impact.</li>
+								<li>Your Hammer attacks ignore resistance to bludgeoning damage.</li>
+								<li>Break Progress from your attacks increases to 2 per hit (3 if at 3 Impact).</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Meteor Strike</h3>
+								<div class="technique-cost">3 Stamina • Action, Commitment</div>
+							</div>
+							<p>Leap into the air and crash down with devastating force.</p>
+							<p><strong>Leap:</strong> Jump up to 15 ft horizontally (can go over obstacles). This movement does not provoke opportunity attacks.</p>
+							<p><strong>Impact:</strong> Choose a 10-ft-radius area within your leap range. All creatures in the area when you land:</p>
+							<ul>
+								<li>Make a DEX save vs your Hammer DC</li>
+								<li><strong>Fail:</strong> Take 3d10 + STR bludgeoning damage, knocked Prone, and gain 2 Impact</li>
+								<li><strong>Success:</strong> Half damage, no Prone, gain 1 Impact</li>
+							</ul>
+							<p><strong>Crater:</strong> The impact zone becomes difficult terrain until the end of the encounter.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Titan's Wrath</h3>
+								<div class="technique-cost">4 Stamina • Action, Ultimate, Wind-Up</div>
+							</div>
+							<p>The ultimate Hammer technique, a colossal swing that reshapes the battlefield.</p>
+							<p><strong>Charge:</strong> Spend your Action to begin charging (same rules as Charged Smash). You cannot be interrupted by damage while charging—if damaged, you continue charging but take the damage.</p>
+							<p><strong>Release (next turn, Action):</strong> Make a single Hammer attack in a 20-ft arc in front of you. Make one attack roll and compare vs AR of all creatures in the arc.</p>
+							<p><strong>On Hit (each creature):</strong></p>
+							<ul>
+								<li>Deal 5d10 + STR bludgeoning damage</li>
+								<li>Apply 3 Impact immediately (triggers Stun if target has 0-2 Impact)</li>
+								<li>Creature is launched 15 ft away from you and lands Prone</li>
+								<li>If creature hits a wall/obstacle during launch, takes an additional 2d10 damage</li>
+							</ul>
+							<p><strong>Terrain Destruction:</strong> The arc's path becomes a trench (difficult terrain, provides half cover for creatures inside it). All non-magical structures and obstacles in the arc are destroyed.</p>
+							<p><strong>Exhaustion:</strong> After using Titan's Wrath, you cannot use Wind-Up techniques for the next 2 rounds.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Best crowd control through Impact stuns</li>
+									<li>Breaks monster parts faster than any weapon</li>
+									<li>Strong AoE damage options</li>
+									<li>Bypasses defense mechanics (Overwhelming Force)</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Slow attack speed and wind-up requirements</li>
+									<li>Vulnerable during charges</li>
+									<li>Impact decay means you must maintain pressure</li>
+									<li>Heavy weapon limits mobility</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>

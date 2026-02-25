@@ -1,0 +1,289 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Hunting Flute - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">🎵</div>
+					<h1>Hunting Flute</h1>
+					<p class="subtitle">Support / Buffer</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+1 CHA</span>
+						<span class="stat-badge">+1 INS</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Hunting Flute is a musical instrument that empowers allies and weakens enemies through the power of song. Flute users excel at support, offering buffs, debuffs, and healing through a versatile melody system. This weapon is perfect for players who want to control the flow of battle while enabling their teammates.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Tags</h3>
+								<ul>
+									<li>Support</li>
+									<li>Aura</li>
+									<li>One-Handed</li>
+									<li>Ranged (sound)</li>
+								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Save DC</h3>
+								<p class="formula">10 + CHA mod + proficiency</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Song of the Hunt</h2>
+						<p>The Flute user weaves melodies that shape the battlefield. You maintain one active Song at a time, which provides ongoing effects to allies or enemies.</p>
+						<div class="mechanic-details">
+							<h3>Song Rules</h3>
+							<ul>
+								<li><strong>Start a Song:</strong> Fast Action. Only one Song active at a time.</li>
+								<li><strong>Duration:</strong> Songs last until you start a new Song, are Stunned, or choose to end it (Free Action).</li>
+								<li><strong>Range:</strong> Most Songs affect allies/enemies within 30 ft of you.</li>
+								<li><strong>Notes:</strong> Gain +1 Note each time you successfully support an ally or debuff an enemy with a Song effect (max 3 Notes).</li>
+								<li><strong>Spend Notes:</strong> Certain techniques consume Notes for enhanced effects.</li>
+							</ul>
+
+							<h3>Starting Songs (T1)</h3>
+							<ul>
+								<li><strong>Courage:</strong> Allies in range gain +1 to attack rolls.</li>
+								<li><strong>Lament:</strong> Enemies in range have disadvantage on saves vs Fear/Charm.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage Dice per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Sonic Attack Damage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d6 + CHA</td></tr>
+								<tr><td>Tier 2</td><td>1d8 + CHA</td></tr>
+								<tr><td>Tier 3</td><td>2d6 + CHA</td></tr>
+								<tr><td>Tier 4</td><td>2d8 + CHA</td></tr>
+								<tr><td>Tier 5</td><td>3d6 + CHA</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Resonant Strike</h3>
+								<div class="technique-cost">1 Stamina • Action</div>
+							</div>
+							<p>A focused blast of sound that damages and disorients.</p>
+							<p><strong>Range:</strong> 30 ft</p>
+							<p><strong>Attack:</strong> CHA-based attack vs AR. On hit: base Flute damage + CHA.</p>
+							<p><strong>Effect:</strong> Target makes a CON save vs your Flute DC or becomes Deafened until end of its next turn.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Healing Hymn</h3>
+								<div class="technique-cost">2 Stamina • Action, Aura</div>
+							</div>
+							<p>A soothing melody that mends wounds.</p>
+							<p><strong>Effect:</strong> All allies within 30 ft (including you) regain 1d8 + CHA HP.</p>
+							<p><strong>Notes Bonus:</strong> If you have 3 Notes, you may spend them all to add +1d8 to the healing.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — New Songs</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>You learn two additional Songs:</p>
+							<ul>
+								<li><strong>Swiftness:</strong> Allies in range gain +10 ft movement speed.</li>
+								<li><strong>Discord:</strong> Enemies in range take 1d4 psychic damage at the start of their turn if they can hear you.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Crescendo</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>Your songs grow more powerful and reach further.</p>
+							<ul>
+								<li>Song range increases to 40 ft.</li>
+								<li>When you would gain a Note, gain +1 additional Note (still max 3).</li>
+								<li>Your Songs no longer require you to be heard—they affect creatures even if Deafened.</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Shattering Note</h3>
+								<div class="technique-cost">3 Stamina • Action, AoE</div>
+							</div>
+							<p>A devastating sonic burst that disrupts and damages.</p>
+							<p><strong>Range:</strong> 20-ft radius within 40 ft</p>
+							<p><strong>Effect:</strong> All creatures in the area make a CON save vs your Flute DC:</p>
+							<ul>
+								<li><strong>Fail:</strong> Take 3d8 + CHA thunder damage and become Stunned until the end of your next turn.</li>
+								<li><strong>Success:</strong> Half damage, no Stun.</li>
+							</ul>
+							<p><strong>Notes Bonus:</strong> Spend 2 Notes to increase radius to 25 ft and add +1d8 damage.</p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — New Songs</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p>You learn two additional Songs:</p>
+							<ul>
+								<li><strong>Fortress:</strong> Allies in range gain +1 AR.</li>
+								<li><strong>Entropy:</strong> Enemies in range have -1 AR (min 0).</li>
+							</ul>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Requiem of the Wild</h3>
+								<div class="technique-cost">4 Stamina • Action, Ultimate</div>
+							</div>
+							<p>The ultimate Flute technique, a legendary melody that reshapes the battlefield.</p>
+							<p><strong>Duration:</strong> 3 rounds (your turn to your turn 3 turns later)</p>
+							<p><strong>Effect (while active):</strong></p>
+							<ul>
+								<li><strong>All allies within 50 ft:</strong> +2 to all attack rolls, saves, and skill checks. Immunity to Fear and Charm. Regain 1d6 HP at the start of their turn.</li>
+								<li><strong>All enemies within 50 ft:</strong> Disadvantage on attack rolls. Take 2d6 psychic damage at the start of their turn (no save).</li>
+								<li><strong>You:</strong> Cannot take Actions or Bonus Actions while maintaining Requiem (can still move, use Reactions). If you are Stunned or choose to end it early, Requiem ends immediately.</li>
+							</ul>
+							<p><strong>Notes:</strong> You do not gain Notes while Requiem is active.</p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Weapon Playstyle</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Exceptional force multiplier for teams</li>
+									<li>Flexible song library for any situation</li>
+									<li>Healing and support without sacrificing offense</li>
+									<li>Area control through debuffs</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Low personal damage output</li>
+									<li>Highly dependent on allies to be effective</li>
+									<li>Vulnerable to interruption (Stunned ends Songs)</li>
+									<li>Limited solo viability</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card ul { list-style: none; margin: 0; }
+			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>
