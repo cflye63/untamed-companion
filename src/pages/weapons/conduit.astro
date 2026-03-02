@@ -1,0 +1,401 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Conduit - Untamed Weapons</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<div class="weapon-icon">⚡</div>
+					<h1>Conduit</h1>
+					<p class="subtitle">Two-Handed / Channeling / Ritual / Focus</p>
+					<div class="stat-badges">
+						<span class="stat-badge">+2 INS</span>
+					</div>
+				</header>
+
+				<article class="content">
+					<section class="weapon-section">
+						<h2>Overview</h2>
+						<p>The Conduit is a battlefield control weapon that claims territory through ritual channeling. You root yourself in place to project an Aspect-infused Field that manipulates positioning, drains stamina, and disrupts enemy tactics. This weapon excels at controlling space and creating advantageous conditions for your team.</p>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Weapon Attributes</h2>
+						<div class="attributes-grid">
+							<div class="attribute-card">
+								<h3>Attack Stat</h3>
+								<p class="formula">INS to hit & damage</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Conduit DC</h3>
+								<p class="formula">10 + INS mod + proficiency</p>
+							</div>
+							<div class="attribute-card">
+								<h3>Reach</h3>
+								<p class="formula">40 ft (Ranged projection)</p>
+							</div>
+						</div>
+						<p class="note"><strong>Important:</strong> No Parry. No Guard.</p>
+					</section>
+
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Channel (Field State)</h2>
+						<p>You claim the ground and project a Field of influence.</p>
+						<div class="mechanic-details">
+							<h3>Channel — Action</h3>
+							<p>Enter Channeling state. Choose an Aspect.</p>
+
+							<h4>While Channeling:</h4>
+							<ul>
+								<li>You may not move more than 5 ft from where you began.</li>
+								<li>You cannot Sprint.</li>
+								<li>If forcibly moved → Channel breaks.</li>
+								<li>If you take ≥20% max HP from a single hit → CON save (DC 12) or Channel breaks.</li>
+								<li>End of your turn: lose 1 Stamina.</li>
+								<li>You may attack and use Techniques while Channeling.</li>
+								<li>Channel ends voluntarily (free) or if broken.</li>
+							</ul>
+
+							<h4>Field Properties:</h4>
+							<ul>
+								<li><strong>Radius:</strong> 15 ft from you.</li>
+								<li>Only one Aspect active at a time.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section aspects">
+						<h2>Aspects (Shared Pool)</h2>
+						<p>Each Conduit weapon grants access to 2–3 Aspects. These are space-control forces, not status engines.</p>
+						<p class="note"><strong>The following two are universal and always present:</strong></p>
+
+						<div class="aspect-card universal">
+							<div class="aspect-header">
+								<h3>🌱 Primal Aspect — Wild Pulse</h3>
+							</div>
+							<p class="aspect-identity">Instinct pressure. Predator tension. Biome dominance.</p>
+							<h4>While Channeling:</h4>
+							<ul>
+								<li>Enemies inside your Field cannot benefit from advantage on attacks.</li>
+								<li>If an enemy misses an attack inside the Field, they lose 1 Stamina (once per round per creature).</li>
+								<li>When you hit a creature inside your Field, you may shift it 5 ft (no save, once per turn).</li>
+							</ul>
+						</div>
+
+						<div class="aspect-card universal">
+							<div class="aspect-header">
+								<h3>🌍 Foundation Aspect — Grounded</h3>
+							</div>
+							<p class="aspect-identity">Stability. Ritual circle. Material focus.</p>
+							<h4>While Channeling:</h4>
+							<ul>
+								<li>You gain +1 AR.</li>
+								<li>Allies inside cannot be pushed more than 5 ft by forced movement.</li>
+								<li>You have advantage on saves to maintain Channel.</li>
+							</ul>
+						</div>
+
+						<p class="note"><strong>Elemental & Special Aspects:</strong></p>
+
+						<div class="aspect-card">
+							<div class="aspect-header">
+								<h3>🌿 Earth — Anchor Field</h3>
+							</div>
+							<p class="aspect-identity">Stop chargers.</p>
+							<ul>
+								<li>Enemies treat area as difficult terrain.</li>
+								<li>Enemies that Dash inside must make STR save vs Conduit DC or fall Prone.</li>
+								<li>Forced movement inside area has disadvantage.</li>
+							</ul>
+						</div>
+
+						<div class="aspect-card">
+							<div class="aspect-header">
+								<h3>🌬 Wind — Displacement Field</h3>
+							</div>
+							<p class="aspect-identity">Formation disruption.</p>
+							<ul>
+								<li>At start of enemy turn inside: Must move 5 ft (Conduit chooses direction) OR lose their Reaction.</li>
+								<li>Ranged attacks passing through the field: −1 to hit.</li>
+							</ul>
+						</div>
+
+						<div class="aspect-card">
+							<div class="aspect-header">
+								<h3>🌊 Water — Flow Field</h3>
+							</div>
+							<p class="aspect-identity">Anti-mobile battlefield.</p>
+							<ul>
+								<li>If an enemy moves more than 10 ft inside the area → DEX save or fall Prone.</li>
+								<li>Creatures knocked Prone inside become Soaked.</li>
+							</ul>
+						</div>
+
+						<div class="aspect-card">
+							<div class="aspect-header">
+								<h3>⚡ Storm — Pressure Field</h3>
+							</div>
+							<p class="aspect-identity">Stamina squeeze.</p>
+							<ul>
+								<li>Enemy ending turn inside: Must spend 1 Stamina OR take 1d6 lightning damage.</li>
+							</ul>
+						</div>
+
+						<div class="aspect-card">
+							<div class="aspect-header">
+								<h3>🔥 Flame — Denial Field</h3>
+							</div>
+							<p class="aspect-identity">Chokepoint control.</p>
+							<ul>
+								<li>First time per round an enemy enters area: Take 1d6 fire damage.</li>
+								<li>Area counts as hazardous terrain for forced movement.</li>
+							</ul>
+						</div>
+
+						<div class="aspect-card">
+							<div class="aspect-header">
+								<h3>🗣 Resonance — Disruption Field</h3>
+							</div>
+							<p class="aspect-identity">Anti-ritual / anti-channel.</p>
+							<ul>
+								<li>Inside radius: Preparations require CON save (DC = Conduit DC) to maintain.</li>
+								<li>Concentration-based effects lose 1 stack at end of turn.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Damage per Tier</h2>
+						<table class="damage-table">
+							<thead>
+								<tr>
+									<th>Tier</th>
+									<th>Damage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>Tier 1</td><td>1d8 + INS</td></tr>
+								<tr><td>Tier 2</td><td>2d6 + INS</td></tr>
+								<tr><td>Tier 3</td><td>2d8 + INS</td></tr>
+								<tr><td>Tier 4</td><td>3d6 + INS</td></tr>
+								<tr><td>Tier 5</td><td>3d8 + INS</td></tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Techniques by Tier</h2>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T1 — Rooted Pulse</h3>
+								<div class="technique-cost">Action • 2 Stamina</div>
+							</div>
+							<p><strong>Requires Channel</strong></p>
+							<p>Make a ranged attack against one creature inside your Field.</p>
+							<p><strong>On hit:</strong></p>
+							<ul>
+								<li>Target must make STR save or have its movement reduced to 0 until start of its next turn.</li>
+								<li>If the target is already affected by your Aspect effect, it makes the save at disadvantage.</li>
+							</ul>
+							<p class="purpose"><em>Purpose: Single-target lockdown tool.</em></p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T2 — Aspect Surge</h3>
+								<div class="technique-cost">Action • 3 Stamina</div>
+							</div>
+							<p><strong>Requires Channel</strong></p>
+							<p>You intensify your active Aspect until start of your next turn.</p>
+							<p><strong>Choose based on Aspect:</strong></p>
+							<ul>
+								<li><strong>Primal</strong> → Your attacks against enemies inside gain +1 Power Die (once per turn).</li>
+								<li><strong>Foundation</strong> → You gain +2 AR instead of +1 and allies gain +1 AR.</li>
+								<li><strong>Earth</strong> → Area becomes difficult terrain for all enemies (even without Dash).</li>
+								<li><strong>Wind</strong> → All enemies inside immediately move 5 ft (your choice).</li>
+								<li><strong>Water</strong> → All enemies inside make DEX save or fall Prone.</li>
+								<li><strong>Storm</strong> → Enemies inside must spend 1 Stamina immediately or take 1d6 lightning.</li>
+								<li><strong>Flame</strong> → Area erupts; enemies inside take 1d6 fire.</li>
+								<li><strong>Resonance</strong> → All enemies inside lose Reactions until start of their next turn.</li>
+							</ul>
+							<p class="purpose"><em>Purpose: Tempo spike.</em></p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T3 — Grounded Will</h3>
+								<div class="technique-cost">Passive</div>
+							</div>
+							<p><strong>While Channeling:</strong></p>
+							<ul>
+								<li>You gain +1 AR.</li>
+								<li>Channel only breaks from forced movement if you fail STR save vs attacker DC.</li>
+								<li>When an enemy fails a save from your Aspect, you regain 1 Stamina (once per round).</li>
+							</ul>
+							<p class="purpose"><em>Purpose: Stability & sustain.</em></p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T4 — Expanding Dominion</h3>
+								<div class="technique-cost">Action • 3 Stamina</div>
+							</div>
+							<p><strong>Requires Channel</strong></p>
+							<p>Your Field expands to 25 ft radius until start of your next turn.</p>
+							<p><strong>During this time:</strong></p>
+							<ul>
+								<li>Aspect effects trigger twice per round (once on entry, once on end of turn).</li>
+							</ul>
+							<p class="purpose"><em>Purpose: Major battlefield swing.</em></p>
+						</div>
+
+						<div class="technique-card">
+							<div class="technique-header">
+								<h3>T5 — Cataclysm Collapse</h3>
+								<div class="technique-cost">4 Stamina • Ends Channel</div>
+							</div>
+							<p><strong>Tag: Commitment</strong></p>
+							<p>You collapse your Field violently.</p>
+							<p><strong>All enemies inside:</strong></p>
+							<ul>
+								<li>Take weapon damage with +2 Power Die.</li>
+								<li><strong>Make save based on Aspect:</strong>
+									<ul>
+										<li><strong>Primal</strong> → CON save; fail: Staggered + lose 2 Stamina; success: lose 1 Stamina.</li>
+										<li><strong>Foundation</strong> → STR save; fail: movement 0 until end of next turn; success: half movement.</li>
+										<li><strong>Earth</strong> → STR save or Prone.</li>
+										<li><strong>Wind</strong> → STR save or pushed 10 ft.</li>
+										<li><strong>Water</strong> → DEX save or Soaked + Prone.</li>
+										<li><strong>Storm</strong> → CON save or Stunned (1 turn).</li>
+										<li><strong>Flame</strong> → CON save or Burned.</li>
+										<li><strong>Resonance</strong> → CHA save or Dazed (1 turn).</li>
+									</ul>
+								</li>
+							</ul>
+							<p><strong>After use:</strong> You cannot Channel for 1 round.</p>
+							<p class="purpose"><em>Purpose: Climax moment.</em></p>
+						</div>
+					</section>
+
+					<section class="weapon-section playstyle">
+						<h2>Playstyle Snapshot</h2>
+						<div class="playstyle-grid">
+							<div class="playstyle-card strengths">
+								<h3>💪 Strengths</h3>
+								<ul>
+									<li>Controls positioning better than any weapon</li>
+									<li>Drains monster stamina safely</li>
+									<li>Excels in narrow arenas</li>
+									<li>Scales in long fights</li>
+								</ul>
+							</div>
+							<div class="playstyle-card weaknesses">
+								<h3>⚠️ Weaknesses</h3>
+								<ul>
+									<li>Immobile</li>
+									<li>Target priority magnet</li>
+									<li>Stamina drain every round</li>
+									<li>Weak in open terrain without team support</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			:root {
+				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
+				--cream: #f5f1e8; --text-light: #e8e4d8;
+			}
+			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
+			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+			.nav { background: var(--forest-green); border-bottom: 2px solid var(--amber); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+			.nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover { color: var(--amber); }
+			.breadcrumb { padding: 2rem 0 1rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-weight: 500; }
+			.breadcrumb a:hover { color: var(--amber); }
+			.page-header { padding: 2rem 0 3rem; text-align: center; border-bottom: 2px solid var(--amber); margin-bottom: 3rem; }
+			.weapon-icon { font-size: 5rem; margin-bottom: 1rem; }
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.25rem; color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; }
+			.stat-badges { display: flex; justify-content: center; gap: 1rem; }
+			.stat-badge { padding: 0.5rem 1rem; background: var(--moss-green); color: var(--amber); border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+			.content { padding-bottom: 4rem; }
+			.weapon-section { background: var(--forest-green); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 2px solid var(--earth-brown); }
+			.weapon-section.highlight { border-color: var(--amber); background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%); }
+			.weapon-section.aspects { border-color: var(--leaf-green); }
+			.weapon-section h2 { color: var(--amber); font-size: 2rem; margin-bottom: 1.5rem; }
+			.weapon-section h3 { color: var(--leaf-green); font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+			.weapon-section h4 { color: var(--amber); font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+			.weapon-section p { margin-bottom: 1rem; }
+			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+			.weapon-section li { margin-bottom: 0.5rem; }
+			.note { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-weight: 600; margin: 1rem 0; }
+			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.mechanic-details { margin-top: 1.5rem; }
+			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
+			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
+			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
+			.damage-table tr:last-child td { border-bottom: none; }
+			.aspect-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); margin-bottom: 1rem; }
+			.aspect-card.universal { border-color: var(--amber); }
+			.aspect-header h3 { color: var(--amber); font-size: 1.5rem; margin: 0 0 0.5rem 0; }
+			.aspect-identity { color: var(--leaf-green); font-style: italic; margin-bottom: 1rem; padding-left: 1rem; border-left: 3px solid var(--leaf-green); }
+			.technique-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--amber); margin-bottom: 1.5rem; }
+			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
+			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
+			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.purpose { color: var(--leaf-green); font-style: italic; margin-top: 1rem; }
+			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
+			.playstyle-card.strengths { border-color: var(--leaf-green); }
+			.playstyle-card.weaknesses { border-color: #c74440; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card ul { list-style: none; margin: 0; }
+			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.weapon-section { padding: 1.5rem; }
+				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+			}
+			html { scroll-behavior: smooth; }
+		</style>
+	</body>
+</html>
