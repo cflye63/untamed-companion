@@ -115,7 +115,15 @@
 										<ul>
 											<li><strong>Stat Bonus:</strong> +1 to any stat of choice</li>
 											<li><strong>Proficiencies:</strong> Choose 1 Skill</li>
-											<li><strong>Racial Trait — Adaptable:</strong> Once per rest, you can reroll a failed check and take the new result.</li>
+											<li>
+									<strong>Racial Trait — Adaptable:</strong> Once per round, when you spend Stamina on an Action or Reaction, you may gain one of the following benefits:
+									<ul>
+										<li>Gain +1 to the roll</li>
+										<li>Move 5 ft without provoking opportunity attacks</li>
+										<li>Reduce the Stamina cost by 1 (minimum 0)</li>
+									</ul>
+									You may use this a number of times equal to your Proficiency per Hunt.
+								</li>
 											<li><strong>Feature:</strong> Gain proficiency with one common tool.</li>
 										</ul>
 									</div>
@@ -159,7 +167,23 @@
 										<ul>
 											<li><strong>Stat Bonus:</strong> +1 Intelligence</li>
 											<li><strong>Proficiencies:</strong> Knowledge</li>
-											<li><strong>Racial Trait — Draconic Lineage:</strong> Choose an elemental affinity (Fire, Ice, Lightning, Earth, Air, or Water). You gain resistance to that element.</li>
+											<li>
+									<strong>Racial Trait — Draconic Lineage:</strong> Choose one lineage. You gain its elemental resistance and rider.
+									<table class="lineage-table">
+										<thead><tr><th>Lineage</th><th>Scales</th><th>Resistance</th><th>Rider</th></tr></thead>
+										<tbody>
+											<tr><td><strong>Fire</strong></td><td>Red</td><td>Fire</td><td>Target gains Burned (1 stack)</td></tr>
+											<tr><td><strong>Ice</strong></td><td>White</td><td>Cold</td><td>Target gains Chilled</td></tr>
+											<tr><td><strong>Storm</strong></td><td>Violet</td><td>Lightning</td><td>If the target has already acted this round, deal +1 damage</td></tr>
+											<tr><td><strong>Earth</strong></td><td>Green/Brown</td><td>Poison</td><td>Target cannot be pushed or repositioned until end of its next turn</td></tr>
+											<tr><td><strong>Air</strong></td><td>Grey</td><td>Sonic</td><td>Move 5 ft after the attack without provoking opportunity attacks</td></tr>
+											<tr><td><strong>Water</strong></td><td>Blue/Seafoam</td><td>Cold</td><td>You or an ally within 5 ft regain 1 Stamina</td></tr>
+										</tbody>
+									</table>
+								</li>
+								<li>
+									<strong>Draconic Channeling:</strong> Once per turn, when you deal damage with an Attack or Technique, you may infuse it with your Draconic Element. If you do: apply your lineage’s elemental rider and spend +1 additional Stamina.
+								</li>
 											<li><strong>Feature:</strong> Read and recite Old Draconic sigils; you have advantage on Knowledge checks about draconic ruins.</li>
 										</ul>
 									</div>
@@ -181,7 +205,7 @@
 
 											<p><strong>Ormont ❄️⛰️</strong> – Warriors and scholars with fair skin, white or platinum hair, and icy blue, grey, or silver eyes.</p>
 
-											<p><strong>Zerashan 🏜️🔥</strong> – Warriors of flame with deep bronze or ebony skin, fiery eyes, and obsidian or crimson hair. Some believe they descend from the last great fire dragons.</p>
+											<p><strong>Zerashan 🏜️</strong> – In Zerashan’s harsh deserts, Dragonians are rare but highly respected. Known for intensity and precision, their deep bronze or ebony skin, striking eyes, and dark or ember-toned hair give them a formidable presence. Rather than inheriting power, Zerashani Dragonians are known for refining it through endurance and uncompromising resolve.</p>
 										</div>
 									</details>
 								</div>
@@ -207,6 +231,14 @@
 											<li><strong>Proficiencies:</strong> Athletics</li>
 											<li><strong>Racial Trait — Wild Fortitude:</strong> Advantage on CON saves vs Exhaustion, Poison, and Environmental Cold checks; advantage on Survival checks to endure cold.</li>
 											<li><strong>Feature — Beast Signs:</strong> Advantage on Animal Handling checks when calming non-apex mammals.</li>
+								<li>
+									<strong>Lineage — Choose One:</strong>
+									<ul>
+										<li><strong>Highland — Anchored Frame:</strong> If you did not Move this turn, gain +1 AR until the start of your next turn.</li>
+										<li><strong>Lowland — Flowstep:</strong> When you Move at least 10 ft on your turn, you may ignore difficult terrain for that movement.</li>
+										<li><strong>Grove — Rooted Resilience:</strong> Once per round, when you fail a STR, DEX, or CON save, your next Reaction this round costs 1 less Stamina (minimum 0).</li>
+									</ul>
+								</li>
 										</ul>
 									</div>
 
@@ -280,6 +312,8 @@
 											<p><strong>Aelmaris Thalorim — Tidebound Traders 🌊</strong> – Powerful naval trade network controlling shipping routes and underwater resources.</p>
 
 											<p><strong>River Thalorim — Floodplain Clans 🌿</strong> – Nomadic ferrymen, guides, and scouts along great rivers and wetlands.</p>
+
+											<p><strong>Lake Thalorim — Stillwater Keepers 🌫️</strong> – Found along deep lakes and submerged basins, these Thalorim live slower, more deliberate lives. They are watchers rather than travelers—settling near deep waters where silence carries weight. Lake Thalorim track water levels, migration cycles, and disturbances beneath the surface over long periods. They speak less, act less, and wait longer—but when they do act, it is rarely without purpose. Among Thalorim, they are closest to the idea of “holding” rather than “flowing.”</p>
 
 											<h5>Philosophy</h5>
 											<p>Nothing truly ends — it changes state. Resistance is wasteful unless necessary. Survival is not cowardice if it preserves balance.</p>
@@ -1061,6 +1095,23 @@
 			/* Overview Table */
 			.race-overview {
 				margin-bottom: 2rem;
+			}
+
+			.lineage-table {
+				width: 100%;
+				border-collapse: collapse;
+				background: var(--forest-dark);
+				border-radius: 6px;
+				overflow: hidden;
+				margin-top: 0.5rem;
+				font-size: 0.85rem;
+			}
+
+			.lineage-table th,
+			.lineage-table td {
+				padding: 0.5rem 0.75rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
 			}
 
 			.overview-table {
