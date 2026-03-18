@@ -50,11 +50,18 @@ They are rarely alone in the ecosystem—often heralding deeper nocturnal threat
 | Stat | Value | Notes |
 |------|-------|-------|
 | AR | 10 | Light chitin, evasive hover |
-| HP | 70 | 4P baseline: TierBase (15) + CON (5) × 11 |
+| HP | 70 | 4P median: TierBase (15) + CON (5) × 11 |
 | Stamina | 15 | 10 + CON Score (5) |
 | Stamina Tax | –1/turn while hovering | Flight maintenance cost |
 | Movement | 60 ft hover (full 360°) | — |
 | Attacks/Turn | 2 | — |
+
+> **GM Scaling Note:** Base stats above target a median party (mixed builds, HR 0–2 range).
+> For optimized parties (synergized Background + Weapon + Race stacking):
+> - AR → **13** (restores miss pressure vs +6/+7 attack bonuses)
+> - HP → **115** (4P optimized: TierBase 15 + CON 5 × 20)
+>
+> Validated by sim-003. Fight resolves in 4 rounds with meaningful Sleep spike, Hammer Stun payoff, and Wand Stamina pressure.
 
 **Attack Roll Breakdown:** `d20 + stat mod (+3) + Trained proficiency (+2) = d20+5`
 
@@ -84,12 +91,11 @@ Type:    Melee (CHA)
 Attack:  d20+5
 Damage:  1d8+3
 Rider:   If target is Sleeping:
-           Deal +1d8 damage
-           Target loses 2 Stamina
-         Controlled drain. No full depletion.
+           Deal +2d8 additional damage (total 3d8+3)
+         Target wakes on damage as normal.
 ```
 
-> Proboscis Jab vs Sleeping: 2d8+3 avg ~12 — ceiling touch gated behind Sleep condition. This is the loop payoff.
+> Proboscis Jab vs Sleeping: 3d8+3 avg ~16.5 — significant spike gated behind Sleep condition. Sleep setup lands, moth strikes hard, hunter wakes scrambling.
 
 ---
 

@@ -56,18 +56,22 @@ Each tier must define:
 
 **Purpose:** Introduce the stamina puzzle.
 
-| Stat | Value |
-|------|-------|
-| AR | 8–12 |
-| HP | 65–100 |
-| Stamina | 15–18 |
-| Attacks/Turn | 2 |
-| Damage per hit | 1d8–2d8 |
-| Stats | 4–7 |
-| Signature cost | 2–3 stamina |
-| Break Zones | 1–2 |
-| Save DCs | 10–14 |
-| Action Pressure | Moderate |
+| Stat | Median Party | Optimized Party |
+|------|-------------|-----------------|
+| AR | 8–12 | 13–14 |
+| HP | 65–100 | 110–130 |
+| Stamina | 15–18 | 15–18 |
+| Attacks/Turn | 2 | 2 |
+| Damage per hit | 1d8–2d8 | 1d8–2d8 (conditional spikes allowed) |
+| Stats | 4–7 | 4–7 |
+| Signature cost | 2–3 stamina | 2–3 stamina |
+| Break Zones | 1–2 | 1–2 |
+| Save DCs | 10–14 | 10–14 |
+| Action Pressure | Moderate | Moderate–High |
+
+> **Optimized party definition:** All hunters using synergized Background + Weapon + Race stat stacking. At HR2 this produces primary stats of 9–10 (mods +4/+5) vs the median assumption of 5–6 (mods +2/+3). AR and HP are the two dials that matter — Stamina, Save DCs, and damage stay the same.
+>
+> AR 13–14 restores meaningful miss pressure (hit rates 65–75% vs 85–90% at AR 10–12). HP 110–130 extends the hunt to 4–5 rounds so the creature's core puzzle can execute at least once.
 
 **Identity:** One defining mechanic. If you remove it, the creature becomes manageable.
 
@@ -211,7 +215,7 @@ Monster HP scales to group size and tier:
 HP = TierBase + (CON × Multiplier)
 ```
 
-**Party Size Multipliers:**
+**Party Size Multipliers — Median Party:**
 
 | Party Size | Multiplier |
 |------------|------------|
@@ -220,6 +224,20 @@ HP = TierBase + (CON × Multiplier)
 | 3 Players | ×10 |
 | 4 Players | ×11 |
 | 5 Players | ×12 |
+
+**Party Size Multipliers — Optimized Party:**
+
+Use these when all hunters are running synergized stat builds (Background + Weapon + Race all aligned to the same primary stat).
+
+| Party Size | Multiplier |
+|------------|------------|
+| 1 Player | ×14 |
+| 2 Players | ×16 |
+| 3 Players | ×18 |
+| 4 Players | ×20 |
+| 5 Players | ×22 |
+
+> Derived from simulation: Hollowmoth CON 5, T1 4P optimized → validated at HP 115. Formula: (115 − TierBase 15) ÷ CON 5 = **×20**. Multiplier scaling between party sizes mirrors the median spread (±2 per player step).
 
 **Tier Base Values:**
 
@@ -234,15 +252,17 @@ HP = TierBase + (CON × Multiplier)
 
 **Example — Palax (CON 6, Tier 1):**
 
-| Party | Formula | HP |
-|-------|---------|-----|
-| 1P | (6×8)+15 | 63 |
-| 2P | (6×9)+15 | 69 |
-| 3P | (6×10)+15 | 75 |
-| 4P | (6×11)+15 | 81 |
-| 5P | (6×12)+15 | 87 |
+| Party | Median HP | Optimized HP |
+|-------|-----------|--------------|
+| 1P | (6×8)+15 = 63 | (6×14)+15 = 99 |
+| 2P | (6×9)+15 = 69 | (6×16)+15 = 111 |
+| 3P | (6×10)+15 = 75 | (6×18)+15 = 123 |
+| 4P | (6×11)+15 = 81 | (6×20)+15 = 135 |
+| 5P | (6×12)+15 = 87 | (6×22)+15 = 147 |
 
 > HP is your cleanest tuning dial. Stamina and AR handle difficulty nuance.
+>
+> **When to use optimized multipliers:** When your table is min-maxing — synergized backgrounds, weapon stat stacks, and race bonuses all aligned. If players are playing thematically or with mixed builds, use median. When in doubt, start median and raise HP by 15–20 if the fight resolves too fast.
 
 ---
 
