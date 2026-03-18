@@ -39,28 +39,28 @@ It is not a damage dealer. It is a mobility problem.
 |------|-------|----------|
 | STR | 5 | +2 |
 | DEX | 7 | +3 |
-| CON | 6 | +3 |
+| CON | 7 | +3 |
 | INT | 4 | +2 |
 | INS | 7 | +3 |
 | CHA | 3 | +1 |
 
-> DEX and INS capped at T1 maximum (7). Aerial agility is expressed through Aerial Acrobatics passive and Glide mechanics, not raw stat score.
+> DEX, CON, and INS at T1 maximum (7). Aerial agility is expressed through Glider's Evasion, Aerial Acrobatics, and the Glide loop — not raw stat score.
 
 ### Combat Attributes
 
 | Stat | Value | Notes |
 |------|-------|-------|
-| AR | 8 | Low by design — punishes staying grounded |
-| HP | 81 | 4P baseline: TierBase (15) + CON (6) × 11 |
-| Stamina | 16 | 10 + CON Score (6) |
+| AR | 11 | Light frame, constant motion — +2 AR while airborne (see Glider's Evasion) |
+| HP | 92 | 4P baseline: TierBase (15) + CON (7) × 11 |
+| Stamina | 17 | 10 + CON Score (7) |
 | Movement | 30 ft run / 20 ft climb / 60 ft glide | Glide requires 10 ft elevation minimum |
 | Attacks/Turn | 2 | — |
 
 **Attack Roll Breakdown:**
-- Claw Swipe: `d20 + DEX mod (+3) + Trained prof (+2) = d20+5`
-- Dive Slam: `d20 + STR mod (+2) + Trained prof (+2) = d20+4`
+- Claw Rake: `d20 + DEX mod (+3) + Trained prof (+2) = d20+5`
+- Tail Slam: `d20 + DEX mod (+3) + Trained prof (+2) = d20+5`
 
-**Exhaustion Rule:** Cannot Glide. Loses access to Dive Slam. Switches to ground skirmish only.
+**Exhaustion Rule:** Cannot Glide. Loses access to Tail Slam and Tailwhip Scatter. Loses Glider's Evasion. Switches to ground skirmish only.
 
 ### Senses
 
@@ -72,26 +72,27 @@ It is not a damage dealer. It is a mobility problem.
 
 ## 3) Attacks
 
-**Claw Swipe — (1 Stamina)**
+**Claw Rake — (1 Stamina)**
 ```
 Type:    Melee (DEX)
 Attack:  d20+5
 Damage:  1d8+3
-Rider:   None — clean repositioning attack
+Rider:   After this attack resolves, Tanuza may shift 5 ft without
+         provoking opportunity attacks.
 ```
 
-**Dive Slam — (1 Stamina)**
+**Tail Slam — (1 Stamina)**
 ```
-Type:      Melee (STR)
-Attack:    d20+4
-Damage:    1d10+2
-Rider:     STR Save (DC 10) or knocked Prone
-Requires:  Must be airborne
+Type:      Melee (DEX)
+Attack:    d20+5
+Damage:    1d10+3
+Rider:     STR Save (DC 12) or knocked Prone
+Requires:  Must be airborne or have Glided this turn
 
-Height Bonus: If Dive Slam begins from 20+ ft above target, deal +1d4 additional damage.
+Height Bonus: If Tail Slam begins from 20+ ft above target, deal +1d6 additional damage.
 ```
 
-> Dive Slam with height bonus averages 10 — a marginal ceiling touch for T1, gated behind terrain and elevation setup. Intentional.
+> Tail Slam from height averages 12 — ceiling touch for T1, gated behind elevation and airborne requirement. The tail membrane carries the full momentum of the dive; breaking it collapses this entirely.
 
 ---
 
@@ -103,12 +104,13 @@ Height Bonus: If Dive Slam begins from 20+ ft above target, deal +1d4 additional
 - Must end on solid surface
 - Cannot Glide if membrane is broken (see Part Breaks)
 
-**Gust Scatter — (2 Stamina, Cooldown 2 turns)**
-- 15 ft cone of compressed air
-- DEX Save (DC 12):
-  - **Fail:** Pushed 10 ft
-  - **Success:** No push
-- No damage — control only. Tier 1 pressure cap.
+**Tailwhip Scatter — (2 Stamina, Cooldown 2 turns)**
+- Tanuza whips its membrane tail in a wide 15 ft arc while airborne
+- **Requires:** Tanuza must be airborne to use
+- STR Save (DC 13):
+  - **Fail:** 1d8+3 damage, pushed 10 ft, and Dazed until end of next turn
+  - **Success:** Half damage, no push
+- The tail is both the weapon and the wing. Using it this hard costs both.
 
 **Kleptoglide — (1/Encounter)**
 - Tanuza attempts to steal one visible unsecured item
@@ -136,6 +138,11 @@ Effect:   Attacker makes STR Save (DC 12)
 - Advantage on DEX saves while airborne
 - Cannot be flanked while airborne
 
+**Glider's Evasion**
+- While airborne, Tanuza gains +2 AR (AR 11 → **13** in flight)
+- Represents unpredictable mid-glide trajectory — hard to anticipate, harder to hit
+- Lost if membrane is broken (see Part Breaks)
+
 **Shiny Object Fixation**
 - Advantage on checks to detect visible trinkets or bait
 - Hunters may exploit this with traps or decoys
@@ -148,42 +155,46 @@ Effect:   Attacker makes STR Save (DC 12)
 
 | Part | Threshold | Break Effect |
 |------|-----------|--------------|
-| Tail & Membrane | 2 successful called shots (−2 accuracy penalty) | Glide speed reduced to 20 ft. Gust Scatter disabled. Dive Slam loses height bonus. Movement halved. |
+| Tail & Membrane | 2 successful called shots (−2 accuracy penalty) | Glide speed reduced to 20 ft. Tailwhip Scatter disabled. Tail Slam loses height bonus. Glider's Evasion lost (AR drops to 11). Movement halved. |
 
 ### Tactical Weaknesses
 
-- Requires elevation to function optimally — deny height, deny the loop
-- Nets and snares heavily disrupt mobility
+- Requires elevation to function — deny height, deny the loop
+- Nets and snares disable Glide entirely, grounding it immediately
 - Heavy rain prevents Glide entirely
-- AR 8 is low; grounded Tanuza is vulnerable to focused pressure
-- Membrane Break is a single break zone but shuts down almost the entire toolkit
+- Grounded Tanuza is vulnerable: loses Glider's Evasion (+2 AR gone), cannot use Tail Slam or Tailwhip Scatter
+- Membrane Break is a single zone but collapses the entire aerial identity simultaneously
 
 ---
 
 ## 8) Behavior Guide
 
-**Opening State:** Elevated (tree branch, cliff edge, or canopy platform).
+**Opening State:** Elevated 20–30 ft, skittering along branches, watching the party.
 
 **Round 1 Priority:**
-- If 2+ hunters clustered → Gust Scatter to separate
-- Else → Dive Slam the weakest or most isolated target
+- Glide across the canopy, staying airborne — do not land
+- If 2+ hunters clustered → Tailwhip Scatter (from above, while still airborne)
+- Else → Tail Slam the most isolated target, then immediately Glide away to re-elevate
 
 **Instinct Loop:**
-- If hunters cluster → Gust Scatter (when off cooldown)
-- If a hunter is prone → Claw Swipe into Dive Slam next turn
-- If Stamina ≤ 5 → Gain elevation and stall; do not engage until repositioned
+- **Stay airborne whenever possible.** Tanuza prefers to never touch the ground voluntarily.
+- If hunters cluster → Tailwhip Scatter (when off cooldown, must be airborne)
+- If a hunter is prone → Tail Slam that target next pass (height bonus if 20+ ft)
+- After each Tail Slam → Claw Rake once, then Glide back to elevation before next turn
+- If Stamina ≤ 5 → Gain maximum elevation; do not engage until repositioned
 - If Stamina ≤ 2 → Flee toward highest available terrain
 
 **Retreat / Relocation Conditions:**
-- Below 30% HP → Attempts canopy glide escape
-- Membrane broken → Abandons glide loop; switches to ground skirmish harassment
+- Below 30% HP → Canopy glide escape; zig-zag between trees to break pursuit
+- Membrane broken → Abandons glide loop; skitters across ground erratically, using Claw Rake only
 - Exhausted → Panics; erratic ground movement; attempts disengage each turn
 
 **Territory Behavior:**
 - Near a nest or cache: will double back even at low HP to retrieve stolen goods
-- If hunters occupy the highest ground: Tanuza circles at mid-elevation, looking for an opening rather than committing
+- If hunters occupy highest ground: Tanuza circles at mid-elevation, waiting for a gap
 
-> **3-phase loop:** Dive → Disrupt → Elevate. Ground the Tanuza and the loop collapses.
+> **Loop:** Glide → Tail Slam → Claw Rake → Re-elevate → Tailwhip Scatter on cluster → repeat.
+> Ground the Tanuza and the entire loop collapses — it loses AR, loses Tail Slam, loses Scatter.
 
 ---
 
@@ -283,7 +294,7 @@ This replaces any descent-based Common damage effect — cannot stack with Dive 
 | Wand | Gains Wind Affinity. Hex becomes Wind — Scatter. Clusters deal Wind damage. No new rider or subsystem beyond affinity mapping. |
 | Conduit | Gains Wind Affinity. Unlocks Wind Aspect: **Updraft Field** (no modified version, no buffed version). |
 | Bow | Selected Rare effect becomes a Wind Arrow. Glide Step arrow: fire at a ground location — hunter glides to that point instead of current position. Dive Momentum arrow: applies on hit as normal. Limited 2 uses per hunt. |
-| Flute | Selected Rare effect becomes a localized wind-pulse Ballad in 5–10 ft radius. Effects that normally target one creature affect all valid targets in the pulse. Duration and Stamina costs unchanged. |
+| Flute | Selected Rare effect becomes a localized wind-pulse Ballad in 5–10 ft radius. Tailwhip Scatter identity: Ballad forces STR save on creatures starting their turn in the aura — fail = pushed 5 ft. Duration and Stamina costs unchanged. |
 
 ---
 

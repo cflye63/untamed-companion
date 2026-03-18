@@ -51,8 +51,14 @@ It is not fast. It is not tactical. It is a stamina-burning avalanche.
 | Stat | Value | Notes |
 |------|-------|-------|
 | AR | 12 | Dense fur and layered hide — at T1 ceiling |
-| HP | 92 | 4P baseline: TierBase (15) + CON (7) × 11 |
+| HP | 120 | 4P baseline: TierBase (15) + CON (7) × 15 |
 | Stamina | 17 | 10 + CON Score (7) |
+
+> **GM Scaling Note:** Base HP above targets a median party (mixed builds, HR 0–2 range).
+> For optimized parties (synergized Background + Weapon + Race stacking):
+> - HP → **155** (4P optimized: TierBase 15 + CON 7 × 20)
+>
+> HP 120 validated by sim-005. Fight resolves in 4 rounds. Fury fires twice (R2–R3 monster), Rush delivers ~10 HP to 2 hunters per use, collapse at STA 0 coincides with kill. The design payoff — surviving to see Urmine burn itself out — is preserved.
 | Movement | 30 ft | Becomes 40 ft in Fury |
 | Attacks/Turn | 2 | — |
 

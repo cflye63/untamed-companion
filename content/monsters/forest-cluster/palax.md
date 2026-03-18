@@ -55,13 +55,17 @@ It is not a brawler. It is a tempo predator.
 
 | Stat | Value | Notes |
 |------|-------|-------|
-| AR | 9 | — |
+| AR | 9 | Surface only — Palax is not built to tank hits |
 | HP | 81 | 4P baseline: TierBase (15) + CON (6) × 11 |
 | Stamina | 16 | 10 + CON Score (6) |
 | Movement | 30 ft surface / 60 ft burrow | — |
 | Attacks/Turn | 2 | — |
 
 **Attack Roll Breakdown:** `d20 + STR mod (+3) + Trained proficiency (+2) = d20+5`
+
+> **GM Note:** AR 9 is intentional. The Palax is never meant to absorb sustained hits — the Burrow loop is its defense. It surfaces only to Erupt, skirmish briefly, and retreat. Surface windows (Eruption cooldown phase) are the intended vulnerability window. Deny the burrow and AR 9 becomes a serious problem; let it cycle freely and AR 9 barely matters.
+>
+> Validated by sim-006. Fight resolves in 4 rounds. Mole Eruption fires **twice** (R1 and R3) — the full ambush loop completes before the creature dies. Ham frontliner ends at ~15% HP from double-Eruption pressure.
 
 **Exhaustion Rule:** Cannot Burrow. Loses access to Mole Eruption. Surface-only aggression until it disengages or is slain.
 
