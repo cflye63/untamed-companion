@@ -4,6 +4,8 @@ Simulate a hunt between a party of hunters and a designated monster using **expe
 
 **Default:** Party of 4 hunters at the monster's tier unless specified.
 
+> **OUTPUT BUDGET:** This simulation MUST fit in a single response. Use the condensed round format defined below. Do NOT show intermediate probability branching or sub-calculations inline. Compute internally, output results only. Target: stat blocks + all rounds + report in under 4000 output tokens. If the fight runs 8+ rounds, compress mid-fight rounds into 2-round summaries.
+
 **Invocation format:**
 ```
 /sim-hunt
@@ -222,7 +224,7 @@ BEHAVIOR PRIORITY: [ordered list from behavior guide]
 
 ## Step 6 — Core Math
 
-All calculations use these formulas. Show your work inline.
+All calculations use these formulas. **Compute internally — do not show derivations in the output. Only output final values.**
 
 ### Hit probability
 ```
@@ -505,37 +507,25 @@ Track active conditions each round:
 - **Burned:** 2.5 fire damage per round at end of target's turn. Ongoing until condition clears.
 - **Exposed (GS):** All attacks vs the Exposed hunter use adv_hit_chance until end of the Exposed hunter's NEXT turn. Lasts through the monster phase that follows the turn Cleave was used.
 
-### Round Summary Block
+### Round Summary Block — CONDENSED FORMAT
 
-After each round, record:
+Use this compact format. One line per hunter, one line per monster action. No sub-calculations.
 
 ```
-─────────────────────────── Round [N] ────────────────────────────
-MONSTER: HP [X]/[Max]  STA [X]/[Max]
-Conditions on monster: [list or "none"]
-
-HUNTER PHASE:
-  [Hunter 1] [Race/Weapon]: STA [X] → [action] → hit [X]% → exp dmg [X.X]  ([technique note])
-  [Hunter 2] [Race/Weapon]: STA [X] → Breathing Turn → +4 STA
-  [Hunter 3] [Race/Weapon]: STA [X] → Place cluster (60% attach) + Detonate [X.X] → Scorch tick noted
-  ...
-  ▸ Party total damage this round: [X.X]  (cumulative: [X.X])
-
-MONSTER PHASE:
-  [Ability name] ([X] STA): [targets] → [effect] — fail rate [X]% / exp dmg [X.X]
-  [Attack 1] ([X] STA): → [Hunter A] hit [X]% → exp dmg [X.X]  (Hunter reacts: Dodge)
-  [Attack 2] ([X] STA): → [Hunter B] hit [X]% → exp dmg [X.X]  (GS Exposed: adv applied)
-  Stamina Tax: −[X] ([reason])
-  ▸ Monster STA after: [X]
-
-END OF ROUND [N]:
-  Monster HP: [X.X] remaining (dealt [X.X] cumulative)
-  Hunter HP: [A]: [X]  [B]: [X]  [C]: [X]  [D]: [X]
-  Hunter STA: [A]: [X]  [B]: [X]  [C]: [X]  [D]: [X]
-  Momentum (GS): [X] | Impact (Ham): [X] | Focus (Bow): [X] | Clusters (Wand): [X] attached
-  Active conditions: [list]
-──────────────────────────────────────────────────────────────────
+── R[N] ──────────────────────────────────────────────────────────
+HUNTERS: [H1] [action] [X.X]dmg STA[X] | [H2] [action] [X.X]dmg STA[X] | ...
+  ▸ Party dmg: [X.X] (cum: [X.X])  Conditions applied: [list or —]
+MONSTER ([X] HP, [X] STA): [action1] → [target] [X.X]exp | [action2] → [target] [X.X]exp | DoT: [X.X]
+  ▸ Dmg taken: [X.X] to [targets]  Conditions: [list or —]
+STATE: Mon HP [X]/[Max] STA [X] | GS [hp]/[sta] M[x] | Ham [hp]/[sta] I[x] | Bow [hp]/[sta] F[x] | Wand [hp]/[sta] C[x]
 ```
+
+**Rules for condensed output:**
+- Compute all probability branches internally. Output only the expected (weighted) values.
+- Do not show hit% or save% calculations inline — just the resulting expected damage.
+- Only note technique usage, Breathing Turns, reactions, and condition changes — skip vanilla basic attacks.
+- If a round has no interesting decisions (basic attacks all around, standard monster behavior), compress to 2 lines.
+- For fights lasting 8+ rounds: summarize rounds in pairs after R4 ("R5-R6: party deals X.X total, monster deals X.X, notable: [event]").
 
 ---
 
@@ -554,77 +544,39 @@ Stop simulation when ANY of these are true:
 
 ## Step 9 — Output the Full Report
 
+Output the entire simulation as ONE continuous block in this order. Stay concise.
+
 ```
-╔══════════════════════════════════════════════════════════════════╗
-║  HUNT SIMULATION — [Monster Name]  vs  Party of [N]  (Tier [X]) ║
-║  Mode: Expected Value  │  Hunter baseline: HR [X]               ║
-║  Techniques: Tier [X] active                                    ║
-╚══════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════╗
+║ HUNT SIM — [Monster]  vs  [N]P  Tier [X]  HR [X]  EV mode   ║
+╚═══════════════════════════════════════════════════════════════╝
 
-PARTY ROSTER
-────────────
-[Compact stat blocks from Step 4]
+ROSTER (compact — one block per hunter, see Step 4 format)
+MONSTER (compact — see Step 5 format)
+HIT TABLE (pre-computed, one-line per matchup)
 
-MONSTER
-───────
-[Compact stat block from Step 5]
+ROUND LOG (condensed format from Step 7)
 
-ROUND LOG
-─────────
-[All round summary blocks]
+═══ RESULT: [Party wins R[X] / Monster wins R[X] / Stalemate] ═══
+Mon HP: [X]/[Max] | Avg hunter HP: [X.X]/[Max] | Avg hunter STA: [X.X]/[Max]
+Breaths: [X] | Parts broken: [list or none] | Mon STA→0: [R[X] or No]
+Party DPR: [X.X] | Monster DPR: [X.X] | Kill round: [X]
+STA pressure: [None/Low/Med/High/Crit] | HP pressure: [None/Low/Med/High/Crit]
 
-═══════════════════════════════════════
-RESULT: [Party wins Round X / Monster wins Round X / Stalemate]
-═══════════════════════════════════════
-Monster HP at end:         [X] / [Max]
-Avg hunter HP remaining:   [X.X] / [Max]
-Avg hunter STA remaining:  [X.X] / [Max]
-Breathing Turns taken:     [X] total across all hunters
-Part breaks achieved:      [list or "none"]
-Techniques used:           [list per hunter]
+⚡ FLAGS (only if issues found — 1 line each)
+- [flag]: [brief explanation]
 
-BALANCE METRICS
-───────────────
-Party DPR (avg damage/round):    [X.X]
-Monster DPR (avg damage/round):  [X.X]
-Projected kill round (no breath turns): [X]
-Actual kill round:               [X]
-Stamina pressure (hunters):      [None / Low / Medium / High / Critical]
-HP pressure (hunters):           [None / Low / Medium / High / Critical]
-Monster Stamina hit 0:           [Yes, Round X / No]
-
-Stamina pressure rating guide:
-  None     = No hunter took a Breathing Turn
-  Low      = 1–2 Breathing Turns total, no Exhaustion
-  Medium   = 3–5 Breathing Turns, or 1 hunter Exhausted briefly
-  High     = Repeated Exhaustions, forced Breathing Turns every 2 rounds
-  Critical = Multiple hunters Exhausted simultaneously
-
-⚡ FLAGS
-────────
-[List only issues that were detected. Skip this section if none.]
-
-Examples of things to flag:
-- Monster Stamina exhausted before HP reached 50%
-  → Stamina pool may be too small; creature collapses before hunt feels earned
-- Party DPR exceeds monster HP/4 per round
-  → Hunt resolves in <4 rounds; no puzzle engagement
-- No hunter triggered a Breathing Turn
-  → Monster applies no meaningful Stamina pressure
-- Kill round reduced significantly vs technique-free baseline
-  → Monster may need HP or AR adjustment to maintain target kill round
-- Binding Arrow collapses aerial phase immediately
-  → Note whether this changes fight identity or if the phase is still tactically interesting
-- GS Exposed in R1 leads to lethal spike damage
-  → Cleave opening may need risk-reward recalibration
-- Wand cluster stacking unreachable (fight too short for 2-stack)
-  → Consider whether fight duration supports the cluster identity
-
-💡 TUNING SUGGESTIONS
-──────────────────────
-[1–3 specific, numbered adjustments based on flags raised.
- Only include this section if flags were raised.]
+💡 TUNING (only if flags raised — numbered, 1-2 sentences each)
 ```
+
+**Flag checklist** (raise if true):
+- Monster STA exhausted before HP < 50%
+- Party DPR > monster HP/4
+- No Breathing Turns taken
+- Technique-free baseline kills in same round
+- Binding Arrow collapses a phase
+- GS Exposed causes near-lethal spike
+- Wand can't stack clusters (fight too short)
 
 ---
 

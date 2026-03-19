@@ -45,6 +45,9 @@ Gorrhul is a colossal mud-armored boar that turns riverbanks into trenches. It i
 | HP | 170 | 4P baseline: TierBase (60) + CON (10) × 11 |
 | Stamina | 20 | 10 + CON Score (10) |
 
+> **Stamina Scaling Note:** Stamina 20 targets a median party.
+> For optimized parties: Stamina → **25** (Gorrhul's Mud Recoat + Charge Mode economy requires extra runway to execute its full puzzle loop against high-DPR groups).
+
 > **GM Scaling Note:** HP 170 targets a median party (mixed builds, HR 5–7 range).
 > For optimized parties: HP → **210** (4P optimized: TierBase 60 + CON 10 × 15)
 
@@ -149,13 +152,14 @@ While active:
 - +2 AR (13 → 15)
 - Immune to difficult terrain caused by mud
 - **While Mud-Covered, Gorrhul takes half damage from fire sources**
+- **Advantage on saves vs Prone** (the mud acts as a stabilizing anchor)
 
 Removed by:
-- Receiving fire damage (after halving) — Mud layer scorched off
+- Receiving **10 or more fire damage in a single round** (after halving) — Mud layer scorched off. Passive ticks (Scorch, Burned) do not count toward this threshold; only active burst damage (detonations, fire attacks) qualifies.
 - Immersion in clean water (river crossing, water bucket)
-- Being knocked Prone (mud disperses on impact)
+- Being knocked Prone (mud disperses on impact) — **but Mud-Covered grants advantage on the Prone save first**
 
-> Fire resistance prevents a single Dragonian Fire Wand from cycling the Mud layer every turn via Scorch ticks. Fire can still strip Mud-Covered — it just requires concentrated burst damage rather than passive ticks.
+> Fire resistance and the 10-damage threshold together prevent a single Dragonian Fire Wand from cycling the Mud layer every turn via Scorch ticks or single-cluster detonations. Stripping Mud with fire requires stacking 2+ clusters before detonating, or combining fire sources — making Mud removal a deliberate team investment rather than a free action.
 
 **Terrain Sculptor**
 
@@ -174,9 +178,9 @@ Gorrhul's movement through wet ground creates difficult terrain in its wake. Eac
 
 ### Tactical Weaknesses
 
-- **Fire damage (burst):** Forces Mud-Covered removal even through resistance — a concentrated fire hit strips the layer
+- **Fire damage (burst, 10+ in a round after halving):** Forces Mud-Covered removal — requires stacking fire sources or multi-cluster detonation
 - **Tight terrain:** Charge Mode requires 20 ft straight movement — walls, trees, and hunter formation can block charge lanes
-- **Prone:** Removes Mud-Covered and cancels Charge Mode
+- **Prone:** Removes Mud-Covered and cancels Charge Mode — but Mud-Covered grants advantage on Prone saves, so toppling Gorrhul requires commitment
 - **Braced Bulk costs Stamina:** Repeated forced movement attempts drain Gorrhul's reaction economy
 
 ---
