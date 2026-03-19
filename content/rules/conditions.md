@@ -28,6 +28,7 @@ Conditions represent ongoing effects that alter how creatures function in combat
 | **Stunned** | Lose your next turn (no Move/Action/Fast/Reaction). Attacks against you have advantage; you automatically fail STR/DEX saves until end of your next turn. |
 | **Paralyzed** | Cannot Move, Action, Fast, or Reaction until your next turn. Attacks against you have advantage. |
 | **Dazed** | Disadvantage on attack rolls and Instinct checks; cannot take Reactions. Ends at the end of your next turn. |
+| **Feared** | You cannot willingly move closer to the source of fear. **Your Reactions cost +1 Stamina** (panic undermines discipline). At the start of your turn, make a CHA save vs the fear DC — success ends the condition. On failure, you must spend your Move action moving away from the source (or remain stationary if no safe path exists). You can still take Actions and Fast Actions normally. |
 | **Sleep** | Lose your turn; regain 4 Stamina. Wake up if you succeed an Instinct roll at the end of your turn or if you take damage. All attacks against a Sleeping target are made with advantage. |
 
 ---
@@ -62,6 +63,7 @@ Quick reference for conditions that directly tax Stamina:
 | Bleeding | +1 STA | Moving >15 ft or Dashing |
 | Soaked | +1 STA | Per Move action |
 | Chilled | +1 STA | Per ability used |
+| Feared | +1 STA | Per Reaction taken |
 | Prone | 2 STA | Standing up |
 | Exhausted | STA → 0 | On application |
 

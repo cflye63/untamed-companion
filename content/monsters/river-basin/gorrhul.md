@@ -30,9 +30,9 @@ Gorrhul is a colossal mud-armored boar that turns riverbanks into trenches. It i
 
 | Stat | Score | Modifier |
 |------|-------|----------|
-| STR | 9 | +4 |
+| STR | 7 | +3 |
 | DEX | 5 | +2 |
-| CON | 10 | +5 |
+| CON | 7 | +3 |
 | INT | 3 | +1 |
 | INS | 7 | +3 |
 | CHA | 4 | +2 |
@@ -42,19 +42,19 @@ Gorrhul is a colossal mud-armored boar that turns riverbanks into trenches. It i
 | Stat | Value | Notes |
 |------|-------|-------|
 | AR | 13 | Heavy layered hide — rises to 15 while Mud-Covered |
-| HP | 170 | 4P baseline: TierBase (60) + CON (10) × 11 |
-| Stamina | 20 | 10 + CON Score (10) |
+| HP | 137 | 4P median: TierBase (60) + CON (7) × 11 |
+| Stamina | 17 | 10 + CON Score (7) |
 
-> **Stamina Scaling Note:** Stamina 20 targets a median party.
-> For optimized parties: Stamina → **25** (Gorrhul's Mud Recoat + Charge Mode economy requires extra runway to execute its full puzzle loop against high-DPR groups).
+> **Stamina Scaling Note:** Stamina 17 targets a median party.
+> For optimized parties: Stamina → **22** (Gorrhul's Mud Recoat + Charge Mode economy requires extra runway to execute its full puzzle loop against high-DPR groups).
 
-> **GM Scaling Note:** HP 170 targets a median party (mixed builds, HR 5–7 range).
-> For optimized parties: HP → **210** (4P optimized: TierBase 60 + CON 10 × 15)
+> **GM Scaling Note:** HP 137 targets a median party (mixed builds, HR 5–7 range).
+> For optimized parties: HP → **200** (4P optimized: TierBase 60 + CON 7 × 20)
 
 | Movement | 30 ft | 60 ft linear while in Charge Mode |
 | Attacks/Turn | 3 | — |
 
-**Attack Roll Breakdown:** `d20 + STR mod (+4) + Trained proficiency (+2) = d20+6`
+**Attack Roll Breakdown:** `d20 + STR mod (+3) + Trained proficiency (+2) = d20+5`
 
 **Exhaustion Rule:**
 - Cannot enter Charge Mode
@@ -72,25 +72,25 @@ Gorrhul is a colossal mud-armored boar that turns riverbanks into trenches. It i
 **Gore — (1 Stamina)**
 ```
 Type:    Melee (STR)
-Attack:  d20+6
-Damage:  2d8+4
+Attack:  d20+5
+Damage:  2d8+3
 Rider:   On crit: target gains Bleed (1d6 for 2 turns)
 ```
 
 **Stomp — (1 Stamina)**
 ```
 Type:    Melee (STR), 10 ft radius
-Attack:  d20+6
-Damage:  2d6+4
-Rider:   DEX Save DC 12 → Fail: Prone
+Attack:  d20+5
+Damage:  2d6+3
+Rider:   DEX Save DC 15 → Fail: Prone
 ```
 
 **Mud Toss — (1 Stamina, Mud-Covered Only)**
 ```
 Type:    Ranged 30 ft (STR throw)
-Attack:  d20+6
-Damage:  1d6+4
-Rider:   DEX Save DC 12 → Fail: Slowed (–10 ft movement, 1 turn)
+Attack:  d20+5
+Damage:  1d6+3
+Rider:   DEX Save DC 15 → Fail: Slowed (–10 ft movement, 1 turn)
 ```
 
 ---
@@ -112,9 +112,9 @@ While active:
 
 ```
 Type:    Melee (STR), Charge Mode only
-Attack:  d20+6
-Damage:  2d10+4  (+1d8 if moved 30+ ft before impact)
-Rider:   DEX Save DC 12 → Fail: Stunned 1 turn
+Attack:  d20+5
+Damage:  2d10+3  (+1d8 if moved 30+ ft before impact)
+Rider:   DEX Save DC 15 → Fail: Stunned 1 turn
 Miss:    Gorrhul is Dazed until its next turn
 ```
 
@@ -227,7 +227,7 @@ Gorrhul's movement through wet ground creates difficult terrain in its wake. Eac
 2. Mud stripping — the party's first successful fire burst or Prone establishes momentum; the Recoat Full Turn creates a tactical window
 
 **Scaling Notes:**
-- Weak party: Reduce Charging Gore to 2d10+4 only (remove the +1d8 distance bonus), Mud Recoat costs 3 Stamina
+- Weak party: Reduce Charging Gore to 2d10+3 only (remove the +1d8 distance bonus), Mud Recoat costs 3 Stamina
 - Strong party: Add a flood event mid-fight that creates new mud zones adjacent to all hunters
 
 ---
