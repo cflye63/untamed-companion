@@ -245,8 +245,37 @@ Date format: YYYY-MM-DD
 - Parry riposte: half weapon avg damage, 0 Stamina cost
 - Sleep wakes on damage — model as 1-round condition that ends when monster hits sleeping hunter
 - Stun: skip monster's next turn, adv attacks vs it; Impact threshold = 3 (Hammer)
-- Momentum (GS): +1 flat dmg from R2, +2 from R3 on consecutive hits
-- Focus (Bow): +1 dmg per stationary round, consumed on hit; cap 3
-- Fire + Fragile Frame: 1d4+2 per turn ongoing (avg 4.5); model as flat 4.5/round if monster has Fragile Frame
 - If optimization=optimized: use AR 13–14 and optimized HP multipliers from tier-calibration.md
 - If optimization=median: use base AR and standard HP multipliers
+
+**Technique access:** Hunters at tier N have the tier-N technique for their weapon. Include technique usage in DPR baseline.
+
+**Greatsword — Momentum + Cleave (T1):**
+- R1: Cleave (2 STA, advantage on attack). On hit → M2 (kicker at 0 Momentum). GS Exposed: apply adv_hit_chance to first monster attack vs GS that monster phase.
+- R2: Basic attack, M2 active → +2 flat + 0.33 crit EV (19-20 expanded crit). On hit → M3.
+- R3+: Basic attack, M3 active → +3 flat + 6.5 (power die) + 0.975 crit EV ≈ +10.5 per hit.
+- GS baseline DPR (avg R1-R4): use adv hit R1, normal hit R2+, with M-stack bonuses applied per round.
+- Track: Momentum resets on miss — apply Cleave again if STA allows.
+
+**Hammer — Impact + Impact Decay + Charged Smash (T1):**
+- Impact Decay: −1 Impact at end of monster's turn if Ham did NOT hit that round. Track explicitly for idle rounds (climbing, underground, charging).
+- Charged Smash: 2-turn wind-up, +2d6 avg+7 on release, 2 Impact instead of 1. Use ONLY when monster hit chance vs Ham ≤ 30% during charge turn; otherwise basic attack.
+- Standard Stun path (basic attacks, no decay): R1 1I → R2 2I → R3 3I → Stun R3 monster phase.
+- Impact Decay path (1 idle round): R1 idle → 0I at end of R1 (decay n/a, was already 0) → R2 1I → R3 2I → R4 3I → Stun R4.
+
+**Wand — Cluster System + Hex Charge T1 + Draconic Channeling:**
+- Clusters attach via DEX save vs DC (no hit roll). `attach% = clamp((DC - monster_DEX_mod - 1)/20, 0.05, 0.95)`
+- Detonate: Fast Action (1 STA). Place: Action (1 STA). Total: 2 STA per round R2+.
+- T1 cluster damage: 1d4+INT per cluster (avg 2.5+INT_mod). Stacking: +1 die per extra cluster on same host (max +2).
+- Hex Charge Scorch: 1d4 avg 2.5 per cluster per monster turn (passive, ongoing).
+- On detonate: CON save vs DC → fail → Burned (2.5/turn).
+- Dragonian DC: +1 STA → Burned applied on first Place (no CON save). Burned active from R2.
+- Calibration DPR: model as 7.5–8.5/round R2+ (cluster detonation + Scorch + Burned) at 2 STA. Against single targets this is ≈ basic attack + Burned model. Flag if fight is too short for cluster engine to engage (kills R1-R2 = no DPR contribution).
+
+**Bow — Focus + Power Shot (T1) + Arrow Types:**
+- Focus: +1 per stationary round, cap 3. Consumed on hit (+1 flat dmg per stack).
+- Power Shot (T1): at Focus 3, release same turn with advantage + +1 damage die. 2 STA. Use when stationary at F3.
+- Signal Arrow (2/hunt): allies +1 to hit for 1 round. Model as +1 to all party attack rolls for that round.
+- Binding Arrow (2/hunt): on hit, STR save vs DC → fail → Stagger + no fly. Against aerial/elevated monsters: use Binding Arrow R1 to ground the target. `bind_fail% = clamp((DC - monster_STR_mod - 1)/20, 0.05, 0.95)`. If grounded: remove elevation AR penalty for melee hunters for remainder of fight. Run a "Binding lands" EV path and note the kill round delta.
+
+**Fire + Fragile Frame:** 1d4+2 per turn ongoing (avg 4.5); model as flat 4.5/round if monster has Fragile Frame.

@@ -149,11 +149,17 @@ Save DC = 10 + primary_stat_mod + Trained proficiency (+2)
 
 **Race traits — apply these to simulation:**
 - Human (Adaptable): Once per round, may reduce a Stamina cost by 1. Model as: 1 attack per hunt costs 0 Stamina instead of 1.
-- Dragonian (Draconic Channeling): Once per turn, +1 Stamina cost → apply lineage rider. Model as: adds relevant condition to target 1/turn if worth the Stamina trade.
+- Dragonian (Draconic Channeling): Once per turn, +1 Stamina cost → apply lineage rider. Model as: spend +1 STA on first aggressive action each fight → apply elemental condition (Burned for Fire, etc.). Ongoing condition applies from next round.
 - Trolian Anchored Frame: If hunter doesn't move, +1 AR. Model as: melee hunters gain +1 AR effectively (they typically don't move).
 - Trolian Flowstep: Ignore difficult terrain on move. No combat impact unless arena has difficult terrain (note if so).
 - Trolian Rooted Resilience: On failed save, next Reaction costs 1 less Stamina. Model as: 1 Stamina saved per save failure per round.
 - Thalorim (Tide Breath): No combat impact unless encounter is underwater.
+
+### 3F — Technique Access by Tier
+
+**Hunters use the technique for their current tier.** At T1 they have the T1 technique; at T2 they have T1 and T2; and so on.
+
+**Modeling rule:** Hunters will use their tier technique at least once per fight at the optimal moment. Apply technique usage when the conditions favor it (see per-weapon rules below). If using the technique would be net-negative (e.g., high chance of cancellation), model basic attacks instead and note why.
 
 ---
 
@@ -175,6 +181,7 @@ Stamina: [X]  (6 + CON mod[m])
 Attack:  d20+[X] → [weapon die]+[mod]  avg hit dmg: [X.X]
 Save DC: [X]
 React:   [Parry / Block / Dodge / None]
+Technique (T[X]): [technique name and brief effect]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
@@ -228,7 +235,7 @@ Natural 1 always misses (5% floor miss), natural 20 always hits (5% floor hit).
 dis_hit_chance = hit_chance²
 ```
 
-### Advantage (attacks vs Sleeping, Prone, Exhausted targets)
+### Advantage (Cleave, attacks vs Sleeping/Prone/Exhausted targets)
 ```
 adv_hit_chance = 1 - (1 - hit_chance)²
 ```
@@ -271,20 +278,186 @@ For each hunter this round:
    - Calculate hit_chance vs monster AR
    - If target is Exhausted: use adv_hit_chance
    - Apply weapon mechanic stack bonuses (see below)
-   - Spend 1 Stamina
+   - Spend Stamina per action (see per-weapon rules)
    - Record: expected damage this round
 
-3. **Weapon mechanic modeling:**
-   - **Momentum (Greatsword):** 0 stacks Round 1. From Round 2: assume 1 stack if last attack hit (adds +1 flat dmg). Stack 2 from Round 3+ on consecutive hits. Reset on miss or Dodge.
-   - **Focus (Bow):** +1 Focus if hunter does not move. Assume hunter stays stationary vs melee monster → +1 Focus by Round 2, +2 by Round 3 (cap 3). Each Focus adds +1 dmg to next hit (consumed).
-   - **Impact (Hammer):** Track impact on monster. At 3 Impact → Stunned (1 round). Stunned: skip monster's next turn, attacks vs it have advantage. Escalating resistance (+1 per stun).
-   - **Other weapons:** Apply core mechanic if relevant; summarize effect.
+3. **Weapon mechanic modeling — full rules:**
+
+---
+
+### GREATSWORD — Momentum + Cleave (T1)
+
+**Momentum:**
+- Gain +1 Momentum each time you hit with a Greatsword attack.
+- Lose ALL Momentum if you miss, Dodge, switch targets, or become Stunned/Prone.
+- Cap: 3 Momentum.
+
+| Stack | Bonus |
+|-------|-------|
+| M0 | +0 (base damage only) |
+| M1 | +1 flat damage |
+| M2 | +2 flat damage + Expanded Crit 19-20 (EV: +5% crit chance × avg_die ≈ +0.33/attack at T1) |
+| M3 | +3 flat damage + Expanded Crit 18-20 + 1 power die on ALL attacks (+avg_die to all hits) |
+
+**M3 EV per hit (T1, d12):** +3 flat + +6.5 (power die) + 15% crit × 6.5 = +10.5 per hit at T1.
+
+**Cleave (T1 technique) — 2 STA, Commitment:**
+- **Effect:** Attack with advantage. On hit: apply +2 Momentum if at 0 Momentum (instead of +1).
+- **Drawback:** GS is Exposed until end of next turn — the first monster attack against GS that turn uses adv_hit_chance.
+- **When to use:** Any round when Momentum = 0 (typically R1, or after reset).
+
+**Simulation model:**
+- R1: Cleave (2 STA). Hit chance = adv_hit_chance. On hit → M2 immediately (kicker).
+  - Exposed: apply adv_hit_chance to first monster attack vs GS in R1 monster phase.
+- R2: Basic attack (1 STA). M2 active → +2 flat + 0.33 crit EV. On hit → M3.
+- R3+: Basic attack (1 STA). M3 active → +3 flat + 6.5 power die + 0.975 crit EV = +10.5/hit.
+- Track: if GS misses any round → Momentum resets to 0 → use Cleave again next round if STA allows.
+
+---
+
+### HAMMER — Impact + Impact Decay + Charged Smash (T1)
+
+**Impact:**
+- +1 Impact per Hammer hit (cap 3 per creature).
+- At 3 Impact → Stunned (skip turn, adv attacks vs it, escalating resistance +1 per subsequent stun).
+- **Impact Decay:** −1 Impact at end of monster's turn if monster was NOT hit by Hammer that round.
+  - Track decay explicitly. If Ham had a forced-idle round (climbing, underground, charging), Impact drops.
+
+**Part Breaking:**
+- Each Hammer hit: 1 Break Progress to targeted part (2 Progress if monster has 3 Impact when hit).
+- Note part break progress alongside Impact tracking.
+
+**Charged Smash (T1 technique) — 2 STA, Wind-Up:**
+- **Charge (Turn 1, Action):** No attack. Cannot move >5 ft. Canceled if Ham moves >5 ft, takes damage, or is Stunned.
+- **Release (Turn 2, Action):** Attack with +2d6 bonus damage (avg +7). Applies 2 Impact instead of 1.
+  - If this reaches 3 Impact and Stuns: Stun lasts 2 rounds (instead of 1).
+- **Cancel probability:** P(cancel) = P(monster hits Ham during charge turn).
+
+**When to use Charged Smash:**
+- Use CS when P(cancel) < 30% (monster hit chance vs Ham ≤ 30%) OR when Ham cannot attack anyway (underground phase, elevation delay).
+- Do NOT use CS if monster hit chance vs Ham is >30% — expected value is negative vs basic attacks.
+- If CS is used during a forced-idle round: R1 charge (no attack, no Impact), R2 release (+2 Impact, +7 dmg on hit).
+
+**Stun timing with CS vs basic attacks (both paths):**
+
+| Path | R1 | R2 | R3 | Stun round |
+|------|----|----|-----|------------|
+| Basic attacks | +1 Impact | +2 Impact | +3 → Stun | R3 |
+| CS (safe window) | Charge (0 Impact) | +2 Impact | +3 → Stun | R3 |
+| CS (forced idle R1) | 0 Impact (idle) | CS release +2 Impact | +3 → Stun | R3 |
+
+CS advantage is the +7 bonus damage on release, not faster stun timing.
+
+---
+
+### WAND — Magical Clusters + Hex Charge T1 Passive + Draconic Channeling
+
+**Magical Clusters (Core Mechanic):**
+- **Place (Action, 1 STA):** Target makes DEX save vs Wand DC.
+  - `attach_rate = clamp((DC - monster_DEX_mod - 1) / 20, 0.05, 0.95)`
+  - On fail: cluster attaches to target. On success: cluster lands as terrain (5-ft square).
+  - Max 3 clusters active at once.
+- **Detonate (Fast Action, 1 STA):** Detonate any/all clusters.
+  - Each detonated cluster deals Cluster Bomb damage (per tier table) to host and creatures in 10 ft.
+  - **Stacking:** +1 damage die per additional cluster on same host (max +2 extra dice).
+  - Terrain clusters use same damage in 10-ft burst; chain to nearby clusters (15 ft).
+- **Remove:** Monster may spend Fast Action (STR check vs 10+INT mod). On fail: takes 1d6 damage.
+
+**Cluster Bomb damage by tier:**
+```
+T1: 1d4+INT per cluster (avg = 2.5 + INT_mod)
+1 cluster detonated: 1d4+INT
+2 clusters on same host: 2d4+INT (stacking +1 die)
+3 clusters on same host: 3d4+INT (stacking +2 dice, max)
+```
+
+**Hex Charge — Fire/Scorch (T1 Passive):**
+- Scorch tick: 1d4 (avg 2.5) fire damage per attached cluster at the end of the monster's turn.
+- On detonate: CON save vs Wand DC → fail → Burned condition (2.5/turn ongoing).
+- `burned_fail_rate = clamp((DC - monster_CON_mod - 1) / 20, 0.05, 0.95)`
+
+**Draconic Channeling (Dragonian race):**
+- Spend +1 STA on any action → apply fire lineage rider (Burned) immediately.
+- Model as: on R1 Place action, spend +1 STA total (2 STA) → if cluster attaches, Burned is applied directly (no CON save needed). Burned starts ticking from R2.
+
+**Simulation model (T1 Dragonian Fire Wand):**
+
+R1 (setup):
+- Action: Place cluster (1 STA) + Draconic (+1 STA). Total: 2 STA.
+- Attach rate: attach%. If attached → Burned active (no save needed, Dragonian).
+- R1 damage: 0 direct.
+- End of R1 monster turn: Scorch tick = attach% × 2.5.
+
+R2+ (active cycle — Place + Detonate each round):
+- Fast Action: Detonate previous cluster (1 STA). Detonation hits if cluster was attached.
+  - Burst dmg = prev_attach% × cluster_dmg (e.g., 60% × 6.5 = 3.9 for 1 cluster, T1)
+  - CON save on detonate → burned_fail_rate × triggers Burned (already active from Dragonian, so skip if already Burned).
+- Action: Place new cluster (1 STA). New attach% applies.
+- Scorch tick at end of monster's turn: attach% × 2.5 (from this round's placed cluster).
+- Burned tick: 2.5 (passive, ongoing).
+- STA per round R2+: 2 (Detonate + Place).
+
+**Per-round EV summary (T1, INT mod +4, 60% attach rate):**
+```
+R1: 0 direct, 2 STA, Burned started, Scorch tick 1.5 (at monster end-turn)
+R2+: 3.9 (detonate) + 2.5 (Burned) + 1.5 (Scorch) = 7.9/round at 2 STA
+```
+
+**Note on Wand vs basic attack model:**
+Against single targets, cluster cycle DPR (7.9/round) is comparable to basic attack + Burned model (~8–10/round). The cluster system's advantage grows with stacking (2–3 clusters increase detonate burst significantly) and AoE. For single-boss T1 fights, kill round difference is typically ≤1 round vs the simplified model.
+
+**When to stack clusters:** If the fight is projected to last 4+ rounds, place clusters without immediately detonating to build 2-stack. Detonate 2 clusters = 2d4+INT avg 9 instead of 6.5 (38% damage increase per detonate). Stack-building costs 1 extra setup turn.
+
+---
+
+### BOW — Focus + Power Shot (T1) + Arrow Types
+
+**Focus:**
+- +1 Focus if you do not move >5 ft on your turn. Retain if you move ≤5 ft or only swap arrows.
+- Moving >5 ft, Knocked Prone/Stunned, or Dashing → Focus resets to 0.
+- Each Focus adds +1 flat damage to your next Bow attack (consumed on hit). Cap: 3 Focus.
+- **Simulation model:** Assume Bow stays stationary vs melee monsters → +1 Focus per round from R2. Reach F1 by R2, F2 by R3, F3 by R4 (cap). Track Focus consumed on each hit.
+
+**Power Shot (T1 technique) — 2 STA, Wind-Up:**
+- **Normal:** Turn 1 aim (Action, cannot move >5 ft). Turn 2 release (Action, advantage + +1 tier damage die).
+- **At Focus 3:** Release Power Shot same turn (no wind-up). Consume all Focus on release.
+- When to use Power Shot: When stationary at Focus 3 — same-turn release (advantage + +1d8) without sacrificing a setup turn.
+
+**Power Shot at F3 EV (T1, DEX mod +4, vs AR 12):**
+```
+Standard hit (F3): 0.75 × (8.5+4+3) = 0.75 × 15.5 = 11.63 dmg at 1 STA
+Power Shot (F3 same-turn): adv_hit_chance × (8.5+4+4.5) = 0.9375 × 17.0 = 15.94 dmg at 2 STA
+```
+Power Shot is less STA-efficient than basic attack at F3 but delivers a higher single-hit burst. Use Power Shot when burst timing matters (finishing blow, before forced movement).
+
+**Arrow Types (2 uses per type per hunt):**
+
+*Steel Bow (Support):*
+- **Signal Arrow:** On hit, Mark target — all allies gain +1 to attack rolls until your next turn.
+  - Model: Signal Arrow hit → +1 to all party attack rolls that round. Apply the +1 to all remaining attacks in Hunter Phase + next Hunter Phase.
+  - Best used R1 or R2 to maximize benefit across multiple hunter attacks.
+- **Binding Arrow:** On hit, STR save vs Bow DC. Fail → Staggered + cannot Fly until end of target's next turn.
+  - `bind_fail_rate = clamp((DC - monster_STR_mod - 1) / 20, 0.05, 0.95)`
+  - Against elevated or flying monsters: use Binding Arrow as first action to ground target.
+  - If grounded: melee hunters can attack at full AR (no elevation penalty). Model the fight with and without Binding landing.
+
+*Bone Bow (Offense):*
+- **Piercing Arrow:** On hit, ignore 1 AR (2 AR at Focus 3). Model as: reduce target's effective AR by 1 (or 2) for this attack only. Recalculate hit_chance with reduced AR.
+- **Barbed Arrow:** On hit, CON save vs Bow DC. Fail → Bleeding. Track Bleeding as ongoing damage per conditions table.
+
+**Arrow usage decision:**
+- Against aerial/elevated monsters: use Binding Arrow R1 to collapse elevation phase immediately.
+- Against grounded monsters: Piercing Arrow for burst, Signal Arrow for party DPR boost.
+- Calculate whether grounding the monster (Binding) or buffing all hunters (Signal) yields higher party DPR. Binding typically wins if it would unlock 2+ melee rounds of full-AR attack.
+
+---
 
 4. **Called Shot consideration:**
    - Identify the most impactful part break (disables a key ability)
    - Estimate: if 1 hunter dedicates attacks to that part, how many rounds to break it?
    - Formula: `rounds_to_break = ceil(threshold / hit_chance_at_called_shot_penalty)`
    - Note: Called Shots typically have −2 to hit. Apply to hit_chance calculation.
+   - Hammer Part Breaking: each hit accumulates Break Progress (1 per hit, 2 at 3 Impact). Note if part threshold is reachable in fight duration.
 
 ### Monster Phase
 
@@ -307,6 +480,7 @@ For each hunter this round:
    - Dodge: reduces monster hit to dis_hit_chance; costs 1 Stamina
    - Block: adds +3 AR; costs 1 Stamina (recalculate hit_chance after AR bonus)
    - Parry: adds +1 AR; Parry check = hunter attack roll vs monster attack roll; if success → negate + riposte (half weapon damage, 0 Stamina); costs 1 Stamina
+   - **Exposed (GS after Cleave):** Do NOT apply GS Parry during the Exposed round — attack lands with advantage. Resume Parry reactions R2+.
    - Reactions reset each round (1 per round per hunter)
 
 5. **Stamina Tax:**
@@ -324,10 +498,12 @@ Track active conditions each round:
 - **Blind (hunter):** monster attacks vs that hunter use adv_hit_chance; hunter attacks use dis_hit_chance. Duration: until end of hunter's next turn.
 - **Blind (monster):** hunter attacks use adv_hit_chance. Duration: as listed.
 - **Sleep (hunter):** hunter skips turn, regains 4 Stamina, wakes on damage or INS check. INS check: fail_chance = 1 - clamp((21 - max(1, 10 - hunter_INS_mod)) / 20, 0.05, 0.95). Attacks vs sleeping hunter = adv_hit_chance.
-- **Staggered:** cannot Move or Action next turn.
+- **Staggered:** cannot Move or take Action next turn. Can still use Fast Actions and Reactions.
 - **Stunned (monster):** skips next turn entirely; attacks vs it = adv_hit_chance; auto-fails STR/DEX saves.
 - **Prone (monster):** melee attacks = adv_hit_chance; ranged = dis_hit_chance. Stand costs 2 Stamina.
 - **Chilled:** +1 Stamina cost per ability; model as +1 Stamina drain per action taken.
+- **Burned:** 2.5 fire damage per round at end of target's turn. Ongoing until condition clears.
+- **Exposed (GS):** All attacks vs the Exposed hunter use adv_hit_chance until end of the Exposed hunter's NEXT turn. Lasts through the monster phase that follows the turn Cleave was used.
 
 ### Round Summary Block
 
@@ -339,16 +515,16 @@ MONSTER: HP [X]/[Max]  STA [X]/[Max]
 Conditions on monster: [list or "none"]
 
 HUNTER PHASE:
-  [Hunter 1] [Race/Weapon]: STA [X] → Attack → hit [X]% → exp dmg [X.X]
+  [Hunter 1] [Race/Weapon]: STA [X] → [action] → hit [X]% → exp dmg [X.X]  ([technique note])
   [Hunter 2] [Race/Weapon]: STA [X] → Breathing Turn → +4 STA
-  [Hunter 3] [Race/Weapon]: STA [X] → Attack → [special mechanic note] → exp dmg [X.X]
+  [Hunter 3] [Race/Weapon]: STA [X] → Place cluster (60% attach) + Detonate [X.X] → Scorch tick noted
   ...
   ▸ Party total damage this round: [X.X]  (cumulative: [X.X])
 
 MONSTER PHASE:
   [Ability name] ([X] STA): [targets] → [effect] — fail rate [X]% / exp dmg [X.X]
   [Attack 1] ([X] STA): → [Hunter A] hit [X]% → exp dmg [X.X]  (Hunter reacts: Dodge)
-  [Attack 2] ([X] STA): → [Hunter B] hit [X]% → exp dmg [X.X]
+  [Attack 2] ([X] STA): → [Hunter B] hit [X]% → exp dmg [X.X]  (GS Exposed: adv applied)
   Stamina Tax: −[X] ([reason])
   ▸ Monster STA after: [X]
 
@@ -356,6 +532,7 @@ END OF ROUND [N]:
   Monster HP: [X.X] remaining (dealt [X.X] cumulative)
   Hunter HP: [A]: [X]  [B]: [X]  [C]: [X]  [D]: [X]
   Hunter STA: [A]: [X]  [B]: [X]  [C]: [X]  [D]: [X]
+  Momentum (GS): [X] | Impact (Ham): [X] | Focus (Bow): [X] | Clusters (Wand): [X] attached
   Active conditions: [list]
 ──────────────────────────────────────────────────────────────────
 ```
@@ -381,6 +558,7 @@ Stop simulation when ANY of these are true:
 ╔══════════════════════════════════════════════════════════════════╗
 ║  HUNT SIMULATION — [Monster Name]  vs  Party of [N]  (Tier [X]) ║
 ║  Mode: Expected Value  │  Hunter baseline: HR [X]               ║
+║  Techniques: Tier [X] active                                    ║
 ╚══════════════════════════════════════════════════════════════════╝
 
 PARTY ROSTER
@@ -403,6 +581,7 @@ Avg hunter HP remaining:   [X.X] / [Max]
 Avg hunter STA remaining:  [X.X] / [Max]
 Breathing Turns taken:     [X] total across all hunters
 Part breaks achieved:      [list or "none"]
+Techniques used:           [list per hunter]
 
 BALANCE METRICS
 ───────────────
@@ -432,14 +611,14 @@ Examples of things to flag:
   → Hunt resolves in <4 rounds; no puzzle engagement
 - No hunter triggered a Breathing Turn
   → Monster applies no meaningful Stamina pressure
-- Sleep loop landed but party had no trouble waking
-  → Consider tightening INS save window or increasing Stamina drain
-- Break zone never reached threshold
-  → Consider lowering break threshold by 1 or adding Called Shot incentive
-- Monster AR too low: hit rate >80% for all hunters
-  → Monster is being hit freely; no threat of wasted turns
-- Monster AR too high: hit rate <35% for all hunters
-  → Combat feels like attrition without payoff
+- Kill round reduced significantly vs technique-free baseline
+  → Monster may need HP or AR adjustment to maintain target kill round
+- Binding Arrow collapses aerial phase immediately
+  → Note whether this changes fight identity or if the phase is still tactically interesting
+- GS Exposed in R1 leads to lethal spike damage
+  → Cleave opening may need risk-reward recalibration
+- Wand cluster stacking unreachable (fight too short for 2-stack)
+  → Consider whether fight duration supports the cluster identity
 
 💡 TUNING SUGGESTIONS
 ──────────────────────
@@ -457,7 +636,7 @@ Examples of things to flag:
 - **Proficiency:** Assume Trained (+2) for all hunters at their weapon's tier
 - **Hunter HP:** `20 + (CON score × 2)` — use this unless explicit formula found
 - **Initiative:** Not simulated per round. Hunters act first each round by default.
-- **Multiple hits per round:** Hunters have 1 Action = 1 attack per turn
+- **Multiple hits per round:** Hunters have 1 Action = 1 attack per turn (unless technique modifies this)
 - **Monster attacks:** As listed in Attacks/Turn — distribute across hunters
 - **Called Shot penalty:** −2 to hit vs standard attack bonus
 - **Parry riposte:** `half weapon avg damage, 0 Stamina cost` — adds to that round's total
@@ -465,3 +644,11 @@ Examples of things to flag:
 - **Monster at 0 Stamina:** Apply Exhaustion rule from monster file, not generic rules
 - **Condition durations:** "until end of next turn" = lasts through 1 round; track explicitly
 - **Sleep recovery:** Hunter inside Sleep gains 4 Stamina; INS check to wake (DC 10 default unless monster file specifies)
+- **Technique access:** T1 hunters have T1 technique. T2: T1+T2. Etc. Always model highest-tier technique usage at optimal timing.
+- **Cleave (GS T1):** 2 STA, advantage, Exposed until end of next turn. Momentum kicker at 0 Momentum → M2 on hit. Use R1.
+- **Charged Smash (Hammer T1):** 2-turn wind-up, +2d6 avg+7, 2 Impact on release. Do not use if monster hit chance vs Ham >30%.
+- **Impact Decay:** −1 Impact per round Ham doesn't hit monster. Track explicitly.
+- **Wand clusters:** Place = DEX save (not hit roll). Detonate = Fast Action. 2 STA per full cycle. Scorch ticks passively.
+- **Power Shot (Bow T1):** 2-turn wind-up normally; release same turn at Focus 3. Advantage + +1 damage die.
+- **Binding Arrow (Bow):** 2 uses/hunt. STR save on hit → Stagger + no fly. Critical vs aerial/elevated monsters.
+- **Signal Arrow (Bow):** 2 uses/hunt. On hit, allies +1 to attack rolls until your next turn.
