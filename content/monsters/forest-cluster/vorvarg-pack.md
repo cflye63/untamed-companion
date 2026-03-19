@@ -42,7 +42,7 @@ All share initiative. Each creature takes its own actions from its own Stamina p
 
 | Stat | Value | Notes |
 |------|-------|-------|
-| AR | 9 | Light frame — below T2 solo floor, intentional for pack unit |
+| AR | 11 | Light frame — T2 floor for pack unit |
 | HP | 42 | Pack unit band (not solo formula) |
 | Stamina | 12 | 10 + CON Score (2) |
 | Movement | 30 ft | — |
@@ -75,7 +75,7 @@ All share initiative. Each creature takes its own actions from its own Stamina p
 | Movement | 30 ft | — |
 | Attacks/Turn | 1 | — |
 
-> **GM Scaling Note:** For optimized parties: Alpha HP → **120**, Standard HP → **55** each. Total pack HP: 230.
+> **GM Scaling Note:** For optimized parties: Alpha HP → **150**, Standard HP → **55** each. Total pack HP: 260. The extra Alpha HP ensures it survives to use Pack Howl and attempt a second Coordinated Rush cycle.
 
 **Attack Roll Breakdown:** `d20 + DEX mod (+3) + Trained proficiency (+2) = d20+5`
 
@@ -122,7 +122,7 @@ If two or more Vorvargs attack the same target this turn:
 
 ---
 
-**Coordinated Rush — (2 Stamina each, Requires 3 Vorvargs)**
+**Coordinated Rush — (2 Stamina each, Requires 2+ Vorvargs)**
 
 Cooldown: 1/Combat
 
@@ -132,6 +132,8 @@ All participating Vorvargs move up to 20 ft toward the same target. Target must 
   - Cannot Dash
   - While Encircled: Vorvargs deal +1 damage
 - No permanent condition
+
+> Reduced from 3 to 2 Vorvargs required. At 3, any AoE or Prone disruption prevented the Rush from ever firing. At 2, the pack can Rush even after losing a Standard — preserving the ability as a real threat throughout the fight.
 
 ---
 
@@ -155,6 +157,15 @@ Trigger:  Missed by a melee attack
 Effect:   Move 5 ft without provoking opportunity attacks
 Limit:    1 reaction per round
 ```
+
+**Pounce — (1 Stamina, Standards Only)**
+```
+Trigger:  A Prone creature within 5 ft stands up
+Effect:   Make a free Fang Bite against that creature (uses normal attack roll)
+Limit:    1 reaction per round (shared with Snap Withdraw — a Standard chooses one or the other)
+```
+
+> Pounce creates a soft lock on Prone targets. Standing costs 2 STA *and* eats a free bite (avg 6.5, or 9.0 with Pack Rider). The counter is coordination — allies kill or reposition the adjacent Vorvarg before the Prone hunter stands. This makes Pack Lunge's Prone a real tactical problem, not just a STA tax.
 
 ---
 
