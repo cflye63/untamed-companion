@@ -119,9 +119,9 @@ Stamina = 6 + CON modifier
 
 **Hunter HP:**
 ```
-HP = 20 + (CON score × 2)
+HP = (CON score × 6) + Hunter Rank
 ```
-*(Use this formula. If an explicit hunter HP formula is found in character creation, override with that.)*
+*(HR midpoint per tier: T1→HR2, T2→HR7, T3→HR12, T4→HR17, T5→HR22)*
 
 **Hunter AR (by armor type):**
 - STR/tank weapons (GS, Hammer, Spear&Shield, Greatshield): **Heavy Armor → AR 14** (no Dodge)
@@ -586,7 +586,7 @@ STA pressure: [None/Low/Med/High/Crit] | HP pressure: [None/Low/Med/High/Crit]
 - **Hunter Stamina:** `6 + CON mod`
 - **Monster Stamina:** `10 + CON score`
 - **Proficiency:** Assume Trained (+2) for all hunters at their weapon's tier
-- **Hunter HP:** `20 + (CON score × 2)` — use this unless explicit formula found
+- **Hunter HP:** `(CON score × 6) + Hunter Rank` — HR midpoint per tier (T1→2, T2→7, T3→12, T4→17, T5→22)
 - **Initiative:** Not simulated per round. Hunters act first each round by default.
 - **Multiple hits per round:** Hunters have 1 Action = 1 attack per turn (unless technique modifies this)
 - **Monster attacks:** As listed in Attacks/Turn — distribute across hunters

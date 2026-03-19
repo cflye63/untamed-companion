@@ -23,6 +23,31 @@ Hunter Rank measures your progression as a hunter and determines what tier of mo
 
 ---
 
+## Health
+
+Hunter HP scales with both Constitution and Hunter Rank. CON provides the bulk of your durability, while HR adds a steady baseline that rewards progression.
+
+```
+HP = (CON Score × 6) + Hunter Rank
+```
+
+Recalculate when your CON score or Hunter Rank changes.
+
+### HP Scaling Reference
+
+| HR | CON 5 | CON 6 | CON 7 | CON 8 | CON 9 | CON 10 |
+|----|-------|-------|-------|-------|-------|--------|
+| 0  | 30    | 36    | 42    | 48    | 54    | 60     |
+| 2  | 32    | 38    | 44    | 50    | 56    | 62     |
+| 7  | 37    | 43    | 49    | 55    | 61    | 67     |
+| 12 | 42    | 48    | 54    | 60    | 66    | 72     |
+| 17 | 47    | 53    | 59    | 65    | 71    | 77     |
+| 22 | 52    | 58    | 64    | 70    | 76    | 82     |
+
+> **Design note:** Each +1 CON grants +6 HP — a meaningful investment. The +HR term ensures hunters grow slightly tougher even without CON investment, keeping frontliners survivable as monster damage scales across tiers.
+
+---
+
 ## Getting Stronger (Milestone Rewards)
 
 As you gain Hunter Rank, you unlock upgrades at consistent milestones:

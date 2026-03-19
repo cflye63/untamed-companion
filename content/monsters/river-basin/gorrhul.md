@@ -155,11 +155,11 @@ While active:
 - **Advantage on saves vs Prone** (the mud acts as a stabilizing anchor)
 
 Removed by:
-- Receiving **10 or more fire damage in a single round** (after halving) — Mud layer scorched off. Passive ticks (Scorch, Burned) do not count toward this threshold; only active burst damage (detonations, fire attacks) qualifies.
+- Receiving **8 or more fire damage in a single round** (after halving) — Mud layer scorched off. Passive ticks (Scorch, Burned) do not count toward this threshold; only active burst damage (detonations, fire attacks) qualifies.
 - Immersion in clean water (river crossing, water bucket)
 - Being knocked Prone (mud disperses on impact) — **but Mud-Covered grants advantage on the Prone save first**
 
-> Fire resistance and the 10-damage threshold together prevent a single Dragonian Fire Wand from cycling the Mud layer every turn via Scorch ticks or single-cluster detonations. Stripping Mud with fire requires stacking 2+ clusters before detonating, or combining fire sources — making Mud removal a deliberate team investment rather than a free action.
+> Fire resistance and the 8-damage threshold together prevent a single Dragonian Fire Wand from cycling Mud via Scorch ticks or single-cluster detonations (1d6+5 halved = 4.25 avg, under threshold). A 2-cluster detonation (2d6+5 = 12 avg, halved = 6, occasionally rolls 16+ raw = 8+ halved) has a chance to strip Mud; 3 clusters reliably strip it. This makes Mud removal a deliberate investment — not free, but achievable with planning.
 
 **Terrain Sculptor**
 
@@ -178,7 +178,7 @@ Gorrhul's movement through wet ground creates difficult terrain in its wake. Eac
 
 ### Tactical Weaknesses
 
-- **Fire damage (burst, 10+ in a round after halving):** Forces Mud-Covered removal — requires stacking fire sources or multi-cluster detonation
+- **Fire damage (burst, 8+ in a round after halving):** Forces Mud-Covered removal — requires stacking 2-3 clusters or combining fire sources
 - **Tight terrain:** Charge Mode requires 20 ft straight movement — walls, trees, and hunter formation can block charge lanes
 - **Prone:** Removes Mud-Covered and cancels Charge Mode — but Mud-Covered grants advantage on Prone saves, so toppling Gorrhul requires commitment
 - **Braced Bulk costs Stamina:** Repeated forced movement attempts drain Gorrhul's reaction economy
