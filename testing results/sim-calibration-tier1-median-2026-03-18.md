@@ -186,9 +186,9 @@ Flags:
 | Monster | AR | HP | Kill Rd | Party DPR | Monster DPR | STA Press | HP Press | Core Fired | Status |
 |---------|----|----|---------|-----------|-------------|-----------|----------|------------|--------|
 | Palax | 9 | 81 | 4 | ~21.4 | ~14.7 | None | Medium | Yes (×2) | ✅ LOCKED (sim-006) |
-| Tanuza | 8→**11** | 81→**92** | 3→**4** | ~38→**~24.8** | ~8→**~15** | None→**Low-Med** | None→**Med** | Partial→**Yes** | ✅ LOCKED (sim-004) |
+| Tanuza | 8→**11** | 81→**92** | 3→**4** | ~38→**~24.8** | ~8→**~15** | None→**Low-Med** | None→**Med** | Partial→**Yes** | ✅ LOCKED (sim-004, sim-009) |
 | Urmine | 12 | 92→**120** | 3→**4** | ~30.5→**~35.6** | ~15→**~13.6** | Low→**None-Low** | Medium→**Low-Med** | Partial→**Yes** | ✅ LOCKED (sim-005) |
-| Kragal | 12 | 81 | 4 | ~23.9 | ~21.1* | Low | Medium | Yes | ✅ LOCKED (sim-007) |
+| Kragal | 12 | 81 | 4 | ~23.9 | ~21.1* | Low | Medium | Yes | ✅ LOCKED (sim-007, sim-008) |
 | Hollowmoth | 10→**13** | 70→**115** | 2→**4** | ~34→**~18** | ~6→**~10.8** | None→**Low** | None→**Med** | No→**Yes** | ✅ LOCKED (sim-003) |
 
 ```
@@ -203,8 +203,11 @@ TIER TARGET (from tier-calibration.md):
 IN-RANGE ✓:    Kragal (all metrics green)
 LOCKED ✅:     Palax — AR 9 intentional (burrow = defense). Eruption fires TWICE (sim-006 correction).
 LOCKED ✅:     Tanuza  — AR 11/13-airborne / HP 92 / Tailwhip Scatter / Tail Slam (DEX +1d6 height)
-               Urmine  — HP 120 / Fury fires 2 turns / Hammer Impact Stun valid counterplay
-               Hollowmoth — AR 13 / HP 115 / Spike Jab 3d8+3
+               sim-009 (T1 techniques): Binding Arrow P=45.5% to ground. Both paths kill round 4. Locked.
+LOCKED ✅:     Urmine  — HP 120 / Fury fires 2 turns / Hammer Impact Stun valid counterplay
+LOCKED ✅:     Hollowmoth — AR 13 / HP 115 / Spike Jab 3d8+3
+LOCKED ✅:     Kragal — AR 12/13-elevated / HP 81 / Barrage front-loaded / Desperation Charge R3
+               sim-008 (T1 techniques): Binding Arrow P=48.75% to ground. Both paths kill round 4. Locked.
 ```
 
 ---
@@ -224,14 +227,11 @@ Fix applied: HP 92→120. Fury fires R2, Rush delivers ~9.79 HP spike to frontli
 ## Priority Queue
 
 ```
-PRIORITY QUEUE
+PRIORITY QUEUE (updated 2026-03-19 — T1 technique re-validation complete)
 ──────────────
-1. Kragal    — LOCKED ✅ (sim-007) *Monster DPR 21.1 is front-loaded from R1 Barrage (32.7 HP burst); R2+ normalizes to ~10–15/round. Design-correct.
-2. Palax     — LOCKED ✅ (sim-006)
-3. Tanuza    — LOCKED ✅ (sim-004)
-4. Urmine    — LOCKED ✅ (sim-005)
-5. Hollowmoth — LOCKED ✅ (sim-003)
-3. Tanuza    — LOCKED ✅ (sim-004)
-4. Urmine    — LOCKED ✅ (sim-005)
-5. Hollowmoth — LOCKED ✅ (sim-003)
+1. Kragal     — LOCKED ✅ (sim-007, sim-008) Techniques validated. Binding Arrow delays Barrage 1 round; kill round 4 in both paths.
+2. Tanuza     — LOCKED ✅ (sim-004, sim-009) Techniques validated. Binding Arrow grounds at 45.5%; kill round 4 in both paths.
+3. Palax      — LOCKED ✅ (sim-006) Technique re-validation PENDING (low priority — no aerial mechanic, Binding N/A)
+4. Urmine     — LOCKED ✅ (sim-005) Technique re-validation PENDING (low priority — Charged Smash skipped, Impact path unchanged)
+5. Hollowmoth — LOCKED ✅ (sim-003) Technique re-validation PENDING (low priority — Binding N/A, Wand cluster minor delta)
 ```
