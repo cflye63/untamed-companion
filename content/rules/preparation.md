@@ -565,6 +565,71 @@ To keep balance tight, include these global rules:
 - Healing from potions cannot exceed max HP
 - Stamina restored cannot exceed max Stamina
 
+### Field Items
+
+**Thrown Utility Items for Tactical Preparation**
+
+Field Items are single-use thrown consumables that manipulate battlefield conditions — grounding flyers, blinding targets, obscuring vision, and disrupting senses. They deal no damage.
+
+**Requires:** Alchemist's Satchel
+**Crafting:** INT + Trap Engineering check (DC 12 unless noted)
+**Action:** Fast Action to throw, Range 30 ft
+**Supply:** 2 of each type per hunt; each pair occupies 1 Pack Slot
+**Rule:** A creature cannot be affected by the same Field Item type twice in the same round.
+
+---
+
+#### Sonic Phial
+
+A vial of vibrating resonance crystal suspended in alchemical binding fluid. Shatters on impact and emits a concussive burst calibrated to disrupt flight muscles and surfacing instincts.
+
+**Area:** 15 ft burst on impact
+**Save:** CON Save DC 12
+
+| Condition | Fail Effect |
+|-----------|-------------|
+| Flying | Forced land Prone; cannot fly until end of next turn |
+| Burrowed | Forced surface Prone + Staggered |
+| Grounded | Staggered until end of next turn |
+
+> The composition-agnostic answer to aerial and burrowing phases. Parties without a Bow no longer need to rely on a single Binding Arrow charge to access the ground phase.
+
+---
+
+#### Flash Phial
+
+Luminite powder in a sealed glass shell. The burst blinds by overloading light-sensitive organs — effective against creatures relying on sight or sonar.
+
+**Area:** 20 ft burst on impact
+**Save:** INS Save DC 12
+**Fail:** Blinded until end of next turn
+**Note:** Affects hunters in the burst area too — position carefully.
+
+---
+
+#### Smoke Cluster
+
+A bundle of treated ash pressed into a resin-sealed capsule. Creates a dense cloud on impact. Does not require a save.
+
+**Area:** 15 ft radius cloud, lasts 2 rounds
+**Effect (no save):**
+- Vision-based detection (sight, sonar) disabled within cloud
+- Ranged attacks passing through the cloud have Disadvantage
+- Swarm auras (e.g., Swarm Call) shrink to 10 ft radius while their source is inside the cloud
+**Dispersal:** Wind or fire disperses the cloud in 1 round.
+
+---
+
+#### Stun Powder
+
+A paralytic herb concentrate in a breakable carrier. Can be thrown at a single target or applied via melee contact.
+
+**Range:** Melee touch or 15 ft throw (single target)
+**Save:** CON Save DC 12
+**Fail:** Staggered until end of next turn
+
+---
+
 ### Toolkits
 
 **Specialized Equipment for Survival & Craft**

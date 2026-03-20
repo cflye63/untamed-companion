@@ -49,6 +49,7 @@
 								<li><a href="#trap-crafting">Trap Crafting</a></li>
 								<li><a href="#monster-gear">Monster Gear</a></li>
 								<li><a href="#potions-salves">Potions & Salves</a></li>
+								<li><a href="#field-items">Field Items</a></li>
 								<li><a href="#toolkits">Toolkits</a></li>
 								<li><a href="#upgrades">Upgrades</a></li>
 							</ul>
@@ -1015,6 +1016,81 @@
 									<div class="consistency-rule">Effects do not stack with identical effects</div>
 									<div class="consistency-rule">Healing from potions cannot exceed max HP</div>
 									<div class="consistency-rule">Stamina restored cannot exceed max Stamina</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="field-items" class="subsection">
+							<h3>💣 Field Items</h3>
+
+							<div class="intro-box">
+								<p class="tagline"><strong>Thrown Utility Items for Tactical Preparation</strong></p>
+								<p>Field Items are single-use thrown consumables that manipulate battlefield conditions — grounding flyers, blinding targets, obscuring vision, and disrupting senses. They deal no damage.</p>
+							</div>
+
+							<div class="rule-section highlight">
+								<h4>Field Item Rules</h4>
+								<div class="rule-grid">
+									<div class="rule-item"><strong>Requires</strong><span>Alchemist's Satchel</span></div>
+									<div class="rule-item"><strong>Crafting</strong><span>INT + Trap Engineering (DC 12)</span></div>
+									<div class="rule-item"><strong>Action</strong><span>Fast Action to throw, Range 30 ft</span></div>
+									<div class="rule-item"><strong>Supply</strong><span>2 of each type per hunt; 1 Pack Slot per pair</span></div>
+									<div class="rule-item"><strong>Stacking</strong><span>Same item type cannot affect same creature twice in one round</span></div>
+								</div>
+							</div>
+
+							<div class="item-grid">
+								<div class="item-card">
+									<div class="item-header">
+										<h4>🔔 Sonic Phial</h4>
+										<span class="item-tag">CON Save DC 12</span>
+									</div>
+									<p>A vial of vibrating resonance crystal in alchemical binding fluid. Shatters on impact with a concussive burst that disrupts flight muscles and surfacing instincts.</p>
+									<p><strong>Area:</strong> 15 ft burst on impact</p>
+									<table class="item-table">
+										<thead><tr><th>Condition</th><th>Fail Effect</th></tr></thead>
+										<tbody>
+											<tr><td>Flying</td><td>Forced land Prone; cannot fly until end of next turn</td></tr>
+											<tr><td>Burrowed</td><td>Forced surface Prone + Staggered</td></tr>
+											<tr><td>Grounded</td><td>Staggered until end of next turn</td></tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="item-card">
+									<div class="item-header">
+										<h4>⚡ Flash Phial</h4>
+										<span class="item-tag">INS Save DC 12</span>
+									</div>
+									<p>Luminite powder in a sealed glass shell. The burst overloads light-sensitive organs — effective against creatures relying on sight or sonar.</p>
+									<p><strong>Area:</strong> 20 ft burst on impact</p>
+									<p><strong>Fail:</strong> Blinded until end of next turn</p>
+									<p class="item-note">⚠ Affects hunters in the burst area — position carefully.</p>
+								</div>
+
+								<div class="item-card">
+									<div class="item-header">
+										<h4>💨 Smoke Cluster</h4>
+										<span class="item-tag">No Save</span>
+									</div>
+									<p>Treated ash in a resin-sealed capsule. Creates a dense cloud that disrupts detection and swarm coordination.</p>
+									<p><strong>Area:</strong> 15 ft radius cloud, lasts 2 rounds</p>
+									<ul>
+										<li>Vision-based detection (sight, sonar) disabled within cloud</li>
+										<li>Ranged attacks passing through the cloud have Disadvantage</li>
+										<li>Swarm auras shrink to 10 ft radius while source is inside cloud</li>
+									</ul>
+									<p class="item-note">Wind or fire disperses the cloud in 1 round.</p>
+								</div>
+
+								<div class="item-card">
+									<div class="item-header">
+										<h4>🌿 Stun Powder</h4>
+										<span class="item-tag">CON Save DC 12</span>
+									</div>
+									<p>Paralytic herb concentrate in a breakable carrier. Can be thrown or applied via melee contact.</p>
+									<p><strong>Range:</strong> Melee touch or 15 ft throw (single target)</p>
+									<p><strong>Fail:</strong> Staggered until end of next turn</p>
 								</div>
 							</div>
 						</div>
@@ -2880,7 +2956,114 @@
 				font-weight: 500;
 			}
 
-			/* Toolkit Styles */
+			/* Field Items Styles */
+		.item-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 1.5rem;
+			margin: 1.5rem 0;
+		}
+
+		.item-card {
+			background: var(--forest-dark);
+			padding: 1.5rem;
+			border-radius: 12px;
+			border: 2px solid var(--earth-brown);
+			transition: all 0.3s ease;
+		}
+
+		.item-card:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+			border-color: var(--leaf-green);
+		}
+
+		.item-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 1rem;
+			padding-bottom: 0.75rem;
+			border-bottom: 1px solid var(--earth-brown);
+		}
+
+		.item-header h4 {
+			color: var(--amber);
+			font-size: 1.2rem;
+			margin: 0;
+		}
+
+		.item-tag {
+			background: var(--moss-green);
+			color: var(--amber);
+			padding: 0.25rem 0.75rem;
+			border-radius: 6px;
+			font-size: 0.85rem;
+			font-weight: 600;
+			white-space: nowrap;
+		}
+
+		.item-table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 1rem 0;
+			font-size: 0.95rem;
+		}
+
+		.item-table th,
+		.item-table td {
+			padding: 0.5rem 0.75rem;
+			text-align: left;
+			border-bottom: 1px solid var(--earth-brown);
+		}
+
+		.item-table th {
+			background: var(--moss-green);
+			color: var(--amber);
+			font-weight: 600;
+		}
+
+		.item-table tr:last-child td {
+			border-bottom: none;
+		}
+
+		.item-note {
+			color: var(--leaf-green);
+			font-style: italic;
+			font-size: 0.9rem;
+			margin-top: 0.75rem;
+		}
+
+		.rule-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 0.75rem;
+			margin-top: 1rem;
+		}
+
+		.rule-item {
+			background: var(--forest-dark);
+			padding: 0.75rem 1rem;
+			border-radius: 6px;
+			border-left: 4px solid var(--leaf-green);
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+		}
+
+		.rule-item strong {
+			color: var(--amber);
+			font-size: 0.85rem;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+		}
+
+		.rule-item span {
+			color: var(--text-light);
+			font-size: 0.95rem;
+		}
+
+		/* Toolkit Styles */
 			.prof-tiers {
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
