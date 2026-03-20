@@ -60,8 +60,9 @@ Umbrosk does not hunt — it wardens. A territorial arthropod the size of a draf
 
 ### Senses
 
-- Echosense 60 ft in dim light or darkness (detects movement by sound oscillation — bypassed by complete stillness or magical silence)
-- Standard vision otherwise — darkness is genuinely blind without Echosense range
+- Echosense 60 ft — always active; detects movement by sound oscillation regardless of light level. Bypassed by complete stillness or magical silence.
+- **Sonar Disruption:** Echosense range degrades when acoustic anchors are destroyed or the cave is filled with dampening material. Each fungal core destroyed: −15 ft range. Smoke Cluster active in the cave: Echosense drops to 20 ft and Perception advantage lost for its duration. At 0 ft effective range: Echosense disabled entirely.
+- Standard vision only — no detection advantage in darkness beyond Echosense
 
 ---
 
@@ -126,13 +127,13 @@ Miss:    Umbrosk lands Prone
 
 **Echo Slip — (2 Stamina, Cooldown 1 round)**
 ```
-Trigger:  Hit by a melee attack while in dim light
+Trigger:  Hit by a melee attack while Echosense is not Disrupted (range > 20 ft)
 Effect:   Reduce incoming damage by half and move 15 ft along any surface
           (wall, floor, or ceiling) without provoking opportunity attacks
 Limit:    1 reaction per round
 ```
 
-> Defensive repositioning, not negation. Echo Slip costs 2 STA — sustainable for 3–4 uses before it significantly drains the pool. The dim-light requirement means flooding the arena with torches removes this tool entirely. Hunters who carry light sources force Umbrosk to eat full melee damage.
+> Defensive repositioning, not negation. Echo Slip costs 2 STA — sustainable for 3–4 uses before it significantly drains the pool. The Echosense requirement ties this to acoustic conditions, not light. Hunters who destroy fungal cores or deploy a Smoke Cluster strip the reaction entirely — Umbrosk takes full melee damage without recourse and cannot reposition safely.
 
 ---
 
@@ -140,16 +141,19 @@ Limit:    1 reaction per round
 
 **Echosense**
 
-While in dim light or darkness:
+Always active (not light-dependent):
 - Detect movement within 60 ft (cannot be Surprised)
 - Advantage on Perception checks relying on sound
 - Does NOT automatically bypass Stealth — a creature that holds completely still remains hidden
+- **Disrupted** when Echosense range is reduced to 20 ft or less (by core destruction or Smoke Cluster): loses Surprised immunity and Perception advantage
 
 **Mossed Carapace**
 
 While in dim light:
 - +1 AR (12 → 13)
 - The bioluminescent moss in the shell seams absorbs ambient light and hardens the outer layer
+
+> This is a passive biological trait, not a system-critical counterplay element. The cave's ambient bioluminescence already provides dim light across most of the arena — Mossed Carapace is simply Umbrosk's baseline state in its home environment. It falls off only if the fungal cores are smashed and the arena's dim patches disappear.
 
 ---
 
@@ -164,11 +168,12 @@ While in dim light:
 
 ### Tactical Weaknesses
 
-- **Bright light collapses identity:** Echosense requires dim light. In bright light, Umbrosk has no detection advantage, loses Mossed Carapace's AR bonus, and Echo Slip loses its trigger condition. A torch-lit arena is a soft counter to all three simultaneously.
+- **Acoustic disruption collapses identity:** Echosense is Umbrosk's detection and defensive framework simultaneously. Destroying fungal cores degrades it incrementally (−15 ft per core; 4 cores in a standard arena). Smoke Cluster drops it to 20 ft and strips Perception advantage for 2 rounds. Once Disrupted, Echo Slip loses its trigger — Umbrosk takes full melee damage without recourse. No torch solves this. The counterplay is specific to the cave's acoustic environment.
+- **Fungal cores are permanent acoustic anchors:** Once smashed, they cannot be restored. Each destroyed core is a one-way ratchet toward full disruption. Hunters who prioritize core destruction early compress the fight's difficult phase; hunters who ignore them fight the full sonar-aware Umbrosk for longer.
+- **Smoke Cluster is the prep-item counter:** Two uses per hunt, deployed as a Fast Action. Each deployment disrupts Echosense for 2 rounds regardless of how many cores remain. A party that combines 2 core destructions with a Smoke Cluster achieves full disruption without burning all their actions on cores.
 - **Grounding removes Ceiling Drop:** Ceiling Drop requires starting above the target. AoE Prone or sustained melee that prevents ceiling re-entry forces Umbrosk into a ground attacker with no burst window. Binding Arrow's Stagger is effective for this — but note that the "cannot Fly" rider does nothing here. Umbrosk moves along surfaces via magnetite-laced leg tips, not flight. Only the Stagger (loses its Action) is relevant when Binding Arrow connects.
 - **Antennae break collapses Echo Pulse:** At DC 11, T2 CON saves almost always succeed — the Stagger rider disappears, leaving a 3 STA AoE with no payoff. Antennae break turns Echo Pulse from a fight-opener into a waste.
 - **Carapace break removes durability:** AR 10 with no Mossed Carapace is below the T2 floor. Umbrosk becomes significantly easier to hit in both phases.
-- **Echo Slip is light-gated:** Fighters who carry torches negate the reaction entirely — Umbrosk takes full melee damage without recourse and cannot reposition safely.
 - **Ceiling Drop miss = Prone:** Melee hunters with Prone punishment tools (Ripping Strike, Charged Smash, Talon Rake) should bait a Drop intentionally — let it miss, then commit to burst. Hollow-point weapons deal additional damage to the brittle carapace.
 
 ---
@@ -185,7 +190,7 @@ While in dim light:
 - If on ceiling and isolated hunter below: Ceiling Drop → Mandible Crush (vs Restrained) → Claw Rake → Echo Slip back to ceiling if hit
 - If forced to ground: Claw Rake (Slow) → Mandible Crush (punish) → Echo Pulse when clustered hunters step in
 - **Ground-phase target priority:** Umbrosk remembers who harassed it from range during the ceiling phase. Once grounded, it directs its Claw Rake / Mandible Crush chain at the hunter who dealt the most damage before melee began — not automatically the lowest HP target. This spreads punishment across the party and punishes hunters who think range makes them safe.
-- If in bright light: Abandon Echo Slip entirely (trigger lost); retreat to darker cavern section if path exists; if trapped in light, prioritize Claw Rake chains over Ceiling Drop (too exposed to retaliate on miss)
+- If Echosense Disrupted (cores smashed or Smoke Cluster active): Abandon Echo Slip (trigger lost); shift to aggressive Ceiling Drop spam — Umbrosk can no longer track threats with precision and compensates with burst aggression; prioritize Ceiling Drop + Mandible Crush rather than methodical positioning
 - If Antennae broken: Abandon Echo Pulse as primary opener (DC 11 rarely Staggers); shift entirely to Ceiling Drop and ground pressure
 - If Carapace broken: Increase aggression — AR 10 means it will die faster, push harder
 
@@ -210,13 +215,13 @@ While in dim light:
 **Recommended Arena:** Vertical cavern chamber — 30–40 ft ceiling height, uneven floor with stalactite clusters, fungal growth in rings creating dim-light patches surrounded by relative brightness from bioluminescent walls.
 
 **Environmental Synergy:**
-- Fungal glow patches: dim light islands that activate Echosense and Mossed Carapace — hunters must decide whether to smash fungal cores (costs an action, removes Umbrosk's tools) or work around them
+- Fungal sonar anchors: Umbrosk calibrates its Echosense against the resonant frequency of the bioluminescent fungal cores distributed across the floor in rings. Each core destroyed degrades Echosense range by 15 ft (4 cores in a standard arena → full disruption at 4 destroyed). Cores also provide dim-light cover for hunters; a fully core-smashed arena loses the dim patches but retains bioluminescent wall ambiance — no side gains a stealth advantage from destruction alone
 - Stalactites: partial cover at ceiling height; Umbrosk uses them as approach lanes before dropping
 - Tunnel exits: at 35% HP, Umbrosk retreats toward the back tunnel — if hunters block it, it fights to the death; if they don't, it escapes (hook opportunity)
 
 **Mid-Fight Shifts:**
-1. Fungal cores smashed (hunters deliberately, or Echo Pulse blast radius catches them) — arena goes darker, Echosense extends across full space, Umbrosk gains AR 13 everywhere. Double-edged: party may have created better stealth conditions for themselves too.
-2. A sustained light source (torch, lantern, or light spell) — while bright light fills the area around Umbrosk, it loses Echosense, Mossed Carapace's AR bonus, and the trigger condition for Echo Slip simultaneously. This is an intentional and discoverable advantage: one torch carried into the fight soft-counters three of Umbrosk's tools at once. GMs should treat this as a reward for preparation, not a fiat win — let hunters who think to bring light feel clever. A single torch does not end the fight; it removes Umbrosk's defensive layer and forces it to fight on raw stats.
+1. Fungal cores smashed (hunters deliberately, or caught in Echo Pulse blast radius) — Echosense degrades with each one. At 2 cores destroyed: range 30 ft, Echo Slip still functional but only within that radius. At 4 cores destroyed: Echosense fully disrupted, Echo Slip disabled. Umbrosk shifts from methodical to aggressive — Ceiling Drop spam replaces precision positioning. GMs should let hunters who think to target the cores feel clever; this is a discoverable prep-free counter that costs actions rather than pack slots.
+2. Smoke Cluster deployed — instantly drops Echosense to 20 ft and strips Perception advantage for 2 rounds. Stacks with core destruction: a party that smashes 2 cores and throws a Smoke Cluster achieves full disruption without burning all four core actions. The disruption window is short — the party must commit to burst pressure during it or Umbrosk recovers when the cloud disperses.
 
 **Scaling Notes:**
 - Weak party: Reduce Echo Pulse damage to 2d6+3. Remove Ceiling Drop's Restrained rider — Prone instead.
