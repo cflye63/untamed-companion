@@ -66,12 +66,13 @@ Use this starting array (before any bonuses), distributed optimally for the weap
 | Spear & Shield | STR | CON | Guard, Parry |
 | Greatshield | CON | STR | Guard |
 | Bow | DEX | INS | — |
-| Arbalest | DEX | CON | — |
-| Whip | DEX | STR | — |
-| Claws | DEX | STR | — |
+| Arbalest | STR | INS | — (no Guard/Parry) |
+| Whip | DEX | CHA | — |
+| Claws | DEX | — (+2 DEX only, no secondary) | — |
 | Wand | INT | INS | — |
-| Conduit | INT | CHA | — |
+| Conduit | INS | CON | — |
 | Hunting Flute | CHA | INS | — |
+| Boomerang | DEX | INS | — |
 
 ### 3B — Apply Bonuses (in order)
 
@@ -79,6 +80,7 @@ Use this starting array (before any bonuses), distributed optimally for the weap
    - STR primary → Tribal Warrior: +2 STR, +1 CON
    - DEX primary → Wanderer: +2 DEX, +1 INS
    - INT/CHA primary → Scholar: +2 INT, +1 INS
+   - INS primary → Tracker: +2 INS, +1 CON
    - *Note: +2 goes to primary stat, +1 to secondary unless CON is a better fit*
 
 2. **Weapon stat bonuses** (from stat-badges in weapon page header):
@@ -88,9 +90,9 @@ Use this starting array (before any bonuses), distributed optimally for the weap
    - If race bonus matches the weapon's primary stat → apply to primary stat
    - If no match → apply to CON
    - Human: +1 any → always apply to primary stat
-   - Dragonian: +1 INT → apply to INT (favors Wand/Conduit); otherwise apply to CON
+   - Dragonian: +1 INT → apply to INT (favors Wand); otherwise apply to CON
    - Trolian: +1 STR or DEX → apply to weapon primary if STR/DEX weapon; otherwise CON
-   - Thalorim: +1 CON or INS → apply CON
+   - Thalorim: +1 CON or INS → apply INS if INS-primary weapon (Conduit); otherwise CON
 
 ### 3C — Tier Scaling
 
@@ -124,9 +126,9 @@ HP = (CON score × 6) + Hunter Rank
 *(HR midpoint per tier: T1→HR2, T2→HR7, T3→HR12, T4→HR17, T5→HR22)*
 
 **Hunter AR (by armor type):**
-- STR/tank weapons (GS, Hammer, Spear&Shield, Greatshield): **Heavy Armor → AR 14** (no Dodge)
-- DEX/mobile weapons (Bow, Arbalest, Whip, Claws): **Light Armor → AR 10 + DEX mod** (Dodge available)
-- INT/CHA/support weapons (Wand, Conduit, Flute): **Medium Armor → AR 12** (Dodge available)
+- STR/tank weapons (GS, Hammer, Spear&Shield, Greatshield, Arbalest): **Heavy Armor → AR 14** (no Dodge)
+- DEX/mobile weapons (Bow, Whip, Claws, Boomerang): **Light Armor → AR 10 + DEX mod** (Dodge available)
+- INS/INT/CHA support weapons (Wand, Conduit, Flute): **Medium Armor → AR 12** (Dodge available)
 
 **Reaction access (from weapon tags and armor):**
 - Parry: weapon has Parry tag
@@ -451,6 +453,39 @@ Power Shot is less STA-efficient than basic attack at F3 but delivers a higher s
 - Against aerial/elevated monsters: use Binding Arrow R1 to collapse elevation phase immediately.
 - Against grounded monsters: Piercing Arrow for burst, Signal Arrow for party DPR boost.
 - Calculate whether grounding the monster (Binding) or buffing all hunters (Signal) yields higher party DPR. Binding typically wins if it would unlock 2+ melee rounds of full-AR attack.
+
+---
+
+### BOOMERANG — Ricochet + Combo + Curve Shot (T1)
+
+**Ricochet (single-boss context):**
+- Ricochet requires another creature within 30 ft of the initial target. Against a single boss, no ricochet is possible.
+- Boomerang functions as a pure ranged attacker in boss fights. Each hit: +1 Combo. Miss or no-attack turn: Combo resets to 0. Cap: 5 Combo.
+
+**Combo spending:**
+- 3 Combo → advantage on next attack (spend when fight ≤ 3 rounds remaining or at exactly C3 with no C5 prospect)
+- 5 Combo → +2d6 avg +7 on next attack (preferred spend target; use when fight duration permits accumulation)
+
+**Combo EV against single targets:**
+At 70% hit chance, expected Combo at steady state ≈ 2.3. P(accumulate C5 unbroken) ≈ 17% per encounter.
+Treat Combo as marginal: model as +0.5 expected DPR bonus per round at T1–T2 (EV spread across hit/miss probability). Do not show Combo as a per-round delta — note it in the report as a bonus floor.
+
+**Curve Shot (T1 technique) — 1 STA, Action:**
+- Same Stamina cost as a basic attack. Effect: ignore all cover, target creatures you cannot see directly.
+- Against monsters with no cover: mechanically identical to a basic attack. Model as basic attack; note Curve Shot was available.
+- Against monsters with cover (elevated, burrowing mid-phase): use Curve Shot. No hit penalty vs covered target. Model as full hit_chance instead of penalized hit_chance during cover phase.
+- **When to use:** Use every round during any phase where the monster would otherwise have a cover bonus. Otherwise treat as basic attack.
+
+**Windcutter (T2 technique) — 2 STA, Action, AoE:**
+- 40-ft line, one attack roll vs all creatures in line. Against a single boss: identical to 1 ranged attack + DEX save vs DC or pushed 5 ft perpendicular.
+- Combo Bonus: if 3+ Combo before use, line extends to 50 ft and +1d6 damage.
+- **When to use:** Against a single boss, Windcutter (2 STA) deals same damage as a basic attack (1 STA) with a push rider. STA-inefficient. Only use Windcutter when the push effect has tactical value (forced repositioning, pushing into a hazard). Otherwise, use basic attacks.
+
+**Simulation model:**
+- R1+: Basic attacks (1 STA each). During covered phases, use Curve Shot (same cost, no penalty).
+- Track Combo as a passive background counter; report expected bonus in the final report rather than per-round.
+- No wind-up, no stacking mechanic to track explicitly.
+- Parry/Block not available (Light armor, no Guard/Parry tags). Dodge is available.
 
 ---
 
