@@ -106,7 +106,7 @@
 | React | Dodge |
 
 **T1 Technique:** Curve Shot — 1 STA, ignores all cover; identical cost to basic attack
-**T2 Technique:** Windcutter — 2 STA, 40-ft line; STA-inefficient vs single boss, not used
+**T2 Technique:** Windcutter — 2 STA, 40-ft line (AoE) or Wayback Strike (single target: two hits, return arc at −1 die). STA-inefficient as AoE vs single boss; Wayback Strike now provides single-target identity (not available during this sim — added post-run).
 **Human:** 1 attack/hunt costs 0 STA
 
 ---
@@ -263,7 +263,7 @@ HP pressure:   Medium (Bow at 53% HP; others largely untouched)
 - **Wand STA fragility:** 2-STA/round cluster cycle drained an 8-STA pool in ~4 active rounds, forcing 2 Breathing Turns. Longer fights (8+ rounds) would see Wand idle every 3rd round.
 - **Earule STA collapse early:** Flight Tax (1/turn) + 3 attacks (3/turn) + Burned (−1/turn from R2) = 5–6 STA drain/turn vs a 16-STA pool. Earule hit Exhaustion in R4, never reaching its Desperation dive phase with altitude intact.
 - **Sonic Burst never fired:** 3 STA cost was always unaffordable alongside attack budget. STA pressure from the all-ranged party (Burned drain + Flight Tax) preempted Earule's AoE entirely.
-- **Boomerang = Bow clone:** Both deal 65%×10.5 airborne with no mechanical differentiation vs single boss. Combo generation suppressed by Earule's constant repositioning.
+- **Boomerang = Bow clone (pre-fix):** Both dealt 65%×10.5 airborne with no mechanical differentiation vs single boss. Combo generation suppressed by Earule's constant repositioning. **Fixed post-run:** Windcutter gains Wayback Strike mode — two attack rolls against a single target (outbound + return arc), return hit at −1 die, both build Combo. This gives Boomerang a distinct single-boss tool that rewards positioning for the return arc.
 
 ---
 
@@ -273,7 +273,7 @@ HP pressure:   Medium (Bow at 53% HP; others largely untouched)
 
 2. **Earule's STA engine is the real kill switch, not HP.** Burned condition (−1 STA/turn) from Wand shaved 3 STA across R2–R4, accelerating Exhaustion by ~1 round. To restore 2–3 full dive cycles: raise STA to 20, or restrict Flight Tax to ascent/descent turns only (momentum cost model) rather than per-turn passive drain.
 
-3. **Boomerang needs aerial differentiation.** Curve Shot ignores cover but not Wind Shear, producing identical DPR to Bow in this fight. Consider allowing Curve Shot to ignore Wind Shear (curvature argument) — this gives Boomerang 75% hit rate airborne vs Bow's 65%, creating meaningful mechanical identity in aerial fights without affecting grounded combat.
+3. **Boomerang single-boss differentiation addressed.** Wayback Strike added to Windcutter: single-target mode (outbound + return arc, second hit at −1 die, both build Combo). This resolves the boss-fight identity gap without touching multi-target Ricochet. Aerial Wind Shear differentiation (Curve Shot bypass) remains open — Boomerang still matches Bow at 65% airborne. Consider as a follow-up once Wayback Strike has been tested.
 
 ---
 

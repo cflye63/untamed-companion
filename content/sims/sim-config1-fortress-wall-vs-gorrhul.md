@@ -28,7 +28,7 @@
 | React | Block (Guard) + extra Block reaction/round (Greatshield special) |
 
 **T1 Technique:** Bulwark — 2 STA, Action, Rooting. Taunt (INS save DC17) + −50% dmg to self until next turn.
-**T2 Technique:** Bastion — 1 STA, Reaction. Intercept attack on ally within 5ft; retarget to self; −50% dmg (round up); counts as Block (gains Resolve).
+**T2 Technique:** Bastion — 1 STA, Reaction. Intercept attack on ally within 5ft; retarget to self; −50% dmg (round up); counts as Block (does not generate Resolve).
 **Trolian Anchored Frame:** +1 AR if stationary. **Rooted Resilience:** 1 STA saved on failed save → next Reaction.
 
 ---
@@ -258,7 +258,7 @@ HP pressure:   None / Low (peak damage: Flute 0 HP damage, no hunter ever below 
 
 2. **To pressure this party at T2:** Gorrhul needs HP 240–260 (pushes to R8–9, exhausts TGS's Block economy via STA drain) OR a secondary mechanic that bypasses Block reactions entirely. A mandatory AoE save that hits all hunters simultaneously (e.g., a Stomp shockwave in a 15ft radius) would punish the tight formation Bastion requires and force reactive healing.
 
-3. **Bastion is the real MVP, not Healing Hymn.** Each intercept converted a 0.70 × 18.5 = 13.0 exp hit on Flute into a 0.45 × 10 = 4.5 exp hit on a 67 HP tank with Resolve generation. The Bastion + Resolve closed loop (intercept → Resolve → STA recovery → more intercepts) compounds each Charge Mode round. This is the ability to watch for broken sustain combos going forward.
+3. **Bastion is the real MVP, not Healing Hymn.** Each intercept converted a 0.70 × 18.5 = 13.0 exp hit on Flute into a 0.45 × 10 = 4.5 exp hit on a 67 HP tank. The original Bastion + Resolve closed loop (intercept → Resolve → STA recovery → more intercepts) was identified as broken here. **Fixed:** Bastion no longer generates Resolve. Resolve is earned only through enduring hits directly (natural Blocks, Bulwark). Bastion retains its intercept and −50% mitigation but now has a real STA ceiling — approximately 6–8 intercepts before TGS runs dry in a standard T2 fight.
 
 4. **Composition design note:** This party represents the theoretical ceiling of T2 sustain — it stacks Block intercept (Bastion), Block economy (+2 reactions/round), Parry reaction (GS), armor budget (AR 17/15/14), and heal-on-demand (Flute). Any party with 2 of these 4 layers will have manageable T2 HP pressure. All 4 together eliminates it entirely.
 

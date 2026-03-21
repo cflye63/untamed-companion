@@ -28,8 +28,9 @@
 | React | Dodge (Medium armor) |
 
 **T2 Technique:** Aspect Surge — 3 STA, Requires Channel. Intensify active Aspect until start of next turn.
-**Field:** 15ft radius, ground-fixed. Channel drains −1 STA/turn.
-**Aerial Note:** Field cannot reach airborne Melifur. All Aspect effects are dead weight until grounding. Conduit becomes a sub-optimal ranged attacker with a stamina leak.
+**Field Projection:** Fast Action, 1 STA. Relocate Field center to any point within 40 ft until start of next turn, then snaps back. Added post-run — see Tuning Note 2.
+**Field:** 15ft radius, ground-fixed (or projected). Channel drains −1 STA/turn.
+**Aerial Note (pre-fix):** Field could not reach airborne Melifur during this sim. Field Projection was not yet available. All Aspect effects were dead weight until grounding.
 
 ---
 
@@ -270,7 +271,7 @@ The structural problem is not the dead zone alone — it's the compounding of de
 
 1. **Use HP 220 for this party.** HP 148 resolves in 4 rounds — too short for Melifur's aerial puzzle to be felt. HP 220 extends the fight to 5–6 rounds, forcing called shots (wing breaks), giving Conduit's dead zone a sustained strategic impact, and making grounding a genuine puzzle rather than a lucky side effect of Hammer's Impact accumulation.
 
-2. **Conduit aerial relief.** Consider a T2 Aspect — Displacement Field — that projects as a 30ft cone attack (not requiring the target to be inside the field) at higher STA cost (4 STA). This preserves the dead zone flavor while giving the Conduit one aerial tool per encounter, preventing full neutralization. Alternatively: let Aspect Surge at 3+ STA project a single-target effect at 40ft range.
+2. **Conduit aerial relief — implemented.** Field Projection added as a core Channel sub-ability: Fast Action, 1 STA, relocates the Field center to any visible point within 40 ft until start of next turn. Maintaining projection costs 1 STA/turn. Against aerial Melifur, Conduit can now track the monster's position — but Melifur's Buzzing Dodge ascent mid-round can still outpace the field, forcing a reproject next turn. Dead zone becomes a positioning puzzle with stamina cost rather than a flat nullification. With this fix, the Sim 4 aerial DPR loss would reduce from 51% to approximately 15–20% (Field Projection overhead vs full Channel value grounded).
 
 3. **Wing called shot incentive needs table reinforcement.** The monster file already includes a Reaction called shot opportunity when Melifur dive-dives within 20ft (1 break progress, −2 acc, 0 damage cost). GS and S&S should be prompted to take this trade. Two Reaction wing breaks collapse the aerial phase into R1–2, making Conduit relevant from R3 onward. This is the correct design solution — it just needs to be explicitly surfaced at the table.
 
