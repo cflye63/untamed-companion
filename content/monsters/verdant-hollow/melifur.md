@@ -54,7 +54,7 @@ Melifur is not simply a predator. It is the living warden of the forest's pollin
 | HP | 148 | 4P median: TierBase (60) + CON (8) × 11 |
 | Stamina | 18 | 10 + CON Score (8) |
 
-> **GM Scaling Note:** For optimized parties: HP → **220** (60 + 8 × 20). Melifur's aerial loop needs 2–3 full Swarm Call + Resin Bomb cycles to express its full pressure kit. If the party has strong ranged DPR or a Bow with Binding Arrow, start at 220.
+> **GM Scaling Note:** For optimized parties: HP → **220**, Stamina → **22** (both raised together). Melifur's aerial loop needs 2 full Resin Bomb cycles to express its full pressure kit (Rush reset + Mandible Bite rider activation). At STA 18, Melifur Exhausts before cycling a second bomb. At STA 22, it fires two bombs before Exhaustion — real but survivable Rush tax (~18% Claws DPR). At STA 24, it kills melee hunters. If the party has strong ranged DPR, a Bow with Binding Arrow, or a Dragonian Wand (whose Burned drain accelerates Exhaustion by ~1 round), start at HP 220 / STA 22.
 
 | Movement | 40 ft ground | 80 ft fly |
 |----------|-------------|-----------|
