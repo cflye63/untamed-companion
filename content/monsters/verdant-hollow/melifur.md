@@ -200,7 +200,7 @@ If a hunter destroys a hive during the encounter:
 - **Fire smoke disrupts swarm control:** A torch or smoke source applied to the Swarm Call zone causes the swarm to disperse — the aura radius shrinks to 10 ft for 1 round per smoke source. This does not end Swarm Call but blunts its area.
 - **Wing break collapses the encounter:** All three aerial mechanics (speed, Buzzing Dodge, Honey Sovereignty) hinge on healthy wings. A party that focuses wing breaks early will face a completely different fight.
 - **Resin pool is double-edged:** Hunters who can bypass difficult terrain (Trolian Flowstep, mobility techniques) can use the resin zones as forced chokepoints, herding Melifur toward terrain it created.
-- **Drake Sting dives expose the wings:** When Melifur descends within 20 ft to make a melee Drake Sting attack, melee hunters adjacent to the target may make one called shot vs Wings as a Reaction (no damage, 1 break progress, −2 accuracy). With the 2-hit wing break threshold, two successful dive reactions collapse the aerial phase entirely — Melifur must weigh dive frequency against wing break accumulation.
+- **Drake Sting dives create a wing break window:** When Melifur descends within melee range to deliver a Drake Sting, hunters adjacent to the target may spend their Action that round to make a called shot vs Wings (−2 accuracy, no damage, 1 break progress). The dive brings the wings into striking range — but exploiting it costs your offensive turn. With the 2-hit threshold, two dedicated called shot Actions collapse the aerial phase entirely. Melifur must weigh dive frequency against the risk of focused hunters trading damage for permanent wing damage.
 
 ---
 
