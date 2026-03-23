@@ -49,7 +49,7 @@ Gorrhul is a colossal mud-armored boar that turns riverbanks into trenches. It i
 > For optimized parties: Stamina → **22** (Gorrhul's Mud Recoat + Charge Mode economy requires extra runway to execute its full puzzle loop against high-DPR groups).
 
 > **GM Scaling Note:** HP 137 targets a median party (mixed builds, HR 5–7 range).
-> For optimized parties: HP → **200** (4P optimized: TierBase 60 + CON 7 × 20)
+> For optimized parties: HP → **250** (4P optimized: TierBase 60 + CON 7 × 27)
 
 | Movement | 30 ft | 60 ft linear while in Charge Mode |
 | Attacks/Turn | 3 | — |
@@ -198,6 +198,7 @@ Gorrhul's movement through wet ground creates difficult terrain in its wake. Eac
 - If no lane: Gore → Stomp → Mud Toss (if Mud-Covered)
 - If Mud-Covered stripped: Attempt Mud Recoat if adjacent to mud/water
 - If Stunned or Dazed from missed Charge: skip, recover next turn
+- **Targeting priority (R2+):** If a hunter is stationary and dealing high output (Arbalest bracing, Bow at Focus, Wand cycling), Gorrhul shifts Charging Gore toward that hunter. Stationary prey is easy prey. A stationary hunter above ~15 EV/round becomes the priority Charge target over the closest hunter.
 
 **At 40% HP:**
 - Abandons Mud Recoat attempts — full aggression

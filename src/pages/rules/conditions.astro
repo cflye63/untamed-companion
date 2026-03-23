@@ -136,6 +136,59 @@
 							<p><strong>Lose your turn</strong>; regain 4 Stamina. Wake up if you succeed an Instinct roll at the end of your turn or if you take damage. All attacks against a Sleeping target are made with <strong>advantage</strong>.</p>
 						</div>
 					</section>
+					<!-- Escalating Resistance -->
+					<section class="condition-section">
+						<h2 class="section-header">⚔️ Escalating Resistance</h2>
+
+						<div class="resistance-intro">
+							<p><em>Even the wild adapts.</em></p>
+							<p>Each time a creature is subjected to the same crowd control condition, its body or instincts learn to resist it. Repeated application of the same condition becomes progressively harder to land.</p>
+						</div>
+
+						<div class="resistance-rules">
+							<h3>How It Works</h3>
+							<p>Track resistance <strong>per condition type, globally</strong> — all sources of the same condition share one resistance counter regardless of which hunter caused it. Counters reset at the start of each new encounter.</p>
+
+							<table class="resistance-table">
+								<thead>
+									<tr>
+										<th>Application</th>
+										<th>Save Modifier</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr><td>1st</td><td>Normal save</td></tr>
+									<tr><td>2nd</td><td>+2 to save</td></tr>
+									<tr><td>3rd</td><td>+4 to save</td></tr>
+									<tr><td>4th</td><td>+6 to save</td></tr>
+									<tr><td>5th+</td><td>+8 to save</td></tr>
+								</tbody>
+							</table>
+
+							<p class="resistance-example"><strong>Example:</strong> Three Prone saves in one fight — first at normal DC, second at DC+2, third at DC+4. It doesn't matter which hunter caused each one.</p>
+						</div>
+
+						<div class="resistance-applies">
+							<div class="applies-block applies">
+								<h4>✅ Applies To</h4>
+								<p><strong>Monsters resisting hunter-applied conditions</strong> triggered by a saving throw: Prone, Staggered, Restrained, Stunned, Bleeding, Dazed, Slowed, etc.</p>
+								<p class="applies-note">One-directional — monster CC against hunters does not escalate. A hunter hit by the same condition three times still faces the full save DC each time.</p>
+							</div>
+							<div class="applies-block not-applies">
+								<h4>❌ Does Not Apply To</h4>
+								<ul>
+									<li>Monster abilities applied to hunters</li>
+									<li>Conditions applied automatically with no save</li>
+									<li>Hit-count threshold effects (e.g., Hammer Impact → Stun on 3rd hit)</li>
+									<li>Damage-only effects with no condition rider</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="resistance-design">
+							<p>This prevents stun-lock loops and CC spam from trivializing monster action economy. Parties that rotate between different condition types maintain full efficiency — parties that spam a single CC type see diminishing returns. <strong>Monsters remember pain.</strong></p>
+						</div>
+					</section>
 				</article>
 			</div>
 		</main>
@@ -378,6 +431,135 @@
 
 				.condition-card {
 					padding: 1.25rem;
+				}
+			}
+
+			/* Escalating Resistance */
+			.resistance-intro {
+				background: var(--forest-green);
+				border: 2px solid var(--amber);
+				border-left: 5px solid var(--amber);
+				border-radius: 12px;
+				padding: 1.5rem;
+				margin-bottom: 1.5rem;
+				font-size: 1.05rem;
+			}
+
+			.resistance-intro p {
+				margin-bottom: 0.5rem;
+			}
+
+			.resistance-intro p:last-child {
+				margin-bottom: 0;
+			}
+
+			.resistance-rules {
+				background: var(--forest-green);
+				border: 2px solid var(--earth-brown);
+				border-radius: 12px;
+				padding: 1.5rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.resistance-rules h3 {
+				color: var(--amber);
+				font-size: 1.2rem;
+				margin-bottom: 1rem;
+			}
+
+			.resistance-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1.25rem 0;
+				font-size: 1rem;
+			}
+
+			.resistance-table th {
+				background: var(--forest-dark);
+				color: var(--amber);
+				padding: 0.6rem 1rem;
+				text-align: left;
+				border: 1px solid var(--earth-brown);
+			}
+
+			.resistance-table td {
+				padding: 0.6rem 1rem;
+				border: 1px solid var(--earth-brown);
+			}
+
+			.resistance-table tbody tr:nth-child(even) {
+				background: rgba(0,0,0,0.15);
+			}
+
+			.resistance-example {
+				margin-top: 1rem;
+				font-style: italic;
+				color: var(--leaf-green);
+			}
+
+			.resistance-applies {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.applies-block {
+				border-radius: 12px;
+				padding: 1.25rem;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.applies-block h4 {
+				font-size: 1rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.applies-block ul {
+				padding-left: 1.25rem;
+			}
+
+			.applies-block ul li {
+				margin-bottom: 0.4rem;
+			}
+
+			.applies-block.applies {
+				background: rgba(74, 124, 47, 0.2);
+				border-left: 5px solid var(--moss-green);
+			}
+
+			.applies-block.applies h4 {
+				color: var(--leaf-green);
+			}
+
+			.applies-note {
+				margin-top: 0.6rem;
+				font-style: italic;
+				font-size: 0.9rem;
+				color: var(--leaf-green);
+			}
+
+			.applies-block.not-applies {
+				background: rgba(216, 74, 74, 0.1);
+				border-left: 5px solid var(--danger-red);
+			}
+
+			.applies-block.not-applies h4 {
+				color: var(--danger-red);
+			}
+
+			.resistance-design {
+				background: var(--forest-dark);
+				border: 1px solid var(--earth-brown);
+				border-radius: 8px;
+				padding: 1.25rem;
+				font-style: italic;
+				color: var(--text-light);
+			}
+
+			@media (max-width: 768px) {
+				.resistance-applies {
+					grid-template-columns: 1fr;
 				}
 			}
 

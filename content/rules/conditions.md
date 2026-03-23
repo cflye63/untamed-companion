@@ -68,3 +68,42 @@ Quick reference for conditions that directly tax Stamina:
 | Exhausted | STA → 0 | On application |
 
 > **Stacking note:** A creature that is both Burned and Poisoned loses 1 STA at the start of its turn (Burned) and pays +1 STA per Action (Poisoned) — that's 2 extra STA per round of aggressive play. Condition layering is the primary way monsters pressure hunter Stamina economies, and the primary way hunters accelerate monster Exhaustion.
+
+---
+
+## Escalating Resistance
+
+**Even the wild adapts.**
+
+Each time a creature is subjected to the same crowd control condition, its body or instincts learn to resist it. Repeated application of the same condition becomes progressively harder to land.
+
+### How It Works
+
+Track resistance **per condition type, globally** — all sources of the same condition share one resistance counter regardless of which hunter caused it. Counters reset at the start of each new encounter.
+
+| Application | Save Modifier |
+|-------------|---------------|
+| 1st | Normal save |
+| 2nd | +2 to save |
+| 3rd | +4 to save |
+| 4th | +6 to save |
+| 5th+ | +8 to save |
+
+**Example:** Three Prone saves in one fight — first at normal DC, second at DC+2, third at DC+4. It doesn't matter that a different hunter caused each one.
+
+### Applies To
+
+Monsters resisting hunter-applied conditions triggered by a saving throw: Prone, Staggered, Restrained, Stunned, Poisoned, Bleeding, Dazed, Slowed, Feared, etc.
+
+This rule is **one-directional** — it applies to monsters resisting hunter CC only. Monster-applied conditions against hunters do not escalate. A hunter getting Poisoned three times by Melifur's Drake Sting faces the full save DC each time.
+
+### Does Not Apply To
+
+- Monster abilities applied to hunters (hunters do not build in-fight CC resistance)
+- Conditions applied automatically with no save (e.g., Grappled from a special ability with no contested roll)
+- Hit-count threshold effects (e.g., Hammer Impact accumulation → Stun triggers on 3rd hit, not a save)
+- Damage-only effects with no condition rider
+
+### Design Intent
+
+This prevents stun-lock loops and CC spam from trivializing monster action economy. It rewards tactical variety — parties that rotate between different condition types maintain full efficiency, while parties that spam a single CC type see diminishing returns. Monsters remember pain.
