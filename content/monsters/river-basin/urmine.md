@@ -169,10 +169,11 @@ Advantage on saves vs forced movement (shove, push, knockback) while not Prone.
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Fur Bristles (Body) | 3 called-shot hits (−2 accuracy penalty) | Fury damage bonus (+2) removed. Fury Stamina drain increases to 5/turn. |
-| Front Legs (Combined) | 3 called-shot hits — either leg counts | Spiked Rush distance reduced to 15 ft. Targets gain +2 to saves vs Rush. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Fur Bristles | Open (0) | 3 called-shot hits | Fury damage bonus (+2) removed. Fury Stamina drain increases to 5/turn. |
+| Front Legs | Standard (−2) | 3 called-shot hits | Spiked Rush distance reduced to 15 ft. Targets gain +2 to saves vs Rush. |
+| Head ★ *(Impact Zone only)* | Precise (−4) | — (no break) | Builds Hammer Impact only. No break effect. |
 
 > Front Legs consolidated from two separate zones into one break zone to stay within T1 cap (1–2). Either leg counts toward the threshold.
 

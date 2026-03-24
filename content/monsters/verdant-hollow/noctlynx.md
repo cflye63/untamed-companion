@@ -149,10 +149,10 @@ Takes +2 damage from Radiant or Light-based effects (torches, flares, fire burst
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Forelimbs | 2 called-shot hits (−2 accuracy penalty) | Pounce Claw loses Restrained rider entirely (even from Stealth). Movement reduced to 30 ft. |
-| Eyes | 2 called-shot hits (−2 accuracy penalty) | Midnight Veil Spot DC reduced to 10. Night Hunter advantage on Stealth lost. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Forelimbs | Standard (−2) | 2 called-shot hits | Pounce Claw loses Restrained rider entirely (even from Stealth). Movement reduced to 30 ft. |
+| Eyes ★ *(Impact Zone)* | Precise (−4) | 2 called-shot hits | Midnight Veil Spot DC reduced to 10. Night Hunter advantage on Stealth lost. |
 
 ### Tactical Weaknesses
 

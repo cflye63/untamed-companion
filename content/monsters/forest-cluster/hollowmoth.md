@@ -147,10 +147,10 @@ Takes +2 damage from Fire sources.
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Wings | 2 called-shot hits | Movement reduced to 30 ft. Loses Hover. Flight tax removed. Silent Pulse disabled. |
-| Proboscis | 1 called-shot hit | Proboscis Jab loses its Stamina drain rider. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Wings | Open (0) | 2 called-shot hits | Movement reduced to 30 ft. Loses Hover. Flight tax removed. Silent Pulse disabled. |
+| Proboscis ★ *(Impact Zone)* | Precise (−4) | 1 called-shot hit | Proboscis Jab loses its Stamina drain rider. |
 
 ### Tactical Weaknesses
 

@@ -20,7 +20,7 @@ You declare it before rolling.
 When making a Called Shot:
 
 - **Declare the part before rolling**
-- Compare your attack roll against that **part's AR**
+- Apply the part's **Accuracy Tier** penalty to your attack roll
 - On a hit:
   - Deal normal damage
   - Mark progress toward breaking that part
@@ -29,13 +29,17 @@ When making a Called Shot:
 
 ---
 
-## Called Shot Penalty
+## Accuracy Tiers
 
-Called Shots are harder to land.
+Each breakable part has an Accuracy Tier that reflects how exposed and targetable it is.
 
-**Unless otherwise stated:**
+| Tier | Penalty | When to Use |
+|------|---------|-------------|
+| **Open** | 0 | Large, slow, or diffuse target — thick carapace you walk past, body-wide auras, broad wing surfaces |
+| **Standard** | −2 | Typical limb or moderate precision — tail, leg, wing base, prominent horn |
+| **Precise** | −4 | Small, fast, armored, or critical — heads, eyes, vocal sacs, sensory organs, joints |
 
-- Called Shots suffer **–2 to hit**
+The Accuracy Tier for each part is listed in the creature's Part Breaks table.
 
 This penalty may be reduced by:
 
@@ -43,7 +47,21 @@ This penalty may be reduced by:
 - Study Target
 - Weapon perks
 - Talents
-- Environmental advantage
+- Environmental advantage (elevation, traps, forced positioning)
+
+---
+
+## Impact Zones
+
+Every Large or larger creature has one designated **Impact Zone** — the head, skull plate, or equivalent structure. It is the only valid target for building Hammer Impact.
+
+- Targeting the Impact Zone is a called shot at its listed Accuracy Tier (always Standard or Precise)
+- A hit deals normal damage, accumulates Break Progress if the zone has a threshold, **and** builds 1 Impact
+- Hits to any other location build no Impact regardless of damage dealt
+- The Impact Zone is marked with **★** in each creature's Part Breaks table
+- If no Impact Zone is listed, the creature cannot be stunned via Hammer Impact
+
+**Area techniques** (Shockwave, Meteor Strike, Titan's Wrath) bypass this restriction — shockwave force affects the entire body.
 
 ---
 

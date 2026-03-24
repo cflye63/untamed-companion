@@ -157,9 +157,9 @@ Effect:   Move 10 ft without provoking opportunity attacks
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Face | 2 successful called shots (−2 accuracy penalty) | Mole Sense reduced to 10 ft. Cannot use Gnaw bonus damage. Cannot use Mole Eruption. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Face ★ *(Impact Zone)* | Precise (−4) | 2 called-shot hits | Mole Sense reduced to 10 ft. Cannot use Gnaw bonus damage. Cannot use Mole Eruption. |
 
 ### Tactical Weaknesses
 

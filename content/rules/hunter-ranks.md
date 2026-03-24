@@ -56,6 +56,22 @@ As you gain Hunter Rank, you unlock upgrades at consistent milestones:
 
 **Every 4 Hunter Ranks:** Gain **2 Stat Distribution Points** to customize your character.
 
+### Vitality Floor
+
+**Every 5 Hunter Ranks:** Gain **+1 free CON score** — this is automatic and does not come from your Stat Distribution Points. It cannot be redirected to another stat.
+
+This represents a hunter's body hardening to the realities of the hunt. Even a hunter who invests nothing in Constitution will survive long enough to use their skills.
+
+| Hunter Rank | Free CON Bonus (cumulative) |
+|-------------|-----------------------------|
+| HR 0–4      | +0                          |
+| HR 5–9      | +1                          |
+| HR 10–14    | +2                          |
+| HR 15–19    | +3                          |
+| HR 20–25    | +4                          |
+
+> **Design note:** At T3 (HR 10–14), even a Bow or Flute hunter who has invested zero points in CON will have 2 free CON above their starting score — enough to survive one hit from an Apex ability rather than dying outright. This is a floor, not a ceiling. CON investment still provides meaningful durability on top of it.
+
 ### Talents
 
 **Every 5 Hunter Ranks:** Choose **1 Talent**

@@ -171,10 +171,10 @@ Gorrhul's movement through wet ground creates difficult terrain in its wake. Eac
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Tusks | 2 called-shot hits (−2 accuracy penalty) | Charging Gore loses bonus die (+1d8). Gore damage reduced by 1 die size (2d8 → 1d8). |
-| Shoulder Plate (Mud Layer) | 3 hits (any type, targeting shoulder) | Mud-Covered AR bonus reduced to +1 (AR 14 max instead of 15). Mud Recoat still restores full +2 until Shoulder Plate is broken again. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Tusks ★ *(Impact Zone)* | Precise (−4) | 2 called-shot hits | Charging Gore loses bonus die (+1d8). Gore damage reduced by 1 die size (2d8 → 1d8). |
+| Shoulder Plate (Mud Layer) | Open (0) | 3 hits (any type) | Mud-Covered AR bonus reduced to +1 (AR 14 max instead of 15). Mud Recoat still restores full +2 until Shoulder Plate is broken again. |
 
 ### Tactical Weaknesses
 

@@ -148,11 +148,15 @@ Examples:
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| | | |
-| | | |
-| | | |
+> Mark one part with **★** as the **Impact Zone** — the only target that builds Hammer Impact. Typically the head, skull, or equivalent. If no applicable structure exists, omit ★ and note "No Impact Zone."
+>
+> **Accuracy Tiers:** Open (0) — large/diffuse | Standard (−2) — typical limb/structure | Precise (−4) — small/fast/head
+
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| ★ Head / [equivalent] | Precise (−4) | | |
+| [Limb / Wing / Tail] | Standard (−2) | | |
+| [Carapace / Aura / Plate] | Open (0) | | |
 
 ### Tactical Weaknesses (3–6 bullets)
 

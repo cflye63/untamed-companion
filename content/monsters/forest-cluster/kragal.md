@@ -155,9 +155,9 @@ Advantage on saves vs shove while on natural rock.
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Horns | 3 called-shot hits (−2 accuracy penalty) | Lose Horn Throw. Lose Boomerang Barrage. AR reduced to 10. Cannot gain elevation bonus damage. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Horns ★ *(Impact Zone)* | Standard (−2) | 3 called-shot hits | Lose Horn Throw. Lose Boomerang Barrage. AR reduced to 10. Cannot gain elevation bonus damage. |
 
 > One zone, total identity collapse. This is intentional — the horns are the single pressure point the entire encounter is built around.
 

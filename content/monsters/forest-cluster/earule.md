@@ -146,10 +146,10 @@ Takes +2 damage from Bludgeoning weapons. Hammer and blunt attacks exploit the l
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Wing Membranes | 2 called-shot hits (−2 accuracy penalty) | Flight speed reduced to 30 ft. Flight tax increases to −2 Stamina/turn. Sky Dive disabled. |
-| Vocal Sac | 2 called-shot hits (−2 accuracy penalty) | Sonic Burst disabled. Screeching Shot loses debuff rider (damage only). |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Wing Membranes | Open (0) | 2 called-shot hits | Flight speed reduced to 30 ft. Flight tax increases to −2 Stamina/turn. Sky Dive disabled. |
+| Vocal Sac ★ *(Impact Zone)* | Precise (−4) | 2 called-shot hits | Sonic Burst disabled. Screeching Shot loses debuff rider (damage only). |
 
 ### Tactical Weaknesses
 

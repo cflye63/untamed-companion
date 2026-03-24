@@ -187,11 +187,12 @@ If a hunter destroys a hive during the encounter:
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Wings | 2 called-shot hits (−2 accuracy) | Fly speed reduced to 20 ft permanently. Buzzing Dodge disabled. Honey Sovereignty's Advantage on DEX saves and Grapple immunity are lost. |
-| Sting | 2 called-shot hits (−2 accuracy) | Drake Sting loses its Poison rider entirely — the venom gland is ruptured. Mandible Bite's +1d6 rider can no longer be activated via Poison (only via Restrained). |
-| Resin Gland | 3 hits targeting the abdomen (−2 accuracy) | Royal Resin Bomb loses its Restrained rider. The resin pool still forms and persists as difficult terrain, but no longer locks targets in place. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Wings | Open (0) | 2 called-shot hits | Fly speed reduced to 20 ft permanently. Buzzing Dodge disabled. Honey Sovereignty's Advantage on DEX saves and Grapple immunity are lost. |
+| Sting | Standard (−2) | 2 called-shot hits | Drake Sting loses its Poison rider entirely — the venom gland is ruptured. Mandible Bite's +1d6 rider can no longer be activated via Poison (only via Restrained). |
+| Resin Gland (Abdomen) | Open (0) | 3 hits (any type) | Royal Resin Bomb loses its Restrained rider. The resin pool still forms and persists as difficult terrain, but no longer locks targets in place. |
+| Head/Mandibles ★ *(Impact Zone only)* | Precise (−4) | — (no break) | Builds Hammer Impact only. No break effect. |
 
 ### Tactical Weaknesses
 

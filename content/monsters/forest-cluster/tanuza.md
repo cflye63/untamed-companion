@@ -153,9 +153,10 @@ Effect:   Attacker makes STR Save (DC 12)
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Tail & Membrane | 2 successful called shots (−2 accuracy penalty) | Glide speed reduced to 20 ft. Tailwhip Scatter disabled. Tail Slam loses height bonus. Glider's Evasion lost (AR drops to 11). Movement halved. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Tail & Membrane | Standard (−2) | 2 called-shot hits | Glide speed reduced to 20 ft. Tailwhip Scatter disabled. Tail Slam loses height bonus. Glider's Evasion lost (AR drops to 11). Movement halved. |
+| Head ★ *(Impact Zone only)* | Precise (−4) | — (no break) | Builds Hammer Impact only. No break effect. |
 
 ### Tactical Weaknesses
 

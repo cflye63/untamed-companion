@@ -188,10 +188,10 @@ While the Alpha is alive and within 30 ft:
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Alpha — Throat | 2 called-shot hits (−2 accuracy penalty) | Pack Howl disabled. Alpha loses +1 attack bonus from Pack Flanking. |
-| Standard — Hind Leg | 1 called-shot hit (−2 accuracy penalty) | Movement reduced to 20 ft. Cannot participate in Coordinated Rush. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Alpha — Throat ★ *(Impact Zone)* | Precise (−4) | 2 called-shot hits | Pack Howl disabled. Alpha loses +1 attack bonus from Pack Flanking. |
+| Standard — Hind Leg | Standard (−2) | 1 called-shot hit | Movement reduced to 20 ft. Cannot participate in Coordinated Rush. |
 
 ### Tactical Weaknesses
 

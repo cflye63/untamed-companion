@@ -161,10 +161,10 @@ While in dim light:
 
 ### Break Zones
 
-| Part | Threshold | Break Effect |
-|------|-----------|--------------|
-| Antennae | 2 called-shot hits (−2 accuracy penalty) | Echosense disabled for 2 rounds. Echo Pulse DC reduced to 11 (biological disruption — the sonar organs are damaged). |
-| Carapace | 3 hits (any type, targeting carapace) | AR reduced to 10 permanently. Mossed Carapace passive also disabled — the shell layer is cracked and no longer holds moss. |
+| Part | Accuracy | Threshold | Break Effect |
+|------|----------|-----------|--------------|
+| Antennae ★ *(Impact Zone)* | Precise (−4) | 2 called-shot hits | Echosense disabled for 2 rounds. Echo Pulse DC reduced to 11 (biological disruption — the sonar organs are damaged). |
+| Carapace | Open (0) | 3 hits (any type) | AR reduced to 10 permanently. Mossed Carapace passive also disabled — the shell layer is cracked and no longer holds moss. |
 
 ### Tactical Weaknesses
 
