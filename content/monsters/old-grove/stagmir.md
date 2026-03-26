@@ -58,7 +58,7 @@ Most hunters never see Stagmir awake. But when the forest is dishonored, the Gro
 | Stamina | 21 | 10 + CON Score (11) |
 
 > **GM Scaling Note:** HP 241 targets a median party (mixed builds, HR 10–12 range).
-> For optimized parties: HP → **340** (TierBase 120 + CON 11 × 20). Stagmir's terrain loop (Verdant Throne + Rootquake + Verdant Cataclysm) needs at least 4 rounds to execute its full puzzle — at HP 241 this is achievable; at HP 340 the fight extends into the control-and-renewal phase where Stagmir's Apex identity fully expresses.
+> For optimized parties: HP → **340** (TierBase 120 + CON 11 × 20). Stagmir's terrain loop (Verdant Throne + Rootquake + Verdant Cataclysm) needs at least 4 rounds to execute its full puzzle — at HP 241 this is achievable; at HP 340 the fight extends into the control-and-renewal phase where Stagmir's Apex identity fully expresses. Cataclysm and Renewal both auto-trigger at 0 Stamina cost, ensuring they fire regardless of combat pressure.
 
 | Movement | 30 ft ground | — |
 |----------|-------------|---|
@@ -139,18 +139,18 @@ Fail →   Restrained by roots (1 turn)
 
 ---
 
-**Renewal — (4 Stamina, 1/Combat)**
+**Renewal — (0 Stamina, 1/Combat)**
 ```
-Trigger: Below 30% HP (automatic, cannot be delayed)
+Trigger: Below 30% HP (automatic, cannot be delayed, costs no Stamina)
 Effect:  Stagmir heals 3d12+5 HP, then regains 1d10 Stamina
 ```
 > Roots wrap the body and flowers bloom instantly. The forest reclaims its own.
 
 ---
 
-**Verdant Cataclysm — (5 Stamina, 1/Combat)**
+**Verdant Cataclysm — (0 Stamina, 1/Combat)**
 ```
-Trigger:  Below 50% HP
+Trigger:  Below 50% HP (automatic, cannot be delayed, costs no Stamina)
 Duration: 2 rounds
 Effect:   Entire arena becomes difficult terrain
           At the start of each hunter's turn:
@@ -184,7 +184,7 @@ Limit:    1 reaction per round
 **Grove Sovereignty**
 
 Inside Old Grove sectors, Stagmir gains:
-- +1 Stamina recovery each round (in addition to normal recovery)
+- +2 Stamina recovery each round (in addition to normal recovery)
 - Advantage on saves vs forced movement
 
 > This passive weakens or disappears entirely if the fight is drawn outside the Old Grove's borders.
@@ -201,7 +201,7 @@ Vegetation near Stagmir counts as difficult terrain for enemies only. This appli
 
 | Part | Accuracy | Threshold | Break Effect |
 |------|----------|-----------|--------------|
-| Antler Crown ★ *(Impact Zone)* | Precise (−4) | 3 called-shot hits | Nature's Judgement damage reduced by 1 die (3d10+5 → 2d10+5). Verdant Cataclysm duration reduced from 2 rounds to 1 round. |
+| Antler Crown ★ *(Impact Zone)* | Standard (−2) | 3 called-shot hits | Nature's Judgement damage reduced by 1 die (3d10+5 → 2d10+5). Verdant Cataclysm duration reduced from 2 rounds to 1 round. |
 | Root Aura | Open (0) | 2 hits (any type) | Verdant Throne radius reduced from 15 ft to 5 ft. Most hunters can step out rather than save. |
 | Root Network | Standard (−2) | 2 called-shot hits | Rootquake cooldown increases from 2 turns to 3 turns. Living Terrain passive radius reduced from 20 ft to 10 ft. |
 
@@ -229,7 +229,7 @@ Vegetation near Stagmir counts as difficult terrain for enemies only. This appli
 - Nature's Judgement on hunters who have triggered the hunt condition (harmed flora/beasts)
 
 **At 50% HP:**
-- Verdant Cataclysm (1/Combat) — prioritize using this before Renewal so the difficult terrain + Root-Caged conditions are active during the fight's most intense phase
+- Verdant Cataclysm (1/Combat) — triggers automatically at no Stamina cost. The difficult terrain + Root-Caged conditions activate immediately; Stagmir uses the Wispform rider to reposition safely during the transition
 
 **At 30% HP:**
 - Renewal triggers automatically — Stagmir does not delay this
