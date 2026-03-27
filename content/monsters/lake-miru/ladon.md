@@ -179,7 +179,7 @@ Success →    Not pulled
 ```
 Trigger: A hunter successfully escapes a Grapple.
 Effect:  Immediately attempt Crushing Coil against the escaping target.
-Limit:   1 reaction per round.
+Limit:   1/Combat.
 ```
 > Ladon does not release prey. It offers the illusion of freedom before the second coil closes.
 
@@ -209,14 +209,14 @@ Within Temple Basin, Ladon gains:
 |------|----------|-----------|--------------|
 | Head Crest ★ *(Impact Zone)* | Standard (−2) | 3 hits | Venom Exhale disabled permanently |
 | Neck Segments | Standard (−2) | 4 hits | Temple Slam loses its push effect — Ladon can no longer reposition hunters with Slam |
-| Mid-Coil | Open (0) | 4 hits | Crushing Coil escape DC reduced from 17 to 15 |
+| Mid-Coil | Open (0) | 4 hits | Crushing Coil escape DC reduced from 17 to 15; 3D positioning disadvantage on escape attempts removed |
 | Tail Fin | Standard (−2) | 3 hits | Swim speed reduced to 30 ft |
 
 ### Tactical Weaknesses
 
 - **Shallow water:** Ladon loses 3D positioning leverage and cannot execute Sacred Maelstrom. Pulling the fight to the shallows strips its dominant toolkit
 - **Anchoring tools:** Nets, pitons, or anchor traps counter Drown Drag's pull. A Grappled hunter with an anchor point forces Ladon to spend Stamina on re-application
-- **Breaking Mid-Coil:** The escape DC drop from 17 to 15 is a meaningful shift — it changes average escape success from ~30% to ~50% for a STR +5 hunter. Break it early
+- **Breaking Mid-Coil:** The escape DC drop from 17 to 15 AND removal of 3D positioning disadvantage is the fight's most critical break. For a STR +5 hunter: pre-break escape = ~12–30% (with 3D disadvantage); post-break = 60%. For low-STR hunters (Flute, Bow): pre-break = 6–12%; post-break = 35%. Break it first — everything else follows from this
 - **Elevation:** Stone platforms, broken pillars, and temple walls above the waterline put hunters outside Drown Drag's range and deny Ladon's 3D leverage
 - **Head Crest priority:** Venom Exhale applies Poisoned which compounds Stamina drain — eliminating it early prevents the stacking pressure of Poisoned + underwater passive drain + Drown Drag
 

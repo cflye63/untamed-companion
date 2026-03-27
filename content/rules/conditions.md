@@ -39,7 +39,7 @@ Conditions represent ongoing effects that alter how creatures function in combat
 |-----------|--------|
 | **Prone** | Melee attacks against you have advantage; ranged attacks against you have disadvantage; your own ranged attacks are at disadvantage. Stand up costs 2 Stamina. |
 | **Taunted** | Your next attack must target the taunter; ends after that attack or if you cannot target them. |
-| **Grappled** | Speed 0; disadvantage on checks to resist forced movement. Break free by passing a STR or DEX check versus the grappler at the start of your turn. |
+| **Grappled** | Speed 0; disadvantage on checks to resist forced movement. Break free by passing a STR or DEX check versus the grappler at the start of your turn. An ally within reach of the grappler may spend their Action to break the Grapple — they make a contested STR check against the grappler (same DC as the Escape check). On success, the Grappled creature is freed immediately. |
 | **Restrained** | Speed 0; disadvantage on DEX saves; cannot Dodge; attacks against you have advantage. |
 
 ---
