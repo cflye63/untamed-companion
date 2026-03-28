@@ -4,7 +4,13 @@ Simulate a hunt between a party of hunters and a designated monster using **expe
 
 **Default:** Party of 4 hunters at the monster's tier unless specified.
 
-> **OUTPUT BUDGET:** This simulation MUST fit in a single response. Use the condensed round format defined below. Do NOT show intermediate probability branching or sub-calculations inline. Compute internally, output results only. Target: stat blocks + all rounds + report in under 4000 output tokens. If the fight runs 8+ rounds, compress mid-fight rounds into 2-round summaries.
+> **PHASED EXECUTION:** This simulation runs in 3 phases to stay within response limits. Each phase ends with a pause. Do NOT attempt to run all phases in one response.
+>
+> - **Phase 1** (`/sim-hunt` invocation): Parse inputs → read all files → build stat blocks → output roster + monster block + hit table → end with `▶ Phase 1 complete. Reply **go** to run the simulation.`
+> - **Phase 2** (user replies `go`): Run round-by-round simulation → output full round log → end with `▶ Phase 2 complete. Reply **report** for the final analysis.`
+> - **Phase 3** (user replies `report`): Output final report, flags, and tuning suggestions.
+>
+> Do NOT show intermediate probability branching or sub-calculations inline. Compute internally, output results only. Use condensed round format (defined below). If the fight runs 8+ rounds, compress mid-fight rounds into 2-round summaries.
 
 **Invocation format:**
 ```
@@ -15,6 +21,12 @@ Simulate a hunt between a party of hunters and a designated monster using **expe
 ```
 
 ---
+
+---
+
+## ▶ PHASE 1 — Setup (Steps 1–5)
+
+*Run on `/sim-hunt` invocation. Output stat blocks, then pause.*
 
 ## Step 1 — Parse Inputs
 
@@ -223,6 +235,15 @@ BEHAVIOR PRIORITY: [ordered list from behavior guide]
 ```
 
 ---
+
+**End of Phase 1:** After outputting the roster, monster block, and hit table, stop and say:
+> `▶ Phase 1 complete. Reply **go** to run the simulation.`
+
+---
+
+## ▶ PHASE 2 — Simulation (Steps 6–8)
+
+*Run when user replies `go`. Output the full round log, then pause.*
 
 ## Step 6 — Core Math
 
@@ -577,9 +598,18 @@ Stop simulation when ANY of these are true:
 
 ---
 
+**End of Phase 2:** After outputting the complete round log and termination result, stop and say:
+> `▶ Phase 2 complete. Reply **report** for the final analysis.`
+
+---
+
+## ▶ PHASE 3 — Report (Step 9)
+
+*Run when user replies `report`. Output the final report, flags, and tuning.*
+
 ## Step 9 — Output the Full Report
 
-Output the entire simulation as ONE continuous block in this order. Stay concise.
+Output the final report. Stay concise. Reference the round log from Phase 2 — do not re-print it.
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗

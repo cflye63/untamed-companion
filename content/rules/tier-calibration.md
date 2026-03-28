@@ -134,7 +134,7 @@ Examples:
 | AR | 15–17 |
 | HP | 210–300 |
 | Stamina | 17–22 |
-| Attacks/Turn | 4 |
+| Attacks/Turn | 3 |
 | Damage per hit | 2d8–3d10 |
 | Stats | 6–11 |
 | Signature cost | 3–6 stamina |
@@ -166,7 +166,7 @@ Examples:
 | AR | 17–21 |
 | HP | 330–380 |
 | Stamina | 21–24 |
-| Attacks/Turn | 4 |
+| Attacks/Turn | 3 |
 | Damage per hit | 3d8–3d12 |
 | Stats | 7–12 |
 | Signature cost | 4 stamina, cooldown 3 |
@@ -198,7 +198,7 @@ Tier 5 must:
 | AR | 17+ |
 | HP | 450+ |
 | Stamina | 25+ |
-| Attacks/Turn | 5 |
+| Attacks/Turn | 4 |
 | Damage per hit | 4d8–4d12 |
 | Stats | 8–16 |
 | Save DCs | 19–22 |

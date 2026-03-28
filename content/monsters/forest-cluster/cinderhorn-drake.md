@@ -58,7 +58,7 @@ Cinderhorn Drakes are apex war-beasts that evolved from scavenger drakes feeding
 | Ground | 40 ft | — |
 | Flight (burst) | 40 ft | Short burst only; not sustained hover |
 | Airborne Tax | −1 STA/turn | If airborne at end of turn |
-| Attacks/Turn | 4 | — |
+| Attacks/Turn | 3 | — |
 
 **Attack Roll Breakdown:** `d20 + STR mod (+6) + Trained proficiency (+2) = d20+8`
 **Tail Attack Roll:** `d20 + DEX mod (+4) + Trained proficiency (+2) = d20+6`
@@ -87,7 +87,7 @@ Each intact body part grants a persistent benefit. As parts are broken, the Cind
 | Tail | +1d6 damage on all attacks against Poisoned targets |
 | Horn Skull | Advantage on attack rolls against Prone targets |
 
-**All Four Intact:** +1 damage die on all attacks.
+**All Four Intact:** +1 Power Die on the first attack each turn.
 
 > This is the escalation passive. At full Warform the Cinderhorn is oppressive. By 2 parts broken it becomes balanced. By 3 parts broken it becomes manageable — and enters Berserk state (see below).
 
@@ -149,7 +149,9 @@ Escape:   STR DC 17
 **Poison Spike Volley — (2 Stamina, Cooldown 2 Turns)**
 ```
 Area:    Choose: 20 ft cone OR 30 ft line
-Damage:  3d6+4
+Save:    DEX DC 17
+           Fail → 3d6+4 damage + Poisoned (1 turn)
+           Success → Half damage, no Poisoned
 Effect:  Creates spike terrain in the area (lasts until cleared).
          Creatures entering spike zones: CON save DC 17
            Fail → 1 poison damage + Poisoned (1 turn)
