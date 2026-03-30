@@ -133,7 +133,7 @@ Stamina = 6 + CON modifier
 
 **Hunter HP:**
 ```
-HP = (CON score × 6) + Hunter Rank
+HP = (CON score × 8) + Hunter Rank
 ```
 *(HR midpoint per tier: T1→HR2, T2→HR7, T3→HR12, T4→HR17, T5→HR22)*
 

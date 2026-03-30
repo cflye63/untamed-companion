@@ -28,7 +28,7 @@ Hunter Rank measures your progression as a hunter and determines what tier of mo
 Hunter HP scales with both Constitution and Hunter Rank. CON provides the bulk of your durability, while HR adds a steady baseline that rewards progression.
 
 ```
-HP = (CON Score × 6) + Hunter Rank
+HP = (CON Score × 8) + Hunter Rank
 ```
 
 Recalculate when your CON score or Hunter Rank changes.
