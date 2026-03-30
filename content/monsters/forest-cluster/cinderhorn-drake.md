@@ -89,15 +89,15 @@ Each intact body part grants a persistent benefit. As parts are broken, the Cind
 
 **All Four Intact:** +1 Power Die on the first attack each turn.
 
-> This is the escalation passive. At full Warform the Cinderhorn is oppressive. By 2 parts broken it becomes balanced. By 3 parts broken it becomes manageable — and enters Berserk state (see below).
+> This is the escalation passive. At full Warform the Cinderhorn is oppressive. By 1 part broken it becomes balanced. By 2 parts broken it loses discipline and enters Berserk state (see below).
 
-**Berserk State (3+ Parts Broken):**
+**Berserk State (2+ Parts Broken):**
 
-When three or more body parts are broken, the Cinderhorn abandons tactical behavior and fights with reckless aggression:
+When two or more body parts are broken, the Cinderhorn abandons tactical behavior and fights with reckless aggression:
 - +1 damage die on all attacks (replaces the lost Warform bonuses, not additive)
 - −2 AR (reckless — the creature no longer guards itself)
 
-> The Cinderhorn doesn't know how to lose gracefully. Three broken parts don't weaken its resolve — they shatter its discipline.
+> The Cinderhorn doesn't know how to lose gracefully. Two broken parts don't weaken its resolve — they shatter its discipline.
 
 ---
 
@@ -146,7 +146,7 @@ Escape:   STR DC 17
 
 ---
 
-**Poison Spike Volley — (2 Stamina, Cooldown 2 Turns)**
+**Poison Spike Volley — (2 Stamina, Cooldown 3 Turns)**
 ```
 Area:    Choose: 20 ft cone OR 30 ft line
 Save:    DEX DC 17
@@ -162,15 +162,20 @@ Effect:  Creates spike terrain in the area (lasts until cleared).
 
 **Infernal Cyclone — (4 Stamina, Cooldown 3 Turns)**
 ```
+Requires: Wings intact. Not available before Round 3.
 Effect:  Cinderhorn moves 30 ft ignoring opportunity attacks.
 Area:    20 ft cone (at end of movement)
 Damage:  4d10 fire
-Save:    DEX DC 18
-           Fail → Burned (2 turns) + Prone
-           Success → Half damage, no conditions
-Wings:   If Wings intact → creates Burning terrain in the cone (lasts 2 turns)
+Save (Fire):      DEX DC 18
+                    Fail → Burned (2 turns)
+                    Success → Half damage, no Burned
+Save (Knockdown): STR DC 16
+                    Fail → Prone
+                    Success → No Prone
+Terrain: Creates Burning terrain in the cone (lasts 2 turns)
 ```
 > The jaw unhinges. The wings fan the fire forward. Everything in the path stops being a problem — because it's on fire.
+> Wings broken: the Cyclone dies with them. No wings, no fire column.
 
 ---
 
@@ -207,18 +212,18 @@ If the Cinderhorn ends its turn in the air, it loses 1 Stamina. Wing Skirmish re
 | Part | Accuracy | Threshold | Break Effect |
 |------|----------|-----------|--------------|
 | Horn Skull ★ *(Impact Zone)* | Standard (−2) | 5 BP | Ram no longer knocks Prone; Warform Synergy Horn Skull bonus lost |
-| Wings | Open (0) | 4 hits | Flight removed; Infernal Cyclone loses Burning terrain creation; Wing Skirmish disabled |
+| Wings | Open (0) | 3 hits | Flight removed; Infernal Cyclone disabled entirely; Wing Skirmish disabled |
 | Lion Head | Standard (−2) | 4 hits | Ash Bite loses Burned rider; Warform Synergy Lion Mane bonus lost |
 | Tail | Standard (−2) | 3 hits | Tail Lash loses Poisoned rider; Warform Synergy Tail bonus lost |
 | Hind Legs | Open (0) | 4 hits | Movement reduced to 25 ft; Pounce-Leap disabled |
 
 ### Tactical Weaknesses
 
-- **Wing break priority:** Wing Skirmish (melee escape reaction) is disabled; Infernal Cyclone loses terrain creation; flight removed entirely — the fight transitions from aerial harassment to decisive ground combat where melee hunters have full access
+- **Wing break priority:** Wing Skirmish disabled; Infernal Cyclone fully disabled (requires Wings intact to fire); flight removed — the fight transitions from aerial harassment to decisive ground combat, and the primary wipe threat is permanently gone
 - **Tail break priority:** Removes Poisoned pressure; eliminates the Warform Synergy +1d6 bonus; allows melee hunters to fight without Stamina drain from sustained Poisoning
 - **Water sources:** Extinguish Burning terrain zones and remove the Burned condition. Drawing the fight near water denies Cyclone's lasting terrain and shuts down the Cinderhorn's environmental control entirely. Fire effects fail in water contact
 - **Confined terrain:** Tight forest corridors deny Pounce-Leap (requires 20 ft movement) and restrict Cyclone's cone angle. Narrow fight spaces also prevent Wing Skirmish from finding safe repositioning points
-- **Stamina pressure:** Infernal Cyclone (4 STA) + Spike Volley (2 STA) + Airborne Tax (1 STA/turn aloft) burn Stamina aggressively. A party that denies air mobility and forces ground combat dramatically accelerates Exhaustion. At 0 STA, Cyclone shuts off — the fight's primary wipe threat disappears
+- **Stamina pressure:** Spike Volley (2 STA) + Airborne Tax (1 STA/turn aloft) burn Stamina aggressively. A party that denies air mobility and forces ground combat dramatically accelerates Exhaustion. Breaking Wings removes Cyclone entirely — grounding the Cinderhorn removes both its mobility and its wipe threat simultaneously
 
 ---
 
@@ -238,14 +243,14 @@ If the Cinderhorn ends its turn in the air, it loses 1 Stamina. Wing Skirmish re
 **If Wings Broken:**
 - Abandons Wing Skirmish repositioning
 - Becomes more committed to Ram → Pounce sequences on grounded targets
-- Infernal Cyclone still fires but without terrain creation; it becomes pure burst rather than arena control
+- Infernal Cyclone disabled — the wipe threat is gone; pressure now comes from sustained melee aggression
 
 **If Two Parts Broken:**
 - Balanced state. Focuses entirely on the most injured or lowest-Stamina hunter
 - Still uses Spike Volley to maintain terrain pressure
 - Airborne activity reduces — the Stamina tax becomes more costly at reduced STA pool
 
-**Berserk State (3+ Parts Broken):**
+**Berserk State (2+ Parts Broken):**
 - Abandons Spike Volley and Pounce-Leap (too tactical)
 - Cycles: Ash Bite → Ram → Tail Lash in pure aggression
 - Stops repositioning — charges the closest hunter and does not disengage
@@ -274,8 +279,8 @@ If the Cinderhorn ends its turn in the air, it loses 1 Stamina. Wing Skirmish re
 - Spike terrain (from Volley) layered with Burning terrain → hunters caught between zones face both Poisoned and Burned pressure simultaneously
 
 **Mid-Fight Shifts:**
-1. First time Cyclone fires with Wings intact — Burning terrain appears. The arena changes. Hunters must now navigate terrain hazards and fight simultaneously.
-2. Wings broken — Cinderhorn transitions from aerial harassment to committed ground assault. Positioning advantage shifts to hunters.
+1. Wings broken — Infernal Cyclone disabled permanently. The wipe threat is gone. Cinderhorn transitions from aerial harassment to committed ground assault. Positioning advantage shifts to hunters. This is the pivotal moment of the fight.
+2. 1 additional part broken (2 total) — Berserk State triggers. Cinderhorn drops all tactical behavior and commits to pure aggression at reduced AR.
 
 **Scaling Notes:**
 - Strong party: Reduce Infernal Cyclone cooldown to 2 turns; increase active spike terrain duration to 3 turns
