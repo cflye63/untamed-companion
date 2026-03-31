@@ -157,6 +157,7 @@ Effect:  Creates spike terrain in the area (lasts until cleared).
            Fail → 1 poison damage + Poisoned (1 turn)
 ```
 > The spikes are not the attack. The spikes are the map rewrite.
+> **Targeting:** Orient toward the ranged or back-line hunter. Spike Volley punishes distance — it is not a melee tool.
 
 ---
 
@@ -214,7 +215,7 @@ If the Cinderhorn ends its turn in the air, it loses 1 Stamina. Wing Skirmish re
 | Horn Skull ★ *(Impact Zone)* | Standard (−2) | 5 BP | Ram no longer knocks Prone; Warform Synergy Horn Skull bonus lost |
 | Wings | Open (0) | 3 hits | Flight removed; Infernal Cyclone disabled entirely; Wing Skirmish disabled |
 | Lion Head | Standard (−2) | 4 hits | Ash Bite loses Burned rider; Warform Synergy Lion Mane bonus lost |
-| Tail | Standard (−2) | 3 hits | Tail Lash loses Poisoned rider; Warform Synergy Tail bonus lost |
+| Tail | Standard (−2) | 2 hits | Tail Lash loses Poisoned rider; Warform Synergy Tail bonus lost |
 | Hind Legs | Open (0) | 4 hits | Movement reduced to 25 ft; Pounce-Leap disabled |
 
 ### Tactical Weaknesses
