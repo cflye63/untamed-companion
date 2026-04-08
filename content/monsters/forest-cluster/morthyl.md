@@ -188,6 +188,8 @@ Effect:  Create two spore clouds at any points within 40 ft.
 On entry or at start of turn inside cloud:
   CON Save DC 16
   Fail    → Poisoned + Movement −10 ft
+            Poisoned persists while inside the cloud and until the end of the
+            creature's next turn after leaving.
   Success → Movement −5 ft
 ```
 > The spores do not kill. They slow. Everything Morthyl does benefits from slow.
@@ -368,7 +370,7 @@ Requires: Skull Mask intact.
 Area:    40 ft radius from anchor point
 Save:    CON Save DC 18
 Damage:  4d10 + (Biomass stacks × 2d6)
-Fail  → Full damage + Poisoned (2 turns) + Rooted
+Fail  → Full damage + Rooted. If Biomass ≥ 1: also Poisoned (2 turns).
 Success → Half damage
 
 Example damage:
