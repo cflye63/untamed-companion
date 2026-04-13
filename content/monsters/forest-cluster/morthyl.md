@@ -55,12 +55,12 @@ It does not remember them. It simply kept what was useful.
 
 | Stat | Value | Notes |
 |------|-------|-------|
-| AR | 18 | Root Form and Bear Form — dense root-bark plating |
+| AR | 19 | Root Form and Bear Form — dense root-bark plating |
 | AR | 22 | Siege Form only — skull armor assembled over fungal core |
 | HP | 450 | Median 5P: TierBase (290) + CON (16) × 10 |
 | Stamina | 26 | 10 + CON Score (16) |
 
-> **GM Scaling Note:** HP 450 targets a median mixed party (HR 20–24). For an optimized party, increase to **580**. Morthyl's three-form structure requires minimum 10 rounds to cycle properly — if HP is too low, Bear Form arrives before the party has learned Claimed Ground and the puzzle collapses.
+> **GM Scaling Note:** HP 450 targets a median mixed party (HR 20–24). For an optimized party, increase to **580**. For a Master-proficiency optimized party, increase to **875** (TierBase 290 + CON 16 × 24 ≈ 674, rounded up to account for Master-tier burst compression from T5 ultimates). Morthyl's three-form structure requires minimum 8–9 rounds to cycle properly — if HP is too low, Bear Form arrives before the party has learned Claimed Ground and the puzzle collapses.
 
 | Movement | Value | Notes |
 |----------|-------|-------|
@@ -226,7 +226,7 @@ Attacks                 — reduced to 2/turn (Root Slam + Grasping Tendrils)
 ### Transition
 
 ```
-Trigger: HP drops below [65% threshold — TBD] OR Biomass ≥ 4 at any HP
+Trigger: HP drops below 70% OR Biomass ≥ 4 at any HP
 
 Tell:    One round before transition — bones visible inside Morthyl begin shifting.
          The bear skull rises toward the surface. Rib sections unfold outward.
@@ -236,7 +236,7 @@ Tell:    One round before transition — bones visible inside Morthyl begin shif
 On Transition:
   Morthyl erupts from the soil. A skeletal bear frame bursts outward from the root mass,
   fusing with fungal tissue. Morthyl gains 30 ft ground movement.
-  AR remains 18.
+  AR remains 19.
   Claimed Ground stays anchored at the original Root Form position.
   Root Form attacks (Root Slam, Grasping Tendrils) are unavailable.
   Bear Form attacks activate immediately.
@@ -315,7 +315,7 @@ Claw Strike and Shoulder Check still available (instinct, not STA-dependent at t
 ### Transition
 
 ```
-Trigger: HP drops below [35% threshold — TBD] OR Biomass ≥ 7 at any HP
+Trigger: HP drops below 30% OR Biomass ≥ 7 at any HP
 
 Tell:    Bear Form begins to collapse inward. Morthyl decelerates and turns toward the anchor.
          Movement drops to 15 ft for the transition round (can still attack in Bear Form).
@@ -367,6 +367,7 @@ Rider:   Fail → Poisoned (1 turn) + Rooted
 **Rot Cascade — (5 Stamina, Once per Hunt)**
 ```
 Requires: Skull Mask intact.
+Cost:    5 Stamina. If Biomass ≥ 3: costs 0 Stamina (the Biomass IS the fuel).
 Area:    40 ft radius from anchor point
 Save:    CON Save DC 18
 Damage:  4d10 + (Biomass stacks × 2d6)
@@ -381,6 +382,7 @@ Example damage:
 
 Counter: Breaking the Skull Mask disables Rot Cascade permanently.
          Each Biomass stack the party denied is direct damage off this number.
+         Denying Consume below 3 Biomass also keeps the 5 STA cost — double pressure.
 ```
 > The mask opens. Everything Morthyl consumed pays forward in one detonation.
 
@@ -454,7 +456,7 @@ All terrain within Claimed Ground becomes resource-dead for the duration of the 
 
 **Fungal Resilience**
 
-At the start of Morthyl's turn, if it is within Claimed Ground (or within 5 ft of the anchor), recover 1 STA. In Root Form this triggers automatically. In Bear Form it triggers only if Morthyl has returned to the anchor. In Siege Form it triggers automatically.
+At the start of Morthyl's turn, if it is within Claimed Ground (or within 5 ft of the anchor), recover 2 STA. In Root Form this triggers automatically. In Bear Form it triggers only if Morthyl has returned to the anchor. In Siege Form it triggers automatically.
 
 ---
 
@@ -472,26 +474,26 @@ Claimed Ground does not follow Morthyl when Bear Form activates. The domain rema
 
 | Part | Accuracy | Threshold | Break Effect |
 |------|----------|-----------|--------------|
-| Root Limbs ★ *(Impact Zone)* | Open (0) | 5 hits | Root Slam damage −1d10; Grasping Tendrils reach reduced to 10 ft; break deals 2d8 bonus damage |
-| Fungal Core | Standard (−2) | 4 hits | Consume HP recovery halved (2d10+8 → 1d10+4); break deals 2d8 bonus damage |
-| Spore Chambers | Precise (−4) | 3 hits | Spore Seeding disabled permanently; break deals 2d6 bonus damage |
-| Mycelial Network | Standard (−2) | 4 hits | Subterranean Reposition range halved (60 ft → 30 ft); break deals 2d8 bonus damage |
+| Root Limbs ★ *(Impact Zone)* | Open (0) | 3 hits | Root Slam damage −1d10; Grasping Tendrils reach reduced to 10 ft; break deals 2d8 bonus damage |
+| Fungal Core | Standard (−2) | 3 hits | Consume HP recovery halved (2d10+8 → 1d10+4); break deals 2d8 bonus damage |
+| Spore Chambers | Precise (−4) | 2 hits | Spore Seeding disabled permanently; break deals 2d6 bonus damage |
+| Mycelial Network | Standard (−2) | 3 hits | Subterranean Reposition range halved (60 ft → 30 ft); break deals 2d8 bonus damage |
 
 ### Bear Form Parts
 
 | Part | Accuracy | Threshold | Break Effect |
 |------|----------|-----------|--------------|
-| Bear Skull ★ *(Impact Zone)* | Standard (−2) | 4 hits | Gore Charge disabled; Body Slam radius −5 ft; if broken before Bear Form triggers, transition is weakened (see Bear Form Transition); break deals 2d10 bonus damage |
-| Tusk Shafts | Open (0) | 3 hits | Claw Strike damage −1d8; break deals 1d10 bonus damage |
-| Rib Cage | Precise (−4) | 3 hits | Body Slam save DC reduced by 2 (DC 17 → 15); break deals 1d8 bonus damage |
+| Bear Skull ★ *(Impact Zone)* | Standard (−2) | 3 hits | Gore Charge disabled; Body Slam radius −5 ft; if broken before Bear Form triggers, transition is weakened (see Bear Form Transition); break deals 2d10 bonus damage |
+| Tusk Shafts | Open (0) | 2 hits | Claw Strike damage −1d8; break deals 1d10 bonus damage |
+| Rib Cage | Precise (−4) | 2 hits | Body Slam save DC reduced by 2 (DC 17 → 15); break deals 1d8 bonus damage |
 
 ### Siege Form Parts
 
 | Part | Accuracy | Threshold | Break Effect |
 |------|----------|-----------|--------------|
-| Skull Armor | Open (0) | 6 hits | AR 22 → 18 in Siege Form; exposes the Fungal Core (if not already broken); break deals 2d10 bonus damage |
-| Skull Mask | Standard (−2) | 4 hits | Rot Cascade disabled permanently; Ossified Strike loses Stun rider; break deals 3d10 bonus damage |
-| Marrow Vents | Precise (−4) | 3 hits | Marrow Barrage disabled; break deals 1d10 bonus damage |
+| Skull Armor | Open (0) | 4 hits | AR 22 → 19 in Siege Form; exposes the Fungal Core (if not already broken); break deals 2d10 bonus damage |
+| Skull Mask | Standard (−2) | 3 hits | Rot Cascade disabled permanently; Ossified Strike loses Stun rider; break deals 3d10 bonus damage |
+| Marrow Vents | Precise (−4) | 2 hits | Marrow Barrage disabled; break deals 1d10 bonus damage |
 
 ---
 
@@ -532,7 +534,7 @@ Claimed Ground does not follow Morthyl when Bear Form activates. The domain rema
 - Can still attack during the transition round — one final Bear Form attack before collapsing.
 
 **Siege Form Loop:**
-- Immediate: Rot Cascade if Biomass ≥ 3 and hunters are clustered in range. Do not wait.
+- Immediate: Rot Cascade if STA ≥ 5 and hunters are clustered in range. Do not wait. Biomass ≥ 3 reduces the cost to 0 — the Biomass IS the fuel and Morthyl keeps its STA for more attacks. At 0 Biomass the cost is 5 STA. Fire regardless.
 - Standard rotation: Ossified Strike on nearest → Marrow Barrage on clustered targets (force spread).
 - Bone Wall on every hit that would deal significant damage.
 - Priority: Protect the Skull Mask. If hunters are targeting it, use Marrow Barrage to break their positioning.

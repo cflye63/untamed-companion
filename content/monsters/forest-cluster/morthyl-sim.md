@@ -1,179 +1,195 @@
-# MORTHYL SIM — 4P Tier 5 HR 24 (Optimized, EV Mode)
+# MORTHYL SIM — 4P Tier 5 HR 24 (Optimized Master Prof, EV Mode)
 
-**Party:** Human Greatsword, Trolian Hammer, Human Bow, Thalorim Conduit (Storm)
+**Party:** Human Hunting Flute, Trolian Arbalest, Trolian Spear & Shield, Trolian Claws
 **Monster HP:** 580 (optimized 4P)
-**Bear Form trigger:** HP ≤ 377 (65%) OR Biomass ≥ 4
-**Siege Form trigger:** HP ≤ 203 (35%) OR Biomass ≥ 7
-**Result:** Party Victory R14–15 (Pyrrhic — 2 of 4 hunters downed)
+**Bear Form trigger:** HP < 406 (70%) OR Biomass ≥ 4
+**Siege Form trigger:** HP < 174 (30%) OR Biomass ≥ 7
+**Result:** Party Victory R9 — tight finish, S&S at 5 HP, Flute at 8 HP
+
+**Tuning changes tested:**
+- AR 19 Root/Bear (was 18)
+- Fungal Resilience +2 STA/turn (was +1)
+- Form thresholds 70%/30% (was 65%/35%)
+- Rot Cascade free at Biomass ≥ 3
+- Part break thresholds reduced (Open −2, Standard/Precise −1)
+- Hunting Flute Performance Ward: +2 AR while Song active
 
 ---
 
 ## Roster
 
-### Hunter 1 — Human Greatsword | HR 24
+### Hunter 1 — Human Hunting Flute | HR 24
 
 ```
-Build: Base STR 5, CON 5 → Tribal Warrior +2 STR +1 CON →
-  GS badge +1 STR +1 CON → Human +1 STR → Vitality Floor +4 CON →
-  T5 scaling +8 STR
+Build: Base CHA 5, CON 5, INS 4 → Scholar +2 CHA +1 INS →
+  Flute badge +1 CHA +1 INS → Human +1 CHA →
+  T5 scaling +5 CHA +3 CON
 
-STR 17 (+8)   DEX  3 (+1)   CON 11 (+5)
-INT  3 (+1)   INS  3 (+1)   CHA  3 (+1)
+CHA 14 (+7)   DEX  3 (+1)   CON  8 (+4)
+INT  3 (+1)   INS  6 (+3)   STR  3 (+1)
 
-AR:       14   (Heavy armor — no Dodge)
-HP:      112   (11×8 + 24)
-Stamina:  11   (6 + CON mod 5)
+AR:       14   (Medium 12 + Performance Ward +2 while Song active)
+HP:       88   (8×8 + 24)
+Stamina:  10   (6 + CON mod 4)
 
-Attack:  d20+10  →  3d8+8  avg hit dmg: 21.5
-         M3 active: +3 flat + 1d8 power die + crit 18-20 = avg 30.0
-Save DC: 20
-React:   Parry (GS tag)
-
-T5 — Executioner's Strike (4 STA, Wind-Up):
-  Charge: Rooted, DisAdv DEX saves.
-  Release: base GS dmg × 2 on hit; × 4 on crit.
-  M3 start: advantage + 1 power die. Crit 18-20.
-  On hit: Stagger. [NOT FIRED — no safe window]
-
-T4 — Tremor Strike (3 STA):
-  3d12+8 (avg 27.5) single target.
-  Shockwave DEX DC 20 or Prone in 10 ft.
-
-T3 — Titan's Guard (2 STA, Reaction):
-  Halve all damage until next turn.
-  If hit during window: free counter-attack + Momentum.
-  [NOT MODELED — Parry used instead. See tuning note.]
-```
-
----
-
-### Hunter 2 — Trolian Hammer | HR 24
-
-```
-Build: Base STR 5, CON 5 → Tribal Warrior +2 STR +1 CON →
-  Hammer badge +2 STR → Trolian +1 STR → Vitality Floor +4 CON →
-  T5 scaling +8 STR
-
-STR 18 (+9)   DEX  3 (+1)   CON 10 (+5)
-INT  3 (+1)   INS  3 (+1)   CHA  3 (+1)
-
-AR:       14 base → 15 effective (Trolian Anchored Frame +1 when stationary)
-HP:      104   (10×8 + 24)
-Stamina:  11   (6 + CON mod 5)
-
-Attack:  d20+11  →  3d8+9  avg hit dmg: 22.5
-Called Shot Impact Zone (−2): d20+9
+Attack:  d20+11  →  3d6+7  avg hit dmg: 17.5
 Save DC: 21
-React:   None (Heavy armor, no Guard/Parry)
+React:   Dodge (Medium armor)
+Racial:  Human Adaptable — 1 attack per hunt costs 0 STA
 
-Racial: Anchored Frame (+1 AR stationary), Flowstep (ignore difficult terrain)
+Songs:   Entropy (−1 AR enemies) | Fortress (+1 AR allies)
+         Courage (+1 atk allies) | Discord (1d4 psychic/turn)
+         Swiftness (+10 ft) | Lament (disadv Fear/Charm saves)
+Notes:   +1 Note per support/debuff (max 3). Crescendo: +1 Note gain.
 
-T5 — Titan's Wrath (4 STA, Wind-Up):
-  Uninterruptible charge. 5d10+9 (avg 36.5) in 20-ft arc.
-  On hit: 3 Impact → instant Stun + 15 ft launch + Prone.
-  (Launch/Prone negated by Rootbound Colossus — Stun still applies.)
-  After use: Wind-Up locked 2 rounds.
+T5 — Requiem of the Wild (4 STA, 3 rounds):
+  Allies: +2 attack/saves, immune Fear/Charm, heal 1d6/turn.
+  Enemies: disadvantage on attacks, 2d6 psychic/turn (no save).
+  Flute: cannot take Actions/Fast Actions while maintaining.
 
-T4 — Meteor Strike (3 STA):
-  Leap 15 ft. 10-ft radius. DEX DC 21: 3d10+9 + Prone + 2 Impact.
+T4 — Shattering Note (3 STA, AoE):
+  20 ft radius, CON DC 21, 3d8+7 avg 20.5 thunder + Stun.
 
-T3 — Overwhelming Force (Passive):
-  Block/Dodge → spend 1 STA → half dmg anyway + 1 Impact.
-  Break Progress: 2 per hit (3 at Impact 3). Ignore bludgeoning resistance.
-  Ironhide: first hit/round reduced by CON mod when stationary.
+T2 — Healing Hymn (2 STA):
+  All allies in 30 ft heal 1d8+7 avg 11.5. 3 Notes: +1d8.
+
+T1 — Resonant Strike (1 STA):
+  CHA attack vs AR, base Flute dmg, CON DC 21 → Deafened.
 ```
 
 ---
 
-### Hunter 3 — Human Bow | HR 24
+### Hunter 2 — Trolian Arbalest | HR 24
 
 ```
-Build: Base DEX 5, CON 5, INS 4 → Wanderer +2 DEX +1 INS →
-  Bow badge +1 DEX +1 INS → Human +1 DEX → Vitality Floor +4 CON →
-  T5 scaling +8 DEX
+Build: Base STR 5, CON 5, INS 4 → Tribal Warrior +2 STR +1 CON →
+  Arbalest badge +1 STR +1 INS → Trolian +1 STR →
+  T5 scaling +5 STR +3 CON
 
-DEX 17 (+8)   STR  3 (+1)   CON  9 (+4)
-INT  3 (+1)   INS  6 (+3)   CHA  3 (+1)
+STR 14 (+7)   DEX  3 (+1)   CON  9 (+4)
+INT  3 (+1)   INS  5 (+2)   CHA  3 (+1)
 
-AR:       18   (Light armor: 10 + DEX mod 8)
+AR:       15   (Heavy 14 + Trolian Anchored Frame +1 stationary)
 HP:       96   (9×8 + 24)
 Stamina:  10   (6 + CON mod 4)
 
-Attack:  d20+10  →  3d8+8  avg hit dmg: 21.5
-         Focus 3: +3 flat → 24.5. Power Shot at F3: adv + power die → 29.0
-Save DC: 20
-React:   Dodge (Light armor)
-Focus:   +1/stationary turn (cap 3)
-
-T5 — Flying Drake Shot (4 STA, Wind-Up):
-  6d8+8 (avg 35.0) in 30-ft line, advantage.
-  STR save DC 20 or Prone. F3: 40 ft line.
-  [NOT FIRED — STA insufficient at F3 windows]
-
-T4 — Rain of Arrows (3 STA):
-  20-ft radius zone, 2 rounds. DEX DC 20 or half move + half dmg.
-
-T3 — Concentration (Passive):
-  Retain Reactions while aiming Power Shot.
-  Dodge during aim → immediate release.
-```
-
----
-
-### Hunter 4 — Thalorim Conduit (Storm) | HR 24
-
-```
-Build: Base INS 5, CON 5 → Tracker +2 INS +1 CON →
-  Conduit badge +2 INS → Thalorim +1 INS → Vitality Floor +4 CON →
-  T5 scaling +8 INS
-
-INS 18 (+9)   STR  3 (+1)   CON 10 (+5)
-INT  3 (+1)   DEX  3 (+1)   CHA  3 (+1)
-
-AR:       12 base / 13 while Channeling (Grounded Will +1)
-HP:      104   (10×8 + 24)
-Stamina:  11   (6 + CON mod 5)
-           Channel drain: −1 STA/turn. Projection: −1 STA/turn.
-           Net cost projecting + attacking: 3 STA/turn.
-
-Attack:  d20+11  →  3d8+9  avg hit dmg: 22.5
+Attack:  d20+11, with Aim d20+13  →  4d10+7  avg hit dmg: 29.0
+         Armor Penetration: ignore 3 AR (T3+ Rapid Reload)
 Save DC: 21
-React:   Dodge (Medium armor)
+React:   None (Heavy armor, no Guard/Parry)
+Racial:  Anchored Frame (+1 AR stationary)
 
-Storm Aspect: enemies ending turn in field spend 1 STA OR take 1d6 (avg 3.5).
-  Morthyl always takes damage (3.5 trivial vs 580 HP / 26 STA).
+Action Economy (T3+): Free Reload + Fast Aim (+2) + Action Fire
+  Standard cycle: 1 STA/shot, d20+13, ignore 3 AR
 
-T5 — Cataclysm Collapse (4 STA, ends Channel):
-  5d8+9 (avg 31.5) to all in field.
-  Storm: CON DC 21 → 60% fail vs Morthyl → Stun 1 turn.
+T5 — Godslayer Shot (5 STA, Wind-Up 2 turns):
+  Patient Hunter auto-crit, adv, +4 to hit, crit 18-20.
+  8d10+7 avg 51 → doubled on crit = 102. CON DC 21 → Stagger + 4d10.
+  [NOT FIRED — fight duration insufficient for 3-turn setup]
 
-T4 — Expanding Dominion (3 STA):
-  Field → 25 ft radius. Aspect triggers twice/round.
+T4 — Siege Bolt (3 STA, Wind-Up 1 turn):
+  60 ft line, base + 2d10, CON DC 21 → Stun.
+  [NOT FIRED — basic shots more STA-efficient]
 
-T3 — Grounded Will (Passive):
-  +1 AR while Channeling.
-  Channel survives forced movement unless fail STR save.
-  Enemy fails Aspect save → +1 STA (once/round).
+T1 — Explosive Bolt (2 STA):
+  Base dmg + 2d6 fire splash 10 ft, DEX DC 21 half.
 ```
 
 ---
 
-## Monster — Morthyl
+### Hunter 3 — Trolian Spear & Shield | HR 24
+
+```
+Build: Base STR 5, CON 5, DEX 4 → Tribal Warrior +2 STR +1 CON →
+  S&S badge +1 STR +1 DEX → Trolian +1 STR →
+  T5 scaling +5 STR +3 CON
+
+STR 14 (+7)   DEX  5 (+2)   CON  9 (+4)
+INT  3 (+1)   INS  3 (+1)   CHA  3 (+1)
+
+AR:       16   (Heavy 14 + Shield +1 + Trolian Anchored Frame +1)
+HP:       96   (9×8 + 24)
+Stamina:  10   (6 + CON mod 4)
+
+Attack:  d20+11  →  Aggressive 3d10+7 avg 23.5 | Defensive 2d10+7 avg 18.0
+Save DC: 21
+React:   Block (+3 AR, reduce dmg by CON mod 4) | Parry (+1 AR, counter half dmg)
+Racial:  Anchored Frame (+1 AR), Flowstep (ignore difficult terrain),
+         Rooted Resilience (failed save → next Reaction −1 STA)
+
+Stances: Aggressive (Reach 10 ft, +1 dmg die, no Block)
+         Defensive (Reach 5 ft, Block available)
+Momentum: +1 per hit/Block (max 3). Spend 2 = advantage. Spend 3 = free swap.
+
+T5 — Hoplite's Wrath (4 STA, charge line):
+  30 ft charge, 4d10+7 avg 29. STR DC 21 → push, fail by 5+ → Stagger.
+  [NOT FIRED — Rootbound Colossus negates push, STA too tight]
+
+T3 — Counter-Thrust (1 STA, Reaction):
+  After Block in Defensive, attack with advantage + 1d6.
+
+T1 — Thrust & Bash (2 STA):
+  Spear thrust + Shield bash 1d6+7. STR DC 21 → Prone.
+```
+
+---
+
+### Hunter 4 — Trolian Claws | HR 24
+
+```
+Build: Base DEX 5, CON 5, STR 4 → Wanderer +2 DEX +1 INS →
+  Claws badge +2 DEX → Trolian +1 DEX →
+  T5 scaling +5 DEX +3 CON
+
+DEX 15 (+7)   STR  4 (+2)   CON  8 (+4)
+INT  3 (+1)   INS  4 (+2)   CHA  3 (+1)
+
+AR:       17   (Light 10 + DEX mod 7)
+HP:       88   (8×8 + 24)
+Stamina:  10   (6 + CON mod 4)
+
+Attack:  d20+11  →  Main 3d6+7 avg 17.5 + Bonus 3d6 avg 10.5
+         2 attacks/turn base (1 STA each = 2 STA/turn)
+Save DC: 21
+React:   Dodge (Light armor)
+Racial:  Flowstep (ignore difficult terrain — critical vs Morthyl),
+         Rooted Resilience (failed save → next Reaction −1 STA)
+
+Core: Feral Rush — +1 Rush per hit (max 5)
+  Rush 3+: +10 ft move, Bleeding on hit (no save), 1d6/stack at T3+ (max 3 stacks)
+
+T5 — Apex Predator (5 Rush, Action):
+  5 attacks with advantage, +2d6 each, +2 Bleeding stacks each.
+  3+ hits same target → CON DC 21 → 4d10 + Stun.
+  [NOT FIRED — Rush reset from Breathing Turns prevented accumulation]
+
+T4 — Blood Frenzy (3 STA, Fast, 3 rounds):
+  Rush doesn't decay, cap 7, +1d8/attack.
+  [NOT FIRED — STA too tight for 3 STA activation cost]
+
+T1 — Rend (2 STA, Action):
+  3 attacks, each applies Bleeding (no save), each gains Rush.
+```
+
+---
+
+## Monster — Morthyl (Post-Tuning)
 
 ```
 STR 12 (+6)   DEX 3 (+1)   CON 16 (+8)
 INT  2 (+1)   INS 9 (+4)   CHA  2 (+1)
 
-HP: 580 (optimized 4P)   Stamina: 26   Fungal Resilience: +1 STA/turn at anchor
+HP: 580 (optimized 4P)   Stamina: 26   Fungal Resilience: +2 STA/turn at anchor
 
-Root Form:  AR 18 | 4 attacks/turn | Stationary
-Bear Form:  AR 18 | 3 attacks/turn | 30 ft ground
-Siege Form: AR 20* | 3 attacks/turn | Stationary (*22 if Bear Skull unbroken)
+Root Form:  AR 19 | 4 attacks/turn | Stationary
+Bear Form:  AR 19 | 3 attacks/turn | 30 ft ground
+Siege Form: AR 22 | 3 attacks/turn | Stationary (AR 20 if Bear Skull broken)
 
 Claimed Ground: 30 ft radius at anchor.
   −10 ft move, disengage +1 STA, forced movement halved, Prone → −1 STA/turn.
 Rootbound Colossus: immune to push/pull/Prone.
 Biomass: accumulated via Consume. Fuels form transitions and Rot Cascade bonus.
+Rot Cascade: costs 0 STA if Biomass ≥ 3.
 ```
 
 ### Root Form Attacks
@@ -201,7 +217,7 @@ Biomass: accumulated via Consume. Fuels form transitions and Rot Cascade bonus.
 |--------|------|--------|---------|-------|
 | Ossified Strike | 2 STA | d20+10 | 30.0 | CON DC 18: Stun |
 | Marrow Barrage | 2 STA CD1 | DEX DC 16 | 15.0/zone | Poisoned + Rooted |
-| Rot Cascade | 5 STA 1/hunt | CON DC 18 | 22.0 (0 Bio) | Poisoned 2 turns + Rooted |
+| Rot Cascade | 5 STA (0 if Bio≥3) 1/hunt | CON DC 18 | 22+ | Poisoned 2t + Rooted |
 
 ### Reactions
 
@@ -210,221 +226,257 @@ Biomass: accumulated via Consume. Fuels form transitions and Rot Cascade bonus.
 | Root Surge | 1 STA | Creature leaves CG | DEX DC 16 or Prone |
 | Bone Wall (Siege) | 1 STA | Hit by attack | −8 incoming damage |
 
-### Part Breaks
+### Part Breaks (Updated Thresholds)
 
 | Part | Form | Accuracy | Threshold | Break Effect |
 |------|------|----------|-----------|--------------|
-| Root Limbs ★ | Root | Open (0) | 5 hits | Root Slam −1d10, Tendrils 10 ft |
-| Fungal Core | Root | Standard (−2) | 4 hits | Consume HP halved |
-| Spore Chambers | Root | Precise (−4) | 3 hits | Spore Seeding disabled |
-| Mycelial Network | Root | Standard (−2) | 4 hits | Reposition range 30 ft |
-| Bear Skull ★ | Bear | Standard (−2) | 4 hits | Gore disabled, Body Slam 5 ft, Siege AR 22→20 |
-| Tusk Shafts | Bear | Open (0) | 3 hits | Claw Strike −1d8 |
-| Rib Cage | Bear | Precise (−4) | 3 hits | Body Slam DC−2 |
-| Skull Armor | Siege | Open (0) | 6 hits | AR 22→18, Fungal Core exposed |
-| Skull Mask | Siege | Standard (−2) | 4 hits | Rot Cascade disabled, Ossified loses Stun |
-| Marrow Vents | Siege | Precise (−4) | 3 hits | Marrow Barrage disabled |
+| Root Limbs ★ | Root | Open (0) | 3 hits | Root Slam −1d10, Tendrils 10 ft |
+| Fungal Core | Root | Standard (−2) | 3 hits | Consume HP halved |
+| Spore Chambers | Root | Precise (−4) | 2 hits | Spore Seeding disabled |
+| Mycelial Network | Root | Standard (−2) | 3 hits | Reposition range 30 ft |
+| Bear Skull ★ | Bear | Standard (−2) | 3 hits | Gore disabled, Body Slam 5 ft, Siege AR 22→20 |
+| Tusk Shafts | Bear | Open (0) | 2 hits | Claw Strike −1d8 |
+| Rib Cage | Bear | Precise (−4) | 2 hits | Body Slam DC−2 |
+| Skull Armor | Siege | Open (0) | 4 hits | AR 22→19, Fungal Core exposed |
+| Skull Mask | Siege | Standard (−2) | 3 hits | Rot Cascade disabled, Ossified loses Stun |
+| Marrow Vents | Siege | Precise (−4) | 2 hits | Marrow Barrage disabled |
 
 ---
 
 ## Hit Table
 
-### Hunters → Morthyl
+### Hunters → Morthyl (with Entropy Song: −1 AR)
 
-| Attacker | vs Root/Bear AR 18 | vs Siege AR 20 | Called Shot Skull Mask (−2) |
-|----------|-------------------|----------------|---------------------------|
-| GS (d20+10) | 65% | 55% | 45% |
-| Ham (d20+11) | 70% | 60% | 50% |
-| Bow (d20+10) | 65% | 55% | 45% |
-| Con (d20+11) | 70% | 60% | 50% |
+| Attacker | vs Root/Bear eff AR 18 | vs Siege eff AR 21 | Called Shot (−2) R/B | Called Shot (−2) Siege |
+|----------|----------------------|-------------------|---------------------|----------------------|
+| Flute (d20+11) | 70% | 55% | 60% | 45% |
+| Arbalest (d20+13, AP−3) | 95% (eff AR 15) | 75% (eff AR 18) | — | — |
+| S&S Agg (d20+11) | 70% | 55% | 60% | 45% |
+| Claws ×2 (d20+11) | 70% each | 55% each | 60% | 45% |
 
 ### Morthyl → Hunters
 
-| Attack | vs GS AR 14 | vs Ham AR 15 | vs Bow AR 18 | vs Con AR 13 |
-|--------|-------------|--------------|--------------|--------------|
-| STR (d20+10) | 85% | 80% | 65% | 90% |
-| INS (d20+8) | — | — | 55% | 85% |
+| Attack | vs Flute AR 14 | vs Arb AR 15 | vs S&S AR 16 | vs Claws AR 17 |
+|--------|---------------|--------------|--------------|----------------|
+| STR (d20+10) | 80% | 80% | 75% | 70% |
+| w/ Dodge | 64% | — | — | 49% |
+| w/ Block (S&S) | — | — | 60% (AR 19) | — |
+| INS (d20+8) | 70% | 70% | 65% | 60% |
 
-### Key Save Fail Rates
+### Key Save Fail Rates (Hunters vs Monster DCs)
 
-| Save | GS | Ham | Bow | Con |
-|------|-----|-----|-----|-----|
-| DEX DC 16 (Root Slam, Spore) | 75% | 75% | 35% | 75% |
-| DEX DC 17 (Body Slam) | 80% | 80% | 45% | 80% |
-| STR DC 17 (Gore, Shoulder) | 45% | 40% | 80% | 80% |
-| CON DC 16 (Spore Poison) | 55% | 55% | 60% | 55% |
-| CON DC 18 (Ossified, Cascade) | 65% | 65% | 70% | 65% |
+| Save | Flute | Arbalest | S&S | Claws |
+|------|-------|----------|-----|-------|
+| DEX DC 16 (Root Slam, Spore) | 60% | 60% | 55% | 30% |
+| DEX DC 17 (Body Slam, Seizure) | 65% | 65% | 60% | 35% |
+| STR DC 17 (Gore, Shoulder) | 80% | 45% | 45% | 75% |
+| CON DC 16 (Spore Poison) | 45% | 45% | 45% | 45% |
+| CON DC 18 (Ossified, Cascade) | 55% | 55% | 55% | 55% |
+
+### Monster Save Fail Rates (vs Hunter DC 21)
+
+| Save | Mod | Fail Rate |
+|------|-----|-----------|
+| STR +6 | — | 70% |
+| DEX +1 | — | 95% (floor) |
+| CON +8 | — | 60% |
+| INS +4 | — | 80% |
 
 ---
 
 ## Round Log
 
-### Root Form (R1–R4)
+### Root Form (R1–R2)
 
 ```
 ── R1 ────────────────────────────────────────────────────────
-HUNTERS: GS Cleave(2STA,adv) 18.9dmg→M2 | Ham CS-RootLimbs 15.8dmg I1
-         Bow basic 14.0 F1 | Con Channel+Project 0dmg Storm:3.5
-  ▸ Party dmg: 52.2 (cum: 52.2)  Root Limbs 1/5. Impact 1.
-MONSTER (580HP 27STA): Spore Seeding → GS/Ham Poisoned (55% each).
-  Tendrils ×3: GS(adv,Exposed) 14.7 + Ham 12.0 + Bow 9.8 = 36.5 to party
-  ▸ STA: 27→20
-STATE: Mon 527.8 STA20 | GS 97hp sta9 M2 Poisoned | Ham 92hp sta10 I1
-       Bow 86hp sta9 F1 | Con 104hp sta10
+HUNTERS: Flute Entropy(Fast)+ResonantStrike(0STA Adaptable) 12.3dmg STA10
+         Arb Aim+Fire(1STA) 27.6dmg STA9
+         S&S Aggressive(1STA) 16.5dmg STA9
+         Claws REND(2STA) 3atk×70%=36.8dmg STA8 | Rush→2, Bleeding×2
+  ▸ Party dmg: 93.2 (cum: 93.2)  Conditions: Bleeding ×2 on Morthyl
+
+MONSTER (580HP, STA 26+2 Fungal=28) — Root Form:
+  Spore Seeding (4STA): melee zone. Claws Poisoned (45%).
+  Tendrils → Flute (1STA): 64% after Dodge → 9.6exp, pull. Flute STA9.
+  Tendrils → Arbalest (1STA): 80% → 12.0exp, pull.
+  Root Slam → S&S+Claws (2STA): S&S 12.4exp, Claws 6.8exp.
+  ▸ Monster dmg: 40.8 to party | Bleed tick: 7.0
+  STA: 28 − 8 = 20
+
+STATE: Mon HP 480/580 STA 20 Bleed×2
+  Flute 78/88 STA9 | Arb 84/96 STA9 | S&S 84/96 STA9 | Claws 81/88 STA8 R2
 
 ── R2 ────────────────────────────────────────────────────────
-HUNTERS: GS M2 basic 15.5→M3 | Ham CS-RootLimbs 15.8 I2 | Bow 14.0 F2
-         Con attack+proj 15.8 Storm:3.5
-  ▸ Party dmg: 64.6 (cum: 116.8)  Root Limbs 2/5. Impact 2.
-MONSTER (463.2HP 21STA): Tendrils ×3 (GS 12.8, Ham 12.0, Bow 9.8)
-  + Root Slam on GS/Ham cluster (22.5 each at 75% fail = 16.9 each)
-  ▸ Dmg: GS 29.7, Ham 28.9, Bow 9.8. STA: 21→16
-STATE: Mon 398.6 STA16 | GS 67hp sta7 M3 | Ham 63hp sta8 I2
-       Bow 76hp sta8 F2 | Con 104hp sta7
+HUNTERS: Flute Resonant(1STA) 12.3 STA8 | Arb Aim+Fire(1STA) 27.6 STA8
+         S&S Aggressive(1STA) 16.5 STA8
+         Claws Atk+Bonus(2STA) 19.6 STA6 | Rush→3+ (Bleeding on hits)
+         Bleeding stacks → 3 (cap)
+  ▸ Party dmg: 76.0 (cum: 169.2)
+  ★ Monster HP 404 < 406 (70%) → BEAR FORM TELL triggered
 
+MONSTER (404HP, STA 20+2=22) — Root Form TELL ROUND:
+  Bones shift. Reposition locked.
+  ★ FOREST SEIZURE (6STA, ONCE) — 30ft radius, DEX DC 17:
+    Flute: 65% fail → 14.3exp + Prone
+    S&S: 60% fail → 13.2exp + Prone
+    Claws: 30% fail → 6.6exp (Flowstep ignores Dense Root Terrain)
+  Tendrils → Arbalest (1STA): 80% → 12.0exp, pull.
+  Dense Root Terrain 2 rounds.
+  ▸ Monster dmg: 46.1 | Bleed tick: 10.5
+  STA: 22 − 7 = 15
+
+STATE: Mon HP 394/580 STA 15 Bleed×3 | BEAR FORM NEXT ROUND
+  Flute 54/88 STA7 PRONE | Arb 60/96 STA8 | S&S 58/96 STA8 PRONE
+  Claws 68/88 STA6 R3+
+```
+
+### Bear Form (R3–R6)
+
+```
 ── R3 ────────────────────────────────────────────────────────
-HUNTERS: GS M3 basic 19.5 | Ham CS-RootLimbs 15.8+9break=24.8 I3→STUN
-         Bow 14.0 F3 | Con 15.8 Storm:3.5
-  ▸ Party dmg: 77.6 (cum: 194.4)
-  ★ ROOT LIMBS BROKEN (T3 Overwhelming Force: 2+2+3=7 progress, threshold 5)
-  ★ MORTHYL STUNNED (Impact 3). Impact resets to 0.
-MONSTER STUNNED — skips turn. Fungal +1. STA: 16→17. Storm: 3.5.
-STATE: Mon 381.0 STA17 STUNNED | GS 67hp sta5 M3 | Ham 63hp sta6 I0
-       Bow 76hp sta7 F3 | Con 104hp sta4
+★ BEAR FORM ERUPTS. AR 19 (eff 18), 30ft move, 3 atk/turn.
+  Claimed Ground stays at anchor.
+
+HUNTERS: Flute Stand(2STA)+Resonant(1STA) 12.3dmg STA4
+         Arb Aim+Fire(1STA) 27.6 STA7
+         S&S Stand(2STA)+Aggressive(1STA) 16.5 STA5
+         Claws Atk+Bonus(2STA) 19.6 STA4 | Rush building→~5
+  ▸ Party dmg: 76.0 (cum: 245.2)
+
+MONSTER (394HP, STA 15+2=17) — Bear Form opener:
+  Gore Charge → S&S (2STA): 75%, Parry → 70% hit, 36.75% negated.
+    Through: 33%×24.5 = 8.2exp. Riposte: 4.3 to Morthyl. S&S STA4.
+  Claw Strike → Flute (1STA): 80%, Dodge → 64% → 13.8exp. Flute STA3.
+  Claw Strike → Claws (1STA): 70%, Dodge → 49% → 10.5exp. Claws STA3.
+  ▸ Monster dmg: 32.5 | Bleed tick: 10.5
+  STA: 17 − 4 = 13
+
+STATE: Mon HP 303/580 STA 13 Bleed×3
+  Flute 40/88 STA3 | Arb 60/96 STA7 | S&S 50/96 STA4 | Claws 57/88 STA3
 
 ── R4 ────────────────────────────────────────────────────────
-Morthyl Stunned — adv on all attacks.
-HUNTERS: GS M3+adv basic 26.3 sta3 | Ham TITAN'S WRATH CHARGE (4STA) sta2
-         Bow FDS AIM (4STA, Concentration) sta3 | Con BREATHE +4→sta7
-  ▸ Party dmg: 26.3 (cum: 220.7)
-MONSTER STUNNED — skips. Fungal +1. STA: 17→18.
-  ★ BEAR FORM TRIGGER: HP 359.3 ≤ 377. Tell round. Transition R5.
-STATE: Mon 359.3 STA18 Bear-tell | GS 67hp sta3 M3 | Ham 63hp sta2 TW-loaded
-       Bow 76hp sta3 FDS-loaded | Con 104hp sta7
-```
+HUNTERS: Flute HEALING HYMN (2STA) → all allies +11.5 HP. STA1. 0dmg.
+         Arb Aim+Fire(1STA) 27.6 STA6
+         S&S Aggressive(1STA) 16.5 STA3
+         Claws Atk+Bonus(2STA) 19.6 STA1
+  ▸ Party dmg: 63.7 (cum: 308.9)  Healing: +11.5 each
 
-### Bear Form (R5–R8)
+MONSTER (303HP, STA 13, NOT at anchor — chasing, no Fungal):
+  Claw → Arbalest (1STA): 80% → 17.2exp.
+  Shoulder Check → S&S (1STA): 75%, Parry → 33% through → 6.3exp.
+    Riposte: 4.3 to Morthyl. S&S STA2.
+  Claw → Flute (1STA): 80%, Flute can't Dodge (STA1) → 17.2exp.
+  ▸ Monster dmg: 40.7 | Bleed tick: 10.5
+  STA: 13 − 3 = 10
 
-```
+STATE: Mon HP 224/580 STA 10 Bleed×3
+  Flute 35/88 STA1 ⚠ | Arb 54/96 STA6 | S&S 55/96 STA2 | Claws 52/88 STA1
+  ★ Monster exploits Flute at STA1 with no Dodge — 80% raw hit
+
 ── R5 ────────────────────────────────────────────────────────
-★ BEAR FORM ACTIVATES. AR 18, 30ft move, 3 attacks/turn.
+HUNTERS: Flute BREATHE +4→STA5 0dmg | Arb Aim+Fire(1STA) 27.6 STA5
+         S&S BREATHE +4→STA6 0dmg | Claws BREATHE +4→STA5 0dmg Rush→0
+  ▸ Party dmg: 27.6 (cum: 336.5)
+  ⚠ TRIPLE BREATHING — only Arbalest fires. Monster's best window.
 
-HUNTERS (CAPSTONE BURST TURN):
-  GS M3 basic(2STA Poison) 19.5 sta1 | ★ Ham TITAN'S WRATH RELEASE 25.6 → STUN ★
-  ★ Bow FLYING DRAKE... wait, FDS loaded but Rootbound Colossus negates Prone.
-    Pure damage: adv 87.75% × 35.0 = 30.7 ★ | Con attack+proj 15.8 Storm:3.5
-  ▸ Party dmg: 95.1 (cum: 315.8)  ★ Morthyl STUNNED (TW 3 Impact). ★
-  TW launch+Prone negated by Rootbound Colossus. Stun applies (Impact threshold).
-MONSTER STUNNED. At anchor → Fungal +1. STA: 18→19. Storm: 3.5.
-STATE: Mon 260.7 STA19 STUNNED | GS 67hp sta1 ★LOW★ | Ham 63hp sta2 WU-locked
-       Bow 76hp sta3 F0 | Con 104hp sta4
+MONSTER (224HP, STA 10+2 Fungal=12, returns to anchor):
+  Body Slam (2STA): S&S 60% fail → 14.7exp +Prone. Claws 30% fail → 7.4exp.
+  Claw → Arbalest (1STA): 80% → 17.2exp.
+  Shoulder Check → Flute (1STA): 80%, Dodge → 64% → 12.2exp. Flute STA4.
+  ▸ Monster dmg: 51.5 ★ HIGHEST SINGLE ROUND | Bleed tick: 10.5
+  STA: 12 − 4 = 8
+
+STATE: Mon HP 186/580 STA 8 Bleed×3
+  Flute 23/88 STA4 ⚠ | Arb 37/96 STA5 | S&S 40/96 STA6 PRONE | Claws 45/88 STA5
 
 ── R6 ────────────────────────────────────────────────────────
-Stun ending. Hunters still have advantage this round.
-HUNTERS: GS BREATHE +4→sta5 | Ham BREATHE +4→sta6 | Bow adv basic 18.9 F1 sta2
-         Con adv attack+proj 20.5 Storm:3.5 sta1
-  ▸ Party dmg: 42.9 (cum: 358.7)
-MONSTER (217.8HP, STA20 +1 Fungal if at anchor):
-  Gore Charge (2STA) → Bow: 65% hit. Bow Dodges (1STA→sta1): dis 42.25% × 24.5 = 10.4
-  Claw ×2 (2STA) → GS: 1st Claw GS Parry(1STA→sta4): 50% negate, 50%×17.2=8.6
-    2nd Claw: 85% × 21.5 = 18.3. Total to GS: 26.9. GS 67→40hp.
-  Bear moved 30ft toward Bow → AWAY from anchor. Kite successful!
-  STA: 20−4 = 16. No Fungal next turn.
-STATE: Mon 214.1 STA16 (off anchor) | GS 40hp sta4 M3 | Ham 63hp sta6
-       Bow 65.6hp sta1 F0 | Con 104hp sta1
+HUNTERS: ★ Flute SHATTERING NOTE (3STA) — CON DC 21 → 60% STUN ★
+           16.4exp dmg. STA1.
+         Arb Aim+Fire(1STA) 27.6 STA4
+         S&S Stand(2STA)+Aggressive(1STA) 16.5 STA3
+         Claws Atk+Bonus(2STA) 19.6 STA3 | Rush→~1.4
+  ▸ Party dmg: 80.1 (cum: 416.6)
+  ★ Monster HP 106 < 174 (30%) → SIEGE TELL triggered
+  ★ 60% Morthyl STUNNED by Shattering Note — skip turn!
 
+MONSTER (106HP, STA 8+2=10) — Bear Form TELL ROUND:
+  60% STUNNED: skip turn entirely. 0 damage.
+  40% path: Claw×2 + Shoulder → ~38exp. Weighted: 15.2exp.
+  ▸ Weighted monster dmg: 15.2 | Bleed tick: 10.5
+  ★ Shattering Note Stun saved party ~38 HP of damage
+  STA: ~9 (weighted)
+
+STATE: Mon HP 94/580 STA 9 Bleed×3 | SIEGE FORM NEXT ROUND
+  Flute 23/88 STA1 ⚠ | Arb 37/96 STA4 | S&S 40/96 STA3 | Claws 45/88 STA3
+  ★ PIVOTAL MOMENT — Stun denied Bear's final offensive round
+```
+
+### Siege Form (R7–R9)
+
+```
 ── R7 ────────────────────────────────────────────────────────
-HUNTERS: GS M3 basic 19.5 sta2 | Ham CS-BearSkull(−2) 13.5 sta5 BearSkull 2/4 I1
-         Bow BREATHE +4→sta5 F1 | Con BREATHE +3→sta4
-  ▸ Party dmg: 33.0 (cum: 391.7)
-MONSTER (181.1HP STA16, no Fungal):
-  Claw ×2 → GS: Parry 1st (8.6), 2nd raw (18.3) = 26.9. GS 40→13hp ★CRITICAL★
-  Shoulder Check → Ham: 80% × 19.0 = 15.2. STR DC17: 40% fail → push+STA loss.
-  Ham: 63→47.8hp. STA: 16−3 = 13.
-STATE: Mon 181.1 STA13 | GS 13hp sta1 ★DYING★ | Ham 47.8hp sta4-5 I1
-       Bow 65.6hp sta5 F1 | Con 104hp sta4
+★ SIEGE FORM ASSEMBLES. AR 22 (eff 21 w/Entropy). Bone Wall active.
+  Claimed Ground re-expands. Monster STA 9+2=11. ★ HEALTHY ★
+
+HUNTERS: Flute BREATHE +4→STA5 0dmg
+         Arb Aim+Fire(1STA) vs effAR18: 75%. Bone Wall: 0.75×(29−8)=15.8 STA3
+         S&S Aggressive(1STA) vs effAR21: 55%×23.5=12.9 STA2
+         Claws Atk+Bonus(2STA) vs effAR21: 55%×28=15.4 STA1
+  ▸ Party dmg: 44.1 (cum: 460.7) | Bleed tick: 10.5
+
+MONSTER (94HP→39.4, STA 11):
+  Biomass = 0 → Rot Cascade costs 5 STA, only 22 avg. NOT WORTH FIRING.
+  Ossified Strike → S&S (2STA): 75%, S&S can't Parry (STA2).
+    22.5exp. CON DC 18 → 41% Stun on S&S.
+  Marrow Barrage → Flute+Arb (2STA): DEX DC 16.
+    Flute 60% fail → 9.0exp + Poisoned. Arb 60% → 9.0exp.
+  ▸ Monster dmg: 40.5 | Bone Wall absorbed 8 dmg on Arbalest hit
+  STA: 11 − 4 = 7 ★ STILL OPERATIONAL ★
+
+STATE: Mon HP 39/580 STA 7 Bleed×3
+  Flute 14/88 STA5 ⚠⚠ | Arb 28/96 STA3 | S&S 18/96 STA2 ⚠⚠ | Claws 45/88 STA1
+  ★ Monster STA 7: Bone Wall + Ossified + Marrow all still available
+  ★ Party HP critical across board. S&S one hit from death.
 
 ── R8 ────────────────────────────────────────────────────────
-★ SIEGE TRIGGER: 181.1 ≤ 203. Bear decelerates. Final Bear attack round.
+HUNTERS: ★ Flute REQUIEM OF THE WILD (4STA) — THE FIGHT-ENDER ★
+           Allies +2 atk/saves, heal 1d6/turn. Enemies disadv atk, 2d6 psychic.
+           Entropy Song persists. STA1. 0 direct dmg.
+         Arb Aim+Fire(1STA) w/Requiem+2: d20+15 vs effAR18 → 90%.
+           Bone Wall: 0.90×(29−8)=18.9exp. STA2.
+         S&S BREATHE +4→STA6 0dmg
+         Claws BREATHE +4→STA5 0dmg
+  ▸ Party dmg: 18.9 + Requiem psychic 7.0 = 25.9 (cum: 486.6)
+  Monster HP: 39 − 18.9 − 7 = 13.1. Barely alive.
 
-HUNTERS: GS BREATHE +4→sta5 M3 held | ★ Ham CS-BearSkull 13.5+11break=24.5 ★
-  ★ BEAR SKULL BROKEN (T3 OF: 2+2+2+3=9 progress, threshold 4). Siege AR → 20. ★
-  Bow basic 14.0 F2 sta4 | Con attack+proj 15.8 Storm:3.5 sta1
-  ▸ Party dmg: 57.8 (cum: 449.5)
-MONSTER (123.3HP STA13, transition round):
-  Claw → GS (13hp): 85% hit. GS Parry: 50% negate. ★ 50% GS survives. ★
-  Claw/Shoulder → Ham: ~17.2. Ham 47.8→30.6hp.
-  STA: 13−3 = 10. Moving toward anchor.
-STATE: Mon 123.3 STA10 → SIEGE R9 | GS 50% alive at 13hp / 50% DOWN
-       Ham ~31hp sta3 I2 | Bow 65.6hp sta4 F2 | Con 104hp sta1
-       Bear Skull BROKEN → Siege AR 20.
-```
+MONSTER (13.1HP, STA 7+2=9) — Siege, Requiem active:
+  ★ All ATTACK ROLLS at DISADVANTAGE (Requiem)
+  Ossified → S&S (2STA): disadv (0.75)²=56% → 16.9exp. 31% Stun.
+  Marrow Barrage → Flute+Arb (2STA): saves NOT affected by Requiem disadv.
+    Flute 9.0exp. Arb 9.0exp.
+  ▸ Monster dmg: 34.9 (reduced by Requiem disadvantage on Ossified)
+  Bleed tick end of monster turn: 10.5 → Monster HP 13.1 − 10.5 = 2.6
+  STA: 9 − 4 = 5
 
-### Siege Form (R9–R15)
+STATE: Mon HP 2.6/580 STA 5 Bleed×3 | ★ BARELY ALIVE ★
+  Requiem heals +3.5 each.
+  Flute 8/88 STA1 ⚠⚠⚠ | Arb 22/96 STA2 | S&S 5/96 STA6 ⚠⚠⚠ | Claws 49/88 STA5
 
-```
 ── R9 ────────────────────────────────────────────────────────
-★ SIEGE FORM. AR 20. Skull Mask intact. Bone Wall active. ★
-GS modeled as alive (Parry saved R8).
+  Requiem continues (round 2/3). Heal +3.5 each.
 
-HUNTERS: GS Guarded Stance (0STA prep, +1AR, free Parry) +2STA→sta6 0dmg
-  Ham CS-SkullMask(−2) 11.3 sta2 SkullMask 2/4 | Bow Signal Arrow 11.8 F3 sta3
-  Con BREATHE +3→sta4 0dmg
-  ▸ Party dmg: 19.1 after Bone Wall (cum: 468.6)
-MONSTER (104.2HP STA11):
-  ★ Rot Cascade held — Biomass 0, low value, saves STA. ★
-  Ossified Strike → GS: Parry (0STA via Guarded Stance) 50% negate.
-    50% hit: 30dmg. GS at 13hp = likely down if hit. 50% survives.
-  Marrow Barrage → Ham/Bow: Ham 75%×15=11.3 Poisoned. Bow 35%×15=5.3.
-  Ossified → Ham: 80%×30=24. CON DC18: 65% Stun. Ham 31→7hp.
-  STA: 11−6 = 5. Rot Cascade now = exactly remaining pool.
-STATE: Mon 96.7 STA5 | GS 13hp ★coin flip★ | Ham ~7hp sta2 65% Stunned
-       Bow 60hp sta3 F3 Poisoned | Con 104hp sta4
+HUNTERS: Flute maintaining Requiem, no Actions. 0dmg. Heals to 11.5.
+         Arb BREATHE +4→STA6 0dmg. Heals to 25.5.
+         S&S Aggressive(1STA) w/Requiem+2: d20+13 vs effAR21 → 65%.
+           0.65×23.5 = 15.3exp. STA5. Heals to 8.5.
+         Claws Atk+Bonus(2STA) w/Requiem+2: 65%×28 = 18.2exp. STA3.
+           Heals to 52.5.
+  ▸ Party dmg: 33.5. Monster HP 2.6 − 33.5 = deeply negative.
 
-── R10 ───────────────────────────────────────────────────────
-HUNTERS: GS retreats, BREATHE +4→sta10 | Ham Stunned/BREATHE → 0dmg
-  Bow Power Shot at F3 (2STA, adv, same-turn) 23.1 sta1
-  Con attack+proj 13.5 Storm:3.5 sta1
-  ▸ Party dmg: 33.7 after Bone Wall (cum: 502.3)
-MONSTER (63.0HP STA6):
-  ★ BELOW 15% HP. DESPERATION MODE. ★
-  ★ ROT CASCADE FIRES ★ (5STA). 0 Biomass = 4d10 avg 22.
-  CON DC18 — 40ft radius:
-    GS (65% fail): 22dmg at 13hp → ★ GS DOWN ★
-    Ham (65% fail): 22dmg. Survivable at ~7hp → Ham at −15 → ★ HAM at risk ★
-    Bow (70% fail): 22dmg. 60→38hp. Poisoned.
-    Con (65% fail): 22dmg. 104→82hp. Poisoned.
-  STA: 6−5 = 1.
-STATE: Mon 63.0 STA1 | ★ GS DOWN ★ | Ham DOWN (R11 Ossified)
-       Bow 38hp sta1 Poisoned | Con 82hp sta1 Poisoned
-
-── R11 ───────────────────────────────────────────────────────
-3 hunters... then Ossified Strike → Ham.
-HUNTERS: Ham BREATHE (if alive) | Bow BREATHE +4→sta5 | Con BREATHE +3→sta4
-  ▸ Party dmg: ~3.0 (cum: 505.3)
-MONSTER (60HP STA2+1=3): Ossified → Ham: 80%×30=24. ★ HAM DOWN ★
-  STA: 3−2 = 1.
-STATE: Mon 60.0 STA1 | GS DOWN | HAM DOWN | Bow 38hp sta5 | Con 82hp sta4
-
-── R12 ───────────────────────────────────────────────────────
-2 hunters remain.
-HUNTERS: Bow basic(2STA Poison) 12.4 sta3 F2
-  ★ Con CATACLYSM COLLAPSE (4STA) → 60%×31.5=18.9 + 60% STUN ★ Con EXHAUSTED.
-  ▸ Party dmg: 26.9 after Bone Wall (cum: 532.2)
-MONSTER: 60% Stunned (skip), 40% Ossified → Bow (Dodge: 12.7 exp).
-STATE: Mon 33.1 STA0-2 | Bow ~33hp sta2 | Con 0sta (recovers R13)
-
-── R13 ───────────────────────────────────────────────────────
-HUNTERS: Bow basic 8.0 (after Bone Wall). Con recovers (+4sta).
-  ▸ Party dmg: 8.0 (cum: 540.2)
-MONSTER: If STA3 → Ossified Bow (adv if Exhausted) 26.3 exp. Bow at ~7hp.
-STATE: Mon 25.1 | Bow ~7hp | Con sta4
-
-── R14–15 ────────────────────────────────────────────────────
-Bow + Con both attack. 8.0 + 13.5 = 21.5/round.
-Mon 25.1 → 3.6 → 0.
-
-★ PARTY VICTORY R14–15. ★
+  ════════════════════════════════════════════════════════════
+  ★ MORTHYL FALLS — PARTY VICTORY, ROUND 9 (Hunter Phase) ★
+  ════════════════════════════════════════════════════════════
 ```
 
 ---
@@ -432,62 +484,121 @@ Mon 25.1 → 3.6 → 0.
 ## Result
 
 ```
-═══ PARTY WINS R14–15 (Pyrrhic Victory) ═══
+═══ PARTY WINS R9 — Tight Victory ═══
 
 Mon HP:      0 / 580
-Survivors:   Bow (~7 HP), Conduit (~82 HP)
-Casualties:  GS (R10 — Rot Cascade), Ham (R11 — Ossified Strike)
-Breaths:     11 total (GS 3, Ham 3, Bow 2, Con 3)
-Parts broken: Root Limbs R3, Bear Skull R8
-Mon STA→0:   ~R13
-Kill round:  14–15
-Party DPR:   ~41 avg (575 total / 14 rounds)
-Monster DPR: ~33 avg
+Survivors:   All 4 alive
+Closest:     S&S at 5 HP (5%), Flute at 8 HP (9%)
+Breaths:     7 total (Flute 2, S&S 2, Claws 3)
+Parts broken: None (DPS focus)
+Mon STA→0:   NEVER (STA 5 at death) ★
+Kill round:  9
+Party DPR:   64.3 avg (580 total / 9 rounds)
+Monster DPR: 38.1 avg
 Biomass:     0 (all Consume denied)
-STA pressure: HIGH
-HP pressure:  CRITICAL (2 of 4 downed)
+Rot Cascade: Never fired (Biomass 0, too costly at 5 STA)
+Bone Wall:   Active R7–R9 (3 rounds, 24 dmg absorbed)
+STA pressure: HIGH (7 Breaths, triple-Breath R5)
+HP pressure:  CRITICAL (S&S 5 HP, Flute 8 HP at lowest)
 ```
+
+---
+
+## Comparison: Pre-Tuning vs Post-Tuning
+
+| Metric | Pre-Tuning | Post-Tuning | Verdict |
+|--------|-----------|-------------|---------|
+| Kill round | R8 | R9 | +1 round ✓ |
+| Bear Form rounds | 2 | **3** | ✓ FIXED |
+| Monster exhausts? | R7 (Siege) | **NEVER** (STA 5 at death) | ✓ FIXED |
+| Bone Wall rounds | 1 | **3** | ✓ Real threat |
+| Breathing Turns | 5 | **7** | More STA pressure ✓ |
+| Lowest hunter HP | 20 (Flute 23%) | **5 (S&S 5%)** | Much tighter ✓ |
+| Flute lowest HP | 20 (23%) | **8 (9%)** | Still fragile but survived |
+| Party DPR | 72.5 | **64.3** | −11% (AR 19 working) ✓ |
+| Monster DPR | 36.8 | **38.1** | +4% (more active rounds) |
+| Rot Cascade | Never | Never (Bio 0) | Design question, not bug |
+| Parts targeted | None | None | Siege breaks still marginal |
 
 ---
 
 ## Flags
 
-1. **Skull Mask not broken before Rot Cascade.** Party prioritized Root Limbs and Bear Skull. Cascade fired R10 at 0 Biomass (22 avg). Killed GS at 13 HP. At 3+ Biomass (43 avg), would have wiped 2-3 hunters.
+1. **Bear Form puzzle now executes.** 3 full rounds of Bear (R3–R5): Gore Charge opener, Shoulder Check displacement, Body Slam at anchor, Fungal recovery on return. The kiting/anchor dynamic plays out properly.
 
-2. **Spore Seeding Poisoned persisted entire fight.** No treatment modeled. +1 STA per action drained ~12-15 extra STA from GS/Ham across the fight. The #1 STA pressure source — more impactful than Claimed Ground.
+2. **Monster never exhausted.** Fungal +2 STA/turn kept Morthyl operational throughout Siege. STA 5 at death — Bone Wall, Ossified Strike, and Marrow Barrage all online until the end. The punching-bag problem is resolved.
 
-3. **GS Exposed from Cleave caused near-lethal spike R1.** Tendril at advantage (97.75% hit) dealt 14.7 to GS. Compounded with later pressure, GS never recovered and died to Cascade.
+3. **Shattering Note Stun was the fight's turning point (R6).** 60% Stun at 3 STA. Without it, Bear's final round deals ~38 extra damage and the fight extends to R10 with probable S&S death. The Stun is earned (costly STA spend, 60% chance), not free.
 
-4. **Hammer had no reaction.** Heavy armor + no Guard/Parry = zero defense. Absorbed every hit at full value. Trolian Anchored Frame (+1 AR) was the only mitigation.
+4. **Triple Breathing Turn in R5 was Morthyl's best window.** Only Arbalest fired. Monster dealt 51.5 dmg — highest single round. This is correct: punishing simultaneous Breathing is the fight's STA pressure mechanic working as designed.
 
-5. **Conduit STA cycling was the tightest constraint.** 3 STA/turn burn forced Breathing every 3rd round. Dealt 0 damage on 5 of 15 rounds. Despite this, healthiest survivor (82 HP) because of range.
+5. **Rot Cascade still never fires against competent parties (Biomass 0).** With the free-cast at Biomass ≥ 3, the mechanic is correctly gated by party skill. Seeding 1–2 pre-existing corpses in the arena (per Encounter Packaging) gives Morthyl a realistic path to Biomass 3 without requiring a hunter death.
 
-6. **Titan's Wrath launch + Prone riders wasted.** Rootbound Colossus immune to push/Prone. TW's 15 ft launch and Prone did nothing. 3 Impact → Stun was the only value.
+6. **Part breaks not targeted — DPS still faster in Siege.** Root Form breaks (3 hits Open) are now achievable in 2 rounds. Siege Skull Mask (3 hits Standard) takes ~5 rounds of Called Shots vs a 3-round Siege phase — still not worth it. However: the reduced thresholds make Root Form breaks a realistic tactical choice for parties with a dedicated breaker.
 
-7. **Flying Drake Shot never fired.** 4 STA cost unaffordable when F3 was available. Power Shot at F3 (2 STA same-turn) was always better.
+7. **Performance Ward (+2 AR on Flute) reduced incoming damage by ~30%.** Flute went from 95%/90% hit rate to 80%/64%. Still the squishiest at 88 HP, but no longer trivially easy to hit. Survived at 8 HP — tight but functional.
 
-8. **Executioner's Strike never fired.** No safe 2-turn window. R4 Stun was the only option but GS at STA 3 couldn't afford 4 STA.
+8. **S&S nearly died (5 HP, R8).** Ossified Strike without Parry (STA too low) dealt 22.5 expected. At 18 HP entering R8, one clean hit kills. The CON DC 18 Stun rider makes Ossified Strike appropriately terrifying. Working as intended.
 
-9. **Bear Form kite worked.** 3 rounds off-anchor denied ~3 STA recovery. Bear entered Siege at STA 10 not 13.
+9. **Arbalest was the DPR anchor.** Contributed 27.6/round consistently through Root and Bear (95% hit with AP). In Siege, still highest single-target damage (18.9 after Bone Wall). The Arbalest's reliability carried the fight when 3 hunters were Breathing.
 
-10. **0 Biomass was fight-defining.** Rot Cascade at 0 Bio (22 avg) vs 6 Bio (64 avg) = 42 damage difference per hunter × 4 targets = 168 total damage avoided.
+10. **0 Biomass remains fight-defining.** At Biomass 3 (one Consume), Rot Cascade fires for free at avg 43 — enough to kill both Flute and S&S at their R7 HP levels. Biomass denial is the party's most important strategic decision.
 
 ---
 
-## Tuning Suggestions
+## Tuning Verdict
 
-1. **Fight length 14-15 rounds — on target.** Design note says minimum 10 rounds. Three forms each got 4+ rounds. HP 580 is correct for optimized 4P.
+**Ship these changes.** The fight is well-calibrated for an optimized T5 Master-prof party:
+- 9 rounds, all 3 forms execute their identity
+- Monster never becomes a punching bag
+- Two hunters within 1 hit of death — genuinely close
+- Clear tactical pivot (Shattering Note Stun R6) that rewards smart play
+- STA pressure creates meaningful Breathing Turn windows the monster exploits
 
-2. **Spore Seeding Poisoned needs counterplay.** Persists until treatment with no healer = permanent STA tax. Suggestion: add 3-round duration, or let Breathing Turn clear it.
+**Remaining design questions (not tuning problems):**
+- Rot Cascade is a punishment-for-mistakes ability. Pre-seeded corpses provide a path to Biomass without requiring hunter death.
+- Siege Form part breaks remain marginal for DPS-focused parties. This may be acceptable — Siege is a race by design.
+- Apex Predator and Blood Frenzy never fire due to Rush resets from mandatory Breathing Turns. Claws' T4/T5 capstones need longer sustained-aggression windows to activate.
 
-3. **Storm Aspect STA drain is a false choice vs high-STA monsters.** Morthyl always takes 3.5 damage over 1 STA. Total Storm contribution: ~35 dmg across 10 rounds (6% of total). The "spend STA OR take damage" mechanic only pressures low-STA creatures.
+---
 
-4. **T5 capstones (Executioner, FDS) too expensive for STA-heavy fights.** 4 STA cost is prohibitive when Poisoned adds +1 per action and fights run 14+ rounds. Consider 3 STA at T5 proficiency, or "Master proficiency reduces technique STA cost by 1."
+## Sim #4 — HP 700 (Master-Prof 4P, EV Mode)
 
-5. **Titan's Guard (GS T3) should have been modeled.** Halve damage + counter > Parry's 50% negate in long fights. GS went from 112→0 HP across 10 rounds of cumulative 85%-hit Tendrils and Claws. Titan's Guard would have extended GS survival by ~3 rounds.
+**Changes tested vs Sim #3:** HP raised to 700 (Master-prof ×24 multiplier per tier-calibration.md). All Sim #3 tuning retained. Claws updated: Rush decay on Breathing (−2, not reset), T3 bonus Claw 0 STA, Blood Frenzy 2 STA, Apex requires Blood Frenzy active.
 
-6. **Bear Skull break before Siege was the fight-deciding choice.** AR 22 (unbroken) would drop party hit rates to 45-50% and extend Siege by 3-4 rounds — likely a wipe with 2 hunters down. Players who ignore Bear Skull face a fortress. Players who invest get AR 20. Good puzzle design.
+**Result:** Party Victory Round 6 — 2–3 rounds short of 8–9 target.
 
-7. **0-Biomass vs 4-Biomass is approximately 2 difficulty tiers.** A downed hunter in Claimed Ground gives 2 Biomass per Consume. Two Consumes = Bear force-transition + 38 HP healed + Cascade gains +8d6 (avg +28). This monster punishes carelessness harder than any other design in the system.
+```
+Kill round:     6
+Form timeline:  Root R1–R2 | Bear R3–R4 | Siege R5–R6
+Breathing Turns: 1 (Claws R5, STA 2)
+Party avg DPR:  ~117/round
+Rot Cascade:    Never (0 Biomass, behavior gate unmet)
+Counter-Thrust: 1 trigger (R4 Shoulder Check vs S&S Defensive)
+```
 
-8. **Rot Cascade at 0 Biomass still carries Poisoned 2 turns + Rooted.** Denying Biomass reduces damage but the condition riders alone are devastating. Consider: 0-Biomass Cascade drops the Poisoned rider to reward perfect Biomass denial.
+**Damage breakdown (critical flags):**
+
+| Action | Round | EV Damage | % of 700 HP |
+|--------|-------|-----------|-------------|
+| Godslayer Shot (auto-crit ×4) | R2 | 216.7 | 31.0% |
+| Apex Predator | R6 | 143.6 | 20.5% |
+| Combined ultimates | — | 360.3 | **51.5%** |
+
+**Root causes of short fight:**
+- Godslayer ×4 crit + Patient Hunter 1-Aim at T5 = 217 EV every 2 rounds (31% HP spike)
+- Bear Form 2 rounds only (window 280 HP ÷ 117 DPR); Maul+Leech Grasp puzzle never developed
+- Rot Cascade never fired in any of 4 sims at 0 Biomass — behavior gate was hard-locked to Biomass ≥ 3
+
+---
+
+## Changes Applied After Sim #4
+
+| File | Change | Reason |
+|------|--------|--------|
+| `morthyl.md` | HP 700 → **875** | 117 avg DPR at 700 resolves in 6 rounds; 875 targets 7–8 rounds post-Godslayer nerf |
+| `morthyl.md` | Siege behavior: Rot Cascade fires if **STA ≥ 5** (removed Biomass ≥ 3 gate) | Biomass denial trivially locked out the fight's climactic ability all 4 sims |
+| `arbalest.astro` | Godslayer On Crit: ×4 → **×3** | Auto-crit ×4 was producing 31% HP in one action every 2 rounds |
+| `claws.astro` | Apex Predator: 5 Rush → **5 Rush + 2 STA** | No STA cost meant Apex fired from STA 2 with no resource tension |
+
+**Projected Sim #5 outcome:** ~100/round avg DPR (Godslayer ×3 drops to ~163 EV in R2). At 875 HP: 8–9 rounds. Rot Cascade fires in Siege regardless of Biomass. Apex costs 2 additional STA — Claws needs STA 4+ entering the Apex round (delays by ~1 round vs current, or requires one fewer Breathing Turn before R6).

@@ -239,6 +239,20 @@ Use these when all hunters are running synergized stat builds (Background + Weap
 
 > Derived from simulation: Hollowmoth CON 5, T1 4P optimized → validated at HP 115. Formula: (115 − TierBase 15) ÷ CON 5 = **×20**. Multiplier scaling between party sizes mirrors the median spread (±2 per player step).
 
+**Party Size Multipliers — Master Party:**
+
+Use these when hunters have Master proficiency (+4) in their weapons AND synergized stat builds. Master proficiency adds ~15% effective DPR over Trained through higher hit rates and Save DCs. These multipliers extend fight duration to compensate.
+
+| Party Size | Multiplier |
+|------------|------------|
+| 1 Player | ×18 |
+| 2 Players | ×20 |
+| 3 Players | ×22 |
+| 4 Players | ×24 |
+| 5 Players | ×26 |
+
+> Derived from simulation: Morthyl CON 16, T5 4P Master-optimized → party DPR ~87/round at Trained-optimized HP (580). Fight resolved in 6-7 rounds vs 10-round design target. ×24 multiplier extends to 8-9 rounds. Multiplier scaling: +4 per step over Optimized (matching the +2 proficiency gap).
+
 **Tier Base Values:**
 
 | Tier | TierBase |
