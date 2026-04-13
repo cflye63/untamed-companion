@@ -84,7 +84,7 @@ Use this starting array (before any bonuses), distributed optimally for the weap
 | Wand | INT | INS | — |
 | Conduit | INS | CON | — |
 | Hunting Flute | CHA | INS | — |
-| Boomerang | DEX | INS | — |
+| Boomerang | INS | DEX | — |
 
 ### 3B — Apply Bonuses (in order)
 
