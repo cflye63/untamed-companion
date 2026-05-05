@@ -893,6 +893,36 @@
 							</div>
 						</div>
 					</section>
+
+					<!-- PROGRESSION -->
+					<section class="creation-section progression-section">
+						<div class="section-header">
+							<div class="section-number">→</div>
+							<h2>Progression & Advancement</h2>
+						</div>
+
+						<p class="section-intro">As your Hunter Rank grows, you'll unlock new abilities. These systems shape your build over time.</p>
+
+						<div class="progression-grid">
+							<a href="/character/stats-skills" class="progression-card">
+								<span class="prog-icon">📊</span>
+								<h3>Stats & Skills</h3>
+								<p>The six core stats and their associated skills — the foundation of every roll.</p>
+							</a>
+
+							<a href="/character/specializations" class="progression-card">
+								<span class="prog-icon">⚔️</span>
+								<h3>Specializations</h3>
+								<p>Major build-defining upgrades earned every 10 Hunter Ranks. 7 paths with 3 ranks each.</p>
+							</a>
+
+							<a href="/character/talents" class="progression-card">
+								<span class="prog-icon">✨</span>
+								<h3>Talents</h3>
+								<p>Small passives and ability upgrades — choose 1 every 5 Hunter Ranks (max 5).</p>
+							</a>
+						</div>
+					</section>
 				</article>
 			</div>
 		</main>
@@ -1611,6 +1641,46 @@
 
 			.btn-secondary:hover {
 				background: var(--moss-green);
+			}
+
+			/* Progression Section */
+			.progression-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+				gap: 1.5rem;
+			}
+
+			.progression-card {
+				background: var(--forest-dark);
+				border: 2px solid var(--earth-brown);
+				border-radius: 12px;
+				padding: 1.75rem;
+				text-decoration: none;
+				transition: border-color 0.3s, transform 0.2s;
+				display: block;
+			}
+
+			.progression-card:hover {
+				border-color: var(--amber);
+				transform: translateY(-3px);
+			}
+
+			.prog-icon {
+				font-size: 2rem;
+				display: block;
+				margin-bottom: 0.75rem;
+			}
+
+			.progression-card h3 {
+				color: var(--amber);
+				font-size: 1.2rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.progression-card p {
+				color: var(--text-light);
+				font-size: 0.95rem;
+				opacity: 0.9;
 			}
 
 			/* Responsive */

@@ -1,0 +1,548 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Stats & Skills - Untamed</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character" class="active">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/character">← Back to Character Creation</a>
+				</div>
+
+				<header class="page-header">
+					<h1>Stats & Skills</h1>
+					<p class="subtitle">The six pillars of every hunter</p>
+				</header>
+
+				<article class="content">
+					<section class="intro-section">
+						<div class="formula-box">
+							<h3>Base Stats</h3>
+							<p>All hunters start with <strong>3 in every stat</strong> for a total of <strong>18 points</strong> before racial and background bonuses. You may freely redistribute these points as long as the total remains 18.</p>
+							<div class="formula">Stat Modifier = ⌊Stat ÷ 2⌋</div>
+							<p class="formula-note">Example: STR 7 → Modifier +3 | DEX 4 → Modifier +2</p>
+						</div>
+
+						<div class="proficiency-box">
+							<h3>Skill Proficiency</h3>
+							<table class="prof-table">
+								<thead>
+									<tr><th>Level</th><th>Bonus</th><th>Source</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>Novice</td><td>+0</td><td>Default for all skills</td></tr>
+									<tr><td>Trained</td><td>+2</td><td>From Backgrounds, Race, or Experience</td></tr>
+									<tr><td>Master</td><td>+4</td><td>Gained the same proficiency twice from different sources</td></tr>
+								</tbody>
+							</table>
+							<div class="formula">Skill Check = d20 + Stat Modifier + Proficiency</div>
+						</div>
+					</section>
+
+					<section class="stats-section">
+						<h2>Core Stats</h2>
+
+						<details class="stat-card" open>
+							<summary>
+								<div class="stat-header">
+									<span class="stat-icon">💪</span>
+									<h3>Strength (STR)</h3>
+									<span class="stat-desc">Physical power</span>
+								</div>
+							</summary>
+							<div class="stat-details">
+								<div class="skills-grid">
+									<div class="skill-item">
+										<h4>Grapple</h4>
+										<p>Holding or restraining a monster to prevent escape.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Heavy Trap Setup</h4>
+										<p>Deploying massive, weight-based traps (e.g., pitfall, reinforced net).</p>
+									</div>
+									<div class="skill-item">
+										<h4>Athletics</h4>
+										<p>Feats of strength like climbing, jumping, or swimming.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Brute Force</h4>
+										<p>Breaking objects, smashing through barriers, or overpowering enemies.</p>
+									</div>
+								</div>
+							</div>
+						</details>
+
+						<details class="stat-card">
+							<summary>
+								<div class="stat-header">
+									<span class="stat-icon">⚡</span>
+									<h3>Dexterity (DEX)</h3>
+									<span class="stat-desc">Speed and precision</span>
+								</div>
+							</summary>
+							<div class="stat-details">
+								<div class="skills-grid">
+									<div class="skill-item">
+										<h4>Stealth</h4>
+										<p>Moving quietly, remaining undetected.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Tool Handling</h4>
+										<p>Manipulating small tools, traps, or precision-based mechanics.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Acrobatics</h4>
+										<p>Dodging, flipping, balancing.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Deftness</h4>
+										<p>Performing precise movements like lockpicking or disarming traps.</p>
+									</div>
+								</div>
+							</div>
+						</details>
+
+						<details class="stat-card">
+							<summary>
+								<div class="stat-header">
+									<span class="stat-icon">🛡️</span>
+									<h3>Constitution (CON)</h3>
+									<span class="stat-desc">Endurance and toughness</span>
+								</div>
+							</summary>
+							<div class="stat-details">
+								<div class="con-note">
+									<p><strong>Constitution has no skill list.</strong></p>
+									<p>Use a CON check when the test is about enduring strain, pain, or sustained effort — not about technique or knowledge.</p>
+									<div class="formula">Roll: d20 + CON modifier (add Proficiency only if a feature says so)</div>
+								</div>
+								<div class="con-examples">
+									<h4>Common CON Checks</h4>
+									<ul>
+										<li>Holding breath beyond your timer</li>
+										<li>Marching through extreme heat or cold</li>
+										<li>Resisting poison or disease</li>
+										<li>Maintaining a Preparation while taking damage (DC 10)</li>
+										<li>Enduring pain to hold position</li>
+									</ul>
+								</div>
+							</div>
+						</details>
+
+						<details class="stat-card">
+							<summary>
+								<div class="stat-header">
+									<span class="stat-icon">📖</span>
+									<h3>Intelligence (INT)</h3>
+									<span class="stat-desc">Magical and analytical ability</span>
+								</div>
+							</summary>
+							<div class="stat-details">
+								<div class="skills-grid">
+									<div class="skill-item">
+										<h4>Knowledge</h4>
+										<p>Understanding monster weaknesses, lore, and behaviors.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Trap Engineering</h4>
+										<p>Crafting and modifying complex traps.</p>
+									</div>
+									<div class="skill-item">
+										<h4>First Aid</h4>
+										<p>Treating injuries, stabilizing allies.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Resource Identification</h4>
+										<p>Recognizing valuable materials, crafting ingredients.</p>
+									</div>
+								</div>
+							</div>
+						</details>
+
+						<details class="stat-card">
+							<summary>
+								<div class="stat-header">
+									<span class="stat-icon">👁️</span>
+									<h3>Instinct (INS)</h3>
+									<span class="stat-desc">Reflexes, battlefield awareness, and reaction speed</span>
+								</div>
+							</summary>
+							<div class="stat-details">
+								<div class="skills-grid">
+									<div class="skill-item">
+										<h4>Sense</h4>
+										<p>Detecting hidden threats, noticing small details.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Tracking</h4>
+										<p>Following footprints, identifying movement patterns.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Creature Analysis</h4>
+										<p>Reading monster body language, predicting attacks.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Survival</h4>
+										<p>Navigating and thriving in extreme conditions.</p>
+									</div>
+								</div>
+							</div>
+						</details>
+
+						<details class="stat-card">
+							<summary>
+								<div class="stat-header">
+									<span class="stat-icon">✨</span>
+									<h3>Charisma (CHA)</h3>
+									<span class="stat-desc">Influence, presence, and social ability</span>
+								</div>
+							</summary>
+							<div class="stat-details">
+								<div class="skills-grid">
+									<div class="skill-item">
+										<h4>Negotiation</h4>
+										<p>Persuading NPCs, striking deals.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Leadership</h4>
+										<p>Boosting morale, coordinating allies in battle.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Animal Handling</h4>
+										<p>Calming, training, or working with creatures.</p>
+									</div>
+									<div class="skill-item">
+										<h4>Deception</h4>
+										<p>Lying, misdirecting, or disguising intentions.</p>
+									</div>
+								</div>
+							</div>
+						</details>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.6;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover,
+			.nav-links a.active {
+				color: var(--amber);
+			}
+
+			.breadcrumb {
+				padding: 1.5rem 0 0;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-size: 0.9rem;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			.page-header {
+				padding: 3rem 0 2rem;
+				text-align: center;
+				border-bottom: 2px solid var(--earth-brown);
+				margin-bottom: 3rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.2rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			.intro-section {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 2rem;
+				margin-bottom: 3rem;
+			}
+
+			.formula-box,
+			.proficiency-box {
+				background: var(--forest-green);
+				border: 2px solid var(--earth-brown);
+				border-radius: 12px;
+				padding: 1.5rem;
+			}
+
+			.formula-box h3,
+			.proficiency-box h3 {
+				color: var(--amber);
+				margin-bottom: 1rem;
+				font-size: 1.1rem;
+			}
+
+			.formula {
+				background: var(--forest-dark);
+				border: 1px solid var(--moss-green);
+				border-radius: 8px;
+				padding: 0.75rem 1rem;
+				font-family: 'Courier New', monospace;
+				font-size: 1rem;
+				color: var(--amber);
+				text-align: center;
+				margin: 1rem 0;
+			}
+
+			.formula-note {
+				font-size: 0.85rem;
+				color: var(--leaf-green);
+				text-align: center;
+			}
+
+			.prof-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-bottom: 1rem;
+			}
+
+			.prof-table th,
+			.prof-table td {
+				padding: 0.5rem 0.75rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.prof-table th {
+				color: var(--amber);
+				font-size: 0.85rem;
+				text-transform: uppercase;
+			}
+
+			.stats-section h2 {
+				color: var(--amber);
+				font-size: 1.8rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.stat-card {
+				background: var(--forest-green);
+				border: 2px solid var(--earth-brown);
+				border-radius: 12px;
+				margin-bottom: 1rem;
+				overflow: hidden;
+			}
+
+			.stat-card[open] {
+				border-color: var(--amber);
+			}
+
+			.stat-card summary {
+				cursor: pointer;
+				padding: 1.25rem 1.5rem;
+				list-style: none;
+			}
+
+			.stat-card summary::-webkit-details-marker {
+				display: none;
+			}
+
+			.stat-header {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+			}
+
+			.stat-icon {
+				font-size: 1.5rem;
+			}
+
+			.stat-header h3 {
+				color: var(--cream);
+				font-size: 1.2rem;
+			}
+
+			.stat-desc {
+				color: var(--leaf-green);
+				font-style: italic;
+				margin-left: auto;
+			}
+
+			.stat-details {
+				padding: 0 1.5rem 1.5rem;
+				border-top: 1px solid var(--earth-brown);
+				padding-top: 1.5rem;
+			}
+
+			.skills-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1rem;
+			}
+
+			.skill-item {
+				background: var(--forest-dark);
+				border: 1px solid var(--moss-green);
+				border-radius: 8px;
+				padding: 1rem;
+			}
+
+			.skill-item h4 {
+				color: var(--amber);
+				margin-bottom: 0.4rem;
+				font-size: 1rem;
+			}
+
+			.skill-item p {
+				font-size: 0.9rem;
+				color: var(--cream);
+				opacity: 0.9;
+			}
+
+			.con-note {
+				background: var(--forest-dark);
+				border: 1px solid var(--moss-green);
+				border-radius: 8px;
+				padding: 1.25rem;
+				margin-bottom: 1rem;
+			}
+
+			.con-note p {
+				margin-bottom: 0.5rem;
+			}
+
+			.con-examples h4 {
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.con-examples ul {
+				list-style: disc;
+				padding-left: 1.5rem;
+			}
+
+			.con-examples li {
+				margin-bottom: 0.3rem;
+				font-size: 0.9rem;
+			}
+
+			@media (max-width: 768px) {
+				.intro-section {
+					grid-template-columns: 1fr;
+				}
+
+				.skills-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.stat-header {
+					flex-wrap: wrap;
+				}
+
+				.stat-desc {
+					margin-left: 0;
+					width: 100%;
+					font-size: 0.85rem;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					font-size: 0.85rem;
+				}
+			}
+		</style>
+	</body>
+</html>
