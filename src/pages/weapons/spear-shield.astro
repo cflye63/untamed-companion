@@ -29,9 +29,9 @@
 				<header class="page-header">
 					<div class="weapon-icon"><img src="/weapons/Spear and Shield.png" alt="Spear and Shield" /></div>
 					<h1>Spear & Shield</h1>
-					<p class="subtitle">Balanced / Versatile</p>
+					<p class="subtitle">Versatile / Tactical</p>
 					<div class="stat-badges">
-						<span class="stat-badge">+1 STR</span>
+						<span class="stat-badge">+1 CON</span>
 						<span class="stat-badge">+1 DEX</span>
 						<span class="stat-badge">+1 AR</span>
 					</div>
@@ -40,7 +40,7 @@
 				<article class="content">
 					<section class="weapon-section">
 						<h2>Overview</h2>
-						<p>The Spear & Shield is the epitome of versatility, offering a balanced approach between offense and defense. Spear users can switch between aggressive strikes and defensive stances, adapting to any combat scenario. This weapon rewards tactical thinking and flexibility, making it ideal for hunters who want options.</p>
+						<p>The Spear & Shield is the weapon of hunters who want options. Masters of neither pure offense nor pure defense, S&S users thrive on tactical flexibility — locking down in Sentinel when the monster rages, snapping to Assault when an opening appears. Every tier of the weapon has two answers. The skill is knowing which one the moment demands.</p>
 					</section>
 
 					<section class="weapon-section">
@@ -49,42 +49,51 @@
 							<div class="attribute-card">
 								<h3>Tags</h3>
 								<ul>
-									<li>Reach (10 ft with Spear)</li>
-									<li>Guard (Shield can Block)</li>
-									<li>Versatile</li>
-									<li>Two pieces</li>
+									<li>Reach (10 ft)</li>
+									<li>Thrown (20/60 ft)</li>
+									<li>Recall — Rope Attached (Fast Action)</li>
+									<li>Guard (can Block)</li>
+									<li>Two-Handed</li>
 								</ul>
 							</div>
 							<div class="attribute-card">
-								<h3>Save DC</h3>
-								<p class="formula">10 + STR or DEX mod + proficiency</p>
+								<h3>Attack Stats</h3>
+								<p><strong>Spear attacks:</strong> DEX mod + proficiency</p>
+								<p><strong>Shield saves/DCs:</strong> CON mod + proficiency</p>
 							</div>
 							<div class="attribute-card">
-								<h3>Special</h3>
-								<p>Choose STR or DEX for attacks. Gain +1 AR from shield.</p>
+								<h3>Save DC</h3>
+								<p class="formula">10 + CON mod + proficiency</p>
 							</div>
+						</div>
+						<div class="mechanic-details" style="margin-top: 1.5rem;">
+							<p><strong>Basic Spear Thrust (1 Stamina):</strong> d20 + DEX mod + prof vs AR → weapon damage on hit.</p>
+							<p style="margin-bottom: 0;"><strong>Thrown Spear:</strong> Range 20/60 ft. Recall your spear as a Fast Action (no Stamina cost) — the rope snaps it back to your hand.</p>
 						</div>
 					</section>
 
 					<section class="weapon-section highlight">
-						<h2>Core Mechanic — Guard Stance</h2>
-						<p>The Spear & Shield hunter can switch between Aggressive and Defensive stances, each offering unique benefits.</p>
+						<h2>Core Mechanic — Stance Switch</h2>
+						<p>The S&S hunter reads the fight in real time, shifting between an ironclad defensive posture and an aggressive skirmishing style as the moment demands.</p>
 						<div class="mechanic-details">
 							<h3>Stance Rules</h3>
 							<ul>
-								<li><strong>Switch Stance:</strong> Fast Action (no Stamina cost). Start combat in Aggressive Stance.</li>
-								<li><strong>Aggressive Stance:</strong> Your Spear attacks deal +1 damage die. Reach 10 ft. Cannot Block.</li>
-								<li><strong>Defensive Stance:</strong> You gain +1 AR. You can use your Shield to Block (as Reaction). Spear attacks at normal damage. Reach 5 ft.</li>
-								<li><strong>Momentum:</strong> Each time you successfully attack or Block, gain +1 Momentum (max 3). Momentum persists when you switch stances.</li>
-								<li><strong>Lose Momentum:</strong> If you go a full round without attacking or Blocking, reset to 0.</li>
+								<li><strong>Switch Stance:</strong> Fast Action (1 Stamina). Only one stance active at a time.</li>
+								<li><strong>Starting Stance:</strong> Choose on initiative roll — no Stamina cost.</li>
 							</ul>
 
-							<h3>Spending Momentum</h3>
-							<p>Spend Momentum (instant, no action) to gain one of the following:</p>
+							<h3>Sentinel Stance</h3>
 							<ul>
-								<li><strong>1 Momentum:</strong> +5 ft movement this turn</li>
-								<li><strong>2 Momentum:</strong> Advantage on your next attack or Block</li>
-								<li><strong>3 Momentum:</strong> Immediately switch stance (does not consume Fast Action)</li>
+								<li><strong>+1 AR</strong> while active.</li>
+								<li>Advantage on STR saves vs shove and knockdown.</li>
+								<li>Advantage on DEX saves vs forced movement.</li>
+								<li>Speed is <strong>halved</strong>.</li>
+							</ul>
+
+							<h3>Assault Stance</h3>
+							<ul>
+								<li><strong>+5 ft Speed</strong> while active.</li>
+								<li>Once per turn: make a <strong>Fast Action spear jab</strong> (1 Stamina) against a target in reach — in addition to your normal Action.</li>
 							</ul>
 						</div>
 					</section>
@@ -95,16 +104,15 @@
 							<thead>
 								<tr>
 									<th>Tier</th>
-									<th>Defensive Stance</th>
-									<th>Aggressive Stance</th>
+									<th>Damage Dice</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>Tier 1</td><td>1d8 + STR/DEX</td><td>2d8 + STR/DEX</td></tr>
-								<tr><td>Tier 2</td><td>1d10 + STR/DEX</td><td>2d10 + STR/DEX</td></tr>
-								<tr><td>Tier 3</td><td>2d6 + STR/DEX</td><td>3d6 + STR/DEX</td></tr>
-								<tr><td>Tier 4</td><td>2d8 + STR/DEX</td><td>3d8 + STR/DEX</td></tr>
-								<tr><td>Tier 5</td><td>2d10 + STR/DEX</td><td>3d10 + STR/DEX</td></tr>
+								<tr><td>Tier 1</td><td>1d8 + DEX</td></tr>
+								<tr><td>Tier 2</td><td>1d12 + DEX</td></tr>
+								<tr><td>Tier 3</td><td>2d8 + DEX</td></tr>
+								<tr><td>Tier 4</td><td>2d12 + DEX</td></tr>
+								<tr><td>Tier 5</td><td>3d8 + DEX</td></tr>
 							</tbody>
 						</table>
 					</section>
@@ -114,74 +122,121 @@
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T1 — Thrust & Bash</h3>
-								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+								<h3>T1 — Point & Pivot</h3>
+								<div class="technique-cost">Passive</div>
 							</div>
-							<p>A combination strike using both Spear and Shield.</p>
-							<p><strong>Effect:</strong> Make two attacks:</p>
-							<ul>
-								<li><strong>Spear Thrust:</strong> Base Spear damage (current stance) + STR/DEX</li>
-								<li><strong>Shield Bash:</strong> 1d6 + STR. On hit, target makes a STR save vs your DC or is knocked back 5 ft and falls Prone.</li>
-							</ul>
-							<p><strong>Momentum:</strong> If both attacks hit, gain +1 Momentum.</p>
+							<p>No resource cost — just rewards playing your stance correctly.</p>
+							<div class="stance-split">
+								<div class="stance-block sentinel">
+									<div class="stance-label">Sentinel</div>
+									<p>When you successfully Block a melee attack, you may make one immediate <strong>counter-thrust</strong> against that attacker — <strong>0 Stamina, once per round</strong>.</p>
+								</div>
+								<div class="stance-block assault">
+									<div class="stance-label">Assault</div>
+									<p>After you hit with your Fast Action spear jab, you may <strong>shift 5 ft</strong> without provoking opportunity attacks.</p>
+								</div>
+							</div>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T2 — Impale</h3>
-								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+								<h3>T2 — Shield Bash / Marked Javelin</h3>
+								<div class="technique-cost">Stance-Dependent</div>
 							</div>
-							<p>A devastating thrust that pins enemies in place.</p>
-							<p><strong>Range:</strong> 10 ft (Aggressive) or 5 ft (Defensive)</p>
-							<p><strong>Attack:</strong> Make a Spear attack with +1 Power Die. On hit:</p>
-							<ul>
-								<li>Deal base Spear damage + STR/DEX + 1d8</li>
-								<li>Target makes a CON save vs your DC or becomes Bleeding</li>
-								<li>Target's movement speed reduced by 10 ft until end of its next turn</li>
-							</ul>
+							<div class="stance-split">
+								<div class="stance-block sentinel">
+									<div class="stance-label">Sentinel — Shield Bash</div>
+									<p><strong>2 Stamina • Reaction</strong></p>
+									<p><strong>Trigger:</strong> You successfully Block a creature's attack.</p>
+									<p><strong>Effect:</strong> Deal weapon die + CON modifier. Target makes a STR save vs your S&S DC:</p>
+									<ul>
+										<li><strong>Fail:</strong> Staggered (cannot Move next turn).</li>
+										<li><strong>Fail by 5+:</strong> Stunned (1 turn). <em>Escalating Resistance applies.</em></li>
+									</ul>
+								</div>
+								<div class="stance-block assault">
+									<div class="stance-label">Assault — Marked Javelin</div>
+									<p><strong>Passive</strong></p>
+									<p>When you hit with a <strong>Thrown spear</strong>, the target is <strong>Marked</strong> until the end of your next turn:</p>
+									<ul>
+										<li>You and allies gain <strong>+1 to attack rolls</strong> vs the Marked target.</li>
+										<li>Your next spear hit against it deals <strong>+1 Power Die</strong>.</li>
+										<li>You must remain in Assault Stance to maintain the Mark.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T3 — Counter-Thrust</h3>
-								<div class="technique-cost">1 Stamina • Reaction</div>
+								<h3>T3 — Guardian's Rally / Rapid Thrust</h3>
+								<div class="technique-cost">Stance-Dependent</div>
 							</div>
-							<p>Strike back after a successful defense.</p>
-							<p><strong>Trigger:</strong> You successfully Block or Parry an attack in Defensive Stance</p>
-							<p><strong>Effect:</strong> Immediately make a Spear attack against the attacker (if in range). This attack is made with advantage and deals +1d6 damage on hit.</p>
-							<p><strong>Momentum:</strong> This attack gains +1 Momentum on hit as normal.</p>
+							<div class="stance-split">
+								<div class="stance-block sentinel">
+									<div class="stance-label">Sentinel — Guardian's Rally</div>
+									<p><strong>Passive upgrade to Block</strong></p>
+									<p>You can <strong>Block for an ally within 5 ft</strong> (retargeting the attack to yourself). When you do:</p>
+									<ul>
+										<li>That ally gains <strong>+1 to their next attack roll</strong>.</li>
+										<li>That ally <strong>recovers 1 Stamina</strong>.</li>
+									</ul>
+								</div>
+								<div class="stance-block assault">
+									<div class="stance-label">Assault — Rapid Thrust</div>
+									<p><strong>3 Stamina • Action</strong></p>
+									<p>Make <strong>two spear attacks</strong> against one target in reach.</p>
+									<ul>
+										<li>If <strong>both hit:</strong> add +1 Power Die to the total damage.</li>
+										<li>A miss on one strike does not cancel the other.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T4 — Phalanx Formation</h3>
-								<div class="technique-cost">2 Stamina • Fast Action, Aura</div>
+								<h3>T4 — Bulwark / Skewer</h3>
+								<div class="technique-cost">Passive (both)</div>
 							</div>
-							<p>You inspire your allies to form a defensive line.</p>
-							<p><strong>Duration:</strong> Until the end of your next turn</p>
-							<p><strong>Effect:</strong> You and all allies within 10 ft:</p>
-							<ul>
-								<li>Gain +1 AR</li>
-								<li>Cannot be moved against their will</li>
-								<li>Gain advantage on saves vs Fear/Charm</li>
-							</ul>
-							<p><strong>Shield Wall:</strong> If you and at least one ally with a shield are adjacent to each other, increase AR bonus to +2.</p>
+							<div class="stance-split">
+								<div class="stance-block sentinel">
+									<div class="stance-label">Sentinel — Bulwark</div>
+									<p>Your <strong>first Block each round</strong> reduces that hit's damage by <strong>50%</strong>.</p>
+								</div>
+								<div class="stance-block assault">
+									<div class="stance-label">Assault — Skewer</div>
+									<p>Your spear attacks <strong>critically hit on 19–20</strong>.</p>
+								</div>
+							</div>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T5 — Hoplite's Wrath</h3>
-								<div class="technique-cost">4 Stamina • Action, Line, Commitment</div>
+								<h3>T5 — Unbreakable Aegis / Piercing Charge</h3>
+								<div class="technique-cost">Stance-Dependent</div>
 							</div>
-							<p>The ultimate Spear & Shield technique, a charging thrust that impales everything in your path.</p>
-							<p><strong>Charge:</strong> Move up to 30 ft in a straight line. This movement does not provoke opportunity attacks.</p>
-							<p><strong>Pierce:</strong> Make one attack roll and compare vs AR of all creatures in your path:</p>
-							<ul>
-								<li><strong>Damage:</strong> 4d10 + STR/DEX to each hit creature</li>
-								<li><strong>Impale:</strong> Each hit creature makes a STR save vs your DC or is pushed to the end of your charge path</li>
-								<li><strong>Stagger:</strong> If any creature fails the save by 5 or more, it becomes Staggered (loses next turn)</li>
-							</ul>
-							<p><strong>End Position:</strong> After the charge, you may immediately switch to Defensive Stance (no action required) and gain +2 AR until the start of your next turn.</p>
+							<div class="stance-split">
+								<div class="stance-block sentinel">
+									<div class="stance-label">Sentinel — Unbreakable Aegis</div>
+									<p><strong>Passive upgrade</strong></p>
+									<p>Your first successful Block each round:</p>
+									<ul>
+										<li>Restores <strong>1 Stamina</strong>.</li>
+										<li>Grants <strong>+1 AR</strong> until the start of your next turn.</li>
+									</ul>
+									<p>You may now <strong>Block for allies within 10 ft</strong> (Bastion-style retarget, not just 5 ft).</p>
+								</div>
+								<div class="stance-block assault">
+									<div class="stance-label">Assault — Piercing Charge</div>
+									<p><strong>3 Stamina • Action</strong></p>
+									<p>Throw your spear up to <strong>30 ft</strong>. On hit: you <strong>pull yourself to the target</strong> and immediately make a <strong>melee follow-up attack with advantage</strong>.</p>
+									<ul>
+										<li>If the thrown attack <strong>misses</strong>, you don't move — your shield kept you anchored.</li>
+										<li>If <strong>either hit crits</strong>: gain +5 ft Speed and +1 to attack rolls until the end of your next turn.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</section>
 
@@ -189,21 +244,21 @@
 						<h2>Weapon Playstyle</h2>
 						<div class="playstyle-grid">
 							<div class="playstyle-card strengths">
-								<h3>💪 Strengths</h3>
+								<h3>Strengths</h3>
 								<ul>
-									<li>Extreme versatility with stance switching</li>
-									<li>Solid defense when needed, strong offense when safe</li>
-									<li>Momentum system rewards active playstyle</li>
-									<li>Reach advantage in Aggressive Stance</li>
+									<li>Every technique tier has two answers — read the fight, pick the right one</li>
+									<li>Thrown spear adds genuine range utility no other melee weapon has</li>
+									<li>Sentinel becomes a meaningful team anchor (Guardian's Rally, Unbreakable Aegis)</li>
+									<li>Assault's crit window (19–20) and Piercing Charge reward aggressive reads</li>
 								</ul>
 							</div>
 							<div class="playstyle-card weaknesses">
-								<h3>⚠️ Weaknesses</h3>
+								<h3>Weaknesses</h3>
 								<ul>
-									<li>Neither the best tank nor the best damage dealer</li>
-									<li>Requires constant stance management</li>
-									<li>Momentum resets if you don't stay active</li>
-									<li>Can feel indecisive without clear combat role</li>
+									<li>Stance switching costs a Fast Action and Stamina — poor timing punishes you</li>
+									<li>Sentinel halves speed — gets kited badly if the monster refuses to engage</li>
+									<li>Neither the best tank nor the best damage dealer; both roles do one thing better</li>
+									<li>Assault stamina drain (jab + switch costs) adds up fast at low tiers</li>
 								</ul>
 							</div>
 						</div>
@@ -218,6 +273,7 @@
 				--forest-dark: #1a2e1a; --forest-green: #2d5016; --moss-green: #4a7c2f;
 				--leaf-green: #6b9d3a; --amber: #d4a257; --earth-brown: #5c4033;
 				--cream: #f5f1e8; --text-light: #e8e4d8;
+				--sentinel-blue: #2a4a6b; --assault-red: #6b2a2a;
 			}
 			body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--forest-dark); color: var(--text-light); line-height: 1.7; min-height: 100vh; }
 			.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
@@ -248,10 +304,12 @@
 			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
 			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card p { margin-bottom: 0.5rem; }
 			.attribute-card ul { list-style: none; margin: 0; }
 			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
 			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
 			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.mechanic-details { background: var(--forest-dark); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
 			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
 			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
 			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
@@ -260,11 +318,21 @@
 			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
 			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
 			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.stance-split { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+			.stance-block { padding: 1.25rem; border-radius: 8px; border: 2px solid; }
+			.stance-block.sentinel { background: rgba(42, 74, 107, 0.3); border-color: #4a7aab; }
+			.stance-block.assault { background: rgba(107, 42, 42, 0.3); border-color: #ab4a4a; }
+			.stance-label { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; padding: 0.3rem 0.75rem; border-radius: 4px; display: inline-block; }
+			.stance-block.sentinel .stance-label { background: #4a7aab; color: #fff; }
+			.stance-block.assault .stance-label { background: #ab4a4a; color: #fff; }
+			.stance-block p { margin-bottom: 0.75rem; }
+			.stance-block ul { margin-left: 1.25rem; margin-bottom: 0.5rem; }
+			.stance-block li { margin-bottom: 0.4rem; }
 			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
 			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.playstyle-card.strengths { border-color: var(--leaf-green); }
 			.playstyle-card.weaknesses { border-color: #c74440; }
-			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--amber); }
 			.playstyle-card ul { list-style: none; margin: 0; }
 			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
 			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
@@ -274,6 +342,7 @@
 				.page-header h1 { font-size: 2rem; }
 				.weapon-section { padding: 1.5rem; }
 				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+				.stance-split { grid-template-columns: 1fr; }
 			}
 			html { scroll-behavior: smooth; }
 		</style>

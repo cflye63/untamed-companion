@@ -29,7 +29,7 @@
 				<header class="page-header">
 					<div class="weapon-icon"><img src="/weapons/Boomerang.png" alt="Boomerang" /></div>
 					<h1>Boomerang</h1>
-					<p class="subtitle">Tempo Weapon / Read &amp; Return</p>
+					<p class="subtitle">Skirmisher / Tempo</p>
 					<div class="stat-badges">
 						<span class="stat-badge">+1 INS</span>
 						<span class="stat-badge">+1 DEX</span>
@@ -39,8 +39,7 @@
 				<article class="content">
 					<section class="weapon-section">
 						<h2>Overview</h2>
-						<p>The Boomerang is a tempo weapon built on instinct and trajectory reading. A Boomerang user doesn't aim — they read. They feel the angle, the wind, the creature's next move, and throw before the decision is conscious. The throw is only half the technique. The catch is where the fight turns.</p>
-						<p>In multi-target encounters, a skilled Boomerang user chains ricochets through packed enemies. Against a single large creature, Split Return lets them hit the body and a called part in the same motion. Neither role requires setup — just position and timing.</p>
+						<p>The Boomerang is a finesse weapon built for agile, midrange hunters who thrive on timing and spatial awareness. Every throw is a risk–reward cycle: the longer you keep your rhythm, the deadlier your return. The throw is only half the technique. The catch is where the fight turns — and masters of the Wayback use motion itself as a weapon, hitting twice before enemies can react.</p>
 					</section>
 
 					<section class="weapon-section">
@@ -49,45 +48,45 @@
 							<div class="attribute-card">
 								<h3>Tags</h3>
 								<ul>
-									<li>Ranged (20-60 ft)</li>
+									<li>Thrown (30/90 ft)</li>
 									<li>Returning</li>
+									<li>Ranged</li>
 									<li>Finesse</li>
-									<li>Trick</li>
+									<li>Two-Handed (light)</li>
 								</ul>
 							</div>
 							<div class="attribute-card">
 								<h3>Attack &amp; Save Stat</h3>
 								<p class="formula">Instinct</p>
 								<p style="margin-top: 0.75rem; font-size: 0.9rem;">Save DC: 10 + INS mod + proficiency</p>
+								<p style="font-size: 0.9rem;">Disadvantage beyond 30 ft.</p>
 							</div>
 							<div class="attribute-card">
-								<h3>Special — Returning</h3>
-								<p>After the throw resolves (hit or miss), the Boomerang returns to you unless the Wayback Catch fails. If it falls, retrieving it costs your Move action next turn.</p>
+								<h3>Basic Throw</h3>
+								<p><strong>1 Stamina:</strong> d20 + INS + proficiency vs AR → weapon damage on hit.</p>
 							</div>
 						</div>
 					</section>
 
 					<section class="weapon-section highlight">
 						<h2>Core Mechanic — Wayback Catch</h2>
-						<p>Every throw has two parts: the outbound attack and the returning catch. A clean catch unlocks a return throw as a Fast Action — keeping pressure without spending your Action twice.</p>
+						<p>Every hit is an invitation to catch and return. Keep moving and the boomerang rewards you — stand still and you're leaving damage on the table.</p>
 						<div class="mechanic-details">
 							<h3>The Loop</h3>
 							<ul>
-								<li><strong>Throw (Action, 1 STA):</strong> Make a ranged attack with d20 + INS + proficiency. On hit: deal Throw damage (see table). Regardless of hit or miss: make a Wayback Catch check.</li>
-								<li><strong>Wayback Catch Check:</strong> d20 + INS + proficiency vs DC 13. Success (75% at Trained INS): the Boomerang snaps back to your hand — you may make the Return Throw as a Fast Action this turn.</li>
-								<li><strong>Return Throw (Fast Action, 1 STA):</strong> Make a second attack against the same target. Deals Return damage (see table). If you moved ≥10 ft before the return throw, add +1 damage die (Ricochet Step, T1).</li>
-								<li><strong>Full Loop Payoff:</strong> If the outbound throw AND return throw both hit the same target, you may make a free third throw (0 STA, base throw damage, no bonus die) immediately as part of the same turn.</li>
+								<li><strong>Throw (Action, 1 STA):</strong> Make a Boomerang attack vs AR. On a <strong>hit</strong> — attempt a Wayback Catch.</li>
+								<li><strong>Wayback Catch:</strong> Roll d20 + INS + proficiency vs <strong>DC 13</strong>. Success: the boomerang snaps back to your hand — you may re-throw as a <strong>Fast Action (1 STA)</strong> this turn.</li>
+								<li><strong>Movement bonus:</strong> If you moved <strong>≥10 ft</strong> since your last throw, the return throw has <strong>advantage</strong> and deals <strong>+1 damage die</strong>.</li>
+								<li><strong>Per-turn limit:</strong> Up to <strong>2 Wayback catches per turn</strong> — at most: Action throw → FA return → FA second return.</li>
+								<li><strong>Double-catch reward:</strong> If both catches succeed in the same turn, the second return throw costs <strong>0 Stamina</strong> and deals <strong>+1 Power Die</strong> on hit.</li>
+								<li><strong>Skirmish Rhythm:</strong> You may move freely between the throw and the catch — normal opportunity attacks apply unless a technique says otherwise.</li>
 							</ul>
 
 							<h3>If the Catch Fails</h3>
 							<ul>
-								<li>The Boomerang lands near the target. No return throw this round.</li>
-								<li>Retrieve it as a Move action on your next turn, or use basic movement to reposition and pick it up.</li>
-								<li>You can still act normally this turn — the catch check doesn't cost an action.</li>
+								<li>The boomerang returns to your hand but you can't re-throw this turn.</li>
+								<li>You can still act normally — the catch check doesn't cost an action.</li>
 							</ul>
-
-							<h3>Ricochet (Multi-Target)</h3>
-							<p>When the Boomerang hits a target with another creature within 30 ft, you may redirect the outbound throw to ricochet to that creature before returning. Make a second attack roll against the ricochet target at −1 damage die. The Wayback Catch check is made after the final ricochet.</p>
 						</div>
 					</section>
 
@@ -97,19 +96,18 @@
 							<thead>
 								<tr>
 									<th>Tier</th>
-									<th>Throw</th>
-									<th>Return</th>
+									<th>Damage Dice</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>Tier 1</td><td>1d6 + INS</td><td>1d8 + INS</td></tr>
-								<tr><td>Tier 2</td><td>1d8 + INS</td><td>2d8 + INS</td></tr>
-								<tr><td>Tier 3</td><td>1d10 + INS</td><td>2d10 + INS</td></tr>
-								<tr><td>Tier 4</td><td>2d8 + INS</td><td>3d8 + INS</td></tr>
-								<tr><td>Tier 5</td><td>2d10 + INS</td><td>3d10 + INS</td></tr>
+								<tr><td>Tier 1</td><td>1d6 + INS</td></tr>
+								<tr><td>Tier 2</td><td>1d8 + INS</td></tr>
+								<tr><td>Tier 3</td><td>2d6 + INS</td></tr>
+								<tr><td>Tier 4</td><td>2d8 + INS</td></tr>
+								<tr><td>Tier 5</td><td>3d6 + INS</td></tr>
 							</tbody>
 						</table>
-						<p style="margin-top: 1rem; font-style: italic; color: var(--leaf-green);">The return throw always deals more — catching is the skill expression. Tier upgrades scale both paths; Return scales faster.</p>
+						<p style="margin-top: 1rem; font-style: italic; color: var(--leaf-green);">The return throw's damage comes from movement — advantage and the +1 die reward hunters who stay mobile.</p>
 					</section>
 
 					<section class="weapon-section">
@@ -120,9 +118,11 @@
 								<h3>T1 — Ricochet Step</h3>
 								<div class="technique-cost">Passive</div>
 							</div>
-							<p>You've learned to time your catch with movement — the step back or sidestep adds arc and spin to the return path.</p>
-							<p><strong>Effect:</strong> When you make a Return Throw after moving ≥10 ft on the same turn, the return deals <strong>+1 damage die</strong>.</p>
-							<p><strong>Interaction:</strong> Works with any return throw, including the return throw from Split Return. Move first, throw, catch, then use the return — the +1 die applies as long as the 10 ft movement was part of the same turn.</p>
+							<p>You've learned to flow with the throw — your footwork feeds the arc.</p>
+							<ul>
+								<li>After a successful hit, you may move up to <strong>10 ft</strong> before attempting your Wayback Catch. This movement doesn't provoke opportunity attacks from creatures you hit this turn.</li>
+								<li>Your <strong>first successful Wayback Catch</strong> each turn gives <strong>+1 to hit</strong> on the immediate return throw.</li>
+							</ul>
 						</div>
 
 						<div class="technique-card">
@@ -130,14 +130,12 @@
 								<h3>T2 — Split Return</h3>
 								<div class="technique-cost">2 Stamina • Action</div>
 							</div>
-							<p>Against a large target, you read two contact points — the main body and a vulnerable part — and deliver both in one motion.</p>
-							<p><strong>Requirement:</strong> Target must be Large or larger.</p>
-							<p><strong>Effect:</strong> Make two separate attack rolls against the same target — one standard body attack and one called shot targeting a specific part (−2 accuracy, as normal for called shots). Both attacks use Return damage dice.</p>
+							<p>Curve the throw to clip two targets in one motion — or thread a large creature's body and a vulnerable part in the same pass.</p>
+							<p><strong>Effect:</strong> Throw in a curved path that hits <strong>two targets within 15 ft of each other</strong>, or <strong>two body parts on one Large or larger creature</strong>. Make a separate attack roll against each.</p>
 							<ul>
-								<li><strong>Wayback Catch after Split Return:</strong> Make a single Wayback Catch check for both attacks (not two checks). Success: catch as normal.</li>
-								<li><strong>If both attacks hit:</strong> Wayback Catch DC reduced by 2 (DC 11 instead of 13), and you regain 1 Stamina.</li>
+								<li>Counts as a single throw for Wayback purposes — make one catch check after both attacks resolve.</li>
+								<li><strong>If both attacks hit:</strong> Wayback DC reduced by 2 for this catch, and you regain <strong>1 Stamina</strong> at the end of your turn.</li>
 							</ul>
-							<p><strong>Stamina note:</strong> Split Return costs 2 STA for both attacks. If your Wayback Catch succeeds, you may still make a Return Throw as a Fast Action (1 STA) — total loop cost: 3 STA.</p>
 						</div>
 
 						<div class="technique-card">
@@ -145,35 +143,39 @@
 								<h3>T3 — Threaded Arc</h3>
 								<div class="technique-cost">Passive</div>
 							</div>
-							<p>Your throws curve around cover and through gaps that should be impossible.</p>
+							<p>Your throws curve around cover and through gaps that should be impossible. Nothing hides from the arc.</p>
 							<ul>
-								<li>Your Throw ignores all cover (half, three-quarters, and full). You may target creatures you cannot directly see as long as you know their approximate location.</li>
-								<li>The Wayback Catch DC reduces by 2 permanently (DC 13 → DC 11). Split Return's both-hit bonus stacks (DC 11 → DC 9).</li>
+								<li>Your throws ignore <strong>all cover</strong> — half, three-quarters, and full. You may target creatures you cannot directly see as long as you know their approximate location.</li>
+								<li>Your Wayback Catch DC is permanently reduced by 2 (<strong>DC 13 → DC 11</strong>). Split Return's both-hit bonus stacks on top (DC 11 → DC 9).</li>
 							</ul>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T4 — Chain Catch</h3>
+								<h3>T4 — Momentum Flow</h3>
 								<div class="technique-cost">Passive</div>
 							</div>
-							<p>You no longer need to stop the loop. A successful return throw opens the door for another.</p>
+							<p>Your rhythm is unbreakable. Catches fuel movement, movement fuels catches.</p>
 							<ul>
-								<li>After a successful Return Throw that hits, you may attempt another Wayback Catch check (same DC). On success: make another Return Throw as a second Fast Action this turn.</li>
-								<li>This chain may repeat once per turn (maximum: Throw → Return → Second Return). Each additional return deals −1 damage die (minimum 1 die).</li>
-								<li>Each successful catch in the chain costs 1 STA.</li>
+								<li><strong>Bigger payoff:</strong> When both catches succeed in the same turn, the second return throw deals <strong>+2 Power Dice</strong> (up from +1).</li>
+								<li><strong>Skate Catch:</strong> When you attempt a Wayback Catch, you may move up to your <strong>full Speed</strong> as part of the attempt. This movement doesn't provoke opportunity attacks from creatures you hit this turn.</li>
+								<li><strong>Safety net (1/turn):</strong> You may reroll one failed Wayback Catch.</li>
 							</ul>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T5 — Perfect Read</h3>
-								<div class="technique-cost">0 Stamina • Reaction</div>
+								<h3>T5 — Cyclone Return</h3>
+								<div class="technique-cost">4 Stamina • Action</div>
 							</div>
-							<p>The throw was already in motion before you decided to make it.</p>
-							<p><strong>Trigger:</strong> A creature within 60 ft moves toward you or an ally.</p>
-							<p><strong>Effect:</strong> Make a Throw attack against that creature. If it hits, the creature's movement stops for this turn (they may resume movement next turn). The Boomerang returns normally — make your Wayback Catch check as part of the Reaction.</p>
-							<p><strong>Limit:</strong> Once per round. Does not consume your Action.</p>
+							<p>You unleash a multi-pass storm — the boomerang spirals out and back, shredding everything in its path.</p>
+							<p><strong>Effect:</strong> Throw in a <strong>20-ft line</strong>, hitting all enemies in the path (weapon damage each). Then attempt a Wayback Catch:</p>
+							<ul>
+								<li><strong>First catch success:</strong> The boomerang returns along the same line — repeat the line attack and add <strong>+1 damage die</strong> to every hit.</li>
+								<li><strong>Second catch success:</strong> A third pass (outbound or sweeping curve) adds another <strong>+1 damage die</strong> (max +2 dice total from Cyclone).</li>
+								<li>All throws inside Cyclone Return cost <strong>0 Stamina</strong> and don't count against your normal per-turn Wayback limit.</li>
+								<li><strong>Failing a catch ends the sequence immediately.</strong></li>
+							</ul>
 						</div>
 					</section>
 
@@ -183,20 +185,20 @@
 							<div class="playstyle-card strengths">
 								<h3>Strengths</h3>
 								<ul>
-									<li>Consistent 2-STA pressure loop — Throw + Return every round</li>
-									<li>Multi-target encounter specialist via Ricochet chains</li>
+									<li>Movement is damage — advantage and bonus dice reward hunters who stay mobile</li>
+									<li>Two-catch baseline means three attacks per turn is achievable from T1</li>
 									<li>Split Return contributes part break progress without sacrificing damage</li>
-									<li>Skirmisher identity — movement feeds Ricochet Step bonus</li>
-									<li>No wind-up or setup required; productive from round 1</li>
+									<li>Threaded Arc removes positioning restrictions entirely at T3</li>
+									<li>Cyclone Return is a genuine multi-target nuke at T5</li>
 								</ul>
 							</div>
 							<div class="playstyle-card weaknesses">
 								<h3>Weaknesses</h3>
 								<ul>
-									<li>Wayback Catch at 75% — one failed catch per fight costs a return throw</li>
-									<li>Single-boss damage ceiling below Bow (no Focus ramp or utility arrows)</li>
-									<li>2 STA/round full loop means STA floor hits around R4–R5 without breathing</li>
-									<li>Called shots on Split Return still take the −2 accuracy penalty</li>
+									<li>Catch only triggers on a hit — miss the throw and the loop stalls</li>
+									<li>Lower per-hit damage without chaining successful catches</li>
+									<li>Stamina-hungry at full output (3 STA for a full double-catch turn)</li>
+									<li>High-AR targets blunt momentum — hitting is the prerequisite for everything</li>
 								</ul>
 							</div>
 						</div>
@@ -241,10 +243,12 @@
 			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
 			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card p { margin-bottom: 0.5rem; }
 			.attribute-card ul { list-style: none; margin: 0; }
 			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
 			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
 			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.mechanic-details { background: var(--forest-dark); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
 			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
 			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
 			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
@@ -257,7 +261,7 @@
 			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.playstyle-card.strengths { border-color: var(--leaf-green); }
 			.playstyle-card.weaknesses { border-color: #c74440; }
-			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--amber); }
 			.playstyle-card ul { list-style: none; margin: 0; }
 			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
 			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }

@@ -29,17 +29,17 @@
 				<header class="page-header">
 					<div class="weapon-icon"><img src="/weapons/Arbalest.png" alt="Arbalest" /></div>
 					<h1>Arbalest</h1>
-					<p class="subtitle">Heavy Artillery / Single Target</p>
+					<p class="subtitle">Heavy Gunner / Lane Control</p>
 					<div class="stat-badges">
-						<span class="stat-badge">+1 STR</span>
-						<span class="stat-badge">+1 INS</span>
+						<span class="stat-badge">+1 INT</span>
+						<span class="stat-badge">+1 DEX</span>
 					</div>
 				</header>
 
 				<article class="content">
 					<section class="weapon-section">
 						<h2>Overview</h2>
-						<p>The Arbalest is a massive crossbow designed for devastating single-shot damage. Arbalest users are patient snipers who line up perfect shots, then unleash overwhelming force. This weapon trades attack frequency for raw power, making every shot count. Ideal for players who enjoy calculated, high-impact gameplay.</p>
+						<p>The Arbalest is a weapon for hunters who think in lanes. Plant your feet, build Tension, and fire shots that punch through AR and pin prey to the ground. Every technique reinforces the same identity: you plan your position, you hold it, and anything that moves through your line pays for it. Enemies that shove, drag, or rattle you break your setup — so does hesitation.</p>
 					</section>
 
 					<section class="weapon-section">
@@ -48,38 +48,76 @@
 							<div class="attribute-card">
 								<h3>Tags</h3>
 								<ul>
-									<li>Heavy</li>
+									<li>Mechanical</li>
+									<li>Reload</li>
 									<li>Two-Handed</li>
-									<li>Ranged (60-300 ft)</li>
-									<li>Loading</li>
+									<li>Rooting (while Braced)</li>
 								</ul>
 							</div>
 							<div class="attribute-card">
-								<h3>Save DC</h3>
-								<p class="formula">10 + STR mod + proficiency</p>
+								<h3>Attack &amp; Save Stat</h3>
+								<p class="formula">Intelligence</p>
+								<p style="margin-top: 0.75rem; font-size: 0.9rem;">Save DC: 10 + INT mod + proficiency</p>
+								<p style="font-size: 0.9rem;">Range: 30/120 ft. Disadvantage beyond 120 ft.</p>
 							</div>
 							<div class="attribute-card">
-								<h3>Loading</h3>
-								<p>After firing, you must use a Fast Action to reload before firing again.</p>
+								<h3>Reload</h3>
+								<p>Must Load after each shot. Load costs a Fast Action or Action (1 Stamina) and generates +1 Tension.</p>
 							</div>
 						</div>
 					</section>
 
 					<section class="weapon-section highlight">
-						<h2>Core Mechanic — Piercing Shot</h2>
-						<p>Every Arbalest shot carries immense kinetic force, capable of punching through armor and bodies alike.</p>
+						<h2>Core Mechanic — Tension</h2>
+						<p>The Arbalest rewards stillness. The longer you hold your position and build Tension, the harder your shot hits. Movement is the enemy of power.</p>
 						<div class="mechanic-details">
-							<h3>Piercing Rules</h3>
+							<h3>The Loop</h3>
 							<ul>
-								<li><strong>Armor Penetration:</strong> All Arbalest attacks ignore 2 AR (ignore 3 AR at T3+).</li>
-								<li><strong>Overpenetration:</strong> When you hit a creature with an Arbalest attack, the bolt continues in a line. Choose one creature directly behind the target (within 10 ft). Make a new attack roll against that creature at -2 to hit. On hit, deal half damage.</li>
-								<li><strong>Critical Power:</strong> When you crit with the Arbalest, double all damage (including modifiers and bonus dice), not just the weapon dice.</li>
+								<li><strong>Brace (no Stamina):</strong> If you have at least half your Speed remaining, spend all remaining movement to Brace and gain <strong>+1 Tension</strong>. While Braced: Speed = 0; you can't Dash, Climb, or Swim.</li>
+								<li><strong>Load (Fast Action or Action, 1 Stamina):</strong> Must Load after each shot. Gain <strong>+1 Tension</strong>.</li>
+								<li><strong>Fire (Action):</strong> Consume all Tension and resolve the attack.</li>
 							</ul>
 
-							<h3>Aim Mechanic</h3>
+							<h3>Tension Thresholds</h3>
+							<p><em>Bonuses apply only if you are Braced when you Fire.</em></p>
 							<ul>
-								<li><strong>Aim:</strong> Fast Action. Gain +2 to your next Arbalest attack roll and ignore all cover (including full cover). Aiming bonus lasts until you attack or move.</li>
-								<li><strong>Patient Hunter:</strong> If you Aim for 2 consecutive turns without attacking or moving, your next attack is an automatic crit (still must hit AR). At T5, Patient Hunter triggers after 1 consecutive Aim instead of 2.</li>
+								<li><strong>Tension 1:</strong> +1 to your Attack roll.</li>
+								<li><strong>Tension 2:</strong> +2 to your Attack roll and <strong>+1 Power Die</strong> to damage.</li>
+							</ul>
+
+							<h3>Losing Tension</h3>
+							<ul>
+								<li>When you Fire.</li>
+								<li>When Brace ends (you move or are moved).</li>
+								<li>If you are knocked Prone, Staggered, or Stunned.</li>
+							</ul>
+							<p style="margin-bottom: 0;"><em>Moving (or being moved against your will) ends Brace and sets Tension to 0. Enemies that shove, drag, or rattle you are breaking your setup on purpose.</em></p>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Bolt Cartridges</h2>
+						<p>Standard bolts are unlimited. Special cartridges refresh each hunt. Unless stated otherwise, special shots benefit from Tension and still require Load after firing.</p>
+
+						<div class="arbalest-card offense">
+							<div class="arbalest-header">
+								<h3>Bone Arbalest</h3>
+								<span class="arbalest-tag">Offense</span>
+							</div>
+							<ul>
+								<li><strong>Piercing Shot (2 uses):</strong> This shot gains <strong>+1 to Attack</strong> (stacks with Tension bonuses).</li>
+								<li><strong>Sharp Shot (2 uses):</strong> On hit, target makes a CON save vs your Arbalest DC or becomes <strong>Bleeding</strong> (1d4 damage per turn until treated or staunched).</li>
+							</ul>
+						</div>
+
+						<div class="arbalest-card control">
+							<div class="arbalest-header">
+								<h3>Iron Arbalest</h3>
+								<span class="arbalest-tag">Control</span>
+							</div>
+							<ul>
+								<li><strong>Concussive Bolt (2 uses):</strong> On hit, target makes a CON save vs your Arbalest DC or becomes <strong>Staggered</strong> (no Move or Action until their next turn; Fast Action and Reaction allowed).</li>
+								<li><strong>Scatter Shot (2 uses):</strong> 15-ft cone. Each creature in the cone makes a DEX save vs your DC — full weapon damage on fail, half on success. <em>Does not gain Tension bonuses. Still consumes your current Tension on Fire and requires Load after.</em></li>
 							</ul>
 						</div>
 					</section>
@@ -94,11 +132,11 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>Tier 1</td><td>2d8 + STR</td></tr>
-								<tr><td>Tier 2</td><td>2d10 + STR</td></tr>
-								<tr><td>Tier 3</td><td>3d8 + STR</td></tr>
-								<tr><td>Tier 4</td><td>3d10 + STR</td></tr>
-								<tr><td>Tier 5</td><td>4d10 + STR</td></tr>
+								<tr><td>Tier 1</td><td>1d10 + INT</td></tr>
+								<tr><td>Tier 2</td><td>1d12 + INT</td></tr>
+								<tr><td>Tier 3</td><td>2d10 + INT</td></tr>
+								<tr><td>Tier 4</td><td>2d12 + INT</td></tr>
+								<tr><td>Tier 5</td><td>3d10 + INT</td></tr>
 							</tbody>
 						</table>
 					</section>
@@ -108,86 +146,84 @@
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T1 — Explosive Bolt</h3>
-								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+								<h3>T1 — Tether Shot</h3>
+								<div class="technique-cost">2 Stamina • Action • Req: Braced</div>
 							</div>
-							<p>A bolt that detonates on impact, dealing splash damage.</p>
-							<p><strong>Range:</strong> 60-300 ft</p>
-							<p><strong>Effect:</strong> Make an Arbalest attack. On hit:</p>
-							<ul>
-								<li>Primary target takes base Arbalest damage + STR</li>
-								<li>All creatures within 10 ft of the impact point take 2d6 fire damage (DEX save vs your DC for half)</li>
-								<li>The explosion ignores Overpenetration (bolt does not continue through)</li>
-							</ul>
+							<p>Stake a ground-anchor beneath the target and string 20 ft of slack — now it drags a leash wherever it goes.</p>
+							<p><strong>On hit:</strong> Target becomes <strong>Tethered (Arbalest)</strong>. While Tethered: Speed −10 ft. The tether has 20 ft of slack.</p>
+							<div class="mechanic-details" style="margin-top: 1rem;">
+								<p><strong>Slack Check:</strong> Whenever the target would move beyond its remaining slack, it makes a STR save vs your Arbalest DC.</p>
+								<ul>
+									<li><strong>Fail:</strong> Falls Prone and movement ends.</li>
+									<li><strong>Success:</strong> Extends slack by +5 ft and continues (max +10 ft total).</li>
+								</ul>
+								<p><strong>Break Attempt:</strong> At the start of its turn, the target may make a STR save vs your DC. Success: tether breaks.</p>
+								<p><strong>Flyers:</strong> Altitude is capped by remaining slack. Exceeding it triggers a Slack Check (same rules). Two tethers on a flyer = <strong>Grounded</strong> (no flight) until one breaks.</p>
+								<p style="margin-bottom: 0;"><strong>Stacking:</strong> Up to 2 tethers on one target (from any source). Each adds −10 ft Speed; Slack Check DC gains +2 per extra tether.</p>
+							</div>
+							<p style="margin-top: 1rem;"><em>Being Braced when you fire applies full T1/T2 Tension bonuses to this shot as normal.</em></p>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T2 — Pinning Shot</h3>
-								<div class="technique-cost">2 Stamina • Action, Commitment</div>
+								<h3>T2 — Grapnel Switch</h3>
+								<div class="technique-cost">2 Stamina • Action</div>
 							</div>
-							<p>A bolt that impales the target, pinning them in place.</p>
-							<p><strong>Range:</strong> 60-300 ft</p>
-							<p><strong>Attack:</strong> Make an Arbalest attack with +1 Power Die. On hit:</p>
+							<p>Swap to a reversible grapnel head. The bolt lands — then something moves.</p>
+							<p><strong>On hit, choose one:</strong></p>
 							<ul>
-								<li>Deal base Arbalest damage + STR + 1d10</li>
-								<li>Target makes a STR save vs your DC. On fail: target becomes Restrained (cannot move, disadvantage on attacks/DEX saves, attackers have advantage) until end of their next turn</li>
-								<li>If the target is Large or smaller and fails the save by 5+, they are pinned until they use an Action to make a STR check (DC = your Arbalest DC) to free themselves</li>
+								<li><strong>Pull (target):</strong> Immediately pull the target up to <strong>10 ft toward the impact point</strong>. Large or larger creatures may make a STR save vs your DC to resist.</li>
+								<li><strong>Reel-In (you):</strong> You are pulled up to <strong>10 ft toward the impact point</strong>. Stop at safe footing.</li>
 							</ul>
+							<p><strong>Tether Synergy:</strong> If a Tether Shot is active on that target, it takes <strong>1d6 rending damage</strong> if it moves before your next turn.</p>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T3 — Rapid Reload</h3>
-								<div class="technique-cost">Passive</div>
+								<h3>T3 — Offload</h3>
+								<div class="technique-cost">1 Stamina • Reaction • 1/round</div>
 							</div>
-							<p>Your mastery of the Arbalest allows for faster reloading and more accurate shots.</p>
-							<ul>
-								<li>You may reload as a Free Action (instead of Fast Action) once per turn.</li>
-								<li>Your armor penetration increases to 3 AR.</li>
-								<li>When you Aim, you may move up to 10 ft without losing the Aim bonus.</li>
-							</ul>
+							<p>Streamline the loop. Load between turns — so your Action is always ready for the perfect Fire window.</p>
+							<p><strong>Trigger:</strong> End of any creature's turn, or when you take damage.</p>
+							<p><strong>Effect:</strong> Load as a Reaction, gaining <strong>+1 Tension</strong>. If you are Braced, you remain Braced.</p>
+							<p><em>This lets you "bank" Tension between turns without spending your Action to Load on your own turn.</em></p>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T4 — Siege Bolt</h3>
-								<div class="technique-cost">3 Stamina • Action, Commitment, Wind-Up</div>
+								<h3>T4 — Overwatch Intercept</h3>
+								<div class="technique-cost">1 Stamina • Reaction • 1/round</div>
 							</div>
-							<p>A massive bolt designed to break fortifications and monsters alike.</p>
-							<p><strong>Charge:</strong> You must Aim for at least 1 turn before firing (uses standard Aim rules).</p>
-							<p><strong>Release:</strong> Make an Arbalest attack in a 60-ft line. Make one attack roll and compare vs AR of all creatures in the line.</p>
-							<p><strong>On Hit:</strong></p>
+							<p>You've turned your position into a threat. Anything that moves through your lane answers to it.</p>
+							<p><strong>Requirement:</strong> You must be Braced.</p>
+							<p><strong>Trigger:</strong> A creature moves <strong>≥10 ft in a straight line</strong> within your range.</p>
+							<p><strong>The target must choose:</strong></p>
 							<ul>
-								<li>Each creature takes base Arbalest damage + STR + 2d10</li>
-								<li>Each creature makes a CON save vs your DC or is Stunned until end of their next turn</li>
-								<li>Creatures that fail the save are also pushed 10 ft away from you</li>
+								<li><strong>Stop immediately</strong> — movement ends.</li>
+								<li><strong>Continue</strong> — and grant you <strong>Advantage</strong> on the intercept attack.</li>
 							</ul>
-							<p><strong>Destruction:</strong> Siege Bolt destroys non-magical barriers, walls, and cover in its path.</p>
+							<p><strong>Effect:</strong> Fire as a Reaction, consuming your current Tension (if any).</p>
+							<p><strong>Miss Risk:</strong> If you fire at Tension 2 and miss, you are <strong>Exposed</strong> until the start of your next turn (attacks against you have Advantage).</p>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T5 — Godslayer Shot</h3>
-								<div class="technique-cost">5 Stamina • Action, Ultimate, Wind-Up</div>
+								<h3>T5 — Transfixion Pin</h3>
+								<div class="technique-cost">4 Stamina • Action • Req: Braced</div>
 							</div>
-							<p>The ultimate Arbalest technique, a single shot of overwhelming destructive force.</p>
-							<p><strong>Preparation:</strong> You must Aim for at least 2 consecutive turns (Patient Hunter applies). At T5, this is reduced to 1 turn. During this time, you can move up to 15 ft total.</p>
-							<p><strong>Release:</strong> Make a single Arbalest attack against one target within range.</p>
-							<p><strong>Attack Bonuses:</strong></p>
+							<p>A flanged siege bolt meant to nail prey to the world. It doesn't just hurt — it stops.</p>
+							<p><strong>Shot:</strong> Treat this as a <strong>Tension 2 shot</strong> (ignore 2 AR, +1 Power Die) even if you weren't at Tension 2, then add <strong>+1 extra weapon die</strong> on top.</p>
+							<p><strong>On hit — adjacent to solid terrain:</strong> Target makes a STR save vs your Arbalest DC.</p>
 							<ul>
-								<li>Made with advantage</li>
-								<li>+4 to the attack roll</li>
-								<li>Ignores all cover and Armor Penetration applies</li>
-								<li>Critical threat range: 18-20</li>
+								<li><strong>Fail:</strong> <strong>Pinned</strong> for 1 turn — Speed 0 and loses 1 Action on their next turn.</li>
+								<li><strong>Success:</strong> <strong>Immobilized</strong> for 1 turn — Speed 0, actions normal.</li>
 							</ul>
-							<p><strong>On Hit:</strong></p>
+							<p><strong>On hit — open ground:</strong></p>
 							<ul>
-								<li>Deal 8d10 + STR damage</li>
-								<li>Target makes a CON save vs your DC. On fail: target is Staggered (loses next turn) and takes an additional 4d10 damage</li>
-								<li>Overpenetration applies: bolt continues for up to 30 ft, hitting all creatures in a line. Make attack rolls for each at -2, dealing half damage on hit</li>
+								<li><strong>Fail:</strong> Immobilized for 1 turn.</li>
+								<li><strong>Success:</strong> Slowed (−10 ft Speed) for 1 turn.</li>
 							</ul>
-							<p><strong>On Crit:</strong> Total damage is tripled (×3) to the primary target. Secondary targets from Overpenetration take normal crit damage (×2).</p>
+							<p><strong>Large/Huge targets:</strong> Fail → Immobilized; Success → Slowed.</p>
 						</div>
 					</section>
 
@@ -195,21 +231,21 @@
 						<h2>Weapon Playstyle</h2>
 						<div class="playstyle-grid">
 							<div class="playstyle-card strengths">
-								<h3>💪 Strengths</h3>
+								<h3>Strengths</h3>
 								<ul>
-									<li>Highest single-target damage in the game</li>
-									<li>Ignores armor better than any other weapon</li>
-									<li>Extreme range with no disadvantage</li>
-									<li>Critical hits are devastating</li>
+									<li>Tension 2 shots punch hard through AR — reliable damage against armored targets</li>
+									<li>Tether + Overwatch create a deterrence zone the monster has to answer</li>
+									<li>Offload lets you bank Tension efficiently without wasting an Action</li>
+									<li>Bolt Cartridges give per-hunt flexibility — run offense or control depending on the hunt</li>
 								</ul>
 							</div>
 							<div class="playstyle-card weaknesses">
-								<h3>⚠️ Weaknesses</h3>
+								<h3>Weaknesses</h3>
 								<ul>
-									<li>Lowest attack frequency due to Loading</li>
-									<li>Requires setup time for maximum damage</li>
-									<li>Vulnerable while Aiming</li>
-									<li>Heavy weapon limits mobility</li>
+									<li>Completely position-dependent — get shoved, dragged, or knocked down and your setup resets</li>
+									<li>Low attack frequency; a missed Fire at T2 and Exposed is a punishing turn</li>
+									<li>Shorter range than Bow — can't stay at extreme distance and still threaten effectively</li>
+									<li>Stamina-hungry when using techniques back-to-back</li>
 								</ul>
 							</div>
 						</div>
@@ -254,10 +290,21 @@
 			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
 			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
+			.attribute-card p { margin-bottom: 0.5rem; }
 			.attribute-card ul { list-style: none; margin: 0; }
 			.attribute-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
 			.attribute-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
 			.formula { background: var(--moss-green); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--amber); font-family: 'Courier New', monospace; font-weight: 600; color: var(--amber); text-align: center; }
+			.mechanic-details { background: var(--forest-dark); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
+			.mechanic-details p { margin-bottom: 0.75rem; }
+			.mechanic-details ul { margin-left: 1.25rem; margin-bottom: 0.75rem; }
+			.mechanic-details li { margin-bottom: 0.4rem; }
+			.arbalest-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; border: 2px solid var(--earth-brown); }
+			.arbalest-card.offense { border-color: #c74440; }
+			.arbalest-card.control { border-color: #4a7aab; }
+			.arbalest-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; }
+			.arbalest-header h3 { color: var(--amber); font-size: 1.5rem; margin: 0; }
+			.arbalest-tag { background: var(--moss-green); padding: 0.35rem 0.75rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.85rem; }
 			.damage-table { width: 100%; border-collapse: collapse; background: var(--forest-dark); border-radius: 8px; overflow: hidden; }
 			.damage-table th, .damage-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--earth-brown); }
 			.damage-table th { background: var(--moss-green); color: var(--amber); font-weight: 600; }
@@ -270,7 +317,7 @@
 			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.playstyle-card.strengths { border-color: var(--leaf-green); }
 			.playstyle-card.weaknesses { border-color: #c74440; }
-			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--amber); }
 			.playstyle-card ul { list-style: none; margin: 0; }
 			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
 			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
@@ -280,6 +327,7 @@
 				.page-header h1 { font-size: 2rem; }
 				.weapon-section { padding: 1.5rem; }
 				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+				.arbalest-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 			}
 			html { scroll-behavior: smooth; }
 		</style>

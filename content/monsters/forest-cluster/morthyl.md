@@ -251,6 +251,20 @@ If Bear Skull was broken before transition:
 
 ---
 
+**Eruption Charge — (Passive — Transition)**
+```
+Trigger: Bear Form activates.
+Timing:  Fires during the transition itself, before Bear Form Round 1 initiative.
+Cost:    0 Stamina. Cannot be prevented by Stagger, Stun, or Exhaustion.
+Attack:  d20+10
+Damage:  2d10+6
+Rider:   STR Save DC 15 — Fail: Pushed 10 ft.
+Note:    Fires even if Morthyl is at 0 Stamina on transition.
+```
+> When the bones rise, they do not wait.
+
+---
+
 **Claw Strike — (1 Stamina)**
 ```
 Type:    Melee (STR) — Bear Claws, Reach 10 ft
@@ -352,6 +366,18 @@ Rider:   CON Save DC 18
 
 ---
 
+**Marrow Shard — (1 Stamina)**
+```
+Type:    Melee (STR) — Skull Armor, Reach 15 ft
+Attack:  d20+10
+Damage:  2d4+6
+Note:    No rider. Available even while conserving Stamina for Rot Cascade.
+         Provides active threat at minimum STA cost.
+```
+> Not every bone needs to land clean. Some are reminders.
+
+---
+
 **Marrow Barrage — (2 Stamina, Cooldown 1 Turn)**
 ```
 Type:    Ranged Area (INS) — Skull Armor Vents, Range 40 ft
@@ -359,6 +385,9 @@ Area:    Two 10 ft radius impact zones (placed independently within range)
 Save:    DEX Save DC 16
 Damage:  2d10+4 per zone (fail) / half (success)
 Rider:   Fail → Poisoned (1 turn) + Rooted
+
+Desperation Instinct (<15% HP): Morthyl may use Marrow Barrage as a free instinct
+action (0 STA, cooldown ignored). Zones must target different hunters.
 ```
 > The skull armor is not just defense. The marrow vents fire. Spread out or both zones land on the same hunter.
 
@@ -370,15 +399,16 @@ Requires: Skull Mask intact.
 Cost:    5 Stamina. If Biomass ≥ 3: costs 0 Stamina (the Biomass IS the fuel).
 Area:    40 ft radius from anchor point
 Save:    CON Save DC 18
-Damage:  4d10 + (Biomass stacks × 2d6)
+Damage:  [0–2 Biomass: 3d10] [3–4 Biomass: 4d10] [5+ Biomass: 5d10] + (Biomass stacks × 2d6)
 Fail  → Full damage + Rooted. If Biomass ≥ 1: also Poisoned (2 turns).
 Success → Half damage
 
 Example damage:
-  0 Biomass: 4d10 avg 22
-  3 Biomass: 4d10 + 6d6 avg 43
-  6 Biomass: 4d10 + 12d6 avg 64
-  9 Biomass: 4d10 + 18d6 avg 85
+  0 Biomass:  3d10 avg 16.5
+  2 Biomass:  3d10 + 4d6 avg 30.5
+  3 Biomass:  4d10 + 6d6 avg 43
+  5 Biomass:  5d10 + 10d6 avg 62.5
+  9 Biomass:  5d10 + 18d6 avg 90.5
 
 Counter: Breaking the Skull Mask disables Rot Cascade permanently.
          Each Biomass stack the party denied is direct damage off this number.
@@ -392,6 +422,7 @@ Counter: Breaking the Skull Mask disables Rot Cascade permanently.
 
 ```
 Marrow Barrage  — disabled
+Marrow Shard    — disabled (costs 1 STA; available once Fungal Resilience fires)
 Rot Cascade     — disabled (STA insufficient regardless of Skull Mask)
 Bone Wall       — disabled
 Ossified Strike still available.
@@ -483,7 +514,7 @@ Claimed Ground does not follow Morthyl when Bear Form activates. The domain rema
 
 | Part | Accuracy | Threshold | Break Effect |
 |------|----------|-----------|--------------|
-| Bear Skull ★ *(Impact Zone)* | Standard (−2) | 3 hits | Gore Charge disabled; Body Slam radius −5 ft; if broken before Bear Form triggers, transition is weakened (see Bear Form Transition); break deals 2d10 bonus damage |
+| Bear Skull ★ *(Impact Zone)* | Standard (−2) | 2 hits | Gore Charge disabled; Body Slam radius −5 ft; **pre-transition break**: Bear Form erupts without its crown — Gore Charge disabled on entry; break deals 2d10 bonus damage |
 | Tusk Shafts | Open (0) | 2 hits | Claw Strike damage −1d8; break deals 1d10 bonus damage |
 | Rib Cage | Precise (−4) | 2 hits | Body Slam save DC reduced by 2 (DC 17 → 15); break deals 1d8 bonus damage |
 
@@ -540,8 +571,8 @@ Claimed Ground does not follow Morthyl when Bear Form activates. The domain rema
 - Priority: Protect the Skull Mask. If hunters are targeting it, use Marrow Barrage to break their positioning.
 
 **Below 15% HP (Siege Form):**
-- Ossified Strike fires on every available attack regardless of positioning.
-- Marrow Barrage zones overlap — placed to maximize forced movement into Claimed Ground.
+- Ossified Strike fires as the Action attack on the nearest target.
+- Instinct: free Marrow Barrage (0 STA, cooldown ignored). Place zones on two *different* hunters — the creature is lashing out, not executing. Do not stack both zones on the same target.
 - Bone Wall fires on every hit. No conservation.
 - Root Surge triggers even when not tactically ideal — pure desperation.
 

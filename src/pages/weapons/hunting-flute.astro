@@ -39,7 +39,7 @@
 				<article class="content">
 					<section class="weapon-section">
 						<h2>Overview</h2>
-						<p>The Hunting Flute is a musical instrument that empowers allies and weakens enemies through the power of song. Flute users excel at support, offering buffs, debuffs, and healing through a versatile melody system. This weapon is perfect for players who want to control the flow of battle while enabling their teammates.</p>
+						<p>The Hunting Flute is a ranged support weapon designed to inspire allies and disrupt monsters through enchanting melodies. With its unique mechanic of Ballads, the Hunting Flute provides consistent buffs, debuffs, and crowd control while maintaining the ability to deal dissonant sound-based damage. Skilled players can balance between supporting the team and strategically applying debuffs to monsters.</p>
 					</section>
 
 					<section class="weapon-section">
@@ -48,11 +48,14 @@
 							<div class="attribute-card">
 								<h3>Tags</h3>
 								<ul>
-									<li>Support</li>
-									<li>Aura</li>
-									<li>One-Handed</li>
-									<li>Ranged (sound)</li>
+									<li>Ranged (song auras)</li>
+									<li>AoE (notes)</li>
+									<li>Concentration (Ballads)</li>
 								</ul>
+							</div>
+							<div class="attribute-card">
+								<h3>Range</h3>
+								<p>30-ft aura centered on self</p>
 							</div>
 							<div class="attribute-card">
 								<h3>Save DC</h3>
@@ -62,23 +65,28 @@
 					</section>
 
 					<section class="weapon-section highlight">
-						<h2>Core Mechanic — Song of the Hunt</h2>
-						<p>The Flute user weaves melodies that shape the battlefield. You maintain one active Song at a time, which provides ongoing effects to allies or enemies.</p>
+						<h2>Basic Attack — Sonic Note</h2>
+						<p>You release a pulse of sound that rattles foes without friendly fire.</p>
 						<div class="mechanic-details">
-							<h3>Song Rules</h3>
 							<ul>
-								<li><strong>Start a Song:</strong> Fast Action. Only one Song active at a time.</li>
-								<li><strong>Duration:</strong> Songs last until you start a new Song, are Stunned, or choose to end it (Free Action).</li>
-								<li><strong>Range:</strong> Most Songs affect allies/enemies within 30 ft of you.</li>
-								<li><strong>Notes:</strong> Gain +1 Note each time you successfully support an ally or debuff an enemy with a Song effect (max 3 Notes).</li>
-								<li><strong>Spend Notes:</strong> Certain techniques consume Notes for enhanced effects.</li>
-								<li><strong>Performance Ward:</strong> While any Song is active, you gain +2 AR. Music is your shield.</li>
+								<li><strong>Range/Shape:</strong> 30-ft aura centered on you. Choose up to <strong>2 targets</strong> in the aura (T3: up to 3; T5: up to 4).</li>
+								<li><strong>Hit:</strong> Weapon damage (tier dice) + CHA modifier vs AR.</li>
+								<li><strong>On a crit:</strong> Target has Disadvantage on its next Concentration check before your next turn.</li>
 							</ul>
+						</div>
+					</section>
 
-							<h3>Starting Songs (T1)</h3>
+					<section class="weapon-section highlight">
+						<h2>Core Mechanic — Ballads</h2>
+						<p>Ballads are magical melodies that augment allies or hinder enemies depending on the song being played. The Hunting Flute's effectiveness hinges on playing these songs while maintaining concentration.</p>
+						<div class="mechanic-details">
+							<h3>Ballad Rules</h3>
 							<ul>
-								<li><strong>Courage:</strong> Allies in range gain +1 to attack rolls.</li>
-								<li><strong>Lament:</strong> Enemies in range have disadvantage on saves vs Fear/Charm.</li>
+								<li><strong>Play a Ballad:</strong> Fast Action, costs 1 Stamina to start. You can attack while playing.</li>
+								<li><strong>Upkeep:</strong> Pay 1 Stamina at the start of each of your turns while it's active.</li>
+								<li><strong>Switch Ballad:</strong> Fast Action. New song immediately replaces the old one.</li>
+								<li><strong>Concentration:</strong> If you lose Concentration, the song ends. Make a CHA check vs damage taken (DC = 10 or half damage, whichever is higher).</li>
+								<li><strong>One active Ballad at a time</strong> — unless a technique allows more.</li>
 							</ul>
 						</div>
 					</section>
@@ -89,7 +97,7 @@
 							<thead>
 								<tr>
 									<th>Tier</th>
-									<th>Sonic Attack Damage</th>
+									<th>Sonic Note Damage</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -107,91 +115,95 @@
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T1 — Resonant Strike</h3>
-								<div class="technique-cost">1 Stamina • Action</div>
-							</div>
-							<p>A focused blast of sound that damages and disorients.</p>
-							<p><strong>Range:</strong> 30 ft</p>
-							<p><strong>Attack:</strong> CHA-based attack vs AR. On hit: base Flute damage + CHA.</p>
-							<p><strong>Effect:</strong> Target makes a CON save vs your Flute DC or becomes Deafened until end of its next turn.</p>
-						</div>
-
-						<div class="technique-card">
-							<div class="technique-header">
-								<h3>T2 — Healing Hymn</h3>
-								<div class="technique-cost">2 Stamina • Action, Aura</div>
-							</div>
-							<p>A soothing melody that mends wounds.</p>
-							<p><strong>Effect:</strong> All allies within 30 ft (including you) regain 1d8 + CHA HP.</p>
-							<p><strong>Notes Bonus:</strong> If you have 3 Notes, you may spend them all to add +1d8 to the healing.</p>
-						</div>
-
-						<div class="technique-card">
-							<div class="technique-header">
-								<h3>T2 — New Songs</h3>
+								<h3>T1 — Tempo Change</h3>
 								<div class="technique-cost">Passive</div>
 							</div>
-							<p>You learn two additional Songs:</p>
+							<p>You master the rhythm between melodies, using musical flow for evasive repositioning.</p>
 							<ul>
-								<li><strong>Swiftness:</strong> Allies in range gain +10 ft movement speed.</li>
-								<li><strong>Discord:</strong> Enemies in range take 1d4 psychic damage at the start of their turn if they can hear you.</li>
+								<li>When you switch Ballads, gain <strong>+10 ft movement</strong> and you don't provoke opportunity attacks during that movement.</li>
 							</ul>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T3 — Crescendo</h3>
+								<h3>T2 — Echo Pulse</h3>
 								<div class="technique-cost">Passive</div>
 							</div>
-							<p>Your songs grow more powerful and reach further.</p>
+							<p>Your sustained melodies begin to ripple outward, extending their reach.</p>
 							<ul>
-								<li>Song range increases to 40 ft.</li>
-								<li>When you would gain a Note, gain +1 additional Note (still max 3).</li>
-								<li>Your Songs no longer require you to be heard—they affect creatures even if Deafened.</li>
+								<li><strong>Ballad radius +10 ft</strong> — most songs now reach 40 ft.</li>
+								<li><strong>Chip Beat:</strong> Each hostile that starts its turn inside your active Ballad takes <strong>1d4 sonic damage</strong> (once per creature per round).</li>
 							</ul>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T4 — Shattering Note</h3>
-								<div class="technique-cost">3 Stamina • Action, AoE</div>
+								<h3>T3 — Dissonant Crescendo</h3>
+								<div class="technique-cost">2 Stamina • Reaction • 1/round</div>
 							</div>
-							<p>A devastating sonic burst that disrupts and damages.</p>
-							<p><strong>Range:</strong> 20-ft radius within 40 ft</p>
-							<p><strong>Effect:</strong> All creatures in the area make a CON save vs your Flute DC:</p>
-							<ul>
-								<li><strong>Fail:</strong> Take 3d8 + CHA thunder damage and become Stunned until the end of your next turn.</li>
-								<li><strong>Success:</strong> Half damage, no Stun.</li>
-							</ul>
-							<p><strong>Notes Bonus:</strong> Spend 2 Notes to increase radius to 25 ft and add +1d8 damage.</p>
+							<p>Your melody fractures into dissonance, punishing those who challenge your song.</p>
+							<p><strong>Trigger:</strong> A hostile enters your Ballad area, or makes an attack while inside it.</p>
+							<p><strong>Effect:</strong> 15-ft radius burst within your Ballad area. Each enemy in the burst takes your weapon damage and must make a <strong>CHA save vs your Flute DC</strong> or lose its next attack roll (the attack action is wasted).</p>
+							<p><em>Escalating Resistance applies to this effect vs the same creature.</em></p>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T4 — New Songs</h3>
+								<h3>T4 — Harmonic Resonance</h3>
 								<div class="technique-cost">Passive</div>
 							</div>
-							<p>You learn two additional Songs:</p>
+							<p>You can now layer melodies like a master conductor.</p>
 							<ul>
-								<li><strong>Fortress:</strong> Allies in range gain +1 AR.</li>
-								<li><strong>Entropy:</strong> Enemies in range have -1 AR (min 0).</li>
+								<li>You may maintain <strong>two Ballads at once</strong>.</li>
+								<li>You have <strong>advantage on all Concentration saves</strong>.</li>
+								<li>Stamina upkeep doubles (2/turn) while sustaining multiple songs.</li>
 							</ul>
 						</div>
 
 						<div class="technique-card">
 							<div class="technique-header">
-								<h3>T5 — Requiem of the Wild</h3>
-								<div class="technique-cost">4 Stamina • Action, Ultimate</div>
+								<h3>T5 — Magnum Opus</h3>
+								<div class="technique-cost">4 Stamina/turn • Fast Action • 1/hunt</div>
 							</div>
-							<p>The ultimate Flute technique, a legendary melody that reshapes the battlefield.</p>
-							<p><strong>Duration:</strong> 3 rounds (your turn to your turn 3 turns later)</p>
-							<p><strong>Effect (while active):</strong></p>
+							<p>You unleash your most potent arrangement, weaving multiple songs with effortless flow.</p>
+							<p><strong>Tags:</strong> Aura, Concentration</p>
+							<p><strong>Activate/Deactivate:</strong> Fast Action.</p>
+							<p><strong>While active:</strong></p>
 							<ul>
-								<li><strong>All allies within 50 ft:</strong> +2 to all attack rolls, saves, and skill checks. Immunity to Fear and Charm. Regain 1d6 HP at the start of their turn.</li>
-								<li><strong>All enemies within 50 ft:</strong> Disadvantage on attack rolls. Take 2d6 psychic damage at the start of their turn (no save).</li>
-								<li><strong>You:</strong> Cannot take Actions or Bonus Actions while maintaining Requiem (can still move, use Reactions). If you are Stunned or choose to end it early, Requiem ends immediately.</li>
+								<li>You may maintain <strong>up to 3 Ballads at once</strong>.</li>
+								<li>Individual Ballad upkeep becomes <strong>0</strong> — you only pay Magnum Opus's 4 STA/turn upkeep.</li>
+								<li>You have advantage on CHA-based saves and checks tied to playing or concentration.</li>
+								<li>Switching Ballads is still a Fast Action.</li>
 							</ul>
-							<p><strong>Notes:</strong> You do not gain Notes while Requiem is active.</p>
+							<p><strong>Ends if:</strong> You can't pay the upkeep, you lose Concentration, or you deactivate it (no action required).</p>
+						</div>
+					</section>
+
+					<section class="weapon-section">
+						<h2>Starter Hunting Flutes</h2>
+
+						<div class="flute-card aggressive">
+							<div class="flute-header">
+								<h3>🦴 Bone Flute</h3>
+								<span class="flute-tag">Aggressive</span>
+							</div>
+							<ul>
+								<li><strong>Blood Rhythm</strong> (ally aura): Allies in range deal <strong>+1 damage</strong> on melee attacks.</li>
+								<li><strong>Predator Pulse</strong> (ally aura): Allies in range gain <strong>+2 to attack rolls</strong>.</li>
+							</ul>
+							<p class="playstyle-note">Playstyle: crack high-AR checks and push damage.</p>
+						</div>
+
+						<div class="flute-card defensive">
+							<div class="flute-header">
+								<h3>🌿 Song Flute</h3>
+								<span class="flute-tag">Defensive</span>
+							</div>
+							<ul>
+								<li><strong>Soothing Tones</strong> (ally aura): At the end of each ally's turn, that ally regains HP equal to your <strong>CHA modifier</strong> (min 1) while in range.</li>
+								<li><strong>Earthen Refrain</strong> (ally aura): Allies in range gain <strong>+1 AR</strong> and advantage vs forced movement.</li>
+							</ul>
+							<p class="playstyle-note">Playstyle: stabilize lines, protect kite compositions.</p>
 						</div>
 					</section>
 
@@ -199,21 +211,21 @@
 						<h2>Weapon Playstyle</h2>
 						<div class="playstyle-grid">
 							<div class="playstyle-card strengths">
-								<h3>💪 Strengths</h3>
+								<h3>Strengths</h3>
 								<ul>
-									<li>Exceptional force multiplier for teams</li>
-									<li>Flexible song library for any situation</li>
-									<li>Healing and support without sacrificing offense</li>
-									<li>Area control through debuffs</li>
+									<li>Provides consistent buffs and debuffs for prolonged engagements</li>
+									<li>Capable of AoE damage while supporting the team</li>
+									<li>Flexible and synergizes well with other weapons</li>
+									<li>Passive Chip Beat adds no-action pressure once active</li>
 								</ul>
 							</div>
 							<div class="playstyle-card weaknesses">
-								<h3>⚠️ Weaknesses</h3>
+								<h3>Weaknesses</h3>
 								<ul>
-									<li>Low personal damage output</li>
-									<li>Highly dependent on allies to be effective</li>
-									<li>Vulnerable to interruption (Stunned ends Songs)</li>
-									<li>Limited solo viability</li>
+									<li>Requires stamina management to maintain songs and deal damage</li>
+									<li>Dependent on positioning to maximize Ballad radius</li>
+									<li>Vulnerable to Concentration disruption</li>
+									<li>Limited burst healing — sustained throughput only via Song Flute Soothing Tones</li>
 								</ul>
 							</div>
 						</div>
@@ -255,6 +267,7 @@
 			.weapon-section p { margin-bottom: 1rem; }
 			.weapon-section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
 			.weapon-section li { margin-bottom: 0.5rem; }
+			.mechanic-details { background: var(--forest-dark); padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
 			.attributes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
 			.attribute-card { background: var(--forest-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.attribute-card h3 { color: var(--amber); font-size: 1.25rem; margin-bottom: 1rem; }
@@ -270,11 +283,18 @@
 			.technique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--earth-brown); }
 			.technique-header h3 { color: var(--amber); font-size: 1.75rem; margin: 0; }
 			.technique-cost { background: var(--moss-green); padding: 0.5rem 1rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.9rem; }
+			.flute-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; border: 2px solid var(--earth-brown); }
+			.flute-card.aggressive { border-color: #c74440; }
+			.flute-card.defensive { border-color: var(--leaf-green); }
+			.flute-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; }
+			.flute-header h3 { color: var(--amber); font-size: 1.5rem; margin: 0; }
+			.flute-tag { background: var(--moss-green); padding: 0.35rem 0.75rem; border-radius: 6px; color: var(--amber); font-weight: 600; font-size: 0.85rem; }
+			.playstyle-note { margin-top: 1rem; font-style: italic; color: var(--leaf-green); }
 			.playstyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
 			.playstyle-card { background: var(--forest-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--earth-brown); }
 			.playstyle-card.strengths { border-color: var(--leaf-green); }
 			.playstyle-card.weaknesses { border-color: #c74440; }
-			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+			.playstyle-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--amber); }
 			.playstyle-card ul { list-style: none; margin: 0; }
 			.playstyle-card li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
 			.playstyle-card li:before { content: "▸"; position: absolute; left: 0; color: var(--amber); }
@@ -284,6 +304,7 @@
 				.page-header h1 { font-size: 2rem; }
 				.weapon-section { padding: 1.5rem; }
 				.technique-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+				.flute-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 			}
 			html { scroll-behavior: smooth; }
 		</style>
