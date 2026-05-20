@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Game Master Guide
+      - heading "Welcome to the Wild" [level=1] [ref=e15]
+      - paragraph [ref=e16]: In Untamed, the world breathes through you. Every rustle in the underbrush, every storm that rolls across the valley, every roar in the distance — all of it begins with your voice and your choices. You are not a narrator in a static tale; you are the pulse of a living ecosystem that grows, fights back, and remembers.
+      - paragraph [ref=e17]: "Your goal is simple: guide your hunters through a world that is both beautiful and brutal. Challenge them to think, to prepare, and to adapt — and reward their cleverness, not just their courage."
+    - generic [ref=e19]:
+      - heading "Your Role in the Wild" [level=2] [ref=e20]
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]: 🌲
+          - heading "Embody the Living World" [level=3] [ref=e24]
+          - paragraph [ref=e25]: Nothing in Untamed stands still. The land shifts with the weather, monsters migrate when threatened, and even the smallest choice can ripple through the ecosystem. Portray that motion. Let the players feel that the world moves whether they act or not.
+        - generic [ref=e26]:
+          - generic [ref=e27]: ⚔️
+          - heading "Challenge Through Tactics" [level=3] [ref=e28]
+          - paragraph [ref=e29]: Every encounter should test endurance and wit. Victory is never guaranteed — it must be earned through timing, stamina, and understanding the creature's behavior. Force players to read the hunt, not just roll dice.
+        - generic [ref=e30]:
+          - generic [ref=e31]: 🩸
+          - heading "Reflect Choices Dynamically" [level=3] [ref=e32]
+          - paragraph [ref=e33]: The wild remembers. If the hunters burn a grove, the next hunt may begin in ash. If they spare a beast, it may return changed — as a rival, or as a myth. Every decision reshapes the balance of the world.
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: This is not a tale of heroes saving kingdoms. It is a struggle for balance — hunters surviving the untamed wilds.
+        - paragraph [ref=e36]: A reckless blade is a broken blade. The wild does not forgive. But it rewards those who respect the hunt.
+    - generic [ref=e38]:
+      - heading "The Hunt Loop at a Glance" [level=2] [ref=e39]
+      - paragraph [ref=e40]: Four phases, porous on purpose. Weather, wounds, and monster behavior can kick you forward or backward. Your job is to keep the rhythm taut and the stakes real.
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]: "1"
+          - heading "Gathering" [level=3] [ref=e44]
+          - paragraph [ref=e45]: Research · Scout · Stock Up
+          - paragraph [ref=e46]: Collect rumors, identify monster traits, secure provisions, craft or upgrade gear. Spend stamina on travel and preparation.
+        - generic [ref=e47]:
+          - generic [ref=e48]: "2"
+          - heading "Tracking" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Find It Before It Finds You
+          - paragraph [ref=e51]: Follow tracks, analyze signs, avoid weather hazards. Perception and Instinct checks keep the trail alive.
+        - generic [ref=e52]:
+          - generic [ref=e53]: "3"
+          - heading "Combat" [level=3] [ref=e54]
+          - paragraph [ref=e55]: Stamina · Timing · Terrain
+          - paragraph [ref=e56]: Manage stamina, exploit part breaks and conditions. Positioning matters. Don't forget defensive reactions and preparation actions.
+        - generic [ref=e57]:
+          - generic [ref=e58]: "4"
+          - heading "Resolution" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Harvest & Fallout
+          - paragraph [ref=e61]: Deliver the final blow, harvest parts, resolve conditions, narrate consequences. Adjust the biome with territory shifts.
+    - generic [ref=e63]:
+      - heading "GM Guide Chapters" [level=2] [ref=e64]
+      - paragraph [ref=e65]: The book is big. Use this hub to jump to whatever you need at the table.
+      - generic [ref=e66]:
+        - 'link "🔁 The Hunt Loop Full phase-by-phase guidance: Gathering, Tracking, Combat, Resolution — with GM moves, typical rolls, and exit conditions. Coming Soon" [ref=e67]':
+          - /url: /gm-guide/hunt-loop
+          - generic [ref=e68]: 🔁
+          - heading "The Hunt Loop" [level=3] [ref=e69]
+          - paragraph [ref=e70]: "Full phase-by-phase guidance: Gathering, Tracking, Combat, Resolution — with GM moves, typical rolls, and exit conditions."
+          - generic [ref=e71]: Coming Soon
+        - link "🧰 GM Toolkit DC ranges, action economy, stamina cues, defensive reactions, save categories, and called shot adjudication. Coming Soon" [ref=e72]:
+          - /url: /gm-guide/toolkit
+          - generic [ref=e73]: 🧰
+          - heading "GM Toolkit" [level=3] [ref=e74]
+          - paragraph [ref=e75]: DC ranges, action economy, stamina cues, defensive reactions, save categories, and called shot adjudication.
+          - generic [ref=e76]: Coming Soon
+        - link "🌦️ Environmental Systems Day/night cycle, camping & rest, weather hazards, food & cooking buffs, hydration, traversal, and night hunts. Coming Soon" [ref=e77]:
+          - /url: /gm-guide/environment
+          - generic [ref=e78]: 🌦️
+          - heading "Environmental Systems" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Day/night cycle, camping & rest, weather hazards, food & cooking buffs, hydration, traversal, and night hunts.
+          - generic [ref=e81]: Coming Soon
+        - link "🗺️ Building & Using Biomes Sector maps, ecology shifts, monster migrations, random events, villages, and a homebrew biome checklist. Coming Soon" [ref=e82]:
+          - /url: /gm-guide/biomes
+          - generic [ref=e83]: 🗺️
+          - heading "Building & Using Biomes" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Sector maps, ecology shifts, monster migrations, random events, villages, and a homebrew biome checklist.
+          - generic [ref=e86]: Coming Soon
+        - link "🐾 Monsters in Motion Behavior archetypes, instinct loops, classifications, the monster turn flow, tiers, thresholds, and small-monster handling. Coming Soon" [ref=e87]:
+          - /url: /gm-guide/monsters
+          - generic [ref=e88]: 🐾
+          - heading "Monsters in Motion" [level=3] [ref=e89]
+          - paragraph [ref=e90]: Behavior archetypes, instinct loops, classifications, the monster turn flow, tiers, thresholds, and small-monster handling.
+          - generic [ref=e91]: Coming Soon
+        - link "⚒️ Crafting & Economy Material tags, monster effect tables, signature sets, traps, potions & salves, and how the world's economy responds to the hunt. Coming Soon" [ref=e92]:
+          - /url: /gm-guide/crafting
+          - generic [ref=e93]: ⚒️
+          - heading "Crafting & Economy" [level=3] [ref=e94]
+          - paragraph [ref=e95]: Material tags, monster effect tables, signature sets, traps, potions & salves, and how the world's economy responds to the hunt.
+          - generic [ref=e96]: Coming Soon
+        - 'link "🎯 Hunt Templates Alternative mission types: Track & Slay, Harvest, Relocate, Rescue, Population Control, Ecology Disruption, Bait & Observe. Coming Soon" [ref=e97]':
+          - /url: /gm-guide/hunt-templates
+          - generic [ref=e98]: 🎯
+          - heading "Hunt Templates" [level=3] [ref=e99]
+          - paragraph [ref=e100]: "Alternative mission types: Track & Slay, Harvest, Relocate, Rescue, Population Control, Ecology Disruption, Bait & Observe."
+          - generic [ref=e101]: Coming Soon
+    - generic [ref=e103]:
+      - heading "GM Principles vs. Rules" [level=2] [ref=e104]
+      - paragraph [ref=e105]: Throughout this guide you'll see labels that signal the intent of each paragraph. When in doubt, err on the side of player clarity and fun.
+      - list [ref=e106]:
+        - listitem [ref=e107]:
+          - generic [ref=e108]: "[Hard Rule]"
+          - text: A strict mechanic or requirement you should enforce.
+          - emphasis [ref=e109]: "\"A hunter can perform only one preparation action per round.\""
+        - listitem [ref=e110]:
+          - generic [ref=e111]: "[Soft Rule]"
+          - text: A recommended guideline that can bend to context.
+          - emphasis [ref=e112]: "\"Use exhaustion penalties sparingly.\""
+        - listitem [ref=e113]:
+          - generic [ref=e114]: "[GM Guideline]"
+          - text: Advice for adjudicating situations.
+          - emphasis [ref=e115]: "\"Telegraph monster attacks clearly.\""
+        - listitem [ref=e116]:
+          - generic [ref=e117]: "[Narrative Cue]"
+          - text: Flavor text or prompts to inspire description; no mechanics attached.
+        - listitem [ref=e118]:
+          - generic [ref=e119]: "[Optional Module]"
+          - text: Additional systems that can be toggled on or off (meal synergy, advanced pack behavior, etc.).
+    - generic [ref=e121]:
+      - paragraph [ref=e122]: This is the Playtest version. Some monster art is AI-generated; the final version will use original artist drawings.
+      - paragraph [ref=e123]: The wild does not forgive. But it rewards those who respect the hunt.
