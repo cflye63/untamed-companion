@@ -1,0 +1,443 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - link "← Back to GM Guide" [ref=e14] [cursor=pointer]:
+        - /url: /gm-guide
+      - generic [ref=e15]:
+        - heading "GM Quick Reference" [level=1] [ref=e16]
+        - paragraph [ref=e17]: Flip-to-this-page lookup. Numbers and rulings, not explanations.
+      - navigation [ref=e18]:
+        - heading "Jump To" [level=2] [ref=e19]
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - link "DC Ladder" [ref=e22] [cursor=pointer]:
+              - /url: "#dcs"
+            - link "Action Economy" [ref=e23] [cursor=pointer]:
+              - /url: "#actions"
+            - link "Reactions" [ref=e24] [cursor=pointer]:
+              - /url: "#reactions"
+            - link "Save Categories" [ref=e25] [cursor=pointer]:
+              - /url: "#saves"
+          - generic [ref=e26]:
+            - link "Stamina States" [ref=e27] [cursor=pointer]:
+              - /url: "#stamina"
+            - link "Conditions" [ref=e28] [cursor=pointer]:
+              - /url: "#conditions"
+            - link "Escalating Resistance" [ref=e29] [cursor=pointer]:
+              - /url: "#escalating"
+          - generic [ref=e30]:
+            - link "Monster Math" [ref=e31] [cursor=pointer]:
+              - /url: "#monster-math"
+            - link "Called Shots & AR" [ref=e32] [cursor=pointer]:
+              - /url: "#called-shots"
+            - link "Phase Triggers" [ref=e33] [cursor=pointer]:
+              - /url: "#phase-triggers"
+            - link "Weather Effects" [ref=e34] [cursor=pointer]:
+              - /url: "#weather"
+      - article [ref=e35]:
+        - generic [ref=e36]:
+          - heading "🎲 DC Ladder" [level=2] [ref=e37]
+          - table [ref=e39]:
+            - rowgroup [ref=e40]:
+              - row "DC Difficulty Use For" [ref=e41]:
+                - columnheader "DC" [ref=e42]
+                - columnheader "Difficulty" [ref=e43]
+                - columnheader "Use For" [ref=e44]
+            - rowgroup [ref=e45]:
+              - row "8 Trivial Routine; failure = distraction, not danger." [ref=e46]:
+                - cell "8" [ref=e47]
+                - cell "Trivial" [ref=e48]
+                - cell "Routine; failure = distraction, not danger." [ref=e49]
+              - row "10 Easy Mild risk or pressure." [ref=e50]:
+                - cell "10" [ref=e51]
+                - cell "Easy" [ref=e52]
+                - cell "Mild risk or pressure." [ref=e53]
+              - row "12 Moderate Demands skill or focus." [ref=e54]:
+                - cell "12" [ref=e55]
+                - cell "Moderate" [ref=e56]
+                - cell "Demands skill or focus." [ref=e57]
+              - row "14 Challenging Adverse conditions or limited time." [ref=e58]:
+                - cell "14" [ref=e59]
+                - cell "Challenging" [ref=e60]
+                - cell "Adverse conditions or limited time." [ref=e61]
+              - row "16 Hard Requires expertise, strong roll, or tools." [ref=e62]:
+                - cell "16" [ref=e63]
+                - cell "Hard" [ref=e64]
+                - cell "Requires expertise, strong roll, or tools." [ref=e65]
+              - row "18 Severe Dangerous or highly specific." [ref=e66]:
+                - cell "18" [ref=e67]
+                - cell "Severe" [ref=e68]
+                - cell "Dangerous or highly specific." [ref=e69]
+              - row "20+ Extreme Heroic or nearly impossible." [ref=e70]:
+                - cell "20+" [ref=e71]
+                - cell "Extreme" [ref=e72]
+                - cell "Heroic or nearly impossible." [ref=e73]
+        - generic [ref=e74]:
+          - heading "⚡ Action Economy" [level=2] [ref=e75]
+          - table [ref=e77]:
+            - rowgroup [ref=e78]:
+              - row "Type Cost Rule" [ref=e79]:
+                - columnheader "Type" [ref=e80]
+                - columnheader "Cost" [ref=e81]
+                - columnheader "Rule" [ref=e82]
+            - rowgroup [ref=e83]:
+              - row "Move 0 STA Up to 30 ft base. Sprint/climb = +1 STA per 10 ft." [ref=e84]:
+                - cell "Move" [ref=e85]:
+                  - strong [ref=e86]: Move
+                - cell "0 STA" [ref=e87]
+                - cell "Up to 30 ft base. Sprint/climb = +1 STA per 10 ft." [ref=e88]
+              - row "Action 1+ STA Attack, Technique, set trap, environment interact." [ref=e89]:
+                - cell "Action" [ref=e90]:
+                  - strong [ref=e91]: Action
+                - cell "1+ STA" [ref=e92]
+                - cell "Attack, Technique, set trap, environment interact." [ref=e93]
+              - row "Fast Action 0–1 STA 1/turn. Potions, swaps, toggles. No chaining." [ref=e94]:
+                - cell "Fast Action" [ref=e95]:
+                  - strong [ref=e96]: Fast Action
+                - cell "0–1 STA" [ref=e97]
+                - cell "1/turn. Potions, swaps, toggles. No chaining." [ref=e98]
+              - row "Preparation 0 STA Replaces Action. Breaks if hit, moved, or rushed." [ref=e99]:
+                - cell "Preparation" [ref=e100]:
+                  - strong [ref=e101]: Preparation
+                - cell "0 STA" [ref=e102]
+                - cell "Replaces Action. Breaks if hit, moved, or rushed." [ref=e103]
+        - generic [ref=e104]:
+          - heading "🛡️ Reactions" [level=2] [ref=e105]
+          - table [ref=e107]:
+            - rowgroup [ref=e108]:
+              - row "Reaction Who Effect" [ref=e109]:
+                - columnheader "Reaction" [ref=e110]
+                - columnheader "Who" [ref=e111]
+                - columnheader "Effect" [ref=e112]
+            - rowgroup [ref=e113]:
+              - row "Block Guard / shielded weapons +3 AR vs one attack. If still hit, reduce damage by CON mod." [ref=e114]:
+                - cell "Block" [ref=e115]:
+                  - strong [ref=e116]: Block
+                - cell "Guard / shielded weapons" [ref=e117]
+                - cell "+3 AR vs one attack. If still hit, reduce damage by CON mod." [ref=e118]
+              - row "Dodge Light / Medium armor Attack rolls vs you at Disadvantage. Reposition 5 ft if not hit." [ref=e119]:
+                - cell "Dodge" [ref=e120]:
+                  - strong [ref=e121]: Dodge
+                - cell "Light / Medium armor" [ref=e122]
+                - cell "Attack rolls vs you at Disadvantage. Reposition 5 ft if not hit." [ref=e123]
+              - 'row "Parry Weapons with Parry tag d20 + STR/DEX + Prof vs attacker. Success: cancel hit, ½ weapon dmg back (0 STA). Fail: +1 AR only." [ref=e124]':
+                - cell "Parry" [ref=e125]:
+                  - strong [ref=e126]: Parry
+                - cell "Weapons with Parry tag" [ref=e127]
+                - 'cell "d20 + STR/DEX + Prof vs attacker. Success: cancel hit, ½ weapon dmg back (0 STA). Fail: +1 AR only." [ref=e128]'
+        - generic [ref=e129]:
+          - heading "🎯 Save Categories" [level=2] [ref=e130]
+          - table [ref=e132]:
+            - rowgroup [ref=e133]:
+              - row "Threat Save Typical Source" [ref=e134]:
+                - columnheader "Threat" [ref=e135]
+                - columnheader "Save" [ref=e136]
+                - columnheader "Typical Source" [ref=e137]
+            - rowgroup [ref=e138]:
+              - row "Physical restraint / push STR / DEX Grapples, debris, knockdowns" [ref=e139]:
+                - cell "Physical restraint / push" [ref=e140]
+                - cell "STR / DEX" [ref=e141]
+                - cell "Grapples, debris, knockdowns" [ref=e142]
+              - row "Poison, disease, exhaustion CON Venoms, weather, hunger" [ref=e143]:
+                - cell "Poison, disease, exhaustion" [ref=e144]
+                - cell "CON" [ref=e145]
+                - cell "Venoms, weather, hunger" [ref=e146]
+              - row "Mental shock, fear, roar CHA / INS Apex roars, illusions, morale" [ref=e147]:
+                - cell "Mental shock, fear, roar" [ref=e148]
+                - cell "CHA / INS" [ref=e149]
+                - cell "Apex roars, illusions, morale" [ref=e150]
+              - row "Elemental hazard CON / DEX Fire, lightning, ice, wind" [ref=e151]:
+                - cell "Elemental hazard" [ref=e152]
+                - cell "CON / DEX" [ref=e153]
+                - cell "Fire, lightning, ice, wind" [ref=e154]
+        - generic [ref=e155]:
+          - heading "💨 Stamina States" [level=2] [ref=e156]
+          - table [ref=e158]:
+            - rowgroup [ref=e159]:
+              - row "State GM Cue Mechanical" [ref=e160]:
+                - columnheader "State" [ref=e161]
+                - columnheader "GM Cue" [ref=e162]
+                - columnheader "Mechanical" [ref=e163]
+            - rowgroup [ref=e164]:
+              - row "Steady (> half) Calm stance, measured breathing. Acts normally." [ref=e165]:
+                - cell "Steady (> half)" [ref=e166]:
+                  - strong [ref=e167]: Steady
+                  - text: (> half)
+                - cell "Calm stance, measured breathing." [ref=e168]
+                - cell "Acts normally." [ref=e169]
+              - row "Low (≤ 2) Hesitation, slower dodges, missed openings. Remind fictionally — \"Your grip is slipping.\"" [ref=e170]:
+                - cell "Low (≤ 2)" [ref=e171]:
+                  - strong [ref=e172]: Low
+                  - text: (≤ 2)
+                - cell "Hesitation, slower dodges, missed openings." [ref=e173]
+                - cell "Remind fictionally — \"Your grip is slipping.\"" [ref=e174]
+              - row "0 Exhausted Gasping, momentary lapse. No Actions or Fast Actions. STR/DEX saves auto-fail. Attacks vs them have advantage. Move halved." [ref=e175]:
+                - cell "0 Exhausted" [ref=e176]:
+                  - strong [ref=e177]: 0 Exhausted
+                - cell "Gasping, momentary lapse." [ref=e178]
+                - cell "No Actions or Fast Actions. STR/DEX saves auto-fail. Attacks vs them have advantage. Move halved." [ref=e179]
+        - generic [ref=e180]:
+          - heading "🩹 Conditions" [level=2] [ref=e181]
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - strong [ref=e184]: 💀 Poisoned
+              - text: — Disadvantage on attack rolls and CON saves. 1 dmg at start of turn until treated.
+            - generic [ref=e185]:
+              - strong [ref=e186]: 🩸 Bleeding
+              - text: — 1d4 HP at end of turn per stack. Gain a stack on Dash or move > 15 ft.
+              - emphasis [ref=e187]: "Remedy: First Aid INT DC 12 or any healing."
+            - generic [ref=e188]:
+              - strong [ref=e189]: 🔥 Burned
+              - text: — 1d4 fire at end of turn. Disadvantage on Concentration.
+              - emphasis [ref=e190]: "Remedy: Water (then Soaked)."
+            - generic [ref=e191]:
+              - strong [ref=e192]: ❄️ Chilled
+              - text: — +1 STA cost to all abilities. −10 ft movement.
+            - generic [ref=e193]:
+              - strong [ref=e194]: 💧 Soaked
+              - text: — Lightning damage ×2. End of turn CON DC 12 or gain Chilled.
+              - emphasis [ref=e195]: "Remedy: Fire / heat."
+            - generic [ref=e196]:
+              - strong [ref=e197]: 💫 Staggered
+              - text: — No Move or Action until next turn. Fast and Reactions OK.
+            - generic [ref=e198]:
+              - strong [ref=e199]: ⚡ Stunned
+              - text: — Lose next turn entirely. Attacks vs you have advantage. Auto-fail STR/DEX saves until end of next turn.
+            - generic [ref=e200]:
+              - strong [ref=e201]: ⛓️ Paralyzed
+              - text: — No Move, Action, Fast, or Reaction until next turn. Attacks vs you have advantage.
+            - generic [ref=e202]:
+              - strong [ref=e203]: 😰 Exhausted
+              - text: — STA = 0. No Actions or Fast. Attacks vs you have advantage. Auto-fail STR/DEX saves. Move halved.
+              - emphasis [ref=e204]: Recover +4 STA at end of turn if you take no Action.
+            - generic [ref=e205]:
+              - strong [ref=e206]: 🤕 Prone
+              - text: "— Melee vs you: advantage. Ranged vs you: disadvantage. Your ranged: disadvantage."
+              - emphasis [ref=e207]: "Stand: 2 STA."
+            - generic [ref=e208]:
+              - strong [ref=e209]: 🤼 Grappled
+              - text: — Speed 0. Disadvantage vs forced movement.
+              - emphasis [ref=e210]: "Break: STR or DEX vs grappler at start of turn."
+            - generic [ref=e211]:
+              - strong [ref=e212]: 🕸️ Restrained
+              - text: — Speed 0. Disadvantage on DEX saves. Cannot Dodge. Attacks vs you have advantage.
+            - generic [ref=e213]:
+              - strong [ref=e214]: 😡 Taunted
+              - text: — Next attack must target the taunter. Ends after that attack or if untargetable.
+            - generic [ref=e215]:
+              - strong [ref=e216]: 😵 Dazed
+              - text: — Disadvantage on attack rolls and Instinct checks. No Reactions. Ends at end of next turn.
+            - generic [ref=e217]:
+              - strong [ref=e218]: 😴 Sleep
+              - text: "— Lose turn, regain 4 STA. Wake on INS at end of turn or on damage. Attacks vs Sleeping: advantage."
+        - generic [ref=e219]:
+          - heading "🔁 Escalating Resistance" [level=2] [ref=e220]
+          - paragraph [ref=e221]:
+            - text: Tracks
+            - strong [ref=e222]: per condition type, globally
+            - text: . Resets each encounter. Applies to monsters resisting hunter-applied conditions on a save (Prone, Staggered, Restrained, Stunned, Bleeding, Dazed, Slowed). One-directional — monsters do NOT get escalating CC against hunters.
+          - table [ref=e224]:
+            - rowgroup [ref=e225]:
+              - row "Application Save Modifier" [ref=e226]:
+                - columnheader "Application" [ref=e227]
+                - columnheader "Save Modifier" [ref=e228]
+            - rowgroup [ref=e229]:
+              - row "1st Normal save" [ref=e230]:
+                - cell "1st" [ref=e231]
+                - cell "Normal save" [ref=e232]
+              - row "2nd +2 to save" [ref=e233]:
+                - cell "2nd" [ref=e234]
+                - cell "+2 to save" [ref=e235]
+              - row "3rd +4 to save" [ref=e236]:
+                - cell "3rd" [ref=e237]
+                - cell "+4 to save" [ref=e238]
+              - row "4th +6 to save" [ref=e239]:
+                - cell "4th" [ref=e240]
+                - cell "+6 to save" [ref=e241]
+              - row "5th+ +8 to save" [ref=e242]:
+                - cell "5th+" [ref=e243]
+                - cell "+8 to save" [ref=e244]
+        - generic [ref=e245]:
+          - heading "🐾 Monster Math" [level=2] [ref=e246]
+          - generic [ref=e247]:
+            - generic [ref=e248]: Attack Roll
+            - code [ref=e249]: d20 + 4 (proficiency) + relevant stat bonus
+          - generic [ref=e250]:
+            - generic [ref=e251]: Damage
+            - code [ref=e252]: damage dice + (½ relevant stat, rounded down)
+          - generic [ref=e253]:
+            - generic [ref=e254]: HP
+            - code [ref=e255]: (CON × party multiplier) + (Tier × 15)
+          - generic [ref=e256]:
+            - table [ref=e258]:
+              - rowgroup [ref=e259]:
+                - row "Party Size HP ×" [ref=e260]:
+                  - columnheader "Party Size" [ref=e261]
+                  - columnheader "HP ×" [ref=e262]
+              - rowgroup [ref=e263]:
+                - row "1 ×8" [ref=e264]:
+                  - cell "1" [ref=e265]
+                  - cell "×8" [ref=e266]
+                - row "2 ×9" [ref=e267]:
+                  - cell "2" [ref=e268]
+                  - cell "×9" [ref=e269]
+                - row "3 ×10" [ref=e270]:
+                  - cell "3" [ref=e271]
+                  - cell "×10" [ref=e272]
+                - row "4 ×11" [ref=e273]:
+                  - cell "4" [ref=e274]
+                  - cell "×11" [ref=e275]
+                - row "5 ×12" [ref=e276]:
+                  - cell "5" [ref=e277]
+                  - cell "×12" [ref=e278]
+            - table [ref=e280]:
+              - rowgroup [ref=e281]:
+                - row "Tier Attacks / Turn Role" [ref=e282]:
+                  - columnheader "Tier" [ref=e283]
+                  - columnheader "Attacks / Turn" [ref=e284]
+                  - columnheader "Role" [ref=e285]
+              - rowgroup [ref=e286]:
+                - row "T1 2 Low-threat predator" [ref=e287]:
+                  - cell "T1" [ref=e288]
+                  - cell "2" [ref=e289]
+                  - cell "Low-threat predator" [ref=e290]
+                - row "T2 2–3 Mid-tier" [ref=e291]:
+                  - cell "T2" [ref=e292]
+                  - cell "2–3" [ref=e293]
+                  - cell "Mid-tier" [ref=e294]
+                - row "T3 3–4 Mini-boss / alpha" [ref=e295]:
+                  - cell "T3" [ref=e296]
+                  - cell "3–4" [ref=e297]
+                  - cell "Mini-boss / alpha" [ref=e298]
+                - row "T4 4–5 Apex within biome" [ref=e299]:
+                  - cell "T4" [ref=e300]
+                  - cell "4–5" [ref=e301]
+                  - cell "Apex within biome" [ref=e302]
+                - row "T5+ 4–5 (+phases) Legendary / Elder" [ref=e303]:
+                  - cell "T5+" [ref=e304]
+                  - cell "4–5 (+phases)" [ref=e305]
+                  - cell "Legendary / Elder" [ref=e306]
+          - paragraph [ref=e307]:
+            - strong [ref=e308]: "Stat bonus quick reference:"
+            - text: STR 7 → +3 dmg · DEX 8 → +4 · INS 11 → +5. Monsters use ½ score, not full.
+        - generic [ref=e309]:
+          - heading "🎯 Called Shots & AR Adjustments" [level=2] [ref=e310]
+          - table [ref=e312]:
+            - rowgroup [ref=e313]:
+              - row "Part AR Adj. Result on Break" [ref=e314]:
+                - columnheader "Part" [ref=e315]
+                - columnheader "AR Adj." [ref=e316]
+                - columnheader "Result on Break" [ref=e317]
+            - rowgroup [ref=e318]:
+              - row "Head / Crest / Horns +2 to +3 Disables breath/roar. May Stun 1 turn." [ref=e319]:
+                - cell "Head / Crest / Horns" [ref=e320]
+                - cell "+2 to +3" [ref=e321]
+                - cell "Disables breath/roar. May Stun 1 turn." [ref=e322]
+              - row "Torso / Core +1 Baseline AR." [ref=e323]:
+                - cell "Torso / Core" [ref=e324]
+                - cell "+1" [ref=e325]
+                - cell "Baseline AR." [ref=e326]
+              - row "Legs / Joints +2 Move −10 ft. No Sprint or Charge." [ref=e327]:
+                - cell "Legs / Joints" [ref=e328]
+                - cell "+2" [ref=e329]
+                - cell "Move −10 ft. No Sprint or Charge." [ref=e330]
+              - row "Tail / Carapace / Back +1 to +2 Removes sweeps. May drop unique carve." [ref=e331]:
+                - cell "Tail / Carapace / Back" [ref=e332]
+                - cell "+1 to +2" [ref=e333]
+                - cell "Removes sweeps. May drop unique carve." [ref=e334]
+              - row "Wings / Fins / Antennae +3 Ground or blind. High payoff." [ref=e335]:
+                - cell "Wings / Fins / Antennae" [ref=e336]
+                - cell "+3" [ref=e337]
+                - cell "Ground or blind. High payoff." [ref=e338]
+              - row "Soft tissue / Weak spot −1 to −2 Rare. Visible only via cues or analysis." [ref=e339]:
+                - cell "Soft tissue / Weak spot" [ref=e340]
+                - cell "−1 to −2" [ref=e341]
+                - cell "Rare. Visible only via cues or analysis." [ref=e342]
+          - table [ref=e344]:
+            - rowgroup [ref=e345]:
+              - row "Situation Modifier" [ref=e346]:
+                - columnheader "Situation" [ref=e347]
+                - columnheader "Modifier" [ref=e348]
+            - rowgroup [ref=e349]:
+              - row "Steady Aim Ignores AR penalty on ranged called shot." [ref=e350]:
+                - cell "Steady Aim" [ref=e351]
+                - cell "Ignores AR penalty on ranged called shot." [ref=e352]
+              - row "Study Target Advantage on next called shot vs that part." [ref=e353]:
+                - cell "Study Target" [ref=e354]
+                - cell "Advantage on next called shot vs that part." [ref=e355]
+              - row "Trapped / Immobilized AR −2 for precision attacks." [ref=e356]:
+                - cell "Trapped / Immobilized" [ref=e357]
+                - cell "AR −2 for precision attacks." [ref=e358]
+              - row "Obscured / Flailing AR +2; ranged called shots may fail outright." [ref=e359]:
+                - cell "Obscured / Flailing" [ref=e360]
+                - cell "AR +2; ranged called shots may fail outright." [ref=e361]
+              - row "Soft state (weakened, molting, stunned) AR −2 for duration." [ref=e362]:
+                - cell "Soft state (weakened, molting, stunned)" [ref=e363]
+                - cell "AR −2 for duration." [ref=e364]
+        - generic [ref=e365]:
+          - heading "📈 Phase Triggers (Defaults)" [level=2] [ref=e366]
+          - table [ref=e368]:
+            - rowgroup [ref=e369]:
+              - row "HP Behavior Shift" [ref=e370]:
+                - columnheader "HP" [ref=e371]
+                - columnheader "Behavior Shift" [ref=e372]
+            - rowgroup [ref=e373]:
+              - row "75% Learns hunter tactics or uses a new ability." [ref=e374]:
+                - cell "75%" [ref=e375]
+                - cell "Learns hunter tactics or uses a new ability." [ref=e376]
+              - row "50% Enrage, terrain change, or elemental burst." [ref=e377]:
+                - cell "50%" [ref=e378]
+                - cell "Enrage, terrain change, or elemental burst." [ref=e379]
+              - row "25% Retreat, berserk, or desperation action." [ref=e380]:
+                - cell "25%" [ref=e381]
+                - cell "Retreat, berserk, or desperation action." [ref=e382]
+              - row "10–15% Desperation surge (suicidal or catastrophic)." [ref=e383]:
+                - cell "10–15%" [ref=e384]
+                - cell "Desperation surge (suicidal or catastrophic)." [ref=e385]
+          - paragraph [ref=e386]:
+            - strong [ref=e387]: "Exhaustion:"
+            - text: "Monster at STA 0 is Exhausted for one full round. Next turn: full STA, shake off Exhaustion. Fury/Enrage states end. HP does not regen."
+          - paragraph [ref=e388]:
+            - strong [ref=e389]: "Retreat (1+ min out of LoS):"
+            - text: Regains full STA, restores ¼ max HP. Narrate adaptation on return.
+        - generic [ref=e390]:
+          - heading "🌦️ Weather Quick Effects" [level=2] [ref=e391]
+          - table [ref=e393]:
+            - rowgroup [ref=e394]:
+              - row "Weather Effect" [ref=e395]:
+                - columnheader "Weather" [ref=e396]
+                - columnheader "Effect" [ref=e397]
+            - rowgroup [ref=e398]:
+              - row "Clear No modifiers." [ref=e399]:
+                - cell "Clear" [ref=e400]
+                - cell "No modifiers." [ref=e401]
+              - row "Rain +2 DC to climb. Ranged at disadvantage. Tracks fade after 10 min." [ref=e402]:
+                - cell "Rain" [ref=e403]
+                - cell "+2 DC to climb. Ranged at disadvantage. Tracks fade after 10 min." [ref=e404]
+              - row "Fog −2 INS for detection. No advantage from elevation." [ref=e405]:
+                - cell "Fog" [ref=e406]
+                - cell "−2 INS for detection. No advantage from elevation." [ref=e407]
+              - row "Storm Random lightning DC 14 DEX save. Ranged at disadvantage." [ref=e408]:
+                - cell "Storm" [ref=e409]
+                - cell "Random lightning DC 14 DEX save. Ranged at disadvantage." [ref=e410]
+              - row "Extreme Cold CON DC 12 per hour or gain 1 Exhaustion." [ref=e411]:
+                - cell "Extreme Cold" [ref=e412]
+                - cell "CON DC 12 per hour or gain 1 Exhaustion." [ref=e413]
+              - row "Heatwave +1 STA cost per Action. Water loss accelerates." [ref=e414]:
+                - cell "Heatwave" [ref=e415]
+                - cell "+1 STA cost per Action. Water loss accelerates." [ref=e416]

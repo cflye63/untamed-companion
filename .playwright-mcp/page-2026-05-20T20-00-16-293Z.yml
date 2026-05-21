@@ -1,0 +1,1070 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - link "← Back to GM Guide" [ref=e14] [cursor=pointer]:
+        - /url: /gm-guide
+      - generic [ref=e15]:
+        - heading "Monsters in Motion" [level=1] [ref=e16]
+        - paragraph [ref=e17]: Behavior archetypes, classifications, and the turn flow that makes monsters feel alive
+      - navigation [ref=e18]:
+        - heading "On This Page" [level=2] [ref=e19]
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - heading "Foundations" [level=3] [ref=e22]
+            - list [ref=e23]:
+              - listitem [ref=e24]:
+                - link "How Monsters Think" [ref=e25] [cursor=pointer]:
+                  - /url: "#how-monsters-think"
+              - listitem [ref=e26]:
+                - link "Behavior Archetypes" [ref=e27] [cursor=pointer]:
+                  - /url: "#behavior-archetypes"
+              - listitem [ref=e28]:
+                - link "Archetype Synergies" [ref=e29] [cursor=pointer]:
+                  - /url: "#archetype-synergies"
+          - generic [ref=e30]:
+            - heading "Archetypes" [level=3] [ref=e31]
+            - list [ref=e32]:
+              - listitem [ref=e33]:
+                - link "Brute" [ref=e34] [cursor=pointer]:
+                  - /url: "#archetype-brute"
+              - listitem [ref=e35]:
+                - link "Skirmisher" [ref=e36] [cursor=pointer]:
+                  - /url: "#archetype-skirmisher"
+              - listitem [ref=e37]:
+                - link "Kiter" [ref=e38] [cursor=pointer]:
+                  - /url: "#archetype-kiter"
+              - listitem [ref=e39]:
+                - link "Ambusher" [ref=e40] [cursor=pointer]:
+                  - /url: "#archetype-ambusher"
+              - listitem [ref=e41]:
+                - link "Guardian" [ref=e42] [cursor=pointer]:
+                  - /url: "#archetype-guardian"
+              - listitem [ref=e43]:
+                - link "Shifter" [ref=e44] [cursor=pointer]:
+                  - /url: "#archetype-shifter"
+              - listitem [ref=e45]:
+                - link "Tool User" [ref=e46] [cursor=pointer]:
+                  - /url: "#archetype-tool-user"
+              - listitem [ref=e47]:
+                - link "Debuffer" [ref=e48] [cursor=pointer]:
+                  - /url: "#archetype-debuffer"
+              - listitem [ref=e49]:
+                - link "Support / Synergist" [ref=e50] [cursor=pointer]:
+                  - /url: "#archetype-support"
+              - listitem [ref=e51]:
+                - link "Tactician" [ref=e52] [cursor=pointer]:
+                  - /url: "#archetype-tactician"
+              - listitem [ref=e53]:
+                - link "Flyer" [ref=e54] [cursor=pointer]:
+                  - /url: "#archetype-flyer"
+              - listitem [ref=e55]:
+                - link "Swimmer / Aquatic" [ref=e56] [cursor=pointer]:
+                  - /url: "#archetype-swimmer"
+              - listitem [ref=e57]:
+                - link "Intelligent / Apex Hybrid" [ref=e58] [cursor=pointer]:
+                  - /url: "#archetype-apex-hybrid"
+          - generic [ref=e59]:
+            - heading "Classifications" [level=3] [ref=e60]
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - link "Monster Classifications" [ref=e63] [cursor=pointer]:
+                  - /url: "#classifications"
+              - listitem [ref=e64]:
+                - link "Beast Rodents" [ref=e65] [cursor=pointer]:
+                  - /url: "#class-beast-rodents"
+              - listitem [ref=e66]:
+                - link "Beast Birds" [ref=e67] [cursor=pointer]:
+                  - /url: "#class-beast-birds"
+              - listitem [ref=e68]:
+                - link "Fanged Beasts" [ref=e69] [cursor=pointer]:
+                  - /url: "#class-fanged-beasts"
+              - listitem [ref=e70]:
+                - link "Horned Beasts" [ref=e71] [cursor=pointer]:
+                  - /url: "#class-horned-beasts"
+              - listitem [ref=e72]:
+                - link "Reptile Beasts" [ref=e73] [cursor=pointer]:
+                  - /url: "#class-reptile-beasts"
+              - listitem [ref=e74]:
+                - link "Amphibian Beasts" [ref=e75] [cursor=pointer]:
+                  - /url: "#class-amphibian-beasts"
+              - listitem [ref=e76]:
+                - link "Crustacean Beasts" [ref=e77] [cursor=pointer]:
+                  - /url: "#class-crustacean-beasts"
+              - listitem [ref=e78]:
+                - link "Insectoids" [ref=e79] [cursor=pointer]:
+                  - /url: "#class-insectoids"
+              - listitem [ref=e80]:
+                - link "Myriapod Beasts" [ref=e81] [cursor=pointer]:
+                  - /url: "#class-myriapod-beasts"
+              - listitem [ref=e82]:
+                - link "Plant Beasts" [ref=e83] [cursor=pointer]:
+                  - /url: "#class-plant-beasts"
+              - listitem [ref=e84]:
+                - link "Cephalopod / Tentacled Beasts" [ref=e85] [cursor=pointer]:
+                  - /url: "#class-cephalopod-beasts"
+              - listitem [ref=e86]:
+                - link "Parasitic / Brood Beasts" [ref=e87] [cursor=pointer]:
+                  - /url: "#class-parasitic-beasts"
+              - listitem [ref=e88]:
+                - link "Primal Beasts" [ref=e89] [cursor=pointer]:
+                  - /url: "#class-primal-beasts"
+              - listitem [ref=e90]:
+                - link "Drakes" [ref=e91] [cursor=pointer]:
+                  - /url: "#class-drakes"
+              - listitem [ref=e92]:
+                - link "Leviathans" [ref=e93] [cursor=pointer]:
+                  - /url: "#class-leviathans"
+              - listitem [ref=e94]:
+                - link "Aberrant Beasts" [ref=e95] [cursor=pointer]:
+                  - /url: "#class-aberrant-beasts"
+          - generic [ref=e96]:
+            - heading "Apex Tier" [level=3] [ref=e97]
+            - list [ref=e98]:
+              - listitem [ref=e99]:
+                - link "Apex Classifications" [ref=e100] [cursor=pointer]:
+                  - /url: "#apex-classifications"
+              - listitem [ref=e101]:
+                - link "Elder Beasts" [ref=e102] [cursor=pointer]:
+                  - /url: "#class-elder-beasts"
+              - listitem [ref=e103]:
+                - link "Elder Brutes" [ref=e104] [cursor=pointer]:
+                  - /url: "#class-elder-brutes"
+              - listitem [ref=e105]:
+                - link "Elder Dragons" [ref=e106] [cursor=pointer]:
+                  - /url: "#class-elder-dragons"
+              - listitem [ref=e107]:
+                - link "Celestial Beasts" [ref=e108] [cursor=pointer]:
+                  - /url: "#class-celestial-beasts"
+              - listitem [ref=e109]:
+                - 'link "GM Use: Classifications in Play" [ref=e110] [cursor=pointer]':
+                  - /url: "#class-gm-use"
+          - generic [ref=e111]:
+            - heading "Turn Flow" [level=3] [ref=e112]
+            - list [ref=e113]:
+              - listitem [ref=e114]:
+                - link "Monster Decision Flow" [ref=e115] [cursor=pointer]:
+                  - /url: "#decision-flow"
+              - listitem [ref=e116]:
+                - link "Monster Card Breakdown" [ref=e117] [cursor=pointer]:
+                  - /url: "#card-breakdown"
+              - listitem [ref=e118]:
+                - link "Tier System" [ref=e119] [cursor=pointer]:
+                  - /url: "#tier-system"
+              - listitem [ref=e120]:
+                - link "Proficiency & Damage" [ref=e121] [cursor=pointer]:
+                  - /url: "#proficiency-damage"
+              - listitem [ref=e122]:
+                - link "HP Scaling" [ref=e123] [cursor=pointer]:
+                  - /url: "#hp-scaling"
+              - listitem [ref=e124]:
+                - link "Stamina & Action Economy" [ref=e125] [cursor=pointer]:
+                  - /url: "#stamina-economy"
+              - listitem [ref=e126]:
+                - link "Thresholds" [ref=e127] [cursor=pointer]:
+                  - /url: "#thresholds"
+              - listitem [ref=e128]:
+                - link "Turn Structure & Flow" [ref=e129] [cursor=pointer]:
+                  - /url: "#turn-structure"
+              - listitem [ref=e130]:
+                - link "States" [ref=e131] [cursor=pointer]:
+                  - /url: "#states"
+              - listitem [ref=e132]:
+                - link "Escalating Resistance" [ref=e133] [cursor=pointer]:
+                  - /url: "#escalating-resistance"
+              - listitem [ref=e134]:
+                - link "Running Monster Turns Summary" [ref=e135] [cursor=pointer]:
+                  - /url: "#running-monsters"
+          - generic [ref=e136]:
+            - heading "Minor Threats" [level=3] [ref=e137]
+            - list [ref=e138]:
+              - listitem [ref=e139]:
+                - link "Small / Minor Monsters" [ref=e140] [cursor=pointer]:
+                  - /url: "#small-monsters"
+      - article [ref=e141]:
+        - generic [ref=e142]:
+          - paragraph [ref=e143]: This chapter combines the "Monster Behavior" and "Monster Turn Flow" sections from earlier drafts. Rather than splitting instinct loops and AI patterns across multiple chapters, all monster‑facing logic lives here. Use the archetypes and instinct loops to build behavior, then follow the turn flow steps (Assess Threat → Check Stamina → Evaluate Position → Select Action → Execute → Check Retreat) during combat.
+          - paragraph [ref=e144]: Monsters in Untamed are not mindless enemies. They hunt, flee, defend, and adapt based on instincts, territory needs, and survival — unless their nature or intelligence suggests otherwise. As GM, your role is to embody these instincts during hunts — making each creature feel alive, reactive, and sometimes even tragic.
+        - generic [ref=e145]:
+          - heading "🧠 How Monsters Think" [level=2] [ref=e146]
+          - table [ref=e148]:
+            - rowgroup [ref=e149]:
+              - row "Monster Trait Behavior" [ref=e150]:
+                - columnheader "Monster Trait" [ref=e151]
+                - columnheader "Behavior" [ref=e152]
+            - rowgroup [ref=e153]:
+              - 'row "Instinct-Driven Actions Monsters act on primal needs: run when wounded, fight to defend nests, lash out if cornered." [ref=e154]':
+                - cell "Instinct-Driven Actions" [ref=e155]
+                - 'cell "Monsters act on primal needs: run when wounded, fight to defend nests, lash out if cornered." [ref=e156]'
+              - 'row "Threshold Triggers Wounded monsters change behavior at certain health or stamina thresholds (ex: below 50% HP = enraged, below 25% = retreat attempt)." [ref=e157]':
+                - cell "Threshold Triggers" [ref=e158]
+                - 'cell "Wounded monsters change behavior at certain health or stamina thresholds (ex: below 50% HP = enraged, below 25% = retreat attempt)." [ref=e159]'
+              - row "Territory Control Monsters own sectors of the biome. If hunters intrude, damage food sources, or attack nests, monsters will escalate aggression." [ref=e160]:
+                - cell "Territory Control" [ref=e161]
+                - cell "Monsters own sectors of the biome. If hunters intrude, damage food sources, or attack nests, monsters will escalate aggression." [ref=e162]
+              - row "Fight or Flight If outmatched or exhausted, monsters may flee to recover, find allies, or relocate deeper into the biome." [ref=e163]:
+                - cell "Fight or Flight" [ref=e164]
+                - cell "If outmatched or exhausted, monsters may flee to recover, find allies, or relocate deeper into the biome." [ref=e165]
+              - row "Environmental Awareness Monsters know the terrain better than hunters. Cliffside beasts seek high ground; aquatic monsters retreat to deep water; ambushers hide in dense foliage." [ref=e166]:
+                - cell "Environmental Awareness" [ref=e167]
+                - cell "Monsters know the terrain better than hunters. Cliffside beasts seek high ground; aquatic monsters retreat to deep water; ambushers hide in dense foliage." [ref=e168]
+        - generic [ref=e169]:
+          - heading "🧩 Monster Behavior Archetypes" [level=2] [ref=e170]
+          - paragraph [ref=e171]: Every monster in Untamed should fit into 1–2 primary archetypes (with Apex monsters blending 3+).
+          - paragraph [ref=e172]: Each archetype is a behavioral pattern — how the creature approaches combat, movement, and territory.
+          - paragraph [ref=e173]: They're not rigid AI scripts, but instinctive loops — "If hurt, do this. If cornered, do that."
+          - generic [ref=e174]:
+            - heading "Brute" [level=3] [ref=e175]
+            - paragraph [ref=e176]: "Behavior: Dominance through power and proximity."
+            - paragraph [ref=e177]: "Stats: High STR/CON."
+            - paragraph [ref=e178]: "Instinct Loop: Close distance → trade blows → roar or charge when pressured."
+            - paragraph [ref=e179]: "GM Tip: Telegraph attacks clearly; reward clever positioning or staggering."
+            - paragraph [ref=e180]: "Example: Urmine, Ironhide Boar."
+          - generic [ref=e181]:
+            - heading "Skirmisher" [level=3] [ref=e182]
+            - paragraph [ref=e183]: "Behavior: Speed, repositioning, and opportunistic strikes."
+            - paragraph [ref=e184]: "Stats: High DEX/INS."
+            - paragraph [ref=e185]: "Instinct Loop: Circle → jab → retreat → bait pursuit."
+            - paragraph [ref=e186]: "GM Tip: Burn hunter stamina through pursuit and distance control."
+            - paragraph [ref=e187]: "Example: Cliff Strider, Ridge Wraith."
+          - generic [ref=e188]:
+            - heading "Kiter (Ranged Predator)" [level=3] [ref=e189]
+            - paragraph [ref=e190]: "Behavior: Maintains distance; inflicts pressure through projectiles, breath, or traps."
+            - paragraph [ref=e191]: "Stats: High INS/DEX."
+            - paragraph [ref=e192]: "Instinct Loop: Keep line-of-sight → punish approach → relocate when cornered."
+            - paragraph [ref=e193]: "GM Tip: Play smart; use elevation and cover as survival tools."
+            - paragraph [ref=e194]: "Example: Kragal, Sporeback Basilisk."
+          - generic [ref=e195]:
+            - heading "Ambusher" [level=3] [ref=e196]
+            - paragraph [ref=e197]: "Behavior: Strikes when unseen; relies on camouflage or timing."
+            - paragraph [ref=e198]: "Stats: High INS/DEX."
+            - paragraph [ref=e199]: "Instinct Loop: Wait → isolate → burst → vanish → repeat."
+            - paragraph [ref=e200]: "GM Tip: Treat each strike as a story beat — something learned or countered next time."
+            - paragraph [ref=e201]: "Example: Noctilura, Mire Panther."
+          - generic [ref=e202]:
+            - heading "Guardian" [level=3] [ref=e203]
+            - paragraph [ref=e204]: "Behavior: Territorial and defensive; protects nests, zones, or lesser monsters."
+            - paragraph [ref=e205]: "Stats: Very high CON, sometimes INS."
+            - paragraph [ref=e206]: "Instinct Loop: Hold ground → punish intrusion → enrage if home or allies are harmed."
+            - paragraph [ref=e207]: "GM Tip: Use lair actions and environmental control to emphasize dominance."
+            - paragraph [ref=e208]: "Example: Terraguard Beetle, Hive Matron."
+          - generic [ref=e209]:
+            - heading "Shifter (Environmental Controller)" [level=3] [ref=e210]
+            - paragraph [ref=e211]: "Behavior: Alters terrain or weather mid-fight; thrives in chaos."
+            - paragraph [ref=e212]: "Stats: Vary widely; often linked to INT or CON."
+            - paragraph [ref=e213]: "Instinct Loop: Manipulate environment → punish movement → adapt to new hazards."
+            - paragraph [ref=e214]: "GM Tip: Think of it as \"fighting the arena as much as the monster.\""
+            - paragraph [ref=e215]: "Example: Stagmir, Sandwurm, Deep Coral Warden."
+          - generic [ref=e216]:
+            - heading "Tool User" [level=3] [ref=e217]
+            - paragraph [ref=e218]: "Behavior: Wields objects or exploits surroundings; demonstrates learned behavior."
+            - paragraph [ref=e219]: "Stats: High INT/INS."
+            - paragraph [ref=e220]: "Instinct Loop: Use tools to extend reach → adapt mid-fight → retreat to regroup if disarmed."
+            - paragraph [ref=e221]: "GM Tip: Give them \"problem-solving\" moments — players should recognize evolving tactics."
+            - paragraph [ref=e222]: "Example: Rockbreak Ape, Mud Sentinel."
+          - generic [ref=e223]:
+            - heading "Debuffer" [level=3] [ref=e224]
+            - paragraph [ref=e225]: "Behavior: Uses toxins, sounds, spores, or curses to cripple prey."
+            - paragraph [ref=e226]: "Stats: High CHA; often low CON."
+            - paragraph [ref=e227]: "Instinct Loop: Apply status → withdraw → harass weakened targets."
+            - paragraph [ref=e228]: "GM Tip: Don't overuse; one status effect per \"phase\" feels fair and cinematic."
+            - paragraph [ref=e229]: "Example: Venom Toad, Frost Moth."
+          - generic [ref=e230]:
+            - heading "Support / Synergist" [level=3] [ref=e231]
+            - paragraph [ref=e232]: "Behavior: Bolsters allies, heals, or enhances coordination."
+            - paragraph [ref=e233]: "Stats: Moderate across board; relies on pack logic."
+            - paragraph [ref=e234]: "Instinct Loop: Buff or guard → reposition → rejoin alpha."
+            - paragraph [ref=e235]: "GM Tip: Use this archetype in multi-monster fights; they make the ecology feel alive."
+            - paragraph [ref=e236]: "Example: Pack Howler, Hive Conductor."
+          - generic [ref=e237]:
+            - heading "Tactician (Pack Alpha)" [level=3] [ref=e238]
+            - paragraph [ref=e239]: "Behavior: Coordinates others; thrives in numbers."
+            - paragraph [ref=e240]: "Stats: Balanced but with high INS/CHA (command presence)."
+            - paragraph [ref=e241]: "Instinct Loop: Command → delegate → punish isolation."
+            - paragraph [ref=e242]: "GM Tip: Give the alpha \"pack reactions\" — when it howls or signals, others react."
+            - paragraph [ref=e243]: "Example: Vorvarg Alpha, Frost Talon Matriarch."
+          - generic [ref=e244]:
+            - heading "Flyer" [level=3] [ref=e245]
+            - paragraph [ref=e246]: "Behavior: Controls verticality; dictates engagement range."
+            - paragraph [ref=e247]: "Stats: High DEX; moderate CON."
+            - paragraph [ref=e248]: "Instinct Loop: Scout → dive → retreat upward → strafe."
+            - paragraph [ref=e249]: "GM Tip: Let hunters \"ground\" flyers with terrain or timing to shift the phase."
+            - paragraph [ref=e250]: "Example: Earule, Gale Wyvern."
+          - generic [ref=e251]:
+            - heading "Swimmer / Aquatic" [level=3] [ref=e252]
+            - paragraph [ref=e253]: "Behavior: Masters underwater or shoreline combat; controls oxygen and movement."
+            - paragraph [ref=e254]: "Stats: High CON/STR."
+            - paragraph [ref=e255]: "Instinct Loop: Drag prey → drown → surface or ambush near edges."
+            - paragraph [ref=e256]: "GM Tip: Make terrain matter — oxygen, currents, visibility."
+            - paragraph [ref=e257]: "Example: Leviathan, Murkfin Croc."
+          - generic [ref=e258]:
+            - heading "Intelligent / Apex Hybrid" [level=3] [ref=e259]
+            - paragraph [ref=e260]: "Behavior: Combines archetypes intelligently; recognizes patterns and adapts."
+            - paragraph [ref=e261]: "Stats: All high; unique modifiers."
+            - paragraph [ref=e262]: "Instinct Loop: Observe → counter → escalate → transform terrain or self."
+            - paragraph [ref=e263]: "GM Tip: Let it learn — reward player pattern recognition with equal monster adaptation."
+            - paragraph [ref=e264]: "Example: Apex Wyvern, The Stagmir."
+          - generic [ref=e265]:
+            - heading "🧭 GM Use" [level=3] [ref=e266]
+            - paragraph [ref=e267]: "When designing or running a monster:"
+            - list [ref=e268]:
+              - listitem [ref=e269]: Pick 1–2 archetypes (3+ for Apex).
+              - listitem [ref=e270]: Note Instinct Loops (your "AI core").
+              - listitem [ref=e271]: Add 1 unique behavior quirk ("always roars before charging," "favors attacking torches").
+              - listitem [ref=e272]: Tie those behaviors to threshold triggers — HP, stamina, or environmental states.
+            - paragraph [ref=e273]: These loops replace static "attack tables." They make fights evolve.
+          - generic [ref=e274]:
+            - 'heading "🦴 Bonus: Archetype Synergies" [level=3] [ref=e275]'
+            - paragraph [ref=e276]: "Some combinations make iconic encounters:"
+            - list [ref=e277]:
+              - listitem [ref=e278]:
+                - strong [ref=e279]: "Brute + Shifter:"
+                - text: Unstoppable force that changes the battlefield as it fights.
+              - listitem [ref=e280]:
+                - strong [ref=e281]: "Ambusher + Debuffer:"
+                - text: Assassin predator that weakens and evades.
+              - listitem [ref=e282]:
+                - strong [ref=e283]: "Guardian + Support:"
+                - text: Defends allies or structures; perfect "boss + adds" setups.
+              - listitem [ref=e284]:
+                - strong [ref=e285]: "Flyer + Kiter:"
+                - text: Aerial artillery.
+              - listitem [ref=e286]:
+                - strong [ref=e287]: "Tactician + Tool User:"
+                - text: Intelligent alpha; turns fights into puzzles.
+              - listitem [ref=e288]:
+                - strong [ref=e289]: "Swimmer + Shifter:"
+                - text: Floods zones or manipulates water currents as cover.
+        - generic [ref=e290]:
+          - heading "Monster Classifications" [level=2] [ref=e291]
+          - blockquote [ref=e292]: "\"Every creature in the wild fills a role — predator, prey, parasite, or god. When you understand what it eats, what it fears, and what it protects, you understand how to hunt it.\""
+          - paragraph [ref=e293]: Monster classifications exist to help GMs design encounters that feel ecologically grounded. Each classification defines how a creature behaves, evolves, and interacts with the environment and the hunt loop.
+          - heading "🐾 Standard Classifications" [level=3] [ref=e294]
+          - paragraph [ref=e295]: These creatures form the majority of the ecosystem — from small prey to apex-level hunters. They populate most hunts and define the ecological identity of each biome.
+          - generic [ref=e296]:
+            - heading "Beast Rodents" [level=3] [ref=e297]
+            - paragraph [ref=e298]: "Profile: Skittish scavengers or opportunists at the base of the food chain."
+            - paragraph [ref=e299]: "Common Traits: Small-to-medium size, quick breeding, tunneling, or nest-building behavior."
+            - paragraph [ref=e300]: "Behavior Archetypes: Skirmisher, Ambusher (burrow), Pack, Tool User."
+            - paragraph [ref=e301]: "GM Use: Excellent \"sign creatures\" — their absence signals larger predators nearby."
+          - generic [ref=e302]:
+            - heading "Beast Birds" [level=3] [ref=e303]
+            - paragraph [ref=e304]: "Profile: Aerial hunters and scavengers that define the vertical layers of a biome."
+            - paragraph [ref=e305]: "Common Traits: Flight, dive attacks, keen eyesight, social nesting behaviors."
+            - paragraph [ref=e306]: "Behavior Archetypes: Flyer, Kiter, Skirmisher."
+            - paragraph [ref=e307]: "GM Use: Great for multi-level arenas and high-ground control; use to teach players about visibility and range management."
+          - generic [ref=e308]:
+            - heading "Fanged Beasts" [level=3] [ref=e309]
+            - paragraph [ref=e310]: "Profile: Agile mammalian predators that stalk or ambush prey using precision and instinct."
+            - paragraph [ref=e311]: "Common Traits: High DEX or INS, bleed mechanics, stealth, territorial aggression."
+            - paragraph [ref=e312]: "Behavior Archetypes: Ambusher, Pack/Tactician, Brute (for apex species)."
+            - paragraph [ref=e313]: "GM Use: Use fanged beasts to showcase stamina attrition and tracking pressure over time."
+          - generic [ref=e314]:
+            - heading "Horned Beasts" [level=3] [ref=e315]
+            - paragraph [ref=e316]: "Profile: Hoofed climbers, grazers, and ridge-runners that survive via mobility, altitude advantage, and impact violence (horns/charges)."
+            - paragraph [ref=e317]: "Common Traits: Extreme footing, burst movement, knockback, cliff hazards, \"flight-adjacent\" leaps."
+            - paragraph [ref=e318]: "Behavior Archetypes: Skirmisher, Evader, Territorial Defender."
+            - paragraph [ref=e319]: "GM Use: Great Tier 0–2 \"terrain teachers\" — they punish reckless pursuit and reward positioning."
+          - generic [ref=e320]:
+            - heading "Reptile Beasts" [level=3] [ref=e321]
+            - paragraph [ref=e322]: "Profile: Scaled predators — from serpentine hunters to lumbering lizards."
+            - paragraph [ref=e323]: "Common Traits: Armor plating, venom, cold-blooded endurance, or regenerative abilities."
+            - paragraph [ref=e324]: "Behavior Archetypes: Brute, Debuffer, Guardian."
+            - paragraph [ref=e325]: "GM Use: Excellent middle-tier monsters that emphasize environmental adaptation (heat, moisture, or sun exposure)."
+          - generic [ref=e326]:
+            - heading "Amphibian Beasts" [level=3] [ref=e327]
+            - paragraph [ref=e328]: "Profile: Dual-environment predators of wetlands and caves."
+            - paragraph [ref=e329]: "Common Traits: Regeneration when wet, toxin-dispersal, long leaps, and camouflage."
+            - paragraph [ref=e330]: "Behavior Archetypes: Debuffer, Ambusher, Swimmer."
+            - paragraph [ref=e331]: "GM Use: Create stamina pressure through terrain — mud, water, and heat."
+          - generic [ref=e332]:
+            - heading "Crustacean Beasts" [level=3] [ref=e333]
+            - paragraph [ref=e334]: "Profile: Hard-shelled, water-adjacent titans."
+            - paragraph [ref=e335]: "Common Traits: Armor layers, pincer grabs, burrowing, tidal adaptation."
+            - paragraph [ref=e336]: "Behavior Archetypes: Guardian, Brute, Shifter (terrain control via water or sand)."
+            - paragraph [ref=e337]: "GM Use: Introduce multi-stage armor breaks and environmental hazards (floods, tidal shifts)."
+          - generic [ref=e338]:
+            - heading "Insectoids" [level=3] [ref=e339]
+            - paragraph [ref=e340]: "Profile: Hive-based creatures acting in coordinated swarms or colonies."
+            - paragraph [ref=e341]: "Common Traits: Carapace armor, venom, pheromone signaling, hive intelligence."
+            - paragraph [ref=e342]: "Behavior Archetypes: Support, Pack, Guardian (queen), Debuffer."
+            - paragraph [ref=e343]: "GM Use: Great for dynamic battlefield spawns or multi-target encounters; the hive acts like a single living machine."
+          - generic [ref=e344]:
+            - heading "Myriapod Beasts" [level=3] [ref=e345]
+            - paragraph [ref=e346]: "Profile: Multi-segmented hunters that thrive in rotlines and caverns."
+            - paragraph [ref=e347]: "Common Traits: Segmented armor, caustic secretions, rapid bursts, tremor-sense."
+            - paragraph [ref=e348]: "Behavior Archetypes: Ambusher, Brute, Debuffer."
+            - paragraph [ref=e349]: "GM Use: Use vibration tracking and close-quarters movement to create claustrophobic tension."
+          - generic [ref=e350]:
+            - heading "Plant Beasts" [level=3] [ref=e351]
+            - paragraph [ref=e352]: "Profile: Living flora or symbiotic plant-life; ambush predators of the forest floor."
+            - paragraph [ref=e353]: "Common Traits: Rooted or slow movement, toxin release, camouflage, regenerative growth."
+            - paragraph [ref=e354]: "Behavior Archetypes: Guardian, Shifter, Debuffer."
+            - paragraph [ref=e355]: "GM Use: Great for corruption arcs or \"territory fights\" where the ground itself becomes the enemy."
+          - generic [ref=e356]:
+            - heading "Cephalopod / Tentacled Beasts" [level=3] [ref=e357]
+            - paragraph [ref=e358]: "Profile: Ambush predators of the deep — clever, fluid, and alien in motion."
+            - paragraph [ref=e359]: "Common Traits: Camouflage, multi-limb grapples, ink/silt blinds, tool use, nerve-ring weak spots."
+            - paragraph [ref=e360]: "Behavior Archetypes: Tool User, Ambusher, Swimmer."
+            - paragraph [ref=e361]: "GM Use: Use as \"smart predators\" — dynamic repositioning and problem-solving mid-hunt."
+          - generic [ref=e362]:
+            - heading "Parasitic / Brood Beasts" [level=3] [ref=e363]
+            - paragraph [ref=e364]: "Profile: Macro-parasites or egg-spawning horrors that dominate hosts or spread plagues."
+            - paragraph [ref=e365]: "Common Traits: Host control, fatigue drain, brood swarms, vulnerability to fire/salt."
+            - paragraph [ref=e366]: "Behavior Archetypes: Debuffer, Support, Tactician (hive logic)."
+            - paragraph [ref=e367]: "GM Use: Ideal for multi-phase horror hunts — where the threat multiplies over time."
+          - generic [ref=e368]:
+            - heading "Primal Beasts" [level=3] [ref=e369]
+            - paragraph [ref=e370]: "Profile: Dinosaur-like or ancient monsters — living echoes of a forgotten era."
+            - paragraph [ref=e371]: "Common Traits: Massive bodies, relentless aggression, instinctive resilience."
+            - paragraph [ref=e372]: "Behavior Archetypes: Brute, Guardian, Shifter."
+            - paragraph [ref=e373]: "GM Use: Set-piece hunts — terrain-smashing monsters that define a biome's identity."
+          - generic [ref=e374]:
+            - heading "Drakes" [level=3] [ref=e375]
+            - paragraph [ref=e376]: "Profile: Dragonkin, lesser cousins of the Elder Dragons — intelligent, territorial, fierce."
+            - paragraph [ref=e377]: "Common Traits: Elemental breath, semi-flight, predatory cunning."
+            - paragraph [ref=e378]: "Behavior Archetypes: Flyer, Brute, Tactician."
+            - paragraph [ref=e379]: "GM Use: High-level single-target fights emphasizing timing and positional play."
+          - generic [ref=e380]:
+            - heading "Leviathans" [level=3] [ref=e381]
+            - paragraph [ref=e382]: "Profile: Colossal water or semi-aquatic predators ruling the lakes, rivers, and coasts."
+            - paragraph [ref=e383]: "Common Traits: Immense stamina, environmental control (waves, currents), amphibious combat."
+            - paragraph [ref=e384]: "Behavior Archetypes: Swimmer, Shifter, Brute."
+            - paragraph [ref=e385]: "GM Use: Thematic biomes bosses — treat water as a living hazard and time pressure as their weapon."
+          - generic [ref=e386]:
+            - heading "Aberrant Beasts" [level=3] [ref=e387]
+            - paragraph [ref=e388]: "Profile: Mutations and anomalies — nature's corruption or alchemical byproduct."
+            - paragraph [ref=e389]: "Common Traits: Mutation mid-fight, warped anatomy, psychic dissonance."
+            - paragraph [ref=e390]: "Behavior Archetypes: Shifter, Debuffer, Intelligent (learned behavior)."
+            - paragraph [ref=e391]: "GM Use: Perfect for \"what the hell is that\" moments — unpredictable tempo shifts and sanity-threatening behavior."
+          - paragraph [ref=e392]: Most biomes contain 0–1 Celestial species.
+        - generic [ref=e393]:
+          - heading "🌋 Apex Classifications" [level=2] [ref=e394]
+          - paragraph [ref=e395]: These are the biome rulers — monsters that don't just live in ecosystems but define them. Their existence reshapes migration, weather, and even geography. They are the campaign's punctuation marks.
+          - generic [ref=e396]:
+            - heading "Elder Beasts" [level=3] [ref=e397]
+            - paragraph [ref=e398]: "Profile: Apex predators evolved into sentient territorial forces."
+            - paragraph [ref=e399]: "Common Traits: Elemental resistance, supernatural awareness, adaptive AI."
+            - paragraph [ref=e400]: "Behavior Archetypes: Brute + Intelligent + Guardian."
+            - paragraph [ref=e401]: "GM Use: Use Elder Beasts as living bosses — entities that remember prior encounters and adapt across sessions."
+          - generic [ref=e402]:
+            - heading "Elder Brutes" [level=3] [ref=e403]
+            - paragraph [ref=e404]: "Profile: Colossi that reshape terrain simply by moving."
+            - paragraph [ref=e405]: "Common Traits: Immense mass, seismic movement, devastating area effects."
+            - paragraph [ref=e406]: "Behavior Archetypes: Brute + Shifter."
+            - paragraph [ref=e407]: "GM Use: Set them against the environment itself — cliff collapses, landslides, collapsing biomes. Each hit should change the map."
+          - generic [ref=e408]:
+            - heading "Elder Dragons" [level=3] [ref=e409]
+            - paragraph [ref=e410]: "Profile: Living cataclysms. Their mere existence alters weather, magic, and balance."
+            - paragraph [ref=e411]: "Common Traits: Elemental mastery, unbreakable will, transcendent intelligence."
+            - paragraph [ref=e412]: "Behavior Archetypes: Intelligent + Flyer + Shifter + Guardian."
+            - paragraph [ref=e413]: "GM Use: The culmination of the ecosystem — their death or survival rewrites the world's state. Treat them like gods in motion, not just HP pools."
+          - generic [ref=e414]:
+            - heading "Celestial Beasts" [level=3] [ref=e415]
+            - paragraph [ref=e416]: "Profile: Rare atmospheric apex predators that dominate the upper layers of the ecosystem."
+            - paragraph [ref=e417]: Celestial Beasts are not divine creatures. They are biological organisms that have evolved specialized organs capable of channeling extreme atmospheric forces such as lightning, pressure waves, or high-velocity winds.
+            - paragraph [ref=e418]: "They are defined less by anatomy and more by ecological domain: the sky itself."
+            - heading "Common Traits" [level=4] [ref=e419]
+            - list [ref=e420]:
+              - listitem [ref=e421]: Flight or aerial mobility
+              - listitem [ref=e422]: Storm or wind affinity
+              - listitem [ref=e423]: Massive territorial range
+              - listitem [ref=e424]: Momentum-based attack patterns
+            - heading "GM Usage" [level=4] [ref=e425]
+            - paragraph [ref=e426]: "Celestial Beasts should be:"
+            - list [ref=e427]:
+              - listitem [ref=e428]: extremely rare
+              - listitem [ref=e429]: tied to weather conditions
+              - listitem [ref=e430]: biome-defining encounters
+              - listitem [ref=e431]: roaming rather than stationary
+          - generic [ref=e432]:
+            - 'heading "⚙️ GM Use: Monster Classifications in Play" [level=3] [ref=e433]'
+            - list [ref=e434]:
+              - listitem [ref=e435]:
+                - strong [ref=e436]: "Populate by Food Chain:"
+                - text: Each biome should include 3–5 standard classifications, 1 rare or apex, and 1–2 support creatures that interact dynamically.
+              - listitem [ref=e437]:
+                - strong [ref=e438]: "Design via Archetypes:"
+                - text: When creating a new creature, pick a classification (ecosystem role) and 1–2 archetypes (behavioral logic).
+              - listitem [ref=e439]:
+                - strong [ref=e440]: "Use Class as Ecology Clue:"
+                - text: If hunters find signs of a "Drake," they know to expect elevated heat, nesting ruins, or scorched terrain.
+              - listitem [ref=e441]:
+                - strong [ref=e442]: "Reward Observation:"
+                - text: Let hunters who study carcasses or spoor deduce the classification — giving them foresight on resistances, stamina patterns, or tactics.
+        - generic [ref=e443]:
+          - heading "Monsters in Motion" [level=2] [ref=e444]
+          - blockquote [ref=e445]: "\"The wild doesn't use initiative — it reacts. Every creature fights to survive, not to die dramatically.\""
+          - paragraph [ref=e446]: Monsters are not enemies; they are forces of nature. Each one has drives, thresholds, and instincts that shape every encounter. Your job as GM is not to script them, but to embody them — letting their logic drive the hunt.
+        - generic [ref=e447]:
+          - heading "🎯 Monster Decision Flow" [level=2] [ref=e448]
+          - paragraph [ref=e449]: "When running a monster, ask yourself in order:"
+          - list [ref=e450]:
+            - listitem [ref=e451]:
+              - strong [ref=e452]: Is it defending something?
+              - text: Nest, mate, food source, or lair? → Fight aggressively, use environmental control.
+            - listitem [ref=e453]:
+              - strong [ref=e454]: Is it heavily wounded or exhausted?
+              - text: → Attempt retreat or defensive reposition; creatures fight to live, not to the death.
+            - listitem [ref=e455]:
+              - strong [ref=e456]: Is it outnumbered or losing control of space?
+              - text: → Funnel the hunters, retreat to narrow terrain, or use hazards to divide them.
+            - listitem [ref=e457]:
+              - strong [ref=e458]: Is it naturally aggressive or cautious?
+              - text: "→ Aggressive: overcommits, presses advantage. Cautious: retreats early, uses ambush or hit-and-run tactics."
+            - listitem [ref=e459]:
+              - strong [ref=e460]: Does the environment favor it?
+              - text: "→ Use its terrain signature: cliffs for flyers, mud for burrowers, fog for ambushers."
+          - paragraph [ref=e462]: "When in doubt: let the monster fight to survive, not to kill. The difference creates drama, not attrition."
+        - generic [ref=e463]:
+          - heading "🧠 Monster Card Breakdown (GM-Use Summary)" [level=2] [ref=e464]
+          - paragraph [ref=e465]: "Every Major Monster's stat block includes behavioral shorthand — a \"living logic\" guide:"
+          - list [ref=e466]:
+            - listitem [ref=e467]:
+              - strong [ref=e468]: "Aggression Triggers:"
+              - text: What makes it escalate or flee (injury, sound, territory breach).
+            - listitem [ref=e469]:
+              - strong [ref=e470]: "Preferred Zones:"
+              - text: Its favored biome sectors and terrain advantages.
+            - listitem [ref=e471]:
+              - strong [ref=e472]: "Behavior Under Pressure:"
+              - text: Flight, enrage, or defensive pivots when hurt.
+            - listitem [ref=e473]:
+              - strong [ref=e474]: "Unique Strategy:"
+              - text: Its "signature move" (e.g., Gorrhul's Mud Armor, Noctilura's Lure Light).
+            - listitem [ref=e475]:
+              - strong [ref=e476]: "Threshold Cues:"
+              - text: HP %, stamina phase, or environmental event that shifts its tactics.
+          - generic [ref=e477]:
+            - 'heading "💡 GM Mindset: Monsters as Characters" [level=3] [ref=e478]'
+            - paragraph [ref=e479]: Treat monsters like you treat NPCs — beings with drives and story purpose.
+            - list [ref=e480]:
+              - listitem [ref=e481]: A starving Vorvarg pack isn't evil; it's desperate.
+              - listitem [ref=e482]: A dying Apex beast isn't just a boss; it's a myth gasping its last breath.
+              - listitem [ref=e483]: A territorial Leviathan isn't cruel; it's the sea's immune system.
+            - paragraph [ref=e484]: Let motivation guide aggression, and your hunts will always feel grounded.
+        - generic [ref=e485]:
+          - heading "🪓 Monster Tier System" [level=2] [ref=e486]
+          - paragraph [ref=e487]: Each creature in Untamed belongs to a Tier, which determines its power scope and resource economy. Tiers define how long it lasts and how much it can do per turn — not how complex it is.
+          - table [ref=e489]:
+            - rowgroup [ref=e490]:
+              - row "Tier Attack Actions / Turn General Scope Typical Encounter Role" [ref=e491]:
+                - columnheader "Tier" [ref=e492]
+                - columnheader "Attack Actions / Turn" [ref=e493]
+                - columnheader "General Scope" [ref=e494]
+                - columnheader "Typical Encounter Role" [ref=e495]
+            - rowgroup [ref=e496]:
+              - row "T1 2 Small or low-threat predator Early hunts, pack beasts" [ref=e497]:
+                - cell "T1" [ref=e498]
+                - cell "2" [ref=e499]
+                - cell "Small or low-threat predator" [ref=e500]
+                - cell "Early hunts, pack beasts" [ref=e501]
+              - row "T2 2–3 Mid-tier threat Primary predators, trained hunters" [ref=e502]:
+                - cell "T2" [ref=e503]
+                - cell "2–3" [ref=e504]
+                - cell "Mid-tier threat" [ref=e505]
+                - cell "Primary predators, trained hunters" [ref=e506]
+              - row "T3 3–4 Large-scale encounter Mini-boss, territory alpha" [ref=e507]:
+                - cell "T3" [ref=e508]
+                - cell "3–4" [ref=e509]
+                - cell "Large-scale encounter" [ref=e510]
+                - cell "Mini-boss, territory alpha" [ref=e511]
+              - row "T4 4–5 Apex within biome Regional guardian" [ref=e512]:
+                - cell "T4" [ref=e513]
+                - cell "4–5" [ref=e514]
+                - cell "Apex within biome" [ref=e515]
+                - cell "Regional guardian" [ref=e516]
+              - row "T5+ 4–5 (+ special phases) Legendary or Elder Campaign-defining" [ref=e517]:
+                - cell "T5+" [ref=e518]
+                - cell "4–5 (+ special phases)" [ref=e519]
+                - cell "Legendary or Elder" [ref=e520]
+                - cell "Campaign-defining" [ref=e521]
+          - paragraph [ref=e522]: "Note: Certain moves replace multiple attacks (e.g., a massive tail slam counts as two actions)."
+        - generic [ref=e523]:
+          - heading "Monster Proficiency & Damage" [level=2] [ref=e524]
+          - generic [ref=e525]:
+            - heading "Monster Proficiency (GM Guide Rule Text)" [level=3] [ref=e526]
+            - paragraph [ref=e527]: Monsters are always considered Masters with their natural attacks. These claws, bites, horns, beams, and innate techniques represent instinctive combat mastery rather than trained skill.
+          - generic [ref=e528]:
+            - heading "Monster Proficiency Bonus" [level=3] [ref=e529]
+            - paragraph [ref=e530]:
+              - text: All monsters begin with a base
+              - strong [ref=e531]: +4 proficiency
+              - text: to all attack rolls.
+          - generic [ref=e532]:
+            - heading "Final Monster Attack Roll" [level=3] [ref=e533]
+            - paragraph [ref=e534]: "For any monster attack or ability listed in its stat block:"
+            - generic [ref=e535]: Attack Roll = d20 + 4 + Relevant Stat Bonus
+            - paragraph [ref=e536]: Relevant stat = STR for physical, DEX for agile strikes, INS for special senses, CHA for sonic/scream attacks, etc.
+          - generic [ref=e537]:
+            - heading "Monster Damage Formula" [level=3] [ref=e538]
+            - paragraph [ref=e539]: "Damaging monster actions follow the same formula players use:"
+            - generic [ref=e540]: Damage = Damage Dice + (½ relevant stat, rounded down)
+            - paragraph [ref=e541]:
+              - strong [ref=e542]: "Examples:"
+            - list [ref=e543]:
+              - listitem [ref=e544]: STR 7 → damage bonus +3
+              - listitem [ref=e545]: DEX 8 → damage bonus +4
+              - listitem [ref=e546]: INS 11 → damage bonus +5
+            - paragraph [ref=e547]: Monsters never add their full stat score to damage — only the half-stat modifier.
+        - generic [ref=e548]:
+          - heading "💥 Monster Health Scaling Formula" [level=2] [ref=e549]
+          - paragraph [ref=e550]: "Monster HP scales smoothly to your group's size and the monster's Tier:"
+          - generic [ref=e551]: Base Health = (CON × HealthMultiplier) + (Tier × 15)
+          - table [ref=e553]:
+            - rowgroup [ref=e554]:
+              - row "Party Size HealthMultiplier" [ref=e555]:
+                - columnheader "Party Size" [ref=e556]
+                - columnheader "HealthMultiplier" [ref=e557]
+            - rowgroup [ref=e558]:
+              - row "1 Player ×8" [ref=e559]:
+                - cell "1 Player" [ref=e560]
+                - cell "×8" [ref=e561]
+              - row "2 Players ×9" [ref=e562]:
+                - cell "2 Players" [ref=e563]
+                - cell "×9" [ref=e564]
+              - row "3 Players ×10" [ref=e565]:
+                - cell "3 Players" [ref=e566]
+                - cell "×10" [ref=e567]
+              - row "4 Players ×11" [ref=e568]:
+                - cell "4 Players" [ref=e569]
+                - cell "×11" [ref=e570]
+              - row "5 Players ×12" [ref=e571]:
+                - cell "5 Players" [ref=e572]
+                - cell "×12" [ref=e573]
+          - 'heading "Example: Palax (CON 6, Tier 1)" [level=3] [ref=e574]'
+          - table [ref=e576]:
+            - rowgroup [ref=e577]:
+              - row "Party Formula Resulting HP" [ref=e578]:
+                - columnheader "Party" [ref=e579]
+                - columnheader "Formula" [ref=e580]
+                - columnheader "Resulting HP" [ref=e581]
+            - rowgroup [ref=e582]:
+              - row "1 (6×8)+15 63 HP" [ref=e583]:
+                - cell "1" [ref=e584]
+                - cell "(6×8)+15" [ref=e585]
+                - cell "63 HP" [ref=e586]
+              - row "2 (6×9)+15 69 HP" [ref=e587]:
+                - cell "2" [ref=e588]
+                - cell "(6×9)+15" [ref=e589]
+                - cell "69 HP" [ref=e590]
+              - row "3 (6×10)+15 75 HP" [ref=e591]:
+                - cell "3" [ref=e592]
+                - cell "(6×10)+15" [ref=e593]
+                - cell "75 HP" [ref=e594]
+              - row "4 (6×11)+15 81 HP" [ref=e595]:
+                - cell "4" [ref=e596]
+                - cell "(6×11)+15" [ref=e597]
+                - cell "81 HP" [ref=e598]
+              - row "5 (6×12)+15 87 HP" [ref=e599]:
+                - cell "5" [ref=e600]
+                - cell "(6×12)+15" [ref=e601]
+                - cell "87 HP" [ref=e602]
+          - paragraph [ref=e603]: This keeps the same monster stat block functional across different group sizes without overhauling numbers. Health is your cleanest tuning dial; stamina or armor can adjust difficulty nuance.
+        - generic [ref=e604]:
+          - heading "🔋 Stamina & Monster Action Economy" [level=2] [ref=e605]
+          - paragraph [ref=e606]: Stamina tracks a creature's physical reserves — the rhythm of the fight. Each attack, dash, or roar costs stamina, and running dry changes behavior.
+          - table [ref=e608]:
+            - rowgroup [ref=e609]:
+              - row "State GM Portrayal Effect" [ref=e610]:
+                - columnheader "State" [ref=e611]
+                - columnheader "GM Portrayal" [ref=e612]
+                - columnheader "Effect" [ref=e613]
+            - rowgroup [ref=e614]:
+              - row "Full Ferocious, reckless Acts normally" [ref=e615]:
+                - cell "Full" [ref=e616]
+                - cell "Ferocious, reckless" [ref=e617]
+                - cell "Acts normally" [ref=e618]
+              - row "Half Hesitant, circling Loses 1 attack option or minor ability" [ref=e619]:
+                - cell "Half" [ref=e620]
+                - cell "Hesitant, circling" [ref=e621]
+                - cell "Loses 1 attack option or minor ability" [ref=e622]
+              - row "Low (≤25%) Defensive, frantic Retreat behavior triggers" [ref=e623]:
+                - cell "Low (≤25%)" [ref=e624]
+                - cell "Defensive, frantic" [ref=e625]
+                - cell "Retreat behavior triggers" [ref=e626]
+              - row "Empty Exhausted or enraged Fights desperately or collapses" [ref=e627]:
+                - cell "Empty" [ref=e628]
+                - cell "Exhausted or enraged" [ref=e629]
+                - cell "Fights desperately or collapses" [ref=e630]
+          - paragraph [ref=e631]: Monsters don't "count" stamina like players do — you express it cinematically. When stamina runs low, narrate exhaustion, limping, or frantic attacks.
+        - generic [ref=e632]:
+          - heading "⚔️ Monster Thresholds & Phases" [level=2] [ref=e633]
+          - paragraph [ref=e634]: Each monster operates on behavioral thresholds — key points in the fight that shift their AI pattern.
+          - heading "Typical Threshold Triggers:" [level=3] [ref=e635]
+          - list [ref=e636]:
+            - listitem [ref=e637]:
+              - strong [ref=e638]: "75% HP:"
+              - text: Learns hunters' tactics or uses a new ability.
+            - listitem [ref=e639]:
+              - strong [ref=e640]: "50% HP:"
+              - text: Enrage, terrain change, or elemental burst.
+            - listitem [ref=e641]:
+              - strong [ref=e642]: "25% HP:"
+              - text: Retreat attempt, berserk mode, or desperation action.
+          - paragraph [ref=e643]: "You can codify these in stat blocks as:"
+          - generic [ref=e644]: "Phase Trigger: HP ≤ 50% → Enter Enraged Phase (gain +1 attack, lose 1 defense action)."
+          - generic [ref=e645]:
+            - heading "🧩 Monster Role in Encounter Design" [level=3] [ref=e646]
+            - paragraph [ref=e647]: "Monsters are encounters and world-building devices:"
+            - list [ref=e648]:
+              - listitem [ref=e649]:
+                - strong [ref=e650]: Behavior = story
+                - text: (a fleeing beast says more about a biome than a paragraph of lore).
+              - listitem [ref=e651]:
+                - strong [ref=e652]: Tier = tempo
+                - text: (low-tier fights teach; high-tier fights test).
+              - listitem [ref=e653]:
+                - strong [ref=e654]: Thresholds = structure
+                - text: "(use 3-stage pacing: dominance → adaptation → desperation)."
+        - generic [ref=e655]:
+          - heading "⚙️ Monster Turn Structure" [level=2] [ref=e656]
+          - blockquote [ref=e657]: "\"Every monster has a rhythm — a heartbeat in motion. Learn that rhythm, and you can survive it. Ignore it, and it will break you.\""
+          - paragraph [ref=e658]: Each monster in Untamed operates on an instinctive loop every round. These steps define how the creature thinks, acts, and recovers in combat — the wild's own action economy.
+          - heading "🩸 Monster Turn Flow" [level=3] [ref=e659]
+          - generic [ref=e660]:
+            - heading "1. Evaluate (Instinct Phase)" [level=4] [ref=e661]
+            - paragraph [ref=e662]: "The monster reads the field the way an animal would: through scent, motion, threat, and pain."
+            - paragraph [ref=e663]:
+              - strong [ref=e664]: "Instinct Priorities (GM prompts):"
+            - list [ref=e665]:
+              - listitem [ref=e666]: Closest threat in line-of-sight.
+              - listitem [ref=e667]: Loudest or most visible hunter.
+              - listitem [ref=e668]: Most wounded prey (blood smell or sound).
+              - listitem [ref=e669]: Territorial trigger (protecting nest, eggs, food).
+            - generic [ref=e670]:
+              - strong [ref=e671]: "GM Tip:"
+              - text: Describe this, don't declare it. "The Urmine's head snaps toward the hunter bleeding in the mud — instinct takes over."
+          - generic [ref=e672]:
+            - heading "2. Act (Action Phase)" [level=4] [ref=e673]
+            - paragraph [ref=e674]: The monster performs its attacks, techniques, or environmental moves — its heartbeat moment.
+            - list [ref=e675]:
+              - listitem [ref=e676]:
+                - strong [ref=e677]: "Actions per Turn:"
+                - text: Defined by Tier (see Tier Table).
+              - listitem [ref=e678]:
+                - text: Each attack, roar, or special move costs
+                - strong [ref=e679]: Stamina
+                - text: ", just like player actions."
+            - generic [ref=e680]:
+              - strong [ref=e681]: "GM Procedure:"
+              - list [ref=e682]:
+                - listitem [ref=e683]: Choose an intent (pressure, reposition, survive).
+                - listitem [ref=e684]: Select moves within Stamina limit.
+                - listitem [ref=e685]: Narrate clear telegraphs — let hunters read what's coming.
+                - listitem [ref=e686]: Spend Stamina accordingly.
+            - paragraph [ref=e687]: If the creature runs out of Stamina mid-turn, stop its sequence there — fatigue overrides rage.
+          - generic [ref=e688]:
+            - heading "💢 Exhaustion & Collapse" [level=4] [ref=e689]
+            - paragraph [ref=e690]:
+              - text: When a monster's Stamina hits 0, it becomes
+              - strong [ref=e691]: Exhausted
+              - text: for one full round.
+            - generic [ref=e692]:
+              - strong [ref=e693]: "GM Cue:"
+              - text: "\"Its legs buckle, steam rising from its hide — breath wheezes through its chest. The wild itself pauses.\""
+            - paragraph [ref=e694]:
+              - strong [ref=e695]: "Recovery:"
+            - list [ref=e696]:
+              - listitem [ref=e697]: At the start of its next turn, the monster regains its full Stamina, shakes off Exhaustion, and returns to normal — unless specific traits alter this (e.g. "Lumbering" may recover slower).
+              - listitem [ref=e698]: Fury or Enrage states end unless otherwise stated.
+              - listitem [ref=e699]: HP does not regenerate unless the creature has Regeneration or enters a Recovery Phase.
+          - generic [ref=e700]:
+            - heading "💤 Voluntary Resting" [level=4] [ref=e701]
+            - paragraph [ref=e702]:
+              - text: Sometimes the smartest thing a monster can do… is nothing. When badly winded or strategically repositioning, a monster may choose to
+              - strong [ref=e703]: Rest
+              - text: .
+            - paragraph [ref=e704]:
+              - strong [ref=e705]: "Rest Action:"
+            - list [ref=e706]:
+              - listitem [ref=e707]: Forgoes all attacks or abilities that turn.
+              - listitem [ref=e708]: Regains Max Stamina.
+              - listitem [ref=e709]: May still move up to half speed.
+            - paragraph [ref=e710]: "Describe this like wary animal behavior, not a pause button: \"The Kragal backs away, tail low, foam dripping from its jaw. It's watching — waiting for an opening.\""
+            - generic [ref=e711]:
+              - strong [ref=e712]: "GM Use:"
+              - text: This gives you pacing control. A monster that withdraws and re-enters the fight later feels intelligent and alive, not repetitive.
+          - generic [ref=e713]:
+            - heading "🩸 Retreat & Recovery" [level=4] [ref=e714]
+            - paragraph [ref=e715]: "When a monster escapes or breaks line-of-sight for at least 1 minute (10 rounds):"
+            - list [ref=e716]:
+              - listitem [ref=e717]: Regains full Stamina, and
+              - listitem [ref=e718]: Restores ¼ of its maximum HP (rounded up).
+            - paragraph [ref=e719]: "Narrate adaptation on return: \"When you find the Urmine again, its fur gleams darker — resin hardened into armor. It's learned from your last clash.\""
+            - paragraph [ref=e720]: This transforms failed hunts into evolving rivalries — the beast adapts, remembers, and returns.
+        - generic [ref=e721]:
+          - heading "🧱 Monster States" [level=2] [ref=e722]
+          - paragraph [ref=e723]: Monsters shift between states based on injury, stamina, or triggers. States define tempo, not morality.
+          - table [ref=e725]:
+            - rowgroup [ref=e726]:
+              - row "State Description Typical Trigger" [ref=e727]:
+                - columnheader "State" [ref=e728]
+                - columnheader "Description" [ref=e729]
+                - columnheader "Typical Trigger" [ref=e730]
+            - rowgroup [ref=e731]:
+              - row "Normal Baseline behavior — cautious but aggressive. Default" [ref=e732]:
+                - cell "Normal" [ref=e733]
+                - cell "Baseline behavior — cautious but aggressive." [ref=e734]
+                - cell "Default" [ref=e735]
+              - row "Enraged Increased aggression, speed, or elemental activity. HP ≤ 50%, nest destroyed, pack killed" [ref=e736]:
+                - cell "Enraged" [ref=e737]
+                - cell "Increased aggression, speed, or elemental activity." [ref=e738]
+                - cell "HP ≤ 50%, nest destroyed, pack killed" [ref=e739]
+              - row "Exhausted Stamina 0; sluggish and vulnerable. Overexertion" [ref=e740]:
+                - cell "Exhausted" [ref=e741]
+                - cell "Stamina 0; sluggish and vulnerable." [ref=e742]
+                - cell "Overexertion" [ref=e743]
+              - row "Desperation Final surge or panic before death; often suicidal or catastrophic. HP ≤ 10–15%" [ref=e744]:
+                - cell "Desperation" [ref=e745]
+                - cell "Final surge or panic before death; often suicidal or catastrophic." [ref=e746]
+                - cell "HP ≤ 10–15%" [ref=e747]
+          - paragraph [ref=e748]:
+            - text: Not all monsters enrage — some transform, some flee, some adapt their behavior instead. Use the stat block's
+            - strong [ref=e749]: Trigger Traits
+            - text: to determine what makes each creature "snap."
+        - generic [ref=e750]:
+          - heading "🔁 Escalating Resistance (Status Immunity Logic)" [level=2] [ref=e751]
+          - paragraph [ref=e752]: Even the wild adapts. Each time a monster is hit with the same crowd control effect, its body or instincts learn to resist it.
+          - table [ref=e754]:
+            - rowgroup [ref=e755]:
+              - row "Attempt Save Modifier" [ref=e756]:
+                - columnheader "Attempt" [ref=e757]
+                - columnheader "Save Modifier" [ref=e758]
+            - rowgroup [ref=e759]:
+              - row "1st Normal save" [ref=e760]:
+                - cell "1st" [ref=e761]
+                - cell "Normal save" [ref=e762]
+              - row "2nd +2 to save" [ref=e763]:
+                - cell "2nd" [ref=e764]
+                - cell "+2 to save" [ref=e765]
+              - row "3rd +4 to save" [ref=e766]:
+                - cell "3rd" [ref=e767]
+                - cell "+4 to save" [ref=e768]
+              - row "4th +6 to save" [ref=e769]:
+                - cell "4th" [ref=e770]
+                - cell "+6 to save" [ref=e771]
+              - row "5th +8 to save" [ref=e772]:
+                - cell "5th" [ref=e773]
+                - cell "+8 to save" [ref=e774]
+          - paragraph [ref=e775]: Use this to avoid stun-lock loops and emphasize adaptation — monsters remember pain.
+        - generic [ref=e776]:
+          - 'heading "🧭 GM Summary: Running Monster Turns" [level=2] [ref=e777]'
+          - paragraph [ref=e778]: At the table, think of monsters like living metronomes — they breathe, act, and react with rhythm.
+          - paragraph [ref=e779]: "Here's your rapid-fire checklist:"
+          - list [ref=e780]:
+            - listitem [ref=e781]:
+              - strong [ref=e782]: "Evaluate:"
+              - text: Who's the threat or target? What instinct fires first?
+            - listitem [ref=e783]:
+              - strong [ref=e784]: "Act:"
+              - text: Execute moves within Stamina; respect terrain logic.
+            - listitem [ref=e785]:
+              - strong [ref=e786]: "Recover:"
+              - text: Regain Stamina or voluntarily rest if overextended.
+            - listitem [ref=e787]:
+              - strong [ref=e788]: "Threshold Check:"
+              - text: Did HP or conditions trigger a new phase? Shift behavior immediately.
+            - listitem [ref=e789]:
+              - strong [ref=e790]: "Describe, Don't Declare:"
+              - text: Every action should look like a choice, not a roll.
+          - blockquote [ref=e791]: "\"The monster doesn't roll dice — it rolls momentum.\""
+        - generic [ref=e792]:
+          - heading "🐾 Small / Minor Monsters" [level=2] [ref=e793]
+          - blockquote [ref=e794]: "\"Not every danger is a boss. Sometimes the wild bites in mouthfuls.\""
+          - paragraph [ref=e795]: Small monsters aren't full encounters. They're ecosystem signals, resource nodes, and tempo shifters you can layer around a major hunt.
+          - generic [ref=e796]:
+            - heading "What They're For" [level=3] [ref=e797]
+            - list [ref=e798]:
+              - listitem [ref=e799]:
+                - strong [ref=e800]: "Environmental flavor:"
+                - text: Make sectors feel lived-in (burrows, flocks, chitter-lines).
+              - listitem [ref=e801]:
+                - strong [ref=e802]: "Clues & foreshadowing:"
+                - text: Scorch marks, torn hides, odd spoor → hint a bigger predator.
+              - listitem [ref=e803]:
+                - strong [ref=e804]: "Light pressure:"
+                - text: Harass, distract, or force movement choices without hijacking the scene.
+              - listitem [ref=e805]:
+                - strong [ref=e806]: "Materials:"
+                - text: Minor parts, lures, common reagents; rarely gating gear.
+          - generic [ref=e807]:
+            - heading "Baseline Numbers (quick-run)" [level=3] [ref=e808]
+            - list [ref=e809]:
+              - listitem [ref=e810]:
+                - strong [ref=e811]: "HP:"
+                - text: 10–20
+              - listitem [ref=e812]:
+                - strong [ref=e813]: "AR:"
+                - text: 5–8
+              - listitem [ref=e814]:
+                - strong [ref=e815]: "Attack:"
+                - text: 1-2
+              - listitem [ref=e816]:
+                - strong [ref=e817]: "Damage:"
+                - text: 1d4–1d6 (type by species)
+              - listitem [ref=e818]:
+                - strong [ref=e819]: "Speed:"
+                - text: 30 ft (burrow/climb/swim varies)
+              - listitem [ref=e820]:
+                - strong [ref=e821]: "Save DCs (if any):"
+                - text: 10–12
+              - listitem [ref=e822]:
+                - strong [ref=e823]: "Proficiency:"
+                - text: Novice (+0) unless a trait says otherwise
+          - generic [ref=e824]:
+            - heading "Common Traits (pick 1–2)" [level=3] [ref=e825]
+            - list [ref=e826]:
+              - listitem [ref=e827]:
+                - strong [ref=e828]: "Swarm:"
+                - text: Can share spaces; ignores opportunity attacks; takes +1d6 damage from AoE.
+              - listitem [ref=e829]:
+                - strong [ref=e830]: "Pack Nip:"
+                - text: If two+ allies adjacent to the same target, add +1 damage each.
+              - listitem [ref=e831]:
+                - strong [ref=e832]: "Evasive:"
+                - text: Disengage as a Fast move (0 STA for them).
+              - listitem [ref=e833]:
+                - strong [ref=e834]: "Poison Bite:"
+                - text: On hit, CON save DC 12 or Poisoned (your standard).
+              - listitem [ref=e835]:
+                - strong [ref=e836]: "Skitterburst:"
+                - text: When first bloodied, Dash for free (no OA), once.
+              - listitem [ref=e837]:
+                - strong [ref=e838]: "Burrow/Climb/Swim:"
+                - text: Movement mode at normal speed; use terrain.
+            - paragraph [ref=e839]: Keep their kits simple—one hook and one nuisance is plenty.
+          - generic [ref=e840]:
+            - heading "Running Them Fast (GM procedure)" [level=3] [ref=e841]
+            - paragraph [ref=e842]:
+              - strong [ref=e843]: "In a major hunt:"
+            - list [ref=e844]:
+              - listitem [ref=e845]: Place them as hazards on initiative 0 or lair beats every other round.
+              - listitem [ref=e846]: They make one simple group attack or force a positioning check (DEX/STR DC 12).
+              - listitem [ref=e847]: Their goal is to divide attention or telegraph changes (stampede before the apex, carrion swarm on a wound).
+            - paragraph [ref=e848]:
+              - strong [ref=e849]: "As their own scene:"
+            - list [ref=e850]:
+              - listitem [ref=e851]: Use 1–2 waves of 3–6 bodies; end the scene when the party asserts control (terrain, fire, roar, or a few kills).
+          - generic [ref=e852]:
+            - heading "Group Handling Options" [level=3] [ref=e853]
+            - heading "A) Minion Rule (cinematic):" [level=4] [ref=e854]
+            - paragraph [ref=e855]: Any hit that beats AR drops one minion (no HP). Crits drop two. AoE wipes a cluster.
+            - heading "B) Mob Pool (tactical-lite):" [level=4] [ref=e856]
+            - paragraph [ref=e857]: Bundle 3–5 creatures into 1 stat line with HP = 5 × members.
+            - list [ref=e858]:
+              - listitem [ref=e859]: "On mob attack: +4 to hit; damage = 1d4 × members in melee (cap 3 dice)."
+              - listitem [ref=e860]: Each 5 HP lost removes one member (reduce damage die).
+            - heading "C) Swarm Template (area hazard):" [level=4] [ref=e861]
+            - paragraph [ref=e862]: Occupies a 10-ft square; moving through it forces DEX save DC 12 or take 1d4 and gain Bleed 1.
+            - list [ref=e863]:
+              - listitem [ref=e864]: Takes +1d6 from fire, thunder, wide sweeps; halves damage from single-target stabs.
+          - generic [ref=e865]:
+            - heading "Integration Hooks" [level=3] [ref=e866]
+            - list [ref=e867]:
+              - listitem [ref=e868]:
+                - strong [ref=e869]: "Checks:"
+                - text: Start with Instinct (Sense/Tracking) to notice nests, DEX (Stealth) to skirt them, INT (Resource ID) to harvest safely.
+              - listitem [ref=e870]:
+                - strong [ref=e871]: "DCs:"
+                - text: Trivial 8 (avoid trails), Easy 10 (shoo), Moderate 12 (harvest), Challenging 14 (trap or redirect).
+              - listitem [ref=e872]:
+                - strong [ref=e873]: "Conditions:"
+                - text: Great vectors for Bleed, Poisoned, Dazed (buzz clouds), Grappled (tangle-vines/limbs).
+              - listitem [ref=e874]:
+                - strong [ref=e875]: "Stamina Pressure:"
+                - text: Force small movement taxes (mud crabs, ankle-biters) or reaction burns at awkward times.
+              - listitem [ref=e876]:
+                - strong [ref=e877]: "Loot:"
+                - text: 1–2 common reagents; 10% chance of a rare flavor reagent on crit harvest.
+          - generic [ref=e878]:
+            - heading "Best Practices" [level=3] [ref=e879]
+            - list [ref=e880]:
+              - listitem [ref=e881]:
+                - strong [ref=e882]: Don't steal spotlight.
+                - text: Two rounds max inside a boss fight unless they're the objective.
+              - listitem [ref=e883]:
+                - strong [ref=e884]: Use to telegraph.
+                - text: Fleeing birds, burrow collapses, carcass swarms → "apex inbound."
+              - listitem [ref=e885]:
+                - strong [ref=e886]: Combine with weather.
+                - text: Fog + burrowers; rain + leeches; heat + stinging wasps.
+              - listitem [ref=e887]:
+                - strong [ref=e888]: Escalate logically.
+                - text: Leave nests intact → next time, bigger swarm or a predator attracted to the surge.
+          - generic [ref=e889]:
+            - heading "Optional Escalation Rule" [level=3] [ref=e890]
+            - paragraph [ref=e891]: "If hunters repeatedly ignore small-monster sites in a sector, mark a ⚠ Infestation tick. At 3 ticks:"
+            - list [ref=e892]:
+              - listitem [ref=e893]: Add a sector event (disease risk, crop blight, predator drawn), or
+              - listitem [ref=e894]: Upgrade the swarm to a Mob or Support for a larger creature in that zone.
+          - generic [ref=e895]:
+            - heading "Drop-In Stat Snippets" [level=3] [ref=e896]
+            - generic [ref=e897]:
+              - heading "Rockhares (Skirmishers)" [level=3] [ref=e898]
+              - list [ref=e899]:
+                - listitem [ref=e900]: HP 12, AR 6, Attack +3 (Kick 1d4 bludgeoning)
+                - listitem [ref=e901]: Skitterburst, Evasive
+                - listitem [ref=e902]: "On miss by the hunters: they Dash 10 ft as a free move."
+                - listitem [ref=e903]: "Harvest: sinew (string), lean meat (meal + Nightwatch Brew synergy)."
+            - generic [ref=e904]:
+              - heading "Thornback Grubs (Swarm)" [level=3] [ref=e905]
+              - list [ref=e906]:
+                - listitem [ref=e907]: "Swarm zone 10 ft; entering or starting turn: DEX save DC 12 or 1d4 piercing + Bleed 1"
+                - listitem [ref=e908]: AR 5; takes +1d6 from fire/AoE; halves single-target
+                - listitem [ref=e909]: "Harvest: chitin scrap (light plates), caustic sacs (salve/poison base)."
+            - generic [ref=e910]:
+              - heading "Bog Leeches (Mob Pool)" [level=3] [ref=e911]
+              - list [ref=e912]:
+                - listitem [ref=e913]: "5-member Mob: HP 25, AR 5, Attack +4; 1d4 × members necrotic on grappled targets (cap 3d4)"
+                - listitem [ref=e914]: "On fire damage: all members make CON save DC 12 or lose 2 HP each (sizzle off)."
+                - listitem [ref=e915]: "Harvest: coagulant gel (buff to First Aid; +1 to staunch Bleed)."
+            - generic [ref=e916]:
+              - heading "Cliff-Pickers (Beast Birds)" [level=3] [ref=e917]
+              - list [ref=e918]:
+                - listitem [ref=e919]: HP 14, AR 7, Attack +5 (Peck 1d6 piercing)
+                - listitem [ref=e920]: "Keen Eye: if any hunter is Prone or Bleeding, gain advantage to attack that target."
+                - listitem [ref=e921]: On part breaks in boss fights, they flock to exposed flesh (narrative pressure).
+          - generic [ref=e922]:
+            - heading "When to Use (1–2 line prompts)" [level=3] [ref=e923]
+            - list [ref=e924]:
+              - listitem [ref=e925]:
+                - strong [ref=e926]: "Entering a new sector:"
+                - text: "\"Prove the vibe\" — a quick, low-risk creature establishes tone."
+              - listitem [ref=e927]:
+                - strong [ref=e928]: "Tracking lull:"
+                - text: A small-monster scene punctuates time and hints at the apex's path.
+              - listitem [ref=e929]:
+                - strong [ref=e930]: "Mid-boss congestion:"
+                - text: One lair beat of swarm pressure to force movement or reactions.
+              - listitem [ref=e931]:
+                - strong [ref=e932]: "Resolution phase:"
+                - text: Carcasses attract scavengers; a short "harvest under pressure" beat.
+          - paragraph [ref=e933]: Small monsters don't make hunts epic; they make them believable. Sprinkle, don't pour.
+  - generic [ref=e936]:
+    - button "Menu" [ref=e937]:
+      - img [ref=e939]
+      - generic: Menu
+    - button "Inspect" [ref=e943]:
+      - img [ref=e945]
+      - generic: Inspect
+    - button "Audit" [ref=e947]:
+      - img [ref=e949]
+      - generic: Audit
+    - button "Settings" [ref=e952]:
+      - img [ref=e954]
+      - generic: Settings

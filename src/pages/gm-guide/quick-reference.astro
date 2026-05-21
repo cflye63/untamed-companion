@@ -1,0 +1,515 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>GM Quick Reference - Untamed GM Guide</title>
+		<meta name="description" content="A dense single-page lookup for running Untamed at the table: DCs, action economy, reactions, conditions, monster math, and called shots." />
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+					<a href="/gm-guide" class="active">GM Guide</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/gm-guide">← Back to GM Guide</a>
+				</div>
+
+				<header class="page-header">
+					<h1>GM Quick Reference</h1>
+					<p class="subtitle">Flip-to-this-page lookup. Numbers and rulings, not explanations.</p>
+				</header>
+
+				<nav class="toc">
+					<h2>Jump To</h2>
+					<div class="toc-grid">
+						<div class="toc-col">
+							<a href="#dcs">DC Ladder</a>
+							<a href="#actions">Action Economy</a>
+							<a href="#reactions">Reactions</a>
+							<a href="#saves">Save Categories</a>
+						</div>
+						<div class="toc-col">
+							<a href="#stamina">Stamina States</a>
+							<a href="#conditions">Conditions</a>
+							<a href="#escalating">Escalating Resistance</a>
+						</div>
+						<div class="toc-col">
+							<a href="#monster-math">Monster Math</a>
+							<a href="#called-shots">Called Shots &amp; AR</a>
+							<a href="#phase-triggers">Phase Triggers</a>
+							<a href="#weather">Weather Effects</a>
+						</div>
+					</div>
+				</nav>
+
+				<article class="content">
+					<!-- DC LADDER -->
+					<section id="dcs" class="ref-block">
+						<h2>🎲 DC Ladder</h2>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>DC</th><th>Difficulty</th><th>Use For</th></tr></thead>
+								<tbody>
+									<tr><td>8</td><td>Trivial</td><td>Routine; failure = distraction, not danger.</td></tr>
+									<tr><td>10</td><td>Easy</td><td>Mild risk or pressure.</td></tr>
+									<tr><td>12</td><td>Moderate</td><td>Demands skill or focus.</td></tr>
+									<tr><td>14</td><td>Challenging</td><td>Adverse conditions or limited time.</td></tr>
+									<tr><td>16</td><td>Hard</td><td>Requires expertise, strong roll, or tools.</td></tr>
+									<tr><td>18</td><td>Severe</td><td>Dangerous or highly specific.</td></tr>
+									<tr><td>20+</td><td>Extreme</td><td>Heroic or nearly impossible.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- ACTION ECONOMY -->
+					<section id="actions" class="ref-block">
+						<h2>⚡ Action Economy</h2>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Type</th><th>Cost</th><th>Rule</th></tr></thead>
+								<tbody>
+									<tr><td><strong>Move</strong></td><td>0 STA</td><td>Up to 30 ft base. Sprint/climb = +1 STA per 10 ft.</td></tr>
+									<tr><td><strong>Action</strong></td><td>1+ STA</td><td>Attack, Technique, set trap, environment interact.</td></tr>
+									<tr><td><strong>Fast Action</strong></td><td>0–1 STA</td><td>1/turn. Potions, swaps, toggles. No chaining.</td></tr>
+									<tr><td><strong>Preparation</strong></td><td>0 STA</td><td>Replaces Action. Breaks if hit, moved, or rushed.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- REACTIONS -->
+					<section id="reactions" class="ref-block">
+						<h2>🛡️ Reactions</h2>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Reaction</th><th>Who</th><th>Effect</th></tr></thead>
+								<tbody>
+									<tr><td><strong>Block</strong></td><td>Guard / shielded weapons</td><td>+3 AR vs one attack. If still hit, reduce damage by CON mod.</td></tr>
+									<tr><td><strong>Dodge</strong></td><td>Light / Medium armor</td><td>Attack rolls vs you at Disadvantage. Reposition 5 ft if not hit.</td></tr>
+									<tr><td><strong>Parry</strong></td><td>Weapons with Parry tag</td><td>d20 + STR/DEX + Prof vs attacker. Success: cancel hit, ½ weapon dmg back (0 STA). Fail: +1 AR only.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- SAVES -->
+					<section id="saves" class="ref-block">
+						<h2>🎯 Save Categories</h2>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Threat</th><th>Save</th><th>Typical Source</th></tr></thead>
+								<tbody>
+									<tr><td>Physical restraint / push</td><td>STR / DEX</td><td>Grapples, debris, knockdowns</td></tr>
+									<tr><td>Poison, disease, exhaustion</td><td>CON</td><td>Venoms, weather, hunger</td></tr>
+									<tr><td>Mental shock, fear, roar</td><td>CHA / INS</td><td>Apex roars, illusions, morale</td></tr>
+									<tr><td>Elemental hazard</td><td>CON / DEX</td><td>Fire, lightning, ice, wind</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- STAMINA STATES -->
+					<section id="stamina" class="ref-block">
+						<h2>💨 Stamina States</h2>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>State</th><th>GM Cue</th><th>Mechanical</th></tr></thead>
+								<tbody>
+									<tr><td><strong>Steady</strong> (&gt; half)</td><td>Calm stance, measured breathing.</td><td>Acts normally.</td></tr>
+									<tr><td><strong>Low</strong> (≤ 2)</td><td>Hesitation, slower dodges, missed openings.</td><td>Remind fictionally — "Your grip is slipping."</td></tr>
+									<tr><td><strong>0 Exhausted</strong></td><td>Gasping, momentary lapse.</td><td>No Actions or Fast Actions. STR/DEX saves auto-fail. Attacks vs them have advantage. Move halved.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- CONDITIONS -->
+					<section id="conditions" class="ref-block">
+						<h2>🩹 Conditions</h2>
+						<div class="conditions-grid">
+							<div class="cond"><strong>💀 Poisoned</strong> — Disadvantage on attack rolls and CON saves. 1 dmg at start of turn until treated.</div>
+							<div class="cond"><strong>🩸 Bleeding</strong> — 1d4 HP at end of turn per stack. Gain a stack on Dash or move &gt; 15 ft. <em>Remedy: First Aid INT DC 12 or any healing.</em></div>
+							<div class="cond"><strong>🔥 Burned</strong> — 1d4 fire at end of turn. Disadvantage on Concentration. <em>Remedy: Water (then Soaked).</em></div>
+							<div class="cond"><strong>❄️ Chilled</strong> — +1 STA cost to all abilities. −10 ft movement.</div>
+							<div class="cond"><strong>💧 Soaked</strong> — Lightning damage ×2. End of turn CON DC 12 or gain Chilled. <em>Remedy: Fire / heat.</em></div>
+							<div class="cond"><strong>💫 Staggered</strong> — No Move or Action until next turn. Fast and Reactions OK.</div>
+							<div class="cond"><strong>⚡ Stunned</strong> — Lose next turn entirely. Attacks vs you have advantage. Auto-fail STR/DEX saves until end of next turn.</div>
+							<div class="cond"><strong>⛓️ Paralyzed</strong> — No Move, Action, Fast, or Reaction until next turn. Attacks vs you have advantage.</div>
+							<div class="cond"><strong>😰 Exhausted</strong> — STA = 0. No Actions or Fast. Attacks vs you have advantage. Auto-fail STR/DEX saves. Move halved. <em>Recover +4 STA at end of turn if you take no Action.</em></div>
+							<div class="cond"><strong>🤕 Prone</strong> — Melee vs you: advantage. Ranged vs you: disadvantage. Your ranged: disadvantage. <em>Stand: 2 STA.</em></div>
+							<div class="cond"><strong>🤼 Grappled</strong> — Speed 0. Disadvantage vs forced movement. <em>Break: STR or DEX vs grappler at start of turn.</em></div>
+							<div class="cond"><strong>🕸️ Restrained</strong> — Speed 0. Disadvantage on DEX saves. Cannot Dodge. Attacks vs you have advantage.</div>
+							<div class="cond"><strong>😡 Taunted</strong> — Next attack must target the taunter. Ends after that attack or if untargetable.</div>
+							<div class="cond"><strong>😵 Dazed</strong> — Disadvantage on attack rolls and Instinct checks. No Reactions. Ends at end of next turn.</div>
+							<div class="cond"><strong>😴 Sleep</strong> — Lose turn, regain 4 STA. Wake on INS at end of turn or on damage. Attacks vs Sleeping: advantage.</div>
+						</div>
+					</section>
+
+					<!-- ESCALATING RESISTANCE -->
+					<section id="escalating" class="ref-block">
+						<h2>🔁 Escalating Resistance</h2>
+						<p class="ref-note">Tracks <strong>per condition type, globally</strong>. Resets each encounter. Applies to monsters resisting hunter-applied conditions on a save (Prone, Staggered, Restrained, Stunned, Bleeding, Dazed, Slowed). One-directional — monsters do NOT get escalating CC against hunters.</p>
+						<div class="table-wrapper">
+							<table class="ref-table compact">
+								<thead><tr><th>Application</th><th>Save Modifier</th></tr></thead>
+								<tbody>
+									<tr><td>1st</td><td>Normal save</td></tr>
+									<tr><td>2nd</td><td>+2 to save</td></tr>
+									<tr><td>3rd</td><td>+4 to save</td></tr>
+									<tr><td>4th</td><td>+6 to save</td></tr>
+									<tr><td>5th+</td><td>+8 to save</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- MONSTER MATH -->
+					<section id="monster-math" class="ref-block">
+						<h2>🐾 Monster Math</h2>
+
+						<div class="formula">
+							<span class="formula-label">Attack Roll</span>
+							<code>d20 + 4 (proficiency) + relevant stat bonus</code>
+						</div>
+						<div class="formula">
+							<span class="formula-label">Damage</span>
+							<code>damage dice + (½ relevant stat, rounded down)</code>
+						</div>
+						<div class="formula">
+							<span class="formula-label">HP</span>
+							<code>(CON × party multiplier) + (Tier × 15)</code>
+						</div>
+
+						<div class="dual-table">
+							<div class="table-wrapper">
+								<table class="ref-table compact">
+									<thead><tr><th>Party Size</th><th>HP ×</th></tr></thead>
+									<tbody>
+										<tr><td>1</td><td>×8</td></tr>
+										<tr><td>2</td><td>×9</td></tr>
+										<tr><td>3</td><td>×10</td></tr>
+										<tr><td>4</td><td>×11</td></tr>
+										<tr><td>5</td><td>×12</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table-wrapper">
+								<table class="ref-table compact">
+									<thead><tr><th>Tier</th><th>Attacks / Turn</th><th>Role</th></tr></thead>
+									<tbody>
+										<tr><td>T1</td><td>2</td><td>Low-threat predator</td></tr>
+										<tr><td>T2</td><td>2–3</td><td>Mid-tier</td></tr>
+										<tr><td>T3</td><td>3–4</td><td>Mini-boss / alpha</td></tr>
+										<tr><td>T4</td><td>4–5</td><td>Apex within biome</td></tr>
+										<tr><td>T5+</td><td>4–5 (+phases)</td><td>Legendary / Elder</td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<p class="ref-note">
+							<strong>Stat bonus quick reference:</strong> STR 7 → +3 dmg · DEX 8 → +4 · INS 11 → +5. Monsters use ½ score, not full.
+						</p>
+					</section>
+
+					<!-- CALLED SHOTS -->
+					<section id="called-shots" class="ref-block">
+						<h2>🎯 Called Shots &amp; AR Adjustments</h2>
+
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Part</th><th>AR Adj.</th><th>Result on Break</th></tr></thead>
+								<tbody>
+									<tr><td>Head / Crest / Horns</td><td>+2 to +3</td><td>Disables breath/roar. May Stun 1 turn.</td></tr>
+									<tr><td>Torso / Core</td><td>+1</td><td>Baseline AR.</td></tr>
+									<tr><td>Legs / Joints</td><td>+2</td><td>Move −10 ft. No Sprint or Charge.</td></tr>
+									<tr><td>Tail / Carapace / Back</td><td>+1 to +2</td><td>Removes sweeps. May drop unique carve.</td></tr>
+									<tr><td>Wings / Fins / Antennae</td><td>+3</td><td>Ground or blind. High payoff.</td></tr>
+									<tr><td>Soft tissue / Weak spot</td><td>−1 to −2</td><td>Rare. Visible only via cues or analysis.</td></tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="table-wrapper">
+							<table class="ref-table compact">
+								<thead><tr><th>Situation</th><th>Modifier</th></tr></thead>
+								<tbody>
+									<tr><td>Steady Aim</td><td>Ignores AR penalty on ranged called shot.</td></tr>
+									<tr><td>Study Target</td><td>Advantage on next called shot vs that part.</td></tr>
+									<tr><td>Trapped / Immobilized</td><td>AR −2 for precision attacks.</td></tr>
+									<tr><td>Obscured / Flailing</td><td>AR +2; ranged called shots may fail outright.</td></tr>
+									<tr><td>Soft state (weakened, molting, stunned)</td><td>AR −2 for duration.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- PHASE TRIGGERS -->
+					<section id="phase-triggers" class="ref-block">
+						<h2>📈 Phase Triggers (Defaults)</h2>
+						<div class="table-wrapper">
+							<table class="ref-table compact">
+								<thead><tr><th>HP</th><th>Behavior Shift</th></tr></thead>
+								<tbody>
+									<tr><td>75%</td><td>Learns hunter tactics or uses a new ability.</td></tr>
+									<tr><td>50%</td><td>Enrage, terrain change, or elemental burst.</td></tr>
+									<tr><td>25%</td><td>Retreat, berserk, or desperation action.</td></tr>
+									<tr><td>10–15%</td><td>Desperation surge (suicidal or catastrophic).</td></tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="ref-note"><strong>Exhaustion:</strong> Monster at STA 0 is Exhausted for one full round. Next turn: full STA, shake off Exhaustion. Fury/Enrage states end. HP does not regen.</p>
+						<p class="ref-note"><strong>Retreat (1+ min out of LoS):</strong> Regains full STA, restores ¼ max HP. Narrate adaptation on return.</p>
+					</section>
+
+					<!-- WEATHER -->
+					<section id="weather" class="ref-block">
+						<h2>🌦️ Weather Quick Effects</h2>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Weather</th><th>Effect</th></tr></thead>
+								<tbody>
+									<tr><td>Clear</td><td>No modifiers.</td></tr>
+									<tr><td>Rain</td><td>+2 DC to climb. Ranged at disadvantage. Tracks fade after 10 min.</td></tr>
+									<tr><td>Fog</td><td>−2 INS for detection. No advantage from elevation.</td></tr>
+									<tr><td>Storm</td><td>Random lightning DC 14 DEX save. Ranged at disadvantage.</td></tr>
+									<tr><td>Extreme Cold</td><td>CON DC 12 per hour or gain 1 Exhaustion.</td></tr>
+									<tr><td>Heatwave</td><td>+1 STA cost per Action. Water loss accelerates.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.6;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Nav */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+			.nav .container { display: flex; justify-content: space-between; align-items: center; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover, .nav-links a.active { color: var(--amber); }
+
+			/* Breadcrumb */
+			.breadcrumb { padding: 1.5rem 0 0.5rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-size: 0.95rem; }
+			.breadcrumb a:hover { color: var(--amber); }
+
+			/* Page header */
+			.page-header {
+				padding: 2rem 0 2.5rem;
+				text-align: center;
+				border-bottom: 2px solid var(--earth-brown);
+				margin-bottom: 2rem;
+			}
+			.page-header h1 { font-size: 3rem; color: var(--amber); margin-bottom: 0.5rem; }
+			.subtitle { font-size: 1.15rem; color: var(--leaf-green); font-style: italic; }
+
+			/* TOC */
+			.toc {
+				background: var(--forest-green);
+				padding: 1.5rem 2rem;
+				border-radius: 10px;
+				border: 1px solid var(--earth-brown);
+				margin-bottom: 2.5rem;
+			}
+			.toc h2 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				letter-spacing: 0.15rem;
+				margin-bottom: 1rem;
+			}
+			.toc-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+				gap: 0.5rem 2rem;
+			}
+			.toc-col { display: flex; flex-direction: column; gap: 0.3rem; }
+			.toc-col a {
+				color: var(--cream);
+				text-decoration: none;
+				padding: 0.25rem 0;
+				font-size: 0.95rem;
+			}
+			.toc-col a:hover { color: var(--amber); }
+
+			/* Reference blocks */
+			.ref-block {
+				margin-bottom: 2.5rem;
+				background: var(--forest-green);
+				border: 1px solid var(--earth-brown);
+				border-radius: 10px;
+				padding: 1.5rem 1.75rem;
+				scroll-margin-top: 6rem;
+			}
+			.ref-block h2 {
+				color: var(--amber);
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+				padding-bottom: 0.5rem;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+
+			.ref-note {
+				color: var(--cream);
+				font-size: 0.95rem;
+				margin-top: 1rem;
+				padding: 0.75rem 1rem;
+				background: var(--forest-dark);
+				border-left: 3px solid var(--moss-green);
+				border-radius: 4px;
+			}
+
+			/* Tables */
+			.table-wrapper {
+				overflow-x: auto;
+				border-radius: 8px;
+				background: var(--forest-dark);
+			}
+			.ref-table {
+				width: 100%;
+				border-collapse: collapse;
+				font-size: 0.95rem;
+			}
+			.ref-table.compact { font-size: 0.9rem; }
+			.ref-table thead th {
+				background: var(--moss-green);
+				color: var(--forest-dark);
+				padding: 0.6rem 0.85rem;
+				text-align: left;
+				font-weight: 700;
+				font-size: 0.85rem;
+				text-transform: uppercase;
+				letter-spacing: 0.05rem;
+			}
+			.ref-table tbody td {
+				padding: 0.55rem 0.85rem;
+				border-top: 1px solid var(--earth-brown);
+				vertical-align: top;
+			}
+			.ref-table tbody tr:nth-child(even) td { background: rgba(45, 80, 22, 0.25); }
+			.ref-table strong { color: var(--amber); }
+			.ref-table code {
+				background: var(--forest-dark);
+				color: var(--leaf-green);
+				padding: 0.1rem 0.4rem;
+				border-radius: 3px;
+				font-family: 'SF Mono', Menlo, monospace;
+				font-size: 0.9em;
+			}
+
+			.dual-table {
+				display: grid;
+				grid-template-columns: 1fr 1.6fr;
+				gap: 1rem;
+				margin-top: 1rem;
+			}
+
+			/* Formulas */
+			.formula {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				padding: 0.75rem 1rem;
+				background: var(--forest-dark);
+				border-left: 3px solid var(--amber);
+				margin-bottom: 0.6rem;
+				border-radius: 4px;
+				flex-wrap: wrap;
+			}
+			.formula-label {
+				color: var(--amber);
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.08rem;
+				font-size: 0.85rem;
+				min-width: 100px;
+			}
+			.formula code {
+				background: transparent;
+				color: var(--cream);
+				font-family: 'SF Mono', Menlo, monospace;
+				font-size: 0.95rem;
+			}
+
+			/* Conditions grid */
+			.conditions-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: 0.6rem;
+			}
+			.cond {
+				background: var(--forest-dark);
+				padding: 0.7rem 0.9rem;
+				border-radius: 6px;
+				border-left: 3px solid var(--moss-green);
+				font-size: 0.92rem;
+				line-height: 1.55;
+			}
+			.cond strong { color: var(--amber); margin-right: 0.25rem; }
+			.cond em { color: var(--leaf-green); font-style: italic; }
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2rem; }
+				.dual-table { grid-template-columns: 1fr; }
+				.formula { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+				.formula-label { min-width: auto; }
+			}
+		</style>
+	</body>
+</html>

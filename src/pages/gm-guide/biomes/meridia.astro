@@ -1,0 +1,740 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Field Guide: Meridia - Untamed</title>
+		<meta name="description" content="The Forest Cluster biome of Meridia: villages, factions, sectors, event tables, ecology shifts, and the natural laws that shape every hunt." />
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+					<a href="/gm-guide" class="active">GM Guide</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/gm-guide/biomes">← Back to Biomes</a>
+				</div>
+
+				<header class="page-header">
+					<p class="eyebrow">Field Guide</p>
+					<h1>Meridia</h1>
+					<p class="subtitle">The Forest Cluster — a vertical wilderness where canopy bridges, river basins, deep hollows, cliffs, and caverns coexist</p>
+				</header>
+
+				<nav class="toc">
+					<h2>Jump To</h2>
+					<div class="toc-grid">
+						<div class="toc-col">
+							<a href="#intro">Introduction</a>
+							<a href="#features">Key Biome Features</a>
+							<a href="#villages">Villages &amp; Factions</a>
+						</div>
+						<div class="toc-col">
+							<a href="#sectors">Sectors of the Cluster</a>
+							<a href="#random-events">Random Event Table (d100)</a>
+							<a href="#ecology">Ecology Shift Table (d6)</a>
+						</div>
+						<div class="toc-col">
+							<a href="#sector-events">Sector-Specific Events</a>
+							<a href="#natural-laws">Natural Laws &amp; Apex Influence</a>
+							<a href="#monsters">Monsters of Meridia</a>
+						</div>
+					</div>
+				</nav>
+
+				<article class="content">
+					<!-- INTRODUCTION -->
+					<section id="intro" class="major-section">
+						<h2>Introduction</h2>
+						<p>
+							The Forest Cluster is a dense, vertical wilderness where canopy bridges, river basins, deep hollows, cliffs and caverns all coexist.
+							Hunters who venture here will experience the full rhythm of the hunt cycle: <strong>Tracking → Hunting → Weather Changes → Migration → Apex Awakenings</strong>.
+							Villages dot the periphery, and their prosperity is tied directly to the health of the biome.
+						</p>
+						<p class="ref-note">
+							<strong>Purpose:</strong> This field guide is meant to be used alongside the core <a href="/gm-guide">GM Guide</a> and <a href="/character">player rules</a>.
+							It does not repeat the mechanical rules or monster‑handling instructions found in the GM portion — instead, it focuses on lore, sectors, event tables, and narrative hooks.
+							For monster stat blocks, see <a href="/bestiary/forest-cluster">the Forest Cluster bestiary</a>.
+						</p>
+					</section>
+
+					<!-- KEY BIOME FEATURES -->
+					<section id="features" class="major-section">
+						<h2>Key Biome Features</h2>
+						<div class="feature-grid">
+							<div class="feature-card">
+								<span class="icon">🌲</span>
+								<h3>Vertical Terrain</h3>
+								<p>Canopy hunts, cliffside ambushes, and aerial threats abound. Where you stand decides the fight.</p>
+							</div>
+							<div class="feature-card">
+								<span class="icon">🪲</span>
+								<h3>Layered Ecosystems</h3>
+								<p>Insect hives, leviathan routes, and ancient dens occupy different layers — each with its own predators and rules.</p>
+							</div>
+							<div class="feature-card">
+								<span class="icon">🌧️</span>
+								<h3>Weather Cycles</h3>
+								<p>Rain, mist, and sudden winds alter scent trails and visibility. Plan the hunt around the sky.</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- VILLAGES & FACTIONS -->
+					<section id="villages" class="major-section">
+						<h2>Villages &amp; Factions</h2>
+
+						<div class="village-card">
+							<h3>🏛️ Ephyra — Seabound Watchers</h3>
+							<p class="village-meta"><strong>Location:</strong> Southern coast near the Verdant Hollow and River Basin outlet.</p>
+							<p>
+								White‑stone terraces and clay homes reflect Greek, Phoenician and Berber influences. The economy blends fishing, herbalism and hunting.
+								Villagers harvest rare plants and trade along the river.
+							</p>
+
+							<h4>Factions</h4>
+							<ul class="faction-list">
+								<li><strong>The Stag's Devout</strong> <em>(Druids &amp; Healers)</em> — revere Stagmir as a sacred being and advocate minimal interference.</li>
+								<li><strong>The Watchers</strong> <em>(Hunters &amp; Warriors)</em> — see upheaval as a chance to assert strength through hunting.</li>
+								<li><strong>The Tideborn</strong> <em>(Sailors &amp; Traders)</em> — want monster activity curbed quickly to restore safe trade routes.</li>
+							</ul>
+						</div>
+
+						<div class="callout">
+							<strong>Common Infrastructure (All Villages):</strong>
+							<ul>
+								<li><strong>Forge Master</strong> — gear upgrades</li>
+								<li><strong>Supplier</strong> — traps, potions, ammo</li>
+								<li><strong>Gatherer Guild</strong> — herbal &amp; ingredient quests</li>
+								<li><strong>Questmaster / Hunt Warden</strong> — contracts &amp; ecological tracking</li>
+								<li><strong>Innkeeper / Hearthmother</strong> — rest and rumours</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- SECTORS -->
+					<section id="sectors" class="major-section">
+						<h2>Sectors of the Forest Cluster</h2>
+						<p>
+							The Forest Cluster is divided into named sectors. Each has its own terrain, hazards, and resident monsters.
+							Use these summaries during session prep — the sector-specific event tables below provide quick mid-session complications.
+						</p>
+
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Sector</th><th>Description</th></tr></thead>
+								<tbody>
+									<tr><td><strong>Canopy Heights</strong></td><td>High above the forest floor. A network of thick branches and natural bridges forms a secondary hunting ground. Perfect for aerial creatures — a dangerous place to fall.</td></tr>
+									<tr><td><strong>River Basin</strong></td><td>The river flows through the heart of the forest, creating a natural travel path. Floods during heavy rain, shifting monster locations.</td></tr>
+									<tr><td><strong>Verdant Hollow</strong></td><td>Dense, lowland forest filled with thick underbrush. Easy to hide but limits vision — ambushes are common.</td></tr>
+									<tr><td><strong>Sunken Caverns</strong></td><td>Beneath the forest floor, caves filled with bioluminescent fungi and underground rivers form an alternate hunting ground, accessible only during certain ecological or narrative conditions.</td></tr>
+									<tr><td><strong>Lake Miru</strong></td><td>A pristine lake at the northern edge. Normally home to aquatic creatures — during ecological shifts, Leviathans may leave its depths.</td></tr>
+									<tr><td><strong>Forest Cliffs</strong></td><td>Towering cliffs that border the forest. Creatures like the Kragal nest here; navigating the terrain requires care.</td></tr>
+									<tr><td><strong>Forest Clearing</strong></td><td>A plain‑like open area just outside the forest. Vorvarg packs roam freely, especially at dusk.</td></tr>
+									<tr><td><strong>Forest Valley</strong></td><td>A sloping green valley connecting the Clearing to the Cliffs. Rockslides and uneven ground are common.</td></tr>
+									<tr><td><strong>Old Grove</strong></td><td>A sacred grove near the center, tucked between the River Basin and Verdant Hollow. Stagmir's presence is felt here.</td></tr>
+								</tbody>
+							</table>
+						</div>
+
+						<pre class="sector-map">[Forest Clearing] → [Forest Valley] → [Forest Cliffs]
+         ↓                ↓
+  [Verdant Hollow] → [River Basin] → [Lake Miru]
+                         ↓       ↓
+                 [Sunken Caverns] [Old Grove]
+                         ↑
+                 [Canopy Heights]</pre>
+					</section>
+
+					<!-- RANDOM EVENT TABLE -->
+					<section id="random-events" class="major-section">
+						<h2>🎲 Random Event Table (1d100)</h2>
+						<p>
+							During hunts, the GM may roll on this table to introduce dynamic environmental changes.
+							Use sparingly — one roll every 1–2 hours of in-game exploration is plenty.
+						</p>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Roll</th><th>Event</th><th>Effect</th></tr></thead>
+								<tbody>
+									<tr><td>01–10</td><td><strong>Sudden Rainfall</strong></td><td>Light rain begins to fall, reducing visibility slightly and making some terrain muddy.</td></tr>
+									<tr><td>11–20</td><td><strong>Heavy Rainstorm</strong></td><td>The river begins to rise, flooding the River Basin. Travel becomes difficult, and certain water-based monsters appear in new zones.</td></tr>
+									<tr><td>21–30</td><td><strong>Strong Winds</strong></td><td>The Canopy Heights become hazardous. Hunters must make DEX saves when moving between platforms or risk falling.</td></tr>
+									<tr><td>31–40</td><td><strong>Dense Fog</strong></td><td>A thick mist rolls in, reducing visibility for both hunters and monsters. All ranged attacks suffer −10% accuracy.</td></tr>
+									<tr><td>41–50</td><td><strong>Stampede</strong></td><td>A herd of herbivorous creatures rushes through the area, trampling anything in their path.</td></tr>
+									<tr><td>51–60</td><td><strong>Predator on the Move</strong></td><td>A powerful monster relocates, either moving away or into the area.</td></tr>
+									<tr><td>61–70</td><td><strong>Monster Territory Dispute</strong></td><td>Two large monsters encounter each other and begin fighting. The hunters can intervene or use the chaos to their advantage.</td></tr>
+									<tr><td>71–80</td><td><strong>Cave Collapse</strong></td><td>The Sunken Caverns shift, opening or closing pathways to underground areas.</td></tr>
+									<tr><td>81–90</td><td><strong>Lush Bloom</strong></td><td>The forest enters a rapid growth cycle, making gathering herbs and materials more rewarding.</td></tr>
+									<tr><td>91–100</td><td><strong>Apex Awakening</strong></td><td>A hidden Apex Monster stirs in its lair. The hunt is about to get far more dangerous.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- ECOLOGY SHIFT -->
+					<section id="ecology" class="major-section">
+						<h2>🌍 Ecology Shift Table (1d6)</h2>
+						<p>
+							Large-scale changes to the biome, usually occurring after extended hunts, long rests, or when a powerful creature is defeated.
+							Roll after 2–3 major hunts or a major Apex battle.
+						</p>
+						<div class="table-wrapper">
+							<table class="ref-table">
+								<thead><tr><th>Roll</th><th>Shift</th><th>Effect</th></tr></thead>
+								<tbody>
+									<tr><td>1</td><td><strong>Flooded Forest</strong></td><td>Heavy rains overflow the river, making certain zones inaccessible while bringing deep-water predators into new areas.</td></tr>
+									<tr><td>2</td><td><strong>Drought</strong></td><td>The lake and river levels drop, concentrating water-based monsters in shrinking pools while forcing others into the forest.</td></tr>
+									<tr><td>3</td><td><strong>Pollen Surge</strong></td><td>A bloom of bioluminescent pollen drifts through the air, increasing visibility at night but attracting aggressive insectoid creatures.</td></tr>
+									<tr><td>4</td><td><strong>Territorial Expansion</strong></td><td>A dominant monster claims a larger section of the map, altering local wildlife behavior and forcing other creatures into new zones.</td></tr>
+									<tr><td>5</td><td><strong>Elder's Presence</strong></td><td>An ancient, rarely seen Apex Monster leaves its domain, permanently altering the balance of the biome.</td></tr>
+									<tr><td>6</td><td><strong>Great Migration</strong></td><td>A group of powerful monsters migrates through the forest, leaving behind rare materials but also increased danger.</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- SECTOR-SPECIFIC EVENTS -->
+					<section id="sector-events" class="major-section">
+						<h2>📍 Sector-Specific Event Tables</h2>
+						<p>
+							Each sector has its own d4 event table for quick, session‑ready complications.
+							Roll or choose an event when players enter a new sector.
+						</p>
+
+						<div class="sector-grid">
+							<div class="sector-table">
+								<h3>🌳 Canopy Heights (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>A branch bridge collapses — DEX save (DC 12) or fall 30 ft.</td></tr>
+										<tr><td>2</td><td>A sudden updraft — DEX check (DC 10) or be pushed 5 ft off balance.</td></tr>
+										<tr><td>3</td><td>A predator bird screeches nearby, scattering smaller creatures. (Alerts nearby monsters.)</td></tr>
+										<tr><td>4</td><td>Falling nest debris rains down — DEX save (DC 10) or take 1d6 bludgeoning.</td></tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sector-table">
+								<h3>🌊 River Basin (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>Sudden whirlpools form — moving through water requires STR (Athletics) check (DC 12).</td></tr>
+										<tr><td>2</td><td>Riverbank erosion collapses — creates a mudslide hazard in the area.</td></tr>
+										<tr><td>3</td><td>Water-borne predators stir — 1-in-4 chance for an additional aquatic threat nearby.</td></tr>
+										<tr><td>4</td><td>Dense river mist rises — Perception (INS) checks suffer −2 until weather clears.</td></tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sector-table">
+								<h3>🍃 Verdant Hollow (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>A massive tree falls — players in its path must DEX save (DC 14) or take 2d6 damage.</td></tr>
+										<tr><td>2</td><td>Low brush catches fire — spreading hazard (5 ft/round unless doused).</td></tr>
+										<tr><td>3</td><td>Hidden sinkhole — a random hunter must DEX save (DC 12) or fall prone and be partially stuck.</td></tr>
+										<tr><td>4</td><td>A venomous creature swarm rises — DEX save or take 1d4 poison damage.</td></tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sector-table">
+								<h3>🍄 Sunken Caverns (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>Underground river surges — sudden shallow flood (−5 movement for 3 rounds).</td></tr>
+										<tr><td>2</td><td>Ceiling tremor — loose rocks fall; DEX save (DC 12) or take 1d8 bludgeoning damage.</td></tr>
+										<tr><td>3</td><td>Bioluminescent spores cloud the air — −1 to all ranged attacks for 2 rounds.</td></tr>
+										<tr><td>4</td><td>Echoing roars attract a wandering predator — random small hostile creature appears.</td></tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sector-table">
+								<h3>💧 Lake Miru (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>Sudden water surge — standing near shore risks being pulled in (DEX save DC 12).</td></tr>
+										<tr><td>2</td><td>Swarming fish frenzy — schools of fish obscure visibility underwater.</td></tr>
+										<tr><td>3</td><td>Broken shoreline — moving near lake edge risks falling into deep water.</td></tr>
+										<tr><td>4</td><td>Distant Leviathan movement stirs waves — imposing difficult terrain near lake.</td></tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sector-table">
+								<h3>⛰️ Forest Cliffs (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>Rockslide — DEX save (DC 14) to avoid being pinned or trapped.</td></tr>
+										<tr><td>2</td><td>Loose ledge gives way — Dash actions require Acrobatics check (DC 10) to avoid falling.</td></tr>
+										<tr><td>3</td><td>Sharp winds buffet cliffside — ranged attacks suffer −2 accuracy until winds calm.</td></tr>
+										<tr><td>4</td><td>A Kragal herd causes distant rockfalls — environmental hazards increase.</td></tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sector-table">
+								<h3>🌾 Forest Clearing (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>Vorvarg pack signs found — Tracking checks easier, but they could ambush.</td></tr>
+										<tr><td>2</td><td>Blinding sunlight glares — penalties to Stealth (−2) while crossing.</td></tr>
+										<tr><td>3</td><td>Shifting tall grass — difficult to spot small creatures (+2 to Perception DCs).</td></tr>
+										<tr><td>4</td><td>Distant thunder signals approaching storm — warning: Heavy Rain incoming next roll.</td></tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sector-table">
+								<h3>🏞️ Forest Valley (d4)</h3>
+								<table class="ref-table compact">
+									<tbody>
+										<tr><td>1</td><td>Small rockslide — blocks half a path, STR or Athletics (DC 10) to clear.</td></tr>
+										<tr><td>2</td><td>Mists roll into the valley — −1 visibility, +2 to ambush chances.</td></tr>
+										<tr><td>3</td><td>Falling boulders from cliff edges — random falling debris hazard.</td></tr>
+										<tr><td>4</td><td>Minor flooding from recent rains — low ground becomes swampy (half movement).</td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<!-- NATURAL LAWS -->
+					<section id="natural-laws" class="major-section">
+						<h2>⚖️ Natural Laws &amp; Apex Influence</h2>
+
+						<div class="law-card apex">
+							<h3>🦌 Stagmir — The Grovefather</h3>
+							<p>
+								The apex presence of the Forest Cluster. When Stagmir is nearby, aggression drops and the forest feels still.
+								When absent or disturbed, predator behaviour becomes chaotic.
+							</p>
+						</div>
+
+						<div class="law-card">
+							<h3>Other Major Influences</h3>
+							<ul class="influence-list">
+								<li><strong>Urmine</strong> enforces brute strength.</li>
+								<li><strong>Gorrhul</strong> dominates the mudlands.</li>
+								<li><strong>Kragal</strong> controls the cliffs.</li>
+								<li><strong>Vorvarg</strong> packs harass the weak.</li>
+								<li><strong>Tanuza</strong> steals from the unwary.</li>
+								<li><strong>Earule</strong> rules the sky.</li>
+								<li><strong>Melifur, Umbrosk,</strong> and <strong>Noctlynx</strong> appear under specific conditions.</li>
+							</ul>
+							<p class="law-note">Each major creature shapes the ecology and challenges hunters. See the bestiary for full stat blocks and behaviours.</p>
+						</div>
+					</section>
+
+					<!-- MONSTERS -->
+					<section id="monsters" class="major-section">
+						<h2>🐾 Monsters of Meridia</h2>
+						<p>
+							Full stat blocks, behavior loops, part breaks, and crafting tables for every creature listed below live in the bestiary.
+							This roster is just a quick reference to who roams where.
+						</p>
+
+						<div class="monster-tiers">
+							<div class="tier-block">
+								<h3>Tier 0 — Hazards &amp; Resources</h3>
+								<ul class="monster-list">
+									<li>Thornback Boar <span class="zone">— River Basin, Verdant Hollow</span></li>
+									<li>Skyvine Drake <span class="zone">— Canopy Heights, Forest Valley</span></li>
+									<li>Duskhorn Viper <span class="zone">— Sunken Caverns, Forest Valley</span></li>
+								</ul>
+							</div>
+
+							<div class="tier-block">
+								<h3>Tier 1 — Skirmishers &amp; Brutes</h3>
+								<ul class="monster-list">
+									<li>Palax <span class="zone">— Verdant Hollow, Subterranean</span></li>
+									<li>Tanuza <span class="zone">— Canopy Heights, Forest Cliffs, River Basin</span></li>
+									<li>Urmine <span class="zone">— River Basin, Verdant Hollow, Forest Cliffs</span></li>
+									<li>Kragal <span class="zone">— Forest Cliffs, Forest Valley</span></li>
+									<li>Hollowmoth <span class="zone">— Verdant Hollow, Lake Miru, Forest Valley (Night)</span></li>
+								</ul>
+							</div>
+
+							<div class="tier-block">
+								<h3>Tier 2 — Pack Tactics &amp; Specialists</h3>
+								<ul class="monster-list">
+									<li>Vorvarg Pack <span class="zone">— Forest Clearing, Verdant Hollow, River Basin</span></li>
+									<li>Gorrhul <span class="zone">— River Basin, Verdant Hollow</span></li>
+									<li>Earule <span class="zone">— Forest Cliffs, River Basin, Open Canopy</span></li>
+									<li>Noctlynx <span class="zone">— Verdant Hollow (Night)</span></li>
+									<li>Umbrosk <span class="zone">— Sunken Caverns, Lower Verdant Hollow</span></li>
+									<li>Melifur <span class="zone">— Forest Cluster, Verdant Hollow (Pollination Zones)</span></li>
+								</ul>
+							</div>
+
+							<div class="tier-block">
+								<h3>Tier 3 — Apex Predators</h3>
+								<ul class="monster-list">
+									<li>Stagmir <span class="zone">— Old Grove, Verdant Hollow, Sunken Caverns</span></li>
+									<li>Ladon <span class="zone">— Lake Miru (Temple Basin)</span></li>
+									<li>Dikera <span class="zone">— Forest Clearing, Forest Valley, River Basin</span></li>
+								</ul>
+							</div>
+
+							<div class="tier-block">
+								<h3>Tier 4 — Regional Guardians</h3>
+								<ul class="monster-list">
+									<li>Cinderhorn Drake <span class="zone">— Volcanic Valleys, Burnt Forest Sectors, Ash Basin</span></li>
+									<li>Aracnine Widow <span class="zone">— Canopy Heights (Bewitching Hours, Midnight–4 AM)</span></li>
+								</ul>
+							</div>
+
+							<div class="tier-block featured">
+								<h3>Tier 5 — Elder Apex</h3>
+								<ul class="monster-list">
+									<li><strong>Morthyl — The Rootbound Pall</strong> <span class="zone">— Verdant Hollow, Old Grove Outskirts, Sunken Caverns (rot nodes)</span></li>
+								</ul>
+								<p class="tier-note">A living reclamation engine that spreads rot and devours death. Awakens only when the forest is dishonored beyond repair.</p>
+							</div>
+						</div>
+
+						<div class="cta">
+							<a href="/bestiary/forest-cluster" class="cta-btn">View Full Bestiary →</a>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+			/* Nav */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+			.nav .container { display: flex; justify-content: space-between; align-items: center; }
+			.logo { font-size: 1.5rem; font-weight: 900; color: var(--amber); text-decoration: none; letter-spacing: 0.2rem; }
+			.nav-links { display: flex; gap: 2rem; }
+			.nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+			.nav-links a:hover, .nav-links a.active { color: var(--amber); }
+
+			/* Breadcrumb */
+			.breadcrumb { padding: 1.5rem 0 0.5rem; }
+			.breadcrumb a { color: var(--leaf-green); text-decoration: none; font-size: 0.95rem; }
+			.breadcrumb a:hover { color: var(--amber); }
+
+			/* Page header */
+			.page-header {
+				padding: 2.5rem 0 3rem;
+				text-align: center;
+				border-bottom: 2px solid var(--earth-brown);
+				margin-bottom: 2.5rem;
+			}
+			.eyebrow {
+				color: var(--leaf-green);
+				text-transform: uppercase;
+				letter-spacing: 0.3rem;
+				font-size: 0.9rem;
+				margin-bottom: 0.75rem;
+			}
+			.page-header h1 {
+				font-size: 4rem;
+				color: var(--amber);
+				margin-bottom: 1rem;
+				letter-spacing: 0.1rem;
+			}
+			.subtitle { font-size: 1.15rem; color: var(--cream); font-style: italic; max-width: 700px; margin: 0 auto; }
+
+			/* TOC */
+			.toc {
+				background: var(--forest-green);
+				padding: 1.5rem 2rem;
+				border-radius: 10px;
+				border: 1px solid var(--earth-brown);
+				margin-bottom: 2.5rem;
+			}
+			.toc h2 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				letter-spacing: 0.15rem;
+				margin-bottom: 1rem;
+			}
+			.toc-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 0.5rem 2rem;
+			}
+			.toc-col { display: flex; flex-direction: column; gap: 0.3rem; }
+			.toc-col a {
+				color: var(--cream);
+				text-decoration: none;
+				padding: 0.25rem 0;
+				font-size: 0.95rem;
+			}
+			.toc-col a:hover { color: var(--amber); }
+
+			/* Major Section */
+			.major-section {
+				margin-bottom: 3rem;
+				background: var(--forest-green);
+				border: 1px solid var(--earth-brown);
+				border-radius: 10px;
+				padding: 2rem;
+				scroll-margin-top: 6rem;
+			}
+			.major-section h2 {
+				color: var(--amber);
+				font-size: 1.8rem;
+				margin-bottom: 1.25rem;
+				padding-bottom: 0.5rem;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+			.major-section h3 {
+				color: var(--leaf-green);
+				font-size: 1.25rem;
+				margin: 1.5rem 0 0.75rem;
+			}
+			.major-section h4 {
+				color: var(--amber);
+				font-size: 1.05rem;
+				margin: 1rem 0 0.5rem;
+				text-transform: uppercase;
+				letter-spacing: 0.1rem;
+			}
+			.major-section p { margin-bottom: 1rem; color: var(--text-light); }
+			.major-section a { color: var(--leaf-green); }
+			.major-section a:hover { color: var(--amber); }
+
+			.ref-note {
+				background: var(--forest-dark);
+				border-left: 3px solid var(--moss-green);
+				padding: 1rem 1.25rem;
+				border-radius: 6px;
+				font-size: 0.95rem;
+				color: var(--cream);
+			}
+
+			/* Feature Grid */
+			.feature-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+				gap: 1.5rem;
+			}
+			.feature-card {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border: 1px solid var(--earth-brown);
+				text-align: center;
+			}
+			.feature-card .icon { font-size: 2.5rem; display: block; margin-bottom: 0.75rem; }
+			.feature-card h3 { color: var(--amber); margin: 0 0 0.5rem; }
+			.feature-card p { margin: 0; font-size: 0.95rem; }
+
+			/* Village */
+			.village-card {
+				background: var(--forest-dark);
+				padding: 1.5rem 1.75rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				margin-bottom: 1.5rem;
+			}
+			.village-meta { color: var(--leaf-green); font-size: 0.95rem; }
+			.faction-list { list-style: none; padding: 0; }
+			.faction-list li {
+				padding: 0.6rem 0;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+			.faction-list li:last-child { border-bottom: none; }
+			.faction-list strong { color: var(--amber); }
+			.faction-list em { color: var(--leaf-green); font-style: italic; }
+
+			.callout {
+				background: var(--forest-dark);
+				border-left: 3px solid var(--leaf-green);
+				padding: 1rem 1.25rem;
+				border-radius: 6px;
+				margin-top: 1rem;
+			}
+			.callout strong { color: var(--amber); }
+			.callout ul { margin-top: 0.5rem; padding-left: 1.25rem; }
+			.callout li { margin: 0.25rem 0; }
+
+			/* Tables */
+			.table-wrapper {
+				overflow-x: auto;
+				border-radius: 8px;
+				background: var(--forest-dark);
+				margin: 1rem 0;
+			}
+			.ref-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+			.ref-table.compact { font-size: 0.9rem; }
+			.ref-table thead th {
+				background: var(--moss-green);
+				color: var(--forest-dark);
+				padding: 0.6rem 0.85rem;
+				text-align: left;
+				font-weight: 700;
+				font-size: 0.85rem;
+				text-transform: uppercase;
+				letter-spacing: 0.05rem;
+			}
+			.ref-table tbody td {
+				padding: 0.55rem 0.85rem;
+				border-top: 1px solid var(--earth-brown);
+				vertical-align: top;
+			}
+			.ref-table tbody tr:nth-child(even) td { background: rgba(45, 80, 22, 0.25); }
+			.ref-table strong { color: var(--amber); }
+
+			/* Sector Map */
+			.sector-map {
+				background: var(--forest-dark);
+				color: var(--leaf-green);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin-top: 1.5rem;
+				font-family: 'SF Mono', Menlo, monospace;
+				font-size: 0.9rem;
+				line-height: 1.8;
+				overflow-x: auto;
+				border: 1px solid var(--earth-brown);
+			}
+
+			/* Sector Event Grid */
+			.sector-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: 1.5rem;
+			}
+			.sector-table h3 {
+				margin: 0 0 0.75rem;
+				font-size: 1.05rem;
+				color: var(--amber);
+			}
+			.sector-table .ref-table { font-size: 0.88rem; }
+			.sector-table .ref-table tbody td:first-child {
+				width: 2.5rem;
+				font-weight: 700;
+				color: var(--amber);
+				text-align: center;
+			}
+
+			/* Natural Laws */
+			.law-card {
+				background: var(--forest-dark);
+				padding: 1.25rem 1.5rem;
+				border-radius: 8px;
+				border-left: 3px solid var(--moss-green);
+				margin-bottom: 1.25rem;
+			}
+			.law-card.apex {
+				border-left-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-dark) 0%, var(--moss-green) 100%);
+			}
+			.law-card h3 { margin: 0 0 0.5rem; color: var(--amber); }
+			.influence-list { list-style: none; padding: 0; columns: 2; column-gap: 2rem; }
+			.influence-list li { padding: 0.3rem 0; break-inside: avoid; }
+			.influence-list strong { color: var(--amber); }
+			.law-note { color: var(--leaf-green); font-style: italic; margin-top: 0.75rem; font-size: 0.95rem; }
+
+			/* Monster tiers */
+			.monster-tiers {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: 1.5rem;
+				margin: 1.5rem 0;
+			}
+			.tier-block {
+				background: var(--forest-dark);
+				padding: 1.25rem 1.5rem;
+				border-radius: 8px;
+				border: 1px solid var(--earth-brown);
+			}
+			.tier-block h3 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				margin: 0 0 0.75rem;
+				padding-bottom: 0.5rem;
+				border-bottom: 1px solid var(--earth-brown);
+			}
+			.tier-block.featured {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-dark) 0%, var(--earth-brown) 100%);
+			}
+			.monster-list { list-style: none; padding: 0; }
+			.monster-list li { padding: 0.35rem 0; font-size: 0.95rem; }
+			.monster-list .zone { color: var(--leaf-green); font-style: italic; font-size: 0.85rem; display: block; }
+			.tier-note { font-style: italic; color: var(--cream); font-size: 0.9rem; margin-top: 0.75rem; }
+
+			.cta { text-align: center; margin-top: 2rem; }
+			.cta-btn {
+				display: inline-block;
+				background: var(--amber);
+				color: var(--forest-dark);
+				padding: 1rem 2.5rem;
+				border-radius: 8px;
+				text-decoration: none;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.1rem;
+				font-size: 0.95rem;
+				transition: all 0.3s;
+			}
+			.cta-btn:hover {
+				background: #e0b568;
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(212, 162, 87, 0.4);
+				color: var(--forest-dark);
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container { flex-direction: column; gap: 1rem; }
+				.nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+				.page-header h1 { font-size: 2.5rem; }
+				.major-section h2 { font-size: 1.4rem; }
+				.influence-list { columns: 1; }
+				.feature-grid, .monster-tiers, .sector-grid { grid-template-columns: 1fr; }
+			}
+		</style>
+	</body>
+</html>

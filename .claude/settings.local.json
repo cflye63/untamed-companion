@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(python3:*)",
-      "Bash(npx astro *)"
+      "Bash(npx astro *)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot"
     ]
   }
 }

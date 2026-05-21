@@ -1,0 +1,863 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>GM Toolkit - Untamed GM Guide</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+					<a href="/gm-guide" class="active">GM Guide</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/gm-guide">← Back to GM Guide</a>
+				</div>
+
+				<header class="page-header">
+					<h1>GM Toolkit</h1>
+					<p class="subtitle">Core mechanics, DCs, action economy, reactions, and environmental rulings</p>
+				</header>
+
+				<article class="content">
+					<section class="major-section">
+						<h2 class="section-title">III. GM Toolkit: Core Mechanics (See Untamed Core Rules)</h2>
+						<p class="intro-text">All core mechanics have been centralized in the Untamed Core Rules document. Refer there for unified mechanics. This section has been streamlined here to avoid duplication.</p>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Difficulty Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Difficulty</th>
+										<th>DC Range</th>
+										<th>What It Means</th>
+										<th>Examples</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Trivial</td>
+										<td>8</td>
+										<td>Routine task. Failing means distraction, not danger.</td>
+										<td>Climbing dry rock, identifying obvious spoor.</td>
+									</tr>
+									<tr>
+										<td>Easy</td>
+										<td>10</td>
+										<td>Mild risk or pressure.</td>
+										<td>Setting a simple snare, foraging common herbs.</td>
+									</tr>
+									<tr>
+										<td>Moderate</td>
+										<td>12</td>
+										<td>Demands skill or focus.</td>
+										<td>Reading overlapping tracks, moving silently through brush.</td>
+									</tr>
+									<tr>
+										<td>Challenging</td>
+										<td>14</td>
+										<td>Adverse conditions or limited time.</td>
+										<td>Crossing slick stone in rain, studying monster residue.</td>
+									</tr>
+									<tr>
+										<td>Hard</td>
+										<td>16</td>
+										<td>Requires expertise, strong roll or tools.</td>
+										<td>Decoding ancient carvings, crafting mid-hunt.</td>
+									</tr>
+									<tr>
+										<td>Severe</td>
+										<td>18</td>
+										<td>Dangerous or highly specific.</td>
+										<td>Balancing on cliff edge in wind, harvesting during storm.</td>
+									</tr>
+									<tr>
+										<td>Extreme</td>
+										<td>20+</td>
+										<td>Heroic or nearly impossible.</td>
+										<td>Outpacing an apex predator, crafting in combat, calming a rampaging beast.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Action Types Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Action Type</th>
+										<th>What it is</th>
+										<th>GM Notes</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Move</td>
+										<td>Up to base Move Speed (30 ft). Sprinting or climbing = +1 STA per 10 ft.</td>
+										<td>Track how they move, not just where. Sloppy or rushed movement can trigger detection or opportunity attacks.</td>
+									</tr>
+									<tr>
+										<td>Action</td>
+										<td>Attack, use Technique, set trap, interact with environment.</td>
+										<td>1 STA minimum unless ability says otherwise. Some Techniques cost more — remind players to check weapon cards.</td>
+									</tr>
+									<tr>
+										<td>Fast Action</td>
+										<td>Minor, quick actions (potions, swaps, toggles).</td>
+										<td>Limit 1 per turn (unless ability says otherwise). Disallow chaining "fast" actions into combos — they're interrupts, not bonus turns.</td>
+									</tr>
+									<tr>
+										<td>Preparation Action</td>
+										<td>Replace Action with focus (0 STA).</td>
+										<td>Costs no Stamina, but breaks if hit, moved, or rushed. See "Preparation Actions" below.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Stamina State Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Stamina State</th>
+										<th>What You See (GM Cues)</th>
+										<th>What It Means (Mechanically for Them)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Steady (Above half)</td>
+										<td>Calm stance, measured breathing, deliberate actions.</td>
+										<td>Acts normally.</td>
+									</tr>
+									<tr>
+										<td>Low (≈2 or less)</td>
+										<td>Hesitation, heavier breathing, slower dodges, missed openings.</td>
+										<td>Player is near exhaustion — remind them fictionally ("Your grip is slipping.")</td>
+									</tr>
+									<tr>
+										<td>0 (Exhausted)</td>
+										<td>Overextended, gasping, momentary lapse of control.</td>
+										<td>They lose Actions and Fast Actions. STR/DEX saves auto-fail; attacks vs them have advantage; movement halved.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Player Prep Adjudication Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Player Prep</th>
+										<th>You adjudicate it by…</th>
+										<th>Example outcome</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Steady Aim</td>
+										<td>Enforce stillness. Moving more than base speed breaks it.</td>
+										<td>"You shift your bow an inch left — the wind dies, the shot lines up."</td>
+									</tr>
+									<tr>
+										<td>Guarded Stance</td>
+										<td>Maintain threat around player; monsters may test the guard.</td>
+										<td>"The Urmine probes your defense — you brace; that block will cost 0 Stamina."</td>
+									</tr>
+									<tr>
+										<td>Centered Breath</td>
+										<td>Instant — no setup. Just narrate visible recovery.</td>
+										<td>"She exhales, steadying herself — +1d4 Stamina restored."</td>
+									</tr>
+									<tr>
+										<td>Study Target</td>
+										<td>Roll optional INT/INS vs 10 + Monster Tier. Reward with 1 clear tell: stance, breath pattern, wound timing.</td>
+										<td>"You spot the hitch in its stride — left foreleg is weakening."</td>
+									</tr>
+									<tr>
+										<td>Prime Trap</td>
+										<td>Treat trap setup as a Fast Action next turn; increase its save DC by +1.</td>
+										<td>"The trigger is tight — next creature to cross it will regret it."</td>
+									</tr>
+									<tr>
+										<td>Maintain Channel</td>
+										<td>Apply kit-specific upkeep logic. Don't stack beyond caps.</td>
+										<td>"Your Focus doesn't fade as you shuffle right; the shot holds."</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Reactions Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Reaction</th>
+										<th>Who</th>
+										<th>GM Notes</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Block (Guard)</td>
+										<td>Shielded or Guard weapons</td>
+										<td>+3 AR vs one attack. Still hit? Reduce damage by CON mod.</td>
+									</tr>
+									<tr>
+										<td>Dodge</td>
+										<td>Light/Medium armor</td>
+										<td>Attack made at Disadvantage. Can reposition 5 ft if not hit.</td>
+									</tr>
+									<tr>
+										<td>Parry</td>
+										<td>Weapons with Parry tag</td>
+										<td>Compare roll: d20 + STR/DEX + Prof vs attacker's roll. Succeed = cancel hit; deal ½ weapon damage (0 STA). Fail = only +1 AR applies.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Saves Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Usually resisted by</th>
+										<th>Typical source</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Physical restraint / push</td>
+										<td>STR / DEX</td>
+										<td>Grapples, debris, knockdowns</td>
+									</tr>
+									<tr>
+										<td>Poison, disease, exhaustion</td>
+										<td>CON</td>
+										<td>Venoms, weather, hunger</td>
+									</tr>
+									<tr>
+										<td>Mental shock, fear, roar</td>
+										<td>CHA / INS</td>
+										<td>Apex roars, illusions, morale breaks</td>
+									</tr>
+									<tr>
+										<td>Elemental hazard</td>
+										<td>CON / DEX</td>
+										<td>Fire, lightning, ice, wind</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Part AR Adjustment Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Part Type</th>
+										<th>AR Adjustment</th>
+										<th>Typical Result</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Head / Crest / Horns</td>
+										<td>+2–3</td>
+										<td>Hardest to hit and break; protects key attacks or roars.</td>
+									</tr>
+									<tr>
+										<td>Torso / Core</td>
+										<td>+1</td>
+										<td>Broad and stable — main AR baseline.</td>
+									</tr>
+									<tr>
+										<td>Legs / Joints</td>
+										<td>+2</td>
+										<td>Armored or mobile; disablement slows or topples.</td>
+									</tr>
+									<tr>
+										<td>Tail / Carapace / Back</td>
+										<td>+1–2</td>
+										<td>Usually flexible or plated; breaking removes area or sweep attacks.</td>
+									</tr>
+									<tr>
+										<td>Wings / Fins / Antennae</td>
+										<td>+3 (if core to movement/senses)</td>
+										<td>Grounds or blinds; often high payoff.</td>
+									</tr>
+									<tr>
+										<td>Soft tissue / Weak spot</td>
+										<td>–1–2</td>
+										<td>Rare; only visible via cues or analysis.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Part Break Consequence Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Part</th>
+										<th>Typical Consequence</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Head</td>
+										<td>Disables breath, roar, or sound-based move; may cause a 1-turn Stun.</td>
+									</tr>
+									<tr>
+										<td>Leg</td>
+										<td>Reduces Move by 10 ft; no Sprint; attacks needing leap/dash disabled.</td>
+									</tr>
+									<tr>
+										<td>Tail</td>
+										<td>Removes tail sweeps or rear attacks; often drops a unique carve.</td>
+									</tr>
+									<tr>
+										<td>Wings</td>
+										<td>Lose flight; fall to ground; may gain new ground-only behavior.</td>
+									</tr>
+									<tr>
+										<td>Antennae / Eyes</td>
+										<td>Disadvantage on INS rolls; easier to ambush.</td>
+									</tr>
+									<tr>
+										<td>Carapace / Shell</td>
+										<td>Lowers AR by 2 for remainder of hunt; may expose weak spot.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Part Damage Tracking Example</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Part</th>
+										<th>Damage Ticks</th>
+										<th>Broken?</th>
+										<th>Effect</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Tail</td>
+										<td>☑☑☐</td>
+										<td>No</td>
+										<td>Slower sweeps</td>
+									</tr>
+									<tr>
+										<td>Wing</td>
+										<td>☑☑☑</td>
+										<td>Yes</td>
+										<td>Grounded</td>
+									</tr>
+									<tr>
+										<td>Head</td>
+										<td>☑☐☐</td>
+										<td>No</td>
+										<td>Crack forming</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Called Shot Modifier Table</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Situation</th>
+										<th>Modifier / Benefit</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Using "Steady Aim"</td>
+										<td>Ignores AR penalty on ranged called shot.</td>
+									</tr>
+									<tr>
+										<td>Using "Study Target"</td>
+										<td>Advantage on next called shot vs that part.</td>
+									</tr>
+									<tr>
+										<td>Trapped / Immobilized Monster</td>
+										<td>Lower AR by 2 for precision attacks.</td>
+									</tr>
+									<tr>
+										<td>Obscured / Flailing Monster</td>
+										<td>Raise AR by 2; ranged called shots may fail outright.</td>
+									</tr>
+									<tr>
+										<td>Soft-state (weakened, molting, stunned)</td>
+										<td>AR reduced by 2 for duration.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">Example Part Stat Block</h2>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Part</th>
+										<th>AR</th>
+										<th>Break Threshold</th>
+										<th>Effect</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Head</td>
+										<td>16</td>
+										<td>3 solid hits</td>
+										<td>Roar disabled; next turn Stunned.</td>
+									</tr>
+									<tr>
+										<td>Legs (pair)</td>
+										<td>15</td>
+										<td>3 hits total</td>
+										<td>Move –10 ft; no Charge.</td>
+									</tr>
+									<tr>
+										<td>Tail</td>
+										<td>14</td>
+										<td>2 hits</td>
+										<td>Drops "Barbed Tail" material; loses Rear Swipe.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">🔥 Environmental Interactions</h2>
+						<blockquote class="quote">"The arena is a monster, too."</blockquote>
+
+						<p>Hunters can always attempt to:</p>
+						<ul>
+							<li>Drop trees</li>
+							<li>Throw rocks</li>
+							<li>Collapse weak terrain</li>
+							<li>Flip logs</li>
+							<li>Kick loose footing</li>
+							<li>Set fires</li>
+							<li>Trigger hazards</li>
+						</ul>
+
+						<h3>Universal Ruling</h3>
+						<p>Skill check → result determines effect:</p>
+						<ul>
+							<li>Success: hazard triggers, monster makes save</li>
+							<li>Fail: wasted action or partial hazard</li>
+							<li>Crit fail: hazard backfires (smoke blinds, branch snaps, etc.)</li>
+						</ul>
+						<p>Use DC 10–16 based on danger & complexity.</p>
+					</section>
+
+					<section class="major-section">
+						<h2 class="section-title">🌊 Underwater Combat</h2>
+						<blockquote class="quote">"The water is not the enemy — but it has no interest in keeping you alive."</blockquote>
+
+						<p>Fighting underwater is about pressure, movement, and oxygen, not a page of penalties.</p>
+						<p>The following rules keep water combat dramatic but fun.</p>
+
+						<h3>🫁 Breath & Survival</h3>
+						<p>Breath determines how long a hunter can operate before the body starts shutting down. Keep it simple:</p>
+
+						<h4>Breath Timer</h4>
+						<p>Hunters can hold breath for: 1 + CON Modifier turns</p>
+						<p>Surfacing resets the timer instantly.</p>
+
+						<h4>Suffocating</h4>
+						<p>At 0 breath:</p>
+						<ul>
+							<li>Lose 5 Stamina per turn</li>
+							<li>If Stamina hits 0 → lose HP equal to your CON mod per turn</li>
+						</ul>
+						<p>Water should feel dangerous, not instant death.</p>
+
+						<h3>🏊‍♂️ Movement in Water</h3>
+						<p>Think of water as "slow 3D space."</p>
+
+						<h4>Movement Rules</h4>
+						<ul>
+							<li>All movement costs +1 Stamina (unless water-adapted)</li>
+							<li>Dashing costs 2x Stamina</li>
+							<li>No jumping; upward/downward movement costs the same as horizontal</li>
+							<li>Fights become more about position and currents than sprinting</li>
+						</ul>
+
+						<h4>3D Positioning (Simple Ruling)</h4>
+						<p>A creature "above" you in the water has natural leverage:</p>
+						<ul>
+							<li>Gain advantage on shove/grapple</li>
+							<li>You have disadvantage on escape attempts</li>
+						</ul>
+
+						<h3>⚔️ Combat Adjustments</h3>
+						<p>Keep these light — water changes how weapons behave, not whether they work.</p>
+
+						<h4>Weapon Logic</h4>
+						<ul>
+							<li>Slashing weapons: –1 damage (drag)</li>
+							<li>Piercing weapons: +1 damage (ideal underwater)</li>
+							<li>Blunt weapons: no change (water transmits force well)</li>
+						</ul>
+
+						<h4>Ranged Attacks</h4>
+						<ul>
+							<li>Bows, thrown weapons, and non-specialized guns: fail beyond 5 ft</li>
+							<li>Specialized underwater gear bypasses this</li>
+						</ul>
+
+						<h4>Elemental & Fire Effects</h4>
+						<ul>
+							<li>Fire effects fail</li>
+							<li>Lightning spreads (GM option: +1 die but reduced range)</li>
+							<li>Ice partially forms — useful for walls, not projectiles</li>
+							<li>Wind/air effects fail or behave strangely</li>
+							<li>Water spells may gain +1 die or +1 DC depending on the feel of the magic</li>
+						</ul>
+
+						<p>Keep it GM-interpretive instead of hard-coded.</p>
+
+						<h3>👁 Visibility</h3>
+						<p>Water distorts sound and blurs sight.</p>
+
+						<h4>Standard Visibility</h4>
+						<ul>
+							<li>Perception checks: +2 DC</li>
+							<li>Murky or night water: heavily obscured</li>
+						</ul>
+
+						<h4>Exceptions</h4>
+						<ul>
+							<li>Bioluminescence</li>
+							<li>Magical sight</li>
+							<li>Sonar/echo hunters (certain beasts ignore visual issues entirely)</li>
+						</ul>
+
+						<h3>🌀 Passive Stamina Drain</h3>
+						<p>Just being underwater is taxing.</p>
+						<p>Each turn underwater costs +1 Stamina (breath control, pressure, drag).</p>
+						<p>Adapted gear reduces or removes this.</p>
+						<p>This creates time pressure without punishment.</p>
+
+						<div class="callout"><strong>Example:</strong> Underwater 3D Chase</div>
+						<p>The party is ambushed by an Apex Tide Serpent while diving for pearls. The fight starts in open water. The serpent coils below them, gaining the above position bonus (advantage on shoves). A hunter with a harpoon swims downward to flank. Each 10‑ft move costs +1 Stamina; a Dash would cost 2. The hunter spends 3 Stamina to reach the serpent's side. She uses a piercing harpoon (+1 damage underwater) and hits. On the serpent's turn, it attempts to grapple her; because of its higher position, she has disadvantage on her escape attempt. Another hunter tosses a net from above, forcing the serpent towards the seabed, where its mobility is reduced. This vignette shows how 3D movement, stamina drain, and position bonuses interplay without a grid.</p>
+
+						<h3>🔥 Tactical Guidelines (GM Tools)</h3>
+						<p>When players try to land or expose an aquatic creature, always reward the attempt.</p>
+						<p>Underwater monsters gain their strength from mobility, depth, and water pressure.</p>
+						<p>Anything that disrupts those — nets, shallow water, collisions, currents, debris — should knock them into a weaker phase or remove one of their advantages for a short time.</p>
+						<p>Let clever plans shift the battle's tempo. This is the heart of the hunt.</p>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Navigation */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover,
+			.nav-links a.active {
+				color: var(--amber);
+			}
+
+			/* Breadcrumb */
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			/* Page Header */
+			.page-header {
+				padding: 2rem 0 2rem;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 2rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			/* Content */
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			.intro-text {
+				background: var(--forest-green);
+				padding: 1.25rem 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				color: var(--cream);
+				font-style: italic;
+			}
+
+			/* Major Sections */
+			.major-section {
+				margin-bottom: 3rem;
+				scroll-margin-top: 100px;
+			}
+
+			.section-title {
+				font-size: 2rem;
+				color: var(--amber);
+				margin-bottom: 1.25rem;
+				padding-bottom: 0.75rem;
+				border-bottom: 3px solid var(--amber);
+			}
+
+			.major-section h3 {
+				color: var(--leaf-green);
+				font-size: 1.4rem;
+				margin: 1.75rem 0 0.75rem;
+			}
+
+			.major-section h4 {
+				color: var(--amber);
+				font-size: 1.15rem;
+				margin: 1.25rem 0 0.5rem;
+			}
+
+			.major-section p {
+				margin: 0.5rem 0;
+			}
+
+			.major-section ul,
+			.major-section ol {
+				margin: 0.5rem 0 0.75rem 1.5rem;
+			}
+
+			.major-section li {
+				margin-bottom: 0.35rem;
+			}
+
+			/* Tables */
+			.table-wrapper {
+				overflow-x: auto;
+				margin: 1rem 0 1.5rem;
+				background: var(--forest-dark);
+				border-radius: 8px;
+				border: 2px solid var(--earth-brown);
+			}
+
+			.table-wrapper table {
+				width: 100%;
+				border-collapse: collapse;
+				background: var(--forest-dark);
+			}
+
+			.table-wrapper th,
+			.table-wrapper td {
+				padding: 0.85rem 1rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+				vertical-align: top;
+			}
+
+			.table-wrapper th {
+				background: var(--moss-green);
+				color: var(--amber);
+				font-weight: 600;
+				white-space: nowrap;
+			}
+
+			.table-wrapper tr:last-child td {
+				border-bottom: none;
+			}
+
+			.table-wrapper tbody tr:hover {
+				background: var(--forest-green);
+			}
+
+			/* Quote */
+			.quote {
+				background: var(--forest-dark);
+				padding: 1.25rem 1.5rem;
+				border-left: 4px solid var(--amber);
+				border-radius: 6px;
+				margin: 1.25rem 0;
+				font-style: italic;
+				color: var(--cream);
+				font-size: 1.1rem;
+			}
+
+			/* Callout */
+			.callout {
+				background: var(--forest-dark);
+				padding: 1rem 1.25rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				margin: 1rem 0;
+				color: var(--cream);
+			}
+
+			.callout strong {
+				color: var(--amber);
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.section-title {
+					font-size: 1.5rem;
+				}
+
+				.table-wrapper th,
+				.table-wrapper td {
+					padding: 0.6rem 0.75rem;
+					font-size: 0.95rem;
+				}
+			}
+		</style>
+	</body>
+</html>

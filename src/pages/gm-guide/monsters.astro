@@ -1,0 +1,1622 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Monsters in Motion - Untamed GM Guide</title>
+		<meta name="description" content="Behavior archetypes, classifications, instinct loops, and the turn flow that makes Untamed monsters feel alive." />
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<a href="/" class="logo">UNTAMED</a>
+				<div class="nav-links">
+					<a href="/rules">Rules</a>
+					<a href="/quick-reference">Quick Reference</a>
+					<a href="/character">Characters</a>
+					<a href="/bestiary">Bestiary</a>
+					<a href="/gm-guide" class="active">GM Guide</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/gm-guide">← Back to GM Guide</a>
+				</div>
+
+				<header class="page-header">
+					<h1>Monsters in Motion</h1>
+					<p class="subtitle">Behavior archetypes, classifications, and the turn flow that makes monsters feel alive</p>
+				</header>
+
+				<!-- Table of Contents -->
+				<nav class="toc">
+					<h2>On This Page</h2>
+					<div class="toc-grid">
+						<div class="toc-section">
+							<h3>Foundations</h3>
+							<ul>
+								<li><a href="#how-monsters-think">How Monsters Think</a></li>
+								<li><a href="#behavior-archetypes">Behavior Archetypes</a></li>
+								<li><a href="#archetype-synergies">Archetype Synergies</a></li>
+							</ul>
+						</div>
+
+						<div class="toc-section">
+							<h3>Archetypes</h3>
+							<ul>
+								<li><a href="#archetype-brute">Brute</a></li>
+								<li><a href="#archetype-skirmisher">Skirmisher</a></li>
+								<li><a href="#archetype-kiter">Kiter</a></li>
+								<li><a href="#archetype-ambusher">Ambusher</a></li>
+								<li><a href="#archetype-guardian">Guardian</a></li>
+								<li><a href="#archetype-shifter">Shifter</a></li>
+								<li><a href="#archetype-tool-user">Tool User</a></li>
+								<li><a href="#archetype-debuffer">Debuffer</a></li>
+								<li><a href="#archetype-support">Support / Synergist</a></li>
+								<li><a href="#archetype-tactician">Tactician</a></li>
+								<li><a href="#archetype-flyer">Flyer</a></li>
+								<li><a href="#archetype-swimmer">Swimmer / Aquatic</a></li>
+								<li><a href="#archetype-apex-hybrid">Intelligent / Apex Hybrid</a></li>
+							</ul>
+						</div>
+
+						<div class="toc-section">
+							<h3>Classifications</h3>
+							<ul>
+								<li><a href="#classifications">Monster Classifications</a></li>
+								<li><a href="#class-beast-rodents">Beast Rodents</a></li>
+								<li><a href="#class-beast-birds">Beast Birds</a></li>
+								<li><a href="#class-fanged-beasts">Fanged Beasts</a></li>
+								<li><a href="#class-horned-beasts">Horned Beasts</a></li>
+								<li><a href="#class-reptile-beasts">Reptile Beasts</a></li>
+								<li><a href="#class-amphibian-beasts">Amphibian Beasts</a></li>
+								<li><a href="#class-crustacean-beasts">Crustacean Beasts</a></li>
+								<li><a href="#class-insectoids">Insectoids</a></li>
+								<li><a href="#class-myriapod-beasts">Myriapod Beasts</a></li>
+								<li><a href="#class-plant-beasts">Plant Beasts</a></li>
+								<li><a href="#class-cephalopod-beasts">Cephalopod / Tentacled Beasts</a></li>
+								<li><a href="#class-parasitic-beasts">Parasitic / Brood Beasts</a></li>
+								<li><a href="#class-primal-beasts">Primal Beasts</a></li>
+								<li><a href="#class-drakes">Drakes</a></li>
+								<li><a href="#class-leviathans">Leviathans</a></li>
+								<li><a href="#class-aberrant-beasts">Aberrant Beasts</a></li>
+							</ul>
+						</div>
+
+						<div class="toc-section">
+							<h3>Apex Tier</h3>
+							<ul>
+								<li><a href="#apex-classifications">Apex Classifications</a></li>
+								<li><a href="#class-elder-beasts">Elder Beasts</a></li>
+								<li><a href="#class-elder-brutes">Elder Brutes</a></li>
+								<li><a href="#class-elder-dragons">Elder Dragons</a></li>
+								<li><a href="#class-celestial-beasts">Celestial Beasts</a></li>
+								<li><a href="#class-gm-use">GM Use: Classifications in Play</a></li>
+							</ul>
+						</div>
+
+						<div class="toc-section">
+							<h3>Turn Flow</h3>
+							<ul>
+								<li><a href="#decision-flow">Monster Decision Flow</a></li>
+								<li><a href="#card-breakdown">Monster Card Breakdown</a></li>
+								<li><a href="#tier-system">Tier System</a></li>
+								<li><a href="#proficiency-damage">Proficiency &amp; Damage</a></li>
+								<li><a href="#hp-scaling">HP Scaling</a></li>
+								<li><a href="#stamina-economy">Stamina &amp; Action Economy</a></li>
+								<li><a href="#thresholds">Thresholds</a></li>
+								<li><a href="#turn-structure">Turn Structure &amp; Flow</a></li>
+								<li><a href="#states">States</a></li>
+								<li><a href="#escalating-resistance">Escalating Resistance</a></li>
+								<li><a href="#running-monsters">Running Monster Turns Summary</a></li>
+							</ul>
+						</div>
+
+						<div class="toc-section">
+							<h3>Minor Threats</h3>
+							<ul>
+								<li><a href="#small-monsters">Small / Minor Monsters</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<article class="content">
+					<!-- INTRO -->
+					<section class="major-section">
+						<p class="intro-text">
+							This chapter combines the "Monster Behavior" and "Monster Turn Flow" sections from earlier drafts. Rather than splitting instinct loops and AI patterns across multiple chapters, all monster‑facing logic lives here. Use the archetypes and instinct loops to build behavior, then follow the turn flow steps (Assess Threat → Check Stamina → Evaluate Position → Select Action → Execute → Check Retreat) during combat.
+						</p>
+						<p class="intro-text">
+							Monsters in Untamed are not mindless enemies. They hunt, flee, defend, and adapt based on instincts, territory needs, and survival — unless their nature or intelligence suggests otherwise. As GM, your role is to embody these instincts during hunts — making each creature feel alive, reactive, and sometimes even tragic.
+						</p>
+					</section>
+
+					<!-- HOW MONSTERS THINK -->
+					<section id="how-monsters-think" class="major-section">
+						<h2 class="section-title">🧠 How Monsters Think</h2>
+
+						<div class="table-wrapper">
+							<table class="craft-table">
+								<thead>
+									<tr>
+										<th>Monster Trait</th>
+										<th>Behavior</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Instinct-Driven Actions</td>
+										<td>Monsters act on primal needs: run when wounded, fight to defend nests, lash out if cornered.</td>
+									</tr>
+									<tr>
+										<td>Threshold Triggers</td>
+										<td>Wounded monsters change behavior at certain health or stamina thresholds (ex: below 50% HP = enraged, below 25% = retreat attempt).</td>
+									</tr>
+									<tr>
+										<td>Territory Control</td>
+										<td>Monsters own sectors of the biome. If hunters intrude, damage food sources, or attack nests, monsters will escalate aggression.</td>
+									</tr>
+									<tr>
+										<td>Fight or Flight</td>
+										<td>If outmatched or exhausted, monsters may flee to recover, find allies, or relocate deeper into the biome.</td>
+									</tr>
+									<tr>
+										<td>Environmental Awareness</td>
+										<td>Monsters know the terrain better than hunters. Cliffside beasts seek high ground; aquatic monsters retreat to deep water; ambushers hide in dense foliage.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- BEHAVIOR ARCHETYPES -->
+					<section id="behavior-archetypes" class="major-section">
+						<h2 class="section-title">🧩 Monster Behavior Archetypes</h2>
+
+						<p>Every monster in Untamed should fit into 1–2 primary archetypes (with Apex monsters blending 3+).</p>
+						<p>Each archetype is a behavioral pattern — how the creature approaches combat, movement, and territory.</p>
+						<p>They're not rigid AI scripts, but instinctive loops — "If hurt, do this. If cornered, do that."</p>
+
+						<div id="archetype-brute" class="archetype-card">
+							<h3>Brute</h3>
+							<p><span class="label-line">Behavior:</span> Dominance through power and proximity.</p>
+							<p><span class="label-line">Stats:</span> High STR/CON.</p>
+							<p><span class="label-line">Instinct Loop:</span> Close distance → trade blows → roar or charge when pressured.</p>
+							<p><span class="label-line">GM Tip:</span> Telegraph attacks clearly; reward clever positioning or staggering.</p>
+							<p><span class="label-line">Example:</span> Urmine, Ironhide Boar.</p>
+						</div>
+
+						<div id="archetype-skirmisher" class="archetype-card">
+							<h3>Skirmisher</h3>
+							<p><span class="label-line">Behavior:</span> Speed, repositioning, and opportunistic strikes.</p>
+							<p><span class="label-line">Stats:</span> High DEX/INS.</p>
+							<p><span class="label-line">Instinct Loop:</span> Circle → jab → retreat → bait pursuit.</p>
+							<p><span class="label-line">GM Tip:</span> Burn hunter stamina through pursuit and distance control.</p>
+							<p><span class="label-line">Example:</span> Cliff Strider, Ridge Wraith.</p>
+						</div>
+
+						<div id="archetype-kiter" class="archetype-card">
+							<h3>Kiter (Ranged Predator)</h3>
+							<p><span class="label-line">Behavior:</span> Maintains distance; inflicts pressure through projectiles, breath, or traps.</p>
+							<p><span class="label-line">Stats:</span> High INS/DEX.</p>
+							<p><span class="label-line">Instinct Loop:</span> Keep line-of-sight → punish approach → relocate when cornered.</p>
+							<p><span class="label-line">GM Tip:</span> Play smart; use elevation and cover as survival tools.</p>
+							<p><span class="label-line">Example:</span> Kragal, Sporeback Basilisk.</p>
+						</div>
+
+						<div id="archetype-ambusher" class="archetype-card">
+							<h3>Ambusher</h3>
+							<p><span class="label-line">Behavior:</span> Strikes when unseen; relies on camouflage or timing.</p>
+							<p><span class="label-line">Stats:</span> High INS/DEX.</p>
+							<p><span class="label-line">Instinct Loop:</span> Wait → isolate → burst → vanish → repeat.</p>
+							<p><span class="label-line">GM Tip:</span> Treat each strike as a story beat — something learned or countered next time.</p>
+							<p><span class="label-line">Example:</span> Noctilura, Mire Panther.</p>
+						</div>
+
+						<div id="archetype-guardian" class="archetype-card">
+							<h3>Guardian</h3>
+							<p><span class="label-line">Behavior:</span> Territorial and defensive; protects nests, zones, or lesser monsters.</p>
+							<p><span class="label-line">Stats:</span> Very high CON, sometimes INS.</p>
+							<p><span class="label-line">Instinct Loop:</span> Hold ground → punish intrusion → enrage if home or allies are harmed.</p>
+							<p><span class="label-line">GM Tip:</span> Use lair actions and environmental control to emphasize dominance.</p>
+							<p><span class="label-line">Example:</span> Terraguard Beetle, Hive Matron.</p>
+						</div>
+
+						<div id="archetype-shifter" class="archetype-card">
+							<h3>Shifter (Environmental Controller)</h3>
+							<p><span class="label-line">Behavior:</span> Alters terrain or weather mid-fight; thrives in chaos.</p>
+							<p><span class="label-line">Stats:</span> Vary widely; often linked to INT or CON.</p>
+							<p><span class="label-line">Instinct Loop:</span> Manipulate environment → punish movement → adapt to new hazards.</p>
+							<p><span class="label-line">GM Tip:</span> Think of it as "fighting the arena as much as the monster."</p>
+							<p><span class="label-line">Example:</span> Stagmir, Sandwurm, Deep Coral Warden.</p>
+						</div>
+
+						<div id="archetype-tool-user" class="archetype-card">
+							<h3>Tool User</h3>
+							<p><span class="label-line">Behavior:</span> Wields objects or exploits surroundings; demonstrates learned behavior.</p>
+							<p><span class="label-line">Stats:</span> High INT/INS.</p>
+							<p><span class="label-line">Instinct Loop:</span> Use tools to extend reach → adapt mid-fight → retreat to regroup if disarmed.</p>
+							<p><span class="label-line">GM Tip:</span> Give them "problem-solving" moments — players should recognize evolving tactics.</p>
+							<p><span class="label-line">Example:</span> Rockbreak Ape, Mud Sentinel.</p>
+						</div>
+
+						<div id="archetype-debuffer" class="archetype-card">
+							<h3>Debuffer</h3>
+							<p><span class="label-line">Behavior:</span> Uses toxins, sounds, spores, or curses to cripple prey.</p>
+							<p><span class="label-line">Stats:</span> High CHA; often low CON.</p>
+							<p><span class="label-line">Instinct Loop:</span> Apply status → withdraw → harass weakened targets.</p>
+							<p><span class="label-line">GM Tip:</span> Don't overuse; one status effect per "phase" feels fair and cinematic.</p>
+							<p><span class="label-line">Example:</span> Venom Toad, Frost Moth.</p>
+						</div>
+
+						<div id="archetype-support" class="archetype-card">
+							<h3>Support / Synergist</h3>
+							<p><span class="label-line">Behavior:</span> Bolsters allies, heals, or enhances coordination.</p>
+							<p><span class="label-line">Stats:</span> Moderate across board; relies on pack logic.</p>
+							<p><span class="label-line">Instinct Loop:</span> Buff or guard → reposition → rejoin alpha.</p>
+							<p><span class="label-line">GM Tip:</span> Use this archetype in multi-monster fights; they make the ecology feel alive.</p>
+							<p><span class="label-line">Example:</span> Pack Howler, Hive Conductor.</p>
+						</div>
+
+						<div id="archetype-tactician" class="archetype-card">
+							<h3>Tactician (Pack Alpha)</h3>
+							<p><span class="label-line">Behavior:</span> Coordinates others; thrives in numbers.</p>
+							<p><span class="label-line">Stats:</span> Balanced but with high INS/CHA (command presence).</p>
+							<p><span class="label-line">Instinct Loop:</span> Command → delegate → punish isolation.</p>
+							<p><span class="label-line">GM Tip:</span> Give the alpha "pack reactions" — when it howls or signals, others react.</p>
+							<p><span class="label-line">Example:</span> Vorvarg Alpha, Frost Talon Matriarch.</p>
+						</div>
+
+						<div id="archetype-flyer" class="archetype-card">
+							<h3>Flyer</h3>
+							<p><span class="label-line">Behavior:</span> Controls verticality; dictates engagement range.</p>
+							<p><span class="label-line">Stats:</span> High DEX; moderate CON.</p>
+							<p><span class="label-line">Instinct Loop:</span> Scout → dive → retreat upward → strafe.</p>
+							<p><span class="label-line">GM Tip:</span> Let hunters "ground" flyers with terrain or timing to shift the phase.</p>
+							<p><span class="label-line">Example:</span> Earule, Gale Wyvern.</p>
+						</div>
+
+						<div id="archetype-swimmer" class="archetype-card">
+							<h3>Swimmer / Aquatic</h3>
+							<p><span class="label-line">Behavior:</span> Masters underwater or shoreline combat; controls oxygen and movement.</p>
+							<p><span class="label-line">Stats:</span> High CON/STR.</p>
+							<p><span class="label-line">Instinct Loop:</span> Drag prey → drown → surface or ambush near edges.</p>
+							<p><span class="label-line">GM Tip:</span> Make terrain matter — oxygen, currents, visibility.</p>
+							<p><span class="label-line">Example:</span> Leviathan, Murkfin Croc.</p>
+						</div>
+
+						<div id="archetype-apex-hybrid" class="archetype-card">
+							<h3>Intelligent / Apex Hybrid</h3>
+							<p><span class="label-line">Behavior:</span> Combines archetypes intelligently; recognizes patterns and adapts.</p>
+							<p><span class="label-line">Stats:</span> All high; unique modifiers.</p>
+							<p><span class="label-line">Instinct Loop:</span> Observe → counter → escalate → transform terrain or self.</p>
+							<p><span class="label-line">GM Tip:</span> Let it learn — reward player pattern recognition with equal monster adaptation.</p>
+							<p><span class="label-line">Example:</span> Apex Wyvern, The Stagmir.</p>
+						</div>
+
+						<div class="callout">
+							<h3>🧭 GM Use</h3>
+							<p>When designing or running a monster:</p>
+							<ul>
+								<li>Pick 1–2 archetypes (3+ for Apex).</li>
+								<li>Note Instinct Loops (your "AI core").</li>
+								<li>Add 1 unique behavior quirk ("always roars before charging," "favors attacking torches").</li>
+								<li>Tie those behaviors to threshold triggers — HP, stamina, or environmental states.</li>
+							</ul>
+							<p>These loops replace static "attack tables." They make fights evolve.</p>
+						</div>
+
+						<div id="archetype-synergies" class="rule-section">
+							<h3>🦴 Bonus: Archetype Synergies</h3>
+							<p>Some combinations make iconic encounters:</p>
+							<ul>
+								<li><strong>Brute + Shifter:</strong> Unstoppable force that changes the battlefield as it fights.</li>
+								<li><strong>Ambusher + Debuffer:</strong> Assassin predator that weakens and evades.</li>
+								<li><strong>Guardian + Support:</strong> Defends allies or structures; perfect "boss + adds" setups.</li>
+								<li><strong>Flyer + Kiter:</strong> Aerial artillery.</li>
+								<li><strong>Tactician + Tool User:</strong> Intelligent alpha; turns fights into puzzles.</li>
+								<li><strong>Swimmer + Shifter:</strong> Floods zones or manipulates water currents as cover.</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- MONSTER CLASSIFICATIONS -->
+					<section id="classifications" class="major-section">
+						<h2 class="section-title">Monster Classifications</h2>
+
+						<blockquote class="quote">
+							"Every creature in the wild fills a role — predator, prey, parasite, or god. When you understand what it eats, what it fears, and what it protects, you understand how to hunt it."
+						</blockquote>
+
+						<p>Monster classifications exist to help GMs design encounters that feel ecologically grounded. Each classification defines how a creature behaves, evolves, and interacts with the environment and the hunt loop.</p>
+
+						<h3 class="sub-heading">🐾 Standard Classifications</h3>
+						<p>These creatures form the majority of the ecosystem — from small prey to apex-level hunters. They populate most hunts and define the ecological identity of each biome.</p>
+
+						<div id="class-beast-rodents" class="class-card">
+							<h3>Beast Rodents</h3>
+							<p><span class="label-line">Profile:</span> Skittish scavengers or opportunists at the base of the food chain.</p>
+							<p><span class="label-line">Common Traits:</span> Small-to-medium size, quick breeding, tunneling, or nest-building behavior.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Skirmisher, Ambusher (burrow), Pack, Tool User.</p>
+							<p><span class="label-line">GM Use:</span> Excellent "sign creatures" — their absence signals larger predators nearby.</p>
+						</div>
+
+						<div id="class-beast-birds" class="class-card">
+							<h3>Beast Birds</h3>
+							<p><span class="label-line">Profile:</span> Aerial hunters and scavengers that define the vertical layers of a biome.</p>
+							<p><span class="label-line">Common Traits:</span> Flight, dive attacks, keen eyesight, social nesting behaviors.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Flyer, Kiter, Skirmisher.</p>
+							<p><span class="label-line">GM Use:</span> Great for multi-level arenas and high-ground control; use to teach players about visibility and range management.</p>
+						</div>
+
+						<div id="class-fanged-beasts" class="class-card">
+							<h3>Fanged Beasts</h3>
+							<p><span class="label-line">Profile:</span> Agile mammalian predators that stalk or ambush prey using precision and instinct.</p>
+							<p><span class="label-line">Common Traits:</span> High DEX or INS, bleed mechanics, stealth, territorial aggression.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Ambusher, Pack/Tactician, Brute (for apex species).</p>
+							<p><span class="label-line">GM Use:</span> Use fanged beasts to showcase stamina attrition and tracking pressure over time.</p>
+						</div>
+
+						<div id="class-horned-beasts" class="class-card">
+							<h3>Horned Beasts</h3>
+							<p><span class="label-line">Profile:</span> Hoofed climbers, grazers, and ridge-runners that survive via mobility, altitude advantage, and impact violence (horns/charges).</p>
+							<p><span class="label-line">Common Traits:</span> Extreme footing, burst movement, knockback, cliff hazards, "flight-adjacent" leaps.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Skirmisher, Evader, Territorial Defender.</p>
+							<p><span class="label-line">GM Use:</span> Great Tier 0–2 "terrain teachers" — they punish reckless pursuit and reward positioning.</p>
+						</div>
+
+						<div id="class-reptile-beasts" class="class-card">
+							<h3>Reptile Beasts</h3>
+							<p><span class="label-line">Profile:</span> Scaled predators — from serpentine hunters to lumbering lizards.</p>
+							<p><span class="label-line">Common Traits:</span> Armor plating, venom, cold-blooded endurance, or regenerative abilities.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Brute, Debuffer, Guardian.</p>
+							<p><span class="label-line">GM Use:</span> Excellent middle-tier monsters that emphasize environmental adaptation (heat, moisture, or sun exposure).</p>
+						</div>
+
+						<div id="class-amphibian-beasts" class="class-card">
+							<h3>Amphibian Beasts</h3>
+							<p><span class="label-line">Profile:</span> Dual-environment predators of wetlands and caves.</p>
+							<p><span class="label-line">Common Traits:</span> Regeneration when wet, toxin-dispersal, long leaps, and camouflage.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Debuffer, Ambusher, Swimmer.</p>
+							<p><span class="label-line">GM Use:</span> Create stamina pressure through terrain — mud, water, and heat.</p>
+						</div>
+
+						<div id="class-crustacean-beasts" class="class-card">
+							<h3>Crustacean Beasts</h3>
+							<p><span class="label-line">Profile:</span> Hard-shelled, water-adjacent titans.</p>
+							<p><span class="label-line">Common Traits:</span> Armor layers, pincer grabs, burrowing, tidal adaptation.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Guardian, Brute, Shifter (terrain control via water or sand).</p>
+							<p><span class="label-line">GM Use:</span> Introduce multi-stage armor breaks and environmental hazards (floods, tidal shifts).</p>
+						</div>
+
+						<div id="class-insectoids" class="class-card">
+							<h3>Insectoids</h3>
+							<p><span class="label-line">Profile:</span> Hive-based creatures acting in coordinated swarms or colonies.</p>
+							<p><span class="label-line">Common Traits:</span> Carapace armor, venom, pheromone signaling, hive intelligence.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Support, Pack, Guardian (queen), Debuffer.</p>
+							<p><span class="label-line">GM Use:</span> Great for dynamic battlefield spawns or multi-target encounters; the hive acts like a single living machine.</p>
+						</div>
+
+						<div id="class-myriapod-beasts" class="class-card">
+							<h3>Myriapod Beasts</h3>
+							<p><span class="label-line">Profile:</span> Multi-segmented hunters that thrive in rotlines and caverns.</p>
+							<p><span class="label-line">Common Traits:</span> Segmented armor, caustic secretions, rapid bursts, tremor-sense.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Ambusher, Brute, Debuffer.</p>
+							<p><span class="label-line">GM Use:</span> Use vibration tracking and close-quarters movement to create claustrophobic tension.</p>
+						</div>
+
+						<div id="class-plant-beasts" class="class-card">
+							<h3>Plant Beasts</h3>
+							<p><span class="label-line">Profile:</span> Living flora or symbiotic plant-life; ambush predators of the forest floor.</p>
+							<p><span class="label-line">Common Traits:</span> Rooted or slow movement, toxin release, camouflage, regenerative growth.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Guardian, Shifter, Debuffer.</p>
+							<p><span class="label-line">GM Use:</span> Great for corruption arcs or "territory fights" where the ground itself becomes the enemy.</p>
+						</div>
+
+						<div id="class-cephalopod-beasts" class="class-card">
+							<h3>Cephalopod / Tentacled Beasts</h3>
+							<p><span class="label-line">Profile:</span> Ambush predators of the deep — clever, fluid, and alien in motion.</p>
+							<p><span class="label-line">Common Traits:</span> Camouflage, multi-limb grapples, ink/silt blinds, tool use, nerve-ring weak spots.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Tool User, Ambusher, Swimmer.</p>
+							<p><span class="label-line">GM Use:</span> Use as "smart predators" — dynamic repositioning and problem-solving mid-hunt.</p>
+						</div>
+
+						<div id="class-parasitic-beasts" class="class-card">
+							<h3>Parasitic / Brood Beasts</h3>
+							<p><span class="label-line">Profile:</span> Macro-parasites or egg-spawning horrors that dominate hosts or spread plagues.</p>
+							<p><span class="label-line">Common Traits:</span> Host control, fatigue drain, brood swarms, vulnerability to fire/salt.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Debuffer, Support, Tactician (hive logic).</p>
+							<p><span class="label-line">GM Use:</span> Ideal for multi-phase horror hunts — where the threat multiplies over time.</p>
+						</div>
+
+						<div id="class-primal-beasts" class="class-card">
+							<h3>Primal Beasts</h3>
+							<p><span class="label-line">Profile:</span> Dinosaur-like or ancient monsters — living echoes of a forgotten era.</p>
+							<p><span class="label-line">Common Traits:</span> Massive bodies, relentless aggression, instinctive resilience.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Brute, Guardian, Shifter.</p>
+							<p><span class="label-line">GM Use:</span> Set-piece hunts — terrain-smashing monsters that define a biome's identity.</p>
+						</div>
+
+						<div id="class-drakes" class="class-card">
+							<h3>Drakes</h3>
+							<p><span class="label-line">Profile:</span> Dragonkin, lesser cousins of the Elder Dragons — intelligent, territorial, fierce.</p>
+							<p><span class="label-line">Common Traits:</span> Elemental breath, semi-flight, predatory cunning.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Flyer, Brute, Tactician.</p>
+							<p><span class="label-line">GM Use:</span> High-level single-target fights emphasizing timing and positional play.</p>
+						</div>
+
+						<div id="class-leviathans" class="class-card">
+							<h3>Leviathans</h3>
+							<p><span class="label-line">Profile:</span> Colossal water or semi-aquatic predators ruling the lakes, rivers, and coasts.</p>
+							<p><span class="label-line">Common Traits:</span> Immense stamina, environmental control (waves, currents), amphibious combat.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Swimmer, Shifter, Brute.</p>
+							<p><span class="label-line">GM Use:</span> Thematic biomes bosses — treat water as a living hazard and time pressure as their weapon.</p>
+						</div>
+
+						<div id="class-aberrant-beasts" class="class-card">
+							<h3>Aberrant Beasts</h3>
+							<p><span class="label-line">Profile:</span> Mutations and anomalies — nature's corruption or alchemical byproduct.</p>
+							<p><span class="label-line">Common Traits:</span> Mutation mid-fight, warped anatomy, psychic dissonance.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Shifter, Debuffer, Intelligent (learned behavior).</p>
+							<p><span class="label-line">GM Use:</span> Perfect for "what the hell is that" moments — unpredictable tempo shifts and sanity-threatening behavior.</p>
+						</div>
+
+						<p class="note">Most biomes contain 0–1 Celestial species.</p>
+					</section>
+
+					<!-- APEX CLASSIFICATIONS -->
+					<section id="apex-classifications" class="major-section">
+						<h2 class="section-title">🌋 Apex Classifications</h2>
+
+						<p>These are the biome rulers — monsters that don't just live in ecosystems but define them. Their existence reshapes migration, weather, and even geography. They are the campaign's punctuation marks.</p>
+
+						<div id="class-elder-beasts" class="class-card apex">
+							<h3>Elder Beasts</h3>
+							<p><span class="label-line">Profile:</span> Apex predators evolved into sentient territorial forces.</p>
+							<p><span class="label-line">Common Traits:</span> Elemental resistance, supernatural awareness, adaptive AI.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Brute + Intelligent + Guardian.</p>
+							<p><span class="label-line">GM Use:</span> Use Elder Beasts as living bosses — entities that remember prior encounters and adapt across sessions.</p>
+						</div>
+
+						<div id="class-elder-brutes" class="class-card apex">
+							<h3>Elder Brutes</h3>
+							<p><span class="label-line">Profile:</span> Colossi that reshape terrain simply by moving.</p>
+							<p><span class="label-line">Common Traits:</span> Immense mass, seismic movement, devastating area effects.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Brute + Shifter.</p>
+							<p><span class="label-line">GM Use:</span> Set them against the environment itself — cliff collapses, landslides, collapsing biomes. Each hit should change the map.</p>
+						</div>
+
+						<div id="class-elder-dragons" class="class-card apex">
+							<h3>Elder Dragons</h3>
+							<p><span class="label-line">Profile:</span> Living cataclysms. Their mere existence alters weather, magic, and balance.</p>
+							<p><span class="label-line">Common Traits:</span> Elemental mastery, unbreakable will, transcendent intelligence.</p>
+							<p><span class="label-line">Behavior Archetypes:</span> Intelligent + Flyer + Shifter + Guardian.</p>
+							<p><span class="label-line">GM Use:</span> The culmination of the ecosystem — their death or survival rewrites the world's state. Treat them like gods in motion, not just HP pools.</p>
+						</div>
+
+						<div id="class-celestial-beasts" class="class-card apex">
+							<h3>Celestial Beasts</h3>
+							<p><span class="label-line">Profile:</span> Rare atmospheric apex predators that dominate the upper layers of the ecosystem.</p>
+							<p>Celestial Beasts are not divine creatures. They are biological organisms that have evolved specialized organs capable of channeling extreme atmospheric forces such as lightning, pressure waves, or high-velocity winds.</p>
+							<p>They are defined less by anatomy and more by ecological domain: the sky itself.</p>
+
+							<h4 class="card-subhead">Common Traits</h4>
+							<ul>
+								<li>Flight or aerial mobility</li>
+								<li>Storm or wind affinity</li>
+								<li>Massive territorial range</li>
+								<li>Momentum-based attack patterns</li>
+							</ul>
+
+							<h4 class="card-subhead">GM Usage</h4>
+							<p>Celestial Beasts should be:</p>
+							<ul>
+								<li>extremely rare</li>
+								<li>tied to weather conditions</li>
+								<li>biome-defining encounters</li>
+								<li>roaming rather than stationary</li>
+							</ul>
+						</div>
+
+						<div id="class-gm-use" class="callout">
+							<h3>⚙️ GM Use: Monster Classifications in Play</h3>
+							<ul>
+								<li><strong>Populate by Food Chain:</strong> Each biome should include 3–5 standard classifications, 1 rare or apex, and 1–2 support creatures that interact dynamically.</li>
+								<li><strong>Design via Archetypes:</strong> When creating a new creature, pick a classification (ecosystem role) and 1–2 archetypes (behavioral logic).</li>
+								<li><strong>Use Class as Ecology Clue:</strong> If hunters find signs of a "Drake," they know to expect elevated heat, nesting ruins, or scorched terrain.</li>
+								<li><strong>Reward Observation:</strong> Let hunters who study carcasses or spoor deduce the classification — giving them foresight on resistances, stamina patterns, or tactics.</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- MONSTERS IN MOTION (intro to decision flow) -->
+					<section class="major-section">
+						<h2 class="section-title">Monsters in Motion</h2>
+
+						<blockquote class="quote">
+							"The wild doesn't use initiative — it reacts. Every creature fights to survive, not to die dramatically."
+						</blockquote>
+
+						<p>Monsters are not enemies; they are forces of nature. Each one has drives, thresholds, and instincts that shape every encounter. Your job as GM is not to script them, but to embody them — letting their logic drive the hunt.</p>
+					</section>
+
+					<!-- DECISION FLOW -->
+					<section id="decision-flow" class="major-section">
+						<h2 class="section-title">🎯 Monster Decision Flow</h2>
+
+						<p>When running a monster, ask yourself in order:</p>
+						<ol class="decision-list">
+							<li><strong>Is it defending something?</strong> Nest, mate, food source, or lair? → Fight aggressively, use environmental control.</li>
+							<li><strong>Is it heavily wounded or exhausted?</strong> → Attempt retreat or defensive reposition; creatures fight to live, not to the death.</li>
+							<li><strong>Is it outnumbered or losing control of space?</strong> → Funnel the hunters, retreat to narrow terrain, or use hazards to divide them.</li>
+							<li><strong>Is it naturally aggressive or cautious?</strong> → Aggressive: overcommits, presses advantage. Cautious: retreats early, uses ambush or hit-and-run tactics.</li>
+							<li><strong>Does the environment favor it?</strong> → Use its terrain signature: cliffs for flyers, mud for burrowers, fog for ambushers.</li>
+						</ol>
+
+						<div class="callout">
+							<p>When in doubt: let the monster fight to survive, not to kill. The difference creates drama, not attrition.</p>
+						</div>
+					</section>
+
+					<!-- CARD BREAKDOWN -->
+					<section id="card-breakdown" class="major-section">
+						<h2 class="section-title">🧠 Monster Card Breakdown (GM-Use Summary)</h2>
+
+						<p>Every Major Monster's stat block includes behavioral shorthand — a "living logic" guide:</p>
+						<ul>
+							<li><strong>Aggression Triggers:</strong> What makes it escalate or flee (injury, sound, territory breach).</li>
+							<li><strong>Preferred Zones:</strong> Its favored biome sectors and terrain advantages.</li>
+							<li><strong>Behavior Under Pressure:</strong> Flight, enrage, or defensive pivots when hurt.</li>
+							<li><strong>Unique Strategy:</strong> Its "signature move" (e.g., Gorrhul's Mud Armor, Noctilura's Lure Light).</li>
+							<li><strong>Threshold Cues:</strong> HP %, stamina phase, or environmental event that shifts its tactics.</li>
+						</ul>
+
+						<div class="callout">
+							<h3>💡 GM Mindset: Monsters as Characters</h3>
+							<p>Treat monsters like you treat NPCs — beings with drives and story purpose.</p>
+							<ul>
+								<li>A starving Vorvarg pack isn't evil; it's desperate.</li>
+								<li>A dying Apex beast isn't just a boss; it's a myth gasping its last breath.</li>
+								<li>A territorial Leviathan isn't cruel; it's the sea's immune system.</li>
+							</ul>
+							<p>Let motivation guide aggression, and your hunts will always feel grounded.</p>
+						</div>
+					</section>
+
+					<!-- TIER SYSTEM -->
+					<section id="tier-system" class="major-section">
+						<h2 class="section-title">🪓 Monster Tier System</h2>
+
+						<p>Each creature in Untamed belongs to a Tier, which determines its power scope and resource economy. Tiers define how long it lasts and how much it can do per turn — not how complex it is.</p>
+
+						<div class="table-wrapper">
+							<table class="craft-table">
+								<thead>
+									<tr>
+										<th>Tier</th>
+										<th>Attack Actions / Turn</th>
+										<th>General Scope</th>
+										<th>Typical Encounter Role</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>T1</td>
+										<td>2</td>
+										<td>Small or low-threat predator</td>
+										<td>Early hunts, pack beasts</td>
+									</tr>
+									<tr>
+										<td>T2</td>
+										<td>2–3</td>
+										<td>Mid-tier threat</td>
+										<td>Primary predators, trained hunters</td>
+									</tr>
+									<tr>
+										<td>T3</td>
+										<td>3–4</td>
+										<td>Large-scale encounter</td>
+										<td>Mini-boss, territory alpha</td>
+									</tr>
+									<tr>
+										<td>T4</td>
+										<td>4–5</td>
+										<td>Apex within biome</td>
+										<td>Regional guardian</td>
+									</tr>
+									<tr>
+										<td>T5+</td>
+										<td>4–5 (+ special phases)</td>
+										<td>Legendary or Elder</td>
+										<td>Campaign-defining</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p class="note">Note: Certain moves replace multiple attacks (e.g., a massive tail slam counts as two actions).</p>
+					</section>
+
+					<!-- PROFICIENCY & DAMAGE -->
+					<section id="proficiency-damage" class="major-section">
+						<h2 class="section-title">Monster Proficiency &amp; Damage</h2>
+
+						<div class="rule-section highlight">
+							<h3>Monster Proficiency (GM Guide Rule Text)</h3>
+							<p>Monsters are always considered Masters with their natural attacks. These claws, bites, horns, beams, and innate techniques represent instinctive combat mastery rather than trained skill.</p>
+						</div>
+
+						<div class="rule-section">
+							<h3>Monster Proficiency Bonus</h3>
+							<p>All monsters begin with a base <strong>+4 proficiency</strong> to all attack rolls.</p>
+						</div>
+
+						<div class="rule-section">
+							<h3>Final Monster Attack Roll</h3>
+							<p>For any monster attack or ability listed in its stat block:</p>
+							<div class="formula">
+								Attack Roll = d20 + 4 + Relevant Stat Bonus
+							</div>
+							<p>Relevant stat = STR for physical, DEX for agile strikes, INS for special senses, CHA for sonic/scream attacks, etc.</p>
+						</div>
+
+						<div class="rule-section">
+							<h3>Monster Damage Formula</h3>
+							<p>Damaging monster actions follow the same formula players use:</p>
+							<div class="formula">
+								Damage = Damage Dice + (½ relevant stat, rounded down)
+							</div>
+							<p><strong>Examples:</strong></p>
+							<ul>
+								<li>STR 7 → damage bonus +3</li>
+								<li>DEX 8 → damage bonus +4</li>
+								<li>INS 11 → damage bonus +5</li>
+							</ul>
+							<p>Monsters never add their full stat score to damage — only the half-stat modifier.</p>
+						</div>
+					</section>
+
+					<!-- HP SCALING -->
+					<section id="hp-scaling" class="major-section">
+						<h2 class="section-title">💥 Monster Health Scaling Formula</h2>
+
+						<p>Monster HP scales smoothly to your group's size and the monster's Tier:</p>
+						<div class="formula">
+							Base Health = (CON × HealthMultiplier) + (Tier × 15)
+						</div>
+
+						<div class="table-wrapper">
+							<table class="craft-table">
+								<thead>
+									<tr>
+										<th>Party Size</th>
+										<th>HealthMultiplier</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr><td>1 Player</td><td>×8</td></tr>
+									<tr><td>2 Players</td><td>×9</td></tr>
+									<tr><td>3 Players</td><td>×10</td></tr>
+									<tr><td>4 Players</td><td>×11</td></tr>
+									<tr><td>5 Players</td><td>×12</td></tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h3 class="sub-heading">Example: Palax (CON 6, Tier 1)</h3>
+						<div class="table-wrapper">
+							<table class="craft-table">
+								<thead>
+									<tr>
+										<th>Party</th>
+										<th>Formula</th>
+										<th>Resulting HP</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr><td>1</td><td>(6×8)+15</td><td>63 HP</td></tr>
+									<tr><td>2</td><td>(6×9)+15</td><td>69 HP</td></tr>
+									<tr><td>3</td><td>(6×10)+15</td><td>75 HP</td></tr>
+									<tr><td>4</td><td>(6×11)+15</td><td>81 HP</td></tr>
+									<tr><td>5</td><td>(6×12)+15</td><td>87 HP</td></tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p>This keeps the same monster stat block functional across different group sizes without overhauling numbers. Health is your cleanest tuning dial; stamina or armor can adjust difficulty nuance.</p>
+					</section>
+
+					<!-- STAMINA & ACTION ECONOMY -->
+					<section id="stamina-economy" class="major-section">
+						<h2 class="section-title">🔋 Stamina &amp; Monster Action Economy</h2>
+
+						<p>Stamina tracks a creature's physical reserves — the rhythm of the fight. Each attack, dash, or roar costs stamina, and running dry changes behavior.</p>
+
+						<div class="table-wrapper">
+							<table class="craft-table">
+								<thead>
+									<tr>
+										<th>State</th>
+										<th>GM Portrayal</th>
+										<th>Effect</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Full</td>
+										<td>Ferocious, reckless</td>
+										<td>Acts normally</td>
+									</tr>
+									<tr>
+										<td>Half</td>
+										<td>Hesitant, circling</td>
+										<td>Loses 1 attack option or minor ability</td>
+									</tr>
+									<tr>
+										<td>Low (≤25%)</td>
+										<td>Defensive, frantic</td>
+										<td>Retreat behavior triggers</td>
+									</tr>
+									<tr>
+										<td>Empty</td>
+										<td>Exhausted or enraged</td>
+										<td>Fights desperately or collapses</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p>Monsters don't "count" stamina like players do — you express it cinematically. When stamina runs low, narrate exhaustion, limping, or frantic attacks.</p>
+					</section>
+
+					<!-- THRESHOLDS -->
+					<section id="thresholds" class="major-section">
+						<h2 class="section-title">⚔️ Monster Thresholds &amp; Phases</h2>
+
+						<p>Each monster operates on behavioral thresholds — key points in the fight that shift their AI pattern.</p>
+
+						<h3 class="sub-heading">Typical Threshold Triggers:</h3>
+						<ul>
+							<li><strong>75% HP:</strong> Learns hunters' tactics or uses a new ability.</li>
+							<li><strong>50% HP:</strong> Enrage, terrain change, or elemental burst.</li>
+							<li><strong>25% HP:</strong> Retreat attempt, berserk mode, or desperation action.</li>
+						</ul>
+
+						<p>You can codify these in stat blocks as:</p>
+						<div class="formula">
+							Phase Trigger: HP ≤ 50% → Enter Enraged Phase (gain +1 attack, lose 1 defense action).
+						</div>
+
+						<div class="rule-section">
+							<h3>🧩 Monster Role in Encounter Design</h3>
+							<p>Monsters are encounters and world-building devices:</p>
+							<ul>
+								<li><strong>Behavior = story</strong> (a fleeing beast says more about a biome than a paragraph of lore).</li>
+								<li><strong>Tier = tempo</strong> (low-tier fights teach; high-tier fights test).</li>
+								<li><strong>Thresholds = structure</strong> (use 3-stage pacing: dominance → adaptation → desperation).</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- TURN STRUCTURE & FLOW -->
+					<section id="turn-structure" class="major-section">
+						<h2 class="section-title">⚙️ Monster Turn Structure</h2>
+
+						<blockquote class="quote">
+							"Every monster has a rhythm — a heartbeat in motion. Learn that rhythm, and you can survive it. Ignore it, and it will break you."
+						</blockquote>
+
+						<p>Each monster in Untamed operates on an instinctive loop every round. These steps define how the creature thinks, acts, and recovers in combat — the wild's own action economy.</p>
+
+						<h3 class="sub-heading">🩸 Monster Turn Flow</h3>
+
+						<div class="rule-section">
+							<h4>1. Evaluate (Instinct Phase)</h4>
+							<p>The monster reads the field the way an animal would: through scent, motion, threat, and pain.</p>
+
+							<p><strong>Instinct Priorities (GM prompts):</strong></p>
+							<ul>
+								<li>Closest threat in line-of-sight.</li>
+								<li>Loudest or most visible hunter.</li>
+								<li>Most wounded prey (blood smell or sound).</li>
+								<li>Territorial trigger (protecting nest, eggs, food).</li>
+							</ul>
+
+							<div class="callout">
+								<strong>GM Tip:</strong> Describe this, don't declare it. "The Urmine's head snaps toward the hunter bleeding in the mud — instinct takes over."
+							</div>
+						</div>
+
+						<div class="rule-section">
+							<h4>2. Act (Action Phase)</h4>
+							<p>The monster performs its attacks, techniques, or environmental moves — its heartbeat moment.</p>
+							<ul>
+								<li><strong>Actions per Turn:</strong> Defined by Tier (see Tier Table).</li>
+								<li>Each attack, roar, or special move costs <strong>Stamina</strong>, just like player actions.</li>
+							</ul>
+
+							<div class="callout">
+								<strong>GM Procedure:</strong>
+								<ul>
+									<li>Choose an intent (pressure, reposition, survive).</li>
+									<li>Select moves within Stamina limit.</li>
+									<li>Narrate clear telegraphs — let hunters read what's coming.</li>
+									<li>Spend Stamina accordingly.</li>
+								</ul>
+							</div>
+
+							<p>If the creature runs out of Stamina mid-turn, stop its sequence there — fatigue overrides rage.</p>
+						</div>
+
+						<div class="rule-section">
+							<h4>💢 Exhaustion &amp; Collapse</h4>
+							<p>When a monster's Stamina hits 0, it becomes <strong>Exhausted</strong> for one full round.</p>
+
+							<div class="callout">
+								<strong>GM Cue:</strong> "Its legs buckle, steam rising from its hide — breath wheezes through its chest. The wild itself pauses."
+							</div>
+
+							<p><strong>Recovery:</strong></p>
+							<ul>
+								<li>At the start of its next turn, the monster regains its full Stamina, shakes off Exhaustion, and returns to normal — unless specific traits alter this (e.g. "Lumbering" may recover slower).</li>
+								<li>Fury or Enrage states end unless otherwise stated.</li>
+								<li>HP does not regenerate unless the creature has Regeneration or enters a Recovery Phase.</li>
+							</ul>
+						</div>
+
+						<div class="rule-section">
+							<h4>💤 Voluntary Resting</h4>
+							<p>Sometimes the smartest thing a monster can do… is nothing. When badly winded or strategically repositioning, a monster may choose to <strong>Rest</strong>.</p>
+
+							<p><strong>Rest Action:</strong></p>
+							<ul>
+								<li>Forgoes all attacks or abilities that turn.</li>
+								<li>Regains Max Stamina.</li>
+								<li>May still move up to half speed.</li>
+							</ul>
+
+							<p>Describe this like wary animal behavior, not a pause button: "The Kragal backs away, tail low, foam dripping from its jaw. It's watching — waiting for an opening."</p>
+
+							<div class="callout">
+								<strong>GM Use:</strong> This gives you pacing control. A monster that withdraws and re-enters the fight later feels intelligent and alive, not repetitive.
+							</div>
+						</div>
+
+						<div class="rule-section">
+							<h4>🩸 Retreat &amp; Recovery</h4>
+							<p>When a monster escapes or breaks line-of-sight for at least 1 minute (10 rounds):</p>
+							<ul>
+								<li>Regains full Stamina, and</li>
+								<li>Restores ¼ of its maximum HP (rounded up).</li>
+							</ul>
+
+							<p>Narrate adaptation on return: "When you find the Urmine again, its fur gleams darker — resin hardened into armor. It's learned from your last clash."</p>
+
+							<p>This transforms failed hunts into evolving rivalries — the beast adapts, remembers, and returns.</p>
+						</div>
+					</section>
+
+					<!-- STATES -->
+					<section id="states" class="major-section">
+						<h2 class="section-title">🧱 Monster States</h2>
+
+						<p>Monsters shift between states based on injury, stamina, or triggers. States define tempo, not morality.</p>
+
+						<div class="table-wrapper">
+							<table class="craft-table">
+								<thead>
+									<tr>
+										<th>State</th>
+										<th>Description</th>
+										<th>Typical Trigger</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Normal</td>
+										<td>Baseline behavior — cautious but aggressive.</td>
+										<td>Default</td>
+									</tr>
+									<tr>
+										<td>Enraged</td>
+										<td>Increased aggression, speed, or elemental activity.</td>
+										<td>HP ≤ 50%, nest destroyed, pack killed</td>
+									</tr>
+									<tr>
+										<td>Exhausted</td>
+										<td>Stamina 0; sluggish and vulnerable.</td>
+										<td>Overexertion</td>
+									</tr>
+									<tr>
+										<td>Desperation</td>
+										<td>Final surge or panic before death; often suicidal or catastrophic.</td>
+										<td>HP ≤ 10–15%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p>Not all monsters enrage — some transform, some flee, some adapt their behavior instead. Use the stat block's <strong>Trigger Traits</strong> to determine what makes each creature "snap."</p>
+					</section>
+
+					<!-- ESCALATING RESISTANCE -->
+					<section id="escalating-resistance" class="major-section">
+						<h2 class="section-title">🔁 Escalating Resistance (Status Immunity Logic)</h2>
+
+						<p>Even the wild adapts. Each time a monster is hit with the same crowd control effect, its body or instincts learn to resist it.</p>
+
+						<div class="table-wrapper">
+							<table class="craft-table">
+								<thead>
+									<tr>
+										<th>Attempt</th>
+										<th>Save Modifier</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr><td>1st</td><td>Normal save</td></tr>
+									<tr><td>2nd</td><td>+2 to save</td></tr>
+									<tr><td>3rd</td><td>+4 to save</td></tr>
+									<tr><td>4th</td><td>+6 to save</td></tr>
+									<tr><td>5th</td><td>+8 to save</td></tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p>Use this to avoid stun-lock loops and emphasize adaptation — monsters remember pain.</p>
+					</section>
+
+					<!-- RUNNING MONSTER TURNS SUMMARY -->
+					<section id="running-monsters" class="major-section">
+						<h2 class="section-title">🧭 GM Summary: Running Monster Turns</h2>
+
+						<p>At the table, think of monsters like living metronomes — they breathe, act, and react with rhythm.</p>
+
+						<p>Here's your rapid-fire checklist:</p>
+						<ul>
+							<li><strong>Evaluate:</strong> Who's the threat or target? What instinct fires first?</li>
+							<li><strong>Act:</strong> Execute moves within Stamina; respect terrain logic.</li>
+							<li><strong>Recover:</strong> Regain Stamina or voluntarily rest if overextended.</li>
+							<li><strong>Threshold Check:</strong> Did HP or conditions trigger a new phase? Shift behavior immediately.</li>
+							<li><strong>Describe, Don't Declare:</strong> Every action should look like a choice, not a roll.</li>
+						</ul>
+
+						<blockquote class="quote">
+							"The monster doesn't roll dice — it rolls momentum."
+						</blockquote>
+					</section>
+
+					<!-- SMALL / MINOR MONSTERS -->
+					<section id="small-monsters" class="major-section">
+						<h2 class="section-title">🐾 Small / Minor Monsters</h2>
+
+						<blockquote class="quote">
+							"Not every danger is a boss. Sometimes the wild bites in mouthfuls."
+						</blockquote>
+
+						<p>Small monsters aren't full encounters. They're ecosystem signals, resource nodes, and tempo shifters you can layer around a major hunt.</p>
+
+						<div class="rule-section">
+							<h3>What They're For</h3>
+							<ul>
+								<li><strong>Environmental flavor:</strong> Make sectors feel lived-in (burrows, flocks, chitter-lines).</li>
+								<li><strong>Clues &amp; foreshadowing:</strong> Scorch marks, torn hides, odd spoor → hint a bigger predator.</li>
+								<li><strong>Light pressure:</strong> Harass, distract, or force movement choices without hijacking the scene.</li>
+								<li><strong>Materials:</strong> Minor parts, lures, common reagents; rarely gating gear.</li>
+							</ul>
+						</div>
+
+						<div class="rule-section">
+							<h3>Baseline Numbers (quick-run)</h3>
+							<ul>
+								<li><strong>HP:</strong> 10–20</li>
+								<li><strong>AR:</strong> 5–8</li>
+								<li><strong>Attack:</strong> 1-2</li>
+								<li><strong>Damage:</strong> 1d4–1d6 (type by species)</li>
+								<li><strong>Speed:</strong> 30 ft (burrow/climb/swim varies)</li>
+								<li><strong>Save DCs (if any):</strong> 10–12</li>
+								<li><strong>Proficiency:</strong> Novice (+0) unless a trait says otherwise</li>
+							</ul>
+						</div>
+
+						<div class="rule-section">
+							<h3>Common Traits (pick 1–2)</h3>
+							<ul>
+								<li><strong>Swarm:</strong> Can share spaces; ignores opportunity attacks; takes +1d6 damage from AoE.</li>
+								<li><strong>Pack Nip:</strong> If two+ allies adjacent to the same target, add +1 damage each.</li>
+								<li><strong>Evasive:</strong> Disengage as a Fast move (0 STA for them).</li>
+								<li><strong>Poison Bite:</strong> On hit, CON save DC 12 or Poisoned (your standard).</li>
+								<li><strong>Skitterburst:</strong> When first bloodied, Dash for free (no OA), once.</li>
+								<li><strong>Burrow/Climb/Swim:</strong> Movement mode at normal speed; use terrain.</li>
+							</ul>
+							<p>Keep their kits simple—one hook and one nuisance is plenty.</p>
+						</div>
+
+						<div class="callout">
+							<h3>Running Them Fast (GM procedure)</h3>
+							<p><strong>In a major hunt:</strong></p>
+							<ul>
+								<li>Place them as hazards on initiative 0 or lair beats every other round.</li>
+								<li>They make one simple group attack or force a positioning check (DEX/STR DC 12).</li>
+								<li>Their goal is to divide attention or telegraph changes (stampede before the apex, carrion swarm on a wound).</li>
+							</ul>
+
+							<p><strong>As their own scene:</strong></p>
+							<ul>
+								<li>Use 1–2 waves of 3–6 bodies; end the scene when the party asserts control (terrain, fire, roar, or a few kills).</li>
+							</ul>
+						</div>
+
+						<div class="rule-section">
+							<h3>Group Handling Options</h3>
+
+							<h4 class="card-subhead">A) Minion Rule (cinematic):</h4>
+							<p>Any hit that beats AR drops one minion (no HP). Crits drop two. AoE wipes a cluster.</p>
+
+							<h4 class="card-subhead">B) Mob Pool (tactical-lite):</h4>
+							<p>Bundle 3–5 creatures into 1 stat line with HP = 5 × members.</p>
+							<ul>
+								<li>On mob attack: +4 to hit; damage = 1d4 × members in melee (cap 3 dice).</li>
+								<li>Each 5 HP lost removes one member (reduce damage die).</li>
+							</ul>
+
+							<h4 class="card-subhead">C) Swarm Template (area hazard):</h4>
+							<p>Occupies a 10-ft square; moving through it forces DEX save DC 12 or take 1d4 and gain Bleed 1.</p>
+							<ul>
+								<li>Takes +1d6 from fire, thunder, wide sweeps; halves damage from single-target stabs.</li>
+							</ul>
+						</div>
+
+						<div class="rule-section">
+							<h3>Integration Hooks</h3>
+							<ul>
+								<li><strong>Checks:</strong> Start with Instinct (Sense/Tracking) to notice nests, DEX (Stealth) to skirt them, INT (Resource ID) to harvest safely.</li>
+								<li><strong>DCs:</strong> Trivial 8 (avoid trails), Easy 10 (shoo), Moderate 12 (harvest), Challenging 14 (trap or redirect).</li>
+								<li><strong>Conditions:</strong> Great vectors for Bleed, Poisoned, Dazed (buzz clouds), Grappled (tangle-vines/limbs).</li>
+								<li><strong>Stamina Pressure:</strong> Force small movement taxes (mud crabs, ankle-biters) or reaction burns at awkward times.</li>
+								<li><strong>Loot:</strong> 1–2 common reagents; 10% chance of a rare flavor reagent on crit harvest.</li>
+							</ul>
+						</div>
+
+						<div class="rule-section">
+							<h3>Best Practices</h3>
+							<ul>
+								<li><strong>Don't steal spotlight.</strong> Two rounds max inside a boss fight unless they're the objective.</li>
+								<li><strong>Use to telegraph.</strong> Fleeing birds, burrow collapses, carcass swarms → "apex inbound."</li>
+								<li><strong>Combine with weather.</strong> Fog + burrowers; rain + leeches; heat + stinging wasps.</li>
+								<li><strong>Escalate logically.</strong> Leave nests intact → next time, bigger swarm or a predator attracted to the surge.</li>
+							</ul>
+						</div>
+
+						<div class="rule-section highlight">
+							<h3>Optional Escalation Rule</h3>
+							<p>If hunters repeatedly ignore small-monster sites in a sector, mark a ⚠ Infestation tick. At 3 ticks:</p>
+							<ul>
+								<li>Add a sector event (disease risk, crop blight, predator drawn), or</li>
+								<li>Upgrade the swarm to a Mob or Support for a larger creature in that zone.</li>
+							</ul>
+						</div>
+
+						<div class="rule-section">
+							<h3>Drop-In Stat Snippets</h3>
+
+							<div class="archetype-card">
+								<h3>Rockhares (Skirmishers)</h3>
+								<ul>
+									<li>HP 12, AR 6, Attack +3 (Kick 1d4 bludgeoning)</li>
+									<li>Skitterburst, Evasive</li>
+									<li>On miss by the hunters: they Dash 10 ft as a free move.</li>
+									<li>Harvest: sinew (string), lean meat (meal + Nightwatch Brew synergy).</li>
+								</ul>
+							</div>
+
+							<div class="archetype-card">
+								<h3>Thornback Grubs (Swarm)</h3>
+								<ul>
+									<li>Swarm zone 10 ft; entering or starting turn: DEX save DC 12 or 1d4 piercing + Bleed 1</li>
+									<li>AR 5; takes +1d6 from fire/AoE; halves single-target</li>
+									<li>Harvest: chitin scrap (light plates), caustic sacs (salve/poison base).</li>
+								</ul>
+							</div>
+
+							<div class="archetype-card">
+								<h3>Bog Leeches (Mob Pool)</h3>
+								<ul>
+									<li>5-member Mob: HP 25, AR 5, Attack +4; 1d4 × members necrotic on grappled targets (cap 3d4)</li>
+									<li>On fire damage: all members make CON save DC 12 or lose 2 HP each (sizzle off).</li>
+									<li>Harvest: coagulant gel (buff to First Aid; +1 to staunch Bleed).</li>
+								</ul>
+							</div>
+
+							<div class="archetype-card">
+								<h3>Cliff-Pickers (Beast Birds)</h3>
+								<ul>
+									<li>HP 14, AR 7, Attack +5 (Peck 1d6 piercing)</li>
+									<li>Keen Eye: if any hunter is Prone or Bleeding, gain advantage to attack that target.</li>
+									<li>On part breaks in boss fights, they flock to exposed flesh (narrative pressure).</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="callout">
+							<h3>When to Use (1–2 line prompts)</h3>
+							<ul>
+								<li><strong>Entering a new sector:</strong> "Prove the vibe" — a quick, low-risk creature establishes tone.</li>
+								<li><strong>Tracking lull:</strong> A small-monster scene punctuates time and hints at the apex's path.</li>
+								<li><strong>Mid-boss congestion:</strong> One lair beat of swarm pressure to force movement or reactions.</li>
+								<li><strong>Resolution phase:</strong> Carcasses attract scavengers; a short "harvest under pressure" beat.</li>
+							</ul>
+						</div>
+
+						<p class="closing-line">Small monsters don't make hunts epic; they make them believable. Sprinkle, don't pour.</p>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--forest-dark: #1a2e1a;
+				--forest-green: #2d5016;
+				--moss-green: #4a7c2f;
+				--leaf-green: #6b9d3a;
+				--amber: #d4a257;
+				--earth-brown: #5c4033;
+				--cream: #f5f1e8;
+				--text-light: #e8e4d8;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: var(--forest-dark);
+				color: var(--text-light);
+				line-height: 1.7;
+				min-height: 100vh;
+			}
+
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Navigation */
+			.nav {
+				background: var(--forest-green);
+				border-bottom: 2px solid var(--amber);
+				padding: 1rem 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--amber);
+				text-decoration: none;
+				letter-spacing: 0.2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				color: var(--cream);
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover,
+			.nav-links a.active {
+				color: var(--amber);
+			}
+
+			/* Breadcrumb */
+			.breadcrumb {
+				padding: 2rem 0 1rem;
+			}
+
+			.breadcrumb a {
+				color: var(--leaf-green);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.breadcrumb a:hover {
+				color: var(--amber);
+			}
+
+			/* Page Header */
+			.page-header {
+				padding: 2rem 0;
+				text-align: center;
+				border-bottom: 2px solid var(--amber);
+				margin-bottom: 2rem;
+			}
+
+			.page-header h1 {
+				font-size: 3rem;
+				color: var(--amber);
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+				color: var(--leaf-green);
+				font-style: italic;
+			}
+
+			/* Table of Contents */
+			.toc {
+				background: var(--moss-green);
+				padding: 2rem;
+				border-radius: 12px;
+				border: 2px solid var(--amber);
+				margin-bottom: 3rem;
+			}
+
+			.toc h2 {
+				color: var(--amber);
+				font-size: 1.5rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.toc-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 2rem;
+			}
+
+			.toc-section h3 {
+				color: var(--amber);
+				font-size: 1.1rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.toc ul {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.toc li {
+				margin-bottom: 0.5rem;
+			}
+
+			.toc a {
+				color: var(--cream);
+				text-decoration: none;
+				font-size: 1rem;
+				transition: color 0.3s;
+			}
+
+			.toc a:hover {
+				color: var(--amber);
+			}
+
+			/* Content */
+			.content {
+				padding-bottom: 4rem;
+			}
+
+			/* Major Sections */
+			.major-section {
+				margin-bottom: 4rem;
+				scroll-margin-top: 100px;
+			}
+
+			.section-title {
+				font-size: 2.5rem;
+				color: var(--amber);
+				margin-bottom: 2rem;
+				padding-bottom: 1rem;
+				border-bottom: 3px solid var(--amber);
+			}
+
+			.sub-heading {
+				color: var(--leaf-green);
+				font-size: 1.4rem;
+				margin: 1.5rem 0 1rem;
+			}
+
+			.intro-text {
+				font-size: 1.05rem;
+				margin-bottom: 1rem;
+				color: var(--cream);
+			}
+
+			.closing-line {
+				margin-top: 2rem;
+				font-style: italic;
+				text-align: center;
+				color: var(--amber);
+				font-size: 1.15rem;
+			}
+
+			/* Rule Sections */
+			.rule-section {
+				background: var(--forest-green);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin: 1.5rem 0;
+				border: 2px solid var(--earth-brown);
+				scroll-margin-top: 100px;
+			}
+
+			.rule-section.highlight {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-green) 0%, var(--moss-green) 100%);
+			}
+
+			.rule-section h3 {
+				color: var(--amber);
+				font-size: 1.35rem;
+				margin-bottom: 1rem;
+			}
+
+			.rule-section h4 {
+				color: var(--amber);
+				font-size: 1.2rem;
+				margin: 0.5rem 0 1rem;
+			}
+
+			.rule-section ul,
+			.rule-section ol {
+				margin-left: 1.5rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.rule-section li {
+				margin-bottom: 0.35rem;
+			}
+
+			.rule-section p {
+				margin: 0.5rem 0;
+			}
+
+			/* Archetype + Class Cards */
+			.archetype-card,
+			.class-card {
+				background: var(--forest-dark);
+				padding: 1.5rem 1.75rem;
+				border-radius: 10px;
+				border: 2px solid var(--moss-green);
+				margin: 1.25rem 0;
+				scroll-margin-top: 100px;
+				transition: all 0.3s ease;
+			}
+
+			.archetype-card:hover,
+			.class-card:hover {
+				border-color: var(--amber);
+				transform: translateY(-2px);
+			}
+
+			.archetype-card h3,
+			.class-card h3 {
+				color: var(--amber);
+				font-size: 1.35rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.archetype-card p,
+			.class-card p {
+				margin: 0.4rem 0;
+			}
+
+			.archetype-card ul,
+			.class-card ul {
+				margin-left: 1.5rem;
+				margin-top: 0.5rem;
+			}
+
+			.archetype-card li,
+			.class-card li {
+				margin-bottom: 0.25rem;
+			}
+
+			.class-card.apex {
+				border-color: var(--amber);
+				background: linear-gradient(135deg, var(--forest-dark) 0%, #2a1a0a 100%);
+			}
+
+			.card-subhead {
+				color: var(--leaf-green);
+				font-size: 1.1rem;
+				margin: 1rem 0 0.5rem;
+			}
+
+			.label-line {
+				color: var(--leaf-green);
+				font-weight: 600;
+			}
+
+			/* Blockquote / Quote */
+			.quote {
+				background: var(--forest-dark);
+				padding: 1.5rem 2rem;
+				border-left: 4px solid var(--amber);
+				border-radius: 6px;
+				font-style: italic;
+				color: var(--cream);
+				margin: 1.5rem 0;
+				font-size: 1.1rem;
+			}
+
+			/* Callout */
+			.callout {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid var(--amber);
+				margin: 1.5rem 0;
+			}
+
+			.callout h3 {
+				color: var(--amber);
+				font-size: 1.2rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.callout ul {
+				margin-left: 1.5rem;
+				margin-top: 0.5rem;
+			}
+
+			.callout li {
+				margin-bottom: 0.25rem;
+			}
+
+			.callout p {
+				margin: 0.5rem 0;
+			}
+
+			/* Formula */
+			.formula {
+				background: var(--forest-dark);
+				padding: 1.5rem;
+				text-align: center;
+				font-family: 'Courier New', monospace;
+				font-size: 1.15rem;
+				border-radius: 8px;
+				margin: 1rem 0;
+				border: 2px solid var(--amber);
+				color: var(--amber);
+			}
+
+			/* Table wrapper */
+			.table-wrapper {
+				overflow-x: auto;
+				margin: 1.5rem 0;
+				border-radius: 8px;
+			}
+
+			.craft-table {
+				width: 100%;
+				border-collapse: collapse;
+				background: var(--forest-dark);
+				border-radius: 8px;
+				overflow: hidden;
+				min-width: 480px;
+			}
+
+			.craft-table th,
+			.craft-table td {
+				padding: 1rem;
+				text-align: left;
+				border-bottom: 1px solid var(--earth-brown);
+				vertical-align: top;
+			}
+
+			.craft-table th {
+				background: var(--moss-green);
+				color: var(--amber);
+				font-weight: 600;
+			}
+
+			.craft-table tr:last-child td {
+				border-bottom: none;
+			}
+
+			.craft-table tr:hover {
+				background: var(--forest-green);
+			}
+
+			/* Note */
+			.note {
+				font-style: italic;
+				color: var(--leaf-green);
+				font-size: 0.95rem;
+				margin: 0.75rem 0;
+			}
+
+			/* Decision List */
+			.decision-list {
+				margin-left: 1.5rem;
+			}
+
+			.decision-list li {
+				margin-bottom: 0.75rem;
+			}
+
+			/* Lists inside content */
+			.content > section > p {
+				margin-bottom: 1rem;
+			}
+
+			.content > section > ul,
+			.content > section > ol {
+				margin-left: 1.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.content > section > ul li,
+			.content > section > ol li {
+				margin-bottom: 0.4rem;
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav .container {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.nav-links {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.page-header h1 {
+					font-size: 2rem;
+				}
+
+				.section-title {
+					font-size: 1.75rem;
+				}
+
+				.toc {
+					padding: 1.5rem;
+				}
+
+				.toc-grid {
+					grid-template-columns: 1fr;
+					gap: 1.5rem;
+				}
+
+				.archetype-card,
+				.class-card {
+					padding: 1.25rem;
+				}
+
+				.formula {
+					font-size: 0.95rem;
+					padding: 1rem;
+				}
+			}
+		</style>
+	</body>
+</html>
