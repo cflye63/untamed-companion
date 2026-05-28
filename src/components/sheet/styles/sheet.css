@@ -152,3 +152,17 @@
 .pill.on { background: var(--moss-green); border-color: var(--amber); color: var(--amber); }
 .warning { color: var(--hp-red); font-weight: 700; }
 .last-damage { color: var(--amber); margin-top: 6px; }
+
+.spec-card, .talent-card { background: var(--forest-dark); border: 1px solid var(--moss-green); border-radius: 6px; padding: 10px; margin-bottom: 8px; }
+.spec-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.spec-icon { font-size: 1.2rem; }
+.rank-checks { display: flex; flex-direction: column; gap: 6px; margin-top: 6px; }
+.rank-checks label { display: flex; gap: 8px; align-items: flex-start; font-size: 0.85rem; }
+.rank-label { color: var(--amber); font-weight: 700; }
+.talent-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.talent-card { display: flex; flex-direction: column; gap: 4px; }
+.talent-picker summary { display: inline-block; margin-bottom: 8px; }
+.talent-group { margin-bottom: 10px; }
+.talent-group h5 { color: var(--amber); margin-bottom: 4px; }
+.talent-option { display: block; width: 100%; background: var(--forest-green); border: 1px solid var(--moss-green); color: var(--text-light); padding: 6px 8px; border-radius: 4px; text-align: left; cursor: pointer; margin-bottom: 4px; font-size: 0.85rem; }
+.talent-option:hover { background: var(--moss-green); }
