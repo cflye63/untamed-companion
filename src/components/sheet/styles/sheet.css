@@ -180,3 +180,11 @@
 .recipe-row, .part-row { display: flex; gap: 8px; align-items: center; padding: 4px 8px; background: var(--forest-dark); border-radius: 4px; font-size: 0.85rem; }
 .part-add { display: flex; gap: 6px; margin-bottom: 8px; }
 .part-add .input { flex: 1; }
+
+.bio-text { width: 100%; min-height: 80px; resize: vertical; font-family: inherit; }
+.journal-entry { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.journal { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.journal li { background: var(--forest-dark); border: 1px solid var(--moss-green); border-radius: 4px; padding: 8px; position: relative; }
+.journal time { color: var(--amber); font-size: 0.75rem; }
+.journal p { margin: 4px 0 0; }
+.journal .btn-danger { position: absolute; top: 6px; right: 6px; }
