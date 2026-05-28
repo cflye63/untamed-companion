@@ -137,3 +137,18 @@
 .skill-name { color: var(--cream); font-size: 0.85rem; }
 .skill-bonus { color: var(--amber); font-weight: 700; min-width: 28px; text-align: right; }
 @media (max-width: 768px) { .stat-grid { grid-template-columns: repeat(3, 1fr); } .skills-list { grid-template-columns: 1fr; } }
+
+.weapon-card { background: var(--forest-dark); border: 1px solid var(--moss-green); border-radius: 6px; padding: 10px; margin-bottom: 8px; }
+.weapon-head { display: flex; gap: 10px; align-items: center; }
+.badge { background: var(--amber); color: var(--forest-dark); font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+.weapon-body { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 6px; }
+.weapon-rolls { display: flex; gap: 8px; }
+.techniques summary { cursor: pointer; color: var(--leaf-green); font-size: 0.85rem; }
+.techniques ul { padding-left: 20px; margin-top: 4px; }
+.defense-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.defense-card { background: var(--forest-dark); border: 1px solid var(--moss-green); border-radius: 6px; padding: 10px; }
+.ae-row { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.pill { background: var(--forest-dark); border: 1px solid var(--moss-green); color: var(--text-light); padding: 6px 12px; border-radius: 16px; cursor: pointer; font-size: 0.85rem; }
+.pill.on { background: var(--moss-green); border-color: var(--amber); color: var(--amber); }
+.warning { color: var(--hp-red); font-weight: 700; }
+.last-damage { color: var(--amber); margin-top: 6px; }
