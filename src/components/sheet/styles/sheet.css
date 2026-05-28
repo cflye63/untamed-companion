@@ -81,3 +81,21 @@
   border-radius: 4px;
   font-size: 0.9rem;
 }
+
+.vitals-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.v-name { color: var(--amber); font-weight: 700; font-size: 1.2rem; letter-spacing: 0.05em; }
+.v-sub { color: var(--leaf-green); font-style: italic; font-size: 0.85rem; }
+.v-hr { background: var(--forest-dark); border: 1px solid var(--moss-green); padding: 4px 10px; border-radius: 4px; color: var(--amber); font-weight: 700; }
+.vitals-grid { display: grid; grid-template-columns: 2fr 2fr 1fr 1fr; gap: 10px; margin: 10px 0 8px; }
+.v-tracker, .v-stat-mini { background: var(--forest-dark); border: 1px solid var(--moss-green); border-radius: 5px; padding: 6px 8px; }
+.v-stat-mini { text-align: center; }
+.v-label { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--amber); text-transform: uppercase; }
+.v-bar { background: #0d1a0d; height: 7px; border-radius: 4px; overflow: hidden; margin-top: 4px; }
+.v-bar-fill { height: 100%; transition: width 0.2s; }
+.v-bar-fill.hp { background: var(--hp-red); }
+.v-bar-fill.sta { background: var(--leaf-green); }
+.v-stat-mini-label { font-size: 0.65rem; color: var(--amber); }
+.v-stat-mini-value { font-size: 1.2rem; font-weight: 700; color: var(--cream); }
+.vitals-row2 { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; border-top: 1px solid var(--moss-green); padding-top: 8px; }
+.qref { display: flex; gap: 8px; align-items: center; font-size: 0.8rem; color: var(--leaf-green); }
+.step { background: transparent; border: 1px solid var(--moss-green); color: var(--cream); width: 20px; height: 20px; border-radius: 3px; cursor: pointer; }
