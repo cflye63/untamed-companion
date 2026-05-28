@@ -175,3 +175,8 @@
 .slot.filled .input { flex: 1; }
 .tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .tool-row { display: flex; gap: 6px; align-items: baseline; font-size: 0.85rem; padding: 4px; }
+
+.recipe-list, .part-list { display: flex; flex-direction: column; gap: 4px; }
+.recipe-row, .part-row { display: flex; gap: 8px; align-items: center; padding: 4px 8px; background: var(--forest-dark); border-radius: 4px; font-size: 0.85rem; }
+.part-add { display: flex; gap: 6px; margin-bottom: 8px; }
+.part-add .input { flex: 1; }
