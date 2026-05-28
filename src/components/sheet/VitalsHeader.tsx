@@ -1,7 +1,10 @@
+import { useState } from 'preact/hooks';
 import type { Character } from '../../types/character';
 import { getRace } from '../../data/races';
 import { getBackground } from '../../data/backgrounds';
 import { useDerived } from './hooks/useDerived';
+import { CONDITIONS } from '../../data/conditions';
+import { ConditionChip } from './ConditionChip';
 
 type Props = {
   character: Character;
@@ -97,6 +100,40 @@ function MiniStat(props: { label: string; value: number }) {
 }
 
 function ConditionStrip({ character, onUpdate }: { character: Character; onUpdate: Props['onUpdateLive'] }) {
-  // Filled in Task 4.3
-  return <div class="conds" />;
+  const [adding, setAdding] = useState(false);
+
+  const remove = (id: string) => onUpdate(c => ({
+    ...c,
+    liveState: {
+      ...c.liveState,
+      conditions: c.liveState.conditions.filter(x => x.conditionId !== id),
+    },
+  }));
+  const add = (id: string) => {
+    onUpdate(c => ({
+      ...c,
+      liveState: {
+        ...c.liveState,
+        conditions: [...c.liveState.conditions, { conditionId: id }],
+      },
+    }));
+    setAdding(false);
+  };
+
+  return (
+    <div class="conds">
+      {character.liveState.conditions.map(c => (
+        <ConditionChip key={c.conditionId} conditionId={c.conditionId} onRemove={() => remove(c.conditionId)} />
+      ))}
+      {adding ? (
+        <select class="input" onChange={(e: any) => add(e.target.value)} autoFocus>
+          <option value="">— pick a condition —</option>
+          {CONDITIONS.filter(c => !character.liveState.conditions.some(lc => lc.conditionId === c.id))
+            .map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+        </select>
+      ) : (
+        <button class="cond cond-add" onClick={() => setAdding(true)}>+ add</button>
+      )}
+    </div>
+  );
 }

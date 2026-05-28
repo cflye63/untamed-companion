@@ -99,3 +99,12 @@
 .vitals-row2 { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; border-top: 1px solid var(--moss-green); padding-top: 8px; }
 .qref { display: flex; gap: 8px; align-items: center; font-size: 0.8rem; color: var(--leaf-green); }
 .step { background: transparent; border: 1px solid var(--moss-green); color: var(--cream); width: 20px; height: 20px; border-radius: 3px; cursor: pointer; }
+
+.conds { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; align-items: center; }
+.cond { background: var(--forest-dark); border: 1px solid var(--hp-red); color: var(--cream); padding: 3px 8px; border-radius: 12px; font-size: 0.75rem; display: inline-flex; align-items: center; gap: 4px; }
+.cond.cond-elemental { border-color: var(--amber); }
+.cond.cond-positional { border-color: var(--leaf-green); }
+.cond.cond-control { border-color: var(--chill-blue); }
+.cond.cond-resource { border-color: var(--earth-brown); }
+.cond-remove { background: transparent; border: 0; color: inherit; cursor: pointer; padding: 0 2px; font-size: 0.9rem; }
+.cond-add { border-style: dashed; border-color: var(--moss-green); cursor: pointer; opacity: 0.7; }
