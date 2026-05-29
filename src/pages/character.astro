@@ -27,6 +27,11 @@
 					<a href="/">← Back to Home</a>
 				</div>
 
+				<div class="roster-cta">
+					<a class="btn-link" href="/character/roster">📋 Your Hunters (Roster)</a>
+					<a class="btn-link" href="/character/sheet">+ Open Character Sheet</a>
+				</div>
+
 				<header class="page-header">
 					<h1>Character Creation</h1>
 					<p class="subtitle">Build your hunter in 5 steps</p>
@@ -999,6 +1004,11 @@
 			.nav-links a:hover {
 				color: var(--amber);
 			}
+
+			/* Roster CTA */
+			.roster-cta { display: flex; gap: 12px; margin: 1rem 0 1.5rem; }
+			.btn-link { background: var(--moss-green, #4a7c2f); border: 1px solid var(--amber, #d4a257); color: var(--cream, #f5f1e8); padding: 8px 16px; border-radius: 4px; text-decoration: none; }
+			.btn-link:hover { background: var(--leaf-green, #6b9d3a); }
 
 			/* Breadcrumb */
 			.breadcrumb {
