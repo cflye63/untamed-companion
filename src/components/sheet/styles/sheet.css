@@ -198,3 +198,14 @@
 .wizard-step.active .step-num { background: var(--amber); color: var(--forest-dark); }
 .wizard-body { min-height: 300px; margin-bottom: 16px; }
 .wizard-nav { display: flex; gap: 8px; justify-content: flex-end; }
+
+.wizard-step-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+.wizard-side { background: var(--forest-dark); border: 1px solid var(--moss-green); border-radius: 6px; padding: 12px; }
+.race-cards, .bg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+.race-pick { background: var(--forest-dark); border: 2px solid var(--moss-green); color: var(--text-light); padding: 10px; border-radius: 6px; cursor: pointer; text-align: left; }
+.race-pick:hover { border-color: var(--leaf-green); }
+.race-pick.selected { border-color: var(--amber); background: var(--moss-green); }
+.race-pick strong { color: var(--amber); display: block; margin-bottom: 4px; }
+.race-pick.small { padding: 6px 10px; }
+.lineage-picker { margin-top: 12px; }
+.selected-bg { margin-top: 10px; color: var(--leaf-green); font-style: italic; }
