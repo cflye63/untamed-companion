@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - paragraph [ref=e15]:
+      - text: Character not found.
+      - link "Back to Roster" [ref=e16] [cursor=pointer]:
+        - /url: /character/roster
+  - generic [ref=e19]:
+    - button "Menu" [ref=e20]:
+      - img [ref=e22]
+      - generic: Menu
+    - button "Inspect" [ref=e26]:
+      - img [ref=e28]
+      - generic: Inspect
+    - button "Audit" [ref=e30]:
+      - img [ref=e32]
+      - generic: Audit
+    - button "Settings" [ref=e35]:
+      - img [ref=e37]
+      - generic: Settings

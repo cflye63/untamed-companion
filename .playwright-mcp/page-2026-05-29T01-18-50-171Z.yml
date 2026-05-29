@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]: 1Identity
+        - generic [ref=e56]: 2Race
+        - generic [ref=e57]: 3Background
+        - generic [ref=e58]: 4Stats
+        - generic [ref=e59]: 5Weapon
+        - generic [ref=e60]: 6Review
+      - generic [ref=e226]:
+        - heading "Step 5 — Starting Weapon" [level=3] [ref=e227]
+        - paragraph [ref=e228]: Choose one Tier 1 weapon — you start Trained (+2) with it.
+        - generic [ref=e229]:
+          - 'button "Greatsword (T1) Heavy two-handed weapon built for raw strength and devastating attacks. Core mechanic: Momentum (max 3) — gained by landing hits, lost on miss/dodge/target switch. At Momentum 3 gain +3 flat damage, expanded crit 18–20, and +1 power die on all attacks. Best: —" [ref=e230]':
+            - strong [ref=e231]:
+              - text: Greatsword
+              - generic [ref=e232]: (T1)
+            - paragraph [ref=e233]: "Heavy two-handed weapon built for raw strength and devastating attacks. Core mechanic: Momentum (max 3) — gained by landing hits, lost on miss/dodge/target switch. At Momentum 3 gain +3 flat damage, expanded crit 18–20, and +1 power die on all attacks."
+            - paragraph [ref=e234]: "Best: —"
+          - 'button "Bow (T1) Versatile ranged weapon rewarding precision and positioning. Core mechanic: Predator''s Focus (max 3) — gained by not moving on your turn, lost by moving >5 ft, being Knocked Prone/Stunned, or Dashing. Each Focus adds +1 flat damage to the next Bow attack (consumed on hit). Comes in Bone Bow (offense: Piercing/Barbed Arrows) or Steel Bow (support: Signal/Binding Arrows). Best: —" [ref=e235]':
+            - strong [ref=e236]:
+              - text: Bow
+              - generic [ref=e237]: (T1)
+            - paragraph [ref=e238]: "Versatile ranged weapon rewarding precision and positioning. Core mechanic: Predator's Focus (max 3) — gained by not moving on your turn, lost by moving >5 ft, being Knocked Prone/Stunned, or Dashing. Each Focus adds +1 flat damage to the next Bow attack (consumed on hit). Comes in Bone Bow (offense: Piercing/Barbed Arrows) or Steel Bow (support: Signal/Binding Arrows)."
+            - paragraph [ref=e239]: "Best: —"
+          - 'button "Greatshield (T1) Defensive tank weapon that transforms the hunter into a living bastion. Core mechanic: Resolve (max 3) — gained by successfully Blocking or succeeding saves vs knockdown/stun; lost if Knocked Prone, Staggered, moved against will, or moving >10 ft. Spend Resolve once per turn: recover 1d10 HP per Resolve, regain 1 Stamina per Resolve, or reroll one failed saving throw. Grants +1 extra Reaction/round usable only for Block. Best: —" [ref=e240]':
+            - strong [ref=e241]:
+              - text: Greatshield
+              - generic [ref=e242]: (T1)
+            - paragraph [ref=e243]: "Defensive tank weapon that transforms the hunter into a living bastion. Core mechanic: Resolve (max 3) — gained by successfully Blocking or succeeding saves vs knockdown/stun; lost if Knocked Prone, Staggered, moved against will, or moving >10 ft. Spend Resolve once per turn: recover 1d10 HP per Resolve, regain 1 Stamina per Resolve, or reroll one failed saving throw. Grants +1 extra Reaction/round usable only for Block."
+            - paragraph [ref=e244]: "Best: —"
+          - 'button "Wand (T1) Tactical elemental weapon built around Magical Clusters — elemental nodes attached to enemies or terrain. Place cluster (Action, 1 STA): DEX save vs Wand DC to attach; max 3 active (T3: 4), per-target cap 3. Detonate (Fast Action, 1 STA): each cluster deals per-tier Cluster Bomb damage to host and creatures within 10 ft. Stacking: +1 damage die per additional cluster on same host. Damage type (Fire/Ice/Lightning/Earth/Air/Water/Piercing/Blunt/Slash/Sonic/Poison/Paralysis) determines Hex Charge passive effect. Best: —" [ref=e245]':
+            - strong [ref=e246]:
+              - text: Wand
+              - generic [ref=e247]: (T1)
+            - paragraph [ref=e248]: "Tactical elemental weapon built around Magical Clusters — elemental nodes attached to enemies or terrain. Place cluster (Action, 1 STA): DEX save vs Wand DC to attach; max 3 active (T3: 4), per-target cap 3. Detonate (Fast Action, 1 STA): each cluster deals per-tier Cluster Bomb damage to host and creatures within 10 ft. Stacking: +1 damage die per additional cluster on same host. Damage type (Fire/Ice/Lightning/Earth/Air/Water/Piercing/Blunt/Slash/Sonic/Poison/Paralysis) determines Hex Charge passive effect."
+            - paragraph [ref=e249]: "Best: —"
+          - 'button "Hunting Flute (T1) Ranged support weapon that inspires allies and disrupts monsters through melodies. Basic Attack — Sonic Note: choose up to 2 targets (T3: 3; T5: 4) in 30-ft aura; attack vs AR for tier dice + CHA. Core mechanic: Ballads — magical melodies active as long as concentration is maintained. Play (Fast Action, 1 STA start, 1 STA/turn upkeep). One active Ballad at a time. Lose Concentration on failed CHA check vs damage. Comes in Bone Flute (aggressive: Blood Rhythm, Predator Pulse) or Song Flute (defensive: Soothing Tones, Earthen Refrain). Best: —" [ref=e250]':
+            - strong [ref=e251]:
+              - text: Hunting Flute
+              - generic [ref=e252]: (T1)
+            - paragraph [ref=e253]: "Ranged support weapon that inspires allies and disrupts monsters through melodies. Basic Attack — Sonic Note: choose up to 2 targets (T3: 3; T5: 4) in 30-ft aura; attack vs AR for tier dice + CHA. Core mechanic: Ballads — magical melodies active as long as concentration is maintained. Play (Fast Action, 1 STA start, 1 STA/turn upkeep). One active Ballad at a time. Lose Concentration on failed CHA check vs damage. Comes in Bone Flute (aggressive: Blood Rhythm, Predator Pulse) or Song Flute (defensive: Soothing Tones, Earthen Refrain)."
+            - paragraph [ref=e254]: "Best: —"
+          - 'button "Whip (T1) Precision control weapon built around Restraint. Core mechanic: Restraint — after hitting, spend Fast Action (1 STA) to attempt Restraint; target makes DEX save vs Whip DC. On fail: Restrained (Speed 0, cannot Dodge). Maintain by paying 1 STA/turn. Backlash: if initial save succeeds, you take 1d4 damage. Note: uses INS for both attack and damage rolls. Best: —" [ref=e255]':
+            - strong [ref=e256]:
+              - text: Whip
+              - generic [ref=e257]: (T1)
+            - paragraph [ref=e258]: "Precision control weapon built around Restraint. Core mechanic: Restraint — after hitting, spend Fast Action (1 STA) to attempt Restraint; target makes DEX save vs Whip DC. On fail: Restrained (Speed 0, cannot Dodge). Maintain by paying 1 STA/turn. Backlash: if initial save succeeds, you take 1d4 damage. Note: uses INS for both attack and damage rolls."
+            - paragraph [ref=e259]: "Best: —"
+          - 'button "Spear and Shield (T1) Versatile hybrid weapon with Stance Switch mechanic. Spear attacks use DEX; Shield DCs use CON. Sentinel Stance: +1 AR, advantage on STR/DEX saves vs movement, but Speed halved. Assault Stance: +5 ft Speed, once per turn make a Fast Action spear jab (1 STA) in addition to normal Action. Recall thrown spear as Fast Action (no STA cost). Note: two distinct stats in use (DEX for attacks, CON for shield DCs); DEX chosen as primaryStat/damageStat as it drives most damage output. Best: —" [ref=e260]':
+            - strong [ref=e261]:
+              - text: Spear and Shield
+              - generic [ref=e262]: (T1)
+            - paragraph [ref=e263]: "Versatile hybrid weapon with Stance Switch mechanic. Spear attacks use DEX; Shield DCs use CON. Sentinel Stance: +1 AR, advantage on STR/DEX saves vs movement, but Speed halved. Assault Stance: +5 ft Speed, once per turn make a Fast Action spear jab (1 STA) in addition to normal Action. Recall thrown spear as Fast Action (no STA cost). Note: two distinct stats in use (DEX for attacks, CON for shield DCs); DEX chosen as primaryStat/damageStat as it drives most damage output."
+            - paragraph [ref=e264]: "Best: —"
+          - 'button "Claws (T1) High-mobility close-combat weapons for relentless pressure and combo chaining. Core mechanic: Predatory Chain — after any Claw hit, make one Follow-up Swipe as Fast Action (1 STA); if that hits, make another as Reaction (1 STA). Chain ends on miss, Dodge, Parry, or after 2 follow-ups. Max 2 follow-ups per chain. Best: —" [ref=e265]':
+            - strong [ref=e266]:
+              - text: Claws
+              - generic [ref=e267]: (T1)
+            - paragraph [ref=e268]: "High-mobility close-combat weapons for relentless pressure and combo chaining. Core mechanic: Predatory Chain — after any Claw hit, make one Follow-up Swipe as Fast Action (1 STA); if that hits, make another as Reaction (1 STA). Chain ends on miss, Dodge, Parry, or after 2 follow-ups. Max 2 follow-ups per chain."
+            - paragraph [ref=e269]: "Best: —"
+          - 'button "Boomerang (T1) Finesse thrown weapon built around the Wayback Catch loop. Core mechanic: after a hit, roll d20 + INS + prof vs DC 13 — success: boomerang returns and you may re-throw as Fast Action (1 STA). Moving ≥10 ft since last throw: return throw has advantage and +1 damage die. Up to 2 Wayback catches per turn. Double-catch: second return costs 0 STA and deals +1 Power Die on hit. Best: —" [ref=e270]':
+            - strong [ref=e271]:
+              - text: Boomerang
+              - generic [ref=e272]: (T1)
+            - paragraph [ref=e273]: "Finesse thrown weapon built around the Wayback Catch loop. Core mechanic: after a hit, roll d20 + INS + prof vs DC 13 — success: boomerang returns and you may re-throw as Fast Action (1 STA). Moving ≥10 ft since last throw: return throw has advantage and +1 damage die. Up to 2 Wayback catches per turn. Double-catch: second return costs 0 STA and deals +1 Power Die on hit."
+            - paragraph [ref=e274]: "Best: —"
+          - 'button "Hunting Arbalest (T1) Heavy mechanical crossbow built around stationary Tension generation. Core mechanic — Tension: Brace (no STA, spend all remaining movement) or Load (Fast Action or Action, 1 STA) each grant +1 Tension. Fire (Action) consumes all Tension. Tension bonuses apply only while Braced: T1 = +1 attack roll; T2 = +2 attack roll and +1 Power Die. Tension resets on movement, forced movement, Prone, Staggered, or Stunned. Must Load after each shot. Special bolt cartridges (2 uses each per hunt): Bone Arbalest — Piercing Shot (+1 attack), Sharp Shot (Bleeding on hit). Iron Arbalest — Concussive Bolt (Staggered on hit), Scatter Shot (15-ft cone, DEX save). Best: —" [ref=e275]':
+            - strong [ref=e276]:
+              - text: Hunting Arbalest
+              - generic [ref=e277]: (T1)
+            - paragraph [ref=e278]: "Heavy mechanical crossbow built around stationary Tension generation. Core mechanic — Tension: Brace (no STA, spend all remaining movement) or Load (Fast Action or Action, 1 STA) each grant +1 Tension. Fire (Action) consumes all Tension. Tension bonuses apply only while Braced: T1 = +1 attack roll; T2 = +2 attack roll and +1 Power Die. Tension resets on movement, forced movement, Prone, Staggered, or Stunned. Must Load after each shot. Special bolt cartridges (2 uses each per hunt): Bone Arbalest — Piercing Shot (+1 attack), Sharp Shot (Bleeding on hit). Iron Arbalest — Concussive Bolt (Staggered on hit), Scatter Shot (15-ft cone, DEX save)."
+            - paragraph [ref=e279]: "Best: —"
+          - 'button "Hammer (T1) Force multiplier weapon that builds Sunder on targets (max 3 per target). Each Hammer hit: +1 Sunder. Sunder grants: +X to your Hammer attack rolls vs that target (X = Sunder count). Shove rider: after any hit vs target with Sunder ≥1, may attempt Shove (STR save or pushed 5 ft, once per turn). Sunder 3: target makes CON/STR saves vs Hammer riders at disadvantage. No Parry. No Guard. Best: —" [ref=e280]':
+            - strong [ref=e281]:
+              - text: Hammer
+              - generic [ref=e282]: (T1)
+            - paragraph [ref=e283]: "Force multiplier weapon that builds Sunder on targets (max 3 per target). Each Hammer hit: +1 Sunder. Sunder grants: +X to your Hammer attack rolls vs that target (X = Sunder count). Shove rider: after any hit vs target with Sunder ≥1, may attempt Shove (STR save or pushed 5 ft, once per turn). Sunder 3: target makes CON/STR saves vs Hammer riders at disadvantage. No Parry. No Guard."
+            - paragraph [ref=e284]: "Best: —"
+          - 'button "Conduit (T1) Battlefield control weapon that projects an Aspect-infused Field. Core mechanic — Channel (Action): enter Channeling state, choose an Aspect. While Channeling: cannot move >5 ft from starting position, cannot Sprint, forced movement breaks Channel; take ≥20% max HP in single hit → CON save DC 12 or Channel breaks; lose 1 STA at end of each turn. Field: 15 ft radius from you. Field Projection (Fast Action, 1 STA): extend Field up to 40 ft away until start of next turn. Aspects (2 universal always present: Wild Pulse, Grounded): Earth/Wind/Water/Storm/Flame/Resonance/Ice available. No Parry. No Guard. Best: —" [ref=e285]':
+            - strong [ref=e286]:
+              - text: Conduit
+              - generic [ref=e287]: (T1)
+            - paragraph [ref=e288]: "Battlefield control weapon that projects an Aspect-infused Field. Core mechanic — Channel (Action): enter Channeling state, choose an Aspect. While Channeling: cannot move >5 ft from starting position, cannot Sprint, forced movement breaks Channel; take ≥20% max HP in single hit → CON save DC 12 or Channel breaks; lose 1 STA at end of each turn. Field: 15 ft radius from you. Field Projection (Fast Action, 1 STA): extend Field up to 40 ft away until start of next turn. Aspects (2 universal always present: Wild Pulse, Grounded): Earth/Wind/Water/Storm/Flame/Resonance/Ice available. No Parry. No Guard."
+            - paragraph [ref=e289]: "Best: —"
+      - generic [ref=e69]:
+        - button "Cancel" [ref=e70]
+        - button "Back" [ref=e71]
+        - button "Next" [disabled] [ref=e72]
+  - generic [ref=e32]:
+    - button "Menu" [ref=e33]:
+      - img [ref=e35]
+      - generic: Menu
+    - button "Inspect" [ref=e39]:
+      - img [ref=e41]
+      - generic: Inspect
+    - button "Audit" [ref=e43]:
+      - img [ref=e45]
+      - generic: Audit
+    - button "Settings" [ref=e48]:
+      - img [ref=e50]
+      - generic: Settings

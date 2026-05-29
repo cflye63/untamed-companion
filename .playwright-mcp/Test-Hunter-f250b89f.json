@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "f250b89f-a131-41d7-9418-e035c9aeff94",
+  "createdAt": "2026-05-29T01:16:00.222Z",
+  "updatedAt": "2026-05-29T01:19:03.839Z",
+  "name": "Test Hunter",
+  "raceId": "dragonian",
+  "backgroundIds": [
+    "scholar"
+  ],
+  "hunterRank": 0,
+  "cxp": 0,
+  "baseStats": {
+    "STR": 3,
+    "DEX": 3,
+    "CON": 3,
+    "INT": 3,
+    "INS": 3,
+    "CHA": 3
+  },
+  "skillProficiencies": {},
+  "weapons": [
+    {
+      "weaponId": "wand",
+      "huntsCompleted": 5,
+      "isPrimary": true
+    }
+  ],
+  "primaryWeaponId": "wand",
+  "specializations": [],
+  "talentIds": [],
+  "armor": null,
+  "gearSlots": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "packSlots": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "consumables": [],
+  "tools": [],
+  "knownRecipes": [],
+  "monsterParts": [],
+  "liveState": {
+    "currentHp": 24,
+    "currentStamina": 7,
+    "conditions": [],
+    "actionEconomy": {
+      "actionUsed": false,
+      "fastActionUsed": false,
+      "reactionUsed": false,
+      "breathingTurn": false
+    },
+    "exhausted": false
+  },
+  "bio": {
+    "journal": []
+  }
+}

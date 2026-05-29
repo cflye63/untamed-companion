@@ -1,0 +1,81 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]: 1Identity
+        - generic [ref=e56]: 2Race
+        - generic [ref=e57]: 3Background
+        - generic [ref=e58]: 4Stats
+        - generic [ref=e59]: 5Weapon
+        - generic [ref=e60]: 6Review
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - heading "Step 2 — Race & Lineage" [level=3] [ref=e75]
+          - generic [ref=e76]:
+            - button "Humans The most abundant race in Oris Magna, known for their charm, adaptability, and resilience, with civilizations shaping the culture, politics, and traditions across all of Meridia." [ref=e77]:
+              - strong [ref=e78]: Humans
+              - paragraph [ref=e79]: The most abundant race in Oris Magna, known for their charm, adaptability, and resilience, with civilizations shaping the culture, politics, and traditions across all of Meridia.
+            - button "Dragonians Ancient descendants of dragons with lifespans beyond 500 years, bearing reptilian features and the ability to channel elemental power through their draconic lineage." [active] [ref=e80]:
+              - strong [ref=e81]: Dragonians
+              - paragraph [ref=e82]: Ancient descendants of dragons with lifespans beyond 500 years, bearing reptilian features and the ability to channel elemental power through their draconic lineage.
+            - button "Trolians The most primal of the races, believed to be direct descendants of ancient beasts, with stout frames, immense strength, and animalistic features resembling the untamed forces of nature." [ref=e83]:
+              - strong [ref=e84]: Trolians
+              - paragraph [ref=e85]: The most primal of the races, believed to be direct descendants of ancient beasts, with stout frames, immense strength, and animalistic features resembling the untamed forces of nature.
+            - button "Thalorim Amphibious humanoids tracing their ancestry to the ancient underwater metropolis of Thal'Meruun, reshaped by rivers, tides, and the slow patience of water." [ref=e86]:
+              - strong [ref=e87]: Thalorim
+              - paragraph [ref=e88]: Amphibious humanoids tracing their ancestry to the ancient underwater metropolis of Thal'Meruun, reshaped by rivers, tides, and the slow patience of water.
+          - generic [ref=e92]:
+            - heading "Lineage" [level=4] [ref=e93]
+            - 'button "Fire Red scales. Resistance to Fire. Rider: Target gains Burned (1 stack)." [ref=e94]':
+              - strong [ref=e95]: Fire
+              - paragraph [ref=e96]: "Red scales. Resistance to Fire. Rider: Target gains Burned (1 stack)."
+            - 'button "Ice White scales. Resistance to Cold. Rider: Target gains Chilled." [ref=e97]':
+              - strong [ref=e98]: Ice
+              - paragraph [ref=e99]: "White scales. Resistance to Cold. Rider: Target gains Chilled."
+            - 'button "Storm Violet scales. Resistance to Lightning. Rider: If the target has already acted this round, deal +1 damage." [ref=e100]':
+              - strong [ref=e101]: Storm
+              - paragraph [ref=e102]: "Violet scales. Resistance to Lightning. Rider: If the target has already acted this round, deal +1 damage."
+            - 'button "Earth Green/Brown scales. Resistance to Poison. Rider: Target cannot be pushed or repositioned until end of its next turn." [ref=e103]':
+              - strong [ref=e104]: Earth
+              - paragraph [ref=e105]: "Green/Brown scales. Resistance to Poison. Rider: Target cannot be pushed or repositioned until end of its next turn."
+            - 'button "Air Grey scales. Resistance to Sonic. Rider: Move 5 ft after the attack without provoking opportunity attacks." [ref=e106]':
+              - strong [ref=e107]: Air
+              - paragraph [ref=e108]: "Grey scales. Resistance to Sonic. Rider: Move 5 ft after the attack without provoking opportunity attacks."
+            - 'button "Water Blue/Seafoam scales. Resistance to Cold. Rider: You or an ally within 5 ft regain 1 Stamina." [ref=e109]':
+              - strong [ref=e110]: Water
+              - paragraph [ref=e111]: "Blue/Seafoam scales. Resistance to Cold. Rider: You or an ally within 5 ft regain 1 Stamina."
+        - complementary [ref=e89]:
+          - heading "Dragonians" [level=4] [ref=e112]
+          - paragraph [ref=e91]: "Draconic Lineage: Choose one lineage. You gain its elemental resistance and rider. Fire (Red scales): Resistance to Fire, rider — Target gains Burned (1 stack). Ice (White scales): Resistance to Cold, rider — Target gains Chilled. Storm (Violet scales): Resistance to Lightning, rider — If the target has already acted this round, deal +1 damage. Earth (Green/Brown scales): Resistance to Poison, rider — Target cannot be pushed or repositioned until end of its next turn. Air (Grey scales): Resistance to Sonic, rider — Move 5 ft after the attack without provoking opportunity attacks. Water (Blue/Seafoam scales): Resistance to Cold, rider — You or an ally within 5 ft regain 1 Stamina. Draconic Channeling: Once per turn, when you deal damage with an Attack or Technique, you may infuse it with your Draconic Element. If you do: apply your lineage's elemental rider and spend +1 additional Stamina."
+      - generic [ref=e69]:
+        - button "Cancel" [ref=e70]
+        - button "Back" [ref=e71]
+        - button "Next" [ref=e72]
+  - generic [ref=e32]:
+    - button "Menu" [ref=e33]:
+      - img [ref=e35]
+      - generic: Menu
+    - button "Inspect" [ref=e39]:
+      - img [ref=e41]
+      - generic: Inspect
+    - button "Audit" [ref=e43]:
+      - img [ref=e45]
+      - generic: Audit
+    - button "Settings" [ref=e48]:
+      - img [ref=e50]
+      - generic: Settings

@@ -1,0 +1,120 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]: 1Identity
+        - generic [ref=e56]: 2Race
+        - generic [ref=e57]: 3Background
+        - generic [ref=e58]: 4Stats
+        - generic [ref=e59]: 5Weapon
+        - generic [ref=e60]: 6Review
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - heading "Step 4 — Distribute Stats" [level=3] [ref=e151]
+          - paragraph [ref=e152]: Allocate 18 points across 6 stats. Each stat starts at 1 minimum.
+          - paragraph [ref=e153]:
+            - text: "Used:"
+            - strong [ref=e154]: "18"
+            - text: / 18
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]: STR
+              - generic [ref=e158]:
+                - button "-" [ref=e159]
+                - text: "3"
+                - button "+" [disabled] [ref=e160]
+            - generic [ref=e161]:
+              - generic [ref=e162]: DEX
+              - generic [ref=e163]:
+                - button "-" [ref=e164]
+                - text: "3"
+                - button "+" [disabled] [ref=e165]
+            - generic [ref=e166]:
+              - generic [ref=e167]: CON
+              - generic [ref=e168]:
+                - button "-" [ref=e169]
+                - text: "3"
+                - button "+" [disabled] [ref=e170]
+            - generic [ref=e171]:
+              - generic [ref=e172]: INT
+              - generic [ref=e173]:
+                - button "-" [ref=e174]
+                - text: "3"
+                - button "+" [disabled] [ref=e175]
+            - generic [ref=e176]:
+              - generic [ref=e177]: INS
+              - generic [ref=e178]:
+                - button "-" [ref=e179]
+                - text: "3"
+                - button "+" [disabled] [ref=e180]
+            - generic [ref=e181]:
+              - generic [ref=e182]: CHA
+              - generic [ref=e183]:
+                - button "-" [ref=e184]
+                - text: "3"
+                - button "+" [disabled] [ref=e185]
+        - complementary [ref=e186]:
+          - heading "Preview" [level=4] [ref=e187]
+          - list [ref=e188]:
+            - listitem [ref=e189]:
+              - text: "STR:"
+              - strong [ref=e190]: "3"
+              - text: (+1)
+            - listitem [ref=e191]:
+              - text: "DEX:"
+              - strong [ref=e192]: "5"
+              - text: (+2)
+            - listitem [ref=e193]:
+              - text: "CON:"
+              - strong [ref=e194]: "3"
+              - text: (+1)
+            - listitem [ref=e195]:
+              - text: "INT:"
+              - strong [ref=e196]: "3"
+              - text: (+1)
+            - listitem [ref=e197]:
+              - text: "INS:"
+              - strong [ref=e198]: "4"
+              - text: (+2)
+            - listitem [ref=e199]:
+              - text: "CHA:"
+              - strong [ref=e200]: "3"
+              - text: (+1)
+          - paragraph [ref=e201]:
+            - text: "HP:"
+            - strong [ref=e202]: "24"
+          - paragraph [ref=e203]:
+            - text: "Stamina:"
+            - strong [ref=e204]: "7"
+      - generic [ref=e69]:
+        - button "Cancel" [ref=e70]
+        - button "Back" [ref=e71]
+        - button "Next" [active] [ref=e72]
+  - generic [ref=e32]:
+    - button "Menu" [ref=e33]:
+      - img [ref=e35]
+      - generic: Menu
+    - button "Inspect" [ref=e39]:
+      - img [ref=e41]
+      - generic: Inspect
+    - button "Audit" [ref=e43]:
+      - img [ref=e45]
+      - generic: Audit
+    - button "Settings" [ref=e48]:
+      - img [ref=e50]
+      - generic: Settings
