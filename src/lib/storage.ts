@@ -17,7 +17,18 @@ export function loadRoster(): Roster {
 }
 
 export function saveRoster(roster: Roster): void {
-  localStorage.setItem(ROSTER_KEY, JSON.stringify(roster));
+  try {
+    localStorage.setItem(ROSTER_KEY, JSON.stringify(roster));
+  } catch (e) {
+    if (e instanceof DOMException && (e.name === 'QuotaExceededError' || e.code === 22)) {
+      console.error('localStorage quota exceeded — character not saved');
+      if (typeof alert === 'function') {
+        alert('Storage full. Try removing portrait images or deleting unused characters.');
+      }
+    } else {
+      throw e;
+    }
+  }
 }
 
 export function addCharacter(c: Character): void {

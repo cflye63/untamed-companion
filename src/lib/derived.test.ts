@@ -98,10 +98,32 @@ describe('computeFinalStats', () => {
   it('applies HR free CON', () => {
     const result = computeFinalStats({
       baseStats: { STR: 3, DEX: 3, CON: 5, INT: 3, INS: 3, CHA: 3 },
-      raceId: 'human',
+      raceId: 'dragonian',          // only fixed INT bonus — no flexible bonuses
       backgroundIds: [],
       hunterRank: 5,                // +1 free CON
     });
     expect(result.CON).toBe(6);
+  });
+  it('applies "any" bonus to the highest base stat', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 6, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'human',   // human has { kind: 'any', amount: 1 }
+      backgroundIds: [],
+      hunterRank: 0,
+    });
+    expect(result.STR).toBe(7);
+  });
+  it('applies "choice" bonus to the highest offered stat', () => {
+    // exiled-noble has { kind: 'choice', stats: ['STR', 'DEX'], amount: 1 }
+    // With DEX(5) > STR(3), the bonus should land on DEX.
+    // dragonian has only a fixed INT bonus — no flexible bonuses to interfere.
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 5, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'dragonian',
+      backgroundIds: ['exiled-noble'],
+      hunterRank: 0,
+    });
+    expect(result.DEX).toBe(6);
+    expect(result.STR).toBe(3);
   });
 });

@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import type { Character } from '../../../types/character';
 import { newCharacterId, nowIso, addCharacter } from '../../../lib/storage';
+import { computeFinalStats } from '../../../lib/derived';
 import { StepIdentity } from './StepIdentity';
 import { StepRace } from './StepRace';
 import { StepBackground } from './StepBackground';
@@ -56,13 +57,16 @@ export function Wizard({ onClose }: Props) {
   const back = () => setStepIdx(i => Math.max(0, i - 1));
 
   const finish = () => {
+    const finalStats = computeFinalStats(draft);
+    const maxHpVal = finalStats.CON * 8 + draft.hunterRank;
+    const maxStaVal = Math.max(1, 6 + Math.floor(finalStats.CON / 2));
     const finalChar: Character = {
       ...draft,
       updatedAt: nowIso(),
       liveState: {
         ...draft.liveState,
-        currentHp: draft.baseStats.CON * 8 + draft.hunterRank,
-        currentStamina: Math.max(1, 6 + Math.floor(draft.baseStats.CON / 2)),
+        currentHp: maxHpVal,
+        currentStamina: maxStaVal,
       },
     };
     addCharacter(finalChar);

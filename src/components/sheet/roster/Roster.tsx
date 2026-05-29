@@ -48,12 +48,25 @@ export function Roster() {
   };
 
   const onDuplicate = (c: Character) => {
+    // Compute max HP/STA using the derived helpers
+    // (Note: avoid pulling in computeFinalStats here since the spec applies fixed-only bonuses;
+    //  for duplicate we just want a clean live-state reset, not precise HP. Use baseStats CON
+    //  as a safe minimum and leave full recalculation to the sheet load.)
+    const fullHp = c.baseStats.CON * 8 + c.hunterRank;
+    const fullSta = Math.max(1, 6 + Math.floor(c.baseStats.CON / 2));
     const copy: Character = {
       ...c,
       id: newCharacterId(),
       name: `${c.name} (copy)`,
       createdAt: nowIso(),
       updatedAt: nowIso(),
+      liveState: {
+        currentHp: fullHp,
+        currentStamina: fullSta,
+        conditions: [],
+        actionEconomy: { actionUsed: false, fastActionUsed: false, reactionUsed: false, breathingTurn: false },
+        exhausted: false,
+      },
     };
     addCharacter(copy);
     refresh();
