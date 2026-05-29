@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 import { useCharacter } from './hooks/useCharacter';
 import { VitalsHeader } from './VitalsHeader';
 import { TabNav, type TabId } from './TabNav';
@@ -19,6 +19,18 @@ type Props = {
 export function Sheet({ characterId }: Props) {
   const { character, update } = useCharacter(characterId);
   const [activeTab, setActiveTab] = useState<TabId>('identity');
+  const [printMode, setPrintMode] = useState(false);
+
+  useEffect(() => {
+    const beforePrint = () => setPrintMode(true);
+    const afterPrint = () => setPrintMode(false);
+    window.addEventListener('beforeprint', beforePrint);
+    window.addEventListener('afterprint', afterPrint);
+    return () => {
+      window.removeEventListener('beforeprint', beforePrint);
+      window.removeEventListener('afterprint', afterPrint);
+    };
+  }, []);
 
   if (!character) {
     return (
@@ -32,15 +44,27 @@ export function Sheet({ characterId }: Props) {
     <div class="sheet-root">
       <VitalsHeader character={character} onUpdateLive={update} />
       <TabNav activeTab={activeTab} onChange={setActiveTab} />
-      <div class="tab-panel" role="tabpanel">
-        {activeTab === 'identity' && <IdentityTab character={character} update={update} />}
-        {activeTab === 'stats' && <StatsSkillsTab character={character} update={update} />}
-        {activeTab === 'combat' && <CombatTab character={character} update={update} />}
-        {activeTab === 'specs' && <SpecsTalentsTab character={character} update={update} />}
-        {activeTab === 'inventory' && <InventoryTab character={character} update={update} />}
-        {activeTab === 'crafting' && <CraftingTab character={character} update={update} />}
-        {activeTab === 'bio' && <BioNotesTab character={character} update={update} />}
-      </div>
+      {printMode ? (
+        <div class="print-all">
+          <IdentityTab character={character} update={update} />
+          <StatsSkillsTab character={character} update={update} />
+          <CombatTab character={character} update={update} />
+          <SpecsTalentsTab character={character} update={update} />
+          <InventoryTab character={character} update={update} />
+          <CraftingTab character={character} update={update} />
+          <BioNotesTab character={character} update={update} />
+        </div>
+      ) : (
+        <div class="tab-panel" role="tabpanel">
+          {activeTab === 'identity' && <IdentityTab character={character} update={update} />}
+          {activeTab === 'stats' && <StatsSkillsTab character={character} update={update} />}
+          {activeTab === 'combat' && <CombatTab character={character} update={update} />}
+          {activeTab === 'specs' && <SpecsTalentsTab character={character} update={update} />}
+          {activeTab === 'inventory' && <InventoryTab character={character} update={update} />}
+          {activeTab === 'crafting' && <CraftingTab character={character} update={update} />}
+          {activeTab === 'bio' && <BioNotesTab character={character} update={update} />}
+        </div>
+      )}
       <div class="sheet-footer">
         <button class="btn" onClick={() => window.print()}>Print View</button>
         <a class="btn btn-secondary" href="/character/roster">Back to Roster</a>

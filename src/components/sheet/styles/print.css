@@ -1,4 +1,26 @@
-/* Print stylesheet — filled out in Phase 9 */
 @media print {
-  /* Phase 9 will add the print-mode rules */
+  body { background: white !important; color: black !important; }
+  .nav, .sheet-footer, .tab-bar, .roster-cta, button, .btn, .step,
+  .dice-roller, .cond-remove, .cond-add, .ae-row, .btn-danger,
+  .roll-result, .roster-actions { display: none !important; }
+
+  .sheet-root { color: black; }
+  .vitals-header { position: static; background: white; border: 2px solid black; }
+  .v-name, .v-hr, .stat-card-label, .skill-bonus, .badge { color: black; }
+  .v-bar { display: none; }
+  .v-tracker .v-label span:last-child { display: inline; }
+
+  .tab-panel { background: white; border: 1px solid black; min-height: 0; padding: 8px; }
+
+  .print-all > * { page-break-inside: avoid; margin-bottom: 12px; }
+  .print-all { display: block; }
+
+  .stat-grid { grid-template-columns: repeat(6, 1fr); }
+  .skills-list { grid-template-columns: 1fr 1fr; }
+
+  .journal li:empty { display: none; }
+
+  .combat-tab, .specs-talents-tab, .inventory-tab, .bio-tab {
+    page-break-before: always;
+  }
 }
