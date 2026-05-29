@@ -1,9 +1,15 @@
-import { useState, useCallback } from 'preact/hooks';
+import { useState, useCallback, useEffect } from 'preact/hooks';
 import { loadRoster, addCharacter, deleteCharacter as del } from '../../../lib/storage';
 import type { Character } from '../../../types/character';
 
 export function useRoster() {
-  const [roster, setRoster] = useState(loadRoster());
+  const [roster, setRoster] = useState<{ characters: Character[] }>({ characters: [] });
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setRoster(loadRoster());
+    setLoaded(true);
+  }, []);
 
   const refresh = useCallback(() => setRoster(loadRoster()), []);
 
@@ -17,5 +23,5 @@ export function useRoster() {
     refresh();
   }, [refresh]);
 
-  return { roster, refresh, add, remove };
+  return { roster, refresh, add, remove, loaded };
 }

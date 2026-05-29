@@ -16,8 +16,20 @@ type Props = {
   characterId: string;
 };
 
-export function Sheet({ characterId }: Props) {
-  const { character, update } = useCharacter(characterId);
+export function Sheet({ characterId: characterIdProp }: Props) {
+  // Astro bakes island props at SSR time (no query string available), so
+  // the prop arrives as "" on a static build. Read the real ID from the
+  // live URL on the client instead.
+  const [characterId, setCharacterId] = useState<string | null>(characterIdProp || null);
+
+  useEffect(() => {
+    if (!characterId) {
+      const params = new URLSearchParams(window.location.search);
+      setCharacterId(params.get('id'));
+    }
+  }, []);
+
+  const { character, update, loaded } = useCharacter(characterId);
   const [activeTab, setActiveTab] = useState<TabId>('identity');
   const [printMode, setPrintMode] = useState(false);
 
@@ -31,6 +43,10 @@ export function Sheet({ characterId }: Props) {
       window.removeEventListener('afterprint', afterPrint);
     };
   }, []);
+
+  if (!loaded) {
+    return <div class="sheet-root"><p>Loading…</p></div>;
+  }
 
   if (!character) {
     return (

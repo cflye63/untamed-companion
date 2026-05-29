@@ -8,7 +8,7 @@ import { getBackground } from '../../../data/backgrounds';
 import type { Character } from '../../../types/character';
 
 export function Roster() {
-  const { roster, refresh } = useRoster();
+  const { roster, refresh, loaded } = useRoster();
   const [showWizard, setShowWizard] = useState(false);
 
   const onExport = (c: Character) => {
@@ -60,6 +60,10 @@ export function Roster() {
   };
 
   if (showWizard) return <Wizard onClose={() => { setShowWizard(false); refresh(); }} />;
+
+  if (!loaded) {
+    return <div class="sheet-root"><p>Loading…</p></div>;
+  }
 
   return (
     <div class="sheet-root roster">
