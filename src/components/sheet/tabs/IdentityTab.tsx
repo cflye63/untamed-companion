@@ -1,6 +1,8 @@
 import type { Character } from '../../../types/character';
 import { RACES, getRace } from '../../../data/races';
 import { BACKGROUNDS, getBackground } from '../../../data/backgrounds';
+import { useState } from 'preact/hooks';
+import { LevelUpModal } from '../LevelUpModal';
 
 type Props = {
   character: Character;
@@ -12,6 +14,14 @@ export function IdentityTab({ character, update }: Props) {
   const setPronouns = (e: any) => update(c => ({ ...c, pronouns: e.target.value }));
   const setHR = (e: any) => update(c => ({ ...c, hunterRank: parseInt(e.target.value, 10) || 0 }));
   const setCxp = (e: any) => update(c => ({ ...c, cxp: parseInt(e.target.value, 10) || 0 }));
+  const [levelUp, setLevelUp] = useState<{ from: number; to: number } | null>(null);
+
+  const onLevelUp = () => {
+    const from = character.hunterRank;
+    update(c => ({ ...c, hunterRank: c.hunterRank + 1 }));
+    setLevelUp({ from, to: from + 1 });
+  };
+
   const setRace = (e: any) => update(c => ({ ...c, raceId: e.target.value, lineageId: undefined }));
   const setLineage = (e: any) => update(c => ({ ...c, lineageId: e.target.value || undefined }));
 
@@ -43,7 +53,12 @@ export function IdentityTab({ character, update }: Props) {
         <div class="form-grid">
           <label>Name <input class="input" value={character.name} onInput={setName} /></label>
           <label>Pronouns <input class="input" value={character.pronouns ?? ''} onInput={setPronouns} /></label>
-          <label>Hunter Rank <input class="input" type="number" min="0" value={character.hunterRank} onInput={setHR} /></label>
+          <label>Hunter Rank
+            <div style="display:flex;gap:6px;align-items:center">
+              <input class="input" type="number" min="0" value={character.hunterRank} onInput={setHR} style="flex:1" />
+              <button class="btn" onClick={onLevelUp}>Level Up</button>
+            </div>
+          </label>
           <label>CXP <input class="input" type="number" min="0" value={character.cxp} onInput={setCxp} /></label>
           <label>Portrait <input class="input" type="file" accept="image/*" onChange={onPortraitFile} /></label>
         </div>
@@ -92,6 +107,15 @@ export function IdentityTab({ character, update }: Props) {
           </select>
         )}
       </section>
+      {levelUp && (
+        <LevelUpModal
+          character={character}
+          fromHr={levelUp.from}
+          toHr={levelUp.to}
+          onClose={() => setLevelUp(null)}
+          onUpdate={update}
+        />
+      )}
     </div>
   );
 }

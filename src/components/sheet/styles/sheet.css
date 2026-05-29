@@ -225,3 +225,8 @@
 .roster-card h3 { color: var(--amber); margin-bottom: 4px; }
 .roster-card-actions { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 8px; }
 .sheet-footer { display: flex; gap: 8px; margin-top: 16px; }
+
+.levelup-modal { background: var(--forest-green); border: 2px solid var(--amber); border-radius: 8px; padding: 16px; max-width: 500px; margin: 20px auto; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 200; box-shadow: 0 0 24px rgba(0,0,0,0.6); }
+.milestone { padding: 6px 10px; background: var(--forest-dark); border-radius: 4px; margin: 6px 0; }
+.milestone.tier { border-left: 4px solid var(--amber); }
+.milestone.talent, .milestone.spec { border-left: 4px solid var(--leaf-green); }
