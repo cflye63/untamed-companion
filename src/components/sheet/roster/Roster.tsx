@@ -6,6 +6,8 @@ import { validateCharacter, migrateToCurrent } from '../../../lib/schema';
 import { getRace } from '../../../data/races';
 import { getBackground } from '../../../data/backgrounds';
 import type { Character } from '../../../types/character';
+import '../styles/sheet.css';
+import '../styles/print.css';
 
 export function Roster() {
   const { roster, refresh, loaded } = useRoster();
@@ -72,7 +74,11 @@ export function Roster() {
     refresh();
   };
 
-  if (showWizard) return <Wizard onClose={() => { setShowWizard(false); refresh(); }} />;
+  if (showWizard) return (
+    <div class="sheet-root">
+      <Wizard onClose={() => { setShowWizard(false); refresh(); }} />
+    </div>
+  );
 
   if (!loaded) {
     return <div class="sheet-root"><p>Loading…</p></div>;
