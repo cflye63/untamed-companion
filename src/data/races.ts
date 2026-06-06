@@ -41,7 +41,7 @@ export const RACES: readonly Race[] = [
     },
     racialTrait: {
       name: 'Adaptable',
-      description: 'Once per round, when you spend Stamina on an Action or Reaction, you may gain one of the following benefits: Gain +1 to the roll; Move 5 ft without provoking opportunity attacks; Reduce the Stamina cost by 1 (minimum 0). You may use this a number of times equal to your Proficiency per Hunt.',
+      description: 'Once per round, when you spend Stamina on an Action or Reaction, you may gain one of the following benefits: Gain +1 to the roll; Move 5 ft without provoking opportunity attacks; or Reduce the Stamina cost by 1 (minimum 0). You may use this up to 3 times per Hunt.',
     },
     lineages: [],
   },
@@ -58,7 +58,7 @@ export const RACES: readonly Race[] = [
     },
     racialTrait: {
       name: 'Draconic Lineage',
-      description: 'Choose one lineage. You gain its elemental resistance and rider. Fire (Red scales): Resistance to Fire, rider — Target gains Burned (1 stack). Ice (White scales): Resistance to Cold, rider — Target gains Chilled. Storm (Violet scales): Resistance to Lightning, rider — If the target has already acted this round, deal +1 damage. Earth (Green/Brown scales): Resistance to Poison, rider — Target cannot be pushed or repositioned until end of its next turn. Air (Grey scales): Resistance to Sonic, rider — Move 5 ft after the attack without provoking opportunity attacks. Water (Blue/Seafoam scales): Resistance to Cold, rider — You or an ally within 5 ft regain 1 Stamina. Draconic Channeling: Once per turn, when you deal damage with an Attack or Technique, you may infuse it with your Draconic Element. If you do: apply your lineage\'s elemental rider and spend +1 additional Stamina.',
+      description: 'Choose one Draconic lineage; you permanently gain its elemental Resistance (see lineages below). Draconic Channeling: Once per turn, when you deal damage with an Attack or Technique, you may spend +1 Stamina to infuse it with your lineage\'s element and apply that lineage\'s rider.',
     },
     lineages: [
       {
@@ -76,14 +76,14 @@ export const RACES: readonly Race[] = [
       {
         id: 'storm',
         name: 'Storm',
-        description: 'Violet scales. Resistance to Lightning. Rider: If the target has already acted this round, deal +1 damage.',
-        traits: ['Elemental Resistance: Lightning', 'Rider: If the target has already acted this round, deal +1 damage'],
+        description: 'Violet scales. Resistance to Lightning. Rider: Target cannot take Reactions until the start of its next turn.',
+        traits: ['Elemental Resistance: Lightning', 'Rider: Target cannot take Reactions until the start of its next turn'],
       },
       {
         id: 'earth',
         name: 'Earth',
-        description: 'Green/Brown scales. Resistance to Poison. Rider: Target cannot be pushed or repositioned until end of its next turn.',
-        traits: ['Elemental Resistance: Poison', 'Rider: Target cannot be pushed or repositioned until end of its next turn'],
+        description: 'Green/Brown scales. Resistance to Poison. Rider: Target gains Poisoned (1 stack).',
+        traits: ['Elemental Resistance: Poison', 'Rider: Target gains Poisoned (1 stack)'],
       },
       {
         id: 'air',
@@ -147,6 +147,7 @@ export const RACES: readonly Race[] = [
       traits: [
         'Swim speed equal to walking speed.',
         'Pressure Sense: Advantage on checks to detect underwater movement, large submerged creatures, or changes in depth/current. Never Surprised by aquatic creatures while submerged.',
+        'Flowing Renewal: Once per Hunt, as a Fast Action, remove one Condition affecting you. Like water slipping through stone, you cast away what would hinder you.',
       ],
     },
     racialTrait: {
