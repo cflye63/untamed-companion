@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest';
 import {
   statMod, maxHp, maxStamina, profBonus, freeConFromHR, tierFromHR,
   availableSpecSlots, availableTalentSlots, availableStatPoints,
-  computeFinalStats,
+  computeFinalStats, weaponProficiency,
 } from './derived';
 
 describe('statMod', () => {
@@ -82,6 +82,26 @@ describe('slot availability', () => {
     expect(availableStatPoints(4, 0)).toBe(2);
     expect(availableStatPoints(8, 2)).toBe(2);
     expect(availableStatPoints(12, 6)).toBe(0);
+  });
+});
+
+describe('weaponProficiency', () => {
+  it('uses 5 / 10 Hunts for non-Humans', () => {
+    expect(weaponProficiency(0, 'trolian')).toBe('novice');
+    expect(weaponProficiency(4, 'trolian')).toBe('novice');
+    expect(weaponProficiency(5, 'trolian')).toBe('trained');
+    expect(weaponProficiency(9, 'trolian')).toBe('trained');
+    expect(weaponProficiency(10, 'trolian')).toBe('master');
+  });
+  it('uses 3 / 7 Hunts for Humans (Fast Learner)', () => {
+    expect(weaponProficiency(2, 'human')).toBe('novice');
+    expect(weaponProficiency(3, 'human')).toBe('trained');
+    expect(weaponProficiency(6, 'human')).toBe('trained');
+    expect(weaponProficiency(7, 'human')).toBe('master');
+  });
+  it('defaults to standard thresholds when raceId omitted', () => {
+    expect(weaponProficiency(5)).toBe('trained');
+    expect(weaponProficiency(3)).toBe('novice');
   });
 });
 

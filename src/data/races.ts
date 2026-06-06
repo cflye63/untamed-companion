@@ -36,7 +36,11 @@ export const RACES: readonly Race[] = [
     ],
     proficiencies: {
       skills: { count: 1 },
-      traits: ['Proficiency with one common tool of your choice.'],
+      traits: [
+        'Proficiency with one common tool of your choice.',
+        'Adaptive Retraining: during Downtime, swap one Talent you know for another you qualify for.',
+        'Fast Learner: you reach Trained with a weapon after 3 Hunts and Master after 7 (instead of 5/10).',
+      ],
     },
     racialTrait: {
       name: 'Adaptable',

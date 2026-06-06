@@ -18,6 +18,16 @@ export function profBonus(p: Proficiency): number {
   return p === 'master' ? 4 : p === 'trained' ? 2 : 0;
 }
 
+/**
+ * Weapon proficiency from Hunts completed with that weapon.
+ * Humans (Fast Learner) reach Trained at 3 Hunts and Master at 7;
+ * everyone else uses the standard 5 / 10.
+ */
+export function weaponProficiency(hunts: number, raceId?: string): Proficiency {
+  const [trainedAt, masterAt] = raceId === 'human' ? [3, 7] : [5, 10];
+  return hunts >= masterAt ? 'master' : hunts >= trainedAt ? 'trained' : 'novice';
+}
+
 export function freeConFromHR(hr: number): number {
   return Math.floor(hr / 5);
 }

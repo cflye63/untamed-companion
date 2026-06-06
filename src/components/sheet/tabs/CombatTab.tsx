@@ -3,6 +3,7 @@ import { WEAPONS, getWeapon } from '../../../data/weapons';
 import { useDerived } from '../hooks/useDerived';
 import { DiceRoller } from '../DiceRoller';
 import { rollDamage } from '../../../lib/dice';
+import { weaponProficiency, profBonus } from '../../../lib/derived';
 import { useState } from 'preact/hooks';
 
 type Props = {
@@ -34,9 +35,6 @@ export function CombatTab({ character, update }: Props) {
     primaryWeaponId: weaponId,
   }));
 
-  const weaponProf = (hunts: number): 'novice' | 'trained' | 'master' =>
-    hunts >= 10 ? 'master' : hunts >= 5 ? 'trained' : 'novice';
-
   const rollWeaponDamage = (notation: string) => {
     const r = rollDamage(notation, 0);
     setLastDamage(`${notation}: ${r.total} [${r.rolls.join(', ')}]`);
@@ -48,14 +46,14 @@ export function CombatTab({ character, update }: Props) {
         <h4>Weapons</h4>
         {character.weapons.map(w => {
           const wep = getWeapon(w.weaponId);
-          const prof = weaponProf(w.huntsCompleted);
-          const profBonus = prof === 'master' ? 4 : prof === 'trained' ? 2 : 0;
-          const toHit = derived.statMods[wep.primaryStat] + profBonus;
+          const prof = weaponProficiency(w.huntsCompleted, character.raceId);
+          const bonus = profBonus(prof);
+          const toHit = derived.statMods[wep.primaryStat] + bonus;
           return (
             <div class="weapon-card" key={w.weaponId}>
               <div class="weapon-head">
                 <strong>{wep.name}</strong>
-                <span class="muted">Tier {wep.tier} · {prof} (+{profBonus})</span>
+                <span class="muted">Tier {wep.tier} · {prof} (+{bonus})</span>
                 {w.isPrimary
                   ? <span class="badge">Primary</span>
                   : <button class="btn btn-secondary" onClick={() => makePrimary(w.weaponId)}>Set Primary</button>}
