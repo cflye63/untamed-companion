@@ -11,7 +11,6 @@ export type Lineage = {
   name: string;
   description: string;
   bonuses?: StatBonus[];
-  traits?: string[];
 };
 
 export type Race = {
@@ -31,123 +30,81 @@ export const RACES: readonly Race[] = [
   {
     id: 'human',
     name: 'Humans',
-    summary: 'The most abundant race in Oris Magna, known for their charm, adaptability, and resilience, with civilizations shaping the culture, politics, and traditions across all of Meridia.',
+    summary: 'Abundant and endlessly adaptable — their kingdoms, republics, and trade hubs shape every corner of Meridia.',
     bonuses: [
       { kind: 'any', amount: 1 },
     ],
     proficiencies: {
       skills: { count: 1 },
-      traits: ['Gain proficiency with one common tool.'],
+      traits: ['Proficiency with one common tool of your choice.'],
     },
     racialTrait: {
       name: 'Adaptable',
-      description: 'Once per round, when you spend Stamina on an Action or Reaction, you may gain one of the following benefits: Gain +1 to the roll; Move 5 ft without provoking opportunity attacks; or Reduce the Stamina cost by 1 (minimum 0). You may use this up to 3 times per Hunt.',
+      description: 'Once per round, when you spend Stamina on an Action or Reaction, choose one: +1 to the roll, move 5 ft without provoking, or reduce the Stamina cost by 1 (min 0). Up to 3 times per Hunt.',
     },
     lineages: [],
   },
   {
     id: 'dragonian',
     name: 'Dragonians',
-    summary: 'Ancient descendants of dragons with lifespans beyond 500 years, bearing reptilian features and the ability to channel elemental power through their draconic lineage.',
+    summary: 'Long-lived dragon-kin with reptilian features, channeling elemental power through their draconic lineage.',
     bonuses: [
       { kind: 'fixed', stat: 'INT', amount: 1 },
     ],
     proficiencies: {
       skills: { count: 1, from: ['knowledge'] },
-      traits: ['Read and recite Old Draconic sigils; you have advantage on Knowledge checks about draconic ruins.'],
+      traits: [
+        'Old Draconic: advantage on Knowledge checks about draconic ruins.',
+        'Draconic Channeling: once per turn, when you deal damage with an Attack or Technique, spend +1 Stamina to apply your lineage\'s element and its rider.',
+      ],
     },
     racialTrait: {
       name: 'Draconic Lineage',
-      description: 'Choose one Draconic lineage; you permanently gain its elemental Resistance (see lineages below). Draconic Channeling: Once per turn, when you deal damage with an Attack or Technique, you may spend +1 Stamina to infuse it with your lineage\'s element and apply that lineage\'s rider.',
+      description: 'Choose one Draconic lineage below; you permanently gain its elemental Resistance.',
     },
     lineages: [
-      {
-        id: 'fire',
-        name: 'Fire',
-        description: 'Red scales. Resistance to Fire. Rider: Target gains Burned (1 stack).',
-        traits: ['Elemental Resistance: Fire', 'Rider: Target gains Burned (1 stack)'],
-      },
-      {
-        id: 'ice',
-        name: 'Ice',
-        description: 'White scales. Resistance to Cold. Rider: Target gains Chilled.',
-        traits: ['Elemental Resistance: Cold', 'Rider: Target gains Chilled'],
-      },
-      {
-        id: 'storm',
-        name: 'Storm',
-        description: 'Violet scales. Resistance to Lightning. Rider: Target cannot take Reactions until the start of its next turn.',
-        traits: ['Elemental Resistance: Lightning', 'Rider: Target cannot take Reactions until the start of its next turn'],
-      },
-      {
-        id: 'earth',
-        name: 'Earth',
-        description: 'Green/Brown scales. Resistance to Poison. Rider: Target gains Poisoned (1 stack).',
-        traits: ['Elemental Resistance: Poison', 'Rider: Target gains Poisoned (1 stack)'],
-      },
-      {
-        id: 'air',
-        name: 'Air',
-        description: 'Grey scales. Resistance to Sonic. Rider: Move 5 ft after the attack without provoking opportunity attacks.',
-        traits: ['Elemental Resistance: Sonic', 'Rider: Move 5 ft after the attack without provoking opportunity attacks'],
-      },
-      {
-        id: 'water',
-        name: 'Water',
-        description: 'Blue/Seafoam scales. Resistance to Cold. Rider: You or an ally within 5 ft regain 1 Stamina.',
-        traits: ['Elemental Resistance: Cold', 'Rider: You or an ally within 5 ft regain 1 Stamina'],
-      },
+      { id: 'fire', name: 'Fire', description: 'Red scales · Resist Fire. Rider: target gains Burned (1 stack).' },
+      { id: 'ice', name: 'Ice', description: 'White scales · Resist Cold. Rider: target gains Chilled.' },
+      { id: 'storm', name: 'Storm', description: 'Violet scales · Resist Lightning. Rider: target cannot take Reactions until the start of its next turn.' },
+      { id: 'earth', name: 'Earth', description: 'Green-brown scales · Resist Poison. Rider: target cannot be pushed or repositioned until the end of its next turn.' },
+      { id: 'air', name: 'Air', description: 'Grey scales · Resist Sonic. Rider: move 5 ft after the attack without provoking opportunity attacks.' },
+      { id: 'water', name: 'Water', description: 'Blue-seafoam scales · Resist Cold. Rider: you or an ally within 5 ft regain 1 Stamina.' },
     ],
   },
   {
     id: 'trolian',
     name: 'Trolians',
-    summary: 'The most primal of the races, believed to be direct descendants of ancient beasts, with stout frames, immense strength, and animalistic features resembling the untamed forces of nature.',
+    summary: 'Primal beast-kin with stout frames and immense strength, embodying the untamed forces of nature.',
     bonuses: [
       { kind: 'choice', stats: ['STR', 'DEX'], amount: 1 },
     ],
     proficiencies: {
       skills: { count: 1, from: ['athletics'] },
-      traits: ['Beast Signs: Advantage on Animal Handling checks when calming non-apex mammals.'],
+      traits: ['Beast Signs: advantage on Animal Handling checks when calming non-apex mammals.'],
     },
     racialTrait: {
       name: 'Wild Fortitude',
-      description: 'Advantage on CON saves vs Exhaustion, Poison, and Environmental Cold checks; advantage on Survival checks to endure cold.',
+      description: 'Advantage on CON saves vs Exhaustion, Poison, and cold, and on Survival checks to endure harsh climates.',
     },
     lineages: [
-      {
-        id: 'highland',
-        name: 'Highland',
-        description: 'Anchored Frame: If you did not Move this turn, gain +1 AR until the start of your next turn.',
-        traits: ['Anchored Frame: If you did not Move this turn, gain +1 AR until the start of your next turn.'],
-      },
-      {
-        id: 'lowland',
-        name: 'Lowland',
-        description: 'Flowstep: When you Move at least 10 ft on your turn, you may ignore difficult terrain for that movement.',
-        traits: ['Flowstep: When you Move at least 10 ft on your turn, you may ignore difficult terrain for that movement.'],
-      },
-      {
-        id: 'grove',
-        name: 'Grove',
-        description: 'Rooted Resilience: Once per round, when you fail a STR, DEX, or CON save, your next Reaction this round costs 1 less Stamina (minimum 0).',
-        traits: ['Rooted Resilience: Once per round, when you fail a STR, DEX, or CON save, your next Reaction this round costs 1 less Stamina (minimum 0).'],
-      },
+      { id: 'highland', name: 'Highland', description: 'Anchored Frame: if you did not Move this turn, gain +1 AR until the start of your next turn.' },
+      { id: 'lowland', name: 'Lowland', description: 'Flowstep: when you Move at least 10 ft on your turn, ignore difficult terrain for that movement.' },
+      { id: 'grove', name: 'Grove', description: 'Rooted Resilience: once per round, when you fail a STR, DEX, or CON save, your next Reaction this round costs 1 less Stamina (min 0).' },
     ],
   },
   {
     id: 'thalorim',
     name: 'Thalorim',
-    summary: 'Amphibious humanoids tracing their ancestry to the ancient underwater metropolis of Thal\'Meruun, reshaped by rivers, tides, and the slow patience of water.',
+    summary: 'Amphibious survivors of the drowned city of Thal\'Meruun, shaped by rivers, tides, and the patience of water.',
     bonuses: [
       { kind: 'choice', stats: ['CON', 'INS'], amount: 1 },
     ],
     proficiencies: {
       skills: { count: 1, from: ['athletics', 'survival'] },
       traits: [
-        'Swim speed equal to walking speed.',
-        'Pressure Sense: Advantage on checks to detect underwater movement, large submerged creatures, or changes in depth/current. Never Surprised by aquatic creatures while submerged.',
-        'Flowing Renewal: Once per Hunt, as a Fast Action, remove one Condition affecting you. Like water slipping through stone, you cast away what would hinder you.',
+        'Swim speed equal to your walking speed.',
+        'Pressure Sense: advantage on checks to detect underwater movement, submerged creatures, or changes in depth/current; never Surprised by aquatic creatures while submerged.',
+        'Flowing Renewal: once per Hunt, as a Fast Action, remove one Condition affecting you — like water slipping through stone, you cast away what would hinder you.',
       ],
     },
     racialTrait: {
