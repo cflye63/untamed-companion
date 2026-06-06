@@ -86,19 +86,29 @@ describe('slot availability', () => {
 });
 
 describe('computeFinalStats', () => {
-  it('applies race fixed bonuses', () => {
+  it('applies lineage fixed bonuses', () => {
     const result = computeFinalStats({
       baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
-      raceId: 'dragonian',          // +1 INT (fixed)
+      raceId: 'dragonian',
+      lineageId: 'fire',            // Fire → +1 STR
       backgroundIds: [],
       hunterRank: 0,
     });
-    expect(result.INT).toBe(4);
+    expect(result.STR).toBe(4);
+  });
+  it('applies no lineage bonus when none selected', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'dragonian',          // no lineageId → no stat bonus from race
+      backgroundIds: [],
+      hunterRank: 0,
+    });
+    expect(result).toEqual({ STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 });
   });
   it('applies HR free CON', () => {
     const result = computeFinalStats({
       baseStats: { STR: 3, DEX: 3, CON: 5, INT: 3, INS: 3, CHA: 3 },
-      raceId: 'dragonian',          // only fixed INT bonus — no flexible bonuses
+      raceId: 'dragonian',          // no lineage → no race stat bonus
       backgroundIds: [],
       hunterRank: 5,                // +1 free CON
     });

@@ -44,7 +44,7 @@ export function availableStatPoints(hr: number, pointsSpent: number): number {
 }
 
 export function computeFinalStats(
-  char: Pick<Character, 'baseStats' | 'raceId' | 'backgroundIds' | 'hunterRank'>,
+  char: Pick<Character, 'baseStats' | 'raceId' | 'lineageId' | 'backgroundIds' | 'hunterRank'>,
   flexibleAllocations: Partial<Record<StatKey, number>> = {}
 ): Record<StatKey, number> {
   const result: Record<StatKey, number> = { ...char.baseStats };
@@ -66,6 +66,11 @@ export function computeFinalStats(
 
   const race = getRace(char.raceId);
   for (const b of race.bonuses) applyBonus(b as any);
+  // Lineage bonuses (e.g. Dragonian's element grants its stat)
+  if (char.lineageId) {
+    const lineage = race.lineages.find(l => l.id === char.lineageId);
+    for (const b of lineage?.bonuses ?? []) applyBonus(b as any);
+  }
   for (const bgId of char.backgroundIds) {
     const bg = getBackground(bgId);
     for (const b of bg.statBonuses) applyBonus(b as any);

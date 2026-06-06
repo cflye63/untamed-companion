@@ -48,9 +48,7 @@ export const RACES: readonly Race[] = [
     id: 'dragonian',
     name: 'Dragonians',
     summary: 'Long-lived dragon-kin with reptilian features, channeling elemental power through their draconic lineage.',
-    bonuses: [
-      { kind: 'fixed', stat: 'INT', amount: 1 },
-    ],
+    bonuses: [],
     proficiencies: {
       skills: { count: 1, from: ['knowledge'] },
       traits: [
@@ -60,15 +58,15 @@ export const RACES: readonly Race[] = [
     },
     racialTrait: {
       name: 'Draconic Lineage',
-      description: 'Choose one Draconic lineage below; you permanently gain its elemental Resistance.',
+      description: 'Choose one Draconic lineage below; you permanently gain its stat bonus and elemental Resistance. Your element shapes your build.',
     },
     lineages: [
-      { id: 'fire', name: 'Fire', description: 'Red scales · Resist Fire. Rider: target gains Burned (1 stack).' },
-      { id: 'ice', name: 'Ice', description: 'White scales · Resist Cold. Rider: target gains Chilled.' },
-      { id: 'storm', name: 'Storm', description: 'Violet scales · Resist Lightning. Rider: target cannot take Reactions until the start of its next turn.' },
-      { id: 'earth', name: 'Earth', description: 'Green-brown scales · Resist Poison. Rider: target cannot be pushed or repositioned until the end of its next turn.' },
-      { id: 'air', name: 'Air', description: 'Grey scales · Resist Sonic. Rider: move 5 ft after the attack without provoking opportunity attacks.' },
-      { id: 'water', name: 'Water', description: 'Blue-seafoam scales · Resist Cold. Rider: you or an ally within 5 ft regain 1 Stamina.' },
+      { id: 'fire', name: 'Fire', description: 'Red scales · +1 STR · Resist Fire. Rider: target gains Burned (1 stack).', bonuses: [{ kind: 'fixed', stat: 'STR', amount: 1 }] },
+      { id: 'storm', name: 'Storm', description: 'Violet scales · +1 DEX · Resist Lightning. Rider: target cannot take Reactions until the start of its next turn.', bonuses: [{ kind: 'fixed', stat: 'DEX', amount: 1 }] },
+      { id: 'earth', name: 'Earth', description: 'Green-brown scales · +1 CON · Resist Poison. Rider: target cannot be pushed or repositioned until the end of its next turn.', bonuses: [{ kind: 'fixed', stat: 'CON', amount: 1 }] },
+      { id: 'ice', name: 'Ice', description: 'White scales · +1 INT · Resist Cold. Rider: target gains Chilled.', bonuses: [{ kind: 'fixed', stat: 'INT', amount: 1 }] },
+      { id: 'air', name: 'Air', description: 'Grey scales · +1 INS · Resist Sonic. Rider: move 5 ft after the attack without provoking opportunity attacks.', bonuses: [{ kind: 'fixed', stat: 'INS', amount: 1 }] },
+      { id: 'water', name: 'Water', description: 'Blue-seafoam scales · +1 CHA · Resist Cold. Rider: you or an ally within 5 ft regain 1 Stamina.', bonuses: [{ kind: 'fixed', stat: 'CHA', amount: 1 }] },
     ],
   },
   {
@@ -103,7 +101,7 @@ export const RACES: readonly Race[] = [
       skills: { count: 1, from: ['athletics', 'survival'] },
       traits: [
         'Swim speed equal to your walking speed.',
-        'Pressure Sense: advantage on checks to detect underwater movement, submerged creatures, or changes in depth/current; never Surprised by aquatic creatures while submerged.',
+        'Pressure Sense: advantage on checks to detect movement or hidden creatures through water, fog, rain, or murk; you are never Surprised while submerged or in such conditions.',
         'Flowing Renewal: once per Hunt, as a Fast Action, remove one Condition affecting you — like water slipping through stone, you cast away what would hinder you.',
       ],
     },
