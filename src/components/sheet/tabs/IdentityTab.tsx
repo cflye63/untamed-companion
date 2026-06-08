@@ -82,11 +82,19 @@ export function IdentityTab({ character, update }: Props) {
             </select>
           </label>
         )}
-        <p class="muted">{race.racialTrait.name}: {race.racialTrait.description}</p>
+        <p class="muted"><strong>{race.racialTrait.name}:</strong> {race.racialTrait.description}</p>
+        {character.lineageId && race.lineages.find(l => l.id === character.lineageId) && (
+          <p class="muted">{race.lineages.find(l => l.id === character.lineageId)!.description}</p>
+        )}
+        {race.proficiencies.traits && race.proficiencies.traits.length > 0 && (
+          <ul class="race-features">
+            {race.proficiencies.traits.map(t => <li key={t}>{t}</li>)}
+          </ul>
+        )}
       </section>
 
       <section class="tab-section">
-        <h4>Backgrounds</h4>
+        <h4>Background</h4>
         <div class="bg-list">
           {character.backgroundIds.map(id => {
             const bg = getBackground(id);
@@ -99,11 +107,10 @@ export function IdentityTab({ character, update }: Props) {
             );
           })}
         </div>
-        {character.backgroundIds.length < 2 && (
+        {character.backgroundIds.length < 1 && (
           <select class="input" value="" onChange={(e: any) => e.target.value && addBackground(e.target.value)}>
-            <option value="">+ Add background</option>
-            {BACKGROUNDS.filter(b => !character.backgroundIds.includes(b.id))
-              .map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
+            <option value="">Choose a background</option>
+            {BACKGROUNDS.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
           </select>
         )}
       </section>

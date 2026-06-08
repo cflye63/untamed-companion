@@ -339,6 +339,24 @@
   font-size: 0.9rem;
 }
 
+.side-trait { margin-bottom: 8px; }
+.side-features, .race-features {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.side-features li, .race-features li {
+  background: var(--forest-dark);
+  border-left: 2px solid var(--moss-green);
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
 .wizard-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 12px; }
 .wizard-stat {
   background: var(--forest-dark);

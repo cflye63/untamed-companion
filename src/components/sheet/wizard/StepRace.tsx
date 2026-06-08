@@ -37,7 +37,12 @@ export function StepRace({ draft, setDraft }: Props) {
       {race && (
         <aside class="wizard-side">
           <h4>{race.name}</h4>
-          <p>{race.racialTrait.name}: {race.racialTrait.description}</p>
+          <p class="side-trait"><strong>{race.racialTrait.name}:</strong> {race.racialTrait.description}</p>
+          {race.proficiencies.traits && race.proficiencies.traits.length > 0 && (
+            <ul class="side-features">
+              {race.proficiencies.traits.map(t => <li key={t}>{t}</li>)}
+            </ul>
+          )}
         </aside>
       )}
     </div>
