@@ -56,7 +56,7 @@ export const RACES: readonly Race[] = [
     proficiencies: {
       skills: { count: 1, from: ['knowledge'] },
       traits: [
-        'Old Draconic: advantage on Knowledge checks about draconic ruins.',
+        'Old Draconic: advantage on Knowledge checks regarding dragons, draconic species, draconic ruins, and ancient draconic civilizations.',
         'Draconic Channeling: once per turn, when you deal damage with an Attack or Technique, spend +1 Stamina to apply your lineage\'s element and its rider.',
       ],
     },
@@ -82,7 +82,7 @@ export const RACES: readonly Race[] = [
     ],
     proficiencies: {
       skills: { count: 1, from: ['athletics'] },
-      traits: ['Beast Signs: advantage on Animal Handling checks when calming non-apex mammals.'],
+      traits: ['Beast Signs: advantage on checks to understand, calm, track, or predict the behavior of non-apex creatures.'],
     },
     racialTrait: {
       name: 'Wild Fortitude',
@@ -121,4 +121,15 @@ export function getRace(id: string): Race {
   const r = RACES.find(r => r.id === id);
   if (!r) throw new Error(`Unknown race: ${id}`);
   return r;
+}
+
+export function formatBonus(b: StatBonus): string {
+  switch (b.kind) {
+    case 'fixed':
+      return `+${b.amount} ${b.stat}`;
+    case 'choice':
+      return `+${b.amount} ${b.stats.join(' or ')}`;
+    case 'any':
+      return `+${b.amount} to any stat`;
+  }
 }
