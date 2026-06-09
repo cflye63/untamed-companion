@@ -156,4 +156,35 @@ describe('computeFinalStats', () => {
     expect(result.DEX).toBe(6);
     expect(result.STR).toBe(3);
   });
+  it('applies Trolian lineage stats (Highland +1 CON)', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'trolian',
+      lineageId: 'highland',
+      backgroundIds: [],
+      hunterRank: 0,
+    });
+    expect(result.CON).toBe(4);
+  });
+  it('applies Trolian Lowland lineage (+1 DEX)', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'trolian', lineageId: 'lowland', backgroundIds: [], hunterRank: 0,
+    });
+    expect(result.DEX).toBe(4);
+  });
+  it('applies Trolian Grove lineage (+1 STR)', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'trolian', lineageId: 'grove', backgroundIds: [], hunterRank: 0,
+    });
+    expect(result.STR).toBe(4);
+  });
+  it('gives Trolian no stat bonus without a lineage', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'trolian', backgroundIds: [], hunterRank: 0,
+    });
+    expect(result).toEqual({ STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 });
+  });
 });

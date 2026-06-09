@@ -77,9 +77,7 @@ export const RACES: readonly Race[] = [
     id: 'trolian',
     name: 'Trolians',
     summary: 'Primal beast-kin with stout frames and immense strength, embodying the untamed forces of nature.',
-    bonuses: [
-      { kind: 'choice', stats: ['STR', 'DEX'], amount: 1 },
-    ],
+    bonuses: [],
     proficiencies: {
       skills: { count: 1, from: ['athletics'] },
       traits: ['Beast Signs: advantage on checks to understand, calm, track, or predict the behavior of non-apex creatures.'],
@@ -89,9 +87,9 @@ export const RACES: readonly Race[] = [
       description: 'Advantage on CON saves vs Exhaustion, Poison, and cold, and on Survival checks to endure harsh climates.',
     },
     lineages: [
-      { id: 'highland', name: 'Highland', description: 'Anchored Frame: if you did not Move this turn, gain +1 AR until the start of your next turn.' },
-      { id: 'lowland', name: 'Lowland', description: 'Flowstep: when you Move at least 10 ft on your turn, ignore difficult terrain for that movement.' },
-      { id: 'grove', name: 'Grove', description: 'Rooted Resilience: once per round, when you fail a STR, DEX, or CON save, your next Reaction this round costs 1 less Stamina (min 0).' },
+      { id: 'highland', name: 'Highland', description: 'Anchored Frame: if you did not Move this turn, gain +1 AR until the start of your next turn.', bonuses: [{ kind: 'fixed', stat: 'CON', amount: 1 }] },
+      { id: 'lowland', name: 'Lowland', description: 'Flowstep: when you Move at least 10 ft on your turn, ignore difficult terrain for that movement.', bonuses: [{ kind: 'fixed', stat: 'DEX', amount: 1 }] },
+      { id: 'grove', name: 'Grove', description: 'Rooted Resilience: once per round, when you fail a STR, DEX, or CON save, your next Reaction this round costs 1 less Stamina (min 0).', bonuses: [{ kind: 'fixed', stat: 'STR', amount: 1 }] },
     ],
   },
   {
