@@ -1,5 +1,5 @@
 import type { Character } from '../../../types/character';
-import { RACES, getRace } from '../../../data/races';
+import { RACES, getRace, formatBonus } from '../../../data/races';
 
 type Props = {
   draft: Character;
@@ -8,6 +8,8 @@ type Props = {
 
 export function StepRace({ draft, setDraft }: Props) {
   const race = draft.raceId ? getRace(draft.raceId) : null;
+  const selectedLineage = race?.lineages.find(l => l.id === draft.lineageId);
+  const activeBonuses = race ? [...race.bonuses, ...(selectedLineage?.bonuses ?? [])] : [];
   return (
     <div class="wizard-step-grid">
       <div>
@@ -27,7 +29,12 @@ export function StepRace({ draft, setDraft }: Props) {
             {race.lineages.map(l => (
               <button key={l.id} class={`race-pick small ${l.id === draft.lineageId ? 'selected' : ''}`}
                       onClick={() => setDraft({ ...draft, lineageId: l.id })}>
-                <strong>{l.name}</strong>
+                <strong>
+                  {l.name}
+                  {l.bonuses && l.bonuses.length > 0 && (
+                    <span class="badge">{formatBonus(l.bonuses[0])}</span>
+                  )}
+                </strong>
                 <p>{l.description}</p>
               </button>
             ))}
@@ -38,6 +45,9 @@ export function StepRace({ draft, setDraft }: Props) {
         <aside class="wizard-side">
           <h4>{race.name}</h4>
           <p class="side-trait"><strong>{race.racialTrait.name}:</strong> {race.racialTrait.description}</p>
+          {activeBonuses.length > 0 && (
+            <p class="side-trait"><strong>Stat Bonus:</strong> {activeBonuses.map(formatBonus).join(', ')}</p>
+          )}
           {race.proficiencies.traits && race.proficiencies.traits.length > 0 && (
             <ul class="side-features">
               {race.proficiencies.traits.map(t => <li key={t}>{t}</li>)}

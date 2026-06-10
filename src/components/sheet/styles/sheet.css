@@ -329,6 +329,7 @@
 
 .lineage-picker { margin-top: 18px; }
 .lineage-picker h4 { color: var(--amber); margin-bottom: 8px; font-size: 0.95rem; }
+.lineage-picker .badge { margin-left: 8px; }
 .selected-bg {
   margin-top: 14px;
   padding: 8px 12px;
