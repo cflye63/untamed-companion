@@ -187,4 +187,26 @@ describe('computeFinalStats', () => {
     });
     expect(result).toEqual({ STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 });
   });
+  it('applies Thalorim River lineage (+1 INS)', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'thalorim', lineageId: 'river', backgroundIds: [], hunterRank: 0,
+    });
+    expect(result.INS).toBe(4);
+  });
+  it('applies Thalorim Sea lineage (+1 CON)', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'thalorim', lineageId: 'sea', backgroundIds: [], hunterRank: 0,
+    });
+    expect(result.CON).toBe(4);
+  });
+
+  it('gives Thalorim no stat bonus without a lineage', () => {
+    const result = computeFinalStats({
+      baseStats: { STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 },
+      raceId: 'thalorim', backgroundIds: [], hunterRank: 0,
+    });
+    expect(result).toEqual({ STR: 3, DEX: 3, CON: 3, INT: 3, INS: 3, CHA: 3 });
+  });
 });

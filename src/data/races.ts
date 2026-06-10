@@ -96,9 +96,7 @@ export const RACES: readonly Race[] = [
     id: 'thalorim',
     name: 'Thalorim',
     summary: 'Amphibious survivors of the drowned city of Thal\'Meruun, shaped by rivers, tides, and the patience of water.',
-    bonuses: [
-      { kind: 'choice', stats: ['CON', 'INS'], amount: 1 },
-    ],
+    bonuses: [],
     proficiencies: {
       skills: { count: 1, from: ['athletics', 'survival'] },
       traits: [
@@ -111,7 +109,10 @@ export const RACES: readonly Race[] = [
       name: 'Tide Breath',
       description: 'Your Breath Timer is doubled while underwater.',
     },
-    lineages: [],
+    lineages: [
+      { id: 'river', name: 'River', description: 'Current Reader: Gain Advantage on checks to track, navigate, or predict movement patterns in natural environments.', bonuses: [{ kind: 'fixed', stat: 'INS', amount: 1 }] },
+      { id: 'sea', name: 'Sea', description: 'Deepborn: Resist Cold; ignore deep-water and pressure penalties.', bonuses: [{ kind: 'fixed', stat: 'CON', amount: 1 }] },
+    ],
   },
 ];
 
