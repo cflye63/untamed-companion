@@ -19,8 +19,14 @@
     "@astrojs/check": "^0.9.9",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/preact": "^3.2.4",
+    "happy-dom": "^20.10.2",
     "jsdom": "^27.0.1",
     "typescript": "^5.9.3",
     "vitest": "^4.1.7"
+  },
+  "overrides": {
+    "@csstools/css-calc": "^2.1.4",
+    "@csstools/css-parser-algorithms": "^3.0.4",
+    "@csstools/css-tokenizer": "^3.0.4"
   }
 }
