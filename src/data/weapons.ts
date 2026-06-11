@@ -19,6 +19,9 @@ export type Weapon = {
   range: string;          // e.g., "Melee 5 ft", "Ranged 60/120 ft"
   damageDice: string;     // e.g., "1d10" — tier 1 base die only
   powerDice: number;      // baseline power dice count
+  primaryRole: string;    // combat role badge, e.g. 'Melee Damage'
+  secondaryRole: string;  // secondary role badge, e.g. 'Bruiser'
+  summary: string;        // one-line hook shown on wizard cards
   bestWith?: string[];    // recommended specialization ids/names
   techniques: Technique[];
   description: string;
@@ -34,6 +37,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Melee 5 ft',
     damageDice: '1d12',
     powerDice: 1,
+    primaryRole: 'Melee Damage',
+    secondaryRole: 'Bruiser',
+    summary: 'Build Momentum with every hit to unlock crushing crits.',
     description:
       'Heavy two-handed weapon built for raw strength and devastating attacks. Core mechanic: Momentum (max 3) — gained by landing hits, lost on miss/dodge/target switch. At Momentum 3 gain +3 flat damage, expanded crit 18–20, and +1 power die on all attacks.',
     techniques: [
@@ -78,6 +84,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Ranged 30/120 ft',
     damageDice: '1d8',
     powerDice: 1,
+    primaryRole: 'Ranged Damage',
+    secondaryRole: 'Utility',
+    summary: 'Hold your ground to build Focus for deadly precision shots.',
     description:
       'Versatile ranged weapon rewarding precision and positioning. Core mechanic: Predator\'s Focus (max 3) — gained by not moving on your turn, lost by moving >5 ft, being Knocked Prone/Stunned, or Dashing. Each Focus adds +1 flat damage to the next Bow attack (consumed on hit). Comes in Bone Bow (offense: Piercing/Barbed Arrows) or Steel Bow (support: Signal/Binding Arrows).',
     techniques: [
@@ -122,6 +131,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Melee 5 ft',
     damageDice: '1d10',
     powerDice: 1,
+    primaryRole: 'Tank',
+    secondaryRole: 'Protector',
+    summary: 'Block to build Resolve — heal, recover, and hold the line.',
     description:
       'Defensive tank weapon that transforms the hunter into a living bastion. Core mechanic: Resolve (max 3) — gained by successfully Blocking or succeeding saves vs knockdown/stun; lost if Knocked Prone, Staggered, moved against will, or moving >10 ft. Spend Resolve once per turn: recover 1d10 HP per Resolve, regain 1 Stamina per Resolve, or reroll one failed saving throw. Grants +1 extra Reaction/round usable only for Block.',
     techniques: [
@@ -166,6 +178,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Ranged 60 ft',
     damageDice: '1d6',
     powerDice: 1,
+    primaryRole: 'Controller',
+    secondaryRole: 'Damage',
+    summary: 'Plant elemental Clusters, then detonate them in chain explosions.',
     description:
       'Tactical elemental weapon built around Magical Clusters — elemental nodes attached to enemies or terrain. Place cluster (Action, 1 STA): DEX save vs Wand DC to attach; max 3 active (T3: 4), per-target cap 3. Detonate (Fast Action, 1 STA): each cluster deals per-tier Cluster Bomb damage to host and creatures within 10 ft. Stacking: +1 damage die per additional cluster on same host. Damage type (Fire/Ice/Lightning/Earth/Air/Water/Piercing/Blunt/Slash/Sonic/Poison/Paralysis) determines Hex Charge passive effect.',
     techniques: [
@@ -210,6 +225,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Aura 30 ft',
     damageDice: '1d6',
     powerDice: 1,
+    primaryRole: 'Support Controller',
+    secondaryRole: 'Support',
+    summary: 'Play Ballads that empower allies and disrupt the monster.',
     description:
       'Ranged support weapon that inspires allies and disrupts monsters through melodies. Basic Attack — Sonic Note: choose up to 2 targets (T3: 3; T5: 4) in 30-ft aura; attack vs AR for tier dice + CHA. Core mechanic: Ballads — magical melodies active as long as concentration is maintained. Play (Fast Action, 1 STA start, 1 STA/turn upkeep). One active Ballad at a time. Lose Concentration on failed CHA check vs damage. Comes in Bone Flute (aggressive: Blood Rhythm, Predator Pulse) or Song Flute (defensive: Soothing Tones, Earthen Refrain).',
     techniques: [
@@ -254,6 +272,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Reach 15 ft',
     damageDice: '1d6',
     powerDice: 1,
+    primaryRole: 'Controller',
+    secondaryRole: 'Lockdown',
+    summary: 'Snare the monster with Restraint and lock down its movement.',
     description:
       'Precision control weapon built around Restraint. Core mechanic: Restraint — after hitting, spend Fast Action (1 STA) to attempt Restraint; target makes DEX save vs Whip DC. On fail: Restrained (Speed 0, cannot Dodge). Maintain by paying 1 STA/turn. Backlash: if initial save succeeds, you take 1d4 damage. Note: uses INS for both attack and damage rolls.',
     techniques: [
@@ -298,6 +319,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Reach 10 ft / Thrown 20/60 ft',
     damageDice: '1d8',
     powerDice: 1,
+    primaryRole: 'Flex',
+    secondaryRole: 'Defender/Skirmisher',
+    summary: 'Switch stances between sturdy defense and swift offense.',
     description:
       'Versatile hybrid weapon with Stance Switch mechanic. Spear attacks use DEX; Shield DCs use CON. Sentinel Stance: +1 AR, advantage on STR/DEX saves vs movement, but Speed halved. Assault Stance: +5 ft Speed, once per turn make a Fast Action spear jab (1 STA) in addition to normal Action. Recall thrown spear as Fast Action (no STA cost). Note: two distinct stats in use (DEX for attacks, CON for shield DCs); DEX chosen as primaryStat/damageStat as it drives most damage output.',
     techniques: [
@@ -342,6 +366,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Melee 5 ft',
     damageDice: '1d6',
     powerDice: 1,
+    primaryRole: 'Melee Damage',
+    secondaryRole: 'Skirmisher',
+    summary: 'Chain follow-up swipes for relentless close-range pressure.',
     description:
       'High-mobility close-combat weapons for relentless pressure and combo chaining. Core mechanic: Predatory Chain — after any Claw hit, make one Follow-up Swipe as Fast Action (1 STA); if that hits, make another as Reaction (1 STA). Chain ends on miss, Dodge, Parry, or after 2 follow-ups. Max 2 follow-ups per chain.',
     techniques: [
@@ -386,6 +413,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Thrown 30/90 ft',
     damageDice: '1d6',
     powerDice: 1,
+    primaryRole: 'Ranged Damage',
+    secondaryRole: 'Skirmisher',
+    summary: 'Throw, catch, and re-throw on the move with Wayback catches.',
     description:
       'Finesse thrown weapon built around the Wayback Catch loop. Core mechanic: after a hit, roll d20 + INS + prof vs DC 13 — success: boomerang returns and you may re-throw as Fast Action (1 STA). Moving ≥10 ft since last throw: return throw has advantage and +1 damage die. Up to 2 Wayback catches per turn. Double-catch: second return costs 0 STA and deals +1 Power Die on hit.',
     techniques: [
@@ -430,6 +460,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Ranged 30/120 ft',
     damageDice: '1d10',
     powerDice: 1,
+    primaryRole: 'Ranged Damage',
+    secondaryRole: 'Control',
+    summary: 'Brace in place to build Tension for heavy piercing shots.',
     description:
       'Heavy mechanical crossbow built around stationary Tension generation. Core mechanic — Tension: Brace (no STA, spend all remaining movement) or Load (Fast Action or Action, 1 STA) each grant +1 Tension. Fire (Action) consumes all Tension. Tension bonuses apply only while Braced: T1 = +1 attack roll; T2 = +2 attack roll and +1 Power Die. Tension resets on movement, forced movement, Prone, Staggered, or Stunned. Must Load after each shot. Special bolt cartridges (2 uses each per hunt): Bone Arbalest — Piercing Shot (+1 attack), Sharp Shot (Bleeding on hit). Iron Arbalest — Concussive Bolt (Staggered on hit), Scatter Shot (15-ft cone, DEX save).',
     techniques: [
@@ -474,6 +507,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Melee 5 ft',
     damageDice: '1d12',
     powerDice: 1,
+    primaryRole: 'Breaker',
+    secondaryRole: 'Controller',
+    summary: 'Stack Sunder to crack armor open for the whole party.',
     description:
       'Force multiplier weapon that builds Sunder on targets (max 3 per target). Each Hammer hit: +1 Sunder. Sunder grants: +X to your Hammer attack rolls vs that target (X = Sunder count). Shove rider: after any hit vs target with Sunder ≥1, may attempt Shove (STR save or pushed 5 ft, once per turn). Sunder 3: target makes CON/STR saves vs Hammer riders at disadvantage. No Parry. No Guard.',
     techniques: [
@@ -518,6 +554,9 @@ export const WEAPONS: readonly Weapon[] = [
     range: 'Ranged 40 ft',
     damageDice: '1d8',
     powerDice: 1,
+    primaryRole: 'Area Controller',
+    secondaryRole: 'Support Controller',
+    summary: 'Channel an Aspect field that reshapes the battlefield.',
     description:
       'Battlefield control weapon that projects an Aspect-infused Field. Core mechanic — Channel (Action): enter Channeling state, choose an Aspect. While Channeling: cannot move >5 ft from starting position, cannot Sprint, forced movement breaks Channel; take ≥20% max HP in single hit → CON save DC 12 or Channel breaks; lose 1 STA at end of each turn. Field: 15 ft radius from you. Field Projection (Fast Action, 1 STA): extend Field up to 40 ft away until start of next turn. Aspects (2 universal always present: Wild Pulse, Grounded): Earth/Wind/Water/Storm/Flame/Resonance/Ice available. No Parry. No Guard.',
     techniques: [
