@@ -68,7 +68,7 @@ Summary lines: one short sentence per weapon capturing its core mechanic hook, e
 - Meta line: stat · damage die · range · power dice
 - Full `description`
 - Technique list: name, stamina cost, description for each
-- "Pairs well with:" specialization names, only when `bestWith` is defined (no `—` fallback)
+- "Pairs well with:" specialization names, derived by reverse lookup over `SPECIALIZATIONS` (each spec's `bestWith` lists weapon ids — weapons themselves define no `bestWith` data, which is why the old UI showed `—`). Hidden when no spec lists the weapon.
 
 ### 3. CSS (`src/components/sheet/styles/sheet.css`)
 
@@ -85,4 +85,4 @@ Summary lines: one short sentence per weapon capturing its core mechanic hook, e
 
 - No changes to weapon mechanics data (descriptions, techniques, stats).
 - No changes to other wizard steps or any weapons reference page.
-- `bestWith` data is kept as-is (still used by the detail panel's "Pairs well with" line).
+- The unused `bestWith?` field on the `Weapon` type is left in place (no weapon populates it; pairings come from specialization data).
