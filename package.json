@@ -23,10 +23,5 @@
     "jsdom": "^27.0.1",
     "typescript": "^5.9.3",
     "vitest": "^4.1.7"
-  },
-  "overrides": {
-    "@csstools/css-calc": "^2.1.4",
-    "@csstools/css-parser-algorithms": "^3.0.4",
-    "@csstools/css-tokenizer": "^3.0.4"
   }
 }
