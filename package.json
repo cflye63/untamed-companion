@@ -20,7 +20,6 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/preact": "^3.2.4",
     "happy-dom": "^20.10.2",
-    "jsdom": "^27.0.1",
     "typescript": "^5.9.3",
     "vitest": "^4.1.7"
   }
