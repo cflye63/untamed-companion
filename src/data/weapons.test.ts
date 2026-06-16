@@ -35,3 +35,43 @@ describe('weapon roles & summaries', () => {
     }
   });
 });
+
+describe('weapon tiers, complexity & core mechanic', () => {
+  it('gives every weapon exactly 5 techniques tiered 1..5 by position', () => {
+    for (const w of WEAPONS) {
+      expect(w.techniques.length, w.id).toBe(5);
+      w.techniques.forEach((t, i) => {
+        expect(t.tier, `${w.id} technique ${i}`).toBe(i + 1);
+      });
+    }
+  });
+
+  it('assigns every weapon a complexity in 1..5', () => {
+    for (const w of WEAPONS) {
+      expect(Number.isInteger(w.complexity), w.id).toBe(true);
+      expect(w.complexity, w.id).toBeGreaterThanOrEqual(1);
+      expect(w.complexity, w.id).toBeLessThanOrEqual(5);
+    }
+  });
+
+  it('gives every weapon a core mechanic with a name and at least one bullet', () => {
+    for (const w of WEAPONS) {
+      expect(w.coreMechanic.name.length, w.id).toBeGreaterThan(0);
+      expect(w.coreMechanic.bullets.length, w.id).toBeGreaterThanOrEqual(1);
+      for (const b of w.coreMechanic.bullets) {
+        expect(b.length, w.id).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it('assigns the agreed complexity per weapon', () => {
+    const EXPECTED: Record<string, number> = {
+      greatsword: 1, bow: 2, greatshield: 2, claws: 2,
+      hammer: 3, whip: 3, boomerang: 3, arbalest: 3,
+      'spear-shield': 4, wand: 4, 'hunting-flute': 4, conduit: 5,
+    };
+    for (const w of WEAPONS) {
+      expect(w.complexity, w.id).toBe(EXPECTED[w.id]);
+    }
+  });
+});
