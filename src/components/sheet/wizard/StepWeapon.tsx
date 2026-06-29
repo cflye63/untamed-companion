@@ -40,22 +40,66 @@ export function StepWeapon({ draft, setDraft }: Props) {
       </div>
       {selected && (
         <div class="weapon-detail">
-          <h4>{selected.name} — {selected.primaryRole} · {selected.secondaryRole}</h4>
-          <p class="weapon-meta">
-            {selected.primaryStat} · {selected.damageDice} · {selected.range} · {selected.powerDice} Power {selected.powerDice === 1 ? 'Die' : 'Dice'}
+          <h4 class="weapon-detail-name">{selected.name}</h4>
+          <p class="weapon-detail-roles">{selected.primaryRole} • {selected.secondaryRole}</p>
+
+          <div class="weapon-chips">
+            <span class="weapon-chip">{selected.primaryStat}</span>
+            <span class="weapon-chip">{selected.damageDice}</span>
+            {selected.range.split(' / ').map(seg => (
+              <span class="weapon-chip" key={seg}>{seg}</span>
+            ))}
+            <span class="weapon-chip">+{selected.powerDice} Power {selected.powerDice === 1 ? 'Die' : 'Dice'}</span>
+          </div>
+
+          <p class="weapon-complexity">
+            Complexity:{' '}
+            <span class="stars" aria-label={`Complexity ${selected.complexity} of 5`}>
+              {[1, 2, 3, 4, 5].map(n => (
+                <span key={n} class={`star ${n <= selected.complexity ? 'star--filled' : 'star--empty'}`}>
+                  {n <= selected.complexity ? '★' : '☆'}
+                </span>
+              ))}
+            </span>
           </p>
-          <p>{selected.description}</p>
+
+          <p class="weapon-pitch">{selected.summary}</p>
+
           {pairings.length > 0 && (
             <p class="weapon-pairs"><strong>Pairs well with:</strong> {pairings.join(', ')}</p>
           )}
-          <ul class="weapon-techniques">
-            {selected.techniques.map(t => (
-              <li key={t.name}>
-                <strong>{t.name}</strong> <span class="muted">({t.staminaCost} STA)</span>
+
+          <div class="core-mechanic">
+            <h5>Core Mechanic — {selected.coreMechanic.name}</h5>
+            <ul>
+              {selected.coreMechanic.bullets.map(b => <li key={b}>{b}</li>)}
+            </ul>
+          </div>
+
+          <div class="tier-group">
+            <h5>Current Technique (Tier 1)</h5>
+            {selected.techniques.filter(t => t.tier === 1).map(t => (
+              <details class="technique-row" key={t.name} open>
+                <summary>{t.name} <span class="muted">({t.staminaCost} STA)</span></summary>
                 <p>{t.description}</p>
-              </li>
+              </details>
             ))}
-          </ul>
+          </div>
+
+          <div class="tier-group">
+            <h5>Future Unlocks</h5>
+            {selected.techniques.filter(t => t.tier > 1).map(t => (
+              <details class="technique-row" key={t.name}>
+                <summary>Tier {t.tier} — {t.name} <span class="muted">({t.staminaCost} STA)</span></summary>
+                <p>{t.description}</p>
+              </details>
+            ))}
+          </div>
+
+          <details class="full-rules">
+            <summary>Full rules</summary>
+            <p>{selected.description}</p>
+          </details>
         </div>
       )}
     </div>

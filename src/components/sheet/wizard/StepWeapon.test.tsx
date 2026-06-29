@@ -50,16 +50,60 @@ describe('StepWeapon', () => {
     expect(queryByText(/Best:/)).toBeNull();
   });
 
-  it('shows a detail panel with description, techniques, and spec pairings when selected', () => {
+  it('shows the redesigned detail panel header, chips, complexity, pitch, and pairings', () => {
+    const draft = draftCharacter();
+    draft.weapons = [{ weaponId: 'hammer', huntsCompleted: 5, isPrimary: true }];
+    draft.primaryWeaponId = 'hammer';
+    const { getByRole, getByText, container } = render(
+      <StepWeapon draft={draft} setDraft={() => {}} />
+    );
+    getByRole('heading', { name: 'Hammer', level: 4 });
+    getByText('Breaker • Controller');
+    getByText('STR');
+    getByText('1d12');
+    getByText('+1 Power Die');
+    expect(container.querySelectorAll('.star--filled').length).toBe(3);
+    expect(container.querySelector('.weapon-pitch')?.textContent).toBe(
+      'Stack Sunder to crack armor open for the whole party.'
+    );
+    getByText(/Pairs well with:/);
+    getByText(/Juggernaut/);
+  });
+
+  it('renders the core mechanic callout with name and bullets', () => {
     const draft = draftCharacter();
     draft.weapons = [{ weaponId: 'hammer', huntsCompleted: 5, isPrimary: true }];
     draft.primaryWeaponId = 'hammer';
     const { getByText } = render(<StepWeapon draft={draft} setDraft={() => {}} />);
-    getByText('Hammer — Breaker · Controller');
-    getByText('Cratering Blow');
-    getByText(/Force multiplier weapon that builds Sunder/);
-    getByText(/Pairs well with:/);
-    getByText(/Juggernaut/); // juggernaut spec lists hammer in bestWith
+    getByText('Core Mechanic — Sunder');
+    getByText('Each hit adds +1 Sunder to a target, up to 3.');
+  });
+
+  it('shows the Tier 1 technique open and Tiers 2–5 as collapsed future unlocks', () => {
+    const draft = draftCharacter();
+    draft.weapons = [{ weaponId: 'hammer', huntsCompleted: 5, isPrimary: true }];
+    draft.primaryWeaponId = 'hammer';
+    const { getByText, container } = render(<StepWeapon draft={draft} setDraft={() => {}} />);
+    const openDetails = container.querySelector('details.technique-row[open]');
+    expect(openDetails).not.toBeNull();
+    expect(openDetails?.textContent).toContain('Cratering Blow');
+    const future2 = getByText('Tier 2 — Armor Breaker').closest('details');
+    expect(future2).not.toBeNull();
+    expect(future2?.hasAttribute('open')).toBe(false);
+    getByText('Tier 3 — Aftershock');
+    getByText('Tier 4 — Seismic Slam');
+    getByText('Tier 5 — Shatterfall');
+  });
+
+  it('keeps the full rules prose in a collapsed details section', () => {
+    const draft = draftCharacter();
+    draft.weapons = [{ weaponId: 'hammer', huntsCompleted: 5, isPrimary: true }];
+    draft.primaryWeaponId = 'hammer';
+    const { getByText } = render(<StepWeapon draft={draft} setDraft={() => {}} />);
+    const fullRules = getByText('Full rules').closest('details');
+    expect(fullRules).not.toBeNull();
+    expect(fullRules?.hasAttribute('open')).toBe(false);
+    expect(fullRules?.textContent).toContain('Force multiplier weapon that builds Sunder');
   });
 
   it('hides the detail panel when nothing is selected', () => {
