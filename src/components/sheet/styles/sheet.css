@@ -381,8 +381,7 @@
 .weapon-grid .race-pick p { font-size: 0.8rem; }
 .weapon-roles { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
 .badge-muted { background: var(--earth-brown); color: var(--cream); }
-.weapon-grid .race-pick .weapon-meta,
-.weapon-detail .weapon-meta { font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin-bottom: 6px; }
+.weapon-grid .race-pick .weapon-meta { font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin-bottom: 6px; }
 .race-pick.selected .weapon-meta { opacity: 1; color: var(--cream); }
 .weapon-detail {
   margin-top: 18px;
