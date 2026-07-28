@@ -27,6 +27,11 @@
 					<a href="/">← Back to Home</a>
 				</div>
 
+				<div class="roster-cta">
+					<a class="btn-link" href="/character/roster">📋 Your Hunters (Roster)</a>
+					<a class="btn-link" href="/character/sheet">+ Open Character Sheet</a>
+				</div>
+
 				<header class="page-header">
 					<h1>Character Creation</h1>
 					<p class="subtitle">Build your hunter in 5 steps</p>
@@ -80,7 +85,7 @@
 									</tr>
 									<tr>
 										<td><strong>Dragonian</strong></td>
-										<td>+1 INT</td>
+										<td>+1 by lineage</td>
 										<td>Elemental Resistance</td>
 									</tr>
 									<tr>
@@ -126,6 +131,8 @@
 									You may use this a number of times equal to your Proficiency per Hunt.
 								</li>
 											<li><strong>Feature:</strong> Gain proficiency with one common tool.</li>
+											<li><strong>Feature — Adaptive Retraining:</strong> During Downtime, swap one Talent you know for another you qualify for.</li>
+											<li><strong>Feature — Fast Learner:</strong> You reach Trained with a weapon after 3 Hunts and Master after 7 (instead of 5/10).</li>
 										</ul>
 									</div>
 
@@ -158,7 +165,7 @@
 										<span class="expand-icon">▼</span>
 									</div>
 									<div class="race-quick-info">
-										<div class="stat-badge">+1 INT</div>
+										<div class="stat-badge">+1 by lineage</div>
 										<div class="trait-badge">Draconic Lineage</div>
 									</div>
 								</summary>
@@ -166,19 +173,19 @@
 									<div class="mechanics-box">
 										<h4>Mechanics</h4>
 										<ul>
-											<li><strong>Stat Bonus:</strong> +1 Intelligence</li>
+											<li><strong>Stat Bonus:</strong> +1 from your chosen lineage (see below)</li>
 											<li><strong>Proficiencies:</strong> Knowledge</li>
 											<li>
-									<strong>Racial Trait — Draconic Lineage:</strong> Choose one lineage. You gain its elemental resistance and rider.
+									<strong>Racial Trait — Draconic Lineage:</strong> Choose one lineage. You permanently gain its stat bonus and elemental resistance, and may apply its rider via Draconic Channeling.
 									<table class="lineage-table">
-										<thead><tr><th>Lineage</th><th>Scales</th><th>Resistance</th><th>Rider</th></tr></thead>
+										<thead><tr><th>Lineage</th><th>Scales</th><th>Stat</th><th>Resistance</th><th>Rider</th></tr></thead>
 										<tbody>
-											<tr><td><strong>Fire</strong></td><td>Red</td><td>Fire</td><td>Target gains Burned (1 stack)</td></tr>
-											<tr><td><strong>Ice</strong></td><td>White</td><td>Cold</td><td>Target gains Chilled</td></tr>
-											<tr><td><strong>Storm</strong></td><td>Violet</td><td>Lightning</td><td>If the target has already acted this round, deal +1 damage</td></tr>
-											<tr><td><strong>Earth</strong></td><td>Green/Brown</td><td>Poison</td><td>Target cannot be pushed or repositioned until end of its next turn</td></tr>
-											<tr><td><strong>Air</strong></td><td>Grey</td><td>Sonic</td><td>Move 5 ft after the attack without provoking opportunity attacks</td></tr>
-											<tr><td><strong>Water</strong></td><td>Blue/Seafoam</td><td>Cold</td><td>You or an ally within 5 ft regain 1 Stamina</td></tr>
+											<tr><td><strong>Fire</strong></td><td>Red</td><td>+1 STR</td><td>Fire</td><td>Target gains Burned (1 stack)</td></tr>
+											<tr><td><strong>Storm</strong></td><td>Violet</td><td>+1 DEX</td><td>Lightning</td><td>Target cannot take Reactions until the start of its next turn</td></tr>
+											<tr><td><strong>Earth</strong></td><td>Green/Brown</td><td>+1 CON</td><td>Poison</td><td>Target cannot be pushed or repositioned until end of its next turn</td></tr>
+											<tr><td><strong>Ice</strong></td><td>White</td><td>+1 INT</td><td>Cold</td><td>Target gains Chilled</td></tr>
+											<tr><td><strong>Air</strong></td><td>Grey</td><td>+1 INS</td><td>Sonic</td><td>Move 5 ft after the attack without provoking opportunity attacks</td></tr>
+											<tr><td><strong>Water</strong></td><td>Blue/Seafoam</td><td>+1 CHA</td><td>Cold</td><td>You or an ally within 5 ft regain 1 Stamina</td></tr>
 										</tbody>
 									</table>
 								</li>
@@ -293,7 +300,8 @@
 											<li><strong>Proficiencies:</strong> Athletics or Survival</li>
 											<li><strong>Movement:</strong> Swim speed equal to walking speed</li>
 											<li><strong>Racial Trait — Tide Breath:</strong> Your Breath Timer is doubled while underwater.</li>
-											<li><strong>Feature — Pressure Sense:</strong> Advantage on checks to detect underwater movement, large submerged creatures, or changes in depth/current. Never Surprised by aquatic creatures while submerged.</li>
+											<li><strong>Feature — Pressure Sense:</strong> Advantage on checks to detect movement or hidden creatures through water, fog, rain, or murk. Never Surprised while submerged or in such conditions.</li>
+											<li><strong>Feature — Flowing Renewal:</strong> Once per Hunt, as a Fast Action, remove one Condition affecting you. Like water slipping through stone, you cast away what would hinder you.</li>
 										</ul>
 									</div>
 
@@ -999,6 +1007,11 @@
 			.nav-links a:hover {
 				color: var(--amber);
 			}
+
+			/* Roster CTA */
+			.roster-cta { display: flex; gap: 12px; margin: 1rem 0 1.5rem; }
+			.btn-link { background: var(--moss-green, #4a7c2f); border: 1px solid var(--amber, #d4a257); color: var(--cream, #f5f1e8); padding: 8px 16px; border-radius: 4px; text-decoration: none; }
+			.btn-link:hover { background: var(--leaf-green, #6b9d3a); }
 
 			/* Breadcrumb */
 			.breadcrumb {

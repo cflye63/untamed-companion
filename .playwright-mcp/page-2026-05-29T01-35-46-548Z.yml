@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "UNTAMED" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Rules" [ref=e6] [cursor=pointer]:
+          - /url: /rules
+        - link "Quick Reference" [ref=e7] [cursor=pointer]:
+          - /url: /quick-reference
+        - link "Characters" [ref=e8] [cursor=pointer]:
+          - /url: /character
+        - link "Bestiary" [ref=e9] [cursor=pointer]:
+          - /url: /bestiary
+        - link "GM Guide" [ref=e10] [cursor=pointer]:
+          - /url: /gm-guide
+  - main [ref=e11]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]: 1Identity
+        - generic [ref=e56]: 2Race
+        - generic [ref=e57]: 3Background
+        - generic [ref=e58]: 4Stats
+        - generic [ref=e59]: 5Weapon
+        - generic [ref=e60]: 6Review
+      - generic [ref=e62]:
+        - heading "Step 1 — Identity" [level=3] [ref=e63]
+        - paragraph [ref=e64]: Your hunter's name and basics. You can change all of this later.
+        - generic [ref=e65]:
+          - text: Name
+          - textbox "Name" [ref=e66]
+        - generic [ref=e67]:
+          - text: Pronouns (optional)
+          - textbox "Pronouns (optional)" [ref=e68]
+      - generic [ref=e69]:
+        - button "Cancel" [ref=e70]
+        - button "Back" [disabled] [ref=e71]
+        - button "Next" [disabled] [ref=e72]
+  - generic [ref=e32]:
+    - button "Menu" [ref=e33]:
+      - img [ref=e35]
+      - generic: Menu
+    - button "Inspect" [ref=e39]:
+      - img [ref=e41]
+      - generic: Inspect
+    - button "Audit" [ref=e43]:
+      - img [ref=e45]
+      - generic: Audit
+    - button "Settings" [ref=e48]:
+      - img [ref=e50]
+      - generic: Settings

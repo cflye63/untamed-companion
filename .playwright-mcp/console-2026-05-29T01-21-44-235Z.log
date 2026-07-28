@@ -1,0 +1,10 @@
+[      90ms] [ERROR] Expected a DOM node of type "div" but found "" as available DOM-node(s), this is caused by the SSR'd HTML containing different DOM-nodes compared to the hydrated one.
+
+  in div (at /Users/colby.flye/P. Projects/untamed-companion/src/components/sheet/roster/Roster.tsx:81)
+  in Roster
+ @ http://localhost:4321/node_modules/.vite/deps/chunk-LXBRCTX2.js?v=3d80fff4:67
+[      91ms] [ERROR] Expected a DOM node of type "div" but found "" as available DOM-node(s), this is caused by the SSR'd HTML containing different DOM-nodes compared to the hydrated one.
+
+  in div (at /Users/colby.flye/P. Projects/untamed-companion/src/components/sheet/roster/Roster.tsx:81)
+  in Roster
+ @ http://localhost:4321/node_modules/.vite/deps/chunk-LXBRCTX2.js?v=3d80fff4:67
